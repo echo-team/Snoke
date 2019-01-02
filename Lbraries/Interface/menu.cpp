@@ -3,17 +3,29 @@ void Menu::addButton(const char* name)
     buttons.push_back({name});
 }
 
+void Menu::focus(int index)
+{
+    move(y + index * 2 + 1, x);
+    printw(">");
+}
+
+void Menu::unfocus(int index)
+{
+    move(y + index * 2 + 1, x);
+    printw(" ");
+}
+
 void Menu::draw()
 {
-    x += 2;
-    y += 1;
-    move(y, x);
+    int xCounter = x + 2;
+    int yCounter = y + 1;
+    move(yCounter, xCounter);
 
     for (list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
     {
         printw(currentButton->name);
-        y += 2;
-        move(y, x);
+        yCounter += 2;
+        move(yCounter, xCounter);
     }
 }
 

@@ -7,7 +7,7 @@ typedef struct
     const char* name;
 } MenuButton;
 
-class Menu
+class Menu : public Widget
 {
     private:
         list<MenuButton> buttons;
@@ -16,6 +16,8 @@ class Menu
 
     public:
         void addButton(const char* name);
+        void focus(int index);
+        void unfocus(int index);
         void draw();
         Menu(int x, int y, int width, int height);
 };
