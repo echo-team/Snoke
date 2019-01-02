@@ -1,20 +1,15 @@
 #include <ncurses.h>
-#include "Lbraries/Interface/interface.h"
+#include "Libraries/Common/common.h"
+#include "Libraries/Interface/interface.h"
+#include "Libraries/Screens/main.h"
 
 int main()
 {
     initscr();
 
-    Menu menu(5, 5, 10, 10);
-    menu.addButton("Start");
-    menu.addButton("Continue");
-    menu.addButton("Stop");
-    menu.addButton("Quit");
-    menu.draw();
+    MainScreen main;
+    main.draw();
 
-    Navigator navigator;
-    navigator.pushUnit(&menu, 4);
-    navigator.listen();
     refresh();
     endwin();
     return 0;
