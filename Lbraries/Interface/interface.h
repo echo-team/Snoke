@@ -1,3 +1,6 @@
+/**
+ * Basic class of the console widget (to store different widgets in one list)
+ */
 class Widget
 {
     public:

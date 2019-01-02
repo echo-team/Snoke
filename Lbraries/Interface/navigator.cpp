@@ -1,8 +1,16 @@
+/**
+ * Adds selectable widget to the end of selectable widgets queue
+ * @param {Widget*} unit           - seleclable widget
+ * @param {int }    subunitsAmount - amount of subwidgets
+ */
 void Navigator::pushUnit(Widget* unit, int subunitsAmount)
 {
     units.push_back({unit, subunitsAmount});
 }
 
+/**
+ * Starts main loop of application to ctch selections and activate events done by user
+ */
 void Navigator::listen()
 {
     curs_set(0);
@@ -55,6 +63,9 @@ void Navigator::listen()
     }
 }
 
+/**
+ * @constructor
+ */
 Navigator::Navigator()
 {
     currentUnit = units.begin();
