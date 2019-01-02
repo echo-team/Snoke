@@ -56,6 +56,4 @@ void Menu::draw()
  * @param {int} height - menu height
  */
 Menu::Menu(int x, int y, int width, int height) : x(x), y(y), width(width), height(height)
-{
-    border = 1;
-}
+{}
