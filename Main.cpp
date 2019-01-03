@@ -1,7 +1,7 @@
-#include <curses.h>
-#include "Libraries/Common/common.cpp"
-#include "Libraries/Snake/snake.h"
-#include "Libraries/Game/game.h"
+#include <ncurses.h>
+#include "Libraries/common.cpp"
+#include "Libraries/snake.h"
+#include "Libraries/game.h"
 
 
 int main()
