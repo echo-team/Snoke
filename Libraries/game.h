@@ -6,12 +6,13 @@ class Game
 {
 private:
 	bool** labyrinth;
-	Snake snake;
+	int speed;
 	void setLabyrinth(int size);
-	void setSpeed();
-	Snake snakeEnemies[3];
+	void setSpeed(int sp);
+	Snake snake;
+	Snake* snakeEnemies;
 public:
-	int init();
+	int init(int size = 20, int sp = 100);
 	int run();
 };
 #endif

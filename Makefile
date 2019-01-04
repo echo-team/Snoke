@@ -13,4 +13,4 @@ mygame:$(OBJECTS)
 #.PHONY: clean
 clean:
 	cd Libraries && $(MAKE) $@
-	rm -rf *.o
+	rm -rf *.o mygame
