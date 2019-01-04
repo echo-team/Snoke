@@ -6,7 +6,7 @@
 class Snake
 {
 private:
-	short direction;
+	short direction = 1;
 	std::list<PointStyle> style; 
 public:
 	std::deque<Point> snakeBody;

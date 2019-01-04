@@ -43,6 +43,8 @@ void Snake::move(){
 
 void Snake::setDirection(int dir){
 	if (dir != 0){
+		if (direction + dir == 0)
+			return;
 		direction = dir;
 	}
 }

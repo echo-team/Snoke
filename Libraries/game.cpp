@@ -33,6 +33,7 @@ int Game::run(){
 
     while ( true )
     {
+
     	int ch = getch();
 
     	switch (ch){
@@ -52,13 +53,13 @@ int Game::run(){
     			snake.setDirection(1);
     			break;
     	}
-
     	snake.move();
 
     	clear();
     	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
     		mvaddch((*it).y, (*it).x, '*');
     	}
+    	flushinp();
     	usleep(speed);
     	refresh();
     }
