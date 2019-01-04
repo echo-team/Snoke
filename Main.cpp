@@ -19,7 +19,7 @@ int main()
 		p.y += 3;
 	}
 	for(auto it = me.snakeBody.begin(); it != me.snakeBody.end(); it++){
-		std::cout<<it<<' ';
+		std::cout<<(*it)<<' ';
 	}
 	getch();
 	//g.run();

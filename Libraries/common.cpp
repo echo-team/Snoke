@@ -8,8 +8,8 @@ typedef struct {
 	short x, y;
 } Point;
 
-inline std::ostream& operator << (std::ostream &s, std::_Deque_iterator<Point, Point&, Point*> p){
-	s << '(' << (*p).x << ',' << (*p).y << ')';
+inline std::ostream& operator << (std::ostream &s, Point p){
+	s << '(' << p.x << ',' << p.y << ')';
 	return s;
 }
 
