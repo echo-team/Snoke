@@ -1,5 +1,6 @@
 #include "game.h"
 #include <iostream>
+#include <unistd.h>
 
 int Game::init(int size, int sp){
 	setLabyrinth(size);
@@ -7,12 +8,63 @@ int Game::init(int size, int sp){
 }
 
 int Game::run(){
-	initscr();                   // Переход в curses-режим
-    printw("Hello world!\n");  // Отображение приветствия в буфер
-    refresh();                   // Вывод приветствия на настоящий экран
-    getch();                     // Ожидание нажатия какой-либо клавиши пользователем
-    endwin();                    // Выход из curses-режима. Обязательная команда.
-	return 0;
+
+    initscr();
+
+    nodelay(stdscr, TRUE);
+
+    Point screenSize;
+    getmaxyx(stdscr, screenSize.y, screenSize.x);
+
+    Point p;
+    p.x = screenSize.x / 2;
+    p.y = screenSize.y / 2;
+	Snake snake;
+	for (int i = 0; i < 4; i++){
+		snake.snakeBody.push_front(p);
+		p.x--;
+	}
+
+    unsigned choice = 0; //Выбор пользователя
+
+    curs_set(0); //"Убиваем" курсор
+    //Включаем режим удобной работы с функциональными клавишами, другими словами KEY_UP и KEY_DOWN без этого не работали бы
+    keypad(stdscr, true); 
+
+    while ( true )
+    {
+    	int ch = getch();
+
+    	switch (ch){
+    		case ERR:
+    			snake.setDirection(0);
+    			break;
+    		case KEY_UP:
+    			snake.setDirection(-2);
+    			break;
+    		case KEY_DOWN:
+    			snake.setDirection(2);
+    			break;
+    		case KEY_LEFT:
+    			snake.setDirection(-1);
+    			break;
+    		case KEY_RIGHT:
+    			snake.setDirection(1);
+    			break;
+    	}
+
+    	snake.move();
+
+    	clear();
+    	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
+    		mvaddch((*it).y, (*it).x, '*');
+    	}
+    	usleep(speed);
+    	refresh();
+    }
+
+    endwin();
+    return 0;
 }
 
 void Game::setLabyrinth(int size){

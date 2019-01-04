@@ -8,8 +8,8 @@
 int main()
 {
 	Game g;
-	g.init();
-	Snake me;
+	g.init(30, 100000);
+	/*Snake me;
 	Point p;
 	p.x = 1;
 	p.y = 2;
@@ -20,8 +20,7 @@ int main()
 	}
 	for(auto it = me.snakeBody.begin(); it != me.snakeBody.end(); it++){
 		std::cout<<(*it)<<' ';
-	}
-	getch();
-	//g.run();
+	}*/
+	g.run();
 	return 0;
 }
