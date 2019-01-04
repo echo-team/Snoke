@@ -14,5 +14,6 @@ private:
 public:
 	int init(int size = 20, int sp = 100);
 	int run();
+	void mSleep(int time);
 };
 #endif

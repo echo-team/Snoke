@@ -1,6 +1,7 @@
 #include "game.h"
 #include <iostream>
-#include <unistd.h>
+#include <chrono>
+#include <thread>
 
 int Game::init(int size, int sp){
 	setLabyrinth(size);
@@ -60,12 +61,16 @@ int Game::run(){
     		mvaddch((*it).y, (*it).x, '*');
     	}
     	flushinp();
-    	usleep(speed);
+    	mSleep(speed);
     	refresh();
     }
 
     endwin();
     return 0;
+}
+
+void Game::mSleep(int time){
+	std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
 void Game::setLabyrinth(int size){

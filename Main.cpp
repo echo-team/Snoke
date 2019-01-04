@@ -8,7 +8,7 @@
 int main()
 {
 	Game g;
-	g.init(30, 100000);
+	g.init(30, 100);
 	/*Snake me;
 	Point p;
 	p.x = 1;
