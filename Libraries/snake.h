@@ -7,9 +7,9 @@ class Snake
 {
 private:
 	short direction;
-	std::deque<Point> snakeBody;
 	std::list<PointStyle> style; 
 public:
+	std::deque<Point> snakeBody;
 	void setScheme();
 	void getCoords(std::list<Point> currBody);
 	Point getHeadCoords();

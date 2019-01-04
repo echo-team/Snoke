@@ -48,5 +48,5 @@ void Snake::setDirection(int dir){
 }
 
 void Snake::getCoords(std::list<Point> currBody){
-	copy(currBody.begin(), currBody.end(),snakeBody.begin());
+	copy(currBody.begin(), currBody.end(), snakeBody.begin());
 }
