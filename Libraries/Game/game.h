@@ -1,7 +1,11 @@
 #ifndef GAME_H
 #define GAME_H
-#include "snake.h"
+#include "../Snake/snake.h"
 #include <ncurses.h>
+#include <iostream>
+#include <chrono>
+#include <thread>
+
 class Game
 {
 private:
@@ -16,4 +20,5 @@ public:
 	int run();
 	void mSleep(int time);
 };
+
 #endif

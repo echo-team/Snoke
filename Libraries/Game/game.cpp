@@ -1,7 +1,5 @@
 #include "game.h"
-#include <iostream>
-#include <chrono>
-#include <thread>
+
 
 int Game::init(int size, int sp){
 	setLabyrinth(size);
@@ -17,22 +15,33 @@ int Game::run(){
     Point screenSize;
     getmaxyx(stdscr, screenSize.y, screenSize.x);
 
-    Point p;
+    Point p, g;
     p.x = screenSize.x / 2;
     p.y = screenSize.y / 2;
 	Snake snake;
-	for (int i = 0; i < 4; i++){
+	for (int i = 0; i < 10; i++){
 		snake.snakeBody.push_front(p);
 		p.x--;
 	}
+    auto it = snake.snakeBody.begin();
+    p.x = (*it).x;
+    p.y = (*it).y;
+    it++;
+    g.x = (*it).x;
+    g.y = (*it).y;
 
-    unsigned choice = 0; //Выбор пользователя
+    if (p.x == g.x){
+        snake.setDirection(p.y - g.y);
+    }
+    else{
+        snake.setDirection(p.x - g.x);
+    }
 
     curs_set(0); //"Убиваем" курсор
     //Включаем режим удобной работы с функциональными клавишами, другими словами KEY_UP и KEY_DOWN без этого не работали бы
     keypad(stdscr, true); 
-
-    while ( true )
+    bool flag = false;
+    while ( !flag )
     {
 
     	int ch = getch();
@@ -53,7 +62,12 @@ int Game::run(){
     		case KEY_RIGHT:
     			snake.setDirection(1);
     			break;
+            case 'q':
+                flag = true;
+                break;
+
     	}
+        if (flag) break;
     	snake.move();
 
     	clear();

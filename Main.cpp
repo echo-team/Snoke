@@ -1,8 +1,8 @@
 #include <ncurses.h>
 #include <iostream>
-#include "Libraries/common.cpp"
-#include "Libraries/snake.h"
-#include "Libraries/game.h"
+#include "Libraries/Common/common.cpp"
+#include "Libraries/Snake/snake.h"
+#include "Libraries/Game/game.h"
 
 
 int main()
