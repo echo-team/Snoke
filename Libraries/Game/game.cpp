@@ -4,6 +4,7 @@
 int Game::init(int size, int sp){
 	setLabyrinth(size);
     setSpeed(sp);
+    return 1;
 }
 
 int Game::run(){
