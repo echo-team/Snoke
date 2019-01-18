@@ -1,10 +1,10 @@
 #include "game.h"
 
-
-int Game::init(int size, int sp){
-	setLabyrinth(size);
+bool Game::init(int size, int sp){
+    setLabyrinth(size);
     setSpeed(sp);
-    return 1;
+    dim = size;
+    return true;
 }
 
 int Game::run(){
@@ -19,29 +19,17 @@ int Game::run(){
     Point p, g;
     p.x = screenSize.x / 2;
     p.y = screenSize.y / 2;
-	Snake snake;
-	for (int i = 0; i < 10; i++){
-		snake.snakeBody.push_front(p);
-		p.x--;
-	}
-    auto it = snake.snakeBody.begin();
-    p.x = (*it).x;
-    p.y = (*it).y;
-    it++;
-    g.x = (*it).x;
-    g.y = (*it).y;
-
-    if (p.x == g.x){
-        snake.setDirection(p.y - g.y);
-    }
-    else{
-        snake.setDirection(p.x - g.x);
-    }
+    snake.init(p, 1, 10);
 
     curs_set(0); //"Убиваем" курсор
     //Включаем режим удобной работы с функциональными клавишами, другими словами KEY_UP и KEY_DOWN без этого не работали бы
     keypad(stdscr, true); 
     bool flag = false;
+
+    p.x = dim;
+    p.y = dim;
+    Ball ball(p);
+    ball.generateBall(labyrinth);
     while ( !flag )
     {
 
@@ -69,12 +57,14 @@ int Game::run(){
 
     	}
         if (flag) break;
-    	snake.move();
+    	snake.move(labyrinth, &ball);
 
     	clear();
     	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
     		mvaddch((*it).y, (*it).x, '*');
     	}
+        g = ball.getCoords();
+        mvaddch(g.y, g.x, '*');
     	flushinp();
     	mSleep(speed);
     	refresh();

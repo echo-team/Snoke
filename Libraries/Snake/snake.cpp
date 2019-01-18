@@ -1,4 +1,28 @@
 #include "snake.h"
+
+bool Snake::init(Point begin, short dir, int length){
+	if (abs(dir) == 1 or abs(dir) == 2){
+		short* changable;
+		if (abs(dir) == 1)
+			changable = &begin.x;
+		else
+			changable = &begin.y;
+		short value;
+		if (dir > 0)
+			value = 1;
+		else
+			value = -1;
+		for (int i = 0; i < length; i++){
+			snakeBody.push_front(begin);
+			*changable += value;
+		}
+		direction = dir;
+		valid = true;
+		return true;
+	}
+	return false;
+}
+
 Point Snake::getHeadCoords(){
 	Point p;
 	p.x = snakeBody.front().x;
@@ -12,7 +36,7 @@ Point Snake::getHeadCoords(){
 * +2 -> moves down
 * -2 -> moves up
 */
-void Snake::move(){
+void Snake::move(bool** labyrinth, Ball* ball){
 	Point p;
 	p.x = snakeBody.front().x;
 	p.y = snakeBody.front().y;
@@ -35,9 +59,15 @@ void Snake::move(){
 		}
 	}
 	snakeBody.push_front(p);
-	/* Check that snake didb't eat the ball*/
-	if (1){
+	/* Check that snake didn't eat the ball*/
+	Point g;
+	p = getHeadCoords();
+	g = ball->getCoords();
+	if (p.x != g.x or p.y != g.y){
 		snakeBody.pop_back();
+	}
+	else{
+		ball->generateBall(labyrinth);
 	}
 }				
 

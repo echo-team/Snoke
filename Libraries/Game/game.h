@@ -5,6 +5,7 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
+#include <random>
 
 class Game
 {
@@ -15,8 +16,9 @@ private:
 	void setSpeed(int sp);
 	Snake snake;
 	Snake* snakeEnemies;
+	int dim = 20;
 public:
-	int init(int size = 20, int sp = 100);
+	bool init(int size = 20, int sp = 100);
 	int run();
 	void mSleep(int time);
 };

@@ -1,4 +1,4 @@
-CC = g++
+CC = g++ -std=c++11
 
 #The Target Binary Program
 TARGET      := mygame
@@ -49,6 +49,7 @@ cleaner: clean
 
 #Pull in dependency info for *existing* .o files
 -include $(OBJECTS:.$(OBJEXT)=.$(DEPEXT))
+-include $(subst .c,.d,$(SOURCES))
 
 #Link
 $(TARGET): $(OBJECTS)
