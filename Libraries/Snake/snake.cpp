@@ -30,7 +30,7 @@ bool Snake::init(Point begin, short dir, int length){
 * +2 -> moves down
 * -2 -> moves up
 */
-bool Snake::move(bool** labyrinth, Ball* ball){
+bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2]){
 	Point p;
 	p.x = snakeBody.front().x;
 	p.y = snakeBody.front().y;
@@ -53,17 +53,23 @@ bool Snake::move(bool** labyrinth, Ball* ball){
 		}
 	}
 	snakeBody.push_front(p);
-	return checkIntersection(ball, labyrinth);
+	change[0][0] = p;
+	Point g;
+	g.x = -1;
+	g.y = -1;
+	change[1][0] = g;
+	return checkIntersection(ball, labyrinth, change[1]);
 	
 }	
 
-bool Snake::checkIntersection(Ball* ball, bool** labyrinth){
+bool Snake::checkIntersection(Ball* ball, bool** labyrinth, Point change[1]){
 	Point hCoords = getHeadCoords();
 	Point bCoords = ball->getCoords();
 	if (labyrinth[hCoords.x][hCoords.y] == true)
 		return true;
 	else{
 		if (hCoords.x != bCoords.x or hCoords.y != bCoords.y){
+			change[0] = snakeBody.back();
 			snakeBody.pop_back();
 		}
 		else{

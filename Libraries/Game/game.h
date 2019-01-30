@@ -15,8 +15,9 @@ private:
 	int speed;
 	void setLabyrinth(Point dim);
 	void displayLabyrinth();
-	void updateLabyrinth(Point update[], int size);
+	void updateLabyrinth(Point* update[2], int size);
 	void setSpeed(int sp);
+	void initSnake(Point start, int dir, int len);
 	Snake snake;
 	Snake* snakeEnemies;
 	Point dim;

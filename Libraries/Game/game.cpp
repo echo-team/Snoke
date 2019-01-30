@@ -20,7 +20,8 @@ int Game::run(){
     Point p, g;
     p.x = 1;
     p.y = 1;
-    snake.init(p, 1, 10);
+    int dir = 1, len = 5;
+    initSnake(p, dir, len);
 
     curs_set(0); //"Убиваем" курсор
     //Включаем режим удобной работы с функциональными клавишами, другими словами KEY_UP и KEY_DOWN без этого не работали бы
@@ -56,10 +57,13 @@ int Game::run(){
 
     	}
         if (flag) break;
-    	if(snake.move(labyrinth, &ball)){
+        Point* change[2];
+        change[0] = new Point [1];
+        change[1] = new Point [1];
+    	if(snake.move(labyrinth, &ball, change)){
             break;
         }
-
+        updateLabyrinth(change, 1);
     	clear();
         displayLabyrinth();
     	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
@@ -95,6 +99,13 @@ void Game::setLabyrinth(Point dim){
     }
 }
 
+void Game::initSnake(Point start, int dir, int len){
+    snake.init(start, dir, len);
+    for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
+        labyrinth[(*it).x][(*it).y] = 1;
+    }
+}
+
 void Game::displayLabyrinth(){
     for(int i = 0; i < dim.x; i++){
         for(int j = 0; j < dim.y; j++){
@@ -105,8 +116,15 @@ void Game::displayLabyrinth(){
     }
 }
 
-void Game::updateLabyrinth(Point update[],int size){
-
+void Game::updateLabyrinth(Point* update[2],int size){
+    for(int i = 0; i < size; i++){
+        Point p = update[0][i];
+        if(p.x >= 0 and p.y >= 0)
+            labyrinth[p.x][p.y] = 1;
+        p = update[1][i];
+        if(p.x >= 0 and p.y >= 0)
+            labyrinth[p.x][p.y] = 0;
+    }
 }
 
 void Game::setSpeed(int sp){
