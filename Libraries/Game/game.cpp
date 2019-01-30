@@ -1,9 +1,10 @@
 #include "game.h"
 
 bool Game::init(int size, int sp){
-    setLabyrinth(size);
+    dim.x = size;
+    dim.y = size/2;
+    setLabyrinth(dim);
     setSpeed(sp);
-    dim = size;
     return true;
 }
 
@@ -17,8 +18,8 @@ int Game::run(){
     getmaxyx(stdscr, screenSize.y, screenSize.x);
 
     Point p, g;
-    p.x = screenSize.x / 2;
-    p.y = screenSize.y / 2;
+    p.x = 1;
+    p.y = 1;
     snake.init(p, 1, 10);
 
     curs_set(0); //"Убиваем" курсор
@@ -26,9 +27,7 @@ int Game::run(){
     keypad(stdscr, true); 
     bool flag = false;
 
-    p.x = dim;
-    p.y = dim;
-    Ball ball(p);
+    Ball ball(dim);
     ball.generateBall(labyrinth);
     while ( !flag )
     {
@@ -57,9 +56,12 @@ int Game::run(){
 
     	}
         if (flag) break;
-    	snake.move(labyrinth, &ball);
+    	if(snake.move(labyrinth, &ball)){
+            break;
+        }
 
     	clear();
+        displayLabyrinth();
     	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
     		mvaddch((*it).y, (*it).x, '*');
     	}
@@ -78,17 +80,33 @@ void Game::mSleep(int time){
 	std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
-void Game::setLabyrinth(int size){
-	labyrinth = new bool* [size];
-	for(int i = 0; i < size; i++){
-		labyrinth[i] = new bool [size];
+void Game::setLabyrinth(Point dim){
+	labyrinth = new bool* [dim.x];
+	for(int i = 0; i < dim.x; i++){
+		labyrinth[i] = new bool [dim.y];
 	}
-	for(int i = 0; i < size; i++){
-		labyrinth[0][i] = 1;
+	for(int i = 0; i < dim.x; i++){
 		labyrinth[i][0] = 1;
-		labyrinth[i][size - 1] = 1;
-		labyrinth[size - 1][i] = 1;
+		labyrinth[i][dim.y - 1] = 1;
 	}
+    for(int i = 0; i < dim.y; i++){
+        labyrinth[0][i] = 1;
+        labyrinth[dim.x - 1][i] = 1;
+    }
+}
+
+void Game::displayLabyrinth(){
+    for(int i = 0; i < dim.x; i++){
+        for(int j = 0; j < dim.y; j++){
+            if(labyrinth[i][j]){
+                mvaddch(j, i, '*');
+            }
+        }
+    }
+}
+
+void Game::updateLabyrinth(Point update[],int size){
+
 }
 
 void Game::setSpeed(int sp){

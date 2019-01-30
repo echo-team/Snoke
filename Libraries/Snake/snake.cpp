@@ -23,12 +23,6 @@ bool Snake::init(Point begin, short dir, int length){
 	return false;
 }
 
-Point Snake::getHeadCoords(){
-	Point p;
-	p.x = snakeBody.front().x;
-	p.y = snakeBody.front().y;
-	return p;
-}
 
 /**
 * +1 -> moves right
@@ -36,7 +30,7 @@ Point Snake::getHeadCoords(){
 * +2 -> moves down
 * -2 -> moves up
 */
-void Snake::move(bool** labyrinth, Ball* ball){
+bool Snake::move(bool** labyrinth, Ball* ball){
 	Point p;
 	p.x = snakeBody.front().x;
 	p.y = snakeBody.front().y;
@@ -59,17 +53,25 @@ void Snake::move(bool** labyrinth, Ball* ball){
 		}
 	}
 	snakeBody.push_front(p);
-	/* Check that snake didn't eat the ball*/
-	Point g;
-	p = getHeadCoords();
-	g = ball->getCoords();
-	if (p.x != g.x or p.y != g.y){
-		snakeBody.pop_back();
-	}
+	return checkIntersection(ball, labyrinth);
+	
+}	
+
+bool Snake::checkIntersection(Ball* ball, bool** labyrinth){
+	Point hCoords = getHeadCoords();
+	Point bCoords = ball->getCoords();
+	if (labyrinth[hCoords.x][hCoords.y] == true)
+		return true;
 	else{
-		ball->generateBall(labyrinth);
+		if (hCoords.x != bCoords.x or hCoords.y != bCoords.y){
+			snakeBody.pop_back();
+		}
+		else{
+			ball->generateBall(labyrinth);
+		}
 	}
-}				
+	return false;
+}			
 
 void Snake::setDirection(int dir){
 	if (dir != 0){
@@ -81,6 +83,13 @@ void Snake::setDirection(int dir){
 
 int Snake::getDirection(){
 	return direction;
+}
+
+Point Snake::getHeadCoords(){
+	Point p;
+	p.x = snakeBody.front().x;
+	p.y = snakeBody.front().y;
+	return p;
 }
 
 void Snake::getCoords(std::list<Point> currBody){

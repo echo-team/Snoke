@@ -11,6 +11,7 @@ private:
 	short direction;
 	std::list<PointStyle> style; 
 	bool valid = false;
+	bool checkIntersection(Ball* ball, bool** laryrinth);
 public:
 	bool init(Point begin, short direction, int length);
 	std::deque<Point> snakeBody;
@@ -19,6 +20,6 @@ public:
 	Point getHeadCoords();
 	void setDirection(int dir = 0);
 	int getDirection();
-	void move(bool** labyrinth, Ball* ball);
+	bool move(bool** labyrinth, Ball* ball);
 };
 #endif

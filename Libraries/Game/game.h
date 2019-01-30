@@ -7,16 +7,19 @@
 #include <thread>
 #include <random>
 
+
 class Game
 {
 private:
 	bool** labyrinth;
 	int speed;
-	void setLabyrinth(int size);
+	void setLabyrinth(Point dim);
+	void displayLabyrinth();
+	void updateLabyrinth(Point update[], int size);
 	void setSpeed(int sp);
 	Snake snake;
 	Snake* snakeEnemies;
-	int dim = 20;
+	Point dim;
 public:
 	bool init(int size = 20, int sp = 100);
 	int run();
