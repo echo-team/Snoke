@@ -16,7 +16,7 @@ void MainScreen::draw()
 
     snokeStartPoint.x = (consoleSize.x - 23) / 2;
     snokeStartPoint.y = (consoleSize.y - 19) / 2;
-    menuStartPoint.x  = (consoleSize.x - 13) / 2;
+    menuStartPoint.x  = (consoleSize.x - 28) / 2;
     menuStartPoint.y  = snokeStartPoint.y + 6;
 
     for (int lineCounter = 0; lineCounter < 5; lineCounter++)
@@ -25,7 +25,7 @@ void MainScreen::draw()
         printw(snoke[lineCounter]);
     }
 
-    Menu menu(menuStartPoint.x, menuStartPoint.y, 13, 14);
+    Menu menu(menuStartPoint.x, menuStartPoint.y, 28, 14);
     menu.addButton("Profile");
     menu.addButton("Play");
     menu.addButton("Search");
