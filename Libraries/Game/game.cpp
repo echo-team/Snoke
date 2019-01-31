@@ -31,6 +31,10 @@ int Game::run(){
 
     Ball ball(dim);
     ball.generateBall(labyrinth);
+
+    Point* change[2];
+    change[0] = new Point [1];
+    change[1] = new Point [1];
     while ( !flag )
     {
 
@@ -57,12 +61,7 @@ int Game::run(){
 
     	}
         if (flag) break;
-        Point* change[2];
-        change[0] = new Point [1];
-        change[1] = new Point [1];
-    	if(snake.move(labyrinth, &ball, change)){
-            break;
-        }
+    	flag = snake.move(labyrinth, &ball, change);
         updateLabyrinth(change, 1);
     	clear();
         displayLabyrinth();
@@ -74,6 +73,7 @@ int Game::run(){
     	flushinp();
     	mSleep(speed);
     	refresh();
+        if (flag) break;
     }
 
     endwin();

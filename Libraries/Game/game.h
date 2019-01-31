@@ -7,6 +7,8 @@
 #include <thread>
 #include <random>
 
+extern Point dim;
+
 
 class Game
 {
@@ -18,13 +20,12 @@ private:
 	void updateLabyrinth(Point* update[2], int size);
 	void setSpeed(int sp);
 	void initSnake(Point start, int dir, int len);
+	void mSleep(int time);
 	Snake snake;
 	Snake* snakeEnemies;
-	Point dim;
 public:
 	bool init(int size = 20, int sp = 100);
 	int run();
-	void mSleep(int time);
 };
 
 #endif
