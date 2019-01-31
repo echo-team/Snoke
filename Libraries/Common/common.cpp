@@ -9,6 +9,18 @@ typedef struct
 } Point;
 
 /**
+ * Style of the cell in console window
+ * @prop {char}  letter - symbol in the cell
+ * @prop {short} fg     - foreground color of the cell
+ * @prop {short} bg     - beckground color of the cell
+ */
+typedef struct
+{
+	char letter;
+	short fg, bg;
+} PointStyle;
+
+/**
  * Gets size of current console screen in symdols
  */
 Point getConsoleSize()
