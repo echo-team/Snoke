@@ -13,6 +13,7 @@ int Game::run(){
     initscr();
 
     nodelay(stdscr, TRUE);
+    set_escdelay(0);
 
     Point screenSize;
     getmaxyx(stdscr, screenSize.y, screenSize.x);
@@ -37,7 +38,6 @@ int Game::run(){
 
     	switch (ch){
     		case ERR:
-    			snake.setDirection(0);
     			break;
     		case KEY_UP:
     			snake.setDirection(-2);
