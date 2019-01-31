@@ -1,3 +1,5 @@
+#include "../Interface/logo.h"
+
 /**
  * Main menu class
  */

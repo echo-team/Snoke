@@ -36,12 +36,11 @@ void Menu::unfocus(int index)
  */
 void Menu::draw()
 {
-    int xCounter = x + 2;
     int yCounter = y + 1;
 
     for (list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
     {
-        move(yCounter, xCounter + (width - strlen(currentButton->name)) / 2);
+        move(yCounter, x + (2 + width - strlen(currentButton->name)) / 2);
         printw(currentButton->name);
         yCounter += 2;
     }
