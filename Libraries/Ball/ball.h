@@ -2,6 +2,7 @@
 #define BALL_H
 #include "../Common/common.cpp"
 #include <random>
+#include <ctime>
 
 class Ball
 {

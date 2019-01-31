@@ -6,7 +6,7 @@ uint32_t seed_val;
 MyRNG rng;
 
 Ball::Ball(Point dim){
-	seed_val = 13;
+	seed_val = time(NULL);
     rng.seed(seed_val);
 	std::uniform_int_distribution<int> distribution1(0, dim.x - 1);
 	distributionX = distribution1;
