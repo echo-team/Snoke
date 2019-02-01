@@ -8,7 +8,8 @@ Point gameFieldSize;
  * @param {int} sp - speed of the game(1 / refresh rate) in milliseconds
  * @return {bool} mark of successful initialization
  */
-bool Game::init(int size, int sp){
+bool Game::init(int size, int sp)
+{
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
     setLabyrinth(gameFieldSize);
@@ -20,7 +21,8 @@ bool Game::init(int size, int sp){
  * @function Main game loop
  * @return {int} the exit code
  */
-int Game::run(){
+int Game::run()
+{
 
     initscr();
 
@@ -55,7 +57,8 @@ int Game::run(){
 
         int command = getch();
 
-        switch (command){
+        switch (command)
+        {
             case ERR:
                 break;
             case KEY_UP:
@@ -74,7 +77,8 @@ int Game::run(){
                 flag = true;
                 break;
         }
-        if (flag){
+        if (flag)
+        {
             break;
         }
         flag = snake.move(labyrinth, &ball, change);
@@ -82,7 +86,8 @@ int Game::run(){
         clear();
         displayLabyrinth();
         snake.getCoords(currBody);
-        for(auto it = currBody.begin(); it != currBody.end(); it++){
+        for(auto it = currBody.begin(); it != currBody.end(); it++)
+        {
             mvaddch(it->y, it->x, '*');
         }
         g = ball.getCoords();
@@ -90,7 +95,8 @@ int Game::run(){
         flushinp();
         mSleep(speed);
         refresh();
-        if (flag){
+        if (flag)
+        {
             break;
         }
     }
@@ -103,16 +109,20 @@ int Game::run(){
  * @function Set's the starting labyrinth
  * @param {Point} dimensions - dimensions of the game field
  */
-void Game::setLabyrinth(Point dimensions){
+void Game::setLabyrinth(Point dimensions)
+{
     labyrinth = new bool* [dimensions.x];
-    for(int i = 0; i < dimensions.x; i++){
+    for(int i = 0; i < dimensions.x; i++)
+    {
         labyrinth[i] = new bool [dimensions.y];
     }
-    for(int i = 0; i < dimensions.x; i++){
+    for(int i = 0; i < dimensions.x; i++)
+    {
         labyrinth[i][0] = 1;
         labyrinth[i][dimensions.y - 1] = 1;
     }
-    for(int i = 0; i < dimensions.y; i++){
+    for(int i = 0; i < dimensions.y; i++)
+    {
         labyrinth[0][i] = 1;
         labyrinth[dimensions.x - 1][i] = 1;
     }
@@ -125,12 +135,14 @@ void Game::setLabyrinth(Point dimensions){
  * @param {int}   length - the length of a 'new born' snake
  * @return {bool} - mark of whether the snake is successfully initialized
  */
-bool Game::initSnake(Point begin, int dir, int length){
+bool Game::initSnake(Point begin, int dir, int length)
+{
     bool q = snake.init(begin, dir, length);
     std::list<Point> currBody;
     snake.getCoords(currBody);
     if (q){
-        for(auto it = currBody.begin(); it != currBody.end(); it++){
+        for(auto it = currBody.begin(); it != currBody.end(); it++)
+        {
             labyrinth[(*it).x][(*it).y] = 1;
         }
     }
@@ -140,9 +152,12 @@ bool Game::initSnake(Point begin, int dir, int length){
 /**
  * @function Drawing labyrinth to the console
  */
-void Game::displayLabyrinth(){
-    for(int i = 0; i < gameFieldSize.x; i++){
-        for(int j = 0; j < gameFieldSize.y; j++){
+void Game::displayLabyrinth()
+{
+    for(int i = 0; i < gameFieldSize.x; i++)
+    {
+        for(int j = 0; j < gameFieldSize.y; j++)
+        {
             if(labyrinth[i][j]){
                 mvaddch(j, i, '*');
             }
@@ -157,14 +172,18 @@ void Game::displayLabyrinth(){
  *                 update[1] - an array containing Points to remove from the labyrinth
  * @param {int} size - the longest sequence for updating [max(len(update[0], update[1]))]
  */
-void Game::updateLabyrinth(Point* update[2],int size){
-    for(int i = 0; i < size; i++){
+void Game::updateLabyrinth(Point* update[2],int size)
+{
+    for(int i = 0; i < size; i++)
+    {
         Point p = update[0][i];
-        if(p.x >= 0 and p.y >= 0){
+        if(p.x >= 0 and p.y >= 0)
+        {
             labyrinth[p.x][p.y] = 1;
         }
         p = update[1][i];
-        if(p.x >= 0 and p.y >= 0){
+        if(p.x >= 0 and p.y >= 0)
+        {
             labyrinth[p.x][p.y] = 0;
         }
     }
@@ -174,6 +193,7 @@ void Game::updateLabyrinth(Point* update[2],int size){
  * @function The method to change the game speed without giving the direct access
  * @param {int} sp - speed of the game(1 / refresh rate) in milliseconds
  */
-void Game::setSpeed(int sp){
+void Game::setSpeed(int sp)
+{
     speed = sp;
 }

@@ -1,13 +1,15 @@
 #include <list>
 
 
-typedef struct{
+typedef struct
+{
     const char* name;
     const char* field;
 } SideButton;
 
 
-class SideMenu{
+class SideMenu
+{
 private:
     list<SideButton> buttons;
     

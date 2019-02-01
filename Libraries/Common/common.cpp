@@ -17,7 +17,8 @@ typedef struct {
 /**
  * @override Operation '<<' override for the Point type
  */
-inline std::ostream& operator << (std::ostream &s, Point p){
+inline std::ostream& operator << (std::ostream &s, Point p)
+{
     s << '(' << p.x << ',' << p.y << ')';
     return s;
 }
@@ -28,7 +29,8 @@ inline std::ostream& operator << (std::ostream &s, Point p){
  * @prop {short} fg     - foreground color of the cell
  * @prop {short} bg     - beckground color of the cell
  */
-typedef struct {
+typedef struct 
+{
     char letter;
     int fg, bg;
 } PointStyle;
@@ -38,7 +40,8 @@ typedef struct {
  * @function Cross-platform sleep function cover
  * @param {int} time - time the game will 'freeze' for in milliseconds
  */
-inline void mSleep(int time){
+inline void mSleep(int time)
+{
     std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
