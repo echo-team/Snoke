@@ -5,17 +5,17 @@
 
 
 typedef struct {
-	short x, y;
+    short x, y;
 } Point;
 
 inline std::ostream& operator << (std::ostream &s, Point p){
-	s << '(' << p.x << ',' << p.y << ')';
-	return s;
+    s << '(' << p.x << ',' << p.y << ')';
+    return s;
 }
 
 typedef struct {
-	char letter;
-	int fg, bg;
+    char letter;
+    int fg, bg;
 } PointStyle;
 
 #endif

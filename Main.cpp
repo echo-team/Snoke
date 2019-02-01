@@ -8,8 +8,8 @@ Point dim;
 
 int main()
 {
-	Game g;
-	g.init(40, 100);
-	g.run();
-	return 0;
+    Game g;
+    g.init(40, 100);
+    g.run();
+    return 0;
 }

@@ -38,41 +38,41 @@ int Game::run(){
     while ( !flag )
     {
 
-    	int ch = getch();
+        int ch = getch();
 
-    	switch (ch){
-    		case ERR:
-    			break;
-    		case KEY_UP:
-    			snake.setDirection(-2);
-    			break;
-    		case KEY_DOWN:
-    			snake.setDirection(2);
-    			break;
-    		case KEY_LEFT:
-    			snake.setDirection(-1);
-    			break;
-    		case KEY_RIGHT:
-    			snake.setDirection(1);
-    			break;
+        switch (ch){
+            case ERR:
+                break;
+            case KEY_UP:
+                snake.setDirection(-2);
+                break;
+            case KEY_DOWN:
+                snake.setDirection(2);
+                break;
+            case KEY_LEFT:
+                snake.setDirection(-1);
+                break;
+            case KEY_RIGHT:
+                snake.setDirection(1);
+                break;
             case 'q':
                 flag = true;
                 break;
 
-    	}
+        }
         if (flag) break;
-    	flag = snake.move(labyrinth, &ball, change);
+        flag = snake.move(labyrinth, &ball, change);
         updateLabyrinth(change, 1);
-    	clear();
+        clear();
         displayLabyrinth();
-    	for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
-    		mvaddch((*it).y, (*it).x, '*');
-    	}
+        for(auto it = snake.snakeBody.begin(); it != snake.snakeBody.end(); it++){
+            mvaddch((*it).y, (*it).x, '*');
+        }
         g = ball.getCoords();
         mvaddch(g.y, g.x, '*');
-    	flushinp();
-    	mSleep(speed);
-    	refresh();
+        flushinp();
+        mSleep(speed);
+        refresh();
         if (flag) break;
     }
 
@@ -81,18 +81,18 @@ int Game::run(){
 }
 
 void Game::mSleep(int time){
-	std::this_thread::sleep_for(std::chrono::milliseconds(time));
+    std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
 void Game::setLabyrinth(Point dim){
-	labyrinth = new bool* [dim.x];
-	for(int i = 0; i < dim.x; i++){
-		labyrinth[i] = new bool [dim.y];
-	}
-	for(int i = 0; i < dim.x; i++){
-		labyrinth[i][0] = 1;
-		labyrinth[i][dim.y - 1] = 1;
-	}
+    labyrinth = new bool* [dim.x];
+    for(int i = 0; i < dim.x; i++){
+        labyrinth[i] = new bool [dim.y];
+    }
+    for(int i = 0; i < dim.x; i++){
+        labyrinth[i][0] = 1;
+        labyrinth[i][dim.y - 1] = 1;
+    }
     for(int i = 0; i < dim.y; i++){
         labyrinth[0][i] = 1;
         labyrinth[dim.x - 1][i] = 1;
@@ -128,5 +128,5 @@ void Game::updateLabyrinth(Point* update[2],int size){
 }
 
 void Game::setSpeed(int sp){
-	speed = sp;
+    speed = sp;
 }

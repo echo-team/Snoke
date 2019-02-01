@@ -13,19 +13,19 @@ extern Point dim;
 class Game
 {
 private:
-	bool** labyrinth;
-	int speed;
-	void setLabyrinth(Point dim);
-	void displayLabyrinth();
-	void updateLabyrinth(Point* update[2], int size);
-	void setSpeed(int sp);
-	void initSnake(Point start, int dir, int len);
-	void mSleep(int time);
-	Snake snake;
-	Snake* snakeEnemies;
+    bool** labyrinth;
+    int speed;
+    void setLabyrinth(Point dim);
+    void displayLabyrinth();
+    void updateLabyrinth(Point* update[2], int size);
+    void setSpeed(int sp);
+    void initSnake(Point start, int dir, int len);
+    void mSleep(int time);
+    Snake snake;
+    Snake* snakeEnemies;
 public:
-	bool init(int size = 20, int sp = 100);
-	int run();
+    bool init(int size = 20, int sp = 100);
+    int run();
 };
 
 #endif

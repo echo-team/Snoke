@@ -2,14 +2,14 @@
 
 
 typedef struct{
-	const char* name;
-	const char* field;
+    const char* name;
+    const char* field;
 } SideButton;
 
 
 class SideMenu{
 private:
-	list<SideButton> buttons;
-	
+    list<SideButton> buttons;
+    
 
 };
