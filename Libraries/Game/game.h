@@ -3,29 +3,29 @@
 #include "../Snake/snake.h"
 #include <ncurses.h>
 #include <iostream>
-#include <chrono>
-#include <thread>
-#include <random>
 
-extern Point dim;
-
-
+/**
+ * Describes the main game class, which contains all in-game entities and describes the way of their communication
+ * @prop {bool**} labyrinth    - 2-dimensional array defying current state of every point of the game field (blocked or not)
+ * @prop {int}    speed        - value defying the speed of the game(1 / refresh rate) in milliseconds
+ * @prop {Snake}  snake        - the local_player controlled snake entity
+ * @prop {Snake*} snakeEnemies - pointer to an array of the enemy snake entities (presumably controlled over the Web)
+ */
 class Game
 {
-private:
-    bool** labyrinth;
-    int speed;
-    void setLabyrinth(Point dim);
-    void displayLabyrinth();
-    void updateLabyrinth(Point* update[2], int size);
-    void setSpeed(int sp);
-    void initSnake(Point start, int dir, int len);
-    void mSleep(int time);
-    Snake snake;
-    Snake* snakeEnemies;
-public:
-    bool init(int size = 20, int sp = 100);
-    int run();
+    private:
+        bool** labyrinth;
+        int speed;
+        Snake snake;
+        Snake* snakeEnemies;
+        void setLabyrinth(Point dimensions);
+        void displayLabyrinth();
+        void updateLabyrinth(Point* update[2], int size);
+        void setSpeed(int sp);
+        bool initSnake(Point begin, int dir, int length);
+    public:
+        bool init(int size = 20, int sp = 100);
+        int run();
 };
 
 #endif

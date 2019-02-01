@@ -4,8 +4,6 @@
 #include "Libraries/Game/game.h"
 
 
-Point dim;
-
 int main()
 {
     Game g;
