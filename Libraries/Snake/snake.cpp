@@ -11,6 +11,10 @@ bool Snake::init(Point begin, short dir, int length)
 {
     if (dir == MVLEFT or dir == MVRIGHT or dir == MVUP or dir == MVDOWN)
     {
+        /**
+         * Pointer to the variable we want to change, depending on the dir variable
+         * @type {short*}
+         */
         short* changable;
         if (dir == MVLEFT or dir == MVRIGHT)
         {
@@ -20,6 +24,11 @@ bool Snake::init(Point begin, short dir, int length)
         {
             changable = &begin.y;
         }
+
+        /**
+         * The amount we will change the changable variable, depending on the dir variable
+         * @type {short}
+         */
         short value;
         if (dir == MVRIGHT or dir == MVDOWN)
         {
@@ -230,7 +239,7 @@ Point Snake::getHeadCoords()
  * @function The method to get the snake whole body coordinates(x ,y) without giving the direct access
  * @param {list<Point>} currBody - an array where the current snake body is copied
  */
-void Snake::getCoords(std::list<Point> currBody)
+void Snake::getCoords(std::list<Point>* currBody)
 {
-    copy(currBody.begin(), currBody.end(), snakeBody.begin());
+    currBody->assign(snakeBody.begin(), snakeBody.end());
 }

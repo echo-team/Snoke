@@ -33,6 +33,9 @@
 #define MVLEFT -1
 #define MVUP -2
 
+/**
+ * @global {Point} gameFieldSize - a variable, which stores the dimensions of the game field
+ */
 extern Point gameFieldSize;
 /**
  * Describes the snake entity of the game
@@ -52,16 +55,10 @@ class Snake
     public:
         bool init(Point begin, short direction, int length);
         void setScheme();
-        void getCoords(std::list<Point> currBody);
+        void getCoords(std::list<Point>* currBody);
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
         bool move(bool** labyrinth, Ball* ball, Point* change[2]);
 };
 #endif
-
-
-/**
- * TODO
- * implement methods to change the snakeBody array, instead of giving the direct access
- */

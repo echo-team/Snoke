@@ -1,5 +1,8 @@
 #include "game.h"
 
+/**
+ * @global {Point} gameFieldSize - a variable, which stores the dimensions of the game field
+ */
 Point gameFieldSize;
 
 /**
@@ -85,7 +88,7 @@ int Game::run()
         updateLabyrinth(change, 1);
         clear();
         displayLabyrinth();
-        snake.getCoords(currBody);
+        snake.getCoords(&currBody);
         for(auto it = currBody.begin(); it != currBody.end(); it++)
         {
             mvaddch(it->y, it->x, '*');
@@ -139,11 +142,11 @@ bool Game::initSnake(Point begin, int dir, int length)
 {
     bool q = snake.init(begin, dir, length);
     std::list<Point> currBody;
-    snake.getCoords(currBody);
+    snake.getCoords(&currBody);
     if (q){
         for(auto it = currBody.begin(); it != currBody.end(); it++)
         {
-            labyrinth[(*it).x][(*it).y] = 1;
+            labyrinth[it->x][it->y] = 1;
         }
     }
     return q;
@@ -194,6 +197,7 @@ void Game::updateLabyrinth(Point* update[2],int size)
  * @param {int} sp - speed of the game(1 / refresh rate) in milliseconds
  */
 void Game::setSpeed(int sp)
+
 {
     speed = sp;
 }
