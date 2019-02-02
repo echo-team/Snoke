@@ -1,7 +1,7 @@
 #include "snake.h"
 
 /**
- * @function Initializes snake
+ * Initializes snake
  * @param {Point} begin  - starting Point of a snake(where the tail segment will be situated)
  * @param {short} dir    - direction of snake's 'growth' as well as it's starting direction
  * @param {int}   length - the length of a 'new born' snake
@@ -50,15 +50,15 @@ bool Snake::init(Point begin, short dir, int length)
 }
 
 /**
- * @function The snake movement on the game field(should be called in each iteration of the game cycle, unless the snake is 'dead')
+ * The snake movement on the game field(should be called in each iteration of the game cycle, unless the snake is 'dead')
  * @param {bool**} labyrinth -  2-dimensional array defying current state of every point of the game field (blocked or not)
  * @param {Ball*}  ball      - a pointer to a Ball object(to check intersection with)
  * @param {Point*} change    - 2-dimensional array of changes needed to be applied to the labyrinth
  *                 change[0] - an array containing Points to add to the labyrinth
  *                 change[1] - an array containing Points to remove from the labyrinth
- * @return {bool} mark of whether the was a non-boundary non-ball collision
+ * @return {short}           - mark of whether the was a non-boundary non-ball collision
  */
-bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
+short Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
 {
     Point p;
     p.x = snakeBody.front().x;
@@ -82,7 +82,7 @@ bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
     Point g;
     g.x = -1;
     g.y = -1;
-    change[1][0] = g;
+    change[1][1] = g;
     switch (checkIntersection(labyrinth, ball, change))
     {
         case WALLUP:
@@ -106,20 +106,22 @@ bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
             moveHead(p, change);
             break;
         case COLL:
-            return true;
+            return 1;
             break;
         case NOCOLL:
             break;
         case BALL:
+            change[1][0] = ball->getCoords();
             ball->generateBall(labyrinth);
+            change[0][0] = ball->getCoords();
             break;
     }
-    return false;
+    return 0;
     
 }
 
 /**
- * @function Moving snake head to a described by parameters position and updating the addition to the labyrinth
+ * Moving snake head to a described by parameters position and updating the addition to the labyrinth
  * @param {Point}  p         - the desired position of movement
  * @param {Point*} change    - 2-dimensional array of changes needed to be applied to the labyrinth
  *                 change[0] - an array containing Points to add to the labyrinth
@@ -127,12 +129,12 @@ bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
  */
 void Snake::moveHead(Point p, Point* change[2])
 {
-    change[0][0] = p;
+    change[0][1] = p;
     snakeBody.push_front(p);
 }
 
 /**
- * @function Checking the given point for intersections with Ball, game boundaries, labyrinth
+ * Checking the given point for intersections with Ball, game boundaries, labyrinth
  * @param {bool**} labyrinth -  2-dimensional array defying current state of every point of the game field (blocked or not)
  * @param {Ball*}  ball      - a pointer to a Ball object(to check intersection with)
  * @param {Point*} change    - 2-dimensional array of changes needed to be applied to the labyrinth
@@ -150,7 +152,7 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
         q.x = -1;
         q.y = -1;
     }
-    change[1][0] = q;
+    change[1][1] = q;
     
     if (labyrinth[hCoords.x][hCoords.y] == true)
     {
@@ -173,7 +175,7 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
 }
 
 /**
- * @function Check given by parameters point on Wall collision
+ * Check given by parameters point on Wall collision
  * @param {Point}  coords    - coordinates(x, y) of the segment
  * @param {bool**} labyrinth -  2-dimensional array defying current state of every point of the game field (blocked or not)
  * @return {short} a type of an intersection
@@ -200,22 +202,22 @@ short Snake::checkWall(Point coords, bool** labyrinth)
 }
 
 /**
- * @function The method to set the direction where the snake is heading
- * @param {int} dir - direction
+ * The method to set the direction where the snake is heading
+ * @param {int} newDirection - direction of the snake we are trying to set
  */
-void Snake::setDirection(int dir)
+void Snake::setDirection(int newDirection)
 {
-    if (dir != 0){
-        if (direction + dir == 0)
+    if (newDirection == MVRIGHT or newDirection == MVLEFT or newDirection == MVUP or newDirection == MVDOWN){
+        if (this->direction + newDirection == 0)
         {
             return;
         }
-        direction = dir;
+        this->direction = newDirection;
     }
 }
 
 /**
- * @function The method to get the current direction without giving the direct access
+ * The method to get the current direction without giving the direct access
  * @return {short}
  */
 short Snake::getDirection()
@@ -224,7 +226,7 @@ short Snake::getDirection()
 }
 
 /**
- * @function The method to get the coordinates(x, y) of the snake's head without giving the direct access
+ * The method to get the coordinates(x, y) of the snake's head without giving the direct access
  * @return {Point}
  */
 Point Snake::getHeadCoords()
@@ -236,7 +238,7 @@ Point Snake::getHeadCoords()
 }
 
 /**
- * @function The method to get the snake whole body coordinates(x ,y) without giving the direct access
+ * The method to get the snake whole body coordinates(x ,y) without giving the direct access
  * @param {list<Point>} currBody - an array where the current snake body is copied
  */
 void Snake::getCoords(std::list<Point>* currBody)

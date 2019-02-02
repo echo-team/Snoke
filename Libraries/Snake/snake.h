@@ -34,7 +34,9 @@
 #define MVUP -2
 
 /**
- * @global {Point} gameFieldSize - a variable, which stores the dimensions of the game field
+ * gameFieldSize - size of a game field(x, y)
+ * @type {Point} 
+ * @global
  */
 extern Point gameFieldSize;
 /**
@@ -59,6 +61,6 @@ class Snake
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
-        bool move(bool** labyrinth, Ball* ball, Point* change[2]);
+        short move(bool** labyrinth, Ball* ball, Point* change[2]);
 };
 #endif

@@ -1,8 +1,18 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include <iostream>
-#include <chrono>
-#include <thread>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+#ifdef _WIN64
+#include <windows.h>
+#endif
+
+#ifdef __unix__
+#include <unistd.h>
+#endif
 
 /**
  * Coordinates of the cell in console window
@@ -37,12 +47,21 @@ typedef struct
 
 
 /**
- * @function Cross-platform sleep function cover
+ * Cross-platform sleep function cover
  * @param {int} time - time the game will 'freeze' for in milliseconds
  */
 inline void mSleep(int time)
 {
-    std::this_thread::sleep_for(std::chrono::milliseconds(time));
+#ifdef _WIN32
+    Sleep(time);
+
+#elif defined(_WIN64)
+    Sleep(time);
+#endif
+
+#ifdef __unix__
+    usleep(time*1000);
+#endif
 }
 
 #endif

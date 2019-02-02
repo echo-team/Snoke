@@ -23,6 +23,7 @@ class Game
         void updateLabyrinth(Point* update[2], int size);
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);
+        bool initChange(Point** change, int size);
     public:
         bool init(int size = 20, int sp = 100);
         int run();
