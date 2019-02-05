@@ -1,7 +1,9 @@
 #include "game.h"
 
 /**
- * @global {Point} gameFieldSize - a variable, which stores the dimensions of the game field
+ * gameFieldSize - a variable, which stores the dimensions of the game field
+ * @type {Point} 
+ * @global
  */
 Point gameFieldSize;
 
@@ -17,6 +19,13 @@ bool Game::init(int size, int speed)
     gameFieldSize.y = size/2;
     setLabyrinth(gameFieldSize);
     setSpeed(speed);
+
+    /**
+     * Initializing the change array, containing Points to be changed in the labyrinth
+     */
+    this->changeSize = 2;
+    this->change[0] = new Point [changeSize];
+    this->change[1] = new Point [changeSize];
     return true;
 }
 
@@ -26,50 +35,51 @@ bool Game::init(int size, int speed)
  */
 int Game::run()
 {
-
+    /**
+     * Block initializing ncurses console in the current console window,
+     * and setting some parameters
+     */
     initscr();
-
     noecho();
     nodelay(stdscr, TRUE);
     set_escdelay(0);
+    curs_set(0);
+    keypad(stdscr, true);
 
+    /**
+     * Retrieving the size of the screen(console)
+     */
     Point screenSize;
     getmaxyx(stdscr, screenSize.y, screenSize.x);
 
+    /**
+     * Initializing snake by giving it the starting position, 
+     * direction of growth and starting length
+     */
     Point p;
     p.x = 1;
     p.y = 1;
     int dir = 1, len = 5;
     initSnake(p, dir, len);
 
-    curs_set(0);
-    keypad(stdscr, true); 
-    bool flag = false;
+    /**
+     * displaying the starting state of labyrinth
+     */
+    displayLabyrinth();
 
+    /**
+     * Initializing the Ball and generating it on the field
+     */
     Ball ball;
     ball.init(gameFieldSize);
     ball.generateBall(labyrinth);
-
-    int changeSize = 2;
-    Point* change[changeSize];
-    change[0] = new Point [changeSize];
-    change[1] = new Point [changeSize];
-    initChange(change, changeSize);
-
-    std::list<Point> currBody;
-    displayLabyrinth();
-    snake.getCoords(&currBody);
-    for(auto it = currBody.begin(); it != currBody.end(); it++)
-        {
-            mvaddch(it->y, it->x, '*');
-        }
     Point bCrd = ball.getCoords();
     mvaddch(bCrd.y, bCrd.x, '*');
+
+    bool flag = false;
     while (!flag)
     {
-
         int command = getch();
-
         switch (command)
         {
             case ERR:
@@ -95,16 +105,24 @@ int Game::run()
             break;
         }
         initChange(change, changeSize);
+
+        /**
+         * Setting the flag for the next iteration check
+         * Moving the snake and getting the Points of a 
+         * labyrinth which are to be changed in change array
+         */
         flag = snake.move(labyrinth, &ball, change) == 1;
+
+        /**
+         * Updating labyrinth with change array Points
+         * and displaying/deleting added/removed Points
+         */
         updateLabyrinth(change, changeSize);
-        for(int i = 0; i < changeSize; i++)
-        {
-            mvaddch(change[1][i].y, change[1][i].x, ' ');
-            mvaddch(change[0][i].y, change[0][i].x, '*');
-        }
+        displayUpdated();
+
+        refresh();
         flushinp();
         mSleep(speed);
-        refresh();
     }
 
     endwin();
@@ -112,7 +130,7 @@ int Game::run()
 }
 
 /**
- * Set's the starting labyrinth
+ * Set's the starting labyrinth by setting the borders
  * @param {Point} gameFieldSize - dimensions(x, y) of the game field
  */
 void Game::setLabyrinth(Point gameFieldSize)
@@ -136,25 +154,33 @@ void Game::setLabyrinth(Point gameFieldSize)
 
 /**
  * Snake initialization with labyrinth updating
- * @param {Point} begin  - starting Point of a snake(where the tail segment will be situated)
- * @param {short} dir    - direction of snake's 'growth' as well as it's starting direction
- * @param {int}   length - the length of a 'new born' snake
- * @return {bool}        - mark of whether the snake is successfully initialized
+ * @param  {Point} begin  - starting Point of a snake(where the tail segment will be situated)
+ * @param  {short} dir    - direction of snake's 'growth' as well as it's starting direction
+ * @param  {int}   length - the length of a 'new born' snake
+ * @return {bool}         - mark of whether the snake is successfully initialized
  */
 bool Game::initSnake(Point begin, int dir, int length)
 {
-    bool q = snake.init(begin, dir, length);
+    bool flag = snake.init(begin, dir, length);
     std::list<Point> currBody;
     snake.getCoords(&currBody);
-    if (q){
+    if (flag){
         for(auto it = currBody.begin(); it != currBody.end(); it++)
         {
             labyrinth[it->x][it->y] = 1;
         }
     }
-    return q;
+    return flag;
 }
 
+/**
+ * Initialization of the change array
+ *
+ * @param  {Point**} change - The pointer to an array
+ * @param  {int}     size   - The size of array(max number 
+ *                             of elements it can contain)
+ * @return {bool}
+ */
 bool Game::initChange(Point** change, int size)
 {
     for(int i = 0; i < size; i++)
@@ -184,11 +210,23 @@ void Game::displayLabyrinth()
 }
 
 /**
+ * displaying the changed Points
+ */
+void Game::displayUpdated()
+{
+    for(int i = 0; i < changeSize; i++)
+    {
+        mvaddch(change[1][i].y, change[1][i].x, ' ');
+        mvaddch(change[0][i].y, change[0][i].x, '*');
+    }
+}
+
+/**
  * Updating the labyrinth(changing the values of some Points)
  * @param {Point*} update    - 2-dimensional array of changes needed to be applied to the labyrinth
  *                 update[0] - an array containing Points to add to the labyrinth
  *                 update[1] - an array containing Points to remove from the labyrinth
- * @param {int} size - the longest sequence for updating [max(len(update[0], update[1]))]
+ * @param {int}    size      - the longest sequence for updating [max(len(update[0], update[1]))]
  */
 void Game::updateLabyrinth(Point* update[2], int size)
 {

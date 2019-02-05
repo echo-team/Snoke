@@ -39,6 +39,7 @@
  * @global
  */
 extern Point gameFieldSize;
+
 /**
  * Describes the snake entity of the game
  * @prop {short}            direction - current direction where the snake is heading;
@@ -61,6 +62,6 @@ class Snake
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
-        short move(bool** labyrinth, Ball* ball, Point* change[2]);
+        bool move(bool** labyrinth, Ball* ball, Point* change[2]);
 };
 #endif
