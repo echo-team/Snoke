@@ -9,7 +9,7 @@
  * Describes the Ball entity of the game
  * @prop {Point}                         position      - a Coordinates(x, y) of a Ball in the Console window
  * @prop {mt19937}                       rng           - the variable, responible for the 'random' during the game
- * @prop {uint32_t}                      seed_val      - values 'feeded' to the 'random' generator
+ * @prop {uint32_t}                      seed_val      - value 'feeded' to the 'random' generator
  * @prop {uniform_int_distribution<int>} distributionX - an equally likely int distribution for x coordinate of a Ball
  * @prop {uniform_int_distribution<int>} distributionY - an equally likely int distribution for y coordinate of a Ball
  */
@@ -23,7 +23,7 @@ class Ball
         std::uniform_int_distribution<int> distributionY;
     public:
         bool init(Point dim);
-        bool generateBall(bool** labyrinth);
+        bool generateBall(bool** labyrinth, Point* change[2], int changeSize);
         Point getCoords();
 };
 #endif

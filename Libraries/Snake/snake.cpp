@@ -59,7 +59,7 @@ bool Snake::init(Point begin, short dir, int length)
  *                  change[1] - an array containing Points to remove from the labyrinth
  * @return {bool}             - mark of whether there was a non-boundary non-ball collision
  */
-bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
+bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2], int changeSize)
 {
     Point p;
     p.x = snakeBody.front().x;
@@ -114,7 +114,7 @@ bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2])
             break;
         case BALL:
             change[1][0] = ball->getCoords();
-            ball->generateBall(labyrinth);
+            ball->generateBall(labyrinth, change, changeSize);
             change[0][0] = ball->getCoords();
             break;
     }

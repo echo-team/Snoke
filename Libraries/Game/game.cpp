@@ -1,7 +1,7 @@
 #include "game.h"
 
 /**
- * gameFieldSize - a variable, which stores the dimensions of the game field
+ * gameFieldSize - a variable, which stores the dimensions of the game field(shared with snakes)
  * @type {Point} 
  * @global
  */
@@ -9,9 +9,9 @@ Point gameFieldSize;
 
 /**
  * Initializes game
- * @param {int} size - size of the game field(on the edges the boundaries of the game are situated)
- * @param {int} speed - speed of the game(1 / refresh rate) in milliseconds
- * @return {bool} mark of successful initialization
+ * @param  {int} size  - size of the game field(on the edges the boundaries of the game are situated)
+ * @param  {int} speed - speed of the game(1 / refresh rate) in milliseconds
+ * @return {bool}      - mark of successful initialization
  */
 bool Game::init(int size, int speed)
 {
@@ -72,7 +72,7 @@ int Game::run()
      */
     Ball ball;
     ball.init(gameFieldSize);
-    ball.generateBall(labyrinth);
+    ball.generateBall(labyrinth, change, changeSize);
     Point bCrd = ball.getCoords();
     mvaddch(bCrd.y, bCrd.x, '*');
 
@@ -111,7 +111,7 @@ int Game::run()
          * Moving the snake and getting the Points of a 
          * labyrinth which are to be changed in change array
          */
-        flag = snake.move(labyrinth, &ball, change) == 1;
+        flag = snake.move(labyrinth, &ball, change, changeSize) == 1;
 
         /**
          * Updating labyrinth with change array Points
@@ -177,8 +177,7 @@ bool Game::initSnake(Point begin, int dir, int length)
  * Initialization of the change array
  *
  * @param  {Point**} change - The pointer to an array
- * @param  {int}     size   - The size of array(max number 
- *                             of elements it can contain)
+ * @param  {int}     size   - The size of array(max number of elements it can contain)
  * @return {bool}
  */
 bool Game::initChange(Point** change, int size)
@@ -195,6 +194,8 @@ bool Game::initChange(Point** change, int size)
 
 /**
  * Drawing labyrinth to the console
+ * (Should only be used at the start as it is rewriting all the points it includes
+ * and not the updated)
  */
 void Game::displayLabyrinth()
 {

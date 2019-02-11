@@ -16,8 +16,8 @@
 
 /**
  * Coordinates of the cell in console window
- * @property   {short}  x       - x coordinate in console window
- * @property   {short}  y       - y coordinate in console window
+ * @prop {short} x - x coordinate in console window
+ * @prop {short} y - y coordinate in console window
  */
 typedef struct {
     short x, y;
@@ -25,12 +25,29 @@ typedef struct {
 
 
 /**
- * @override Operation '<<' override for the Point type
+ * Operation '<<' override for the Point type
+ * @param  {std::ostream&} s - current ostream variable
+ * @param  {Point}         p - 
+ * @return {std::ostream&}
+ * @override
  */
 inline std::ostream& operator << (std::ostream &s, Point p)
 {
     s << '(' << p.x << ',' << p.y << ')';
     return s;
+}
+
+
+/**
+ * Comparison of Points
+ * @param  {Point} p1 - first Point
+ * @param  {Point} p2 - second Point
+ * @return {Point}
+ * @override
+ */
+inline bool operator == (Point p1, Point p2)
+{
+    return (p1.x == p2.x and p1.y == p2.y);
 }
 
 /**
@@ -62,6 +79,43 @@ inline void mSleep(int time)
 #ifdef __unix__
     usleep(time*1000);
 #endif
+}
+
+/**
+ * Check if Points is in the addition queue
+ * @param  {Point}     p       - point to check
+ * @param  {Point*[2]} change  - array of changed Points
+ * @return {bool}
+ */
+inline bool inAddChange(Point p, Point* change[2], int changeSize)
+{
+    for (int i = 0; i < changeSize; i++)
+    {
+        if(change[0][i] == p)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * Check if the Point is in the removal queue
+ *
+ * @param  {Point}     p       - point to check
+ * @param  {Point*[2]} change  - array of changed Points
+ * @return {bool}
+ */
+inline bool inRemChange(Point p, Point* change[2], int changeSize)
+{
+    for (int i = 0; i < changeSize; i++)
+    {
+        if(change[1][i] == p)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 #endif

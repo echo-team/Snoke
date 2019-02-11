@@ -62,6 +62,6 @@ class Snake
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
-        bool move(bool** labyrinth, Ball* ball, Point* change[2]);
+        bool move(bool** labyrinth, Ball* ball, Point* change[2], int changeSize);
 };
 #endif
