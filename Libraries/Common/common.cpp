@@ -22,6 +22,7 @@ typedef struct
 
 /**
  * Gets size of current console screen in symdols
+ * @return {Point} size
  */
 Point getConsoleSize()
 {

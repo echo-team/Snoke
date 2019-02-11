@@ -1,5 +1,5 @@
 /**
- * EAdds button to the menu
+ * Adds button to the menu
  * @param {const char*} name - text drawn at the button
  */
 void Menu::addButton(const char* name)
@@ -38,7 +38,7 @@ void Menu::draw()
 {
     int yCounter = y + 1;
 
-    for (list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
+    for (std::list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
     {
         move(yCounter, x + (2 + width - strlen(currentButton->name)) / 2);
         printw(currentButton->name);

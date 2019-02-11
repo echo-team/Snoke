@@ -9,11 +9,12 @@ void Navigator::pushUnit(Widget* unit, int subunitsAmount)
 }
 
 /**
- * Starts main loop of application to ctch selections and activate events done by user
+ * Starts main loop of application to catch selections and activate events done by user
  */
 void Navigator::listen()
 {
     curs_set(0);
+    keypad(stdscr, true);
     noecho();
     currentUnit = units.begin();
     currentSubunit = 0;
@@ -27,7 +28,7 @@ void Navigator::listen()
         {
             switch(command)
             {
-                case (119):
+                case (KEY_UP):
 
                     currentUnit->widget->unfocus(currentSubunit);
                     if (currentSubunit > 0)
@@ -42,7 +43,7 @@ void Navigator::listen()
                     currentUnit->widget->focus(currentSubunit);
                     break;
 
-                case (115):
+                case (KEY_DOWN):
 
                     currentUnit->widget->unfocus(currentSubunit);
                     if (currentSubunit < currentUnit->subunitsAmount - 1)

@@ -1,8 +1,6 @@
 #include <cstring>
 #include <list>
 
-using namespace std;
-
 /**
  * Describes menu button
  * @prop {const char*} name - text drawn at the button
@@ -23,7 +21,7 @@ typedef struct
 class Menu : public Widget
 {
     private:
-        list<MenuButton> buttons;
+        std::list<MenuButton> buttons;
         int x, y, width, height;
 
     public:
