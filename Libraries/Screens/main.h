@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include "../Interface/logo.h"
 
 /**
@@ -9,4 +11,4 @@ class MainScreen
         void draw();
 };
 
-#include "main.cpp"
+#endif

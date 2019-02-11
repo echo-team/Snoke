@@ -1,3 +1,5 @@
+#include "navigator.h"
+
 /**
  * Adds selectable widget to the end of selectable widgets queue
  * @param {Widget*} unit           - seleclable widget

@@ -1,3 +1,5 @@
+#include "main.cpp"
+
 /**
  * Draws main menu
  */

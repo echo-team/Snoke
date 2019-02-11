@@ -1,3 +1,5 @@
+#include "menu.h"
+
 /**
  * Adds button to the menu
  * @param {const char*} name - text drawn at the button

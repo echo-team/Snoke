@@ -1,3 +1,5 @@
+#include "interface.cpp"
+
 /**
  * Event listener activated by Navigator module when user selects widget
  * @virtual

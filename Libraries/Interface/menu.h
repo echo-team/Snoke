@@ -1,3 +1,5 @@
+#ifndef MENU_H
+#define MENU_H
 #include <cstring>
 #include <list>
 
@@ -32,4 +34,4 @@ class Menu : public Widget
         Menu(int x, int y, int width, int height);
 };
 
-#include "menu.cpp"
+#endif

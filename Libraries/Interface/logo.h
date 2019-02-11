@@ -1,3 +1,5 @@
+#ifndef LOGO_H
+#define LOGO_H
 #include <cstring>
 #include <vector>
 
@@ -25,4 +27,4 @@ class Logo
         Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language);
 };
 
-#include "logo.cpp"
+#endif

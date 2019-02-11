@@ -1,3 +1,6 @@
+#ifndef NAVIGATOR_H
+#define NAVIGATOR_H
+
 /**
  * Describes selectable/interactive widget or the group of widgets
  * @prop {Widget*} widget         - selectable widget class
@@ -28,4 +31,4 @@ class Navigator
         Navigator();
 };
 
-#include "navigator.cpp"
+#endif

@@ -1,3 +1,5 @@
+#include "logo.cpp"
+
 /**
  * Sets coordinates of logo
  * @param {int} left - x coordinate of left logo side
