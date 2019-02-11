@@ -1,28 +1,4 @@
-#ifndef COMMON_H
-#define COMMON_H
-#include <iostream>
-
-#ifdef _WIN32
-#include <windows.h>
-#endif
-
-#ifdef _WIN64
-#include <windows.h>
-#endif
-
-#ifdef __unix__
-#include <unistd.h>
-#endif
-
-/**
- * Coordinates of the cell in console window
- * @prop {short} x - x coordinate in console window
- * @prop {short} y - y coordinate in console window
- */
-typedef struct {
-    short x, y;
-} Point;
-
+#include "common.h"
 
 /**
  * Operation '<<' override for the Point type
@@ -31,43 +7,29 @@ typedef struct {
  * @return {std::ostream&}
  * @override
  */
-inline std::ostream& operator << (std::ostream &s, Point p)
+std::ostream& operator << (std::ostream &s, Point p)
 {
     s << '(' << p.x << ',' << p.y << ')';
     return s;
 }
 
-
 /**
- * Comparison of Points
- * @param  {Point} p1 - first Point
- * @param  {Point} p2 - second Point
- * @return {Point}
+ * Operation '<<' override for the Point type
+ * @param  {std::ostream&} s - current ostream variable
+ * @param  {Point}         p - 
+ * @return {std::ostream&}
  * @override
  */
-inline bool operator == (Point p1, Point p2)
+bool operator == (Point p1, Point p2)
 {
     return (p1.x == p2.x and p1.y == p2.y);
 }
 
 /**
- * Style of the cell in console window
- * @prop {char}  letter - symbol in the cell
- * @prop {short} fg     - foreground color of the cell
- * @prop {short} bg     - beckground color of the cell
- */
-typedef struct 
-{
-    char letter;
-    int fg, bg;
-} PointStyle;
-
-
-/**
  * Cross-platform sleep function cover
  * @param {int} time - time the game will 'freeze' for in milliseconds
  */
-inline void mSleep(int time)
+void mSleep(int time)
 {
 #ifdef _WIN32
     Sleep(time);
@@ -87,7 +49,7 @@ inline void mSleep(int time)
  * @param  {Point*[2]} change  - array of changed Points
  * @return {bool}
  */
-inline bool inAddChange(Point p, Point* change[2], int changeSize)
+bool inAddChange(Point p, Point* change[2], int changeSize)
 {
     for (int i = 0; i < changeSize; i++)
     {
@@ -106,7 +68,7 @@ inline bool inAddChange(Point p, Point* change[2], int changeSize)
  * @param  {Point*[2]} change  - array of changed Points
  * @return {bool}
  */
-inline bool inRemChange(Point p, Point* change[2], int changeSize)
+bool inRemChange(Point p, Point* change[2], int changeSize)
 {
     for (int i = 0; i < changeSize; i++)
     {
@@ -117,5 +79,3 @@ inline bool inRemChange(Point p, Point* change[2], int changeSize)
     }
     return false;
 }
-
-#endif

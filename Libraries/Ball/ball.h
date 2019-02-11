@@ -1,6 +1,6 @@
 #ifndef BALL_H
 #define BALL_H
-#include "../Common/common.cpp"
+#include "../Common/common.h"
 #include <random>
 #include <ctime>
 

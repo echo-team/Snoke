@@ -1,5 +1,5 @@
 #include <ncurses.h>
-#include "Libraries/Common/common.cpp"
+#include "Libraries/Common/common.h"
 #include "Libraries/Snake/snake.h"
 #include "Libraries/Game/game.h"
 

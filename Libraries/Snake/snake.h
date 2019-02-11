@@ -2,7 +2,7 @@
 #define SNAKE_H
 #include <list>
 #include <deque>
-#include "../Common/common.cpp"
+#include "../Common/common.h"
 #include "../Ball/ball.h"
 
 /**
