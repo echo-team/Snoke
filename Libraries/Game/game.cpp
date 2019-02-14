@@ -36,19 +36,6 @@ bool Game::init(int size, int speed)
 int Game::run()
 {
     /**
-     * Block initializing ncurses console in the current console window,
-     * and setting some parameters
-     */
-    initscr();
-    noecho();
-    nodelay(stdscr, TRUE);
-    #ifdef __unix__
-    set_escdelay(0);
-    #endif
-    curs_set(0);
-    keypad(stdscr, true);
-
-    /**
      * Retrieving the size of the screen(console)
      */
     Point screenSize;
@@ -126,8 +113,6 @@ int Game::run()
         flushinp();
         mSleep(speed);
     }
-
-    endwin();
     return 0;
 }
 
