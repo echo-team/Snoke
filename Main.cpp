@@ -7,7 +7,7 @@
 int main()
 {
     Game g;
-    g.init(48, 100);
+    g.init(48, 150);
     g.run();
     return 0;
 }

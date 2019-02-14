@@ -42,7 +42,9 @@ int Game::run()
     initscr();
     noecho();
     nodelay(stdscr, TRUE);
+    #ifdef __unix__
     set_escdelay(0);
+    #endif
     curs_set(0);
     keypad(stdscr, true);
 
@@ -139,16 +141,20 @@ void Game::setLabyrinth(Point gameFieldSize)
     for(int i = 0; i < gameFieldSize.x; i++)
     {
         labyrinth[i] = new bool [gameFieldSize.y];
+        for(int j = 0; j < gameFieldSize.y; j++)
+        {
+            labyrinth[i][j] = false;
+        }
     }
     for(int i = 0; i < gameFieldSize.x; i++)
     {
-        labyrinth[i][0] = 1;
-        labyrinth[i][gameFieldSize.y - 1] = 1;
+        labyrinth[i][0] = true;
+        labyrinth[i][gameFieldSize.y - 1] = true;
     }
     for(int i = 0; i < gameFieldSize.y; i++)
     {
-        labyrinth[0][i] = 1;
-        labyrinth[gameFieldSize.x - 1][i] = 1;
+        labyrinth[0][i] = true;
+        labyrinth[gameFieldSize.x - 1][i] = true;
     }
 }
 

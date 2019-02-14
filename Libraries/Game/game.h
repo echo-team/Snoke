@@ -3,6 +3,7 @@
 #include "../Snake/snake.h"
 #include <ncurses.h>
 #include <iostream>
+#include <cstring>
 
 /**
  * @class Main game class
