@@ -3,7 +3,7 @@
 /**
  * Operation '<<' override for the Point type
  * @param  {std::ostream&} s - current ostream variable
- * @param  {Point}         p - 
+ * @param  {Point}         p - a Point to print
  * @return {std::ostream&}
  * @override
  */
@@ -14,11 +14,10 @@ std::ostream& operator << (std::ostream &s, Point p)
 }
 
 /**
- * Operation '<<' override for the Point type
- * @param  {std::ostream&} s - current ostream variable
- * @param  {Point}         p - 
- * @return {std::ostream&}
- * @override
+ * Operation "==" override for the Point type
+ * @param  {Point} p1 - The first Point
+ * @param  {Point} p2 - The second Point
+ * @return {bool}
  */
 bool operator == (Point p1, Point p2)
 {
@@ -45,8 +44,10 @@ void mSleep(int time)
 
 /**
  * Check if Points is in the addition queue
- * @param  {Point}     p       - point to check
- * @param  {Point*[2]} change  - array of changed Points
+ *
+ * @param  {Point}     p          - point to check
+ * @param  {Point*[2]} change     - array of changed Points
+ * @param  {int}       changeSize - size of the change array
  * @return {bool}
  */
 bool inAddChange(Point p, Point* change[2], int changeSize)
@@ -62,10 +63,11 @@ bool inAddChange(Point p, Point* change[2], int changeSize)
 }
 
 /**
- * Check if the Point is in the removal queue
+ * Check if the Point is in the remove queue
  *
- * @param  {Point}     p       - point to check
- * @param  {Point*[2]} change  - array of changed Points
+ * @param  {Point}     p          - point to check
+ * @param  {Point*[2]} change     - array of changed Points
+ * @param  {int}       changeSize - size of the change array
  * @return {bool}
  */
 bool inRemChange(Point p, Point* change[2], int changeSize)
