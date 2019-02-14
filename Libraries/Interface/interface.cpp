@@ -1,4 +1,4 @@
-#include "interface.cpp"
+#include "interface.h"
 
 /**
  * Event listener activated by Navigator module when user selects widget

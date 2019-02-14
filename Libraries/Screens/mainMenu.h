@@ -5,7 +5,7 @@
 /**
  * Main menu class
  */
-class MainScreen
+class MainMenu
 {
     public:
         void draw();

@@ -1,4 +1,4 @@
-#include "logo.cpp"
+#include "logo.h"
 
 /**
  * Sets coordinates of logo

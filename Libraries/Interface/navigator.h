@@ -1,5 +1,6 @@
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
+#include <list>
 
 /**
  * Describes selectable/interactive widget or the group of widgets
@@ -21,8 +22,8 @@ typedef struct
 class Navigator
 {
     private:
-        list<NavigateUnit> units;
-        list<NavigateUnit>::iterator currentUnit;
+        std::list<NavigateUnit> units;
+        std::list<NavigateUnit>::iterator currentUnit;
         int currentSubunit;
 
     public:
