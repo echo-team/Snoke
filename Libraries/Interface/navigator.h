@@ -1,6 +1,8 @@
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
+#include <ncurses.h>
 #include <list>
+#include "interface.h"
 
 /**
  * Describes selectable/interactive widget or the group of widgets

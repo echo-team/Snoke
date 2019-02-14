@@ -1,7 +1,9 @@
 #ifndef MENU_H
 #define MENU_H
+#include <ncurses.h>
 #include <cstring>
 #include <list>
+#include "interface.h"
 
 /**
  * Describes menu button

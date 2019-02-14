@@ -1,7 +1,9 @@
 #ifndef LOGO_H
 #define LOGO_H
+#include <ncurses.h>
 #include <cstring>
 #include <vector>
+#include "../Common/common.h"
 
 /**
  * Class of the giant snoke logo
