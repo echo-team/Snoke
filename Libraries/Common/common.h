@@ -36,13 +36,9 @@ typedef struct
 } PointStyle;
 
 std::ostream& operator << (std::ostream &s, Point p);
-
 bool operator == (Point p1, Point p2);
-
 void mSleep(int time);
-
 bool inAddChange(Point p, Point* change[2], int changeSize);
-
 bool inRemChange(Point p, Point* change[2], int changeSize);
 
 #endif
