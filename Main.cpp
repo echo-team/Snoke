@@ -1,17 +1,15 @@
 #include <ncurses.h>
-#include "Libraries/Common/common.h"
-#include "Libraries/Snake/snake.h"
-#include "Libraries/Game/game.h"
-
+#include "Libraries/Screens/mainMenu.h"
 
 int main()
 {
     initscr();
+    start_color();
 
-    Game g;
-    g.init(48, 150);
-    g.run();
+    MainMenu main;
+    main.draw();
 
+    refresh();
     endwin();
     return 0;
 }

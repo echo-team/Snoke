@@ -1,6 +1,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include <iostream>
+#include <ncurses.h>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -40,5 +41,6 @@ bool operator == (Point p1, Point p2);
 void mSleep(int time);
 bool inAddChange(Point p, Point* change[2], int changeSize);
 bool inRemChange(Point p, Point* change[2], int changeSize);
+Point getConsoleSize();
 
 #endif
