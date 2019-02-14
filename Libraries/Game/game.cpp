@@ -175,7 +175,6 @@ bool Game::initSnake(Point begin, int dir, int length)
 
 /**
  * Initialization of the change array
- *
  * @param  {Point**} change - The pointer to an array
  * @param  {int}     size   - The size of array(max number of elements it can contain)
  * @return {bool}

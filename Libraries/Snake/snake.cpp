@@ -137,7 +137,7 @@ void Snake::moveHead(Point p, Point* change[2])
 
 /**
  * Checking the given point for intersections with Ball, game boundaries, labyrinth
- * @param  {bool**} labyrinth -  2-dimensional array defying current state of every point of the game field (blocked or not)
+ * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
  * @param  {Ball*}  ball      - a pointer to a Ball object(to check intersection with)
  * @param  {Point*} change    - 2-dimensional array of changes needed to be applied to the labyrinth
  *                  change[0] - an array containing Points to add to the labyrinth
@@ -188,8 +188,8 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
 /**
  * Check given by parameters point on Wall collision
  * @param  {Point}  coords    - coordinates(x, y) of the segment
- * @param  {bool**} labyrinth -  2-dimensional array defying current state of every point of the game field (blocked or not)
- * @return {short}           - a type of an intersection
+ * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
+ * @return {short}            - a type of an intersection
  */
 short Snake::checkWall(Point coords, bool** labyrinth)
 {
