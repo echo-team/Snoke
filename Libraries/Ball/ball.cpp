@@ -18,7 +18,7 @@ bool Ball::init(Point fieldSize)
  * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
  * @return {bool}             - mark of whether the ball was successfully generated
  */
-bool Ball::generateBall(bool** labyrinth, Point* change[2], int changeSize)
+bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
 {
     Point p;
     /**
@@ -28,7 +28,7 @@ bool Ball::generateBall(bool** labyrinth, Point* change[2], int changeSize)
     {
         p.x = distributionX(rng);
         p.y = distributionY(rng);
-        if ((labyrinth[p.x][p.y] == false or inRemChange(p, change, changeSize)) and !inAddChange(p, change, changeSize))
+        if ((labyrinth.isFree(p) or inRemChange(p, change, changeSize)) and !inAddChange(p, change, changeSize))
         {
             break;
         }

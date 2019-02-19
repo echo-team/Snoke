@@ -45,9 +45,9 @@ bool Snake::init(Point begin, short dir, int length)
             *changable += value;
         }
         direction = dir;
-        return true;
+        return false;
     }
-    return false;
+    return true;
 }
 
 /**
@@ -59,7 +59,7 @@ bool Snake::init(Point begin, short dir, int length)
  *                  change[1] - an array containing Points to remove from the labyrinth
  * @return {bool}             - mark of whether there was a non-boundary non-ball collision
  */
-bool Snake::move(bool** labyrinth, Ball* ball, Point* change[2], int changeSize)
+bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSize)
 {
     Point p;
     p.x = snakeBody.front().x;
@@ -144,7 +144,7 @@ void Snake::moveHead(Point p, Point* change[2])
  *                  change[1] - an array containing Points to remove from the labyrinth
  * @return {short}            - a type of an intersection
  */
-short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
+short Snake::checkIntersection(Labyrinth labyrinth, Ball* ball, Point* change[2])
 {
     Point hCoords = snakeBody.front();
     Point ballCoords = ball->getCoords();
@@ -154,7 +154,7 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
      * If there was a Wall collision with the back of a snake
      * we do not need to remove a Point from the labyrinth
      */
-    if (checkWall(bCoords, labyrinth) != COLL)
+    if (checkWall(bCoords) != COLL)
     {
         bCoords.x = -1;
         bCoords.y = -1;
@@ -162,10 +162,10 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
     change[1][1] = bCoords;
     
 
-    if (labyrinth[hCoords.x][hCoords.y] == true)
+    if (!labyrinth.isFree(hCoords))
     {
         snakeBody.pop_back();
-        return checkWall(hCoords, labyrinth);
+        return checkWall(hCoords);
     }
     else
     {
@@ -191,7 +191,7 @@ short Snake::checkIntersection(bool** labyrinth, Ball* ball, Point* change[2])
  * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
  * @return {short}            - a type of an intersection
  */
-short Snake::checkWall(Point coords, bool** labyrinth)
+short Snake::checkWall(Point coords)
 {
     if (coords.x == gameFieldSize.x - 1)
     {

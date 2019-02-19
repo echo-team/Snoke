@@ -1,9 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
 #include "../Snake/snake.h"
+#include "../Labyrinth/labyrinth.h"
 #include <ncurses.h>
 #include <iostream>
-#include <cstring>
+#include <string>
 
 /**
  * @class Main game class
@@ -17,16 +18,12 @@
 class Game
 {
     private:
-        bool** labyrinth;
         int speed;
         int changeSize;
         Snake snake;
         Snake* snakeEnemies;
+        Labyrinth labyrinth;
         Point* change[2];
-        void setLabyrinth(Point dimensions);
-        void displayLabyrinth();
-        void displayUpdated();
-        void updateLabyrinth(Point* update[2], int size);
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);
         bool initChange(Point** change, int size);

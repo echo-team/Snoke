@@ -4,6 +4,7 @@
 #include <deque>
 #include "../Common/common.h"
 #include "../Ball/ball.h"
+#include "../Labyrinth/labyrinth.h"
 
 /**
  * @const {int} WALLUP    - the tested segment is intersecting with the upper boundary of the game field
@@ -52,8 +53,8 @@ class Snake
         short direction;
         std::list<PointStyle> style;
         std::deque<Point> snakeBody;
-        short checkIntersection(bool** laryrinth, Ball* ball, Point* change[2]);
-        short checkWall(Point coords, bool** labyrinth);
+        short checkIntersection(Labyrinth laryrinth, Ball* ball, Point* change[2]);
+        short checkWall(Point coords);
         void moveHead(Point p, Point* change[2]);
     public:
         bool init(Point begin, short direction, int length);
@@ -62,6 +63,6 @@ class Snake
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
-        bool move(bool** labyrinth, Ball* ball, Point* change[2], int changeSize);
+        bool move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSize);
 };
 #endif

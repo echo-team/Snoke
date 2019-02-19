@@ -17,8 +17,7 @@ bool Game::init(int size, int speed)
 {
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
-    setLabyrinth(gameFieldSize);
-    setSpeed(speed);
+    labyrinth.setLabyrinth(gameFieldSize);
 
     /**
      * Initializing the change array, containing Points to be changed in the labyrinth
@@ -66,7 +65,7 @@ int Game::run()
     /**
      * displaying the starting state of labyrinth
      */
-    displayLabyrinth();
+    labyrinth.displayLabyrinth();
 
     /**
      * Initializing the Ball and generating it on the field
@@ -118,8 +117,8 @@ int Game::run()
          * Updating labyrinth with change array Points
          * and displaying/deleting added/removed Points
          */
-        updateLabyrinth(change, changeSize);
-        displayUpdated();
+        labyrinth.updateLabyrinth(change, changeSize);
+        labyrinth.displayUpdated(change, changeSize);
 
         refresh();
         flushinp();
@@ -128,32 +127,7 @@ int Game::run()
     return 0;
 }
 
-/**
- * Set's the starting labyrinth by setting the borders
- * @param {Point} gameFieldSize - dimensions(x, y) of the game field
- */
-void Game::setLabyrinth(Point gameFieldSize)
-{
-    labyrinth = new bool* [gameFieldSize.x];
-    for(int i = 0; i < gameFieldSize.x; i++)
-    {
-        labyrinth[i] = new bool [gameFieldSize.y];
-        for(int j = 0; j < gameFieldSize.y; j++)
-        {
-            labyrinth[i][j] = false;
-        }
-    }
-    for(int i = 0; i < gameFieldSize.x; i++)
-    {
-        labyrinth[i][0] = true;
-        labyrinth[i][gameFieldSize.y - 1] = true;
-    }
-    for(int i = 0; i < gameFieldSize.y; i++)
-    {
-        labyrinth[0][i] = true;
-        labyrinth[gameFieldSize.x - 1][i] = true;
-    }
-}
+
 
 /**
  * Snake initialization with labyrinth updating
@@ -167,10 +141,13 @@ bool Game::initSnake(Point begin, int dir, int length)
     bool flag = snake.init(begin, dir, length);
     std::list<Point> currBody;
     snake.getCoords(&currBody);
-    if (flag){
+    if (!flag){
         for(auto it = currBody.begin(); it != currBody.end(); it++)
         {
-            labyrinth[it->x][it->y] = 1;
+            if(labyrinth.addPoint(*it))
+            {
+                return 1;
+            }
         }
     }
     return flag;
@@ -194,59 +171,7 @@ bool Game::initChange(Point** change, int size)
     return true;
 }
 
-/**
- * Drawing labyrinth to the console
- * (Should only be used at the start as it is rewriting all the points it includes
- * and not the updated)
- */
-void Game::displayLabyrinth()
-{
-    for(int i = 0; i < gameFieldSize.x; i++)
-    {
-        for(int j = 0; j < gameFieldSize.y; j++)
-        {
-            if(labyrinth[i][j]){
-                mvaddch(j, i, '*');
-            }
-        }
-    }
-}
 
-/**
- * displaying the changed Points
- */
-void Game::displayUpdated()
-{
-    for(int i = 0; i < changeSize; i++)
-    {
-        mvaddch(change[1][i].y, change[1][i].x, ' ');
-        mvaddch(change[0][i].y, change[0][i].x, '*');
-    }
-}
-
-/**
- * Updating the labyrinth(changing the values of some Points)
- * @param {Point*} update    - 2-dimensional array of changes needed to be applied to the labyrinth
- *                 update[0] - an array containing Points to add to the labyrinth
- *                 update[1] - an array containing Points to remove from the labyrinth
- * @param {int}    size      - the longest sequence for updating [max(len(update[0], update[1]))]
- */
-void Game::updateLabyrinth(Point* update[2], int size)
-{
-    for(int i = 1; i < size; i++)
-    {
-        Point p = update[0][i];
-        if(p.x >= 0 and p.y >= 0)
-        {
-            labyrinth[p.x][p.y] = 1;
-        }
-        p = update[1][i];
-        if(p.x >= 0 and p.y >= 0)
-        {
-            labyrinth[p.x][p.y] = 0;
-        }
-    }
-}
 
 /**
  * The method to change the game speed without giving the direct access

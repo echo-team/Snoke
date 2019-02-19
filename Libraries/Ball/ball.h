@@ -1,6 +1,7 @@
 #ifndef BALL_H
 #define BALL_H
 #include "../Common/common.h"
+#include "../Labyrinth/labyrinth.h"
 #include <random>
 #include <ctime>
 
@@ -23,7 +24,7 @@ class Ball
         std::uniform_int_distribution<int> distributionY;
     public:
         bool init(Point dim);
-        bool generateBall(bool** labyrinth, Point* change[2], int changeSize);
+        bool generateBall(Labyrinth labyrinth, Point* change[2], int changeSize);
         Point getCoords();
 };
 #endif
