@@ -18,6 +18,7 @@ bool Game::init(int size, int speed)
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
     labyrinth.setLabyrinth(gameFieldSize);
+    setSpeed(speed);
 
     /**
      * Initializing the change array, containing Points to be changed in the labyrinth
