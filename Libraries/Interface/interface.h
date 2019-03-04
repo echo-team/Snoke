@@ -10,6 +10,7 @@
  * @const {char} ALIGN_TOP    - top align
  * @const {char} ALIGN_BOTTOM - bottom align
  * @const {char} ALIGN_NONE   - resets align to default
+ * @const {char} ALIGN_IGNORE - use to ignore value if you want to set only 1 align
  */
 #define ALIGN_LEFT   : 'l'
 #define ALIGN_RIGHT  : 'r'
@@ -17,6 +18,7 @@
 #define ALIGN_TOP    : 't'
 #define ALIGN_BOTTOM : 'b'
 #define ALIGN_NONE   : 'n'
+#define ALIGN_IGNORE : 'n'
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
@@ -40,14 +42,14 @@ class Widget
     public:
         virtual void focus(int index);
         virtual void unfocus(int index);
-        void align(char left, char top);
+        void align(char horizontal, char vertical);
         void position(int x, int y);
         void geometry(int width, int height);
         void add(Widget* child);
-        Widget(Widget* parent, char horizontalAlign, int y, int width, int height);
-        Widget(Widget* parent, int x, char verticalAlign, int width, int height);
-        Widget(Widget* parent, int char horizontalAlign, char verticalAlign, int width, int height);
-        Widget(Widget* parent, int x, int y, int width, int height);
+        Widget(char horizontalAlign, int y, int width, int height);
+        Widget(int x, char verticalAlign, int width, int height);
+        Widget(int char horizontalAlign, char verticalAlign, int width, int height);
+        Widget(int x, int y, int width, int height);
 
 };
 
