@@ -25,6 +25,15 @@ typedef struct {
 } Point;
 
 /**
+ * Geometry of the rectangle
+ * @prop {short} width  - rectangle width
+ * @prop {short} height - rectangle height
+ */
+typedef struct {
+    short width, height;
+} Geometry;
+
+/**
  * Style of the cell in console window
  * @prop {char}  letter - symbol in the cell
  * @prop {short} fg     - foreground color of the cell
