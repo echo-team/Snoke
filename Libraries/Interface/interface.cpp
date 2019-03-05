@@ -34,7 +34,7 @@ void align(char horizontal, char vertical)
  * @param {int} x - x-coordinate of the widget
  * @param {int} y - y-coordinate of the widget
  */
-void position(int x, int y)
+void position(short x, short y)
 {
     this->x = x;
     this->y = y;
@@ -45,7 +45,7 @@ void position(int x, int y)
  * @param {int} width  - width
  * @param {int} height - height
  */
-void geometry(int width, int height)
+void geometry(short width, short height)
 {
     this->width = width;
     this->height = height;
@@ -63,56 +63,10 @@ void add(Widget* child)
 
 /**
  * @constructor
- * @param {char} horizontalAlign - align of widget on x axis (sets by ALIGN_ constants)
- * @param {char} verticalAlign   - align of widget on y axis (sets by ALIGN_ constants)
- * @param {int}  width           - width
- * @param {int}  height          - height
  */
-Widget::Widget(char horizontalAlign, char verticalAlign, int width, int height) :
-    x(0), y(0),
-    width(width),
-    height(height),
-    align({horizontalAlign, verticalAlign})
-{}
-
-/**
- * @constructor
- * @param {int}  x             - x-coordinate of the widget
- * @param {char} verticalAlign - align of widget on y axis (sets by ALIGN_ constants)
- * @param {int}  width         - width
- * @param {int}  height        - height
- */
-Widget::Widget(int x, char verticalAlign, int width, int height) :
-    x(x), y(0),
-    width(width),
-    height(height),
-    align({'n', verticalAlign})
-{}
-
-/**
- * @constructor
- * @param {char} horizontalAlign - align of widget on x axis (sets by ALIGN_ constants)
- * @param {int}  y               - y-coordinate of the widget
- * @param {int}  width           - width
- * @param {int}  height          - height
- */
-Widget::Widget(char horizontalAlign, int y, int width, int height) :
-    x(0), y(y),
-    width(width),
-    height(height),
-    align({horizontalAlign, 'n'})
-{}
-
-/**
- * @constructor
- * @param {int} x          - x-coordinate of the widget
- * @param {int} y          - y-coordinate of the widget
- * @param {int} width      - width
- * @param {int} height     - height
- */
-Widget::Widget(int x, int y, int width, int height) :
-    x(x), y(y),
-    width(width),
-    height(height),
-    align({'n', 'n'})
+Widget::Widget() :
+    x(-1), y(-1),
+    width(0),
+    height(0),
+    align({'l', 't'})
 {}
