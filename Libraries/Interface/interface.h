@@ -32,6 +32,7 @@
  * Basic class of the console widget (to store different widgets in one list)
  * @prop {short}           x            - x-coordinate of the widget or POS_ constant
  * @prop {short}           y            - y-coordinate of the widget or POS_ constant
+ * @prop {Point}           client       - 'client' (real) calculated coordinates, updates by update() method
  * @prop {short}           width        - width
  * @prop {short}           height       - height
  * @prop {char[2]}         align        - alignment, left top for default, if set x, y not works
@@ -45,10 +46,12 @@ class Widget
 {
     private:
         short x, y, width, height;
+        Point client;
         char align;
         Widget* parentWidget;
         std::vector<Widget*> children;
         WINDOW* frame;
+        void calculateClientPosition();
         void moveCursor();
     public:
         virtual void draw();

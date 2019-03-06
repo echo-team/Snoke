@@ -1,6 +1,48 @@
 #include "interface.h"
 
 /**
+ * Calculates 'client' position from align
+ */
+void getClientPosition()
+{
+    Geometry field = parentNode->geometry();
+    client.x = x;
+    client.y = y;
+
+    if (x == POS_NONE)
+    {
+        switch(align[0])
+        {
+            case ALIGN_LEFT:
+                client.x = 0;
+                break;
+            case ALIGN_CENTER:
+                client.x = (field.width - width) / 2;
+                break;
+            case ALIGN_RIGHT:
+                client.x = field.width - width;
+                break;
+        }
+    }
+
+    if (y == POS_NONE)
+    {
+        switch(align[1])
+        {
+            case ALIGN_TOP:
+                client.y = 0;
+                break;
+            case ALIGN_CENTER:
+                client.y = (field.height - height) / 2;
+                break;
+            case ALIGN_BOTTOM:
+                client.y = field.height - height;
+                break;
+        }
+    }
+}
+
+/**
  * Draws widget
  * @virtual
  * @callback Widget::update
@@ -54,42 +96,7 @@ void position(short x, short y)
  */
 Point position()
 {
-    Point coords = {x, y};
-    Geometry field = parentNode->geometry();
-
-    if (x == POS_NONE)
-    {
-        switch(align[0])
-        {
-            case ALIGN_LEFT:
-                coords.x = 0;
-                break;
-            case ALIGN_CENTER:
-                coords.x = (field.width - width) / 2;
-                break;
-            case ALIGN_RIGHT:
-                coords.x = field.width - width;
-                break;
-        }
-    }
-
-    if (y == POS_NONE)
-    {
-        switch(align[1])
-        {
-            case ALIGN_TOP:
-                coords.y = 0;
-                break;
-            case ALIGN_CENTER:
-                coords.y = (field.height - height) / 2;
-                break;
-            case ALIGN_BOTTOM:
-                coords.y = field.height - height;
-                break;
-        }
-    }
-
-    return coords;
+    return client;
 }
 
 /**
@@ -121,7 +128,6 @@ void add(Widget* child)
     children.push_back(child);
     child->_parent(this);
     child->update();
-    wrefresh(frame);
 }
 
 /**
@@ -141,8 +147,10 @@ void update()
     /**
      * Calculate position for widget in relative (for getter) and in absolute (for ncurses window definition)
      */
-    Point absolute = position();
+    calculateClientPosition();
+
     Widget* current = parent();
+    Point absolute = client;
 
     while (current != NULL)
     {
@@ -204,6 +212,7 @@ void _touch()
  */
 Widget::Widget() :
     x(-1), y(-1),
+    client({0, 0}),
     width(0),
     height(0),
     align({'l', 't'})
