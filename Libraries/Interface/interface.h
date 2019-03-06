@@ -30,32 +30,41 @@
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
- * @prop {short}           x        - x-coordinate of the widget or POS_ constant
- * @prop {short}           y        - y-coordinate of the widget or POS_ constant
- * @prop {short}           width    - width
- * @prop {short}           height   - height
- * @prop {char[2]}         align    - alignment, left top for default, if set x, y not works
- * @prop {char}            align[0] - if 'l' left, if 'c' - center, if 'r' - right (see ALIGN_ constants)
- * @prop {char}            align[1] - if 't' top, if 'c' - center, if 'b' - bottom (see ALIGN_ constants)
- * @prop {vector<Widget*>} children - children of current widget
- * @prop {Widget}          parent   - parent of current widget
+ * @prop {short}           x            - x-coordinate of the widget or POS_ constant
+ * @prop {short}           y            - y-coordinate of the widget or POS_ constant
+ * @prop {short}           width        - width
+ * @prop {short}           height       - height
+ * @prop {char[2]}         align        - alignment, left top for default, if set x, y not works
+ * @prop {char}            align[0]     - if 'l' left, if 'c' - center, if 'r' - right (see ALIGN_ constants)
+ * @prop {char}            align[1]     - if 't' top, if 'c' - center, if 'b' - bottom (see ALIGN_ constants)
+ * @prop {vector<Widget*>} children     - children of current widget
+ * @prop {Widget}          parentWidget - parent of current widget
+ * @prop {WINDOW*}         frame        - ncurces implementation of widget
  */
 class Widget
 {
     private:
         short x, y, width, height;
         char align;
-        Widget* parent;
+        Widget* parentWidget;
         std::vector<Widget*> children;
+        WINDOW* frame;
         void moveCursor();
     public:
+        virtual void draw();
         virtual void focus(int index);
         virtual void unfocus(int index);
         void align(char horizontal, char vertical);
         void position(short x, short y);
         void geometry(short width, short height);
         void add(Widget* child);
-        void refresh();
+        Point position();
+        Geometry geometry();
+        Widget* parent();
+        void update();
+        void _parent(Widget* parent);
+        void _refresh();
+        void _touch();
         Widget();
 
 };
