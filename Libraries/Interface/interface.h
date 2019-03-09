@@ -53,6 +53,7 @@ class Widget
         WINDOW* frame;
         void calculateClientPosition();
         void moveCursor();
+
     public:
         virtual void draw();
         virtual void focus(int index);
