@@ -24,6 +24,34 @@ Console& Console::operator=(Console&)
 {}
 
 /**
+ * Getter for sizes of widget
+ * @return {Geometry}
+ */
+Geometry Console::geometry()
+{
+    Geometry size;
+    getmaxyx(stdscr, size.y, size.x);
+
+    return size;
+}
+
+/**
+ * Hidden function for updating current widget
+ */
+void _refresh()
+{
+    refresh();
+}
+
+/**
+ * Hidden function for saving covered by children areas of parent
+ */
+void _touch()
+{
+    touchwin(stdscr);
+}
+
+/**
  * Returns link to the static Console instance defineg in Singleton class
  * @return {Console&}
  */
