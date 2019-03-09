@@ -15,14 +15,14 @@ extern Point gameFieldSize;
 class Labyrinth
 {
     private:
-        bool** labyrinth;
+        char** labyrinth;
     public:
         void setLabyrinth(Point dimensions);
         void displayLabyrinth();
         void displayUpdated(Point* update[2], int size);
         void updateLabyrinth(Point* update[2], int size);
         bool isFree(Point p);
-        bool addPoint(Point p);
+        bool addPoint(Point p, char style = '*');
         bool remPoint(Point p);
 };
 

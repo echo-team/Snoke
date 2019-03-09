@@ -145,7 +145,7 @@ bool Game::initSnake(Point begin, int dir, int length)
     if (!flag){
         for(auto it = currBody.begin(); it != currBody.end(); it++)
         {
-            if(labyrinth.addPoint(*it))
+            if(!labyrinth.addPoint(*it, '*'))
             {
                 return 1;
             }

@@ -10,11 +10,11 @@ int main()
     /*MainMenu main;
     main.draw();
     */
-
+    
     Game g;
     g.init(48, 150);
     g.run();
-
+    
     refresh();
     endwin();
     return 0;

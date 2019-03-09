@@ -5,24 +5,24 @@
  */
 void Labyrinth::setLabyrinth(Point gameFieldSize)
 {
-    labyrinth = new bool* [gameFieldSize.x];
+    labyrinth = new char* [gameFieldSize.x];
     for(int i = 0; i < gameFieldSize.x; i++)
     {
-        labyrinth[i] = new bool [gameFieldSize.y];
+        labyrinth[i] = new char [gameFieldSize.y];
         for(int j = 0; j < gameFieldSize.y; j++)
         {
-            labyrinth[i][j] = false;
+            labyrinth[i][j] = 0;
         }
     }
     for(int i = 0; i < gameFieldSize.x; i++)
     {
-        labyrinth[i][0] = true;
-        labyrinth[i][gameFieldSize.y - 1] = true;
+        labyrinth[i][0] = '-';
+        labyrinth[i][gameFieldSize.y - 1] = '-';
     }
     for(int i = 0; i < gameFieldSize.y; i++)
     {
-        labyrinth[0][i] = true;
-        labyrinth[gameFieldSize.x - 1][i] = true;
+        labyrinth[0][i] = '|';
+        labyrinth[gameFieldSize.x - 1][i] = '|';
     }
 }
 
@@ -38,7 +38,7 @@ void Labyrinth::displayLabyrinth()
         for(int j = 0; j < gameFieldSize.y; j++)
         {
             if(labyrinth[i][j]){
-                mvaddch(j, i, '*');
+                mvaddch(j, i, labyrinth[i][j]);
             }
         }
     }
@@ -49,10 +49,13 @@ void Labyrinth::displayLabyrinth()
  */
 void Labyrinth::displayUpdated(Point* update[2], int size)
 {
+	Point abc;
     for(int i = 0; i < size; i++)
     {
-        mvaddch(update[1][i].y, update[1][i].x, ' ');
-        mvaddch(update[0][i].y, update[0][i].x, '*');
+    	abc = update[1][i];
+        mvaddch(abc.y, abc.x, ' ');
+        abc = update[0][i];
+        mvaddch(abc.y, abc.x, '*');
     }
 }
 
@@ -85,12 +88,18 @@ bool Labyrinth::isFree(Point p)
 	return !this->labyrinth[p.x][p.y];
 }
 
-bool Labyrinth::addPoint(Point p)
+bool Labyrinth::addPoint(Point p, char style)
 {
 	if(this->isFree(p))
 	{
-		labyrinth[p.x][p.y] = true;
-		return false;
+		labyrinth[p.x][p.y] = style;
+		return true;
 	}
+	return false;
+}
+
+bool Labyrinth::remPoint(Point p)
+{
+	labyrinth[p.x][p.y] = 0;
 	return true;
 }

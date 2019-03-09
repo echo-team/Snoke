@@ -53,9 +53,10 @@ class Snake
         short direction;
         std::list<PointStyle> style;
         std::deque<Point> snakeBody;
-        short checkIntersection(Labyrinth laryrinth, Ball* ball, Point* change[2]);
+        short checkIntersection(Point check, Labyrinth laryrinth, Ball* ball, Point* change[2]);
         short checkWall(Point coords);
         void moveHead(Point p, Point* change[2]);
+        void moveBack(Point p, Point* cahnge[2]);
     public:
         bool init(Point begin, short direction, int length);
         void setScheme();

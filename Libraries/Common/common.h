@@ -20,8 +20,14 @@
  * @prop {short} x - x coordinate in console window
  * @prop {short} y - y coordinate in console window
  */
-typedef struct {
+typedef struct _Point{
     short x, y;
+    _Point& operator = (_Point p)
+    {
+        this->x = p.x;
+        this->y = p.y;
+        return *this;
+    }
 } Point;
 
 /**

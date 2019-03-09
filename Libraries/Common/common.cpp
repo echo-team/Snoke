@@ -24,6 +24,7 @@ bool operator == (Point p1, Point p2)
     return (p1.x == p2.x and p1.y == p2.y);
 }
 
+
 /**
  * Cross-platform sleep function cover
  * @param {int} time - time the game will 'freeze' for in milliseconds
