@@ -1,4 +1,5 @@
 #include "menu.h"
+#include <iostream>
 
 /**
  * Adds button to the menu
@@ -17,7 +18,7 @@ void Menu::addButton(const char* name)
  */
 void Menu::focus(int index)
 {
-    move(y + index * 2 + 1, x);
+    wmove(frame, index * 2 + 1, 0);
     printw(">");
 }
 
@@ -29,7 +30,7 @@ void Menu::focus(int index)
  */
 void Menu::unfocus(int index)
 {
-    move(y + index * 2 + 1, x);
+    wmove(frame, index * 2 + 1, 0);
     printw(" ");
 }
 
@@ -38,22 +39,18 @@ void Menu::unfocus(int index)
  */
 void Menu::draw()
 {
-    int yCounter = y + 1;
+    int yCounter = 1;
 
     for (std::list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
     {
-        move(yCounter, x + (2 + width - strlen(currentButton->name)) / 2);
-        printw(currentButton->name);
+        wmove(frame, yCounter, 2 + (width - strlen(currentButton->name)) / 2);
+        wprintw(frame, currentButton->name);
         yCounter += 2;
     }
 }
 
 /**
  * @constructor
- * @param {int} x      - x coordinate of left menu side
- * @param {int} y      - y coordinate of top menu side
- * @param {int} width  - menu width
- * @param {int} height - menu height
  */
-Menu::Menu(int x, int y, int width, int height) : x(x), y(y), width(width), height(height)
+Menu::Menu() : Widget()
 {}

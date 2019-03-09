@@ -1,6 +1,8 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
 #include <vector>
+#include <ncurses.h>
+#include "../Common/common.h"
 
 /**
  * Arguments for align methods
@@ -12,21 +14,21 @@
  * @const {char} ALIGN_NONE   - resets align to default
  * @const {char} ALIGN_IGNORE - use to ignore value if you want to set only 1 align
  */
-#define ALIGN_LEFT   : 'l'
-#define ALIGN_RIGHT  : 'r'
-#define ALIGN_CENTER : 'c'
-#define ALIGN_TOP    : 't'
-#define ALIGN_BOTTOM : 'b'
-#define ALIGN_NONE   : 'n'
-#define ALIGN_IGNORE : 'n'
+#define ALIGN_LEFT   'l'
+#define ALIGN_RIGHT  'r'
+#define ALIGN_CENTER 'c'
+#define ALIGN_TOP    't'
+#define ALIGN_BOTTOM 'b'
+#define ALIGN_NONE   'n'
+#define ALIGN_IGNORE 'n'
 
 /**
  * Arguments for position methods
  * @const {char} POS_NONE   - reset position to activate alignment
  * @const {char} POS_IGNORE - use if you want to set only 1 coordinate
  */
-#define POS_NONE   : -1
-#define POS_IGNORE : -2
+#define POS_NONE   -1
+#define POS_IGNORE -2
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
@@ -45,19 +47,21 @@
 class Widget
 {
     private:
-        short x, y, width, height;
         Point client;
-        char align;
+        char align[2];
         Widget* parentWidget;
         std::vector<Widget*> children;
-        WINDOW* frame;
         void calculateClientPosition();
+
+    protected:
+        WINDOW* frame;
+        short x, y, width, height;
 
     public:
         virtual void draw();
         virtual void focus(int index);
         virtual void unfocus(int index);
-        void align(char horizontal, char vertical);
+        void alignment(char horizontal, char vertical);
         void position(short x, short y);
         void geometry(short width, short height);
         void add(Widget* child);

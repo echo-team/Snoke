@@ -1,4 +1,5 @@
 #include "console.h"
+#include <iostream>
 
 /**
  * @constructor
@@ -8,29 +9,13 @@ Console::Console() : Widget()
 {}
 
 /**
- * @constructor
- * Private plug for operator new (copy) in order to hold singularity of instance
- * @param {const Console&} - existing instance of console
- */
-Console::Console(const Console&)
-{}
-
-/**
- * @constructor
- * Private plug for operator assignment in order to hold singularity of instance
- * @param {Console&} - existing instance of console
- */
-Console& Console::operator=(Console&)
-{}
-
-/**
  * Getter for sizes of widget
  * @return {Geometry}
  */
 Geometry Console::geometry()
 {
     Geometry size;
-    getmaxyx(stdscr, size.y, size.x);
+    getmaxyx(stdscr, size.height, size.width);
 
     return size;
 }
@@ -38,15 +23,16 @@ Geometry Console::geometry()
 /**
  * Hidden function for updating current widget
  */
-void _refresh()
+void Console::_refresh()
 {
+    std::cout << "refreshing" << std::endl;
     refresh();
 }
 
 /**
  * Hidden function for saving covered by children areas of parent
  */
-void _touch()
+void Console::_touch()
 {
     touchwin(stdscr);
 }

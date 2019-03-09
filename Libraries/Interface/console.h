@@ -1,5 +1,6 @@
 #ifndef CONSOLE_H
 #define CONSOLE_H
+#include "interface.h"
 
 class Console : private Widget
 {
@@ -16,5 +17,4 @@ class Console : private Widget
         void _refresh();
         void _touch();
 };
-
 #endif

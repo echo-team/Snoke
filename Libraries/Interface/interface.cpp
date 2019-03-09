@@ -1,11 +1,13 @@
 #include "interface.h"
+#include <iostream>
 
 /**
  * Calculates 'client' position from align
  */
-void getClientPosition()
+void Widget::calculateClientPosition()
 {
-    Geometry field = parentNode->geometry();
+    Geometry field = parentWidget->geometry();
+    std::cout << "parent size: " << field.width << ' ' << field.height << std::endl;
     client.x = x;
     client.y = y;
 
@@ -73,9 +75,9 @@ void Widget::unfocus(int index)
  * @param {char} horizontal - horisontal align (see ALIGN_ constants)
  * @param {char} vertical   - vertical align (see ALIGN_ constants)
  */
-void align(char horizontal, char vertical)
+void Widget::alignment(char horizontal, char vertical)
 {
-    align[0] = horisontal == ALIGN_IGNORE ? align[0] : horizontal;
+    align[0] = horizontal == ALIGN_IGNORE ? align[0] : horizontal;
     align[1] = vertical == ALIGN_IGNORE ? align[1] : vertical;
 }
 
@@ -84,7 +86,7 @@ void align(char horizontal, char vertical)
  * @param {short} x - x-coordinate of the widget
  * @param {short} y - y-coordinate of the widget
  */
-void position(short x, short y)
+void Widget::position(short x, short y)
 {
     this->x = x == POS_IGNORE ? this->x : x;
     this->y = y == POS_IGNORE ? this->y : y;
@@ -94,7 +96,7 @@ void position(short x, short y)
  * Getter for coordinates of widget
  * @return {Point}
  */
-Point position()
+Point Widget::position()
 {
     return client;
 }
@@ -104,7 +106,7 @@ Point position()
  * @param {short} width  - width
  * @param {short} height - height
  */
-void geometry(short width, short height)
+void Widget::geometry(short width, short height)
 {
     this->width = width;
     this->height = height;
@@ -114,7 +116,7 @@ void geometry(short width, short height)
  * Getter for sizes of widget
  * @return {Geometry}
  */
-Geometry geometry()
+Geometry Widget::geometry()
 {
     return {width, height};
 }
@@ -123,7 +125,7 @@ Geometry geometry()
  * Adds child to current widget and draws it
  * @param {Widget*} child - new child of current widget
  */
-void add(Widget* child)
+void Widget::add(Widget* child)
 {
     children.push_back(child);
     child->_parent(this);
@@ -134,7 +136,7 @@ void add(Widget* child)
  * Returns parent of widget
  * @return {Widget*}
  */
-Widget* parent()
+Widget* Widget::parent()
 {
     return parentWidget;
 }
@@ -142,7 +144,7 @@ Widget* parent()
 /**
  * Updates (redraws) widget, if ncurses window isn't set yet, creates it
  */
-void update()
+void Widget::update()
 {
     /**
      * Calculate position for widget in relative (for getter) and in absolute (for ncurses window definition)
@@ -154,9 +156,9 @@ void update()
 
     while (current != NULL)
     {
-        Point delta = current.position();
-        absolute.x += current.x;
-        absolute.y += current.y;
+        Point delta = current->position();
+        absolute.x += delta.x;
+        absolute.y += delta.y;
 
         current = current->parent();
     }
@@ -166,15 +168,15 @@ void update()
      */
     if (frame == NULL)
     {
-        frame = newwin(height, width, y, x);
+        frame = newwin(height, width, absolute.y, absolute.x);
     }
 
     /**
      * Redraws parent and current (touched by changing of current) widgets
      */
     draw();
-    parent->_touch();
-    parent->_refresh();
+    parentWidget->_touch();
+    parentWidget->_refresh();
     _refresh();
 }
 
@@ -182,7 +184,7 @@ void update()
  * Hidden setter for parent property (uses only when child widget places on screen)
  * @param {Widget*} parent - new parent in the DOM tree
  */
-void _parent(Widget* parent)
+void Widget::_parent(Widget* parent)
 {
     if (parentWidget == NULL)
     {
@@ -193,7 +195,7 @@ void _parent(Widget* parent)
 /**
  * Hidden function for updating current widget
  */
-void _refresh()
+void Widget::_refresh()
 {
     wrefresh(frame);
 }
@@ -201,7 +203,7 @@ void _refresh()
 /**
  * Hidden function for saving covered by children areas of parent
  */
-void _touch()
+void Widget::_touch()
 {
     touchwin(frame);
 }
@@ -213,7 +215,7 @@ void _touch()
 Widget::Widget() :
     x(-1), y(-1),
     client({0, 0}),
-    width(0),
-    height(0),
-    align({'l', 't'})
+    width(0), height(0),
+    align({'l', 't'}),
+    parentWidget(NULL), frame(NULL)
 {}

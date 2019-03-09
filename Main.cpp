@@ -1,13 +1,28 @@
 #include <ncurses.h>
-#include "Libraries/Screens/mainMenu.h"
+#include "Libraries/Interface/console.h"
+#include "Libraries/Interface/menu.h"
+//#include "Libraries/Screens/mainMenu.h"
+
+Console& console = Console::instance();
 
 int main()
 {
     initscr();
-    start_color();
+    refresh();
+    //start_color();
 
-    MainMenu main;
-    main.draw();
+    //MainMenu main;
+    //main.draw();
+    Menu menu;
+    menu.position(2, 2);
+    menu.geometry(10, 8);
+    menu.addButton("first");
+    menu.addButton("second");
+    menu.addButton("third");
+    menu.addButton("forth");
+    console.add(&menu);
+
+    getch();
 
     refresh();
     endwin();
