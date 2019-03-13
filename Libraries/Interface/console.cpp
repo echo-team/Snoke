@@ -21,6 +21,14 @@ Geometry Console::geometry()
 }
 
 /**
+ * Runs main loop catching navigation events (arrow keys pressings)
+ */
+void Console::execute()
+{
+    Navigator navigator;
+}
+
+/**
  * Hidden function for updating current widget
  */
 void Console::_refresh()
@@ -46,3 +54,5 @@ Console& Console::instance()
     static Console console;
     return console;
 }
+
+Console& console = Console::instance();

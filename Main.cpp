@@ -3,8 +3,6 @@
 #include "Libraries/Interface/menu.h"
 //#include "Libraries/Screens/mainMenu.h"
 
-Console& console = Console::instance();
-
 int main()
 {
     initscr();
