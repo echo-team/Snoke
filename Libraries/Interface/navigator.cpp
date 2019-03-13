@@ -1,76 +1,74 @@
 #include "navigator.h"
 
 /**
- * Adds selectable widget to the end of selectable widgets queue
- * @param {Widget*} unit           - seleclable widget
- * @param {int }    subunitsAmount - amount of subwidgets
+ * Gets widgets next sibling
+ * @param  {Widget*} widget - widget to get sibling
+ * @return {Widget*}        - if widget is last in parents widgets array, then NULL
  */
-void Navigator::pushUnit(Widget* unit, int subunitsAmount)
+Widget* Navigator::sibling(Widget* widget)
 {
-    units.push_back({unit, subunitsAmount});
-}
+    Widget* parent = current->parent();
+    std::vector<Widget*> children = parent->children();
+    Widget* next = std::find(children.begin(), children.end(), widget);
 
-/**
- * Starts main loop of application to catch selections and activate events done by user
- */
-void Navigator::listen()
-{
-    curs_set(0);
-    keypad(stdscr, true);
-    noecho();
-    currentUnit = units.begin();
-    currentSubunit = 0;
-    currentUnit->widget->focus(currentSubunit);
-
-    while (1)
+    if (next != children.end())
     {
-        int command = getch();
-
-        if (command != ERR)
-        {
-            switch(command)
-            {
-                case (KEY_UP):
-
-                    currentUnit->widget->unfocus(currentSubunit);
-                    if (currentSubunit > 0)
-                    {
-                        currentSubunit--;
-                    }
-                    else if (currentUnit != units.begin())
-                    {
-                        currentUnit--;
-                        currentSubunit = currentUnit->subunitsAmount - 1;
-                    }
-                    currentUnit->widget->focus(currentSubunit);
-                    break;
-
-                case (KEY_DOWN):
-
-                    currentUnit->widget->unfocus(currentSubunit);
-                    if (currentSubunit < currentUnit->subunitsAmount - 1)
-                    {
-                        currentSubunit++;
-                    }
-                    else if (std::distance(units.begin(), currentUnit) + 1 < (unsigned int)units.size())
-                    {
-                        currentUnit++;
-                        currentSubunit = 0;
-                    }
-
-                    move(0, 0);
-                    currentUnit->widget->focus(currentSubunit);
-                    break;
-            }
-        }
+        return next;
+    }
+    else
+    {
+        return NULL;
     }
 }
 
 /**
- * @constructor
+ * Finds a next clickable widget with focus event
+ * @return {Widget*} - if nothing found, then NULL
  */
-Navigator::Navigator()
+Widget* Navigator::next()
 {
-    currentUnit = units.begin();
-    currentSubunit = 0;
+    if (current == NULL && root->children().size() > 0)
+    {
+        current = root->children()[0];
+    }
+
+    bool diving = true;
+    while (current != NULL)
+    {
+        if (current == root)
+        {
+            current = NULL;
+        }
+        else if (current->event(EVENT_FOCUS))
+        {
+            return current;
+        }
+        else
+        {
+            if (diving && current->children().size())
+            {
+                current = current->children()[0];
+            }
+            else if (Widget* next = sibling(current))
+            {
+                diving = true;
+                current = next;
+            }
+            else
+            {
+                diving = false;
+                current = current->parent();
+            }
+        }
+    }
+
+    return current;
 }
+
+/**
+ * @constructor
+ * @paran {Widget*} root - instance of the root widget (Console class)
+ */
+Navigator::Navigator(Widget* root) :
+    current(NULL), root(root)
+{}

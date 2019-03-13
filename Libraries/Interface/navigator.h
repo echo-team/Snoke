@@ -1,36 +1,23 @@
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
+#include <algorithm>
 #include <ncurses.h>
-#include <list>
 #include "interface.h"
 
 /**
- * Describes selectable/interactive widget or the group of widgets
- * @prop {Widget*} widget         - selectable widget class
- * @prop {int}     subunitsAmount - amount of user actions to move to another widget (e.g: amount of subwidgets or lines in the scrollbox)
- */
-typedef struct
-{
-    Widget* widget;
-    int subunitsAmount;
-} NavigateUnit;
-
-/**
- * Adds an ability to select/activate widgets
- * @prop {list<NavigateUnit>}           units          - widgets/groups of widgets which can be selected
- * @prop {list<NavigateUnit>::iterator} currentUnit    - selected widget
- * @prop {int}                          currentSubunit - number of subwidget
+ * Class for working with object model of application (to find next clickable widget)
+ * @prop {Widget*} current - selected widget
+ * @prop {Widget*} root    - instance of the root widget (Console class)
  */
 class Navigator
 {
     private:
-        std::list<NavigateUnit> units;
-        std::list<NavigateUnit>::iterator currentUnit;
-        int currentSubunit;
+        Widget* current;
+        Widget* root;
+        Widget* getNext();
 
     public:
-        void pushUnit(Widget* unit, int subunitsAmount);
-        void listen();
+        void next();
         Navigator();
 };
 
