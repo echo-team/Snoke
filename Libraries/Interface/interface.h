@@ -40,7 +40,7 @@
  * @prop {char[2]}         align        - alignment, left top for default, if set x, y not works
  * @prop {char}            align[0]     - if 'l' left, if 'c' - center, if 'r' - right (see ALIGN_ constants)
  * @prop {char}            align[1]     - if 't' top, if 'c' - center, if 'b' - bottom (see ALIGN_ constants)
- * @prop {vector<Widget*>} children     - children of current widget
+ * @prop {vector<Widget*>} childWidgets - children of current widget
  * @prop {Widget}          parentWidget - parent of current widget
  * @prop {WINDOW*}         frame        - ncurces implementation of widget
  */
@@ -50,7 +50,7 @@ class Widget
         Point client;
         char align[2];
         Widget* parentWidget;
-        std::vector<Widget*> children;
+        std::vector<Widget*> childWidgets;
         void calculateClientPosition();
 
     protected:
@@ -68,6 +68,7 @@ class Widget
         Point position();
         Geometry geometry();
         Widget* parent();
+        std::vector<Widget*> children();
         void update();
         void _parent(Widget* parent);
         void _refresh();

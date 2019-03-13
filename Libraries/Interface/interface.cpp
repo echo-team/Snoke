@@ -127,7 +127,7 @@ Geometry Widget::geometry()
  */
 void Widget::add(Widget* child)
 {
-    children.push_back(child);
+    childWidgets.push_back(child);
     child->_parent(this);
     child->update();
 }
@@ -139,6 +139,15 @@ void Widget::add(Widget* child)
 Widget* Widget::parent()
 {
     return parentWidget;
+}
+
+/**
+ * Returns children of current widget
+ * @return {std::vector<Widget*>}
+ */
+std::vector<Widget*> children()
+{
+    return childWidgets;
 }
 
 /**
