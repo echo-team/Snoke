@@ -122,6 +122,29 @@ Geometry Widget::geometry()
 }
 
 /**
+ * Saves event to dispatch it on widget
+ * @param {unsigned char} name - name of event
+ */
+void event(unsigned char name)
+{
+    events = events | name;
+}
+
+/**
+ * Checks if this event is holding by widget
+ * @param {unsigned char} name - name of event
+ */
+bool event(unsigned char name)
+{
+    if (events & name)
+    {
+        return true;
+    }
+
+    return false;
+}
+
+/**
  * Adds child to current widget and draws it
  * @param {Widget*} child - new child of current widget
  */

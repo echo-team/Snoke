@@ -31,6 +31,14 @@
 #define POS_IGNORE -2
 
 /**
+ * Arguments for events methods
+ * @const {unsigned char} EVENT_FOCUS  - event of focusing and unfocusing
+ * @const {unsigned char} EVENT_ACTIVE - event of activating widget
+ */
+#define EVENT_FOCUS : 1
+#define EVENT_FOCUS : 2
+
+/**
  * Basic class of the console widget (to store different widgets in one list)
  * @prop {short}           x            - x-coordinate of the widget or POS_ constant
  * @prop {short}           y            - y-coordinate of the widget or POS_ constant
@@ -40,6 +48,7 @@
  * @prop {char[2]}         align        - alignment, left top for default, if set x, y not works
  * @prop {char}            align[0]     - if 'l' left, if 'c' - center, if 'r' - right (see ALIGN_ constants)
  * @prop {char}            align[1]     - if 't' top, if 'c' - center, if 'b' - bottom (see ALIGN_ constants)
+ * @prop {unsigned char}   events       - byte mask, keeping events which this widget holds
  * @prop {vector<Widget*>} childWidgets - children of current widget
  * @prop {Widget}          parentWidget - parent of current widget
  * @prop {WINDOW*}         frame        - ncurces implementation of widget
@@ -49,6 +58,7 @@ class Widget
     private:
         Point client;
         char align[2];
+        unsigned char events;
         Widget* parentWidget;
         std::vector<Widget*> childWidgets;
         void calculateClientPosition();
@@ -64,9 +74,11 @@ class Widget
         void alignment(char horizontal, char vertical);
         void position(short x, short y);
         void geometry(short width, short height);
+        void event(unsigned char name);
         void add(Widget* child);
         Point position();
         Geometry geometry();
+        bool event(unsigned char name);
         Widget* parent();
         std::vector<Widget*> children();
         void update();
