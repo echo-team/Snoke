@@ -24,8 +24,8 @@
 
 /**
  * Arguments for position methods
- * @const {char} POS_NONE   - reset position to activate alignment
- * @const {char} POS_IGNORE - use if you want to set only 1 coordinate
+ * @const {short} POS_NONE   - reset position to activate alignment
+ * @const {short} POS_IGNORE - use if you want to set only 1 coordinate
  */
 #define POS_NONE   -1
 #define POS_IGNORE -2
