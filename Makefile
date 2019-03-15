@@ -21,8 +21,7 @@ LIB         := -lncurses
 
 SOURCES     := $(shell find . -type f -name "*.$(SRCEXT)")
 vpath %$(SRCEXT) = $(dir $(SOURCES))
-OBJECTS     := $(SOURCES:.$(SRCEXT)=.$(OBJEXT))
-OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(OBJECTS)))
+OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(SOURCES:.$(SRCEXT)=.$(OBJEXT))))
 
 #Defauilt Make
 all: resources $(TARGET)
@@ -56,4 +55,4 @@ $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^ $(LIB)
 
 $(BUILDDIR)/%.$(OBJEXT): %.$(SRCEXT)
-	$(CC) -c $(CFLAGS) -o $@ $^
+	$(CC) -c $(CFLAGS) -o $@ $<
