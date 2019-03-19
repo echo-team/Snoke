@@ -17,7 +17,8 @@ bool Game::init(int size, int speed)
 {
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
-    labyrinth.setLabyrinth(gameFieldSize);
+    this->labyrinth.setLabyrinth(gameFieldSize);
+    this->labyrinth.load("testload");
     setSpeed(speed);
 
     /**
@@ -98,7 +99,7 @@ int Game::run()
                 flag = true;
                 break;
             case 's':
-                labyrinth.save("testsave.txt");
+                labyrinth.save("testsave");
                 refresh();
                 flushinp();
                 labyrinth.displayLabyrinth();

@@ -79,19 +79,24 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
             frCoords.y--;
             break;
     }
+    bool flag = 0;
     switch (checkIntersection(frCoords, labyrinth, ball))
     {
         case WALLUP:
             frCoords.y = gameFieldSize.y - 2;
+            flag = 1;
             break;
         case WALLBOT:
             frCoords.y = 1;
+            flag = 1;
             break;
         case WALLLEFT:
             frCoords.x = gameFieldSize.x - 2;
+            flag = 1;
             break;
         case WALLRIGHT:
             frCoords.x = 1;
+            flag = 1;
             break;
         case COLL:
             moveBack(bCoords, change);
@@ -105,6 +110,24 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
             ball->generateBall(labyrinth, change, changeSize);
             change[0][0] = ball->getCoords();
             break;
+    }
+    if(flag)
+    {
+        switch (checkIntersection(frCoords, labyrinth, ball))
+        {
+            case COLL:
+                moveBack(bCoords, change);
+                return 1;
+            case NOCOLL:
+                break;
+            case BALL:
+                bCoords.x = -1;
+                bCoords.y = -1;
+                change[1][0] = ball->getCoords();
+                ball->generateBall(labyrinth, change, changeSize);
+                change[0][0] = ball->getCoords();
+                break;
+        }
     }
     moveHead(frCoords, change);
     moveBack(bCoords, change);
@@ -145,11 +168,9 @@ void Snake::moveBack(Point p, Point* change[2])
  */
 short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball)
 {
-    Point ballCoords = ball->getCoords();
-
     if (!labyrinth.isFree(check))
     {
-        return checkWisely(check, ballCoords);
+        return checkWisely(check, ball->getCoords());
     }
     return NOCOLL;
 
@@ -157,9 +178,6 @@ short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball)
 
 short Snake::checkWisely(Point coords, Point bcoords)
 {
-    char str[MAXLINE];
-    sprintf(str, "%d %d %d %d", coords.x, coords.y, bcoords.x, bcoords.y);
-    mvaddstr(42, 42, str);
     if(coords.x == bcoords.x and coords.y == bcoords.y)
     {
         return BALL;

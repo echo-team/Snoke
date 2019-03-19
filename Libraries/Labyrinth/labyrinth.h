@@ -3,6 +3,7 @@
 #include "../Common/common.h"
 #include <ncurses.h>
 #include <string>
+#include <cstring>
 #include <cstdio>
 #include <list>
 
@@ -18,6 +19,7 @@ class Labyrinth
 {
     private:
         char** labyrinth;
+        std::string reserved = "!";
     public:
         void setLabyrinth(Point dimensions);
         void addSnake(std::list<Point> snake);
@@ -28,6 +30,7 @@ class Labyrinth
         void updateLabyrinth(Point* update[2], int size);
         bool isFree(Point p);
         bool save(char name[MAXLINE]);
+        bool load(char name[MAXLINE]);
 };
 
 #endif

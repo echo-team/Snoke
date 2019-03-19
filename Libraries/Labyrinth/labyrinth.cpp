@@ -5,24 +5,24 @@
  */
 void Labyrinth::setLabyrinth(Point gameFieldSize)
 {
-    labyrinth = new char* [gameFieldSize.x];
-    for(int i = 0; i < gameFieldSize.x; i++)
+    labyrinth = new char* [gameFieldSize.y];
+    for(int i = 0; i < gameFieldSize.y; i++)
     {
-        labyrinth[i] = new char [gameFieldSize.y];
-        for(int j = 0; j < gameFieldSize.y; j++)
+        labyrinth[i] = new char [gameFieldSize.x];
+        for(int j = 0; j < gameFieldSize.x; j++)
         {
             labyrinth[i][j] = ' ';
         }
     }
     for(int i = 0; i < gameFieldSize.x; i++)
     {
-        labyrinth[i][0] = '-';
-        labyrinth[i][gameFieldSize.y - 1] = '-';
+        labyrinth[0][i] = '-';
+        labyrinth[gameFieldSize.y - 1][i] = '-';
     }
     for(int i = 0; i < gameFieldSize.y; i++)
     {
-        labyrinth[0][i] = '|';
-        labyrinth[gameFieldSize.x - 1][i] = '|';
+        labyrinth[i][0] = '|';
+        labyrinth[i][gameFieldSize.x - 1] = '|';
     }
 }
 
@@ -41,12 +41,9 @@ void Labyrinth::addSnake(std::list<Point> snake)
  */
 void Labyrinth::displayLabyrinth()
 {
-    for(int i = 0; i < gameFieldSize.x; i++)
+    for(int j = 0; j < gameFieldSize.y; j++)
     {
-        for(int j = 0; j < gameFieldSize.y; j++)
-        {
-            mvaddch(j, i, labyrinth[i][j]);
-        }
+        mvaddstr(j, 0, labyrinth[j]);
     }
 }
 
@@ -92,14 +89,14 @@ void Labyrinth::updateLabyrinth(Point* update[2], int size)
 
 bool Labyrinth::isFree(Point p)
 {
-    return (this->labyrinth[p.x][p.y] == ' ');
+    return (this->labyrinth[p.y][p.x] == ' ');
 }
 
 bool Labyrinth::addPoint(Point p)
 {
 	if(this->isFree(p))
 	{
-        labyrinth[p.x][p.y] = p.style.letter;
+        labyrinth[p.y][p.x] = p.style.letter;
 		return true;
 	}
 	return false;
@@ -107,7 +104,7 @@ bool Labyrinth::addPoint(Point p)
 
 bool Labyrinth::remPoint(Point p)
 {
-    labyrinth[p.x][p.y] = ' ';
+    labyrinth[p.y][p.x] = ' ';
 	return true;
 }
 
@@ -121,19 +118,61 @@ bool Labyrinth::save(char name[MAXLINE])
         fprintf(file, "%d %d\n", gameFieldSize.x, gameFieldSize.y);
 
         //Printing the game field excluding the borders
-        for(int j = 1; j < gameFieldSize.y - 1; j++)
+        for(int j = 0; j < gameFieldSize.y; j++)
         {
-            for(int i = 1; i < gameFieldSize.x - 1; i++)
-            {
-                fprintf(file, "%c", labyrinth[i][j]);
-            }
-            fprintf(file, "\n");
+            fputs(labyrinth[j],file);
+            fputc('\n', file);
         }
         sprintf(strout, "Succesfully saved to %s", name);
         mvaddstr(gameFieldSize.y / 2, 5, strout);
+        fclose(file);
         return 1;
     }
     sprintf(strout, "Couldn't save to %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
+    fclose(file);
+    return 0;
+}
+
+bool Labyrinth::load(char name[MAXLINE])
+{
+    FILE* file;
+    Point tmp;
+    char strout[MAXLINE];
+    file = fopen(name, "r");
+    if(file)
+    {
+        fscanf(file, "%d %d", &tmp.x, &tmp.y);
+        char tmpLab[tmp.y][tmp.x];
+        for(int i = 0; i < tmp.x; i++)
+        {
+            for(int j = 0; j < tmp.y; j++)
+            {
+                tmpLab[j][i] = ' ';
+            }
+        }
+        for(int j = 1; j < tmp.y - 1; j++)
+        {
+            fgets(tmpLab[j], tmp.x, file);
+        }
+        sprintf(strout, "Succesfully loaded from %s", name);
+        mvaddstr(gameFieldSize.y / 2, 5, strout);
+        gameFieldSize = tmp;
+        for(int i = 1; i < gameFieldSize.x - 1; i++)
+        {
+            for(int j = 1; j < gameFieldSize.y - 1; j++)
+            {
+                if(reserved.find(tmpLab[j][i]) != std::string::npos)
+                {
+                    labyrinth[j][i] = tmpLab[j][i];
+                }
+            }
+        }
+        fclose(file);
+        return 1;
+    }
+    sprintf(strout, "Couldn't load from %s", name);
+    mvaddstr(gameFieldSize.y / 2, 5, strout);
+    fclose(file);
     return 0;
 }
