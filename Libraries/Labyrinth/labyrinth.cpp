@@ -103,3 +103,15 @@ bool Labyrinth::remPoint(Point p)
 	labyrinth[p.x][p.y] = 0;
 	return true;
 }
+
+bool Labyrinth::save(std::string name)
+{
+    FILE* file;
+    file = fopen(name, "r");
+    if(file)
+    {
+
+        return 1;
+    }
+    return 0;
+}

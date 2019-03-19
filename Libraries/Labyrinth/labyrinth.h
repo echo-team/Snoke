@@ -2,7 +2,8 @@
 #define LABYRINTH_H
 #include "../Common/common.h"
 #include <ncurses.h>
-
+#include <string>
+#include <cstdio>
 
 /**
  * gameFieldSize - size of a game field(x, y)
@@ -24,6 +25,7 @@ class Labyrinth
         bool isFree(Point p);
         bool addPoint(Point p, char style = '*');
         bool remPoint(Point p);
+        bool save(std::string name);
 };
 
 #endif
