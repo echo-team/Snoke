@@ -9,6 +9,7 @@
  */
 bool Snake::init(Point begin, short dir, int length)
 {
+    begin.style.letter = '*';
     if (dir == MVLEFT or dir == MVRIGHT or dir == MVUP or dir == MVDOWN)
     {
         /**
@@ -78,7 +79,7 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
             frCoords.y--;
             break;
     }
-    switch (checkIntersection(frCoords, labyrinth, ball, change))
+    switch (checkIntersection(frCoords, labyrinth, ball))
     {
         case WALLUP:
             frCoords.y = gameFieldSize.y - 2;
@@ -95,7 +96,6 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
         case COLL:
             moveBack(bCoords, change);
             return 1;
-            break;
         case NOCOLL:
             break;
         case BALL:
@@ -128,6 +128,10 @@ void Snake::moveHead(Point p, Point* change[2])
 void Snake::moveBack(Point p, Point* change[2])
 {
     change[1][1] = p;
+    if(p.x != -1 and p.y != -1)
+    {
+        snakeBody.pop_back();
+    }
 }
 
 /**
@@ -139,38 +143,28 @@ void Snake::moveBack(Point p, Point* change[2])
  *                  change[1] - an array containing Points to remove from the labyrinth
  * @return {short}            - a type of an intersection
  */
-short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball, Point* change[2])
+short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball)
 {
     Point ballCoords = ball->getCoords();
 
     if (!labyrinth.isFree(check))
     {
-        snakeBody.pop_back();
-        return checkWall(check);
-    }
-    else
-    {
-        /**
-         * checking if there is a collision with Ball
-         */
-        if (check.x != ballCoords.x or check.y != ballCoords.y)
-        {
-            snakeBody.pop_back();
-            return NOCOLL;
-        }
-        else
-        {
-            return BALL;
-        }
+        return checkWisely(check, ballCoords);
     }
     return NOCOLL;
 
 }
 
-
-short Snake::checkWall(Point coords)
+short Snake::checkWisely(Point coords, Point bcoords)
 {
-    if (coords.x == gameFieldSize.x - 1)
+    char str[MAXLINE];
+    sprintf(str, "%d %d %d %d", coords.x, coords.y, bcoords.x, bcoords.y);
+    mvaddstr(42, 42, str);
+    if(coords.x == bcoords.x and coords.y == bcoords.y)
+    {
+        return BALL;
+    }
+    else if (coords.x == gameFieldSize.x - 1)
     {
         return WALLRIGHT;
     }

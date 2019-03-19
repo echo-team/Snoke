@@ -4,6 +4,7 @@
 #include <ncurses.h>
 #include <string>
 #include <cstdio>
+#include <list>
 
 /**
  * gameFieldSize - size of a game field(x, y)
@@ -19,13 +20,14 @@ class Labyrinth
         char** labyrinth;
     public:
         void setLabyrinth(Point dimensions);
+        void addSnake(std::list<Point> snake);
+        bool addPoint(Point p);
+        bool remPoint(Point p);
         void displayLabyrinth();
         void displayUpdated(Point* update[2], int size);
         void updateLabyrinth(Point* update[2], int size);
         bool isFree(Point p);
-        bool addPoint(Point p, char style = '*');
-        bool remPoint(Point p);
-        bool save(std::string name);
+        bool save(char name[MAXLINE]);
 };
 
 #endif

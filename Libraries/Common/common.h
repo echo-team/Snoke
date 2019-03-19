@@ -15,20 +15,7 @@
 #include <unistd.h>
 #endif
 
-/**
- * Coordinates of the cell in console window
- * @prop {short} x - x coordinate in console window
- * @prop {short} y - y coordinate in console window
- */
-typedef struct _Point{
-    short x, y;
-    _Point& operator = (_Point p)
-    {
-        this->x = p.x;
-        this->y = p.y;
-        return *this;
-    }
-} Point;
+#define MAXLINE 256
 
 /**
  * Style of the cell in console window
@@ -36,11 +23,36 @@ typedef struct _Point{
  * @prop {short} fg     - foreground color of the cell
  * @prop {short} bg     - beckground color of the cell
  */
-typedef struct 
+typedef struct _PointStyle
 {
     char letter;
     int fg, bg;
+    _PointStyle& operator = (_PointStyle ps)
+    {
+        this->letter = ps.letter;
+        this->fg = ps.fg;
+        this->bg = ps.bg;
+        return *this;
+    }
 } PointStyle;
+
+/**
+ * Coordinates of the cell in console window
+ * @prop {short} x - x coordinate in console window
+ * @prop {short} y - y coordinate in console window
+ */
+typedef struct _Point
+{
+    short x, y;
+    PointStyle style;
+    _Point& operator = (_Point p)
+    {
+        this->x = p.x;
+        this->y = p.y;
+        this->style = p.style;
+        return *this;
+    }
+} Point;
 
 std::ostream& operator << (std::ostream &s, Point p);
 bool operator == (Point p1, Point p2);

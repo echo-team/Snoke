@@ -64,18 +64,15 @@ int Game::run()
     initSnake(p, dir, len);
 
     /**
-     * displaying the starting state of labyrinth
-     */
-    labyrinth.displayLabyrinth();
-
-    /**
      * Initializing the Ball and generating it on the field
      */
     Ball ball;
-    ball.init(gameFieldSize);
-    ball.generateBall(labyrinth, change, changeSize);
-    Point bCrd = ball.getCoords();
-    mvaddch(bCrd.y, bCrd.x, '*');
+    initBall(&ball);
+
+    /**
+     * displaying the starting state of labyrinth
+     */
+    labyrinth.displayLabyrinth();
 
     bool flag = false;
     while (!flag)
@@ -100,12 +97,19 @@ int Game::run()
             case 'q':
                 flag = true;
                 break;
+            case 's':
+                labyrinth.save("testsave.txt");
+                refresh();
+                flushinp();
+                labyrinth.displayLabyrinth();
+                mSleep(speed * 2);
+                continue;
         }
         if (flag)
         {
             break;
         }
-        initChange(change, changeSize);
+        wipeChange(change, changeSize);
 
         /**
          * Setting the flag for the next iteration check
@@ -143,15 +147,17 @@ bool Game::initSnake(Point begin, int dir, int length)
     std::list<Point> currBody;
     snake.getCoords(&currBody);
     if (!flag){
-        for(auto it = currBody.begin(); it != currBody.end(); it++)
-        {
-            if(!labyrinth.addPoint(*it, '*'))
-            {
-                return 1;
-            }
-        }
+        labyrinth.addSnake(currBody);
     }
     return flag;
+}
+
+bool Game::initBall(Ball* ball)
+{
+    ball->init(gameFieldSize);
+    ball->generateBall(labyrinth, change, changeSize);
+    labyrinth.addPoint(ball->getCoords());
+    return true;
 }
 
 /**
@@ -160,14 +166,18 @@ bool Game::initSnake(Point begin, int dir, int length)
  * @param  {int}     size   - The size of array(max number of elements it can contain)
  * @return {bool}
  */
-bool Game::initChange(Point** change, int size)
+bool Game::wipeChange(Point** change, int size)
 {
+    Point p;
+    p.x = -1;
+    p.y = -1;
+    p.style.bg = 0;
+    p.style.fg = 0;
+    p.style.letter = 0;
     for(int i = 0; i < size; i++)
     {
-        change[0][i].x = -1;
-        change[0][i].y = -1;
-        change[1][i].x = -1;
-        change[1][i].y = -1;
+        change[0][i] = p;
+        change[1][i] = p;
     }
     return true;
 }

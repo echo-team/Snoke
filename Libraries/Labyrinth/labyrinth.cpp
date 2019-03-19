@@ -11,7 +11,7 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
         labyrinth[i] = new char [gameFieldSize.y];
         for(int j = 0; j < gameFieldSize.y; j++)
         {
-            labyrinth[i][j] = 0;
+            labyrinth[i][j] = ' ';
         }
     }
     for(int i = 0; i < gameFieldSize.x; i++)
@@ -26,6 +26,14 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
     }
 }
 
+void Labyrinth::addSnake(std::list<Point> snake)
+{
+    for(auto it = snake.begin(); it != snake.end(); ++it)
+    {
+        addPoint(*it);
+    }
+}
+
 /**
  * Drawing labyrinth to the console
  * (Should only be used at the start as it is rewriting all the points it includes
@@ -37,9 +45,7 @@ void Labyrinth::displayLabyrinth()
     {
         for(int j = 0; j < gameFieldSize.y; j++)
         {
-            if(labyrinth[i][j]){
-                mvaddch(j, i, labyrinth[i][j]);
-            }
+            mvaddch(j, i, labyrinth[i][j]);
         }
     }
 }
@@ -55,7 +61,7 @@ void Labyrinth::displayUpdated(Point* update[2], int size)
     	abc = update[1][i];
         mvaddch(abc.y, abc.x, ' ');
         abc = update[0][i];
-        mvaddch(abc.y, abc.x, '*');
+        mvaddch(abc.y, abc.x, abc.style.letter);
     }
 }
 
@@ -68,31 +74,32 @@ void Labyrinth::displayUpdated(Point* update[2], int size)
  */
 void Labyrinth::updateLabyrinth(Point* update[2], int size)
 {
-    for(int i = 1; i < size; i++)
+    Point p;
+    for(int i = 0; i < size; i++)
     {
-        Point p = update[0][i];
+        p = update[0][i];
         if(p.x >= 0 and p.y >= 0)
         {
-            labyrinth[p.x][p.y] = 1;
+            addPoint(p);
         }
         p = update[1][i];
         if(p.x >= 0 and p.y >= 0)
         {
-            labyrinth[p.x][p.y] = 0;
+            remPoint(p);
         }
     }
 }
 
 bool Labyrinth::isFree(Point p)
 {
-	return !this->labyrinth[p.x][p.y];
+    return (this->labyrinth[p.x][p.y] == ' ');
 }
 
-bool Labyrinth::addPoint(Point p, char style)
+bool Labyrinth::addPoint(Point p)
 {
 	if(this->isFree(p))
 	{
-		labyrinth[p.x][p.y] = style;
+        labyrinth[p.x][p.y] = p.style.letter;
 		return true;
 	}
 	return false;
@@ -100,18 +107,33 @@ bool Labyrinth::addPoint(Point p, char style)
 
 bool Labyrinth::remPoint(Point p)
 {
-	labyrinth[p.x][p.y] = 0;
+    labyrinth[p.x][p.y] = ' ';
 	return true;
 }
 
-bool Labyrinth::save(std::string name)
+bool Labyrinth::save(char name[MAXLINE])
 {
     FILE* file;
-    file = fopen(name, "r");
+    char strout[MAXLINE];
+    file = fopen(name, "w");
     if(file)
     {
+        fprintf(file, "%d %d\n", gameFieldSize.x, gameFieldSize.y);
 
+        //Printing the game field excluding the borders
+        for(int j = 1; j < gameFieldSize.y - 1; j++)
+        {
+            for(int i = 1; i < gameFieldSize.x - 1; i++)
+            {
+                fprintf(file, "%c", labyrinth[i][j]);
+            }
+            fprintf(file, "\n");
+        }
+        sprintf(strout, "Succesfully saved to %s", name);
+        mvaddstr(gameFieldSize.y / 2, 5, strout);
         return 1;
     }
+    sprintf(strout, "Couldn't save to %s", name);
+    mvaddstr(gameFieldSize.y / 2, 5, strout);
     return 0;
 }
