@@ -130,7 +130,6 @@ bool Labyrinth::save(char name[MAXLINE])
     }
     sprintf(strout, "Couldn't save to %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
-    fclose(file);
     return 0;
 }
 
@@ -173,6 +172,5 @@ bool Labyrinth::load(char name[MAXLINE])
     }
     sprintf(strout, "Couldn't load from %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
-    fclose(file);
     return 0;
 }
