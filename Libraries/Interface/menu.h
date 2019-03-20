@@ -1,6 +1,6 @@
 #ifndef MENU_H
 #define MENU_H
-#include <ncurses.h>
+#include <curses.h>
 #include <cstring>
 #include <list>
 #include "interface.h"
@@ -35,5 +35,4 @@ class Menu : public Widget
         void draw();
         Menu(int x, int y, int width, int height);
 };
-
 #endif

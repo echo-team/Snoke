@@ -1,7 +1,7 @@
 #ifndef LABYRINTH_H
 #define LABYRINTH_H
 #include "../Common/common.h"
-#include <ncurses.h>
+#include <curses.h>
 #include <string>
 #include <cstring>
 #include <cstdio>

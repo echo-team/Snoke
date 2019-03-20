@@ -1,7 +1,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 #include <iostream>
-#include <ncurses.h>
+#include <curses.h>
 
 #ifdef _WIN32
 #include <windows.h>

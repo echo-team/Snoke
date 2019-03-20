@@ -43,7 +43,7 @@ int Game::run()
     noecho();
     nodelay(stdscr, true);
     #ifdef __unix__
-    set_escdelay(0);
+    //set_escdelay(0);
     #endif
     curs_set(0);
     keypad(stdscr, true);
@@ -84,21 +84,25 @@ int Game::run()
             case ERR:
                 break;
             case KEY_UP:
+            case 'w':
                 snake.setDirection(MVUP);
                 break;
             case KEY_DOWN:
+            case 's':
                 snake.setDirection(MVDOWN);
                 break;
             case KEY_LEFT:
+            case 'a':
                 snake.setDirection(MVLEFT);
                 break;
             case KEY_RIGHT:
+            case 'd':
                 snake.setDirection(MVRIGHT);
                 break;
             case 'q':
                 flag = true;
                 break;
-            case 's':
+            case 'c':
                 labyrinth.save("testsave");
                 refresh();
                 flushinp();

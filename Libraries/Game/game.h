@@ -2,7 +2,7 @@
 #define GAME_H
 #include "../Snake/snake.h"
 #include "../Labyrinth/labyrinth.h"
-#include <ncurses.h>
+#include <curses.h>
 #include <iostream>
 #include <string>
 

@@ -1,4 +1,4 @@
-CC = g++ -std=c++11
+CC = i686-w64-mingw32-c++ -std=c++11
 
 #The Target Binary Program
 TARGET      := mygame
@@ -12,8 +12,10 @@ DEPEXT      := d
 OBJEXT      := o
 
 #Flags, Libraries and Includes
-CFLAGS      := -lncurses -Wall -g
-LIB         := -lncurses
+CFLAGS      := -static-libgcc -static-libstdc++ -Wall -g -lpdcurses 
+LDFLAGS     := -static-libgcc -static-libstdc++ -lpdcurses 
+LIB         := -static-libgcc -static-libstdc++ -lpdcurses 
+INCLUDE      := 
 
 #------------------------------------------------------------
 #Do not touch anything below this line

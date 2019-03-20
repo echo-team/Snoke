@@ -3,6 +3,10 @@
 
 #TARGET = Snoke
 
+CONFIG -= qt
+
+DEFINES -= UNICODE QT_LARGEFILE_SUPPORT
+
 LIBS = -lncurses
 
 HEADERS = \
@@ -40,7 +44,7 @@ INCLUDEPATH = \
     $$PWD/Libraries/Labyrinth \
     $$PWD/Libraries/Screens \
     $$PWD/Libraries/SideMenu \
-    $$PWD/Libraries/Snake
+    $$PWD/Libraries/Snake \
 
 #DEFINES = 
 

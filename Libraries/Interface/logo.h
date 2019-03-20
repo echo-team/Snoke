@@ -1,6 +1,6 @@
 #ifndef LOGO_H
 #define LOGO_H
-#include <ncurses.h>
+#include <curses.h>
 #include <cstring>
 #include <vector>
 #include "../Common/common.h"

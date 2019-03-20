@@ -1,4 +1,4 @@
-#include <ncurses.h>
+#include <curses.h>
 #include "Libraries/Screens/mainMenu.h"
 #include "Libraries/Game/game.h"
 
@@ -12,7 +12,7 @@ int main()
     */
     
     Game g;
-    g.init(48, 150);
+    g.init(48, 100);
     g.run();
     
     refresh();

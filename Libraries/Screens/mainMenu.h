@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <ncurses.h>
+#include "curses.h"
 #include "../Common/common.h"
 #include "../Interface/logo.h"
 #include "../Interface/menu.h"

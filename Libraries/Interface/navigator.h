@@ -1,6 +1,6 @@
 #ifndef NAVIGATOR_H
 #define NAVIGATOR_H
-#include <ncurses.h>
+#include <curses.h>
 #include <list>
 #include "interface.h"
 
