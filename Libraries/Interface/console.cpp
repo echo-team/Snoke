@@ -25,7 +25,30 @@ Geometry Console::geometry()
  */
 void Console::execute()
 {
-    Navigator navigator;
+    Navigator navigator(this);
+    Widget* widget;
+
+    while (true)
+    {
+        short command = getch();
+
+        switch(command)
+        {
+            case KEY_DOWN:
+                widget = navigator.next();
+                break;
+
+            case 27:
+                return;
+        }
+
+        std::cout << "focused " << widget << std::endl;
+
+        if (widget != NULL)
+        {
+            widget->focus();
+        }
+    }
 }
 
 /**
@@ -33,8 +56,8 @@ void Console::execute()
  */
 void Console::_refresh()
 {
-    std::cout << "refreshing" << std::endl;
     refresh();
+    std::cout << "refreshed" << std::endl;
 }
 
 /**

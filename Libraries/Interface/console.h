@@ -18,8 +18,8 @@ class Console : private Widget
         using Widget::parent;
         Geometry geometry();
         void execute();
-        void _refresh();
-        void _touch();
+        void _refresh() override;
+        void _touch() override;
 };
 
 /**
