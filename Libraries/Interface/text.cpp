@@ -2,7 +2,7 @@
 
 /**
  * Sets inner text of widget
- * @param {char*} innerText - text to set
+ * @param {const char*} innerText - text to set
  */
 void Text::add(char* innerText)
 {

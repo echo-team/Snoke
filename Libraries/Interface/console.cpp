@@ -46,7 +46,7 @@ void Console::execute()
 
         if (widget != NULL)
         {
-            widget->focus();
+            widget->dispatch(EVENT_FOCUS);
         }
     }
 }

@@ -14,11 +14,11 @@ class Navigator
     private:
         Widget* current;
         Widget* root;
-        Widget* getNext();
+        Widget* nextSibling(Widget* widget);
 
     public:
-        void next();
-        Navigator();
+        Widget* next();
+        Navigator(Widget* root);
 };
 
 #endif

@@ -16,6 +16,7 @@ class Console : private Widget
         static Console& instance();
         using Widget::add;
         using Widget::parent;
+        using Widget::children;
         Geometry geometry();
         void execute();
         void _refresh() override;

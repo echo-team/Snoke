@@ -1,6 +1,8 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
+#include <functional>
 #include <vector>
+#include <map>
 #include <ncurses.h>
 #include "../Common/common.h"
 
@@ -35,8 +37,14 @@
  * @const {unsigned char} EVENT_FOCUS  - event of focusing and unfocusing
  * @const {unsigned char} EVENT_ACTIVE - event of activating widget
  */
-#define EVENT_FOCUS : 1
-#define EVENT_FOCUS : 2
+#define EVENT_FOCUS  1
+#define EVENT_ACTIVE 2
+
+/**
+ * Describes method called by event dispatching
+ * @typedef {std::function<void()>} listener
+ */
+typedef std::function<void()> Listener;
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
@@ -59,36 +67,39 @@ class Widget
         Point client;
         char align[2];
         unsigned char events;
-        Widget* parentWidget;
-        std::vector<Widget*> childWidgets;
+        std::map<unsigned char, std::vector<Listener>> listeners;
         void calculateClientPosition();
 
     protected:
         WINDOW* frame;
         short x, y, width, height;
+        Widget* parentWidget;
+        std::vector<Widget*> childWidgets;
 
     public:
         virtual void draw();
-        virtual void focus(int index);
-        virtual void unfocus(int index);
+        virtual void focus();
+        virtual void unfocus();
         void alignment(char horizontal, char vertical);
         void position(short x, short y);
         void geometry(short width, short height);
-        void event(unsigned char name);
+        void addListener(unsigned char event, Listener listener);
+        void dispatch(unsigned char event);
         void add(Widget* child);
         Point position();
         Geometry geometry();
-        bool event(unsigned char name);
+        bool event(unsigned char event);
         Widget* parent();
         std::vector<Widget*> children();
         void update();
         void _parent(Widget* parent);
-        void _refresh();
-        void _touch();
+        virtual void _refresh();
+        virtual void _touch();
         Widget();
 
 };
 
 #include "navigator.h"
+#include "text.h"
 #include "menu.h"
 #endif

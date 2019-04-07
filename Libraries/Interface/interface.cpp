@@ -7,7 +7,6 @@
 void Widget::calculateClientPosition()
 {
     Geometry field = parentWidget->geometry();
-    std::cout << "parent size: " << field.width << ' ' << field.height << std::endl;
     client.x = x;
     client.y = y;
 
@@ -56,18 +55,16 @@ void Widget::draw()
  * Event listener activated by Navigator module when user selects widget
  * @virtual
  * @callback Navigator::listener
- * @param {int} index - index of subunit of the widget
  */
-void Widget::focus(int index)
+void Widget::focus()
 {}
 
 /**
  * Event listener activated by Navigator module when user clicks on widget
  * @virtual
  * @callback Navigator::listener
- * @param {int} index - index of subunit of the widget
  */
-void Widget::unfocus(int index)
+void Widget::unfocus()
 {}
 
 /**
@@ -122,26 +119,49 @@ Geometry Widget::geometry()
 }
 
 /**
- * Saves event to dispatch it on widget
- * @param {unsigned char} name - name of event
+ * Checks if listeners are set for given event
+ * @param  {unsigned char} event - id of event to check
+ * @return {bool}                - true if listeners are specified false if not
  */
-void event(unsigned char name)
+bool Widget::event(unsigned char event)
 {
-    events = events | name;
-}
-
-/**
- * Checks if this event is holding by widget
- * @param {unsigned char} name - name of event
- */
-bool event(unsigned char name)
-{
-    if (events & name)
+    if (listeners[event].size())
     {
         return true;
     }
 
     return false;
+}
+
+/**
+ * Runs listeners binded to specified evend of current widget
+ * @param {unsigned char} event - id of event to check
+ */
+void Widget::dispatch(unsigned char event)
+{
+    for (int counter = 0; counter < listeners[event].size(); counter++)
+    {
+        listeners[event][counter]();
+    }
+}
+
+/**
+ * Binds listener to widget event
+ * @param {unsigned char}  event    - id of event
+ * @param {const listener} listener - method handing event
+ */
+void Widget::addListener(unsigned char event, Listener listener)
+{
+    std::map<unsigned char, std::vector<Listener> >::iterator existing = listeners.find(event);
+
+    if (existing != listeners.end())
+    {
+        existing->second.push_back(listener);
+    }
+    else
+    {
+        listeners.insert(std::pair<unsigned char, std::vector<Listener>>(event, {listener}));
+    }
 }
 
 /**
@@ -168,7 +188,7 @@ Widget* Widget::parent()
  * Returns children of current widget
  * @return {std::vector<Widget*>}
  */
-std::vector<Widget*> children()
+std::vector<Widget*> Widget::children()
 {
     return childWidgets;
 }
@@ -207,9 +227,9 @@ void Widget::update()
      * Redraws parent and current (touched by changing of current) widgets
      */
     draw();
-    parentWidget->_touch();
-    parentWidget->_refresh();
-    _refresh();
+    //parentWidget->_touch();
+    //parentWidget->_refresh();
+    Widget::_refresh();
 }
 
 /**
