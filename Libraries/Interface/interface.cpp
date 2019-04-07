@@ -152,16 +152,7 @@ void Widget::dispatch(unsigned char event)
  */
 void Widget::addListener(unsigned char event, Listener listener)
 {
-    std::map<unsigned char, std::vector<Listener> >::iterator existing = listeners.find(event);
-
-    if (existing != listeners.end())
-    {
-        existing->second.push_back(listener);
-    }
-    else
-    {
-        listeners.insert(std::pair<unsigned char, std::vector<Listener>>(event, {listener}));
-    }
+    listeners[event].push_back(listener);
 }
 
 /**

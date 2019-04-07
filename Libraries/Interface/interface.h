@@ -34,11 +34,13 @@
 
 /**
  * Arguments for events methods
- * @const {unsigned char} EVENT_FOCUS  - event of focusing and unfocusing
- * @const {unsigned char} EVENT_ACTIVE - event of activating widget
+ * @const {unsigned char} EVENT_FOCUS   - event of focusing
+ * @const {unsigned char} EVENT_UNFOCUS - event of unfocusing
+ * @const {unsigned char} EVENT_ACTIVE  - event of activating widget
  */
-#define EVENT_FOCUS  1
-#define EVENT_ACTIVE 2
+#define EVENT_FOCUS   0
+#define EVENT_UNFOCUS 1
+#define EVENT_ACTIVE  2
 
 /**
  * Describes method called by event dispatching
