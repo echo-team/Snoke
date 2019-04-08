@@ -15,9 +15,11 @@ class Navigator
         Widget* current;
         Widget* root;
         Widget* nextSibling(Widget* widget);
+        Widget* previousSibling(Widget* widget);
 
     public:
         Widget* next();
+        Widget* previous();
         Navigator(Widget* root);
 };
 
