@@ -26,7 +26,7 @@ Geometry Console::geometry()
 void Console::execute()
 {
     Navigator navigator(this);
-    Widget* widget;
+    Widget* widget = this;
 
     while (true)
     {
@@ -35,18 +35,19 @@ void Console::execute()
         switch(command)
         {
             case KEY_DOWN:
+                widget->dispatch(EVENT_UNFOCUS);
                 widget = navigator.next();
+                widget->dispatch(EVENT_FOCUS);
+                break;
+
+            case KEY_UP:
+                widget->dispatch(EVENT_UNFOCUS);
+                widget = navigator.previous();
+                widget->dispatch(EVENT_FOCUS);
                 break;
 
             case 27:
                 return;
-        }
-
-        std::cout << "focused " << widget << std::endl;
-
-        if (widget != NULL)
-        {
-            widget->dispatch(EVENT_FOCUS);
         }
     }
 }
