@@ -1,6 +1,7 @@
 #ifndef LABYRINTH_H
 #define LABYRINTH_H
 #include "../Common/common.h"
+#include "../Snake/snake.h"
 #include <ncurses.h>
 #include <string>
 #include <cstring>
@@ -9,7 +10,7 @@
 
 /**
  * gameFieldSize - size of a game field(x, y)
- * @type {Point} 
+ * @type {Point}
  * @global
  */
 extern Point gameFieldSize;
@@ -22,7 +23,7 @@ class Labyrinth
         std::string reserved = "!";
     public:
         void setLabyrinth(Point dimensions);
-        void addSnake(std::list<Point> snake);
+        void addSnake(Snake snake);
         bool addPoint(Point p);
         bool remPoint(Point p);
         void displayLabyrinth();

@@ -66,4 +66,4 @@ class Snake
         short getDirection();
         bool move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSize);
 };
-#endif
+#endif //SNAKE_H

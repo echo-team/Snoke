@@ -54,6 +54,11 @@ typedef struct _Point
     }
 } Point;
 
+class Snake;
+class Labyrinth;
+class Game;
+class Ball;
+
 std::ostream& operator << (std::ostream &s, Point p);
 bool operator == (Point p1, Point p2);
 void mSleep(int time);

@@ -26,9 +26,11 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
     }
 }
 
-void Labyrinth::addSnake(std::list<Point> snake)
+void Labyrinth::addSnake(Snake snake)
 {
-    for(auto it = snake.begin(); it != snake.end(); ++it)
+    std::list<Point> currBody;
+    snake.getCoords(&currBody);
+    for(auto it = currBody.begin(); it != currBody.end(); ++it)
     {
         addPoint(*it);
     }

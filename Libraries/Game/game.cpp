@@ -2,7 +2,7 @@
 
 /**
  * gameFieldSize - a variable, which stores the dimensions of the game field(shared with snakes)
- * @type {Point} 
+ * @type {Point}
  * @global
  */
 Point gameFieldSize;
@@ -55,7 +55,7 @@ int Game::run()
     getmaxyx(stdscr, screenSize.y, screenSize.x);
 
     /**
-     * Initializing snake by giving it the starting position, 
+     * Initializing snake by giving it the starting position,
      * direction of growth and starting length
      */
     Point p;
@@ -114,7 +114,7 @@ int Game::run()
 
         /**
          * Setting the flag for the next iteration check
-         * Moving the snake and getting the Points of a 
+         * Moving the snake and getting the Points of a
          * labyrinth which are to be changed in change array
          */
         flag = snake.move(labyrinth, &ball, change, changeSize) == 1;
@@ -145,10 +145,8 @@ int Game::run()
 bool Game::initSnake(Point begin, int dir, int length)
 {
     bool flag = snake.init(begin, dir, length);
-    std::list<Point> currBody;
-    snake.getCoords(&currBody);
     if (!flag){
-        labyrinth.addSnake(currBody);
+        labyrinth.addSnake(snake);
     }
     return flag;
 }
