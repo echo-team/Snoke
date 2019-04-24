@@ -26,14 +26,15 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
     }
 }
 
-void Labyrinth::addSnake(Snake snake)
+void Labyrinth::addSnake(Snake* snake)
 {
     std::list<Point> currBody;
-    snake.getCoords(&currBody);
+    snake->getCoords(&currBody);
     for(auto it = currBody.begin(); it != currBody.end(); ++it)
     {
         addPoint(*it);
     }
+    this->snake = snake;
 }
 
 /**
@@ -41,11 +42,67 @@ void Labyrinth::addSnake(Snake snake)
  * (Should only be used at the start as it is rewriting all the points it includes
  * and not the updated)
  */
-void Labyrinth::displayLabyrinth()
+void Labyrinth::displayLabyrinth(Point* change[2], int size)
 {
-    for(int j = 0; j < gameFieldSize.y; j++)
+    Point tmp, start, end;
+    char string[9];
+    getmaxyx(stdscr, tmp.y, tmp.x);
+    Point head = this->snake->getHeadCoords();
+    bool flag = 0;
+    sprintf(string, "%d %d", (int)tmp.y, (int)tmp.x);
+
+    if(tmp.y < gameFieldSize.y)
     {
-        mvaddstr(j, 0, labyrinth[j]);
+        flag = 1;
+        start.y = head.y - tmp.y / 2;
+        end.y = head.y + tmp.y / 2;
+        if(start.y < 0)
+        {
+            start.y = 0;
+        }
+        if(end.y > gameFieldSize.y)
+        {
+            end.y = gameFieldSize.y;
+        }
+    } else
+    {
+        start.y = 0;
+        end.y = gameFieldSize.y;
+    }
+
+    if(tmp.x < gameFieldSize.x)
+    {
+        flag = 1;
+        start.x = head.x - tmp.x / 2;
+        end.x = head.x + tmp.x / 2;
+        if(start.x < 0)
+        {
+            start.x = 0;
+        }
+        if(end.x > gameFieldSize.x)
+        {
+            end.x = gameFieldSize.x;
+        }
+    } else
+    {
+        start.x = 0;
+        end.x = gameFieldSize.x;
+    }
+
+    if(!flag)
+    {
+        displayUpdated(change, size);
+        return;
+    }
+
+    clear();
+    for(int j = start.y; j < end.y; j++)
+    {
+        move(j - start.y, 0);
+        for(int i = start.x; i < end.x; i++)
+        {
+            addch(labyrinth[j][i]);
+        }
     }
 }
 

@@ -21,12 +21,15 @@ class Labyrinth
     private:
         char** labyrinth;
         std::string reserved = "!";
+        unsigned int leftX = 0;
+        unsigned int topY = 0;
+        Snake* snake = NULL;
     public:
         void setLabyrinth(Point dimensions);
-        void addSnake(Snake snake);
+        void addSnake(Snake* snake);
         bool addPoint(Point p);
         bool remPoint(Point p);
-        void displayLabyrinth();
+        void displayLabyrinth(Point* update[2] = NULL, int size = 0);
         void displayUpdated(Point* update[2], int size);
         void updateLabyrinth(Point* update[2], int size);
         bool isFree(Point p);

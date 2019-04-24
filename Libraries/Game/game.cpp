@@ -19,7 +19,7 @@ bool Game::init(int size, int speed)
     gameFieldSize.y = size/2;
     this->labyrinth.setLabyrinth(gameFieldSize);
     this->labyrinth.load("testload");
-    setSpeed(speed);
+    this->setSpeed(speed);
 
     /**
      * Initializing the change array, containing Points to be changed in the labyrinth
@@ -124,7 +124,8 @@ int Game::run()
          * and displaying/deleting added/removed Points
          */
         labyrinth.updateLabyrinth(change, changeSize);
-        labyrinth.displayUpdated(change, changeSize);
+        //labyrinth.displayUpdated(change, changeSize);
+        labyrinth.displayLabyrinth(change, changeSize);
 
         refresh();
         flushinp();
@@ -146,7 +147,7 @@ bool Game::initSnake(Point begin, int dir, int length)
 {
     bool flag = snake.init(begin, dir, length);
     if (!flag){
-        labyrinth.addSnake(snake);
+        labyrinth.addSnake(&snake);
     }
     return flag;
 }
