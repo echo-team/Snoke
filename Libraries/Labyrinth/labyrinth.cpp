@@ -99,13 +99,13 @@ void Labyrinth::sizeHandler()
     if(tmp.y < gameFieldSize.y)
     {
         start.y = head.y - tmp.y / 2;
-        end.y = head.y + tmp.y / 2;
+        end.y = head.y + tmp.y / 2 + tmp.y % 2;
         if(start.y < 0)
         {
             start.y = 0;
             end.y = tmp.y;
         }
-        if(end.y > gameFieldSize.y)
+        if(end.y >= gameFieldSize.y)
         {
             end.y = gameFieldSize.y;
             if(start.y != 0)
@@ -122,13 +122,13 @@ void Labyrinth::sizeHandler()
     if(tmp.x < gameFieldSize.x)
     {
         start.x = head.x - tmp.x / 2;
-        end.x = head.x + tmp.x / 2;
+        end.x = head.x + tmp.x / 2 + tmp.x % 2;
         if(start.x < 0)
         {
             start.x = 0;
             end.x = tmp.x;
         }
-        if(end.x > gameFieldSize.x)
+        if(end.x >= gameFieldSize.x)
         {
             end.x = gameFieldSize.x;
             if(start.x != 0)
