@@ -24,6 +24,15 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
         labyrinth[i][0] = '|';
         labyrinth[i][gameFieldSize.x - 1] = '|';
     }
+    this->start.x = 0;
+    this->start.y = 0;
+    this->end.x = gameFieldSize.x;
+    this->end.y = gameFieldSize.y;
+    this->prevStart.x = 0;
+    this->prevStart.y = 0;
+    this->prevEnd.x = gameFieldSize.x;
+    this->prevEnd.y = gameFieldSize.y;
+    this->prevDisplayMethod = DISPLAB;
 }
 
 void Labyrinth::addSnake(Snake* snake)
@@ -37,32 +46,72 @@ void Labyrinth::addSnake(Snake* snake)
     this->snake = snake;
 }
 
-/**
- * Drawing labyrinth to the console
- * (Should only be used at the start as it is rewriting all the points it includes
- * and not the updated)
- */
-void Labyrinth::displayLabyrinth(Point* change[2], int size)
+void Labyrinth::displayHandler(Point* change[2], int size)
 {
-    Point tmp, start, end;
-    char string[9];
-    getmaxyx(stdscr, tmp.y, tmp.x);
-    Point head = this->snake->getHeadCoords();
-    bool flag = 0;
-    sprintf(string, "%d %d", (int)tmp.y, (int)tmp.x);
+    this->updateLabyrinth(change, size);
 
+    this->sizeHandler();
+
+    switch (this->prevDisplayMethod)
+    {
+        case DISPFULL:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayUpdated(change, size);
+            }
+            else
+            {
+                this->displayLabyrinth();
+            }
+            break;
+        }
+        case DISPUPD:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayUpdated(change, size);
+            }
+            else
+            {
+                this->displayLabyrinth();
+            }
+            break;
+        }
+        case DISPLAB:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayFull();
+            }
+            else
+            {
+                this->displayLabyrinth();
+            }
+        }
+    }
+}
+
+void Labyrinth::sizeHandler()
+{
+    Point head = this->snake->getHeadCoords(), tmp;
+    getmaxyx(stdscr, tmp.y, tmp.x);
     if(tmp.y < gameFieldSize.y)
     {
-        flag = 1;
         start.y = head.y - tmp.y / 2;
         end.y = head.y + tmp.y / 2;
         if(start.y < 0)
         {
             start.y = 0;
+            end.y = tmp.y;
         }
         if(end.y > gameFieldSize.y)
         {
             end.y = gameFieldSize.y;
+            if(start.y != 0)
+            {
+                start.y = gameFieldSize.y - tmp.y;
+            }
         }
     } else
     {
@@ -72,29 +121,44 @@ void Labyrinth::displayLabyrinth(Point* change[2], int size)
 
     if(tmp.x < gameFieldSize.x)
     {
-        flag = 1;
         start.x = head.x - tmp.x / 2;
         end.x = head.x + tmp.x / 2;
         if(start.x < 0)
         {
             start.x = 0;
+            end.x = tmp.x;
         }
         if(end.x > gameFieldSize.x)
         {
             end.x = gameFieldSize.x;
+            if(start.x != 0)
+            {
+                start.x = gameFieldSize.x - tmp.x;
+            }
         }
     } else
     {
         start.x = 0;
         end.x = gameFieldSize.x;
     }
+}
 
-    if(!flag)
+void Labyrinth::displayFull()
+{
+    for(int j = 0; j < gameFieldSize.y; j++)
     {
-        displayUpdated(change, size);
-        return;
+        mvaddstr(j, 0, labyrinth[j]);
     }
+    this->prevDisplayMethod = DISPFULL;
+}
 
+/**
+ * Drawing labyrinth to the console
+ * (Should only be used at the start as it is rewriting all the points it includes
+ * and not the updated)
+ */
+void Labyrinth::displayLabyrinth()
+{
     clear();
     for(int j = start.y; j < end.y; j++)
     {
@@ -104,6 +168,7 @@ void Labyrinth::displayLabyrinth(Point* change[2], int size)
             addch(labyrinth[j][i]);
         }
     }
+    this->prevDisplayMethod = DISPLAB;
 }
 
 /**
@@ -119,6 +184,7 @@ void Labyrinth::displayUpdated(Point* update[2], int size)
         abc = update[0][i];
         mvaddch(abc.y, abc.x, abc.style.letter);
     }
+    this->prevDisplayMethod = DISPUPD;
 }
 
 /**

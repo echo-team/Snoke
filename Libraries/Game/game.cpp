@@ -73,7 +73,7 @@ int Game::run()
     /**
      * displaying the starting state of labyrinth
      */
-    labyrinth.displayLabyrinth();
+    labyrinth.displayHandler();
 
     bool flag = false;
     while (!flag)
@@ -102,7 +102,7 @@ int Game::run()
                 labyrinth.save("testsave");
                 refresh();
                 flushinp();
-                labyrinth.displayLabyrinth();
+                labyrinth.displayHandler();
                 mSleep(speed * 2);
                 continue;
         }
@@ -123,9 +123,7 @@ int Game::run()
          * Updating labyrinth with change array Points
          * and displaying/deleting added/removed Points
          */
-        labyrinth.updateLabyrinth(change, changeSize);
-        //labyrinth.displayUpdated(change, changeSize);
-        labyrinth.displayLabyrinth(change, changeSize);
+        labyrinth.displayHandler(change, changeSize);
 
         refresh();
         flushinp();
