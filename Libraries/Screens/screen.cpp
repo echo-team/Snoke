@@ -7,14 +7,14 @@
 void Screen::add(Widget* widget)
 {
     model.push_back(widget);
-    widget.draw();
+    widget->draw();
 }
 
 /**
  * Getts the pointer to the first widget in model
  * @return {std::list<Widget*>::iterator}
  */
-std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current)
+std::list<Widget*>::iterator Screen::first()
 {
     return model.begin();
 }
@@ -23,26 +23,33 @@ std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current)
  * Getts the pointer to the previous widget in model
  * @return {std::list<Widget*>::iterator}
  */
-std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current)
+std::list<Widget*>::iterator Screen::previous(std::list<Widget*>::iterator current)
 {
     if (current == model.begin())
     {
-        return model.end() - 1;
+        return std::prev(model.end(), 1);
     }
 
-    return current - 1;
+    return std::prev(current, 1);
 }
 
 /**
  * Getts the pointer to the next widget in model
  * @return {std::list<Widget*>::iterator}
  */
-std::list<Widget*>::iterator next(std::list<Widget*>::iterator current)
+std::list<Widget*>::iterator Screen::next(std::list<Widget*>::iterator current)
 {
-    if (current == model.end() + 1)
+    if (current == std::prev(model.end(), 1))
     {
         return model.begin();
     }
 
-    return current + 1;
+    return std::next(current, 1);
 }
+
+/**
+ * Drawing screen method
+ * @virtual
+ */
+void Screen::draw()
+{}

@@ -1,6 +1,8 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
-#include "../Interface/navigator.h"
+#include <list>
+#include <map>
+#include <ncurses.h>
 #include "screen.h"
 
 /**

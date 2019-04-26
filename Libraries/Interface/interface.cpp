@@ -19,10 +19,17 @@ void Widget::unfocus(int index)
 {}
 
 /**
+ * Drawing widget method
+ * @virtual
+ */
+void Widget::draw()
+{}
+
+/**
  * Getts the amount of widget non-widget units (amount of times focus event will be parced)
  * @return {Widget*}
  */
-short units()
+short Widget::units()
 {
     return _units;
 }
@@ -31,7 +38,7 @@ short units()
  * Setter for the amount of non-widget units
  * @return {Widget*}
  */
-void units(short amount)
+void Widget::units(short amount)
 {
     _units = amount;
 }

@@ -3,7 +3,7 @@
 /**
  * Runs the main event loop
  */
-void execute()
+void Application::execute()
 {
     bool esc = false;
     short unit = 0;
@@ -24,21 +24,21 @@ void execute()
                         break;
                     }
 
-                    currentWidget = currentScreen->previous();
+                    currentWidget = currentScreen->previous(currentWidget);
                     break;
 
                 case (KEY_DOWN):
 
-                    if (unit < currentWidget->units() - 1)
+                    if (unit < (*currentWidget)->units() - 1)
                     {
                         unit++;
                         break;
                     }
 
-                    currentWidget = currentScreen->next();
+                    currentWidget = currentScreen->next(currentWidget);
                     break;
 
-                case (KEY_ESC):
+                case (13):
 
                     return;
             }
@@ -50,7 +50,7 @@ void execute()
  * Loads screen
  * @param {char*} name - screen name
  */
-void load(char* name)
+void Application::load(char* name)
 {
     history.push_back(currentScreen);
     currentScreen = screens[name];
@@ -62,10 +62,10 @@ void load(char* name)
  * Loads previously opened screen
  * @param {char*} name - screen name
  */
-void back()
+void Application::back()
 {
     history.pop_back();
-    currentScreen = *(history.end() - 1);
+    currentScreen = *(std::prev(history.end(), 1));
     currentWidget = currentScreen->first();
     currentScreen->draw();
 }
@@ -75,7 +75,7 @@ void back()
  * @param {char*}   name   - name to identify screen
  * @param {Screen*} screen - pointer to screen
  */
-void add(char* name, Screen* screen)
+void Application::add(char* name, Screen* screen)
 {
     screens.insert(std::pair<char*, Screen*>(name, screen));
 }

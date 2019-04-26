@@ -9,16 +9,14 @@
 class Widget
 {
     public:
-        Widget* _next, _previous;
         short _units;
 
     public:
         virtual void focus(int index);
         virtual void unfocus(int index);
+        virtual void draw();
         short units();
         void units(short amount);
 };
 
-#include "navigator.h"
-#include "menu.h"
 #endif
