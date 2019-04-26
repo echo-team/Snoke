@@ -47,6 +47,40 @@ void execute()
 }
 
 /**
+ * Loads screen
+ * @param {char*} name - screen name
+ */
+void load(char* name)
+{
+    history.push_back(currentScreen);
+    currentScreen = screens[name];
+    currentWidget = currentScreen->first();
+    currentScreen->draw();
+}
+
+/**
+ * Loads previously opened screen
+ * @param {char*} name - screen name
+ */
+void back()
+{
+    history.pop_back();
+    currentScreen = *(history.end() - 1);
+    currentWidget = currentScreen->first();
+    currentScreen->draw();
+}
+
+/**
+ * Adds screen to the list of known screens
+ * @param {char*}   name   - name to identify screen
+ * @param {Screen*} screen - pointer to screen
+ */
+void add(char* name, Screen* screen)
+{
+    screens.insert(std::pair<char*, Screen*>(name, screen));
+}
+
+/**
  * Singleton constructor
  * @constructor
  * @return {Application&}
