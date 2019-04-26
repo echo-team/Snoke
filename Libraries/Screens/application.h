@@ -5,9 +5,9 @@
 
 /**
  * Singleton class manages stack of screens and navigation
- * @prop {map<Screen*>} screens        - container with screens
- * @prop {Screen*}      currentScreen  - current showed screen
- * @prop {Widget*}      currentWidget  - current focused widget
+ * @prop {map<Screen*>}                 screens        - container with screens
+ * @prop {Screen*}                      currentScreen  - current showed screen
+ * @prop {std::list<Widget*>::iterator} currentWidget  - current focused widget
  */
 class Application
 {
@@ -17,7 +17,7 @@ class Application
         Application& operator=(Application&);
         std::map<Screen*> screens;
         Screen* currentScreen;
-        Widget* currentWidget;
+        std::list<Widget*>::iterator currentWidget;
     public:
         static Application& instance();
         void execute();

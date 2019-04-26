@@ -24,14 +24,7 @@ void execute()
                         break;
                     }
 
-                    Widget* previous = currentWidget->previous();
-                    if (previous != NULL)
-                    {
-                        unit = currentWidget->units() - 1;
-                        currentWidget = previous;
-                        break;
-                    }
-
+                    currentWidget = currentScreen->previous();
                     break;
 
                 case (KEY_DOWN):
@@ -42,14 +35,7 @@ void execute()
                         break;
                     }
 
-                    Widget* next = currentWidget->next();
-                    if (next != NULL)
-                    {
-                        unit = 0;
-                        currentWidget = next;
-                        break;
-                    }
-
+                    currentWidget = currentScreen->next();
                     break;
 
                 case (KEY_ESC):
