@@ -7,6 +7,16 @@
 void Screen::add(Widget* widget)
 {
     model.push_back(widget);
+    widget.draw();
+}
+
+/**
+ * Getts the pointer to the first widget in model
+ * @return {std::list<Widget*>::iterator}
+ */
+std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current)
+{
+    return model.begin();
 }
 
 /**

@@ -12,6 +12,7 @@ class Screen
 
     public:
         void add(Widget* widget);
+        std::list<Widget*>::iterator first();
         std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current);
         std::list<Widget*>::iterator next(std::list<Widget*>::iterator current);
 };
