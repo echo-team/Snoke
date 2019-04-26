@@ -15,10 +15,6 @@ class Widget
     public:
         virtual void focus(int index);
         virtual void unfocus(int index);
-        Widget* previous();
-        Widget* next();
-        void previous(Widget* widget);
-        void next(Widget* widget);
         short units();
         void units(short amount);
 };
