@@ -8,7 +8,7 @@
 /**
  * Main menu class
  */
-class MainMenu
+class MainMenu : public Screen
 {
     public:
         void draw();

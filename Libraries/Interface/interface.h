@@ -14,16 +14,11 @@
 #define EVENT_UNFOCUS 2
 #define EVENT_ACTIVE  4
 
-typedef struct
-{
-    short unit;
-} Event;
-
 /**
  * Describes method called by event dispatching
  * @typedef {std::function<void()>} listener
  */
-typedef std::function<void(Event)> Listener;
+typedef std::function<void()> Listener;
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
@@ -34,19 +29,14 @@ typedef std::function<void(Event)> Listener;
 class Widget
 {
     public:
-        short _units;
         unsigned char events;
         std::map<unsigned char, std::list<Listener>> listeners;
 
     public:
-        virtual void focus(int index);
-        virtual void unfocus(int index);
         virtual void draw();
-        short units();
-        void units(short amount);
         bool event(unsigned char name);
         void listener(unsigned char name, Listener function);
-        void dispatch(unsigned char name, Event information);
+        void dispatch(unsigned char name);
 };
 
 #endif
