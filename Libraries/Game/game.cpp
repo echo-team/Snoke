@@ -52,8 +52,7 @@ int Game::run()
     /**
      * Retrieving the size of the screen(console)
      */
-    Point screenSize;
-    getmaxyx(stdscr, screenSize.y, screenSize.x);
+    Point screenSize = getConsoleSize();
 
     /**
      * Initializing snake by giving it the starting position,

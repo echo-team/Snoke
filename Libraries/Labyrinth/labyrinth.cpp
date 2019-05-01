@@ -94,8 +94,7 @@ void Labyrinth::displayHandler(Point* change[2], int size)
 
 void Labyrinth::sizeHandler()
 {
-    Point head = this->snake->getHeadCoords(), tmp;
-    getmaxyx(stdscr, tmp.y, tmp.x);
+    Point head = this->snake->getHeadCoords(), tmp = getConsoleSize();
     if(tmp.y < gameFieldSize.y)
     {
         start.y = head.y - tmp.y / 2;

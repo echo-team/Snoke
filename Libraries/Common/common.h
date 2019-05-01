@@ -42,6 +42,10 @@ typedef struct _Point
     _Point& operator = (_Point p);
 } Point;
 
+/**
+ * Class definitions for the individual files to know that they exist
+ * while being separetly compiled
+ */
 class Snake;
 class Labyrinth;
 class Game;
