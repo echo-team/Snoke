@@ -8,7 +8,7 @@
 #include <signal.h>
 
 /**
- * @class Main game class
+ * Main game class
  * @prop {int}       speed        - game refresh spee(in milliseconds)
  * @prop {int}       changeSize   - the size of the change sub-arrays
  * @prop {Snake}     snake        - the local_player-controlled snake entity

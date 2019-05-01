@@ -25,7 +25,7 @@
 extern Point gameFieldSize;
 
 /**
- * @class class for containing and siplaying the game field
+ * class for containing and siplaying the game field
  * @prop {char**}      labyrinth         - game field, consisting of chars
  * @prop {std::string} reserved          - array of reserved chars for inside usage
  * @prop {int}         prevDisplayMethod - value, containing the makr of which display method was previously called(is used in displaying)

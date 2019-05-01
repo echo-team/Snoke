@@ -17,8 +17,8 @@ bool Ball::init(Point fieldSize)
 
 /**
  * Generate the Ball
- * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
- * @return {bool}             - mark of whether the ball was successfully generated
+ * @param  {Labyrinth} labyrinth - the current state of the labyrinth object for intersection checking
+ * @return {bool}                - mark of whether the ball was successfully generated
  */
 bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
 {
