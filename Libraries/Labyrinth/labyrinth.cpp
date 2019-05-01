@@ -44,7 +44,8 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
 }
 
 /**
- *
+ * Adding snake to the laburinth and getting the host snake(firest added snake)
+ * @param {Snake*} snake - a snake to add
  */
 void Labyrinth::addSnake(Snake* snake)
 {
@@ -59,12 +60,26 @@ void Labyrinth::addSnake(Snake* snake)
     }
 }
 
+/**
+ * A method which decides what dispaly method will be used in each situation
+ * @param {Point*} change - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param {int}    size   - the size of the change array
+ */
 void Labyrinth::displayHandler(Point* change[2], int size)
 {
+    /*
+     * Writing changes to labyrinth
+     */
     this->updateLabyrinth(change, size);
 
+    /*
+     * Getting start and end values for the displaying of the labyrinth
+     */
     this->sizeHandler();
 
+    /*
+     * Deciding what disply method to use
+     */
     switch (this->prevDisplayMethod)
     {
         case DISPFULL:
@@ -105,9 +120,17 @@ void Labyrinth::displayHandler(Point* change[2], int size)
     }
 }
 
+/**
+ * A method, which sets start and end values depending on
+ * the position of local_player's snake head and current console size
+ */
 void Labyrinth::sizeHandler()
 {
     Point head = this->snake->getHeadCoords(), tmp = getConsoleSize();
+
+    /*
+     * Deciding how many columns can we display and where should we start
+     */
     if(tmp.y < gameFieldSize.y)
     {
         start.y = head.y - tmp.y / 2;
@@ -131,6 +154,9 @@ void Labyrinth::sizeHandler()
         end.y = gameFieldSize.y;
     }
 
+    /*
+     * Deciding how many rows can we display and where should we start
+     */
     if(tmp.x < gameFieldSize.x)
     {
         start.x = head.x - tmp.x / 2;
@@ -155,6 +181,9 @@ void Labyrinth::sizeHandler()
     }
 }
 
+/**
+ * redraw every Point of the labyrinth
+ */
 void Labyrinth::displayFull()
 {
     for(int j = 0; j < gameFieldSize.y; j++)
@@ -165,9 +194,7 @@ void Labyrinth::displayFull()
 }
 
 /**
- * Drawing labyrinth to the console
- * (Should only be used at the start as it is rewriting all the points it includes
- * and not the updated)
+ * display labyrinth partialy, using the start and end Points
  */
 void Labyrinth::displayLabyrinth()
 {
@@ -184,7 +211,7 @@ void Labyrinth::displayLabyrinth()
 }
 
 /**
- * displaying the changed Points
+ * draw only the changed Points when the labyrinth is being fully displayed
  */
 void Labyrinth::displayUpdated(Point* update[2], int size)
 {
@@ -201,10 +228,8 @@ void Labyrinth::displayUpdated(Point* update[2], int size)
 
 /**
  * Updating the labyrinth(changing the values of some Points)
- * @param {Point*} update    - 2-dimensional array of changes needed to be applied to the labyrinth
- *                 update[0] - an array containing Points to add to the labyrinth
- *                 update[1] - an array containing Points to remove from the labyrinth
- * @param {int}    size      - the longest sequence for updating [max(len(update[0], update[1]))]
+ * @param {Point*} update - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param {int}    size   - the longest sequence for updating [max(len(update[0], update[1]))]
  */
 void Labyrinth::updateLabyrinth(Point* update[2], int size)
 {
@@ -224,11 +249,21 @@ void Labyrinth::updateLabyrinth(Point* update[2], int size)
     }
 }
 
+/**
+ * Mark of if the asked Point is free
+ * @param  {Point} p - Point to check in the labyrinth
+ * @return {bool}    - mark of whether the Point is free
+ */
 bool Labyrinth::isFree(Point p)
 {
     return (this->labyrinth[p.y][p.x] == ' ');
 }
 
+/**
+ * Adding Point to the labyrinth with the check of correction
+ * @param  {Point} p - point to add to the labyrinth
+ * @return {bool}    - mark of whether the Point was added
+ */
 bool Labyrinth::addPoint(Point p)
 {
 	if(this->isFree(p))
@@ -239,12 +274,22 @@ bool Labyrinth::addPoint(Point p)
 	return false;
 }
 
+/**
+ * Remove Point from the labyrinth
+ * @param  {Point} p - point to remove from the labyrinth
+ * @return {bool}    - mark of whether the Point was removed
+ */
 bool Labyrinth::remPoint(Point p)
 {
     labyrinth[p.y][p.x] = ' ';
 	return true;
 }
 
+/**
+ * Method to save labyritnh(borders and obstacles, defined in reserved string) to the file
+ * @param  {char*} name - name of the file, where to sace the labyrinth
+ * @return {bool}       - mark of whether the labyrinth was successfully saved
+ */
 bool Labyrinth::save(char name[MAXLINE])
 {
     FILE* file;
@@ -252,24 +297,41 @@ bool Labyrinth::save(char name[MAXLINE])
     file = fopen(name, "w");
     if(file)
     {
+        /*
+         * Printing the dimensions of the gamefield
+         */
         fprintf(file, "%d %d\n", gameFieldSize.x, gameFieldSize.y);
 
-        //Printing the game field excluding the borders
+        /*
+         * Printing the lines of labyrinth to the file one by one
+         */
         for(int j = 0; j < gameFieldSize.y; j++)
         {
-            fputs(labyrinth[j],file);
+            fputs(labyrinth[j], file);
             fputc('\n', file);
         }
+        fclose(file);
+
+        /*
+         * Putting a message of successful writing
+         */
         sprintf(strout, "Succesfully saved to %s", name);
         mvaddstr(gameFieldSize.y / 2, 5, strout);
-        fclose(file);
-        return 1;
+        return true;
     }
+    /*
+     * Putting a message of an occured error
+     */
     sprintf(strout, "Couldn't save to %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
-    return 0;
+    return false;
 }
 
+/**
+ * Mehod to load labyrinth from the file
+ * @param  {char*} name - name of the file to read from
+ * @return {bool}       - mark os successful loading
+ */
 bool Labyrinth::load(char name[MAXLINE])
 {
     FILE* file;
@@ -278,6 +340,9 @@ bool Labyrinth::load(char name[MAXLINE])
     file = fopen(name, "r");
     if(file)
     {
+        /*
+         * Getting the dimensions of the labyrinth and creating a temporary labyrinth
+         */
         fscanf(file, "%d %d", &tmp.x, &tmp.y);
         char tmpLab[tmp.y][tmp.x];
         for(int i = 0; i < tmp.x; i++)
@@ -287,16 +352,23 @@ bool Labyrinth::load(char name[MAXLINE])
                 tmpLab[j][i] = ' ';
             }
         }
-        for(int j = 1; j < tmp.y - 1; j++)
+
+        /*
+         * Getting lines of the labyrinth
+         */
+        for(int j = 0; j < tmp.y; j++)
         {
             fgets(tmpLab[j], tmp.x, file);
         }
-        sprintf(strout, "Succesfully loaded from %s", name);
-        mvaddstr(gameFieldSize.y / 2, 5, strout);
+        fclose(file);
+
+        /*
+         * Setting the new gameFieldSize and copying the borders and obstacles from the temporary labyrinth
+         */
         gameFieldSize = tmp;
-        for(int i = 1; i < gameFieldSize.x - 1; i++)
+        for(int i = 0; i < gameFieldSize.x; i++)
         {
-            for(int j = 1; j < gameFieldSize.y - 1; j++)
+            for(int j = 0; j < gameFieldSize.y; j++)
             {
                 if(reserved.find(tmpLab[j][i]) != std::string::npos)
                 {
@@ -304,9 +376,16 @@ bool Labyrinth::load(char name[MAXLINE])
                 }
             }
         }
-        fclose(file);
+        /*
+         * Putting a message of successful loading
+         */
+        sprintf(strout, "Succesfully loaded from %s", name);
+        mvaddstr(gameFieldSize.y / 2, 5, strout);
         return 1;
     }
+    /*
+     * Putting message of occured error
+     */
     sprintf(strout, "Couldn't load from %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
     return 0;

@@ -8,6 +8,11 @@
 #include <cstdio>
 #include <list>
 
+/**
+ * @const {int} DISPFULL - the whole labyrinth can fit and was redrawed
+ * @const {int} DISPLAB - the whole labyrinth doesn't fit, so we are displaying it partialy
+ * @const {int} DISPUPD - the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
+ */
 #define DISPFULL 0
 #define DISPLAB 1
 #define DISPUPD 2
@@ -26,7 +31,7 @@ extern Point gameFieldSize;
  * @prop {int}         prevDisplayMethod - value, containing the makr of which display method was previously called(is used in displaying)
  * @prop {Snake*}      snake             - a pointer to a local_player's snake
  * @porp {Point}       start             - a top left corner from which the drawing of the current cycle starts
- * @prop {Point}       end               - a bottom right corner at which the drawing of the current cycle ends 
+ * @prop {Point}       end               - a bottom right corner at which the drawing of the current cycle ends
  */
 class Labyrinth
 {
