@@ -40,6 +40,9 @@ status:
 	$(shell echo -n "   total: " >> $(STATUSFILE))
 	$(shell cat $(SOURCES) $(HEADERS) | wc -l >> $(STATUSFILE))
 
+run:
+	$(TARGETDIR)/$(TARGET)
+
 #Remake
 remake: cleaner all
 
