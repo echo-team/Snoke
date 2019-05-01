@@ -47,6 +47,7 @@ int Game::run()
     #endif
     curs_set(0);
     keypad(stdscr, true);
+    //signal(SIGWINCH, NULL);
 
     /**
      * Retrieving the size of the screen(console)

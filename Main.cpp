@@ -12,7 +12,7 @@ int main()
     */
 
     Game g;
-    g.init(200, 150);
+    g.init(70, 150);
     g.run();
 
     refresh();

@@ -5,6 +5,7 @@
 #include <ncurses.h>
 #include <iostream>
 #include <string>
+#include <signal.h>
 
 /**
  * @class Main game class
