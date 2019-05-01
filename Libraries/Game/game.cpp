@@ -184,9 +184,24 @@ bool Game::wipeChange(Point** change, int size)
 
 /**
  * The method to change the game speed without giving the direct access
+ * and some error handling
  * @param {int} speed - speed of the game(1 / refresh rate) in milliseconds
  */
 void Game::setSpeed(int speed)
 {
-    this->speed = speed;
+    if(speed > 100)
+    {
+        if(speed < 1000)
+        {
+            this->speed = speed;
+        }
+        else
+        {
+            this->speed = 1000;
+        }
+    }
+    else
+    {
+        this->speed = 100;
+    }
 }
