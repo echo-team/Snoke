@@ -150,18 +150,23 @@ bool Game::initSnake(Point begin, int dir, int length)
     return flag;
 }
 
+/**
+ * Ball initialization with labyrinth updating
+ * @param  {Ball*} ball - a pointer to a Ball, which is being initialized
+ * @return {bool}       - mark of succesful initialization
+ */
 bool Game::initBall(Ball* ball)
 {
     ball->init(gameFieldSize);
-    ball->generateBall(labyrinth, change, changeSize);
+    bool flag = ball->generateBall(labyrinth, change, changeSize);
     labyrinth.addPoint(ball->getCoords());
-    return true;
+    return flag;
 }
 
 /**
  * Initialization of the change array
  * @param  {Point**} change - The pointer to an array
- * @param  {int}     size   - The size of array(max number of elements it can contain)
+ * @param  {int}     size   - The size of array(number of elements it can contain)
  * @return {bool}
  */
 bool Game::wipeChange(Point** change, int size)
