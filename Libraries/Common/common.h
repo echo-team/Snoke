@@ -39,13 +39,7 @@ typedef struct _Point
 {
     short x, y;
     PointStyle style;
-    _Point& operator = (_Point p)
-    {
-        this->x = p.x;
-        this->y = p.y;
-        this->style = p.style;
-        return *this;
-    }
+    _Point& operator = (_Point p);
 } Point;
 
 class Snake;

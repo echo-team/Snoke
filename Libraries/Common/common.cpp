@@ -1,19 +1,6 @@
 #include "common.h"
 
 /**
- * Operation '<<' override for the Point type
- * @param  {std::ostream&} s - current ostream variable
- * @param  {Point}         p - a Point to print
- * @return {std::ostream&}
- * @override
- */
-std::ostream& operator << (std::ostream &s, Point p)
-{
-    s << '(' << p.x << ',' << p.y << ')';
-    return s;
-}
-
-/**
  * Operation "=" override for the PointStyle type
  * @param  {PointStyle}  ps - the obgect, parameters of which are being copied
  * @retrun {PointStyle&} a pointer to an object
@@ -23,6 +10,19 @@ PointStyle& PointStyle::operator = (PointStyle ps)
     this->letter = ps.letter;
     this->fg = ps.fg;
     this->bg = ps.bg;
+    return *this;
+}
+
+/**
+ * Operation "=" override for the Point type
+ * @param  {Point}  p - the obgect, parameters of which are being copied
+ * @return {Point&} a pointer to an object
+ */
+Point& Point::operator = (Point p)
+{
+    this->x = p.x;
+    this->y = p.y;
+    this->style = p.style;
     return *this;
 }
 
@@ -37,6 +37,18 @@ bool operator == (Point p1, Point p2)
     return (p1.x == p2.x and p1.y == p2.y);
 }
 
+/**
+ * Operation '<<' override for the Point type
+ * @param  {std::ostream&} s - current ostream variable
+ * @param  {Point}         p - a Point to print
+ * @return {std::ostream&}
+ * @override
+ */
+std::ostream& operator << (std::ostream &s, Point p)
+{
+    s << '(' << p.x << ',' << p.y << ')';
+    return s;
+}
 
 /**
  * Cross-platform sleep function cover
