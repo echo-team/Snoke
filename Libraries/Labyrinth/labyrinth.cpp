@@ -1,10 +1,13 @@
 #include "labyrinth.h"
 /**
- * Set's the starting labyrinth by setting the borders
- * @param {Point} gameFieldSize - dimensions(x, y) of the game field
+ * Sets the default values fro the variables as well as generating the labyritnh array with borders
+ * @param {Point} gameFieldSize - a size of the labyrinth
  */
 void Labyrinth::setLabyrinth(Point gameFieldSize)
 {
+    /*
+     * Creating the labyrinth and setting up the borders
+     */
     labyrinth = new char* [gameFieldSize.y];
     for(int i = 0; i < gameFieldSize.y; i++)
     {
@@ -24,17 +27,25 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
         labyrinth[i][0] = '|';
         labyrinth[i][gameFieldSize.x - 1] = '|';
     }
-    this->start.x = 0;
-    this->start.y = 0;
-    this->end.x = gameFieldSize.x;
-    this->end.y = gameFieldSize.y;
-    this->prevStart.x = 0;
-    this->prevStart.y = 0;
-    this->prevEnd.x = gameFieldSize.x;
-    this->prevEnd.y = gameFieldSize.y;
+
+    /*
+     * Setting the default values for the Labyrinth properties
+     */
+    Point tmp1, tmp2;
+    tmp1.x = 0;
+    tmp1.y = 0;
+    tmp2 = gameFieldSize;
+    this->start = tmp1;
+    this->end = tmp2;
+    this->prevStart = tmp1;
+    this->prevEnd = tmp2;
     this->prevDisplayMethod = DISPLAB;
+    this->snake = NULL;
 }
 
+/**
+ *
+ */
 void Labyrinth::addSnake(Snake* snake)
 {
     std::list<Point> currBody;
@@ -43,7 +54,9 @@ void Labyrinth::addSnake(Snake* snake)
     {
         addPoint(*it);
     }
-    this->snake = snake;
+    if(this->snake == NULL){
+        this->snake = snake;
+    }
 }
 
 void Labyrinth::displayHandler(Point* change[2], int size)
