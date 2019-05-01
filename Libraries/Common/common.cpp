@@ -4,6 +4,7 @@
  * Operation "=" override for the PointStyle type
  * @param  {PointStyle}  ps - the obgect, parameters of which are being copied
  * @retrun {PointStyle&} a pointer to an object
+ * @override
  */
 PointStyle& PointStyle::operator = (PointStyle ps)
 {
@@ -17,6 +18,7 @@ PointStyle& PointStyle::operator = (PointStyle ps)
  * Operation "=" override for the Point type
  * @param  {Point}  p - the obgect, parameters of which are being copied
  * @return {Point&} a pointer to an object
+ * @override
  */
 Point& Point::operator = (Point p)
 {
@@ -31,6 +33,7 @@ Point& Point::operator = (Point p)
  * @param  {Point} p1 - The first Point
  * @param  {Point} p2 - The second Point
  * @return {bool}
+ * @override
  */
 bool operator == (Point p1, Point p2)
 {

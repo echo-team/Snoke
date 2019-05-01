@@ -9,12 +9,12 @@
 
 /**
  * @class Main game class
- * @prop {int} speed - game refresh spee(in milliseconds)
- * @prop {int} changeSize - the size of the change sub-arrays
- * @prop {Snake} snake - the local_player-controlled snake entity
- * @prop {Snake*} snakeEnemies - the remotely controlled snake entities
- * @prop {Labyrinth} labyrinth - object containing labyrinth, displaying it, etc
- * @prop {Point*} change - 2-dim array containing changes for the labyrinth
+ * @prop {int}       speed        - game refresh spee(in milliseconds)
+ * @prop {int}       changeSize   - the size of the change sub-arrays
+ * @prop {Snake}     snake        - the local_player-controlled snake entity
+ * @prop {Snake*}    snakeEnemies - the remotely controlled snake entities
+ * @prop {Labyrinth} labyrinth    - object containing labyrinth, displaying it, etc
+ * @prop {Point*}    change       - 2-dim array containing changes for the labyrinth
  */
 class Game
 {

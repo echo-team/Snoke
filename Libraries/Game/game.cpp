@@ -9,7 +9,7 @@ Point gameFieldSize;
 
 /**
  * Initializes game
- * @param  {int} size  - size of the game field(on the edges the boundaries of the game are situated)
+ * @param  {int} size  - size of the game field(size - 2 columns, size/2 - 2 rows)
  * @param  {int} speed - speed of the game(1 / refresh rate) in milliseconds
  * @return {bool}      - mark of successful initialization
  */

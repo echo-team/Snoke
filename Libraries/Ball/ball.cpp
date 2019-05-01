@@ -2,7 +2,8 @@
 
 /**
  * Initialization
- * @param {Point} fieldSize - the size of the game field(x, y)
+ * @param  {Point} fieldSize - the size of the game field(x, y)
+ * @return {bool}            - mark of successful initialization
  */
 bool Ball::init(Point fieldSize)
 {
@@ -36,15 +37,14 @@ bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
     }
     position.x = p.x;
     position.y = p.y;
-    return true; 
+    return true;
 }
 
 /**
  * Get the ball coords without giving the direct access
- * @return {Point} 
+ * @return {Point}
  */
 Point Ball::getCoords()
 {
     return position;
 }
-
