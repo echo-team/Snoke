@@ -9,8 +9,11 @@ TARGETDIR   := bin
 RESDIR      := res
 EXTRADIRS   := html latex
 SRCEXT      := cpp
+HEADEREXT   := h
 DEPEXT      := d
 OBJEXT      := o
+
+STATUSFILE  := status.log
 
 #Flags, Libraries and Includes
 CFLAGS      := -lncurses -Wall -g
@@ -21,11 +24,21 @@ LIB         := -lncurses
 #------------------------------------------------------------
 
 SOURCES     := $(shell find . -type f -name "*.$(SRCEXT)")
+HEADERS     := $(shell find . -type f -name "*.$(HEADEREXT)")
 vpath %$(SRCEXT) = $(dir $(SOURCES))
 OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(SOURCES:.$(SRCEXT)=.$(OBJEXT))))
 
 #Defauilt Make
 all: resources $(TARGET)
+
+status:
+	$(shell echo "number of code lines:" > $(STATUSFILE))
+	$(shell echo -n "   .$(SRCEXT) files: " >> $(STATUSFILE))
+	$(shell cat $(SOURCES) | wc -l >> $(STATUSFILE))
+	$(shell echo -n "   .$(HEADEREXT) files: " >> $(STATUSFILE))
+	$(shell cat $(HEADERS) | wc -l >> $(STATUSFILE))
+	$(shell echo -n "   total: " >> $(STATUSFILE))
+	$(shell cat $(SOURCES) $(HEADERS) | wc -l >> $(STATUSFILE))
 
 #Remake
 remake: cleaner all
