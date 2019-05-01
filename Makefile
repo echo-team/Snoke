@@ -7,13 +7,15 @@ TARGET      := mygame
 BUILDDIR    := obj
 TARGETDIR   := bin
 RESDIR      := res
-EXTRADIRS   := html latex
 SRCEXT      := cpp
 HEADEREXT   := h
 DEPEXT      := d
 OBJEXT      := o
 
 STATUSFILE  := status.log
+DOCSDIR     := Documentation
+EXTRADIRS   := $(DOCSDIR)
+DOXYFILE    := Doxyfile
 
 #Flags, Libraries and Includes
 CFLAGS      := -lncurses -Wall -g
@@ -30,6 +32,12 @@ OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(SOURCES:.$(SRCEXT)=.$(OBJEXT
 
 #Defauilt Make
 all: resources $(TARGET)
+
+docs:
+	$(shell doxygen $(DOXYFILE))
+
+opendocs:
+	$(shell $(BROWSER) $(DOCSDIR)/html/index.html)
 
 status:
 	$(shell echo "number of code lines:" > $(STATUSFILE))
