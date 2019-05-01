@@ -27,13 +27,7 @@ typedef struct _PointStyle
 {
     char letter;
     int fg, bg;
-    _PointStyle& operator = (_PointStyle ps)
-    {
-        this->letter = ps.letter;
-        this->fg = ps.fg;
-        this->bg = ps.bg;
-        return *this;
-    }
+    _PointStyle& operator = (_PointStyle ps);
 } PointStyle;
 
 /**

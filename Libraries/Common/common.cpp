@@ -14,6 +14,19 @@ std::ostream& operator << (std::ostream &s, Point p)
 }
 
 /**
+ * Operation "=" override for the PointStyle type
+ * @param  {PointStyle}  ps - the obgect, parameters of which are being copied
+ * @retrun {PointStyle&} a pointer to an object
+ */
+PointStyle& PointStyle::operator = (PointStyle ps)
+{
+    this->letter = ps.letter;
+    this->fg = ps.fg;
+    this->bg = ps.bg;
+    return *this;
+}
+
+/**
  * Operation "==" override for the Point type
  * @param  {Point} p1 - The first Point
  * @param  {Point} p2 - The second Point
