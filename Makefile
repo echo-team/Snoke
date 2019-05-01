@@ -7,6 +7,7 @@ TARGET      := mygame
 BUILDDIR    := obj
 TARGETDIR   := bin
 RESDIR      := res
+EXTRADIRS   := html latex
 SRCEXT      := cpp
 DEPEXT      := d
 OBJEXT      := o
@@ -41,6 +42,7 @@ directories:
 #Clean only Objecst
 clean:
 	$(shell rm -rf $(BUILDDIR))
+	$(shell rm -rf $(EXTRADIRS))
 
 #Full Clean, Objects and Binaries
 cleaner: clean
