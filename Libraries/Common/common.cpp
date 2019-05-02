@@ -3,7 +3,7 @@
 /**
  * Operation "=" override for the PointStyle type
  * @param  {PointStyle}  ps - the obgect, parameters of which are being copied
- * @retrun {PointStyle&} a pointer to an object
+ * @return {PointStyle&} a pointer to an object
  * @override
  */
 PointStyle& PointStyle::operator = (PointStyle ps)
