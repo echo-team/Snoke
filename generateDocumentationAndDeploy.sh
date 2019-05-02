@@ -3,7 +3,7 @@
 # Title         : generateDocumentationAndDeploy.sh
 # Date created  : 2016/02/22
 # Notes         :
-__AUTHOR__="Jeroen de Bruijn"
+__AUTHOR__="Egor Ignatov"
 # Preconditions:
 # - Packages doxygen doxygen-doc doxygen-latex doxygen-gui graphviz
 #   must be installed.
@@ -30,7 +30,7 @@ __AUTHOR__="Jeroen de Bruijn"
 # the gh-pages branch of a repository specified by GH_REPO_REF.
 # Before this script is used there should already be a gh-pages branch in the
 # repository.
-# 
+#
 ################################################################################
 
 ################################################################################
