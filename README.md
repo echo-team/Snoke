@@ -8,5 +8,5 @@ Shoke is a new way of solving argues. Just stand the idea and see how many peopl
 Designed for people who trying to cope with waiting. Play the arcade mod while your npm installing packs!
 
 
-##See the documentation
+## See the documentation
 https://echo-team.github.io/Snoke/
