@@ -1,3 +1,9 @@
+/**
+   \file snake.cpp
+   \brief realisation of Snake class
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #include "snake.h"
 
 /**

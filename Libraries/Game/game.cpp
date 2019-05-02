@@ -1,9 +1,14 @@
+/*!
+   \file game.cpp
+   \brief realisation of Game class
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #include "game.h"
 
 /**
- * @brief   gameFieldSize - a variable, which stores the dimensions of the game field(shared with snakes)
- * @type {Point}
- * @global
+ * @var Point gameFieldSize
+ * size of a game field(x, y)
  */
 Point gameFieldSize;
 
@@ -162,10 +167,10 @@ bool Game::initBall(Ball* ball)
 
 /**
  * @brief   Initialization of the change array
- * @param   change - The pointer to an array
+ * @param   lChange - The pointer to an array
  * @param   size   - The size of array(number of elements it can contain)
  */
-bool Game::wipeChange(Point** change, int size)
+bool Game::wipeChange(Point** lChange, int size)
 {
     Point p;
     p.x = -1;
@@ -175,8 +180,8 @@ bool Game::wipeChange(Point** change, int size)
     p.style.letter = 0;
     for(int i = 0; i < size; i++)
     {
-        change[0][i] = p;
-        change[1][i] = p;
+        lChange[0][i] = p;
+        lChange[1][i] = p;
     }
     return true;
 }

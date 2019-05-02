@@ -13,7 +13,7 @@ DEPEXT      := d
 OBJEXT      := o
 
 STATUSFILE  := status.log
-DOCSDIR     := Documentation
+DOCSDIR     := docs
 EXTRADIRS   := $(DOCSDIR)
 DOXYFILE    := Doxyfile
 
@@ -33,11 +33,11 @@ OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(SOURCES:.$(SRCEXT)=.$(OBJEXT
 #Defauilt Make
 all: resources $(TARGET)
 
-docs:
+docs: cleaner
 	$(shell doxygen $(DOXYFILE))
 
 opendocs:
-	$(shell $(BROWSER) $(DOCSDIR)/html/index.html)
+	$(shell $(BROWSER) $(DOCSDIR)/index.html)
 
 status:
 	$(shell echo "number of code lines:" > $(STATUSFILE))

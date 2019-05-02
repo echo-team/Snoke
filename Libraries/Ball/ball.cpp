@@ -1,3 +1,9 @@
+/*!
+   \file ball.cpp
+   \brief realisation of Ball class
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #include "ball.h"
 
 /**

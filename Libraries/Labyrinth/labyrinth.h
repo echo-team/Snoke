@@ -1,3 +1,9 @@
+/*!
+   \file labyrinth.h
+   \brief Definitions and prototypes for Labyrinth class
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #ifndef LABYRINTH_H
 #define LABYRINTH_H
 #include "../Common/common.h"
@@ -8,13 +14,18 @@
 #include <cstdio>
 #include <list>
 
+
 /**
- * @const {int} DISPFULL - the whole labyrinth can fit and was redrawed
- * @const {int} DISPLAB - the whole labyrinth doesn't fit, so we are displaying it partialy
- * @const {int} DISPUPD - the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
+ * @brief    the whole labyrinth can fit and was redrawed
  */
 #define DISPFULL 0
+/**
+ * @brief    the whole labyrinth doesn't fit, so we are displaying it partialy
+ */
 #define DISPLAB 1
+/**
+ * @brief    the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
+ */
 #define DISPUPD 2
 
 /**
@@ -25,24 +36,51 @@
 extern Point gameFieldSize;
 
 /**
+ * @class Labyrinth labyrinth.h
  * @brief   class for containing and displaying the game field
- * @prop    labyrinth         - game field, consisting of chars
- * @prop    reserved          - array of reserved chars for inside usage
- * @prop    prevDisplayMethod - value, containing the makr of which display method was previously called(is used in displaying)
- * @prop    snake             - a pointer to a local_player's snake
- * @prop    start             - a top left corner from which the drawing of the current cycle starts
- * @prop    end               - a bottom right corner at which the drawing of the current cycle ends
  */
 class Labyrinth
 {
     private:
+        /**
+         * @prop    char**          labyrinth
+         * @brief   game field, consisting of chars
+         */
         char** labyrinth;
+        /**
+         * @prop    std::string     reserved
+         * @brief   rray of reserved chars for inside usage
+         */
         std::string reserved = "!";
+        /**
+         * @prop    int             prevDisplayMethod
+         * @brief   value, containing the makr of which display method was previously called(is used in displaying)
+         */
         int prevDisplayMethod = 0;
+        /**
+         * @prop    Snake*          snake
+         * @brief    pointer to a local_player's snake
+         */
         Snake* snake = NULL;
+        /**
+         * @prop    Point           start
+         * @brief    top left corner from which the drawing of the current cycle starts
+         */
         Point start;
+        /**
+         * @prop    Point           end
+         * @brief    bottom right corner at which the drawing of the current cycle ends
+         */
         Point end;
+        /**
+         * @prop    Point           prevStart
+         * @brief   previous value of start
+         */
         Point prevStart;
+        /**
+         * @prop    Point           prevEnd
+         * @brief   previous value of end
+         */
         Point prevEnd;
         void displayLabyrinth();
         void displayUpdated(Point* update[2], int size);

@@ -1,3 +1,9 @@
+/*!
+   \file labyrinth.cpp
+   \brief realisation of Labyrinth class
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #include "labyrinth.h"
 /**
  * @brief   Sets the default values fro the variables as well as generating the labyritnh array with borders

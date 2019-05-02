@@ -1,3 +1,9 @@
+/*!
+   \file common.cpp
+   \brief shared functions realisation
+   \author Egor Ignatov
+   \date 03/05/2019
+*/
 #include "common.h"
 
 /**
