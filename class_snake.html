@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('class_snake.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Describes the snake entity of the game.  
+<p>Describes the <a class="el" href="class_snake.html" title="Describes the Snake entity of the game. ">Snake</a> entity of the game.  
  <a href="class_snake.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="snake_8h_source.html">snake.h</a>&gt;</code></p>
@@ -122,7 +122,7 @@ Collaboration diagram for Snake:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_snake__coll__graph.png" border="0" usemap="#_snake_coll__map" alt="Collaboration graph"/></div>
 <map name="_snake_coll__map" id="_snake_coll__map">
-<area shape="rect" id="node4" href="struct___point.html" title="Coordinates of the cell in console window. " alt="" coords="73,213,131,240"/><area shape="rect" id="node5" href="struct___point_style.html" title="Style of the cell in console window. " alt="" coords="110,109,199,136"/></map>
+<area shape="rect" id="node4" href="struct___point.html" title="_Point" alt="" coords="73,213,131,240"/><area shape="rect" id="node5" href="struct___point_style.html" title="_PointStyle" alt="" coords="110,109,199,136"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -166,24 +166,19 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aee6d8cb1404c33a9b7e132a99e055590"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#aee6d8cb1404c33a9b7e132a99e055590">direction</a></td></tr>
+<tr class="memdesc:aee6d8cb1404c33a9b7e132a99e055590"><td class="mdescLeft">&#160;</td><td class="mdescRight">current direction where the snake is heading;  <a href="#aee6d8cb1404c33a9b7e132a99e055590">More...</a><br/></td></tr>
 <tr class="separator:aee6d8cb1404c33a9b7e132a99e055590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db439ed2dd1cfea4c061e6ffd6ec54c"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="common_8h.html#afd9cb36d6ef309c77ea1e3177e19c623">PointStyle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a7db439ed2dd1cfea4c061e6ffd6ec54c">style</a></td></tr>
-<tr class="separator:a7db439ed2dd1cfea4c061e6ffd6ec54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf288745dcc19ef13a1330bb55f1471c"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#aaf288745dcc19ef13a1330bb55f1471c">snakeBody</a></td></tr>
-<tr class="separator:aaf288745dcc19ef13a1330bb55f1471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2588c400967ee559e0c5241f96bc30"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="common_8h.html#afd9cb36d6ef309c77ea1e3177e19c623">PointStyle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a1e2588c400967ee559e0c5241f96bc30">style</a></td></tr>
+<tr class="memdesc:a1e2588c400967ee559e0c5241f96bc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">array, which describes how should the snake be colored  <a href="#a1e2588c400967ee559e0c5241f96bc30">More...</a><br/></td></tr>
+<tr class="separator:a1e2588c400967ee559e0c5241f96bc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73743e4fca956db13d8b7ce9cdd9c4fb"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_snake.html#a73743e4fca956db13d8b7ce9cdd9c4fb">snakeBody</a></td></tr>
+<tr class="memdesc:a73743e4fca956db13d8b7ce9cdd9c4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">deque type array, containing positions of snake's body segments  <a href="#a73743e4fca956db13d8b7ce9cdd9c4fb">More...</a><br/></td></tr>
+<tr class="separator:a73743e4fca956db13d8b7ce9cdd9c4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Describes the snake entity of the game. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">direction</td><td>- current direction where the snake is heading; </td></tr>
-    <tr><td class="paramname">style</td><td>- an array, describing how should the snake be colored </td></tr>
-    <tr><td class="paramname">snakeBody</td><td>- a deque type array, containing sposition of snake's body segments </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Describes the <a class="el" href="class_snake.html" title="Describes the Snake entity of the game. ">Snake</a> entity of the game. </p>
 
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00050">50</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00071">71</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7df802733cb62081ea360bb81ba9f304"></a>
 <div class="memitem">
@@ -234,7 +229,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- type of collision </dd></dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00192">192</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00198">198</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -298,7 +293,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- type of the collision </dd></dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00208">208</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00214">214</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -333,7 +328,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00275">275</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00281">281</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -361,7 +356,7 @@ Here is the caller graph for this function:</div>
 
 <p>The method to get the current direction without giving the direct access. </p>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00255">255</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00261">261</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +375,7 @@ Here is the caller graph for this function:</div>
 
 <p>The method to get the coordinates(x, y) of the snake's head without giving the direct access. </p>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00263">263</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00269">269</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -434,7 +429,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the snake is successfully initialized </dd></dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00010">10</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00016">16</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -495,7 +490,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether there was a non-boundary non-ball collision </dd></dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00062">62</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00068">68</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -558,7 +553,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00176">176</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00182">182</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -612,7 +607,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00165">165</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00171">171</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -647,7 +642,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00237">237</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
+<p>Definition at line <a class="el" href="snake_8cpp_source.html#l00243">243</a> of file <a class="el" href="snake_8cpp_source.html">snake.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -694,11 +689,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00053">53</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+<p>current direction where the snake is heading; </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00078">78</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaf288745dcc19ef13a1330bb55f1471c"></a>
+<a class="anchor" id="a73743e4fca956db13d8b7ce9cdd9c4fb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -706,7 +703,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::deque&lt;<a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a>&gt; Snake::snakeBody</td>
+          <td class="memname">std::deque&lt; <a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a> &gt; Snake::snakeBody</td>
         </tr>
       </table>
   </td>
@@ -716,11 +713,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00055">55</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+<p>deque type array, containing positions of snake's body segments </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00088">88</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7db439ed2dd1cfea4c061e6ffd6ec54c"></a>
+<a class="anchor" id="a1e2588c400967ee559e0c5241f96bc30"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -728,7 +727,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="common_8h.html#afd9cb36d6ef309c77ea1e3177e19c623">PointStyle</a>&gt; Snake::style</td>
+          <td class="memname">std::list&lt; <a class="el" href="common_8h.html#afd9cb36d6ef309c77ea1e3177e19c623">PointStyle</a> &gt; Snake::style</td>
         </tr>
       </table>
   </td>
@@ -738,7 +737,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00054">54</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+<p>array, which describes how should the snake be colored </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00083">83</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
 
 </div>
 </div>

@@ -122,7 +122,7 @@ Collaboration diagram for Labyrinth:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth__coll__graph.png" border="0" usemap="#_labyrinth_coll__map" alt="Collaboration graph"/></div>
 <map name="_labyrinth_coll__map" id="_labyrinth_coll__map">
-<area shape="rect" id="node2" href="struct___point.html" title="Coordinates of the cell in console window. " alt="" coords="333,203,392,229"/><area shape="rect" id="node3" href="struct___point_style.html" title="Style of the cell in console window. " alt="" coords="137,179,226,205"/><area shape="rect" id="node9" href="class_snake.html" title="Describes the snake entity of the game. " alt="" coords="869,127,928,153"/><area shape="rect" id="node7" title="STL class. " alt="" coords="859,285,939,312"/><area shape="rect" id="node8" title="STL class. " alt="" coords="606,282,733,323"/></map>
+<area shape="rect" id="node2" href="struct___point.html" title="_Point" alt="" coords="333,203,392,229"/><area shape="rect" id="node3" href="struct___point_style.html" title="_PointStyle" alt="" coords="137,179,226,205"/><area shape="rect" id="node9" href="class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="869,127,928,153"/><area shape="rect" id="node7" title="STL class. " alt="" coords="859,285,939,312"/><area shape="rect" id="node8" title="STL class. " alt="" coords="606,282,733,323"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39e1b11a06d126328131d387fbf51d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a39e1b11a06d126328131d387fbf51d73">setLabyrinth</a> (<a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a> dimensions)</td></tr>
 <tr class="memdesc:a39e1b11a06d126328131d387fbf51d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default values fro the variables as well as generating the labyritnh array with borders.  <a href="#a39e1b11a06d126328131d387fbf51d73">More...</a><br/></td></tr>
 <tr class="separator:a39e1b11a06d126328131d387fbf51d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2819aba76d079c7fda751e7388b7182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182">addSnake</a> (<a class="el" href="class_snake.html">Snake</a> *<a class="el" href="class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f">snake</a>)</td></tr>
+<tr class="memitem:ad2819aba76d079c7fda751e7388b7182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182">addSnake</a> (<a class="el" href="class_snake.html">Snake</a> *<a class="el" href="class_labyrinth.html#a9607ad1c26230527d9fe4e2d60ae80a8">snake</a>)</td></tr>
 <tr class="memdesc:ad2819aba76d079c7fda751e7388b7182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adding snake to the laburinth and getting the host snake(firest added snake)  <a href="#ad2819aba76d079c7fda751e7388b7182">More...</a><br/></td></tr>
 <tr class="separator:ad2819aba76d079c7fda751e7388b7182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a710cf4ff7789d527e6081d1eb2d696a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">addPoint</a> (<a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a> p)</td></tr>
@@ -172,38 +172,35 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac95a1b4246b9351e8cea8c1618bcb58d"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a></td></tr>
-<tr class="separator:ac95a1b4246b9351e8cea8c1618bcb58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6145651bfcdc8c4773eacc7d0c40e200"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a6145651bfcdc8c4773eacc7d0c40e200">labyrinth</a></td></tr>
+<tr class="memdesc:a6145651bfcdc8c4773eacc7d0c40e200"><td class="mdescLeft">&#160;</td><td class="mdescRight">game field, consisting of chars  <a href="#a6145651bfcdc8c4773eacc7d0c40e200">More...</a><br/></td></tr>
+<tr class="separator:a6145651bfcdc8c4773eacc7d0c40e200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafa921122b2ea77268cbe479949d7d39"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39">reserved</a> = &quot;!&quot;</td></tr>
+<tr class="memdesc:aafa921122b2ea77268cbe479949d7d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">rray of reserved chars for inside usage  <a href="#aafa921122b2ea77268cbe479949d7d39">More...</a><br/></td></tr>
 <tr class="separator:aafa921122b2ea77268cbe479949d7d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ddef18e25e03408485e4959bcb5aebc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = 0</td></tr>
+<tr class="memdesc:a7ddef18e25e03408485e4959bcb5aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">value, containing the makr of which display method was previously called(is used in displaying)  <a href="#a7ddef18e25e03408485e4959bcb5aebc">More...</a><br/></td></tr>
 <tr class="separator:a7ddef18e25e03408485e4959bcb5aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a46368bfd83ccb75580687cb17b92f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_snake.html">Snake</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f">snake</a> = NULL</td></tr>
-<tr class="separator:a09a46368bfd83ccb75580687cb17b92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9607ad1c26230527d9fe4e2d60ae80a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_snake.html">Snake</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a9607ad1c26230527d9fe4e2d60ae80a8">snake</a> = NULL</td></tr>
+<tr class="memdesc:a9607ad1c26230527d9fe4e2d60ae80a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to a local_player's snake  <a href="#a9607ad1c26230527d9fe4e2d60ae80a8">More...</a><br/></td></tr>
+<tr class="separator:a9607ad1c26230527d9fe4e2d60ae80a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92649fa3b24fcc869418b54e7362e24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a></td></tr>
+<tr class="memdesc:a92649fa3b24fcc869418b54e7362e24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">top left corner from which the drawing of the current cycle starts  <a href="#a92649fa3b24fcc869418b54e7362e24f">More...</a><br/></td></tr>
 <tr class="separator:a92649fa3b24fcc869418b54e7362e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5536b8752cb3c2ef273360e14224bc6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">end</a></td></tr>
+<tr class="memdesc:a5536b8752cb3c2ef273360e14224bc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bottom right corner at which the drawing of the current cycle ends  <a href="#a5536b8752cb3c2ef273360e14224bc6f">More...</a><br/></td></tr>
 <tr class="separator:a5536b8752cb3c2ef273360e14224bc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e08d55e3a627e8a0d828d05be03253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a23e08d55e3a627e8a0d828d05be03253">prevStart</a></td></tr>
+<tr class="memdesc:a23e08d55e3a627e8a0d828d05be03253"><td class="mdescLeft">&#160;</td><td class="mdescRight">previous value of start  <a href="#a23e08d55e3a627e8a0d828d05be03253">More...</a><br/></td></tr>
 <tr class="separator:a23e08d55e3a627e8a0d828d05be03253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9041d96d4328dea374deb81ff08bd35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c">prevEnd</a></td></tr>
+<tr class="memdesc:a9041d96d4328dea374deb81ff08bd35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">previous value of end  <a href="#a9041d96d4328dea374deb81ff08bd35c">More...</a><br/></td></tr>
 <tr class="separator:a9041d96d4328dea374deb81ff08bd35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class for containing and displaying the game field </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">labyrinth</td><td>- game field, consisting of chars </td></tr>
-    <tr><td class="paramname">reserved</td><td>- array of reserved chars for inside usage </td></tr>
-    <tr><td class="paramname">prevDisplayMethod</td><td>- value, containing the makr of which display method was previously called(is used in displaying) </td></tr>
-    <tr><td class="paramname">snake</td><td>- a pointer to a local_player's snake </td></tr>
-    <tr><td class="paramname">start</td><td>- a top left corner from which the drawing of the current cycle starts </td></tr>
-    <tr><td class="paramname">end</td><td>- a bottom right corner at which the drawing of the current cycle ends </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00036">36</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00042">42</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a710cf4ff7789d527e6081d1eb2d696a6"></a>
 <div class="memitem">
@@ -228,7 +225,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the Point was added </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00267">267</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00273">273</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -272,7 +269,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00050">50</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00056">56</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -317,7 +314,7 @@ Here is the caller graph for this function:</div>
 
 <p>redraw every Point of the labyrinth </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00187">187</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00193">193</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -363,7 +360,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00068">68</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00074">74</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -408,7 +405,7 @@ Here is the caller graph for this function:</div>
 
 <p>display labyrinth partialy, using the start and end Points </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00199">199</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00205">205</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -455,7 +452,7 @@ Here is the caller graph for this function:</div>
 
 <p>draw only the changed Points when the labyrinth is being fully displayed </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00216">216</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00222">222</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -491,7 +488,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the Point is free </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00257">257</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00263">263</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -527,7 +524,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark os successful loading </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00335">335</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00341">341</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -563,7 +560,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the Point was removed </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00282">282</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00288">288</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -599,7 +596,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the labyrinth was successfully saved </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00293">293</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00299">299</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -634,7 +631,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00006">6</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00012">12</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -670,7 +667,7 @@ Here is the caller graph for this function:</div>
 
 <p>A method, which sets start and end values depending on t he position of local_player's snake head and current console size. </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00127">127</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00133">133</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -733,7 +730,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00234">234</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00240">240</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -774,11 +771,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00044">44</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>bottom right corner at which the drawing of the current cycle ends </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00074">74</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac95a1b4246b9351e8cea8c1618bcb58d"></a>
+<a class="anchor" id="a6145651bfcdc8c4773eacc7d0c40e200"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -786,7 +785,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char** Labyrinth::labyrinth</td>
+          <td class="memname">char ** Labyrinth::labyrinth</td>
         </tr>
       </table>
   </td>
@@ -796,7 +795,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00039">39</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>game field, consisting of chars </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00049">49</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -818,7 +819,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00041">41</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>value, containing the makr of which display method was previously called(is used in displaying) </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00059">59</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +843,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00046">46</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>previous value of end </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00084">84</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -862,7 +867,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00045">45</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>previous value of start </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00079">79</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -884,11 +891,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00040">40</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>rray of reserved chars for inside usage </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00054">54</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a09a46368bfd83ccb75580687cb17b92f"></a>
+<a class="anchor" id="a9607ad1c26230527d9fe4e2d60ae80a8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -896,7 +905,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_snake.html">Snake</a>* Labyrinth::snake = NULL</td>
+          <td class="memname"><a class="el" href="class_snake.html">Snake</a> * Labyrinth::snake = NULL</td>
         </tr>
       </table>
   </td>
@@ -906,7 +915,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00042">42</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>pointer to a local_player's snake </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00064">64</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +939,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00043">43</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>top left corner from which the drawing of the current cycle starts </p>
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00069">69</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>

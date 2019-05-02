@@ -1,6 +1,6 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/Libraries/Game/game.h" name="/home/travis/build/echo&#45;team/Snoke/Libraries/Game/game.h">
-<area shape="rect" id="node2" href="$snake_8h.html" title="../Snake/snake.h" alt="" coords="301,109,421,136"/>
-<area shape="rect" id="node9" href="$labyrinth_8h.html" title="../Labyrinth/labyrinth.h" alt="" coords="365,259,515,285"/>
-<area shape="rect" id="node5" href="$common_8h.html" title="../Common/common.h" alt="" coords="116,333,268,360"/>
-<area shape="rect" id="node8" href="$ball_8h.html" title="../Ball/ball.h" alt="" coords="217,184,308,211"/>
+<area shape="rect" id="node2" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="301,109,421,136"/>
+<area shape="rect" id="node9" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="365,259,515,285"/>
+<area shape="rect" id="node5" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="116,333,268,360"/>
+<area shape="rect" id="node8" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="217,184,308,211"/>
 </map>

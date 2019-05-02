@@ -27,15 +27,10 @@ Searching for files to exclude
 Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/bin
-<<<<<<< HEAD
-Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs
-Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs/Snoke
-=======
 Searching for files in directory /home/travis/build/echo-team/Snoke/bw-output
 Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs
 Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/external
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Ball
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Common
@@ -79,13 +74,29 @@ Parsing file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h.
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
-<<<<<<< HEAD
-Parsing file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
-=======
-Parsing file /home/travis/build/echo-team/Snoke/Libr/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+Parsing file /home/travis/build/echo-team/Snoke/Libr/home/travis/build/echo-team/Snoke/Libraries/Common/common.h:28: warning: documented symbol `letter symbol in the cell' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Common/common.h:29: warning: documented symbol `fg foreground color of the cell' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Common/common.h:30: warning: documented symbol `bg background color of the cell' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Common/common.h:41: warning: documented symbol `x x coordinate in console window' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Common/common.h:42: warning: documented symbol `y y coordinate in console window' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:10: warning: documented symbol `int x x coordinate of left logo side' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:11: warning: documented symbol `int y y coordinate of top logo side' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:12: warning: documented symbol `PointStyle style style of the cells with logo' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:13: warning: documented symbol `PointStyle shadowStyle style of the cells with shadow of the logo' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:14: warning: documented symbol `short language language of the inscription at the logo en ru' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.h:15: warning: documented symbol `map< short, const char * > inscription dictionary with translations for inscription' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:10: warning: documented symbol `const char *name text drawn at the button' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:19: warning: documented symbol `list< MenuButton > buttons buttons included in menu' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:20: warning: documented symbol `int x x coordinate of left menu side' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:21: warning: documented symbol `int y y coordinate of top menu side' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:22: warning: documented symbol `int width menu width' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h:23: warning: documented symbol `int height menu height' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h:9: warning: documented symbol `Widget *widget selectable widget class' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h:10: warning: documented symbol `int subunitsAmount amount of user actions to move to another widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h:20: warning: documented symbol `list< NavigateUnit > units widgets groups of widgets which can be selected' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h:21: warning: documented symbol `list< NavigateUnit >::iterator currentUnit selected widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h:22: warning: documented symbol `int currentSubunit number of subwidget' was not declared or defined.
 aries/Labyrinth/labyrinth.h...
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.h...
@@ -166,151 +177,11 @@ Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/menu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.cpp...
-<<<<<<< HEAD
-Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h...
-Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
-Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'Point' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'Point' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument '2' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'int' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: The following parameters of inAddChange(Point p, Point *change[2], int changeSize) are not documented:
-  parameter 'p'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'Point' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'Point' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument '2' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'int' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: The following parameters of inRemChange(Point p, Point *change[2], int changeSize) are not documented:
-  parameter 'p'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:57: warning: argument 'int' of command @param is not found in the argument list of mSleep(int time)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:57: warning: The following parameters of mSleep(int time) are not documented:
-  parameter 'time'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'std' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'ostream' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'Point' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:48: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: The following parameters of operator<<(std::ostream &s, Point p) are not documented:
-  parameter 's'
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: argument 'Point' of command @param is not found in the argument list of operator==(Point p1, Point p2)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: argument 'Point' of command @param is not found in the argument list of operator==(Point p1, Point p2)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:36: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: The following parameters of operator==(Point p1, Point p2) are not documented:
-  parameter 'p1'
-  parameter 'p2'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'Point' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'Point' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument '2' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'int' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: The following parameters of inAddChange(Point p, Point *change[2], int changeSize) are not documented:
-  parameter 'p'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'Point' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'Point' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument '2' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: argument 'int' of command @param is not found in the argument list of inRemChange(Point p, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:94: warning: The following parameters of inRemChange(Point p, Point *change[2], int changeSize) are not documented:
-  parameter 'p'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:57: warning: argument 'int' of command @param is not found in the argument list of mSleep(int time)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:57: warning: The following parameters of mSleep(int time) are not documented:
-  parameter 'time'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'std' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'ostream' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: argument 'Point' of command @param is not found in the argument list of operator<<(std::ostream &s, Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:48: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:44: warning: The following parameters of operator<<(std::ostream &s, Point p) are not documented:
-  parameter 's'
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: argument 'Point' of command @param is not found in the argument list of operator==(Point p1, Point p2)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: argument 'Point' of command @param is not found in the argument list of operator==(Point p1, Point p2)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:36: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: The following parameters of operator==(Point p1, Point p2) are not documented:
-  parameter 'p1'
-  parameter 'p2'
-=======
-Generating code for file /home/travis/build/echo-team/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:12: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:13: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:14: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-<<<<<<< HEAD
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:9: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:10: warning: Found unknown command `\global'
-=======
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:27: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:28: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:29: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:30: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:10: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:11: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:12: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:13: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:14: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:15: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:16: warning: Found unknown command `\const'
-<<<<<<< HEAD
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:9: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:10: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:18: warning: argument 'Point' of command @param is not found in the argument list of _Point::operator=(_Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:21: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:18: warning: The following parameters of _Point::operator=(_Point p) are not documented:
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:4: warning: argument 'PointStyle' of command @param is not found in the argument list of _PointStyle::operator=(_PointStyle ps)
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:7: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:4: warning: The following parameters of _PointStyle::operator=(_PointStyle ps) are not documented:
-  parameter 'ps'
-/home/travis/build/echo-team/Snoke/Libraries/Ball/ball.cpp:19: warning: argument 'Labyrinth' of command @param is not found in the argument list of Ball::generateBall(Labyrinth labyrinth, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Ball/ball.cpp:19: warning: The following parameters of Ball::generateBall(Labyrinth labyrinth, Point *change[2], int changeSize) are not documented:
-  parameter 'labyrinth'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Ball/ball.cpp:4: warning: argument 'Point' of command @param is not found in the argument list of Ball::init(Point fieldSize)
-/home/travis/build/echo-team/Snoke/Libraries/Ball/ball.cpp:4: warning: The following parameters of Ball::init(Point fieldSize) are not documented:
-  parameter 'fieldSize'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:11: warning: argument 'int' of command @param is not found in the argument list of Game::init(int size=20, int speed=100)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:11: warning: argument 'int' of command @param is not found in the argument list of Game::init(int size=20, int speed=100)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:11: warning: The following parameters of Game::init(int size=20, int speed=100) are not documented:
-  parameter 'size'
-  parameter 'speed'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:151: warning: argument 'Ball' of command @param is not found in the argument list of Game::initBall(Ball *ball)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:151: warning: The following parameters of Game::initBall(Ball *ball) are not documented:
-  parameter 'ball'
-for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
-=======
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
+Generating code for file /home/travis/build/echo-team/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:12: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:13: warning: Found unknown command `\global'
 /Snoke/Libraries/Interface/navigator.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/SideMenu/SideMenu.cpp...
@@ -365,61 +236,7 @@ Generating caller graph for function Ball::generateBall
 Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::init
 Generating docs for compound Game...
-<<<<<<< HEAD
-Generating call graph for function Game::init
-Generating caller graph for function Game::init
-Generating call graph for function Game::initBall
-Generating calle/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: warning: argument 'Point' of command @param is not found in the argument list of Game::initSnake(Point begin, int dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: warning: argument 'short' of command @param is not found in the argument list of Game::initSnake(Point begin, int dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: warning: argument 'int' of command @param is not found in the argument list of Game::initSnake(Point begin, int dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: warning: The following parameters of Game::initSnake(Point begin, int dir, int length) are not documented:
-  parameter 'begin'
-  parameter 'dir'
-  parameter 'length'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:188: warning: argument 'int' of command @param is not found in the argument list of Game::setSpeed(int speed)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:188: warning: The following parameters of Game::setSpeed(int speed) are not documented:
-  parameter 'speed'
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:164: warning: argument 'Point' of command @param is not found in the argument list of Game::wipeChange(Point **change, int size)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:164: warning: argument 'int' of command @param is not found in the argument list of Game::wipeChange(Point **change, int size)
-/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:164: warning: The following parameters of Game::wipeChange(Point **change, int size) are not documented:
-  parameter 'change'
-  parameter 'size'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:33: warning: Found unknown command `\porp'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:263: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::addPoint(Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:263: warning: The following parameters of Labyrinth::addPoint(Point p) are not documented:
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:47: warning: argument 'Snake' of command @param is not found in the argument list of Labyrinth::addSnake(Snake *snake)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:47: warning: The following parameters of Labyrinth::addSnake(Snake *snake) are not documented:
-  parameter 'snake'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:64: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::displayHandler(Point *change[2]=NULL, int size=0)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:64: warning: argument 'int' of command @param is not found in the argument list of Labyrinth::displayHandler(Point *change[2]=NULL, int size=0)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:64: warning: The following parameters of Labyrinth::displayHandler(Point *change[2]=NULL, int size=0) are not documented:
-  parameter 'change'
-  parameter 'size'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:253: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::isFree(Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:253: warning: The following parameters of Labyrinth::isFree(Point p) are not documented:
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:331: warning: argument 'char' of command @param is not found in the argument list of Labyrinth::load(char name[MAXLINE])
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:331: warning: The following parameters of Labyrinth::load(char name[MAXLINE]) are not documented:
-  parameter 'name'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:278: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::remPoint(Point p)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:278: warning: The following parameters of Labyrinth::remPoint(Point p) are not documented:
-  parameter 'p'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:289: warning: argument 'char' of command @param is not found in the argument list of Labyrinth::save(char name[MAXLINE])
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:289: warning: The following parameters of Labyrinth::save(char name[MAXLINE]) are not documented:
-  parameter 'name'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:3: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point gameFieldSize)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:3: warning: The following parameters of Labyrinth::setLabyrinth(Point gameFieldSize) are not documented:
-  parameter 'gameFieldSize'
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:230: warning: argument 'Point' of command @param is not found in the argument list of Labyrinth::updateLabyrinth(Point *update[2], int size)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:230: warning: argument 'int' of command @param is not found in the argument list of Labyrinth::updateLabyrinth(Point *update[2], int size)
-/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:230: warning: The following parameters of Labyrinth::updateLabyrinth(Point *update[2], int size) are not documented:
-  parameter 'update'
-  parameter 'size'
-/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
-=======
 Gener/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
@@ -462,54 +279,6 @@ Gener/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning
 /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.cpp:4: warning: The following parameters of Navigator::pushUnit(Widget *unit, int subunitsAmount) are not documented:
   parameter 'unit'
   parameter 'subunitsAmount'
-<<<<<<< HEAD
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Labyrinth' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Point' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: The following parameters of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball) are not documented:
-  parameter 'check'
-  parameter 'labyrinth'
-  parameter 'ball'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:202: warning: argument 'Point' of command @param is not found in the argument list of Snake::checkWisely(Point coords, Point bcoords)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:202: warning: argument 'Point' of command @param is not found in the argument list of Snake::checkWisely(Point coords, Point bcoords)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:202: warning: The following parameters of Snake::checkWisely(Point coords, Point bcoords) are not documented:
-  parameter 'coords'
-  parameter 'bcoords'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:273: warning: argument 'std' of command @param is not found in the argument list of Snake::getCoords(std::list< Point > *currBody)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:273: warning: argument 'list' of command @param is not found in the argument list of Snake::getCoords(std::list< Point > *currBody)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:273: warning: argument 'Point' of command @param is not found in the argument list of Snake::getCoords(std::list< Point > *currBody)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:273: warning: The following parameters of Snake::getCoords(std::list< Point > *currBody) are not documented:
-  parameter 'currBody'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:4: warning: argument 'Point' of command @param is not found in the argument list of Snake::init(Point begin, short dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:4: warning: argument 'short' of command @param is not found in the argument list of Snake::init(Point begin, short dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Snake::init(Point begin, short dir, int length)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:4: warning: The following parameters of Snake::init(Point begin, short dir, int length) are not documented:
-  parameter 'begin'
-  parameter 'dir'
-  parameter 'length'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:55: warning: argument 'Labyrinth' of command @param is not found in the argument list of Snake::move(Labyrinth labyrinth, Ball *ball, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:55: warning: argument 'Ball' of command @param is not found in the argument list of Snake::move(Labyrinth labyrinth, Ball *ball, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:55: warning: argument 'Point' of command @param is not found in the argument list of Snake::move(Labyrinth labyrinth, Ball *ball, Point *change[2], int changeSize)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:55: warning: The following parameters of Snake::move(Labyrinth labyrinth, Ball *ball, Point *change[2], int changeSize) are not documented:
-  parameter 'labyrinth'
-  parameter 'ball'
-  parameter 'change'
-  parameter 'changeSize'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:171: warning: argument 'Point' of command @param is not found in the argument list of Snake::moveBack(Point p, Point *change[2])
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:171: warning: argument 'Point' of command @param is not found in the argument list of Snake::moveBack(Point p, Point *change[2])
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:171: warning: The following parameters of Snake::moveBack(Point p, Point *change[2]) are not documented:
-  parameter 'p'
-  parameter 'change'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:160: warning: argument 'Point' of command @param is not found in the argument list of Snake::moveHead(Point p, Point *change[2])
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:160: warning: argument 'Point' of command @param is not found in the argument list of Snake::moveHead(Point p, Point *change[2])
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:160: warning: The following parameters of Snake::moveHead(Point p, Point *change[2]) are not documented:
-  parameter 'p'
-  parameter 'change'
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:233: warning: argument 'int' of command @param is not found in the argument list of Snake::setDirection(int direction=0)
-/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:233: warning: The following parameters of Snake::setDirection(int direction=0) are not documented:
-  parameter 'direction'
-=======
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:6: warning: Found unknown command `\callback'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
@@ -520,14 +289,10 @@ Gener/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-<<<<<<< HEAD
-r graph for function Game::initBall
-=======
 ating call graph for function Game::init
 Generating caller graph for function Game::init
 Generating call graph for function Game::initBall
 Generating caller graph for function Game::initBall
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Generating call graph for function Game::initSnake
 Generating caller graph for function Game::initSnake
 Generating call graph for function Game::run
@@ -782,9 +547,5 @@ Patching output file 44/47
 Patching output file 45/47
 Patching output file 46/47
 Patching output file 47/47
-<<<<<<< HEAD
-lookup cache used 482/65536 hits=3867 misses=587
-=======
-lookup cache used 482/65536 hits=3871 misses=587
->>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
+lookup cache used 482/65536 hits=3889 misses=587
 finished...

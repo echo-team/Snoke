@@ -7,5 +7,5 @@ var searchData=
   ['wallup',['WALLUP',['../snake_8h.html#aa33596009188082bf5c53196dc46c1c9',1,'snake.h']]],
   ['widget',['Widget',['../class_widget.html',1,'Widget'],['../struct_navigate_unit.html#a04a97a78df45d0f2268b8352f64d43f5',1,'NavigateUnit::widget()']]],
   ['width',['width',['../class_menu.html#a30ec519ffccb75388150c64175c4959b',1,'Menu']]],
-  ['wipechange',['wipeChange',['../class_game.html#aa73688f1ba069a3f1989884099c58449',1,'Game']]]
+  ['wipechange',['wipeChange',['../class_game.html#ae3805ee11cb9b97af617eadfbe70d395',1,'Game']]]
 ];

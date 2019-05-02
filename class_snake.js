@@ -12,6 +12,6 @@ var class_snake =
     [ "setDirection", "class_snake.html#a151d9cab8233d38524c09642d079356a", null ],
     [ "setScheme", "class_snake.html#a0c305e807c15736f809eb035d947c988", null ],
     [ "direction", "class_snake.html#aee6d8cb1404c33a9b7e132a99e055590", null ],
-    [ "snakeBody", "class_snake.html#aaf288745dcc19ef13a1330bb55f1471c", null ],
-    [ "style", "class_snake.html#a7db439ed2dd1cfea4c061e6ffd6ec54c", null ]
+    [ "snakeBody", "class_snake.html#a73743e4fca956db13d8b7ce9cdd9c4fb", null ],
+    [ "style", "class_snake.html#a1e2588c400967ee559e0c5241f96bc30", null ]
 ];

@@ -1,7 +1,0 @@
-<map id="Game::initSnake" name="Game::initSnake">
-<area shape="rect" id="node2" href="$class_snake.html#a953fb7b8be521f651989bb53323e89ec" title="Snake::init" alt="" coords="202,5,286,32"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182" title="Labyrinth::addSnake" alt="" coords="173,56,315,83"/>
-<area shape="rect" id="node4" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title="Snake::getCoords" alt="" coords="367,31,494,57"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Labyrinth::addPoint" alt="" coords="363,81,498,108"/>
-<area shape="rect" id="node6" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Labyrinth::isFree" alt="" coords="547,81,666,108"/>
-</map>

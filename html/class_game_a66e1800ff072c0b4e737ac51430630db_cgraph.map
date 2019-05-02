@@ -1,5 +1,0 @@
-<map id="Game::init" name="Game::init">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a39e1b11a06d126328131d387fbf51d73" title="Labyrinth::setLabyrinth" alt="" coords="136,5,291,32"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6" title="Labyrinth::load" alt="" coords="160,56,267,83"/>
-<area shape="rect" id="node4" href="$class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46" title="Game::setSpeed" alt="" coords="153,107,273,133"/>
-</map>

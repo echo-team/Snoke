@@ -1,4 +1,4 @@
 <map id="Snake" name="Snake">
-<area shape="rect" id="node4" href="$struct___point.html" title="Coordinates of the cell in console window. " alt="" coords="73,213,131,240"/>
-<area shape="rect" id="node5" href="$struct___point_style.html" title="Style of the cell in console window. " alt="" coords="110,109,199,136"/>
+<area shape="rect" id="node4" href="$struct___point.html" title="_Point" alt="" coords="73,213,131,240"/>
+<area shape="rect" id="node5" href="$struct___point_style.html" title="_PointStyle" alt="" coords="110,109,199,136"/>
 </map>

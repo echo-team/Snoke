@@ -14,11 +14,11 @@ var class_labyrinth =
     [ "sizeHandler", "class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6", null ],
     [ "updateLabyrinth", "class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8", null ],
     [ "end", "class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f", null ],
-    [ "labyrinth", "class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d", null ],
+    [ "labyrinth", "class_labyrinth.html#a6145651bfcdc8c4773eacc7d0c40e200", null ],
     [ "prevDisplayMethod", "class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc", null ],
     [ "prevEnd", "class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c", null ],
     [ "prevStart", "class_labyrinth.html#a23e08d55e3a627e8a0d828d05be03253", null ],
     [ "reserved", "class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39", null ],
-    [ "snake", "class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f", null ],
+    [ "snake", "class_labyrinth.html#a9607ad1c26230527d9fe4e2d60ae80a8", null ],
     [ "start", "class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f", null ]
 ];

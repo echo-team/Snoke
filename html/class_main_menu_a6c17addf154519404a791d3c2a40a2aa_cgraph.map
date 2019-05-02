@@ -1,7 +1,0 @@
-<map id="MainMenu::draw" name="MainMenu::draw">
-<area shape="rect" id="node2" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="getConsoleSize" alt="" coords="185,5,300,32"/>
-<area shape="rect" id="node3" href="$class_menu.html#a1a1982871bb5f8b1557d26b0d9ccfe0f" title="Menu::addButton" alt="" coords="182,56,303,83"/>
-<area shape="rect" id="node4" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="197,107,288,133"/>
-<area shape="rect" id="node5" href="$class_navigator.html#a47967fc9bdfd276c98f8ed1c44d5dc46" title="Navigator::pushUnit" alt="" coords="173,157,312,184"/>
-<area shape="rect" id="node6" href="$class_navigator.html#ab9b30029b9ef06cca27ebc5b2549121c" title="Navigator::listen" alt="" coords="184,208,301,235"/>
-</map>
