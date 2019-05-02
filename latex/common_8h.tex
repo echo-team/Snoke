@@ -1,0 +1,265 @@
+\hypertarget{common_8h}{\section{/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Common/common.h File Reference}
+\label{common_8h}\index{/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Common/common.\-h@{/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Common/common.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$ncurses.\-h$>$}\\*
+Include dependency graph for common.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{common_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct___point_style}{\-\_\-\-Point\-Style}
+\item 
+struct \hyperlink{struct___point}{\-\_\-\-Point}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{common_8h_a3e937c42922f7601edb17b747602c471}{M\-A\-X\-L\-I\-N\-E}~256
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct___point_style}{\-\_\-\-Point\-Style} \hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\-Style}
+\item 
+typedef struct \hyperlink{struct___point}{\-\_\-\-Point} \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{common_8h_a74c857df0e2025afce6053ae585b84c5}{operator$<$$<$} (std\-::ostream \&s, \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p)
+\item 
+bool \hyperlink{common_8h_ae93da5ec52e15782da857659d4982812}{operator==} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p1, \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p2)
+\item 
+void \hyperlink{common_8h_acfe1c587c2a13d4b833eb11bd3157771}{m\-Sleep} (int time)
+\item 
+bool \hyperlink{common_8h_a8afa890f53aecd84c750b7b568629e25}{in\-Add\-Change} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p, \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$change\mbox{[}2\mbox{]}, int change\-Size)
+\item 
+bool \hyperlink{common_8h_aed7e2ccc7264c951f8b3802757992941}{in\-Rem\-Change} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p, \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$change\mbox{[}2\mbox{]}, int change\-Size)
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{common_8h_ada3ae1ea3b3825462dccd1eb18df401a}{get\-Console\-Size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{common_8h_a3e937c42922f7601edb17b747602c471}{\index{common.\-h@{common.\-h}!M\-A\-X\-L\-I\-N\-E@{M\-A\-X\-L\-I\-N\-E}}
+\index{M\-A\-X\-L\-I\-N\-E@{M\-A\-X\-L\-I\-N\-E}!common.h@{common.\-h}}
+\subsubsection[{M\-A\-X\-L\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-L\-I\-N\-E~256}}\label{common_8h_a3e937c42922f7601edb17b747602c471}
+
+
+Definition at line 18 of file common.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{\index{common.\-h@{common.\-h}!Point@{Point}}
+\index{Point@{Point}!common.h@{common.\-h}}
+\subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Point}  {\bf Point}}}\label{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}
+Coordinates of the cell in console window 
+\begin{DoxyParams}{Parameters}
+{\em \{short\}} & x -\/ x coordinate in console window \\
+\hline
+{\em \{short\}} & y -\/ y coordinate in console window \\
+\hline
+\end{DoxyParams}
+\hypertarget{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{\index{common.\-h@{common.\-h}!Point\-Style@{Point\-Style}}
+\index{Point\-Style@{Point\-Style}!common.h@{common.\-h}}
+\subsubsection[{Point\-Style}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Point\-Style}  {\bf Point\-Style}}}\label{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}
+Style of the cell in console window 
+\begin{DoxyParams}{Parameters}
+{\em \{char\}} & letter -\/ symbol in the cell \\
+\hline
+{\em \{short\}} & fg -\/ foreground color of the cell \\
+\hline
+{\em \{short\}} & bg -\/ beckground color of the cell \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{common_8h_ada3ae1ea3b3825462dccd1eb18df401a}{\index{common.\-h@{common.\-h}!get\-Console\-Size@{get\-Console\-Size}}
+\index{get\-Console\-Size@{get\-Console\-Size}!common.h@{common.\-h}}
+\subsubsection[{get\-Console\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} get\-Console\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{common_8h_ada3ae1ea3b3825462dccd1eb18df401a}
+Gets size of current console screen in symdols \begin{DoxyReturn}{Returns}
+\{Point\} size 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file common.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h_ada3ae1ea3b3825462dccd1eb18df401a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{common_8h_a8afa890f53aecd84c750b7b568629e25}{\index{common.\-h@{common.\-h}!in\-Add\-Change@{in\-Add\-Change}}
+\index{in\-Add\-Change@{in\-Add\-Change}!common.h@{common.\-h}}
+\subsubsection[{in\-Add\-Change}]{\setlength{\rightskip}{0pt plus 5cm}bool in\-Add\-Change (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p, }
+\item[{{\bf Point} $\ast$}]{change\mbox{[}2\mbox{]}, }
+\item[{int}]{change\-Size}
+\end{DoxyParamCaption}
+)}}\label{common_8h_a8afa890f53aecd84c750b7b568629e25}
+Check if Points is in the addition queue 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p -\/ point to check \\
+\hline
+{\em \{\-Point$\ast$\mbox{[}2\mbox{]}\}} & change -\/ array of changed Points \\
+\hline
+{\em \{int\}} & change\-Size -\/ size of the change array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file common.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h_a8afa890f53aecd84c750b7b568629e25_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{common_8h_aed7e2ccc7264c951f8b3802757992941}{\index{common.\-h@{common.\-h}!in\-Rem\-Change@{in\-Rem\-Change}}
+\index{in\-Rem\-Change@{in\-Rem\-Change}!common.h@{common.\-h}}
+\subsubsection[{in\-Rem\-Change}]{\setlength{\rightskip}{0pt plus 5cm}bool in\-Rem\-Change (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p, }
+\item[{{\bf Point} $\ast$}]{change\mbox{[}2\mbox{]}, }
+\item[{int}]{change\-Size}
+\end{DoxyParamCaption}
+)}}\label{common_8h_aed7e2ccc7264c951f8b3802757992941}
+Check if the Point is in the remove queue 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p -\/ point to check \\
+\hline
+{\em \{\-Point$\ast$\mbox{[}2\mbox{]}\}} & change -\/ array of changed Points \\
+\hline
+{\em \{int\}} & change\-Size -\/ size of the change array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file common.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h_aed7e2ccc7264c951f8b3802757992941_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{common_8h_acfe1c587c2a13d4b833eb11bd3157771}{\index{common.\-h@{common.\-h}!m\-Sleep@{m\-Sleep}}
+\index{m\-Sleep@{m\-Sleep}!common.h@{common.\-h}}
+\subsubsection[{m\-Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void m\-Sleep (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}\label{common_8h_acfe1c587c2a13d4b833eb11bd3157771}
+Cross-\/platform sleep function cover 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & time -\/ time the game will 'freeze' for in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file common.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{common_8h_acfe1c587c2a13d4b833eb11bd3157771_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{common_8h_a74c857df0e2025afce6053ae585b84c5}{\index{common.\-h@{common.\-h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!common.h@{common.\-h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{s, }
+\item[{{\bf Point}}]{p}
+\end{DoxyParamCaption}
+)}}\label{common_8h_a74c857df0e2025afce6053ae585b84c5}
+Operation '$<$$<$' override for the Point type 
+\begin{DoxyParams}{Parameters}
+{\em \{std\-::ostream\&\}} & s -\/ current ostream variable \\
+\hline
+{\em \{\-Point\}} & p -\/ a Point to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{std\-::ostream\&\}  
+\end{DoxyReturn}
+
+
+Definition at line 50 of file common.\-cpp.
+
+\hypertarget{common_8h_ae93da5ec52e15782da857659d4982812}{\index{common.\-h@{common.\-h}!operator==@{operator==}}
+\index{operator==@{operator==}!common.h@{common.\-h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p1, }
+\item[{{\bf Point}}]{p2}
+\end{DoxyParamCaption}
+)}}\label{common_8h_ae93da5ec52e15782da857659d4982812}
+Operation \char`\"{}==\char`\"{} override for the Point type 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p1 -\/ The first Point \\
+\hline
+{\em \{\-Point\}} & p2 -\/ The second Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\}  
+\end{DoxyReturn}
+
+
+Definition at line 38 of file common.\-cpp.
+

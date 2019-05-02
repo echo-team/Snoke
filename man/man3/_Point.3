@@ -1,0 +1,80 @@
+.TH "_Point" 3 "Thu May 2 2019" "Snoke" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+_Point \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <common\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB_Point\fP & \fBoperator=\fP (\fB_Point\fP p)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "short \fBx\fP"
+.br
+.ti -1c
+.RI "short \fBy\fP"
+.br
+.ti -1c
+.RI "\fBPointStyle\fP \fBstyle\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Coordinates of the cell in console window 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{short}\fP x - x coordinate in console window 
+.br
+\fI{short}\fP y - y coordinate in console window 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file common\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPoint\fP & Point::operator= (\fB_Point\fPp)"
+Operation '=' override for the Point type 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{Point}\fP p - the obgect, parameters of which are being copied 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Point&} a pointer to an object  
+.RE
+.PP
+
+.PP
+Definition at line 23 of file common\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBPointStyle\fP _Point::style"
+
+.PP
+Definition at line 41 of file common\&.h\&.
+.SS "short _Point::x"
+
+.PP
+Definition at line 40 of file common\&.h\&.
+.SS "short _Point::y"
+
+.PP
+Definition at line 40 of file common\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Snoke from the source code\&.

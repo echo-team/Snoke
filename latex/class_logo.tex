@@ -1,0 +1,189 @@
+\hypertarget{class_logo}{\section{Logo Class Reference}
+\label{class_logo}\index{Logo@{Logo}}
+}
+
+
+{\ttfamily \#include $<$logo.\-h$>$}
+
+
+
+Collaboration diagram for Logo\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_logo_aced3f5817a709bcc0fd7cf8a360a2523}{draw} ()
+\item 
+void \hyperlink{class_logo_a048b9474c23e659c94f590509376f198}{set\-Position} (int \hyperlink{class_logo_ab25a813d9b3635c4b524dab9bc2ee86e}{x}, int \hyperlink{class_logo_a33846b1b3ac0da8180c888fb9a1680f6}{y})
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_logo_aeeefce0ee601c896c38b929b7a355616}{get\-Size} ()
+\item 
+\hyperlink{class_logo_a1cdb59eff67441b73e9d0450e6a88921}{Logo} (int \hyperlink{class_logo_ab25a813d9b3635c4b524dab9bc2ee86e}{x}, int \hyperlink{class_logo_a33846b1b3ac0da8180c888fb9a1680f6}{y}, \hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\-Style} \hyperlink{class_logo_a2a0115dd4566f475c108eb3728265b62}{style}, \hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\-Style} \hyperlink{class_logo_a73d851ecd0cf3b7513f47df2aa462142}{shadow\-Style}, int \hyperlink{class_logo_ac3f13aa3fd16b904a71157e6ff47e48e}{language})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_logo_ab25a813d9b3635c4b524dab9bc2ee86e}{x}
+\item 
+int \hyperlink{class_logo_a33846b1b3ac0da8180c888fb9a1680f6}{y}
+\item 
+\hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\-Style} \hyperlink{class_logo_a2a0115dd4566f475c108eb3728265b62}{style}
+\item 
+\hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\-Style} \hyperlink{class_logo_a73d851ecd0cf3b7513f47df2aa462142}{shadow\-Style}
+\item 
+short \hyperlink{class_logo_ac3f13aa3fd16b904a71157e6ff47e48e}{language}
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ const char $\ast$ $>$ $>$ \hyperlink{class_logo_aefd60c44e3a7b4648e9758117db11244}{inscription}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of the giant snoke logo 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & x -\/ x coordinate of left logo side \\
+\hline
+{\em \{int\}} & y -\/ y coordinate of top logo side \\
+\hline
+{\em \{\-Point\-Style\}} & style -\/ style of the cells with logo \\
+\hline
+{\em \{\-Point\-Style\}} & shadow\-Style -\/ style of the cells with shadow of the logo \\
+\hline
+{\em \{short\}} & language -\/ language of the inscription at the logo, 0 -\/ en, 1 -\/ ru \\
+\hline
+{\em \{map$<$short,const} & char$\ast$$>$\} inscription -\/ dictionary with translations for inscription \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file logo.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_logo_a1cdb59eff67441b73e9d0450e6a88921}{\index{Logo@{Logo}!Logo@{Logo}}
+\index{Logo@{Logo}!Logo@{Logo}}
+\subsubsection[{Logo}]{\setlength{\rightskip}{0pt plus 5cm}Logo\-::\-Logo (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf Point\-Style}}]{style, }
+\item[{{\bf Point\-Style}}]{shadow\-Style, }
+\item[{int}]{language}
+\end{DoxyParamCaption}
+)}}\label{class_logo_a1cdb59eff67441b73e9d0450e6a88921}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\-Style\}} & style -\/ style of the cells with logo \\
+\hline
+{\em \{\-Point\-Style\}} & shadow\-Style -\/ style of the cells with shadow of the logo \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file logo.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_logo_aced3f5817a709bcc0fd7cf8a360a2523}{\index{Logo@{Logo}!draw@{draw}}
+\index{draw@{draw}!Logo@{Logo}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Logo\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_logo_aced3f5817a709bcc0fd7cf8a360a2523}
+Draws \hyperlink{class_logo}{Logo} in console window 
+
+Definition at line 30 of file logo.\-cpp.
+
+\hypertarget{class_logo_aeeefce0ee601c896c38b929b7a355616}{\index{Logo@{Logo}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Logo@{Logo}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Logo\-::get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_logo_aeeefce0ee601c896c38b929b7a355616}
+Returns size of the logo \begin{DoxyReturn}{Returns}
+\{Point\} -\/ width and height of the logo 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file logo.\-cpp.
+
+\hypertarget{class_logo_a048b9474c23e659c94f590509376f198}{\index{Logo@{Logo}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Logo@{Logo}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Logo\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top}
+\end{DoxyParamCaption}
+)}}\label{class_logo_a048b9474c23e659c94f590509376f198}
+Sets coordinates of logo 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & left -\/ x coordinate of left logo side \\
+\hline
+{\em \{int\}} & top -\/ y coordinate of top logo side \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file logo.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_logo_aefd60c44e3a7b4648e9758117db11244}{\index{Logo@{Logo}!inscription@{inscription}}
+\index{inscription@{inscription}!Logo@{Logo}}
+\subsubsection[{inscription}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$const char$\ast$$>$ $>$ Logo\-::inscription\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_aefd60c44e3a7b4648e9758117db11244}
+
+
+Definition at line 23 of file logo.\-h.
+
+\hypertarget{class_logo_ac3f13aa3fd16b904a71157e6ff47e48e}{\index{Logo@{Logo}!language@{language}}
+\index{language@{language}!Logo@{Logo}}
+\subsubsection[{language}]{\setlength{\rightskip}{0pt plus 5cm}short Logo\-::language\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_ac3f13aa3fd16b904a71157e6ff47e48e}
+
+
+Definition at line 22 of file logo.\-h.
+
+\hypertarget{class_logo_a73d851ecd0cf3b7513f47df2aa462142}{\index{Logo@{Logo}!shadow\-Style@{shadow\-Style}}
+\index{shadow\-Style@{shadow\-Style}!Logo@{Logo}}
+\subsubsection[{shadow\-Style}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point\-Style} Logo\-::shadow\-Style\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_a73d851ecd0cf3b7513f47df2aa462142}
+
+
+Definition at line 21 of file logo.\-h.
+
+\hypertarget{class_logo_a2a0115dd4566f475c108eb3728265b62}{\index{Logo@{Logo}!style@{style}}
+\index{style@{style}!Logo@{Logo}}
+\subsubsection[{style}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point\-Style} Logo\-::style\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_a2a0115dd4566f475c108eb3728265b62}
+
+
+Definition at line 21 of file logo.\-h.
+
+\hypertarget{class_logo_ab25a813d9b3635c4b524dab9bc2ee86e}{\index{Logo@{Logo}!x@{x}}
+\index{x@{x}!Logo@{Logo}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int Logo\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_ab25a813d9b3635c4b524dab9bc2ee86e}
+
+
+Definition at line 20 of file logo.\-h.
+
+\hypertarget{class_logo_a33846b1b3ac0da8180c888fb9a1680f6}{\index{Logo@{Logo}!y@{y}}
+\index{y@{y}!Logo@{Logo}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int Logo\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_logo_a33846b1b3ac0da8180c888fb9a1680f6}
+
+
+Definition at line 20 of file logo.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Interface/\hyperlink{logo_8h}{logo.\-h}\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Interface/\hyperlink{logo_8cpp}{logo.\-cpp}\end{DoxyCompactItemize}

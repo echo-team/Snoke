@@ -1,0 +1,5 @@
+<map id="Ball::generateBall" name="Ball::generateBall">
+<area shape="rect" id="node2" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Labyrinth::isFree" alt="" coords="179,5,298,32"/>
+<area shape="rect" id="node3" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="inRemChange" alt="" coords="186,56,291,83"/>
+<area shape="rect" id="node4" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="inAddChange" alt="" coords="189,107,289,133"/>
+</map>

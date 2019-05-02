@@ -1,0 +1,9 @@
+<map id="Game::initBall" name="Game::initBall">
+<area shape="rect" id="node2" href="$class_ball.html#a1907f13fdfb320a19180efec2a56e39c" title="Ball::init" alt="" coords="191,5,260,32"/>
+<area shape="rect" id="node3" href="$class_ball.html#a60fd40459426366242d18d85b3b50c2c" title="Ball::generateBall" alt="" coords="163,107,287,133"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Labyrinth::addPoint" alt="" coords="158,56,293,83"/>
+<area shape="rect" id="node8" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Ball::getCoords" alt="" coords="169,157,281,184"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Labyrinth::isFree" alt="" coords="342,56,461,83"/>
+<area shape="rect" id="node5" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="inRemChange" alt="" coords="349,107,454,133"/>
+<area shape="rect" id="node6" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="inAddChange" alt="" coords="351,157,451,184"/>
+</map>

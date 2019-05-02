@@ -1,0 +1,210 @@
+\hypertarget{class_ball}{\section{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+}
+
+
+{\ttfamily \#include $<$ball.\-h$>$}
+
+
+
+Collaboration diagram for Ball\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ball__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_ball_a1907f13fdfb320a19180efec2a56e39c}{init} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} dim)
+\item 
+bool \hyperlink{class_ball_a60fd40459426366242d18d85b3b50c2c}{generate\-Ball} (\hyperlink{class_labyrinth}{Labyrinth} labyrinth, \hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$change\mbox{[}2\mbox{]}, int change\-Size)
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_ball_a14b9a607402be58e7a0a0ab053df5f82}{get\-Coords} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_ball_abd10a53eda37a2c541ad5dfbbea27f81}{position}
+\item 
+std\-::mt19937 \hyperlink{class_ball_ae3c68e21e0801b657b980380ab6a4bb2}{rng}
+\item 
+uint32\-\_\-t \hyperlink{class_ball_ad6e67b032167a7d9db9630bc5ab2e613}{seed\-\_\-val}
+\item 
+std\-::uniform\-\_\-int\-\_\-distribution\\*
+$<$ int $>$ \hyperlink{class_ball_a558a48196bdb4ea389519ab7c0138216}{distribution\-X}
+\item 
+std\-::uniform\-\_\-int\-\_\-distribution\\*
+$<$ int $>$ \hyperlink{class_ball_a9a8e67dcc49382448848c497ff7ede25}{distribution\-Y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the \hyperlink{class_ball}{Ball} entity of the game 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & position -\/ a Coordinates(x, y) of a \hyperlink{class_ball}{Ball} in the Console window \\
+\hline
+{\em \{mt19937\}} & rng -\/ the variable, responible for the 'random' during the game \\
+\hline
+{\em \{uint32\-\_\-t\}} & seed\-\_\-val -\/ value 'feeded' to the 'random' generator \\
+\hline
+{\em \{uniform\-\_\-int\-\_\-distribution$<$int$>$\}} & distribution\-X -\/ an equally likely int distribution for x coordinate of a \hyperlink{class_ball}{Ball} \\
+\hline
+{\em \{uniform\-\_\-int\-\_\-distribution$<$int$>$\}} & distribution\-Y -\/ an equally likely int distribution for y coordinate of a \hyperlink{class_ball}{Ball} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file ball.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ball_a60fd40459426366242d18d85b3b50c2c}{\index{Ball@{Ball}!generate\-Ball@{generate\-Ball}}
+\index{generate\-Ball@{generate\-Ball}!Ball@{Ball}}
+\subsubsection[{generate\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}bool Ball\-::generate\-Ball (
+\begin{DoxyParamCaption}
+\item[{{\bf Labyrinth}}]{labyrinth, }
+\item[{{\bf Point} $\ast$}]{change\mbox{[}2\mbox{]}, }
+\item[{int}]{change\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_ball_a60fd40459426366242d18d85b3b50c2c}
+Generate the \hyperlink{class_ball}{Ball} 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Labyrinth\}} & labyrinth -\/ the current state of the labyrinth object for intersection checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the ball was successfully generated 
+\end{DoxyReturn}
+Generate numbers until u get a free spot
+
+Definition at line 23 of file ball.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_ball_a60fd40459426366242d18d85b3b50c2c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ball_a60fd40459426366242d18d85b3b50c2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_ball_a14b9a607402be58e7a0a0ab053df5f82}{\index{Ball@{Ball}!get\-Coords@{get\-Coords}}
+\index{get\-Coords@{get\-Coords}!Ball@{Ball}}
+\subsubsection[{get\-Coords}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Ball\-::get\-Coords (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ball_a14b9a607402be58e7a0a0ab053df5f82}
+Get the ball coords without giving the direct access \begin{DoxyReturn}{Returns}
+\{Point\} 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file ball.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ball_a14b9a607402be58e7a0a0ab053df5f82_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_ball_a1907f13fdfb320a19180efec2a56e39c}{\index{Ball@{Ball}!init@{init}}
+\index{init@{init}!Ball@{Ball}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool Ball\-::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{field\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_ball_a1907f13fdfb320a19180efec2a56e39c}
+Initialization 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & field\-Size -\/ the size of the game field(x, y) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of successful initialization 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file ball.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ball_a1907f13fdfb320a19180efec2a56e39c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ball_a558a48196bdb4ea389519ab7c0138216}{\index{Ball@{Ball}!distribution\-X@{distribution\-X}}
+\index{distribution\-X@{distribution\-X}!Ball@{Ball}}
+\subsubsection[{distribution\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::uniform\-\_\-int\-\_\-distribution$<$int$>$ Ball\-::distribution\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ball_a558a48196bdb4ea389519ab7c0138216}
+
+
+Definition at line 23 of file ball.\-h.
+
+\hypertarget{class_ball_a9a8e67dcc49382448848c497ff7ede25}{\index{Ball@{Ball}!distribution\-Y@{distribution\-Y}}
+\index{distribution\-Y@{distribution\-Y}!Ball@{Ball}}
+\subsubsection[{distribution\-Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::uniform\-\_\-int\-\_\-distribution$<$int$>$ Ball\-::distribution\-Y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ball_a9a8e67dcc49382448848c497ff7ede25}
+
+
+Definition at line 24 of file ball.\-h.
+
+\hypertarget{class_ball_abd10a53eda37a2c541ad5dfbbea27f81}{\index{Ball@{Ball}!position@{position}}
+\index{position@{position}!Ball@{Ball}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Ball\-::position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ball_abd10a53eda37a2c541ad5dfbbea27f81}
+
+
+Definition at line 20 of file ball.\-h.
+
+\hypertarget{class_ball_ae3c68e21e0801b657b980380ab6a4bb2}{\index{Ball@{Ball}!rng@{rng}}
+\index{rng@{rng}!Ball@{Ball}}
+\subsubsection[{rng}]{\setlength{\rightskip}{0pt plus 5cm}std\-::mt19937 Ball\-::rng\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ball_ae3c68e21e0801b657b980380ab6a4bb2}
+
+
+Definition at line 21 of file ball.\-h.
+
+\hypertarget{class_ball_ad6e67b032167a7d9db9630bc5ab2e613}{\index{Ball@{Ball}!seed\-\_\-val@{seed\-\_\-val}}
+\index{seed\-\_\-val@{seed\-\_\-val}!Ball@{Ball}}
+\subsubsection[{seed\-\_\-val}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Ball\-::seed\-\_\-val\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ball_ad6e67b032167a7d9db9630bc5ab2e613}
+
+
+Definition at line 22 of file ball.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Ball/\hyperlink{ball_8h}{ball.\-h}\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Ball/\hyperlink{ball_8cpp}{ball.\-cpp}\end{DoxyCompactItemize}

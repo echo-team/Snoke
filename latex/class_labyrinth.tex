@@ -1,0 +1,582 @@
+\hypertarget{class_labyrinth}{\section{Labyrinth Class Reference}
+\label{class_labyrinth}\index{Labyrinth@{Labyrinth}}
+}
+
+
+{\ttfamily \#include $<$labyrinth.\-h$>$}
+
+
+
+Collaboration diagram for Labyrinth\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_labyrinth_a39e1b11a06d126328131d387fbf51d73}{set\-Labyrinth} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} dimensions)
+\item 
+void \hyperlink{class_labyrinth_ad2819aba76d079c7fda751e7388b7182}{add\-Snake} (\hyperlink{class_snake}{Snake} $\ast$\hyperlink{class_labyrinth_a09a46368bfd83ccb75580687cb17b92f}{snake})
+\item 
+bool \hyperlink{class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6}{add\-Point} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p)
+\item 
+bool \hyperlink{class_labyrinth_a24d98083c011da23695425ec69d583a5}{rem\-Point} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p)
+\item 
+void \hyperlink{class_labyrinth_a02c42abb1b58fdf8a20b66bddd0bbe00}{display\-Handler} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$change\mbox{[}2\mbox{]}=N\-U\-L\-L, int size=0)
+\item 
+bool \hyperlink{class_labyrinth_acd7311e3222304bae2208fbc293bcc4d}{is\-Free} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} p)
+\item 
+bool \hyperlink{class_labyrinth_a99e6b33f94d6d64f9c5a4fa78f08c007}{save} (char name\mbox{[}\hyperlink{common_8h_a3e937c42922f7601edb17b747602c471}{M\-A\-X\-L\-I\-N\-E}\mbox{]})
+\item 
+bool \hyperlink{class_labyrinth_a36cd7033292515cba0ce3d74f03720b6}{load} (char name\mbox{[}\hyperlink{common_8h_a3e937c42922f7601edb17b747602c471}{M\-A\-X\-L\-I\-N\-E}\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_labyrinth_a676e53a7bced45343af8307eae2ba2d0}{display\-Labyrinth} ()
+\item 
+void \hyperlink{class_labyrinth_a86210707e3b4be4faaa9bd1f86429124}{display\-Updated} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$update\mbox{[}2\mbox{]}, int size)
+\item 
+void \hyperlink{class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8}{update\-Labyrinth} (\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} $\ast$update\mbox{[}2\mbox{]}, int size)
+\item 
+void \hyperlink{class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd}{display\-Full} ()
+\item 
+void \hyperlink{class_labyrinth_a43994d3b84ed457b1c04595466a61fc6}{size\-Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{class_labyrinth_ac95a1b4246b9351e8cea8c1618bcb58d}{labyrinth}
+\item 
+std\-::string \hyperlink{class_labyrinth_aafa921122b2ea77268cbe479949d7d39}{reserved} = \char`\"{}!\char`\"{}
+\item 
+int \hyperlink{class_labyrinth_a7ddef18e25e03408485e4959bcb5aebc}{prev\-Display\-Method} = 0
+\item 
+\hyperlink{class_snake}{Snake} $\ast$ \hyperlink{class_labyrinth_a09a46368bfd83ccb75580687cb17b92f}{snake} = N\-U\-L\-L
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_labyrinth_a92649fa3b24fcc869418b54e7362e24f}{start}
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_labyrinth_a5536b8752cb3c2ef273360e14224bc6f}{end}
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_labyrinth_a23e08d55e3a627e8a0d828d05be03253}{prev\-Start}
+\item 
+\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point} \hyperlink{class_labyrinth_a9041d96d4328dea374deb81ff08bd35c}{prev\-End}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class for containing and siplaying the game field 
+\begin{DoxyParams}{Parameters}
+{\em \{char$\ast$$\ast$\}} & labyrinth -\/ game field, consisting of chars \\
+\hline
+{\em \{std\-::string\}} & reserved -\/ array of reserved chars for inside usage \\
+\hline
+{\em \{int\}} & prev\-Display\-Method -\/ value, containing the makr of which display method was previously called(is used in displaying) \\
+\hline
+{\em \{\-Snake$\ast$\}} & snake -\/ a pointer to a local\-\_\-player's snake  \{Point\} start -\/ a top left corner from which the drawing of the current cycle starts \\
+\hline
+{\em \{\-Point\}} & end -\/ a bottom right corner at which the drawing of the current cycle ends \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file labyrinth.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6}{\index{Labyrinth@{Labyrinth}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!Labyrinth@{Labyrinth}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6}
+Adding Point to the labyrinth with the check of correction 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p -\/ point to add to the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the Point was added 
+\end{DoxyReturn}
+
+
+Definition at line 267 of file labyrinth.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_ad2819aba76d079c7fda751e7388b7182}{\index{Labyrinth@{Labyrinth}!add\-Snake@{add\-Snake}}
+\index{add\-Snake@{add\-Snake}!Labyrinth@{Labyrinth}}
+\subsubsection[{add\-Snake}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::add\-Snake (
+\begin{DoxyParamCaption}
+\item[{{\bf Snake} $\ast$}]{snake}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_ad2819aba76d079c7fda751e7388b7182}
+Adding snake to the laburinth and getting the host snake(firest added snake) 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Snake$\ast$\}} & snake -\/ a snake to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file labyrinth.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_ad2819aba76d079c7fda751e7388b7182_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_ad2819aba76d079c7fda751e7388b7182_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd}{\index{Labyrinth@{Labyrinth}!display\-Full@{display\-Full}}
+\index{display\-Full@{display\-Full}!Labyrinth@{Labyrinth}}
+\subsubsection[{display\-Full}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::display\-Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd}
+redraw every Point of the labyrinth 
+
+Definition at line 187 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a02c42abb1b58fdf8a20b66bddd0bbe00}{\index{Labyrinth@{Labyrinth}!display\-Handler@{display\-Handler}}
+\index{display\-Handler@{display\-Handler}!Labyrinth@{Labyrinth}}
+\subsubsection[{display\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::display\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{change\mbox{[}2\mbox{]} = {\ttfamily NULL}, }
+\item[{int}]{size = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a02c42abb1b58fdf8a20b66bddd0bbe00}
+A method which decides what dispaly method will be used in each situation 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point$\ast$\}} & change -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+{\em \{int\}} & size -\/ the size of the change array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file labyrinth.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a02c42abb1b58fdf8a20b66bddd0bbe00_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a02c42abb1b58fdf8a20b66bddd0bbe00_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a676e53a7bced45343af8307eae2ba2d0}{\index{Labyrinth@{Labyrinth}!display\-Labyrinth@{display\-Labyrinth}}
+\index{display\-Labyrinth@{display\-Labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{display\-Labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::display\-Labyrinth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a676e53a7bced45343af8307eae2ba2d0}
+display labyrinth partialy, using the start and end Points 
+
+Definition at line 199 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a676e53a7bced45343af8307eae2ba2d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a86210707e3b4be4faaa9bd1f86429124}{\index{Labyrinth@{Labyrinth}!display\-Updated@{display\-Updated}}
+\index{display\-Updated@{display\-Updated}!Labyrinth@{Labyrinth}}
+\subsubsection[{display\-Updated}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::display\-Updated (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{update\mbox{[}2\mbox{]}, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a86210707e3b4be4faaa9bd1f86429124}
+draw only the changed Points when the labyrinth is being fully displayed 
+
+Definition at line 216 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a86210707e3b4be4faaa9bd1f86429124_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_acd7311e3222304bae2208fbc293bcc4d}{\index{Labyrinth@{Labyrinth}!is\-Free@{is\-Free}}
+\index{is\-Free@{is\-Free}!Labyrinth@{Labyrinth}}
+\subsubsection[{is\-Free}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::is\-Free (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_acd7311e3222304bae2208fbc293bcc4d}
+Mark of if the asked Point is free 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p -\/ Point to check in the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the Point is free 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_acd7311e3222304bae2208fbc293bcc4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a36cd7033292515cba0ce3d74f03720b6}{\index{Labyrinth@{Labyrinth}!load@{load}}
+\index{load@{load}!Labyrinth@{Labyrinth}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::load (
+\begin{DoxyParamCaption}
+\item[{char}]{name\mbox{[}\-M\-A\-X\-L\-I\-N\-E\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a36cd7033292515cba0ce3d74f03720b6}
+Mehod to load labyrinth from the file 
+\begin{DoxyParams}{Parameters}
+{\em \{char$\ast$\}} & name -\/ name of the file to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark os successful loading 
+\end{DoxyReturn}
+
+
+Definition at line 335 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_labyrinth_a36cd7033292515cba0ce3d74f03720b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a24d98083c011da23695425ec69d583a5}{\index{Labyrinth@{Labyrinth}!rem\-Point@{rem\-Point}}
+\index{rem\-Point@{rem\-Point}!Labyrinth@{Labyrinth}}
+\subsubsection[{rem\-Point}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::rem\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a24d98083c011da23695425ec69d583a5}
+Remove Point from the labyrinth 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & p -\/ point to remove from the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the Point was removed 
+\end{DoxyReturn}
+
+
+Definition at line 282 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a24d98083c011da23695425ec69d583a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a99e6b33f94d6d64f9c5a4fa78f08c007}{\index{Labyrinth@{Labyrinth}!save@{save}}
+\index{save@{save}!Labyrinth@{Labyrinth}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}bool Labyrinth\-::save (
+\begin{DoxyParamCaption}
+\item[{char}]{name\mbox{[}\-M\-A\-X\-L\-I\-N\-E\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a99e6b33f94d6d64f9c5a4fa78f08c007}
+Method to save labyritnh(borders and obstacles, defined in reserved string) to the file 
+\begin{DoxyParams}{Parameters}
+{\em \{char$\ast$\}} & name -\/ name of the file, where to sace the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the labyrinth was successfully saved 
+\end{DoxyReturn}
+
+
+Definition at line 293 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_labyrinth_a99e6b33f94d6d64f9c5a4fa78f08c007_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a39e1b11a06d126328131d387fbf51d73}{\index{Labyrinth@{Labyrinth}!set\-Labyrinth@{set\-Labyrinth}}
+\index{set\-Labyrinth@{set\-Labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{set\-Labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::set\-Labyrinth (
+\begin{DoxyParamCaption}
+\item[{{\bf Point}}]{game\-Field\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_labyrinth_a39e1b11a06d126328131d387fbf51d73}
+Sets the default values fro the variables as well as generating the labyritnh array with borders 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point\}} & game\-Field\-Size -\/ a size of the labyrinth \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file labyrinth.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a39e1b11a06d126328131d387fbf51d73_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_a43994d3b84ed457b1c04595466a61fc6}{\index{Labyrinth@{Labyrinth}!size\-Handler@{size\-Handler}}
+\index{size\-Handler@{size\-Handler}!Labyrinth@{Labyrinth}}
+\subsubsection[{size\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::size\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a43994d3b84ed457b1c04595466a61fc6}
+A method, which sets start and end values depending on the position of local\-\_\-player's snake head and current console size 
+
+Definition at line 127 of file labyrinth.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8}{\index{Labyrinth@{Labyrinth}!update\-Labyrinth@{update\-Labyrinth}}
+\index{update\-Labyrinth@{update\-Labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{update\-Labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}void Labyrinth\-::update\-Labyrinth (
+\begin{DoxyParamCaption}
+\item[{{\bf Point} $\ast$}]{update\mbox{[}2\mbox{]}, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8}
+Updating the labyrinth(changing the values of some Points) 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Point$\ast$\}} & update -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+{\em \{int\}} & size -\/ the longest sequence for updating \mbox{[}max(len(update\mbox{[}0\mbox{]}, update\mbox{[}1\mbox{]}))\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file labyrinth.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_labyrinth_a5536b8752cb3c2ef273360e14224bc6f}{\index{Labyrinth@{Labyrinth}!end@{end}}
+\index{end@{end}!Labyrinth@{Labyrinth}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Labyrinth\-::end\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a5536b8752cb3c2ef273360e14224bc6f}
+
+
+Definition at line 44 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_ac95a1b4246b9351e8cea8c1618bcb58d}{\index{Labyrinth@{Labyrinth}!labyrinth@{labyrinth}}
+\index{labyrinth@{labyrinth}!Labyrinth@{Labyrinth}}
+\subsubsection[{labyrinth}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Labyrinth\-::labyrinth\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_ac95a1b4246b9351e8cea8c1618bcb58d}
+
+
+Definition at line 39 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_a7ddef18e25e03408485e4959bcb5aebc}{\index{Labyrinth@{Labyrinth}!prev\-Display\-Method@{prev\-Display\-Method}}
+\index{prev\-Display\-Method@{prev\-Display\-Method}!Labyrinth@{Labyrinth}}
+\subsubsection[{prev\-Display\-Method}]{\setlength{\rightskip}{0pt plus 5cm}int Labyrinth\-::prev\-Display\-Method = 0\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a7ddef18e25e03408485e4959bcb5aebc}
+
+
+Definition at line 41 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_a9041d96d4328dea374deb81ff08bd35c}{\index{Labyrinth@{Labyrinth}!prev\-End@{prev\-End}}
+\index{prev\-End@{prev\-End}!Labyrinth@{Labyrinth}}
+\subsubsection[{prev\-End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Labyrinth\-::prev\-End\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a9041d96d4328dea374deb81ff08bd35c}
+
+
+Definition at line 46 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_a23e08d55e3a627e8a0d828d05be03253}{\index{Labyrinth@{Labyrinth}!prev\-Start@{prev\-Start}}
+\index{prev\-Start@{prev\-Start}!Labyrinth@{Labyrinth}}
+\subsubsection[{prev\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Labyrinth\-::prev\-Start\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a23e08d55e3a627e8a0d828d05be03253}
+
+
+Definition at line 45 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_aafa921122b2ea77268cbe479949d7d39}{\index{Labyrinth@{Labyrinth}!reserved@{reserved}}
+\index{reserved@{reserved}!Labyrinth@{Labyrinth}}
+\subsubsection[{reserved}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Labyrinth\-::reserved = \char`\"{}!\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_aafa921122b2ea77268cbe479949d7d39}
+
+
+Definition at line 40 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_a09a46368bfd83ccb75580687cb17b92f}{\index{Labyrinth@{Labyrinth}!snake@{snake}}
+\index{snake@{snake}!Labyrinth@{Labyrinth}}
+\subsubsection[{snake}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Snake}$\ast$ Labyrinth\-::snake = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a09a46368bfd83ccb75580687cb17b92f}
+
+
+Definition at line 42 of file labyrinth.\-h.
+
+\hypertarget{class_labyrinth_a92649fa3b24fcc869418b54e7362e24f}{\index{Labyrinth@{Labyrinth}!start@{start}}
+\index{start@{start}!Labyrinth@{Labyrinth}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Point} Labyrinth\-::start\hspace{0.3cm}{\ttfamily [private]}}}\label{class_labyrinth_a92649fa3b24fcc869418b54e7362e24f}
+
+
+Definition at line 43 of file labyrinth.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Labyrinth/\hyperlink{labyrinth_8h}{labyrinth.\-h}\item 
+/home/travis/build/echo-\/team/\-Snoke/\-Libraries/\-Labyrinth/\hyperlink{labyrinth_8cpp}{labyrinth.\-cpp}\end{DoxyCompactItemize}

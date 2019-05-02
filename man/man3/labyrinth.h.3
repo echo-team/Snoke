@@ -1,0 +1,75 @@
+.TH "/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h" 3 "Thu May 2 2019" "Snoke" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./Common/common\&.h'\fP
+.br
+\fC#include '\&.\&./Snake/snake\&.h'\fP
+.br
+\fC#include <ncurses\&.h>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <cstdio>\fP
+.br
+\fC#include <list>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBLabyrinth\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDISPFULL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDISPLAB\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDISPUPD\fP   2"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP \fBgameFieldSize\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DISPFULL   0"
+{int} DISPFULL - the whole labyrinth can fit and was redrawed  {int} DISPLAB - the whole labyrinth doesn't fit, so we are displaying it partialy  {int} DISPUPD - the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points 
+.PP
+Definition at line 16 of file labyrinth\&.h\&.
+.SS "#define DISPLAB   1"
+
+.PP
+Definition at line 17 of file labyrinth\&.h\&.
+.SS "#define DISPUPD   2"
+
+.PP
+Definition at line 18 of file labyrinth\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBPoint\fP gameFieldSize"
+gameFieldSize - size of a game field(x, y)  {Point} 
+.PP
+gameFieldSize - a variable, which stores the dimensions of the game field(shared with snakes)  {Point}  
+.PP
+Definition at line 8 of file game\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Snoke from the source code\&.
