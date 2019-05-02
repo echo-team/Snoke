@@ -18,10 +18,10 @@
 #define MAXLINE 256
 
 /**
- * Style of the cell in console window
- * @prop {char}  letter - symbol in the cell
- * @prop {short} fg     - foreground color of the cell
- * @prop {short} bg     - beckground color of the cell
+ * @brief   Style of the cell in console window
+ * @prop    letter - symbol in the cell
+ * @prop    fg     - foreground color of the cell
+ * @prop    bg     - background color of the cell
  */
 typedef struct _PointStyle
 {
@@ -31,9 +31,9 @@ typedef struct _PointStyle
 } PointStyle;
 
 /**
- * Coordinates of the cell in console window
- * @prop {short} x - x coordinate in console window
- * @prop {short} y - y coordinate in console window
+ * @brief   Coordinates of the cell in console window
+ * @prop    x - x coordinate in console window
+ * @prop    y - y coordinate in console window
  */
 typedef struct _Point
 {
@@ -42,9 +42,9 @@ typedef struct _Point
     _Point& operator = (_Point p);
 } Point;
 
-/**
- * Class definitions for the individual files to know that they exist
- * while being separetly compiled
+/*
+ * @brief   Class definitions for the individual files to know that they exist
+ *          while being separetly compiled
  */
 class Snake;
 class Labyrinth;

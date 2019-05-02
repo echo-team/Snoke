@@ -1,10 +1,10 @@
 #include "common.h"
 
 /**
- * Operation "=" override for the PointStyle type
- * @param  {PointStyle}  ps - the obgect, parameters of which are being copied
- * @return {PointStyle&} a pointer to an object
- * @override
+ * @brief   Operation "=" override for the PointStyle type
+ * @param   ps - the obgect, parameters of which are being copied
+ * @return     - a pointer to an object
+ * @overload
  */
 PointStyle& PointStyle::operator = (PointStyle ps)
 {
@@ -15,10 +15,10 @@ PointStyle& PointStyle::operator = (PointStyle ps)
 }
 
 /**
- * Operation "=" override for the Point type
- * @param  {Point}  p - the obgect, parameters of which are being copied
- * @return {Point&} a pointer to an object
- * @override
+ * @brief   Operation "=" override for the Point type
+ * @param   p - the obgect, parameters of which are being copied
+ * @return    - a pointer to an object
+ * @overload
  */
 Point& Point::operator = (Point p)
 {
@@ -29,11 +29,11 @@ Point& Point::operator = (Point p)
 }
 
 /**
- * Operation "==" override for the Point type
- * @param  {Point} p1 - The first Point
- * @param  {Point} p2 - The second Point
- * @return {bool}
- * @override
+ * @brief   Operation "==" override for the Point type
+ * @param   p1 - The first Point
+ * @param   p2 - The second Point
+ * @return     - mark of equality
+ * @overload
  */
 bool operator == (Point p1, Point p2)
 {
@@ -41,11 +41,10 @@ bool operator == (Point p1, Point p2)
 }
 
 /**
- * Operation '<<' override for the Point type
- * @param  {std::ostream&} s - current ostream variable
- * @param  {Point}         p - a Point to print
- * @return {std::ostream&}
- * @override
+ * @brief   Operation '<<' override for the Point type
+ * @param   s - current ostream variable
+ * @param   p - a Point to print
+ * @overload
  */
 std::ostream& operator << (std::ostream &s, Point p)
 {
@@ -54,8 +53,8 @@ std::ostream& operator << (std::ostream &s, Point p)
 }
 
 /**
- * Cross-platform sleep function cover
- * @param {int} time - time the game will 'freeze' for in milliseconds
+ * @brief   Cross-platform sleep function cover
+ * @param   time - time the game will 'freeze' for in milliseconds
  */
 void mSleep(int time)
 {
@@ -72,11 +71,10 @@ void mSleep(int time)
 }
 
 /**
- * Check if Points is in the addition queue
- * @param  {Point}     p          - point to check
- * @param  {Point*[2]} change     - array of changed Points
- * @param  {int}       changeSize - size of the change array
- * @return {bool}
+ * @brief   Check if Points is in the addition queue
+ * @param   p          - point to check
+ * @param   change     - array of changed Points
+ * @param   changeSize - size of the change array
  */
 bool inAddChange(Point p, Point* change[2], int changeSize)
 {
@@ -91,11 +89,10 @@ bool inAddChange(Point p, Point* change[2], int changeSize)
 }
 
 /**
- * Check if the Point is in the remove queue
- * @param  {Point}     p          - point to check
- * @param  {Point*[2]} change     - array of changed Points
- * @param  {int}       changeSize - size of the change array
- * @return {bool}
+ * @brief   Check if the Point is in the remove queue
+ * @param   p          - point to check
+ * @param   change     - array of changed Points
+ * @param   changeSize - size of the change array
  */
 bool inRemChange(Point p, Point* change[2], int changeSize)
 {
@@ -110,8 +107,7 @@ bool inRemChange(Point p, Point* change[2], int changeSize)
 }
 
 /**
- * Gets size of current console screen in symdols
- * @return {Point} size
+ * @brief   Gets size of current console screen in symdols
  */
 Point getConsoleSize()
 {

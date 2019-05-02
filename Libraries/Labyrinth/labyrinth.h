@@ -25,13 +25,13 @@
 extern Point gameFieldSize;
 
 /**
- * class for containing and siplaying the game field
- * @prop {char**}      labyrinth         - game field, consisting of chars
- * @prop {std::string} reserved          - array of reserved chars for inside usage
- * @prop {int}         prevDisplayMethod - value, containing the makr of which display method was previously called(is used in displaying)
- * @prop {Snake*}      snake             - a pointer to a local_player's snake
- * @porp {Point}       start             - a top left corner from which the drawing of the current cycle starts
- * @prop {Point}       end               - a bottom right corner at which the drawing of the current cycle ends
+ * @brief   class for containing and displaying the game field
+ * @prop    labyrinth         - game field, consisting of chars
+ * @prop    reserved          - array of reserved chars for inside usage
+ * @prop    prevDisplayMethod - value, containing the makr of which display method was previously called(is used in displaying)
+ * @prop    snake             - a pointer to a local_player's snake
+ * @prop    start             - a top left corner from which the drawing of the current cycle starts
+ * @prop    end               - a bottom right corner at which the drawing of the current cycle ends
  */
 class Labyrinth
 {

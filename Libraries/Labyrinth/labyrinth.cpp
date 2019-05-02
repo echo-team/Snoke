@@ -1,7 +1,7 @@
 #include "labyrinth.h"
 /**
- * Sets the default values fro the variables as well as generating the labyritnh array with borders
- * @param {Point} gameFieldSize - a size of the labyrinth
+ * @brief   Sets the default values fro the variables as well as generating the labyritnh array with borders
+ * @param   gameFieldSize - a size of the labyrinth
  */
 void Labyrinth::setLabyrinth(Point gameFieldSize)
 {
@@ -44,8 +44,8 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
 }
 
 /**
- * Adding snake to the laburinth and getting the host snake(firest added snake)
- * @param {Snake*} snake - a snake to add
+ * @brief   Adding snake to the laburinth and getting the host snake(firest added snake)
+ * @param   snake - a snake to add
  */
 void Labyrinth::addSnake(Snake* snake)
 {
@@ -61,9 +61,9 @@ void Labyrinth::addSnake(Snake* snake)
 }
 
 /**
- * A method which decides what dispaly method will be used in each situation
- * @param {Point*} change - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param {int}    size   - the size of the change array
+ * @brief   A method which decides what dispaly method will be used in each situation
+ * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   size   - the size of the change array
  */
 void Labyrinth::displayHandler(Point* change[2], int size)
 {
@@ -121,8 +121,8 @@ void Labyrinth::displayHandler(Point* change[2], int size)
 }
 
 /**
- * A method, which sets start and end values depending on
- * the position of local_player's snake head and current console size
+ * @brief   A method, which sets start and end values depending on
+ * t        he position of local_player's snake head and current console size
  */
 void Labyrinth::sizeHandler()
 {
@@ -182,7 +182,7 @@ void Labyrinth::sizeHandler()
 }
 
 /**
- * redraw every Point of the labyrinth
+ * @brief   redraw every Point of the labyrinth
  */
 void Labyrinth::displayFull()
 {
@@ -194,7 +194,7 @@ void Labyrinth::displayFull()
 }
 
 /**
- * display labyrinth partialy, using the start and end Points
+ * @brief   display labyrinth partialy, using the start and end Points
  */
 void Labyrinth::displayLabyrinth()
 {
@@ -211,7 +211,7 @@ void Labyrinth::displayLabyrinth()
 }
 
 /**
- * draw only the changed Points when the labyrinth is being fully displayed
+ * @brief   draw only the changed Points when the labyrinth is being fully displayed
  */
 void Labyrinth::displayUpdated(Point* update[2], int size)
 {
@@ -227,9 +227,9 @@ void Labyrinth::displayUpdated(Point* update[2], int size)
 }
 
 /**
- * Updating the labyrinth(changing the values of some Points)
- * @param {Point*} update - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param {int}    size   - the longest sequence for updating [max(len(update[0], update[1]))]
+ * @brief   Updating the labyrinth(changing the values of some Points)
+ * @param   update - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   size   - the longest sequence for updating [max(len(update[0], update[1]))]
  */
 void Labyrinth::updateLabyrinth(Point* update[2], int size)
 {
@@ -250,9 +250,9 @@ void Labyrinth::updateLabyrinth(Point* update[2], int size)
 }
 
 /**
- * Mark of if the asked Point is free
- * @param  {Point} p - Point to check in the labyrinth
- * @return {bool}    - mark of whether the Point is free
+ * @brief   Mark of if the asked Point is free
+ * @param   p - Point to check in the labyrinth
+ * @return    - mark of whether the Point is free
  */
 bool Labyrinth::isFree(Point p)
 {
@@ -260,9 +260,9 @@ bool Labyrinth::isFree(Point p)
 }
 
 /**
- * Adding Point to the labyrinth with the check of correction
- * @param  {Point} p - point to add to the labyrinth
- * @return {bool}    - mark of whether the Point was added
+ * @brief   Adding Point to the labyrinth with the check of correction
+ * @param   p - point to add to the labyrinth
+ * @return    - mark of whether the Point was added
  */
 bool Labyrinth::addPoint(Point p)
 {
@@ -275,9 +275,9 @@ bool Labyrinth::addPoint(Point p)
 }
 
 /**
- * Remove Point from the labyrinth
- * @param  {Point} p - point to remove from the labyrinth
- * @return {bool}    - mark of whether the Point was removed
+ * @brief   Remove Point from the labyrinth
+ * @param   p - point to remove from the labyrinth
+ * @return    - mark of whether the Point was removed
  */
 bool Labyrinth::remPoint(Point p)
 {
@@ -286,9 +286,9 @@ bool Labyrinth::remPoint(Point p)
 }
 
 /**
- * Method to save labyritnh(borders and obstacles, defined in reserved string) to the file
- * @param  {char*} name - name of the file, where to sace the labyrinth
- * @return {bool}       - mark of whether the labyrinth was successfully saved
+ * @brief   Method to save labyritnh(borders and obstacles, defined in reserved string) to the file
+ * @param   name - name of the file, where to sace the labyrinth
+ * @return       - mark of whether the labyrinth was successfully saved
  */
 bool Labyrinth::save(char name[MAXLINE])
 {
@@ -328,9 +328,9 @@ bool Labyrinth::save(char name[MAXLINE])
 }
 
 /**
- * Mehod to load labyrinth from the file
- * @param  {char*} name - name of the file to read from
- * @return {bool}       - mark os successful loading
+ * @brief   Mehod to load labyrinth from the file
+ * @param   name - name of the file to read from
+ * @return       - mark os successful loading
  */
 bool Labyrinth::load(char name[MAXLINE])
 {

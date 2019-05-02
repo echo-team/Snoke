@@ -35,17 +35,17 @@
 #define MVUP -2
 
 /**
- * gameFieldSize - size of a game field(x, y)
- * @type {Point} 
+ * @brief   gameFieldSize - size of a game field(x, y)
+ * @type {Point}
  * @global
  */
 extern Point gameFieldSize;
 
 /**
- * Describes the snake entity of the game
- * @prop {short}            direction - current direction where the snake is heading;
- * @prop {list<PointStyle>} style     - an array, describing how should the snake be colored
- * @prop {deque<Point>}     snakeBody - a deque type array, containing sposition of snake's body segments
+ * @brief   Describes the snake entity of the game
+ * @prop    direction - current direction where the snake is heading;
+ * @prop    style     - an array, describing how should the snake be colored
+ * @prop    snakeBody - a deque type array, containing sposition of snake's body segments
  */
 class Snake
 {

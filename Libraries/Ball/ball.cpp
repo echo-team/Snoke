@@ -1,9 +1,9 @@
 #include "ball.h"
 
 /**
- * Initialization
- * @param  {Point} fieldSize - the size of the game field(x, y)
- * @return {bool}            - mark of successful initialization
+ * @brief   Initialization
+ * @param   fieldSize - the size of the game field(x, y)
+ * @return            - mark of successful initialization
  */
 bool Ball::init(Point fieldSize)
 {
@@ -16,14 +16,16 @@ bool Ball::init(Point fieldSize)
 }
 
 /**
- * Generate the Ball
- * @param  {Labyrinth} labyrinth - the current state of the labyrinth object for intersection checking
- * @return {bool}                - mark of whether the ball was successfully generated
+ * @brief   Generate the Ball
+ * @param   labyrinth  - the current state of the labyrinth object for intersection checking
+ * @param   change     - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   changeSize - max(len(change[0]), len(change[1])))
+ * @return             - mark of whether the ball was successfully generated
  */
 bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
 {
     Point p;
-    /**
+    /*
      * Generate numbers until u get a free spot
      */
     while (1)
@@ -41,8 +43,7 @@ bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
 }
 
 /**
- * Get the ball coords without giving the direct access
- * @return {Point}
+ * @brief   Get the ball coords without giving the direct access
  */
 Point Ball::getCoords()
 {
