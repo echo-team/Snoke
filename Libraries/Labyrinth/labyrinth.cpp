@@ -343,7 +343,7 @@ bool Labyrinth::load(char name[MAXLINE])
         /*
          * Getting the dimensions of the labyrinth and creating a temporary labyrinth
          */
-        fscanf(file, "%d %d", &tmp.x, &tmp.y);
+        fscanf(file, "%hd %hd", &tmp.x, &tmp.y);
         char tmpLab[tmp.y][tmp.x];
         for(int i = 0; i < tmp.x; i++)
         {

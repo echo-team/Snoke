@@ -18,7 +18,8 @@ bool Game::init(int size, int speed)
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
     this->labyrinth.setLabyrinth(gameFieldSize);
-    this->labyrinth.load("testload");
+    char fName[] = "testload";
+    this->labyrinth.load(fName);
     this->setSpeed(speed);
 
     /**
@@ -48,11 +49,6 @@ int Game::run()
     curs_set(0);
     keypad(stdscr, true);
     //signal(SIGWINCH, NULL);
-
-    /**
-     * Retrieving the size of the screen(console)
-     */
-    Point screenSize = getConsoleSize();
 
     /**
      * Initializing snake by giving it the starting position,
@@ -99,7 +95,8 @@ int Game::run()
                 flag = true;
                 break;
             case 's':
-                labyrinth.save("testsave");
+                char fName[] = "testsave";
+                labyrinth.save(fName);
                 refresh();
                 flushinp();
                 labyrinth.displayHandler();
