@@ -1,8 +1,8 @@
+language: cpp
+
 # This will run on Travis' 'new' container-based infrastructure
 sudo: false
 
-language:
-  -cpp
 
 # Blacklist
 branches:
