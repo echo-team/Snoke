@@ -1,0 +1,32 @@
+<map id="Game::run" name="Game::run">
+<area shape="rect" id="node2" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="162,56,281,83"/>
+<area shape="rect" id="node8" href="$class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="392,157,496,184"/>
+<area shape="rect" id="node14" href="$class_labyrinth.html#a02c42abb1b58fdf8a20b66bddd0bbe00" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="137,208,306,235"/>
+<area shape="rect" id="node23" href="$class_snake.html#a151d9cab8233d38524c09642d079356a" title="The method to set the direction where the snake is heading. " alt="" coords="153,259,290,285"/>
+<area shape="rect" id="node24" href="$class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007" title="Method to save labyritnh(borders and obstacles, defined in reserved string) to the file..." alt="" coords="166,309,277,336"/>
+<area shape="rect" id="node25" href="$common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771" title="Cross&#45;platform sleep function cover. " alt="" coords="188,360,255,387"/>
+<area shape="rect" id="node26" href="$class_game.html#aa73688f1ba069a3f1989884099c58449" title="Initialization of the change array. " alt="" coords="153,411,290,437"/>
+<area shape="rect" id="node27" href="$class_snake.html#a6181d41b0920aff3fda1a90d59e8d382" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="395,461,493,488"/>
+<area shape="rect" id="node3" href="$class_snake.html#a953fb7b8be521f651989bb53323e89ec" title="Initializes snake. " alt="" coords="402,56,486,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="373,5,515,32"/>
+<area shape="rect" id="node5" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title="The method to get the snake whole body coordinates(x ,y) without giving the direct access..." alt="" coords="603,5,730,32"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="599,107,734,133"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="813,208,931,235"/>
+<area shape="rect" id="node9" href="$class_ball.html#a1907f13fdfb320a19180efec2a56e39c" title="Initialization. " alt="" coords="632,157,701,184"/>
+<area shape="rect" id="node10" href="$class_ball.html#a60fd40459426366242d18d85b3b50c2c" title="Generate the Ball. " alt="" coords="605,309,729,336"/>
+<area shape="rect" id="node13" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="816,411,928,437"/>
+<area shape="rect" id="node11" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="Check if the Point is in the remove queue. " alt="" coords="819,259,925,285"/>
+<area shape="rect" id="node12" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="Check if Points is in the addition queue. " alt="" coords="822,309,922,336"/>
+<area shape="rect" id="node15" href="$class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="357,107,531,133"/>
+<area shape="rect" id="node17" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on t he position of local_player&#39;s snake head and..." alt="" coords="368,360,520,387"/>
+<area shape="rect" id="node20" href="$class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="357,208,531,235"/>
+<area shape="rect" id="node21" href="$class_labyrinth.html#a676e53a7bced45343af8307eae2ba2d0" title="display labyrinth partialy, using the start and end Points " alt="" coords="355,259,533,285"/>
+<area shape="rect" id="node22" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="371,309,517,336"/>
+<area shape="rect" id="node16" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="599,56,734,83"/>
+<area shape="rect" id="node18" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="587,208,746,235"/>
+<area shape="rect" id="node19" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="609,259,724,285"/>
+<area shape="rect" id="node28" href="$class_snake.html#a7df802733cb62081ea360bb81ba9f304" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="581,360,752,387"/>
+<area shape="rect" id="node30" href="$class_snake.html#a577892c68b457316f7a9f3944c464569" title="Checking if we need to remove the back of the snake from the labyrinth(we don&#39;t in case it has eaten ..." alt="" coords="602,512,731,539"/>
+<area shape="rect" id="node31" href="$class_snake.html#a59b2f5b18ab563d1583dfb15064784a0" title="Moving snake head to a described by parameters position and updating the addition to the labyrinth..." alt="" coords="601,563,732,589"/>
+<area shape="rect" id="node29" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title="If the Point of the labyrinth we are checking is not free then decide the type of collision..." alt="" coords="801,360,943,387"/>
+</map>

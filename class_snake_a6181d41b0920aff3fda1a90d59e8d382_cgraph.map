@@ -1,0 +1,11 @@
+<map id="Snake::move" name="Snake::move">
+<area shape="rect" id="node2" href="$class_snake.html#a7df802733cb62081ea360bb81ba9f304" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="152,56,323,83"/>
+<area shape="rect" id="node5" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="387,5,499,32"/>
+<area shape="rect" id="node6" href="$class_snake.html#a577892c68b457316f7a9f3944c464569" title="Checking if we need to remove the back of the snake from the labyrinth(we don&#39;t in case it has eaten ..." alt="" coords="173,107,302,133"/>
+<area shape="rect" id="node7" href="$class_ball.html#a60fd40459426366242d18d85b3b50c2c" title="Generate the Ball. " alt="" coords="175,157,299,184"/>
+<area shape="rect" id="node10" href="$class_snake.html#a59b2f5b18ab563d1583dfb15064784a0" title="Moving snake head to a described by parameters position and updating the addition to the labyrinth..." alt="" coords="172,208,303,235"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="383,107,502,133"/>
+<area shape="rect" id="node4" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title="If the Point of the labyrinth we are checking is not free then decide the type of collision..." alt="" coords="371,56,514,83"/>
+<area shape="rect" id="node8" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="Check if the Point is in the remove queue. " alt="" coords="390,208,495,235"/>
+<area shape="rect" id="node9" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="Check if Points is in the addition queue. " alt="" coords="393,157,493,184"/>
+</map>

@@ -27,8 +27,15 @@ Searching for files to exclude
 Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/bin
+<<<<<<< HEAD
 Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs
 Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs/Snoke
+=======
+Searching for files in directory /home/travis/build/echo-team/Snoke/bw-output
+Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs
+Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs/Snoke
+Searching for files in directory /home/travis/build/echo-team/Snoke/external
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Ball
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Common
@@ -72,7 +79,13 @@ Parsing file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h.
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
+<<<<<<< HEAD
 Parsing file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
+=======
+Parsing file /home/travis/build/echo-team/Snoke/Libr/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+aries/Labyrinth/labyrinth.h...
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.h...
@@ -153,6 +166,7 @@ Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/menu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/menu.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.cpp...
+<<<<<<< HEAD
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
 Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:75: warning: argument 'Point' of command @param is not found in the argument list of inAddChange(Point p, Point *change[2], int changeSize)
@@ -219,6 +233,18 @@ Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:7
 /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:32: warning: The following parameters of operator==(Point p1, Point p2) are not documented:
   parameter 'p1'
   parameter 'p2'
+=======
+Generating code for file /home/travis/build/echo-team/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
 /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:12: warning: Found unknown command `\const'
@@ -226,8 +252,15 @@ Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:7
 /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:14: warning: Found unknown command `\const'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
+<<<<<<< HEAD
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:9: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:10: warning: Found unknown command `\global'
+=======
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:27: warning: Found unknown command `\const'
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:28: warning: Found unknown command `\const'
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:29: warning: Found unknown command `\const'
@@ -239,6 +272,7 @@ Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:7
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:14: warning: Found unknown command `\const'
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:15: warning: Found unknown command `\const'
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:16: warning: Found unknown command `\const'
+<<<<<<< HEAD
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:5: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:6: warning: Found unknown command `\global'
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:9: warning: Found unknown command `\type'
@@ -268,6 +302,15 @@ Generating code /home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:7
 /home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:151: warning: The following parameters of Game::initBall(Ball *ball) are not documented:
   parameter 'ball'
 for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
+=======
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:39: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Snake/snake.h:40: warning: Found unknown command `\global'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:22: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h:23: warning: Found unknown command `\global'
+/Snoke/Libraries/Interface/navigator.h...
+Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.h...
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/Screens/mainMenu.h...
 Generating code for file /home/travis/build/echo-team/Snoke/Libraries/SideMenu/SideMenu.cpp...
@@ -322,6 +365,7 @@ Generating caller graph for function Ball::generateBall
 Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::init
 Generating docs for compound Game...
+<<<<<<< HEAD
 Generating call graph for function Game::init
 Generating caller graph for function Game::init
 Generating call graph for function Game::initBall
@@ -373,6 +417,9 @@ Generating calle/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: 
   parameter 'update'
   parameter 'size'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
+=======
+Gener/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
@@ -415,6 +462,7 @@ Generating calle/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: 
 /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.cpp:4: warning: The following parameters of Navigator::pushUnit(Widget *unit, int subunitsAmount) are not documented:
   parameter 'unit'
   parameter 'subunitsAmount'
+<<<<<<< HEAD
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Labyrinth' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:185: warning: argument 'Point' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball *ball)
@@ -460,6 +508,8 @@ Generating calle/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: 
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:233: warning: argument 'int' of command @param is not found in the argument list of Snake::setDirection(int direction=0)
 /home/travis/build/echo-team/Snoke/Libraries/Snake/snake.cpp:233: warning: The following parameters of Snake::setDirection(int direction=0) are not documented:
   parameter 'direction'
+=======
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:6: warning: Found unknown command `\callback'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
@@ -470,7 +520,14 @@ Generating calle/home/travis/build/echo-team/Snoke/Libraries/Game/game.cpp:135: 
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
+<<<<<<< HEAD
 r graph for function Game::initBall
+=======
+ating call graph for function Game::init
+Generating caller graph for function Game::init
+Generating call graph for function Game::initBall
+Generating caller graph for function Game::initBall
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 Generating call graph for function Game::initSnake
 Generating caller graph for function Game::initSnake
 Generating call graph for function Game::run
@@ -725,5 +782,9 @@ Patching output file 44/47
 Patching output file 45/47
 Patching output file 46/47
 Patching output file 47/47
+<<<<<<< HEAD
 lookup cache used 482/65536 hits=3867 misses=587
+=======
+lookup cache used 482/65536 hits=3871 misses=587
+>>>>>>> 15a52e91... Deploy code docs to GitHub Pages Travis build: 31
 finished...
