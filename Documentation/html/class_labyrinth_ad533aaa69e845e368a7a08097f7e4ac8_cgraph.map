@@ -1,0 +1,6 @@
+<map id="Labyrinth::updateLabyrinth" name="Labyrinth::updateLabyrinth">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,180,57"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title=" " alt="" coords="228,5,363,32"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title=" " alt="" coords="228,56,363,83"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title=" " alt="" coords="411,5,529,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Snake::checkIntersection" name="Snake::checkIntersection">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title=" " alt="" coords="236,5,355,32"/>
+<area shape="rect" id="node3" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title=" " alt="" coords="224,56,367,83"/>
+<area shape="rect" id="node4" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title=" " alt="" coords="239,107,351,133"/>
+</map>

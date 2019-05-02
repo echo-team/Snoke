@@ -1,0 +1,381 @@
+\hypertarget{class_snake}{}\section{Snake Class Reference}
+\label{class_snake}\index{Snake@{Snake}}
+
+
+{\ttfamily \#include $<$snake.\+h$>$}
+
+
+
+Collaboration diagram for Snake\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_snake__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_snake_a953fb7b8be521f651989bb53323e89ec}{init}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} begin, short \mbox{\hyperlink{class_snake_aee6d8cb1404c33a9b7e132a99e055590}{direction}}, int length)
+\item 
+void \mbox{\hyperlink{class_snake_a0c305e807c15736f809eb035d947c988}{set\+Scheme}} ()
+\item 
+void \mbox{\hyperlink{class_snake_a62fa59de03f60c23f6d1100c53594d71}{get\+Coords}} (std\+::list$<$ \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $>$ $\ast$curr\+Body)
+\item 
+\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} \mbox{\hyperlink{class_snake_a0235581bc3d6399f4fd2287669f93cee}{get\+Head\+Coords}} ()
+\item 
+void \mbox{\hyperlink{class_snake_a151d9cab8233d38524c09642d079356a}{set\+Direction}} (int dir=0)
+\item 
+short \mbox{\hyperlink{class_snake_a2656a9a4490cbb70d305c323269cc5bd}{get\+Direction}} ()
+\item 
+bool \mbox{\hyperlink{class_snake_a6181d41b0920aff3fda1a90d59e8d382}{move}} (\mbox{\hyperlink{class_labyrinth}{Labyrinth}} labyrinth, \mbox{\hyperlink{class_ball}{Ball}} $\ast$ball, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$change\mbox{[}2\mbox{]}, int change\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{class_snake_a7df802733cb62081ea360bb81ba9f304}{check\+Intersection}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} check, \mbox{\hyperlink{class_labyrinth}{Labyrinth}} laryrinth, \mbox{\hyperlink{class_ball}{Ball}} $\ast$ball)
+\item 
+short \mbox{\hyperlink{class_snake_a2f8cc670284cdebf4c9bbe60a7296deb}{check\+Wisely}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} coords, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} bcoords)
+\item 
+void \mbox{\hyperlink{class_snake_a59b2f5b18ab563d1583dfb15064784a0}{move\+Head}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$change\mbox{[}2\mbox{]})
+\item 
+void \mbox{\hyperlink{class_snake_a577892c68b457316f7a9f3944c464569}{move\+Back}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$cahnge\mbox{[}2\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{class_snake_aee6d8cb1404c33a9b7e132a99e055590}{direction}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\+Style}} $>$ \mbox{\hyperlink{class_snake_a7db439ed2dd1cfea4c061e6ffd6ec54c}{style}}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $>$ \mbox{\hyperlink{class_snake_aaf288745dcc19ef13a1330bb55f1471c}{snake\+Body}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the snake entity of the game 
+\begin{DoxyParams}{Parameters}
+{\em \{short\}} & direction -\/ current direction where the snake is heading; \\
+\hline
+{\em \{list$<$\+Point\+Style$>$\}} & style -\/ an array, describing how should the snake be colored \\
+\hline
+{\em \{deque$<$\+Point$>$\}} & snake\+Body -\/ a deque type array, containing sposition of snake\textquotesingle{}s body segments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file snake.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snake_a7df802733cb62081ea360bb81ba9f304}\label{class_snake_a7df802733cb62081ea360bb81ba9f304}} 
+\index{Snake@{Snake}!checkIntersection@{checkIntersection}}
+\index{checkIntersection@{checkIntersection}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{checkIntersection()}{checkIntersection()}}
+{\footnotesize\ttfamily short Snake\+::check\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{check,  }\item[{\mbox{\hyperlink{class_labyrinth}{Labyrinth}}}]{labyrinth,  }\item[{\mbox{\hyperlink{class_ball}{Ball}} $\ast$}]{ball }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checking the given point for intersections with \mbox{\hyperlink{class_ball}{Ball}}, borders, obstacles 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Labyrinth\}} & labyrinth -\/ 2-\/dimensional array defying current state of every point of the game field (blocked or not) \\
+\hline
+{\em \{\+Ball$\ast$\}} & ball -\/ a pointer to a \mbox{\hyperlink{class_ball}{Ball}} object(to check intersection with) \\
+\hline
+{\em \{\+Point$\ast$\}} & change -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{short\} -\/ type of collision 
+\end{DoxyReturn}
+
+
+Definition at line 191 of file snake.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a7df802733cb62081ea360bb81ba9f304_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a7df802733cb62081ea360bb81ba9f304_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a2f8cc670284cdebf4c9bbe60a7296deb}\label{class_snake_a2f8cc670284cdebf4c9bbe60a7296deb}} 
+\index{Snake@{Snake}!checkWisely@{checkWisely}}
+\index{checkWisely@{checkWisely}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{checkWisely()}{checkWisely()}}
+{\footnotesize\ttfamily short Snake\+::check\+Wisely (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{coords,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{bcoords }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+If the Point of the labyrinth we are checking is not free then decide the type of collision 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & coords -\/ Point we are checking for type of a collision \\
+\hline
+{\em \{\+Point\}} & bcoords -\/ Point, containing the coordinates of the \mbox{\hyperlink{class_ball}{Ball}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{short\} -\/ type of the collision 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a2f8cc670284cdebf4c9bbe60a7296deb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a62fa59de03f60c23f6d1100c53594d71}\label{class_snake_a62fa59de03f60c23f6d1100c53594d71}} 
+\index{Snake@{Snake}!getCoords@{getCoords}}
+\index{getCoords@{getCoords}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{getCoords()}{getCoords()}}
+{\footnotesize\ttfamily void Snake\+::get\+Coords (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $>$ $\ast$}]{curr\+Body }\end{DoxyParamCaption})}
+
+The method to get the snake whole body coordinates(x ,y) without giving the direct access 
+\begin{DoxyParams}{Parameters}
+{\em \{std\+::list$<$\+Point$>$\}} & curr\+Body -\/ an array where the current snake body is copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 276 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a62fa59de03f60c23f6d1100c53594d71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a2656a9a4490cbb70d305c323269cc5bd}\label{class_snake_a2656a9a4490cbb70d305c323269cc5bd}} 
+\index{Snake@{Snake}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily short Snake\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The method to get the current direction without giving the direct access \begin{DoxyReturn}{Returns}
+\{short\} 
+\end{DoxyReturn}
+
+
+Definition at line 255 of file snake.\+cpp.
+
+\mbox{\Hypertarget{class_snake_a0235581bc3d6399f4fd2287669f93cee}\label{class_snake_a0235581bc3d6399f4fd2287669f93cee}} 
+\index{Snake@{Snake}!getHeadCoords@{getHeadCoords}}
+\index{getHeadCoords@{getHeadCoords}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{getHeadCoords()}{getHeadCoords()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} Snake\+::get\+Head\+Coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The method to get the coordinates(x, y) of the snake\textquotesingle{}s head without giving the direct access \begin{DoxyReturn}{Returns}
+\{Point\} 
+\end{DoxyReturn}
+
+
+Definition at line 264 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a0235581bc3d6399f4fd2287669f93cee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a953fb7b8be521f651989bb53323e89ec}\label{class_snake_a953fb7b8be521f651989bb53323e89ec}} 
+\index{Snake@{Snake}!init@{init}}
+\index{init@{init}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Snake\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{begin,  }\item[{short}]{dir,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Initializes snake 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & begin -\/ starting Point of a snake(where the tail segment will be situated) \\
+\hline
+{\em \{short\}} & dir -\/ direction of snake\textquotesingle{}s \textquotesingle{}growth\textquotesingle{} as well as it\textquotesingle{}s starting direction \\
+\hline
+{\em \{int\}} & length -\/ the length of a \textquotesingle{}new born\textquotesingle{} snake \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether the snake is successfully initialized 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a953fb7b8be521f651989bb53323e89ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a6181d41b0920aff3fda1a90d59e8d382}\label{class_snake_a6181d41b0920aff3fda1a90d59e8d382}} 
+\index{Snake@{Snake}!move@{move}}
+\index{move@{move}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily bool Snake\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_labyrinth}{Labyrinth}}}]{labyrinth,  }\item[{\mbox{\hyperlink{class_ball}{Ball}} $\ast$}]{ball,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$}]{change\mbox{[}2\mbox{]},  }\item[{int}]{change\+Size }\end{DoxyParamCaption})}
+
+The snake movement on the game field(should be called in each iteration of the game cycle, unless the snake is \textquotesingle{}dead\textquotesingle{}) 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Labyrinth\}} & labyrinth -\/ the current state of the labyrinth object for intersection checking \\
+\hline
+{\em \{\+Ball$\ast$\}} & ball -\/ a pointer to a \mbox{\hyperlink{class_ball}{Ball}} object(to check intersection with) \\
+\hline
+{\em \{\+Point$\ast$\}} & change -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} -\/ mark of whether there was a non-\/boundary non-\/ball collision 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file snake.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a6181d41b0920aff3fda1a90d59e8d382_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_snake_a6181d41b0920aff3fda1a90d59e8d382_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a577892c68b457316f7a9f3944c464569}\label{class_snake_a577892c68b457316f7a9f3944c464569}} 
+\index{Snake@{Snake}!moveBack@{moveBack}}
+\index{moveBack@{moveBack}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{moveBack()}{moveBack()}}
+{\footnotesize\ttfamily void Snake\+::move\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$}]{change\mbox{[}2\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checking if we need to remove the back of the snake from the labyrinth(we don\textquotesingle{}t in case it has eaten the \mbox{\hyperlink{class_ball}{Ball}}) 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & p -\/ the desired position of movement \\
+\hline
+{\em \{\+Point$\ast$\}} & change -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a577892c68b457316f7a9f3944c464569_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a59b2f5b18ab563d1583dfb15064784a0}\label{class_snake_a59b2f5b18ab563d1583dfb15064784a0}} 
+\index{Snake@{Snake}!moveHead@{moveHead}}
+\index{moveHead@{moveHead}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{moveHead()}{moveHead()}}
+{\footnotesize\ttfamily void Snake\+::move\+Head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$}]{change\mbox{[}2\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Moving snake head to a described by parameters position and updating the addition to the labyrinth 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & p -\/ the new head position \\
+\hline
+{\em \{\+Point$\ast$\}} & change -\/ 2-\/dimensional array of changes needed to be applied to the labyrinth \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a59b2f5b18ab563d1583dfb15064784a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a151d9cab8233d38524c09642d079356a}\label{class_snake_a151d9cab8233d38524c09642d079356a}} 
+\index{Snake@{Snake}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Snake\+::set\+Direction (\begin{DoxyParamCaption}\item[{int}]{direction = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+The method to set the direction where the snake is heading 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & direction -\/ direction of the snake we are trying to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 236 of file snake.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snake_a151d9cab8233d38524c09642d079356a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_snake_a0c305e807c15736f809eb035d947c988}\label{class_snake_a0c305e807c15736f809eb035d947c988}} 
+\index{Snake@{Snake}!setScheme@{setScheme}}
+\index{setScheme@{setScheme}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{setScheme()}{setScheme()}}
+{\footnotesize\ttfamily void Snake\+::set\+Scheme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_snake_aee6d8cb1404c33a9b7e132a99e055590}\label{class_snake_aee6d8cb1404c33a9b7e132a99e055590}} 
+\index{Snake@{Snake}!direction@{direction}}
+\index{direction@{direction}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily short Snake\+::direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file snake.\+h.
+
+\mbox{\Hypertarget{class_snake_aaf288745dcc19ef13a1330bb55f1471c}\label{class_snake_aaf288745dcc19ef13a1330bb55f1471c}} 
+\index{Snake@{Snake}!snakeBody@{snakeBody}}
+\index{snakeBody@{snakeBody}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{snakeBody}{snakeBody}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}$>$ Snake\+::snake\+Body\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file snake.\+h.
+
+\mbox{\Hypertarget{class_snake_a7db439ed2dd1cfea4c061e6ffd6ec54c}\label{class_snake_a7db439ed2dd1cfea4c061e6ffd6ec54c}} 
+\index{Snake@{Snake}!style@{style}}
+\index{style@{style}!Snake@{Snake}}
+\subsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{common_8h_afd9cb36d6ef309c77ea1e3177e19c623}{Point\+Style}}$>$ Snake\+::style\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file snake.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+Snake/\mbox{\hyperlink{snake_8h}{snake.\+h}}\item 
+Libraries/\+Snake/\mbox{\hyperlink{snake_8cpp}{snake.\+cpp}}\end{DoxyCompactItemize}

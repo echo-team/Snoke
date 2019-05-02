@@ -1,0 +1,6 @@
+<map id="Labyrinth::addSnake" name="Labyrinth::addSnake">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title=" " alt="" coords="199,5,325,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title=" " alt="" coords="195,56,329,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title=" " alt="" coords="377,56,496,83"/>
+</map>

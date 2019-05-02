@@ -1,0 +1,127 @@
+.TH "Libraries/Snake/snake.h" 3 "Thu May 2 2019" "Snoke" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Libraries/Snake/snake.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <list>\fP
+.br
+\fC#include <deque>\fP
+.br
+\fC#include '\&.\&./Common/common\&.h'\fP
+.br
+\fC#include '\&.\&./Ball/ball\&.h'\fP
+.br
+\fC#include '\&.\&./Labyrinth/labyrinth\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBSnake\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWALLUP\fP   \-3"
+.br
+.ti -1c
+.RI "#define \fBWALLBOT\fP   +3"
+.br
+.ti -1c
+.RI "#define \fBWALLLEFT\fP   \-4"
+.br
+.ti -1c
+.RI "#define \fBWALLRIGHT\fP   +4"
+.br
+.ti -1c
+.RI "#define \fBCOLL\fP   5"
+.br
+.ti -1c
+.RI "#define \fBNOCOLL\fP   6"
+.br
+.ti -1c
+.RI "#define \fBBALL\fP   7"
+.br
+.ti -1c
+.RI "#define \fBMVRIGHT\fP   +1"
+.br
+.ti -1c
+.RI "#define \fBMVDOWN\fP   +2"
+.br
+.ti -1c
+.RI "#define \fBMVLEFT\fP   \-1"
+.br
+.ti -1c
+.RI "#define \fBMVUP\fP   \-2"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP \fBgameFieldSize\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BALL   7"
+
+.PP
+Definition at line 24 of file snake\&.h\&.
+.SS "#define COLL   5"
+
+.PP
+Definition at line 22 of file snake\&.h\&.
+.SS "#define MVDOWN   +2"
+
+.PP
+Definition at line 33 of file snake\&.h\&.
+.SS "#define MVLEFT   \-1"
+
+.PP
+Definition at line 34 of file snake\&.h\&.
+.SS "#define MVRIGHT   +1"
+@const {int} MVRIGHT - snake's head is moving right @const {int} MVDOWN - snake's head is moving down @const {int} MVLEFT - snake's head is moving left @const {int} MVUP - snake's head is moving up 
+.PP
+Definition at line 32 of file snake\&.h\&.
+.SS "#define MVUP   \-2"
+
+.PP
+Definition at line 35 of file snake\&.h\&.
+.SS "#define NOCOLL   6"
+
+.PP
+Definition at line 23 of file snake\&.h\&.
+.SS "#define WALLBOT   +3"
+
+.PP
+Definition at line 19 of file snake\&.h\&.
+.SS "#define WALLLEFT   \-4"
+
+.PP
+Definition at line 20 of file snake\&.h\&.
+.SS "#define WALLRIGHT   +4"
+
+.PP
+Definition at line 21 of file snake\&.h\&.
+.SS "#define WALLUP   \-3"
+@const {int} WALLUP - the tested segment is intersecting with the upper boundary of the game field @const {int} WALLBOT - the tested segment is intersecting with the bottom boundary of the game field @const {int} WALLLEFT - the tested segment is intersecting with the left boundary of the game field @const {int} WALLRIGHT - the tested segment is intersecting with the right boundary of the game field @const {int} COLL - the tested segment is intersecting with a non-boundary Point of the game field @const {int} NOCOLL - the tested segment is NOT intersecting with any Point of the game labyrinth @const {int} BALL - the tested segment is intersecting with the BALL 
+.PP
+Definition at line 18 of file snake\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBPoint\fP gameFieldSize"
+gameFieldSize - size of a game field(x, y) @type {Point} @global
+.PP
+gameFieldSize - a variable, which stores the dimensions of the game field(shared with snakes) @type {Point} @global 
+.PP
+Definition at line 8 of file game\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Snoke from the source code\&.

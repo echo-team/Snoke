@@ -1,0 +1,141 @@
+\hypertarget{common_8cpp}{}\section{Libraries/\+Common/common.cpp File Reference}
+\label{common_8cpp}\index{Libraries/Common/common.cpp@{Libraries/Common/common.cpp}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+Include dependency graph for common.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{common_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{common_8cpp_ae93da5ec52e15782da857659d4982812}{operator==}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p1, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p2)
+\item 
+std\+::ostream \& \mbox{\hyperlink{common_8cpp_a74c857df0e2025afce6053ae585b84c5}{operator$<$$<$}} (std\+::ostream \&s, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p)
+\item 
+void \mbox{\hyperlink{common_8cpp_acfe1c587c2a13d4b833eb11bd3157771}{m\+Sleep}} (int time)
+\item 
+bool \mbox{\hyperlink{common_8cpp_a8afa890f53aecd84c750b7b568629e25}{in\+Add\+Change}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$change\mbox{[}2\mbox{]}, int change\+Size)
+\item 
+bool \mbox{\hyperlink{common_8cpp_aed7e2ccc7264c951f8b3802757992941}{in\+Rem\+Change}} (\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} p, \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$change\mbox{[}2\mbox{]}, int change\+Size)
+\item 
+\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} \mbox{\hyperlink{common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a}{get\+Console\+Size}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a}\label{common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a}} 
+\index{common.cpp@{common.cpp}!getConsoleSize@{getConsoleSize}}
+\index{getConsoleSize@{getConsoleSize}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{getConsoleSize()}{getConsoleSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} get\+Console\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets size of current console screen in symdols \begin{DoxyReturn}{Returns}
+\{Point\} size 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file common.\+cpp.
+
+\mbox{\Hypertarget{common_8cpp_a8afa890f53aecd84c750b7b568629e25}\label{common_8cpp_a8afa890f53aecd84c750b7b568629e25}} 
+\index{common.cpp@{common.cpp}!inAddChange@{inAddChange}}
+\index{inAddChange@{inAddChange}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{inAddChange()}{inAddChange()}}
+{\footnotesize\ttfamily bool in\+Add\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$}]{change\mbox{[}2\mbox{]},  }\item[{int}]{change\+Size }\end{DoxyParamCaption})}
+
+Check if Points is in the addition queue 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & p -\/ point to check \\
+\hline
+{\em \{\+Point$\ast$\mbox{[}2\mbox{]}\}} & change -\/ array of changed Points \\
+\hline
+{\em \{int\}} & change\+Size -\/ size of the change array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file common.\+cpp.
+
+\mbox{\Hypertarget{common_8cpp_aed7e2ccc7264c951f8b3802757992941}\label{common_8cpp_aed7e2ccc7264c951f8b3802757992941}} 
+\index{common.cpp@{common.cpp}!inRemChange@{inRemChange}}
+\index{inRemChange@{inRemChange}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{inRemChange()}{inRemChange()}}
+{\footnotesize\ttfamily bool in\+Rem\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} $\ast$}]{change\mbox{[}2\mbox{]},  }\item[{int}]{change\+Size }\end{DoxyParamCaption})}
+
+Check if the Point is in the remove queue 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & p -\/ point to check \\
+\hline
+{\em \{\+Point$\ast$\mbox{[}2\mbox{]}\}} & change -\/ array of changed Points \\
+\hline
+{\em \{int\}} & change\+Size -\/ size of the change array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file common.\+cpp.
+
+\mbox{\Hypertarget{common_8cpp_acfe1c587c2a13d4b833eb11bd3157771}\label{common_8cpp_acfe1c587c2a13d4b833eb11bd3157771}} 
+\index{common.cpp@{common.cpp}!mSleep@{mSleep}}
+\index{mSleep@{mSleep}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{mSleep()}{mSleep()}}
+{\footnotesize\ttfamily void m\+Sleep (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
+
+Cross-\/platform sleep function cover 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & time -\/ time the game will \textquotesingle{}freeze\textquotesingle{} for in milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file common.\+cpp.
+
+\mbox{\Hypertarget{common_8cpp_a74c857df0e2025afce6053ae585b84c5}\label{common_8cpp_a74c857df0e2025afce6053ae585b84c5}} 
+\index{common.cpp@{common.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p }\end{DoxyParamCaption})}
+
+Operation \textquotesingle{}$<$$<$\textquotesingle{} override for the Point type 
+\begin{DoxyParams}{Parameters}
+{\em \{std\+::ostream\&\}} & s -\/ current ostream variable \\
+\hline
+{\em \{\+Point\}} & p -\/ a Point to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{std\+::ostream\&\} @override 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file common.\+cpp.
+
+\mbox{\Hypertarget{common_8cpp_ae93da5ec52e15782da857659d4982812}\label{common_8cpp_ae93da5ec52e15782da857659d4982812}} 
+\index{common.cpp@{common.cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!common.cpp@{common.cpp}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}}}]{p2 }\end{DoxyParamCaption})}
+
+Operation \char`\"{}==\char`\"{} override for the Point type 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Point\}} & p1 -\/ The first Point \\
+\hline
+{\em \{\+Point\}} & p2 -\/ The second Point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bool\} @override 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file common.\+cpp.
+

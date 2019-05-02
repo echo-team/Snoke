@@ -1,0 +1,92 @@
+\hypertarget{labyrinth_8h}{}\section{Libraries/\+Labyrinth/labyrinth.h File Reference}
+\label{labyrinth_8h}\index{Libraries/Labyrinth/labyrinth.h@{Libraries/Labyrinth/labyrinth.h}}
+{\ttfamily \#include \char`\"{}../\+Common/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Snake/snake.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+Include dependency graph for labyrinth.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{labyrinth_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{labyrinth_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_labyrinth}{Labyrinth}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{labyrinth_8h_ad3e634fcbdb3cc2050d9e38f9c9dff82}{D\+I\+S\+P\+F\+U\+LL}}~0
+\item 
+\#define \mbox{\hyperlink{labyrinth_8h_ab13c16f2657ef8cfeb420b7c50374b65}{D\+I\+S\+P\+L\+AB}}~1
+\item 
+\#define \mbox{\hyperlink{labyrinth_8h_ad9fa982c0792158099a41e7002db015b}{D\+I\+S\+P\+U\+PD}}~2
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} \mbox{\hyperlink{labyrinth_8h_a6fbfea9c219063c65d29c55f3f4d7673}{game\+Field\+Size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{labyrinth_8h_ad3e634fcbdb3cc2050d9e38f9c9dff82}\label{labyrinth_8h_ad3e634fcbdb3cc2050d9e38f9c9dff82}} 
+\index{labyrinth.h@{labyrinth.h}!DISPFULL@{DISPFULL}}
+\index{DISPFULL@{DISPFULL}!labyrinth.h@{labyrinth.h}}
+\subsubsection{\texorpdfstring{DISPFULL}{DISPFULL}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+F\+U\+LL~0}
+
+@const \{int\} D\+I\+S\+P\+F\+U\+LL -\/ the whole labyrinth can fit and was redrawed @const \{int\} D\+I\+S\+P\+L\+AB -\/ the whole labyrinth doesn\textquotesingle{}t fit, so we are displaying it partialy @const \{int\} D\+I\+S\+P\+U\+PD -\/ the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points 
+
+Definition at line 16 of file labyrinth.\+h.
+
+\mbox{\Hypertarget{labyrinth_8h_ab13c16f2657ef8cfeb420b7c50374b65}\label{labyrinth_8h_ab13c16f2657ef8cfeb420b7c50374b65}} 
+\index{labyrinth.h@{labyrinth.h}!DISPLAB@{DISPLAB}}
+\index{DISPLAB@{DISPLAB}!labyrinth.h@{labyrinth.h}}
+\subsubsection{\texorpdfstring{DISPLAB}{DISPLAB}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+AB~1}
+
+
+
+Definition at line 17 of file labyrinth.\+h.
+
+\mbox{\Hypertarget{labyrinth_8h_ad9fa982c0792158099a41e7002db015b}\label{labyrinth_8h_ad9fa982c0792158099a41e7002db015b}} 
+\index{labyrinth.h@{labyrinth.h}!DISPUPD@{DISPUPD}}
+\index{DISPUPD@{DISPUPD}!labyrinth.h@{labyrinth.h}}
+\subsubsection{\texorpdfstring{DISPUPD}{DISPUPD}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+U\+PD~2}
+
+
+
+Definition at line 18 of file labyrinth.\+h.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{labyrinth_8h_a6fbfea9c219063c65d29c55f3f4d7673}\label{labyrinth_8h_a6fbfea9c219063c65d29c55f3f4d7673}} 
+\index{labyrinth.h@{labyrinth.h}!gameFieldSize@{gameFieldSize}}
+\index{gameFieldSize@{gameFieldSize}!labyrinth.h@{labyrinth.h}}
+\subsubsection{\texorpdfstring{gameFieldSize}{gameFieldSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_aa9cfdb80b4ca12013a2de8a3b9b97981}{Point}} game\+Field\+Size}
+
+game\+Field\+Size -\/ size of a game field(x, y) @type \{Point\} @global
+
+game\+Field\+Size -\/ a variable, which stores the dimensions of the game field(shared with snakes) @type \{Point\} @global 
+
+Definition at line 8 of file game.\+cpp.
+

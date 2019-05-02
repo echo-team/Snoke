@@ -1,0 +1,237 @@
+\hypertarget{class_menu}{}\section{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{class_menu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_menu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_a1a1982871bb5f8b1557d26b0d9ccfe0f}{add\+Button}} (const char $\ast$name)
+\item 
+void \mbox{\hyperlink{class_menu_ac5ec365a1916cc9cbd233063544588d7}{focus}} (int index)
+\item 
+void \mbox{\hyperlink{class_menu_acc8b2492f87ebc9219eaad0fe0ecaa5c}{unfocus}} (int index)
+\item 
+void \mbox{\hyperlink{class_menu_a2cd7ab9901a8f42a3ae977d0774398a6}{draw}} ()
+\item 
+\mbox{\hyperlink{class_menu_ab6e38ad7f84b7741846cf5a57040276a}{Menu}} (int \mbox{\hyperlink{class_menu_a26c11055ab1fe19a4862689d4ff85dc7}{x}}, int \mbox{\hyperlink{class_menu_a658438f1d47ccb1cfb78b14fe3e09b52}{y}}, int \mbox{\hyperlink{class_menu_a30ec519ffccb75388150c64175c4959b}{width}}, int \mbox{\hyperlink{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}{height}})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{struct_menu_button}{Menu\+Button}} $>$ \mbox{\hyperlink{class_menu_a631c3c73e1f05159ddc2e967b7b4bca7}{buttons}}
+\item 
+int \mbox{\hyperlink{class_menu_a26c11055ab1fe19a4862689d4ff85dc7}{x}}
+\item 
+int \mbox{\hyperlink{class_menu_a658438f1d47ccb1cfb78b14fe3e09b52}{y}}
+\item 
+int \mbox{\hyperlink{class_menu_a30ec519ffccb75388150c64175c4959b}{width}}
+\item 
+int \mbox{\hyperlink{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_menu}{Menu}} (list of selestable items) widget class 
+\begin{DoxyParams}{Parameters}
+{\em \{list$<$\+Menu\+Button$>$\}} & buttons -\/ buttons included in menu \\
+\hline
+{\em \{int\}} & x -\/ x coordinate of left menu side \\
+\hline
+{\em \{int\}} & y -\/ y coordinate of top menu side \\
+\hline
+{\em \{int\}} & width -\/ menu width \\
+\hline
+{\em \{int\}} & height -\/ menu height \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file menu.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_ab6e38ad7f84b7741846cf5a57040276a}\label{class_menu_ab6e38ad7f84b7741846cf5a57040276a}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & x -\/ x coordinate of left menu side \\
+\hline
+{\em \{int\}} & y -\/ y coordinate of top menu side \\
+\hline
+{\em \{int\}} & width -\/ menu width \\
+\hline
+{\em \{int\}} & height -\/ menu height \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file menu.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_a1a1982871bb5f8b1557d26b0d9ccfe0f}\label{class_menu_a1a1982871bb5f8b1557d26b0d9ccfe0f}} 
+\index{Menu@{Menu}!addButton@{addButton}}
+\index{addButton@{addButton}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{addButton()}{addButton()}}
+{\footnotesize\ttfamily void Menu\+::add\+Button (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Adds button to the menu 
+\begin{DoxyParams}{Parameters}
+{\em \{const} & char$\ast$\} name -\/ text drawn at the button \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file menu.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_menu_a1a1982871bb5f8b1557d26b0d9ccfe0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_menu_a2cd7ab9901a8f42a3ae977d0774398a6}\label{class_menu_a2cd7ab9901a8f42a3ae977d0774398a6}} 
+\index{Menu@{Menu}!draw@{draw}}
+\index{draw@{draw}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Menu\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draws \mbox{\hyperlink{class_menu}{Menu}} in console window 
+
+Definition at line 39 of file menu.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_menu_a2cd7ab9901a8f42a3ae977d0774398a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_menu_ac5ec365a1916cc9cbd233063544588d7}\label{class_menu_ac5ec365a1916cc9cbd233063544588d7}} 
+\index{Menu@{Menu}!focus@{focus}}
+\index{focus@{focus}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Menu\+::focus (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Event listener activated by \mbox{\hyperlink{class_navigator}{Navigator}} module when user selects on widget @override @callback Navigator\+::listener 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & index -\/ index of subunit of the widget \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_widget_ac395fbcfd90f5a33a4bb2ca1d83631ca}{Widget}}.
+
+
+
+Definition at line 18 of file menu.\+cpp.
+
+\mbox{\Hypertarget{class_menu_acc8b2492f87ebc9219eaad0fe0ecaa5c}\label{class_menu_acc8b2492f87ebc9219eaad0fe0ecaa5c}} 
+\index{Menu@{Menu}!unfocus@{unfocus}}
+\index{unfocus@{unfocus}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{unfocus()}{unfocus()}}
+{\footnotesize\ttfamily void Menu\+::unfocus (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Event listener activated by \mbox{\hyperlink{class_navigator}{Navigator}} module when user removes selection from widget @override @callback Navigator\+::listener 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & index -\/ index of subunit of the widget \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_widget_a65f349812facca8302957a83b161a840}{Widget}}.
+
+
+
+Definition at line 30 of file menu.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_menu_a631c3c73e1f05159ddc2e967b7b4bca7}\label{class_menu_a631c3c73e1f05159ddc2e967b7b4bca7}} 
+\index{Menu@{Menu}!buttons@{buttons}}
+\index{buttons@{buttons}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{struct_menu_button}{Menu\+Button}}$>$ Menu\+::buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}\label{class_menu_abfd154ce7b19dca62d1ce8483c6f7bba}} 
+\index{Menu@{Menu}!height@{height}}
+\index{height@{height}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Menu\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a30ec519ffccb75388150c64175c4959b}\label{class_menu_a30ec519ffccb75388150c64175c4959b}} 
+\index{Menu@{Menu}!width@{width}}
+\index{width@{width}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Menu\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a26c11055ab1fe19a4862689d4ff85dc7}\label{class_menu_a26c11055ab1fe19a4862689d4ff85dc7}} 
+\index{Menu@{Menu}!x@{x}}
+\index{x@{x}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Menu\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a658438f1d47ccb1cfb78b14fe3e09b52}\label{class_menu_a658438f1d47ccb1cfb78b14fe3e09b52}} 
+\index{Menu@{Menu}!y@{y}}
+\index{y@{y}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Menu\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file menu.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+Interface/\mbox{\hyperlink{menu_8h}{menu.\+h}}\item 
+Libraries/\+Interface/\mbox{\hyperlink{menu_8cpp}{menu.\+cpp}}\end{DoxyCompactItemize}

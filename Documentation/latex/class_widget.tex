@@ -1,0 +1,77 @@
+\hypertarget{class_widget}{}\section{Widget Class Reference}
+\label{class_widget}\index{Widget@{Widget}}
+
+
+{\ttfamily \#include $<$interface.\+h$>$}
+
+
+
+Inheritance diagram for Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{class_widget__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_widget_ac395fbcfd90f5a33a4bb2ca1d83631ca}{focus}} (int index)
+\item 
+virtual void \mbox{\hyperlink{class_widget_a65f349812facca8302957a83b161a840}{unfocus}} (int index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic class of the console widget (to store different widgets in one list) 
+
+Definition at line 7 of file interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_widget_ac395fbcfd90f5a33a4bb2ca1d83631ca}\label{class_widget_ac395fbcfd90f5a33a4bb2ca1d83631ca}} 
+\index{Widget@{Widget}!focus@{focus}}
+\index{focus@{focus}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Widget\+::focus (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Event listener activated by \mbox{\hyperlink{class_navigator}{Navigator}} module when user selects widget @virtual @callback Navigator\+::listener 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & index -\/ index of subunit of the widget \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_menu_ac5ec365a1916cc9cbd233063544588d7}{Menu}}.
+
+
+
+Definition at line 9 of file interface.\+cpp.
+
+\mbox{\Hypertarget{class_widget_a65f349812facca8302957a83b161a840}\label{class_widget_a65f349812facca8302957a83b161a840}} 
+\index{Widget@{Widget}!unfocus@{unfocus}}
+\index{unfocus@{unfocus}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{unfocus()}{unfocus()}}
+{\footnotesize\ttfamily void Widget\+::unfocus (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Event listener activated by \mbox{\hyperlink{class_navigator}{Navigator}} module when user clicks on widget @virtual @callback Navigator\+::listener 
+\begin{DoxyParams}{Parameters}
+{\em \{int\}} & index -\/ index of subunit of the widget \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_menu_acc8b2492f87ebc9219eaad0fe0ecaa5c}{Menu}}.
+
+
+
+Definition at line 18 of file interface.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/\+Interface/\mbox{\hyperlink{interface_8h}{interface.\+h}}\item 
+Libraries/\+Interface/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

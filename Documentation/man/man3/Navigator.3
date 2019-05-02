@@ -1,0 +1,95 @@
+.TH "Navigator" 3 "Thu May 2 2019" "Snoke" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Navigator
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <navigator\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBpushUnit\fP (\fBWidget\fP *unit, int subunitsAmount)"
+.br
+.ti -1c
+.RI "void \fBlisten\fP ()"
+.br
+.ti -1c
+.RI "\fBNavigator\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::list< \fBNavigateUnit\fP > \fBunits\fP"
+.br
+.ti -1c
+.RI "std::list< \fBNavigateUnit\fP >::iterator \fBcurrentUnit\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentSubunit\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Adds an ability to select/activate widgets 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{list<NavigateUnit>}\fP units - widgets/groups of widgets which can be selected 
+.br
+\fI{list<NavigateUnit>::iterator}\fP currentUnit - selected widget 
+.br
+\fI{int}\fP currentSubunit - number of subwidget 
+.RE
+.PP
+
+.PP
+Definition at line 24 of file navigator\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Navigator::Navigator ()"
+@constructor 
+.PP
+Definition at line 72 of file navigator\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Navigator::listen ()"
+Starts main loop of application to catch selections and activate events done by user 
+.PP
+Definition at line 16 of file navigator\&.cpp\&.
+.SS "void Navigator::pushUnit (\fBWidget\fP * unit, int subunitsAmount)"
+Adds selectable widget to the end of selectable widgets queue 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{Widget*}\fP unit - seleclable widget 
+.br
+\fI{int\fP } subunitsAmount - amount of subwidgets 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file navigator\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int Navigator::currentSubunit\fC [private]\fP"
+
+.PP
+Definition at line 29 of file navigator\&.h\&.
+.SS "std::list<\fBNavigateUnit\fP>::iterator Navigator::currentUnit\fC [private]\fP"
+
+.PP
+Definition at line 28 of file navigator\&.h\&.
+.SS "std::list<\fBNavigateUnit\fP> Navigator::units\fC [private]\fP"
+
+.PP
+Definition at line 27 of file navigator\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Snoke from the source code\&.

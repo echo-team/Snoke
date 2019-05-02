@@ -1,0 +1,13 @@
+<map id="Libraries/Screens/mainMenu.h" name="Libraries/Screens/mainMenu.h">
+<area shape="rect" id="node1" title=" " alt="" coords="75,5,274,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="253,304,331,331"/>
+<area shape="rect" id="node3" href="$common_8h.html" title=" " alt="" coords="20,155,172,181"/>
+<area shape="rect" id="node5" href="$logo_8h.html" title=" " alt="" coords="163,80,287,107"/>
+<area shape="rect" id="node8" href="$menu_8h.html" title=" " alt="" coords="401,80,533,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="60,229,132,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="329,155,391,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="196,155,255,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="527,304,566,331"/>
+<area shape="rect" id="node10" href="$interface_8h.html" title=" " alt="" coords="465,155,548,181"/>
+<area shape="rect" id="node11" href="$navigator_8h.html" title=" " alt="" coords="464,229,549,256"/>
+</map>
