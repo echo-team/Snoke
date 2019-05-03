@@ -4,9 +4,9 @@
  * @brief realisation of Labyrinth class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "labyrinth.h"
 /**
@@ -132,7 +132,7 @@ void Labyrinth::displayHandler(Point* change[2], int size)
 
 /**
  * @brief   A method, which sets start and end values depending on
- * t        he position of local_player's snake head and current console size
+ *          the position of local_player's snake head and current console size
  */
 void Labyrinth::sizeHandler()
 {

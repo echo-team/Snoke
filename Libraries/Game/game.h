@@ -4,9 +4,9 @@
  * @brief Definitions and prototypes for Game class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #ifndef GAME_H
 #define GAME_H
@@ -20,39 +20,21 @@
 /**
  * @class Game game.h
  * @brief   Main game class
+ * @prop    speed           - game refresh rate(in milliseconds)
+ * @prop    changeSize      - the size of the change sub-arrays
+ * @prop    snake           - the local_player controlled snake
+ * @prop    snakeEnemies    - the remotely controlled snake entities
+ * @prop    labyrinth       - object containing labyrinth, displaying it, etc
+ * @prop    change          - 2-dim array containing changes for the labyrinth
  */
 class Game
 {
     private:
-        /**
-        * @prop    int          speed
-        * @brief   game refresh rate(in milliseconds)
-        */
         int speed;
-        /**
-        * @prop    int          changeSize
-        * @brief   the size of the change sub-arrays
-        */
         int changeSize;
-        /**
-        * @prop    Snake        snake
-        * @brief   the local_player-controlled snake entity
-        */
         Snake snake;
-        /**
-         * @prop    Snake*      snakeEnemies
-         * @brief   the remotely controlled snake entities
-         */
         Snake* snakeEnemies;
-        /**
-         * @prop    Labyrinth   labyrinth
-         * @brief   object containing labyrinth, displaying it, etc
-         */
         Labyrinth labyrinth;
-        /**
-         * @prop    Point*      change
-         * @brief   2-dim array containing changes for the labyrinth
-         */
         Point* change[2];
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);

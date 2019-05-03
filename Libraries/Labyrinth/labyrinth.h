@@ -4,9 +4,9 @@
  * @brief Definitions and prototypes for Labyrinth class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #ifndef LABYRINTH_H
 #define LABYRINTH_H
@@ -33,58 +33,33 @@
 #define DISPUPD 2
 
 /**
- * gameFieldSize - size of a game field(x, y)
- * @type {Point}
- * @global
+* @var Point gameFieldSize
+* size of a game field(x, y)
  */
 extern Point gameFieldSize;
 
 /**
  * @class Labyrinth labyrinth.h
  * @brief   class for containing and displaying the game field
+ * @prop    labyrinth           - game field, consisting of chars
+ * @prop    reserved            - array of reserved chars for inside usage
+ * @prop    prevDisplayMethod   - value, containing the makr of which display method was previously called(is used in displaying)
+ * @prop    snake               - pointer to a local_player's snake
+ * @prop    start               - top left corner from which the drawing of the current cycle starts
+ * @prop    end                 - bottom right corner at which the drawing of the current cycle ends
+ * @prop    prevStart           - previous value of start
+ * @prop    prevEnd             - previous value of end
  */
 class Labyrinth
 {
     private:
-        /**
-         * @prop    char**          labyrinth
-         * @brief   game field, consisting of chars
-         */
         char** labyrinth;
-        /**
-         * @prop    std::string     reserved
-         * @brief   rray of reserved chars for inside usage
-         */
         std::string reserved = "!";
-        /**
-         * @prop    int             prevDisplayMethod
-         * @brief   value, containing the makr of which display method was previously called(is used in displaying)
-         */
         int prevDisplayMethod = 0;
-        /**
-         * @prop    Snake*          snake
-         * @brief    pointer to a local_player's snake
-         */
         Snake* snake = NULL;
-        /**
-         * @prop    Point           start
-         * @brief    top left corner from which the drawing of the current cycle starts
-         */
         Point start;
-        /**
-         * @prop    Point           end
-         * @brief    bottom right corner at which the drawing of the current cycle ends
-         */
         Point end;
-        /**
-         * @prop    Point           prevStart
-         * @brief   previous value of start
-         */
         Point prevStart;
-        /**
-         * @prop    Point           prevEnd
-         * @brief   previous value of end
-         */
         Point prevEnd;
         void displayLabyrinth();
         void displayUpdated(Point* update[2], int size);

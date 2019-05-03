@@ -4,9 +4,9 @@
  * @brief Definitions and prototypes for Snake class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #ifndef SNAKE_H
 #define SNAKE_H
@@ -71,24 +71,15 @@ extern Point gameFieldSize;
 /**
  * @class Snake snake.h
  * @brief   Describes the Snake entity of the game
+ * @prop    direction   - current direction where the snake is heading
+ * @prop    style       - array, which describes how should the snake be colored
+ * @prop    snakeBody   - deque type array, containing positions of snake's body segments
  */
 class Snake
 {
     private:
-        /**
-         * @prop    short                   direction
-         * @brief   current direction where the snake is heading;
-         */
         short direction;
-        /**
-         * @prop    std::list<PointStyle>   style
-         * @brief   array, which describes how should the snake be colored
-         */
         std::list<PointStyle> style;
-        /**
-         * @prop    std::deque<Point>       snakeBody
-         * @brief   deque type array, containing positions of snake's body segments
-         */
         std::deque<Point> snakeBody;
         short checkIntersection(Point check, Labyrinth laryrinth, Ball* ball);
         short checkWisely(Point coords, Point bcoords);

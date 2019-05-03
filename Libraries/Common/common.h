@@ -4,9 +4,9 @@
  * @brief shared functions prototypes, structures, main classes declarations
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #ifndef COMMON_H
 #define COMMON_H
@@ -30,23 +30,14 @@
 /**
  * @struct _PointStyle common.h
  * @brief   Style of the cell in console window
+ * @prop letter - symbol in the cell
+ * @prop fg - foreground color of the cell
+ * @prop bg - background color of the cell
  */
 typedef struct _PointStyle
 {
-    /**
-     * @prop    char    letter
-     * @brief   symbol in the cell
-     */
     char letter;
-    /**
-     * @prop    int     fg
-     * @brief   foreground color of the cell
-     */
     int fg;
-    /**
-     * @prop    int     bg
-     * @brief   background color of the cell
-     */
     int bg;
     _PointStyle& operator = (_PointStyle ps);
 } PointStyle;
@@ -54,23 +45,14 @@ typedef struct _PointStyle
 /**
  * @struct _Point common.h
  * @brief   Coordinates and style of the cell in console window
+ * @prop    x       - x coordinate in console window
+ * @prop    y       - y coordinate in console window
+ * @prop    style   - style of the cell
  */
 typedef struct _Point
 {
-    /**
-     * @prop    short       x
-     * @brief   x coordinate in console window
-     */
     short x;
-    /**
-     * @prop    short       y
-     * @brief   y coordinate in console window
-     */
     short y;
-    /**
-     * @prop    PointStyle  style
-     * @brief   style of the cell
-     */
     PointStyle style;
     _Point& operator = (_Point p);
 } Point;
