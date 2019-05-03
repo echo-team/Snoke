@@ -1,9 +1,13 @@
-/*!
-   \file common.cpp
-   \brief shared functions realisation
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file common.cpp
+ * @author Yegor Ignatov
+ * @brief shared functions realisation
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include "common.h"
 
 /**

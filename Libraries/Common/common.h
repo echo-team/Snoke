@@ -1,9 +1,13 @@
-/*!
-   \file common.h
-   \brief shared functions prototypes, structures, main classes declarations
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file common.h
+ * @author Yegor Ignatov
+ * @brief shared functions prototypes, structures, main classes declarations
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #ifndef COMMON_H
 #define COMMON_H
 #include <iostream>

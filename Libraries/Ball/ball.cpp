@@ -1,9 +1,13 @@
-/*!
-   \file ball.cpp
-   \brief realisation of Ball class
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file ball.cpp
+ * @author Yegor Ignatov
+ * @brief realisation of Ball class
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include "ball.h"
 
 /**

@@ -1,9 +1,13 @@
-/*!
-   \file labyrinth.h
-   \brief Definitions and prototypes for Labyrinth class
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file labyrinth.h
+ * @author Yegor Ignatov
+ * @brief Definitions and prototypes for Labyrinth class
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #ifndef LABYRINTH_H
 #define LABYRINTH_H
 #include "../Common/common.h"

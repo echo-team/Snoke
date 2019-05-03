@@ -1,9 +1,13 @@
-/*!
-   \file game.h
-   \brief Definitions and prototypes for Game class
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file game.h
+ * @author Yegor Ignatov
+ * @brief Definitions and prototypes for Game class
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #ifndef GAME_H
 #define GAME_H
 #include "../Snake/snake.h"

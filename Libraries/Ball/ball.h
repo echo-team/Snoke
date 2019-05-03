@@ -1,9 +1,13 @@
-/*!
-   \file ball.h
-   \brief definitions and prototypes for Ball class
-   \author Egor Ignatov
-   \date 03/05/2019
-*/
+/**
+ * @file ball.h
+ * @author Yegor Ignatov
+ * @brief definitions and prototypes for Ball class
+ * @version 0.1
+ * @date 2019-05-03
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #ifndef BALL_H
 #define BALL_H
 #include "../Common/common.h"
