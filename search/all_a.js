@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['labyrinth',['Labyrinth',['../class_labyrinth.html',1,'Labyrinth'],['../class_game.html#a92148f2659c019b331e9da7deadbd8bc',1,'Game::labyrinth()'],['../class_labyrinth.html#a6145651bfcdc8c4773eacc7d0c40e200',1,'Labyrinth::labyrinth()']]],
+  ['labyrinth',['Labyrinth',['../class_labyrinth.html',1,'Labyrinth'],['../class_game.html#a92148f2659c019b331e9da7deadbd8bc',1,'Game::labyrinth()'],['../class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d',1,'Labyrinth::labyrinth()']]],
   ['labyrinth_2ecpp',['labyrinth.cpp',['../labyrinth_8cpp.html',1,'']]],
   ['labyrinth_2eh',['labyrinth.h',['../labyrinth_8h.html',1,'']]],
   ['language',['language',['../class_logo.html#ac3f13aa3fd16b904a71157e6ff47e48e',1,'Logo']]],

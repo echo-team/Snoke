@@ -1,6 +1,6 @@
 <map id="Labyrinth::displayHandler" name="Labyrinth::displayHandler">
 <area shape="rect" id="node2" href="$class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="226,56,401,83"/>
-<area shape="rect" id="node6" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on t he position of local_player&#39;s snake head and..." alt="" coords="237,107,389,133"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="237,107,389,133"/>
 <area shape="rect" id="node9" href="$class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="227,157,400,184"/>
 <area shape="rect" id="node10" href="$class_labyrinth.html#a676e53a7bced45343af8307eae2ba2d0" title="display labyrinth partialy, using the start and end Points " alt="" coords="225,208,402,235"/>
 <area shape="rect" id="node11" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="241,259,386,285"/>
