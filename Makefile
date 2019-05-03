@@ -74,11 +74,12 @@ cleaner: clean
 
 #Pull in dependency info for *existing* .o files
 -include $(OBJECTS:.$(OBJEXT)=.$(DEPEXT))
--include $(subst .c,.d,$(SOURCES))
+-include $(subst .cpp,.d,$(SOURCES))
 
 #Link
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^ $(LIB)
+	make clean
 
 $(BUILDDIR)/%.$(OBJEXT): %.$(SRCEXT)
 	$(CC) -c $(CFLAGS) -o $@ $<
