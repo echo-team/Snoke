@@ -11,34 +11,6 @@
 #include "common.h"
 
 /**
- * @brief   Operation "=" override for the PointStyle class
- * @param   ps - the obgect, parameters of which are being copied
- * @return     - a pointer to an object
- * @overload
- */
-PointStyle& PointStyle::operator= (PointStyle ps)
-{
-    this->letter = ps.letter;
-    this->fg = ps.fg;
-    this->bg = ps.bg;
-    return *this;
-}
-
-/**
- * @brief   Operation "=" override for the Point class
- * @param   p - the obgect, parameters of which are being copied
- * @return    - a pointer to an object
- * @overload
- */
-Point& Point::operator= (Point p)
-{
-    this->x = p.x;
-    this->y = p.y;
-    this->style = p.style;
-    return *this;
-}
-
-/**
  * @brief   Operation "==" override for the Point class
  * @param   p - the Point to compare with
  * @return    - mark of equality
@@ -46,7 +18,7 @@ Point& Point::operator= (Point p)
  */
 bool Point::operator== (Point p)
 {
-    return (this->x == p.x and this->y == p.y);
+    return (this->x == p.x && this->y == p.y);
 }
 
 /**

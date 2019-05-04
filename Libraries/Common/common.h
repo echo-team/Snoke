@@ -40,7 +40,6 @@ class PointStyle
         char letter;
         int fg;
         int bg;
-        PointStyle& operator= (PointStyle ps);
 };
 
 /**
@@ -56,7 +55,6 @@ class Point
         short x;
         short y;
         PointStyle style;
-        Point& operator= (Point p);
         bool operator== (Point p);
 };
 
