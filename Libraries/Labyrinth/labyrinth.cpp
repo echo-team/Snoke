@@ -72,10 +72,11 @@ void Labyrinth::addSnake(Snake* snake)
 
 /**
  * @brief   A method which decides what dispaly method will be used in each situation
- * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   size   - the size of the change array
+ * @param   change          - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   size            - the size of the change array
+ * @param   displayMethod   - force it to use a certain display method
  */
-void Labyrinth::displayHandler(Point* change[2], int size)
+void Labyrinth::displayHandler(Point* change[2], int size, int displayMethod)
 {
     /*
      * Writing changes to labyrinth
@@ -88,46 +89,18 @@ void Labyrinth::displayHandler(Point* change[2], int size)
     this->sizeHandler();
 
     /*
-     * Deciding what disply method to use
+     * checking if we are beeing asked to use a certain method
      */
-    switch (this->prevDisplayMethod)
+    if(displayMethod >= 0)
     {
-        case DISPFULL:
-        {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
-            {
-                this->displayUpdated(change, size);
-            }
-            else
-            {
-                this->displayLabyrinth();
-            }
-            break;
-        }
-        case DISPUPD:
-        {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
-            {
-                this->displayUpdated(change, size);
-            }
-            else
-            {
-                this->displayLabyrinth();
-            }
-            break;
-        }
-        case DISPLAB:
-        {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
-            {
-                this->displayFull();
-            }
-            else
-            {
-                this->displayLabyrinth();
-            }
-        }
+        forcedDisplay(change, size, displayMethod);
     }
+    else
+    {
+        freeDisplay(change, size);
+    }
+    refresh();
+    flushinp();
 }
 
 /**
@@ -188,6 +161,101 @@ void Labyrinth::sizeHandler()
     {
         start.x = 0;
         end.x = gameFieldSize.x;
+    }
+}
+
+/**
+ * @brief   got an extra stimulus for displaying in a certain method
+ * @param   change          - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   size            - the size of the change array
+ * @param   displayMethod   - a method that is beeing force-called
+ */
+void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
+{
+    /*
+     * Deciding what disply method to use
+     */
+    switch (displayMethod)
+    {
+        case DISPFULL:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayFull();
+            }
+            else
+            {
+                this->displayPartialy();
+            }
+            break;
+        }
+        case DISPUPD:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayUpdated(change, size);
+            }
+            else
+            {
+                this->displayPartialy();
+            }
+            break;
+        }
+        case DISPPART:
+        {
+            this->displayPartialy();
+            break;
+        }
+    }
+}
+
+/**
+ * @brief   No extra stimulus, displaying the default way
+ * @param   change  - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   size    - the size of the change array
+ */
+void Labyrinth::freeDisplay(Point* change[2], int size)
+{
+    /*
+     * Deciding what disply method to use
+     */
+    switch (this->prevDisplayMethod)
+    {
+        case DISPFULL:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayUpdated(change, size);
+            }
+            else
+            {
+                this->displayPartialy();
+            }
+            break;
+        }
+        case DISPUPD:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayUpdated(change, size);
+            }
+            else
+            {
+                this->displayPartialy();
+            }
+            break;
+        }
+        case DISPPART:
+        {
+            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            {
+                this->displayFull();
+            }
+            else
+            {
+                this->displayPartialy();
+            }
+        }
     }
 }
 
