@@ -20,14 +20,14 @@
 bool Snake::init(Point begin, short dir, int length)
 {
     begin.style.letter = '*';
-    if (dir == MVLEFT or dir == MVRIGHT or dir == MVUP or dir == MVDOWN)
+    if (dir == MVLEFT || dir == MVRIGHT || dir == MVUP || dir == MVDOWN)
     {
         /*
          * Pointer to the variable we want to change, depending on the dir variable
          * @type {short*}
          */
         short* changable;
-        if (dir == MVLEFT or dir == MVRIGHT)
+        if (dir == MVLEFT || dir == MVRIGHT)
         {
             changable = &begin.x;
         }
@@ -41,7 +41,7 @@ bool Snake::init(Point begin, short dir, int length)
          * @type {short}
          */
         short value;
-        if (dir == MVRIGHT or dir == MVDOWN)
+        if (dir == MVRIGHT || dir == MVDOWN)
         {
             value = 1;
         }
@@ -186,7 +186,7 @@ void Snake::moveHead(Point p, Point* change[2])
 void Snake::moveBack(Point p, Point* change[2])
 {
     change[1][1] = p;
-    if(p.x != -1 and p.y != -1)
+    if(p.x != -1 && p.y != -1)
     {
         snakeBody.pop_back();
     }
@@ -217,7 +217,7 @@ short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball)
  */
 short Snake::checkWisely(Point coords, Point bcoords)
 {
-    if(coords.x == bcoords.x and coords.y == bcoords.y)
+    if(coords.x == bcoords.x && coords.y == bcoords.y)
     {
         return BALL;
     }
@@ -246,7 +246,7 @@ short Snake::checkWisely(Point coords, Point bcoords)
  */
 void Snake::setDirection(int direction)
 {
-    if (direction == MVRIGHT or direction == MVLEFT or direction == MVUP or direction == MVDOWN){
+    if (direction == MVRIGHT || direction == MVLEFT || direction == MVUP || direction == MVDOWN){
         /*
          * If directions are opposite, do nothing
          */

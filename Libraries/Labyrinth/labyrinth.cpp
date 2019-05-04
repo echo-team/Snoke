@@ -179,7 +179,7 @@ void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
     {
         case DISPFULL:
         {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
                 this->displayFull();
             }
@@ -191,7 +191,7 @@ void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
         }
         case DISPUPD:
         {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
                 this->displayUpdated(change, size);
             }
@@ -223,7 +223,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
     {
         case DISPFULL:
         {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
                 this->displayUpdated(change, size);
             }
@@ -235,7 +235,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
         }
         case DISPUPD:
         {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
                 this->displayUpdated(change, size);
             }
@@ -247,7 +247,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
         }
         case DISPPART:
         {
-            if(start.x == 0 and end.x == gameFieldSize.x and start.y == 0 and end.y == gameFieldSize.y)
+            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
                 this->displayFull();
             }
@@ -315,12 +315,12 @@ void Labyrinth::updateLabyrinth(Point* update[2], int size)
     for(int i = 0; i < size; i++)
     {
         p = update[0][i];
-        if(p.x >= 0 and p.y >= 0)
+        if(p.x >= 0 && p.y >= 0)
         {
             addPoint(p);
         }
         p = update[1][i];
-        if(p.x >= 0 and p.y >= 0)
+        if(p.x >= 0 && p.y >= 0)
         {
             remPoint(p);
         }

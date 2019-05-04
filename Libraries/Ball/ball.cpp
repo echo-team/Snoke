@@ -42,7 +42,7 @@ bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
     {
         chance.x = distributionX(rng);
         chance.y = distributionY(rng);
-        if ((labyrinth.isFree(chance) or inRemChange(chance, change, changeSize)) and !inAddChange(chance, change, changeSize))
+        if ((labyrinth.isFree(chance) || inRemChange(chance, change, changeSize)) && !inAddChange(chance, change, changeSize))
         {
             break;
         }
