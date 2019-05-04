@@ -4,9 +4,9 @@
  * @brief realisation of Game class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "game.h"
 
@@ -27,8 +27,6 @@ bool Game::init(int size, int speed)
     gameFieldSize.x = size;
     gameFieldSize.y = size/2;
     this->labyrinth.setLabyrinth(gameFieldSize);
-    char fName[] = "testload";
-    this->labyrinth.load(fName);
     this->setSpeed(speed);
 
     /*
@@ -57,17 +55,16 @@ int Game::run()
     #endif
     curs_set(0);
     keypad(stdscr, true);
-    //signal(SIGWINCH, NULL);
 
     /*
      * Initializing snake by giving it the starting position,
      * direction of growth and starting length
      */
-    Point p;
-    p.x = 1;
-    p.y = 1;
+    Point startPos;
+    startPos.x = 1;
+    startPos.y = 1;
     int dir = 1, len = 5;
-    initSnake(p, dir, len);
+    initSnake(startPos, dir, len);
 
     /*
      * Initializing the Ball and generating it on the field
@@ -106,8 +103,6 @@ int Game::run()
             case 's':
                 char fName[] = "testsave";
                 labyrinth.save(fName);
-                refresh();
-                flushinp();
                 labyrinth.displayHandler();
                 mSleep(speed * 2);
                 continue;
@@ -131,14 +126,10 @@ int Game::run()
          */
         labyrinth.displayHandler(change, changeSize);
 
-        refresh();
-        flushinp();
         mSleep(speed);
     }
     return 0;
 }
-
-
 
 /**
  * @brief   Snake initialization with labyrinth updating
@@ -176,16 +167,16 @@ bool Game::initBall(Ball* ball)
  */
 bool Game::wipeChange(Point** lChange, int size)
 {
-    Point p;
-    p.x = -1;
-    p.y = -1;
-    p.style.bg = 0;
-    p.style.fg = 0;
-    p.style.letter = 0;
+    Point emptyPoint;
+    emptyPoint.x = -1;
+    emptyPoint.y = -1;
+    emptyPoint.style.bg = 0;
+    emptyPoint.style.fg = 0;
+    emptyPoint.style.letter = 0;
     for(int i = 0; i < size; i++)
     {
-        lChange[0][i] = p;
-        lChange[1][i] = p;
+        lChange[0][i] = emptyPoint;
+        lChange[1][i] = emptyPoint;
     }
     return true;
 }

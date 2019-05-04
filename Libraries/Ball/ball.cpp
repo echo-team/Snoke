@@ -4,9 +4,9 @@
  * @brief realisation of Ball class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "ball.h"
 
@@ -34,21 +34,21 @@ bool Ball::init(Point fieldSize)
  */
 bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
 {
-    Point p;
+    Point chance;
     /*
      * Generate numbers until u get a free spot
      */
     while (1)
     {
-        p.x = distributionX(rng);
-        p.y = distributionY(rng);
-        if ((labyrinth.isFree(p) or inRemChange(p, change, changeSize)) and !inAddChange(p, change, changeSize))
+        chance.x = distributionX(rng);
+        chance.y = distributionY(rng);
+        if ((labyrinth.isFree(chance) or inRemChange(chance, change, changeSize)) and !inAddChange(chance, change, changeSize))
         {
             break;
         }
     }
-    position.x = p.x;
-    position.y = p.y;
+    position.x = chance.x;
+    position.y = chance.y;
     return true;
 }
 

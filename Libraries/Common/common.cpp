@@ -4,19 +4,19 @@
  * @brief shared functions realisation
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "common.h"
 
 /**
- * @brief   Operation "=" override for the PointStyle type
+ * @brief   Operation "=" override for the PointStyle class
  * @param   ps - the obgect, parameters of which are being copied
  * @return     - a pointer to an object
  * @overload
  */
-PointStyle& PointStyle::operator = (PointStyle ps)
+PointStyle& PointStyle::operator= (PointStyle ps)
 {
     this->letter = ps.letter;
     this->fg = ps.fg;
@@ -25,12 +25,12 @@ PointStyle& PointStyle::operator = (PointStyle ps)
 }
 
 /**
- * @brief   Operation "=" override for the Point type
+ * @brief   Operation "=" override for the Point class
  * @param   p - the obgect, parameters of which are being copied
  * @return    - a pointer to an object
  * @overload
  */
-Point& Point::operator = (Point p)
+Point& Point::operator= (Point p)
 {
     this->x = p.x;
     this->y = p.y;
@@ -39,24 +39,23 @@ Point& Point::operator = (Point p)
 }
 
 /**
- * @brief   Operation "==" override for the Point type
- * @param   p1 - The first Point
- * @param   p2 - The second Point
- * @return     - mark of equality
+ * @brief   Operation "==" override for the Point class
+ * @param   p - the Point to compare with
+ * @return    - mark of equality
  * @overload
  */
-bool operator == (Point p1, Point p2)
+bool Point::operator== (Point p)
 {
-    return (p1.x == p2.x and p1.y == p2.y);
+    return (this->x == p.x and this->y == p.y);
 }
 
 /**
- * @brief   Operation '<<' override for the Point type
+ * @brief   Operation '<<' override for the Point class
  * @param   s - current ostream variable
  * @param   p - a Point to print
  * @overload
  */
-std::ostream& operator << (std::ostream &s, Point p)
+std::ostream& operator<< (std::ostream &s, Point p)
 {
     s << '(' << p.x << ',' << p.y << ')';
     return s;

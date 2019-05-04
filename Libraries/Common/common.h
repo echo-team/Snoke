@@ -28,34 +28,37 @@
 #define MAXLINE 256
 
 /**
- * @struct _PointStyle common.h
+ * @class PointStyle common.h
  * @brief   Style of the cell in console window
  * @prop letter - symbol in the cell
  * @prop fg - foreground color of the cell
  * @prop bg - background color of the cell
  */
-typedef struct _PointStyle
+class PointStyle
 {
-    char letter;
-    int fg;
-    int bg;
-    _PointStyle& operator = (_PointStyle ps);
-} PointStyle;
+    public:
+        char letter;
+        int fg;
+        int bg;
+        PointStyle& operator= (PointStyle ps);
+};
 
 /**
- * @struct _Point common.h
+ * @class Point common.h
  * @brief   Coordinates and style of the cell in console window
  * @prop    x       - x coordinate in console window
  * @prop    y       - y coordinate in console window
  * @prop    style   - style of the cell
  */
-typedef struct _Point
+class Point
 {
-    short x;
-    short y;
-    PointStyle style;
-    _Point& operator = (_Point p);
-} Point;
+    public:
+        short x;
+        short y;
+        PointStyle style;
+        Point& operator= (Point p);
+        bool operator== (Point p);
+};
 
 /*
  * @brief   Class definitions for the individual files to know that they exist
@@ -66,8 +69,7 @@ class Labyrinth;
 class Game;
 class Ball;
 
-std::ostream& operator << (std::ostream &s, Point p);
-bool operator == (Point p1, Point p2);
+std::ostream& operator<< (std::ostream &s, Point p);
 void mSleep(int time);
 bool inAddChange(Point p, Point* change[2], int changeSize);
 bool inRemChange(Point p, Point* change[2], int changeSize);

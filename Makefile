@@ -52,7 +52,7 @@ run:
 	$(TARGETDIR)/$(TARGET)
 
 #Remake
-remake: cleaner all
+remake: clean all
 
 #Copy Resources from Resources Directory to Target Directory
 resources: directories
@@ -64,12 +64,12 @@ directories:
 	$(shell mkdir -p $(BUILDDIR))
 
 #Clean only Objecst
-clean:
+cleanup:
 	$(shell rm -rf $(BUILDDIR))
 	$(shell rm -rf $(EXTRADIRS))
 
 #Full Clean, Objects and Binaries
-cleaner: clean
+clean: cleanup
 	$(shell rm -rf $(TARGETDIR))
 
 #Pull in dependency info for *existing* .o files
@@ -79,7 +79,7 @@ cleaner: clean
 #Link
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^ $(LIB)
-	make clean
+	make cleanup
 
 $(BUILDDIR)/%.$(OBJEXT): %.$(SRCEXT)
 	$(CC) -c $(CFLAGS) -o $@ $<

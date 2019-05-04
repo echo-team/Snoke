@@ -41,15 +41,15 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
     /*
      * Setting the default values for the Labyrinth properties
      */
-    Point tmp1, tmp2;
-    tmp1.x = 0;
-    tmp1.y = 0;
-    tmp2 = gameFieldSize;
-    this->start = tmp1;
-    this->end = tmp2;
-    this->prevStart = tmp1;
-    this->prevEnd = tmp2;
-    this->prevDisplayMethod = DISPLAB;
+    Point leftTop, rightBot;
+    leftTop.x = 0;
+    leftTop.y = 0;
+    rightBot = gameFieldSize;
+    this->start = leftTop;
+    this->end = rightBot;
+    this->prevStart = leftTop;
+    this->prevEnd = rightBot;
+    this->prevDisplayMethod = DISPPART;
     this->snake = NULL;
 }
 
@@ -136,26 +136,26 @@ void Labyrinth::displayHandler(Point* change[2], int size)
  */
 void Labyrinth::sizeHandler()
 {
-    Point head = this->snake->getHeadCoords(), tmp = getConsoleSize();
+    Point head = this->snake->getHeadCoords(), currentSize = getConsoleSize();
 
     /*
      * Deciding how many columns can we display and where should we start
      */
-    if(tmp.y < gameFieldSize.y)
+    if(currentSize.y < gameFieldSize.y)
     {
-        start.y = head.y - tmp.y / 2;
-        end.y = head.y + tmp.y / 2 + tmp.y % 2;
+        start.y = head.y - currentSize.y / 2;
+        end.y = head.y + currentSize.y / 2 + currentSize.y % 2;
         if(start.y < 0)
         {
             start.y = 0;
-            end.y = tmp.y;
+            end.y = currentSize.y;
         }
         if(end.y >= gameFieldSize.y)
         {
             end.y = gameFieldSize.y;
             if(start.y != 0)
             {
-                start.y = gameFieldSize.y - tmp.y;
+                start.y = gameFieldSize.y - currentSize.y;
             }
         }
     } else
@@ -167,21 +167,21 @@ void Labyrinth::sizeHandler()
     /*
      * Deciding how many rows can we display and where should we start
      */
-    if(tmp.x < gameFieldSize.x)
+    if(currentSize.x < gameFieldSize.x)
     {
-        start.x = head.x - tmp.x / 2;
-        end.x = head.x + tmp.x / 2 + tmp.x % 2;
+        start.x = head.x - currentSize.x / 2;
+        end.x = head.x + currentSize.x / 2 + currentSize.x % 2;
         if(start.x < 0)
         {
             start.x = 0;
-            end.x = tmp.x;
+            end.x = currentSize.x;
         }
         if(end.x >= gameFieldSize.x)
         {
             end.x = gameFieldSize.x;
             if(start.x != 0)
             {
-                start.x = gameFieldSize.x - tmp.x;
+                start.x = gameFieldSize.x - currentSize.x;
             }
         }
     } else
@@ -206,7 +206,7 @@ void Labyrinth::displayFull()
 /**
  * @brief   display labyrinth partialy, using the start and end Points
  */
-void Labyrinth::displayLabyrinth()
+void Labyrinth::displayPartialy()
 {
     clear();
     for(int j = start.y; j < end.y; j++)
@@ -217,7 +217,7 @@ void Labyrinth::displayLabyrinth()
             addch(labyrinth[j][i]);
         }
     }
-    this->prevDisplayMethod = DISPLAB;
+    this->prevDisplayMethod = DISPPART;
 }
 
 /**
@@ -345,7 +345,7 @@ bool Labyrinth::save(char name[MAXLINE])
 bool Labyrinth::load(char name[MAXLINE])
 {
     FILE* file;
-    Point tmp;
+    Point scannedSize;
     char strout[MAXLINE];
     file = fopen(name, "r");
     if(file)
@@ -353,11 +353,11 @@ bool Labyrinth::load(char name[MAXLINE])
         /*
          * Getting the dimensions of the labyrinth and creating a temporary labyrinth
          */
-        fscanf(file, "%hd %hd", &tmp.x, &tmp.y);
-        char tmpLab[tmp.y][tmp.x];
-        for(int i = 0; i < tmp.x; i++)
+        fscanf(file, "%hd %hd", &scannedSize.x, &scannedSize.y);
+        char tmpLab[scannedSize.y][scannedSize.x];
+        for(int i = 0; i < scannedSize.x; i++)
         {
-            for(int j = 0; j < tmp.y; j++)
+            for(int j = 0; j < scannedSize.y; j++)
             {
                 tmpLab[j][i] = ' ';
             }
@@ -366,16 +366,16 @@ bool Labyrinth::load(char name[MAXLINE])
         /*
          * Getting lines of the labyrinth
          */
-        for(int j = 0; j < tmp.y; j++)
+        for(int j = 0; j < scannedSize.y; j++)
         {
-            fgets(tmpLab[j], tmp.x, file);
+            fgets(tmpLab[j], scannedSize.x, file);
         }
         fclose(file);
 
         /*
          * Setting the new gameFieldSize and copying the borders and obstacles from the temporary labyrinth
          */
-        gameFieldSize = tmp;
+        gameFieldSize = scannedSize;
         for(int i = 0; i < gameFieldSize.x; i++)
         {
             for(int j = 0; j < gameFieldSize.y; j++)

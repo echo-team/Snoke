@@ -26,7 +26,7 @@
 /**
  * @brief    the whole labyrinth doesn't fit, so we are displaying it partialy
  */
-#define DISPLAB 1
+#define DISPPART 1
 /**
  * @brief    the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
  */
@@ -61,7 +61,7 @@ class Labyrinth
         Point end;
         Point prevStart;
         Point prevEnd;
-        void displayLabyrinth();
+        void displayPartialy();
         void displayUpdated(Point* update[2], int size);
         void updateLabyrinth(Point* update[2], int size);
         void displayFull();

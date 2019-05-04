@@ -4,9 +4,9 @@
  * @brief realisation of Snake class
  * @version 0.1
  * @date 2019-05-03
- * 
+ *
  * @copyright Copyright (c) 2019
- * 
+ *
  */
 #include "snake.h"
 
@@ -272,10 +272,10 @@ short Snake::getDirection()
  */
 Point Snake::getHeadCoords()
 {
-    Point p;
-    p.x = snakeBody.front().x;
-    p.y = snakeBody.front().y;
-    return p;
+    Point headCoords;
+    headCoords.x = snakeBody.front().x;
+    headCoords.y = snakeBody.front().y;
+    return headCoords;
 }
 
 /**
