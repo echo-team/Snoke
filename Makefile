@@ -1,7 +1,7 @@
 CC = g++ -std=c++11
 
 #The Target Binary Program
-TARGET      := mygame
+TARGET      := Snoke
 
 #The Directories, Source, Includes, Objects, Binary and Resources
 BUILDDIR    := obj
@@ -66,11 +66,11 @@ directories:
 #Clean only Objecst
 cleanup:
 	$(shell rm -rf $(BUILDDIR))
-	$(shell rm -rf $(EXTRADIRS))
 
 #Full Clean, Objects and Binaries
 clean: cleanup
 	$(shell rm -rf $(TARGETDIR))
+	$(shell rm -rf $(EXTRADIRS))
 
 #Pull in dependency info for *existing* .o files
 -include $(OBJECTS:.$(OBJEXT)=.$(DEPEXT))
