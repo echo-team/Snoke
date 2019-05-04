@@ -1,6 +1,5 @@
 var class_point =
 [
-    [ "operator=", "class_point.html#ae79dbcec54d7b38977052032849c92cf", null ],
     [ "operator==", "class_point.html#ab3990459d2a699f26b177d60b15333cd", null ],
     [ "style", "class_point.html#a4bcb4c7daa219001646a555fdc1a08f7", null ],
     [ "x", "class_point.html#a5309894db6c0ddb1637e9bf06fdc83df", null ],

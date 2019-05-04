@@ -254,6 +254,7 @@ Generating caller graph for function Game:/home/travis/build/echo-team/Snoke/Lib
 /home/travis/build/echo-team/Snoke/Libraries/Interface/navigator.cpp:4: warning: The following parameters of Navigator::pushUnit(Widget *unit, int subunitsAmount) are not documented:
   parameter 'unit'
   parameter 'subunitsAmount'
+/home/travis/build/echo-team/Snoke/Libraries/Common/common.cpp:41: warning: argument 'ps' of command @param is not found in the argument list of Point::operator==(Point p)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:6: warning: Found unknown command `\callback'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
@@ -529,5 +530,5 @@ Patching output file 44/47
 Patching output file 45/47
 Patching output file 46/47
 Patching output file 47/47
-lookup cache used 479/65536 hits=4017 misses=582
+lookup cache used 472/65536 hits=3938 misses=575
 finished...
