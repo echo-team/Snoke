@@ -1,43 +1,33 @@
 language: cpp
-
-# This will run on Travis' 'new' container-based infrastructure
 sudo: false
-
-
-# Blacklist
 branches:
   except:
-    - gh-pages
-
-# Environment variables
+  - gh-pages
 env:
   global:
-    - GH_REPO_NAME: Snoke
-    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
-    - GH_REPO_REF: github.com/echo-team/Snoke.git
-
-# Install dependencies
+  - GH_REPO_NAME: Snoke
+  - DOXYFILE: "$TRAVIS_BUILD_DIR/Doxyfile"
+  - GH_REPO_REF: github.com/echo-team/Snoke.git
+  - secure: kdudIqyCXGqTbKhc5Qt6paljpLkGNdJVgfBp8RvInl5m6xZ/sxhmrI3IpTBgG4sIhoo6sWRDLYVWjRFSMfwgrPt9M4abBJ6puw6DuLf4t7z7dOCdeAz9nebAoXwSIo8Pd6NW4XKH/G7l9WKWlW8T8I6xzmH0gXrDOLrOZNfMZ0LibXlSJuPX5bmlyA16BqSGphFRh8FZevgYaSRGZcqZWLwNJUbHrS/Rki4rP5iCOZX33pHtzT0s5P5NKTO+XN7tR/TF8N1vuf/BlflzW8xpM7RAHXlFHmoKqNQOd47WC4z4TMdWq2DB/mixE5CBVJVrGgB58S5BUpjGh0CDORGG8f1hq+ZRwnquPncde8VWEZDmB25kyF25tK77qym0+WpeMje0rr1ZJuvpbH51xfJG2OQwxHXiv3mdM8lMwnUcucStYT0ZKfsBoKDwg6h/fGfdHX90SGeo74mFyWGKn4cWHwp5YHEepJ8p3x0x3VxhUrFbva/FqQPFku7e9YvqYf/X8nncSutawACj/DjrU9BOzHcTBdnYGpBjT6EmSveQHGZgBNEg15DC1cNDuUgCYBah6xw9lfv3h21QQuTCfFzT2v6t5NaUYYbuPLIQQiLyQB78OxfKjlVfyz/Rv5dyZMkmWQuaTSq6KAqRNzDKPhGlx97KlnfLNZxEqrWFRsav6V4=
 addons:
   sonarcloud:
-    organization: "echo-team"
+    organization: echo-team
     token:
-      secure: $SONAR_TOKEN
+      secure: "$SONAR_TOKEN"
   apt:
     packages:
-      - doxygen
-      - doxygen-doc
-      - doxygen-latex
-      - doxygen-gui
-      - graphviz
-
-# Build your code e.g. by calling make
+    - doxygen
+    - doxygen-doc
+    - doxygen-latex
+    - doxygen-gui
+    - graphviz
 script:
-  - make
-
-# Generate and deploy documentation
+- make
 after_success:
-  - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
-  - sonar-scanner
-  - cd $TRAVIS_BUILD_DIR
-  - chmod +x generateDocumentationAndDeploy.sh
-  - ./generateDocumentationAndDeploy.sh
+- build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+- sonar-scanner
+- cd $TRAVIS_BUILD_DIR
+- chmod +x generateDocumentationAndDeploy.sh
+- "./generateDocumentationAndDeploy.sh"
+password:
+  secure: TYGmGgIgXI6d7a2DZq1Fy4HogMFNLUpHPcyt3cHYQqxdlROuefFcAtnuOvsVIQUrukzMG3VqvrfxYPxqt1yDIXlE4HzxFoZX8nt82KGzMLe4fZ0VMyRqq0RPZpdIYbgFRm+zzb5VgvNTiFWc46scXzl7nyPW17/IBFQAIUPuFCx2+TN4f4AhGR5/lGMTtYbwf/U8q7QRnMOwQOpZwKuThJUUQ/4UNP4oSzVA0AdCbgw/I/y9aMZS1HtlgSfU4KBZn4nI8alFpww9dKU0b7rN2kekHDmF8zMOEr+N6IQBDm0sMVG/UphJfh7AV4LZfIW8gjhJk/1oXMIUbgb6+GmJUrKRLinZp7b6M4UID0jusaJpS0l/aYdvV0tr5a+fArxFWLQnWSuSBP3QBsBCPmo4LBgDe4ICfSDEWom5NeVbA3+hW7ylqpg0O804jrUMwtrvvuva0FhJ3l30WSfbB+KVnbA/CNWWYZRwuxfjlkgmDU7BOfHDkhGZKEb7oP0WXaEPSG885Ge4eFv3uz+MQgOTw6aLmNG/CIb14Dgn2lcty4Tt7YRPK93o4o6KHICZ5XwYp8kEot/VTuo/JrcWLEp+MyjrCgUTHJlBnQ3aeOTGESIDaHPSf4c/WeLufaBxo4IWXTnHcDoZUz8kHNBg0p6bA+/MphzrnhibFAFEM8of/HA=
