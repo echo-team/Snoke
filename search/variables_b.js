@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['reserved',['reserved',['../class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39',1,'Labyrinth']]],
-  ['rng',['rng',['../class_ball.html#ae3c68e21e0801b657b980380ab6a4bb2',1,'Ball']]]
+  ['position',['position',['../class_ball.html#abd10a53eda37a2c541ad5dfbbea27f81',1,'Ball']]],
+  ['prevdisplaymethod',['prevDisplayMethod',['../class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc',1,'Labyrinth']]],
+  ['prevend',['prevEnd',['../class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c',1,'Labyrinth']]],
+  ['prevstart',['prevStart',['../class_labyrinth.html#a23e08d55e3a627e8a0d828d05be03253',1,'Labyrinth']]]
 ];

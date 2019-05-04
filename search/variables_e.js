@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['widget',['widget',['../struct_navigate_unit.html#a04a97a78df45d0f2268b8352f64d43f5',1,'NavigateUnit']]],
-  ['width',['width',['../class_menu.html#a30ec519ffccb75388150c64175c4959b',1,'Menu']]]
+  ['units',['units',['../class_navigator.html#ad830f88cb2d1b38f7ff49797e244892d',1,'Navigator']]]
 ];

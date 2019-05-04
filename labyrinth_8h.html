@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('labyrinth_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,7 +103,6 @@ $(document).ready(function(){initNavTree('labyrinth_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">labyrinth.h File Reference</div>  </div>
@@ -142,20 +141,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class for containing and displaying the game field  <a href="class_labyrinth.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ad3e634fcbdb3cc2050d9e38f9c9dff82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#ad3e634fcbdb3cc2050d9e38f9c9dff82">DISPFULL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ad3e634fcbdb3cc2050d9e38f9c9dff82"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth can fit and was redrawed  <a href="#ad3e634fcbdb3cc2050d9e38f9c9dff82">More...</a><br/></td></tr>
-<tr class="separator:ad3e634fcbdb3cc2050d9e38f9c9dff82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909ada092a672a8086d0fa5d12acd8c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#a909ada092a672a8086d0fa5d12acd8c8">DISPPART</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:a909ada092a672a8086d0fa5d12acd8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth doesn't fit, so we are displaying it partialy  <a href="#a909ada092a672a8086d0fa5d12acd8c8">More...</a><br/></td></tr>
-<tr class="separator:a909ada092a672a8086d0fa5d12acd8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fa982c0792158099a41e7002db015b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#ad9fa982c0792158099a41e7002db015b">DISPUPD</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ad9fa982c0792158099a41e7002db015b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points  <a href="#ad9fa982c0792158099a41e7002db015b">More...</a><br/></td></tr>
-<tr class="separator:ad9fa982c0792158099a41e7002db015b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a7bc6aacba4f5847ff05723bf3a048717"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a> = 0</td></tr>
+<tr class="memdesc:a7bc6aacba4f5847ff05723bf3a048717"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth can fit and was redrawed  <a href="#a7bc6aacba4f5847ff05723bf3a048717">More...</a><br/></td></tr>
+<tr class="separator:a7bc6aacba4f5847ff05723bf3a048717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54605b7004ca75a5a728263d85740db3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#a54605b7004ca75a5a728263d85740db3">DISPPART</a> = 1</td></tr>
+<tr class="memdesc:a54605b7004ca75a5a728263d85740db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth doesn't fit, so we are displaying it partialy  <a href="#a54605b7004ca75a5a728263d85740db3">More...</a><br/></td></tr>
+<tr class="separator:a54605b7004ca75a5a728263d85740db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed107038ab6f622e95f97faf37031246"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#aed107038ab6f622e95f97faf37031246">DISPUPD</a> = 2</td></tr>
+<tr class="memdesc:aed107038ab6f622e95f97faf37031246"><td class="mdescLeft">&#160;</td><td class="mdescRight">the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points  <a href="#aed107038ab6f622e95f97faf37031246">More...</a><br/></td></tr>
+<tr class="separator:aed107038ab6f622e95f97faf37031246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbfea9c219063c65d29c55f3f4d7673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinth_8h.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a></td></tr>
 <tr class="separator:a6fbfea9c219063c65d29c55f3f4d7673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -167,13 +163,13 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2019 </dd></dl>
 
 <p>Definition in file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ad3e634fcbdb3cc2050d9e38f9c9dff82"></a>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a7bc6aacba4f5847ff05723bf3a048717"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DISPFULL&#160;&#160;&#160;0</td>
+          <td class="memname">const int DISPFULL = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,12 +180,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a909ada092a672a8086d0fa5d12acd8c8"></a>
+<a class="anchor" id="a54605b7004ca75a5a728263d85740db3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DISPPART&#160;&#160;&#160;1</td>
+          <td class="memname">const int DISPPART = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,12 +196,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad9fa982c0792158099a41e7002db015b"></a>
+<a class="anchor" id="aed107038ab6f622e95f97faf37031246"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DISPUPD&#160;&#160;&#160;2</td>
+          <td class="memname">const int DISPUPD = 2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,7 +212,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a6fbfea9c219063c65d29c55f3f4d7673"></a>
 <div class="memitem">
 <div class="memproto">

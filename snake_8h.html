@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('snake_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,7 +103,6 @@ $(document).ready(function(){initNavTree('snake_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">snake.h File Reference</div>  </div>
@@ -140,44 +139,41 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the <a class="el" href="class_snake.html" title="Describes the Snake entity of the game. ">Snake</a> entity of the game.  <a href="class_snake.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aa33596009188082bf5c53196dc46c1c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#aa33596009188082bf5c53196dc46c1c9">WALLUP</a>&#160;&#160;&#160;-3</td></tr>
-<tr class="memdesc:aa33596009188082bf5c53196dc46c1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the upper boundary of the game field  <a href="#aa33596009188082bf5c53196dc46c1c9">More...</a><br/></td></tr>
-<tr class="separator:aa33596009188082bf5c53196dc46c1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4310776ca7a4ffd967688a51bd332564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a4310776ca7a4ffd967688a51bd332564">WALLBOT</a>&#160;&#160;&#160;+3</td></tr>
-<tr class="memdesc:a4310776ca7a4ffd967688a51bd332564"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the bottom boundary of the game field  <a href="#a4310776ca7a4ffd967688a51bd332564">More...</a><br/></td></tr>
-<tr class="separator:a4310776ca7a4ffd967688a51bd332564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac553e9349e47b0c78fa2599f444ec28e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#ac553e9349e47b0c78fa2599f444ec28e">WALLLEFT</a>&#160;&#160;&#160;-4</td></tr>
-<tr class="memdesc:ac553e9349e47b0c78fa2599f444ec28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the left boundary of the game field  <a href="#ac553e9349e47b0c78fa2599f444ec28e">More...</a><br/></td></tr>
-<tr class="separator:ac553e9349e47b0c78fa2599f444ec28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd13064744e74a5412e35cdab54445a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#acd13064744e74a5412e35cdab54445a5">WALLRIGHT</a>&#160;&#160;&#160;+4</td></tr>
-<tr class="memdesc:acd13064744e74a5412e35cdab54445a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the right boundary of the game field  <a href="#acd13064744e74a5412e35cdab54445a5">More...</a><br/></td></tr>
-<tr class="separator:acd13064744e74a5412e35cdab54445a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc125d72542340b87ea94a51b78e53a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a2bc125d72542340b87ea94a51b78e53a">COLL</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memdesc:a2bc125d72542340b87ea94a51b78e53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with a non-boundary <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game field  <a href="#a2bc125d72542340b87ea94a51b78e53a">More...</a><br/></td></tr>
-<tr class="separator:a2bc125d72542340b87ea94a51b78e53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b0504d94e9e938aac8eb84396362823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a3b0504d94e9e938aac8eb84396362823">NOCOLL</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:a3b0504d94e9e938aac8eb84396362823"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is NOT intersecting with any <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game labyrinth  <a href="#a3b0504d94e9e938aac8eb84396362823">More...</a><br/></td></tr>
-<tr class="separator:a3b0504d94e9e938aac8eb84396362823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56509f77cfe531ba3c43f75ad9fde5f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a56509f77cfe531ba3c43f75ad9fde5f0">BALL</a>&#160;&#160;&#160;7</td></tr>
-<tr class="memdesc:a56509f77cfe531ba3c43f75ad9fde5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a>  <a href="#a56509f77cfe531ba3c43f75ad9fde5f0">More...</a><br/></td></tr>
-<tr class="separator:a56509f77cfe531ba3c43f75ad9fde5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdf9813c66bb7495db1e2414044d96c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a6cdf9813c66bb7495db1e2414044d96c">MVRIGHT</a>&#160;&#160;&#160;+1</td></tr>
-<tr class="memdesc:a6cdf9813c66bb7495db1e2414044d96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving right  <a href="#a6cdf9813c66bb7495db1e2414044d96c">More...</a><br/></td></tr>
-<tr class="separator:a6cdf9813c66bb7495db1e2414044d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ceedd55e8001a9ba00bf83d451296e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#ae8ceedd55e8001a9ba00bf83d451296e">MVDOWN</a>&#160;&#160;&#160;+2</td></tr>
-<tr class="memdesc:ae8ceedd55e8001a9ba00bf83d451296e"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving down  <a href="#ae8ceedd55e8001a9ba00bf83d451296e">More...</a><br/></td></tr>
-<tr class="separator:ae8ceedd55e8001a9ba00bf83d451296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace318e66f459de3d2d68956a3d61f26e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#ace318e66f459de3d2d68956a3d61f26e">MVLEFT</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="memdesc:ace318e66f459de3d2d68956a3d61f26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving left  <a href="#ace318e66f459de3d2d68956a3d61f26e">More...</a><br/></td></tr>
-<tr class="separator:ace318e66f459de3d2d68956a3d61f26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ad92327aa2ea7f5cb9fa4c96ceb62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#aa9ad92327aa2ea7f5cb9fa4c96ceb62d">MVUP</a>&#160;&#160;&#160;-2</td></tr>
-<tr class="memdesc:aa9ad92327aa2ea7f5cb9fa4c96ceb62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving up  <a href="#aa9ad92327aa2ea7f5cb9fa4c96ceb62d">More...</a><br/></td></tr>
-<tr class="separator:aa9ad92327aa2ea7f5cb9fa4c96ceb62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a9d012a7892c18d533074726de6b7a90f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a9d012a7892c18d533074726de6b7a90f">WALLUP</a> = -3</td></tr>
+<tr class="memdesc:a9d012a7892c18d533074726de6b7a90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the upper boundary of the game field  <a href="#a9d012a7892c18d533074726de6b7a90f">More...</a><br/></td></tr>
+<tr class="separator:a9d012a7892c18d533074726de6b7a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87d50d453d70cca9614c43e3430b5a2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#ab87d50d453d70cca9614c43e3430b5a2">WALLBOT</a> = +3</td></tr>
+<tr class="memdesc:ab87d50d453d70cca9614c43e3430b5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the bottom boundary of the game field  <a href="#ab87d50d453d70cca9614c43e3430b5a2">More...</a><br/></td></tr>
+<tr class="separator:ab87d50d453d70cca9614c43e3430b5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62613e4063ee9c0c88bfef1dd243c105"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a62613e4063ee9c0c88bfef1dd243c105">WALLLEFT</a> = -4</td></tr>
+<tr class="memdesc:a62613e4063ee9c0c88bfef1dd243c105"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the left boundary of the game field  <a href="#a62613e4063ee9c0c88bfef1dd243c105">More...</a><br/></td></tr>
+<tr class="separator:a62613e4063ee9c0c88bfef1dd243c105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e890b2780a9e5fa8a8782ce3638e08f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a4e890b2780a9e5fa8a8782ce3638e08f">WALLRIGHT</a> = +4</td></tr>
+<tr class="memdesc:a4e890b2780a9e5fa8a8782ce3638e08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the right boundary of the game field  <a href="#a4e890b2780a9e5fa8a8782ce3638e08f">More...</a><br/></td></tr>
+<tr class="separator:a4e890b2780a9e5fa8a8782ce3638e08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a149ac26a0e57c1aa7e262b5a58a854"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a1a149ac26a0e57c1aa7e262b5a58a854">COLL</a> = 5</td></tr>
+<tr class="memdesc:a1a149ac26a0e57c1aa7e262b5a58a854"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with a non-boundary <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game field  <a href="#a1a149ac26a0e57c1aa7e262b5a58a854">More...</a><br/></td></tr>
+<tr class="separator:a1a149ac26a0e57c1aa7e262b5a58a854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322c7b98f8a9954421a0ae07dd4c636d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a322c7b98f8a9954421a0ae07dd4c636d">NOCOLL</a> = 6</td></tr>
+<tr class="memdesc:a322c7b98f8a9954421a0ae07dd4c636d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is NOT intersecting with any <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game labyrinth  <a href="#a322c7b98f8a9954421a0ae07dd4c636d">More...</a><br/></td></tr>
+<tr class="separator:a322c7b98f8a9954421a0ae07dd4c636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d0bede78018beb3759ccd861a20d8f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a43d0bede78018beb3759ccd861a20d8f">BALL</a> = 7</td></tr>
+<tr class="memdesc:a43d0bede78018beb3759ccd861a20d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the tested segment is intersecting with the <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a>  <a href="#a43d0bede78018beb3759ccd861a20d8f">More...</a><br/></td></tr>
+<tr class="separator:a43d0bede78018beb3759ccd861a20d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5316fdb0d73a9eb88099fe8cd8cceac2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a5316fdb0d73a9eb88099fe8cd8cceac2">MVRIGHT</a> = +1</td></tr>
+<tr class="memdesc:a5316fdb0d73a9eb88099fe8cd8cceac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving right  <a href="#a5316fdb0d73a9eb88099fe8cd8cceac2">More...</a><br/></td></tr>
+<tr class="separator:a5316fdb0d73a9eb88099fe8cd8cceac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85abdf3a22dabb48802f10d0a411eeac"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a85abdf3a22dabb48802f10d0a411eeac">MVDOWN</a> = +2</td></tr>
+<tr class="memdesc:a85abdf3a22dabb48802f10d0a411eeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving down  <a href="#a85abdf3a22dabb48802f10d0a411eeac">More...</a><br/></td></tr>
+<tr class="separator:a85abdf3a22dabb48802f10d0a411eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b47deddb3a3c2a3219f96ce5b79754"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a55b47deddb3a3c2a3219f96ce5b79754">MVLEFT</a> = -1</td></tr>
+<tr class="memdesc:a55b47deddb3a3c2a3219f96ce5b79754"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving left  <a href="#a55b47deddb3a3c2a3219f96ce5b79754">More...</a><br/></td></tr>
+<tr class="separator:a55b47deddb3a3c2a3219f96ce5b79754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd4d8521ed002253bd2a3a332e6fea1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#abdd4d8521ed002253bd2a3a332e6fea1">MVUP</a> = -2</td></tr>
+<tr class="memdesc:abdd4d8521ed002253bd2a3a332e6fea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">snake's head is moving up  <a href="#abdd4d8521ed002253bd2a3a332e6fea1">More...</a><br/></td></tr>
+<tr class="separator:abdd4d8521ed002253bd2a3a332e6fea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbfea9c219063c65d29c55f3f4d7673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="snake_8h.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a></td></tr>
 <tr class="separator:a6fbfea9c219063c65d29c55f3f4d7673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -189,13 +185,13 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2019 </dd></dl>
 
 <p>Definition in file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a56509f77cfe531ba3c43f75ad9fde5f0"></a>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a43d0bede78018beb3759ccd861a20d8f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BALL&#160;&#160;&#160;7</td>
+          <td class="memname">const int BALL = 7</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,12 +202,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2bc125d72542340b87ea94a51b78e53a"></a>
+<a class="anchor" id="a1a149ac26a0e57c1aa7e262b5a58a854"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COLL&#160;&#160;&#160;5</td>
+          <td class="memname">const int COLL = 5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,151 +218,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae8ceedd55e8001a9ba00bf83d451296e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MVDOWN&#160;&#160;&#160;+2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>snake's head is moving down </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00055">55</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ace318e66f459de3d2d68956a3d61f26e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MVLEFT&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>snake's head is moving left </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00059">59</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6cdf9813c66bb7495db1e2414044d96c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MVRIGHT&#160;&#160;&#160;+1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>snake's head is moving right </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00051">51</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa9ad92327aa2ea7f5cb9fa4c96ceb62d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MVUP&#160;&#160;&#160;-2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>snake's head is moving up </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00063">63</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3b0504d94e9e938aac8eb84396362823"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NOCOLL&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the tested segment is NOT intersecting with any <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game labyrinth </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00042">42</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4310776ca7a4ffd967688a51bd332564"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WALLBOT&#160;&#160;&#160;+3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the tested segment is intersecting with the bottom boundary of the game field </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00026">26</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac553e9349e47b0c78fa2599f444ec28e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WALLLEFT&#160;&#160;&#160;-4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the tested segment is intersecting with the left boundary of the game field </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00030">30</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acd13064744e74a5412e35cdab54445a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WALLRIGHT&#160;&#160;&#160;+4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the tested segment is intersecting with the right boundary of the game field </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00034">34</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa33596009188082bf5c53196dc46c1c9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WALLUP&#160;&#160;&#160;-3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the tested segment is intersecting with the upper boundary of the game field </p>
-
-<p>Definition at line <a class="el" href="snake_8h_source.html#l00022">22</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a6fbfea9c219063c65d29c55f3f4d7673"></a>
 <div class="memitem">
 <div class="memproto">
@@ -379,6 +230,150 @@ Variables</h2></td></tr>
 <p>size of a game field(x, y) </p>
 
 <p>Definition at line <a class="el" href="game_8cpp_source.html#l00017">17</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85abdf3a22dabb48802f10d0a411eeac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MVDOWN = +2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>snake's head is moving down </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00055">55</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55b47deddb3a3c2a3219f96ce5b79754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MVLEFT = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>snake's head is moving left </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00059">59</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5316fdb0d73a9eb88099fe8cd8cceac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MVRIGHT = +1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>snake's head is moving right </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00051">51</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdd4d8521ed002253bd2a3a332e6fea1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int MVUP = -2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>snake's head is moving up </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00063">63</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a322c7b98f8a9954421a0ae07dd4c636d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NOCOLL = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the tested segment is NOT intersecting with any <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the game labyrinth </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00042">42</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab87d50d453d70cca9614c43e3430b5a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int WALLBOT = +3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the tested segment is intersecting with the bottom boundary of the game field </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00026">26</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62613e4063ee9c0c88bfef1dd243c105"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int WALLLEFT = -4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the tested segment is intersecting with the left boundary of the game field </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00030">30</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e890b2780a9e5fa8a8782ce3638e08f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int WALLRIGHT = +4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the tested segment is intersecting with the right boundary of the game field </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00034">34</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d012a7892c18d533074726de6b7a90f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int WALLUP = -3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the tested segment is intersecting with the upper boundary of the game field </p>
+
+<p>Definition at line <a class="el" href="snake_8h_source.html#l00022">22</a> of file <a class="el" href="snake_8h_source.html">snake.h</a>.</p>
 
 </div>
 </div>

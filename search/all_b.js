@@ -5,5 +5,5 @@ var searchData=
   ['navigator',['Navigator',['../class_navigator.html',1,'Navigator'],['../class_navigator.html#a59230ab4698882f754d5ce275a1a4030',1,'Navigator::Navigator()']]],
   ['navigator_2ecpp',['navigator.cpp',['../navigator_8cpp.html',1,'']]],
   ['navigator_2eh',['navigator.h',['../navigator_8h.html',1,'']]],
-  ['nocoll',['NOCOLL',['../snake_8h.html#a3b0504d94e9e938aac8eb84396362823',1,'snake.h']]]
+  ['nocoll',['NOCOLL',['../snake_8h.html#a322c7b98f8a9954421a0ae07dd4c636d',1,'snake.h']]]
 ];
