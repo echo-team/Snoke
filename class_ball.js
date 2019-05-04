@@ -1,6 +1,6 @@
 var class_ball =
 [
-    [ "generateBall", "class_ball.html#a60fd40459426366242d18d85b3b50c2c", null ],
+    [ "generateBall", "class_ball.html#a72c944149264221e2857c8b4ca72c502", null ],
     [ "getCoords", "class_ball.html#a14b9a607402be58e7a0a0ab053df5f82", null ],
     [ "init", "class_ball.html#a1907f13fdfb320a19180efec2a56e39c", null ],
     [ "distributionX", "class_ball.html#a558a48196bdb4ea389519ab7c0138216", null ],

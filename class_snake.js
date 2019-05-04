@@ -1,12 +1,12 @@
 var class_snake =
 [
-    [ "checkIntersection", "class_snake.html#a7df802733cb62081ea360bb81ba9f304", null ],
+    [ "checkIntersection", "class_snake.html#a3b4362db19dfcb62218a004cb58d4d9c", null ],
     [ "checkWisely", "class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb", null ],
     [ "getCoords", "class_snake.html#a62fa59de03f60c23f6d1100c53594d71", null ],
     [ "getDirection", "class_snake.html#a2656a9a4490cbb70d305c323269cc5bd", null ],
     [ "getHeadCoords", "class_snake.html#a0235581bc3d6399f4fd2287669f93cee", null ],
     [ "init", "class_snake.html#a953fb7b8be521f651989bb53323e89ec", null ],
-    [ "move", "class_snake.html#a6181d41b0920aff3fda1a90d59e8d382", null ],
+    [ "move", "class_snake.html#aab5a702610c61d502d36c5673a3a8410", null ],
     [ "moveBack", "class_snake.html#a577892c68b457316f7a9f3944c464569", null ],
     [ "moveHead", "class_snake.html#a59b2f5b18ab563d1583dfb15064784a0", null ],
     [ "setDirection", "class_snake.html#a151d9cab8233d38524c09642d079356a", null ],

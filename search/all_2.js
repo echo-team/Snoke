@@ -2,7 +2,7 @@ var searchData=
 [
   ['change',['change',['../class_game.html#a87f9c54e60a724de2644769cd917dbce',1,'Game']]],
   ['changesize',['changeSize',['../class_game.html#ae959d08e508fcef98dd07a2b9cd82e65',1,'Game']]],
-  ['checkintersection',['checkIntersection',['../class_snake.html#a7df802733cb62081ea360bb81ba9f304',1,'Snake']]],
+  ['checkintersection',['checkIntersection',['../class_snake.html#a3b4362db19dfcb62218a004cb58d4d9c',1,'Snake']]],
   ['checkwisely',['checkWisely',['../class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb',1,'Snake']]],
   ['coll',['COLL',['../snake_8h.html#a1a149ac26a0e57c1aa7e262b5a58a854',1,'snake.h']]],
   ['common_2ecpp',['common.cpp',['../common_8cpp.html',1,'']]],

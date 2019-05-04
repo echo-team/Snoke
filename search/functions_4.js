@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['generateball',['generateBall',['../class_ball.html#a60fd40459426366242d18d85b3b50c2c',1,'Ball']]],
+  ['generateball',['generateBall',['../class_ball.html#a72c944149264221e2857c8b4ca72c502',1,'Ball']]],
   ['getconsolesize',['getConsoleSize',['../common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp'],['../common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp']]],
   ['getcoords',['getCoords',['../class_ball.html#a14b9a607402be58e7a0a0ab053df5f82',1,'Ball::getCoords()'],['../class_snake.html#a62fa59de03f60c23f6d1100c53594d71',1,'Snake::getCoords()']]],
   ['getdirection',['getDirection',['../class_snake.html#a2656a9a4490cbb70d305c323269cc5bd',1,'Snake']]],

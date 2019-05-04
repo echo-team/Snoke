@@ -211,7 +211,13 @@ Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::init
 Generating docs for compound Game...
 Generating call graph for function Game::init
-Generating caller graph for function Game:/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
+Generating caller graph for function Game:/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:58: warning: argument 'snake' of command @param is not found in the argument list of Labyrinth::addSnake(Snake *aSnake)
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:58: warning: The following parameters of Labyrinth::addSnake(Snake *aSnake) are not documented:
+  parameter 'aSnake'
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
+/home/travis/build/echo-team/Snoke/Libraries/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
+  parameter 'fieldSize'
+/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
@@ -529,5 +535,5 @@ Patching output file 44/47
 Patching output file 45/47
 Patching output file 46/47
 Patching output file 47/47
-lookup cache used 475/65536 hits=4119 misses=578
+lookup cache used 475/65536 hits=4148 misses=578
 finished...
