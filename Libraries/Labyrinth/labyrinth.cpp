@@ -393,14 +393,14 @@ bool Labyrinth::save(char name[MAXLINE])
         /*
          * Putting a message of successful writing
          */
-        sprintf(strout, "Succesfully saved to %s", name);
+        snprintf(strout, sizeof(strout), "Succesfully saved to %s", name);
         mvaddstr(gameFieldSize.y / 2, 5, strout);
         return true;
     }
     /*
      * Putting a message of an occured error
      */
-    sprintf(strout, "Couldn't save to %s", name);
+    snprintf(strout, sizeof(strout), "Couldn't save to %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
     return false;
 }
@@ -457,14 +457,14 @@ bool Labyrinth::load(char name[MAXLINE])
         /*
          * Putting a message of successful loading
          */
-        sprintf(strout, "Succesfully loaded from %s", name);
+        snprintf(strout, sizeof(strout), "Succesfully loaded from %s", name);
         mvaddstr(gameFieldSize.y / 2, 5, strout);
         return 1;
     }
     /*
      * Putting message of occured error
      */
-    sprintf(strout, "Couldn't load from %s", name);
+    snprintf(strout, sizeof(strout), "Couldn't load from %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
     return 0;
 }

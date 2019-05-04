@@ -105,6 +105,7 @@ int Game::run()
                 labyrinth.save(fName);
                 labyrinth.displayHandler();
                 mSleep(speed * 2);
+                labyrinth.displayHandler(NULL, -1, DISPFULL);
                 continue;
         }
         if (flag)

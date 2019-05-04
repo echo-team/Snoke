@@ -79,7 +79,6 @@ clean: cleanup
 #Link
 $(TARGET): $(OBJECTS)
 	$(CC) -o $(TARGETDIR)/$(TARGET) $^ $(LIB)
-	make cleanup
 
 $(BUILDDIR)/%.$(OBJEXT): %.$(SRCEXT)
 	$(CC) -c $(CFLAGS) -o $@ $<
