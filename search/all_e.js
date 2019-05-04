@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['point',['Point',['../common_8h.html#aa9cfdb80b4ca12013a2de8a3b9b97981',1,'common.h']]],
-  ['pointstyle',['PointStyle',['../common_8h.html#afd9cb36d6ef309c77ea1e3177e19c623',1,'common.h']]],
-  ['position',['position',['../class_ball.html#abd10a53eda37a2c541ad5dfbbea27f81',1,'Ball']]],
-  ['prevdisplaymethod',['prevDisplayMethod',['../class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc',1,'Labyrinth']]],
-  ['prevend',['prevEnd',['../class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c',1,'Labyrinth']]],
-  ['prevstart',['prevStart',['../class_labyrinth.html#a23e08d55e3a627e8a0d828d05be03253',1,'Labyrinth']]],
-  ['pushunit',['pushUnit',['../class_navigator.html#a47967fc9bdfd276c98f8ed1c44d5dc46',1,'Navigator']]]
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['rempoint',['remPoint',['../class_labyrinth.html#a24d98083c011da23695425ec69d583a5',1,'Labyrinth']]],
+  ['reserved',['reserved',['../class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39',1,'Labyrinth']]],
+  ['rng',['rng',['../class_ball.html#ae3c68e21e0801b657b980380ab6a4bb2',1,'Ball']]],
+  ['run',['run',['../class_game.html#a99fb161fbbe87d25a8b73265a0611e58',1,'Game']]]
 ];

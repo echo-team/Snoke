@@ -1,6 +1,6 @@
 <map id="Labyrinth::remPoint" name="Labyrinth::remPoint">
 <area shape="rect" id="node2" href="$class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="190,5,365,32"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a02c42abb1b58fdf8a20b66bddd0bbe00" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,5,583,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,5,583,32"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,5,715,32"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,5,813,32"/>
 </map>

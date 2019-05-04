@@ -1,0 +1,5 @@
+<map id="Labyrinth::freeDisplay" name="Labyrinth::freeDisplay">
+<area shape="rect" id="node2" href="$class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="203,5,376,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="205,56,373,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="217,107,362,133"/>
+</map>

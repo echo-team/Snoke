@@ -1,0 +1,14 @@
+<map id="Labyrinth::displayHandler" name="Labyrinth::displayHandler">
+<area shape="rect" id="node2" href="$class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="225,56,399,83"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="236,157,388,184"/>
+<area shape="rect" id="node9" href="$class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="231,208,393,235"/>
+<area shape="rect" id="node13" href="$class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="237,259,387,285"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="467,56,602,83"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="467,5,602,32"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="670,56,789,83"/>
+<area shape="rect" id="node7" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="455,157,614,184"/>
+<area shape="rect" id="node8" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="477,107,592,133"/>
+<area shape="rect" id="node10" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="462,208,607,235"/>
+<area shape="rect" id="node11" href="$class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="451,259,619,285"/>
+<area shape="rect" id="node12" href="$class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="448,309,621,336"/>
+</map>

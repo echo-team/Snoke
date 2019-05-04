@@ -1,5 +1,7 @@
 <map id="Labyrinth::displayFull" name="Labyrinth::displayFull">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a02c42abb1b58fdf8a20b66bddd0bbe00" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="201,5,370,32"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="419,5,501,32"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="549,5,600,32"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="200,5,363,32"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="207,56,356,83"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="411,31,581,57"/>
+<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="629,31,712,57"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="760,31,811,57"/>
 </map>

@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['fg',['fg',['../struct___point_style.html#aad357bccd6e6759fc8575d3354d2bc7b',1,'_PointStyle']]],
-  ['field',['field',['../struct_side_button.html#afd703657d0b75b20a7ca1d2c3147ec34',1,'SideButton']]],
-  ['focus',['focus',['../class_widget.html#ac395fbcfd90f5a33a4bb2ca1d83631ca',1,'Widget::focus()'],['../class_menu.html#ac5ec365a1916cc9cbd233063544588d7',1,'Menu::focus()']]]
+  ['game',['Game',['../class_game.html',1,'']]],
+  ['game_2ecpp',['game.cpp',['../game_8cpp.html',1,'']]],
+  ['game_2eh',['game.h',['../game_8h.html',1,'']]],
+  ['gamefieldsize',['gameFieldSize',['../game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp'],['../labyrinth_8h.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp'],['../snake_8h.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp']]],
+  ['generateball',['generateBall',['../class_ball.html#a60fd40459426366242d18d85b3b50c2c',1,'Ball']]],
+  ['getconsolesize',['getConsoleSize',['../common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp'],['../common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp']]],
+  ['getcoords',['getCoords',['../class_ball.html#a14b9a607402be58e7a0a0ab053df5f82',1,'Ball::getCoords()'],['../class_snake.html#a62fa59de03f60c23f6d1100c53594d71',1,'Snake::getCoords()']]],
+  ['getdirection',['getDirection',['../class_snake.html#a2656a9a4490cbb70d305c323269cc5bd',1,'Snake']]],
+  ['getheadcoords',['getHeadCoords',['../class_snake.html#a0235581bc3d6399f4fd2287669f93cee',1,'Snake']]],
+  ['getsize',['getSize',['../class_logo.html#aeeefce0ee601c896c38b929b7a355616',1,'Logo']]]
 ];

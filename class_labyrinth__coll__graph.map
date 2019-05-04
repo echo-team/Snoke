@@ -1,7 +1,7 @@
 <map id="Labyrinth" name="Labyrinth">
-<area shape="rect" id="node2" href="$struct___point.html" title="Coordinates and style of the cell in console window. " alt="" coords="333,203,392,229"/>
-<area shape="rect" id="node3" href="$struct___point_style.html" title="Style of the cell in console window. " alt="" coords="137,179,226,205"/>
-<area shape="rect" id="node9" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="869,127,928,153"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="859,285,939,312"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="606,282,733,323"/>
+<area shape="rect" id="node8" href="$class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,129,219,156"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="832,89,912,116"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="582,58,709,99"/>
+<area shape="rect" id="node6" href="$class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="326,237,378,264"/>
+<area shape="rect" id="node9" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="843,175,901,201"/>
 </map>
