@@ -40,6 +40,7 @@ Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/La
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Screens
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/SideMenu
 Searching for files in directory /home/travis/build/echo-team/Snoke/Libraries/Snake
+Searching for files in directory /home/travis/build/echo-team/Snoke/obj
 Reading and parsing tag files
 Parsing files
 Preprocessing /home/travis/build/echo-team/Snoke/Libraries/Ball/ball.cpp...
@@ -210,9 +211,7 @@ Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::init
 Generating docs for compound Game...
 Generating call graph for function Game::init
-Generating caller graph for function Game::init
-Generating call graph for function Game::initBall
-Generating calle/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
+Generating caller graph for function Game:/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
@@ -265,7 +264,9 @@ Generating calle/home/travis/build/echo-team/Snoke/Libraries/Interface/logo.cpp:
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/Libraries/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-r graph for function Game::initBall
+:init
+Generating call graph for function Game::initBall
+Generating caller graph for function Game::initBall
 Generating call graph for function Game::initSnake
 Generating caller graph for function Game::initSnake
 Generating call graph for function Game::run
@@ -528,5 +529,5 @@ Patching output file 44/47
 Patching output file 45/47
 Patching output file 46/47
 Patching output file 47/47
-lookup cache used 478/65536 hits=4012 misses=581
+lookup cache used 479/65536 hits=4017 misses=582
 finished...
