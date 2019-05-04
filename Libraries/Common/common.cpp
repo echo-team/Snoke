@@ -1,32 +1,41 @@
+/**
+ * @file common.cpp
+ * @author Yegor Ignatov
+ * @brief shared functions realisation
+ * @version 0.1
+ * @date 2019-05-03
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
 #include "common.h"
 
 /**
- * Operation '<<' override for the Point type
- * @param  {std::ostream&} s - current ostream variable
- * @param  {Point}         p - a Point to print
- * @return {std::ostream&}
- * @override
+ * @brief   Operation "==" override for the Point class
+ * @param   p - the Point to compare with
+ * @return    - mark of equality
+ * @overload
  */
-std::ostream& operator << (std::ostream &s, Point p)
+bool Point::operator== (Point p)
+{
+    return (this->x == p.x && this->y == p.y);
+}
+
+/**
+ * @brief   Operation '<<' override for the Point class
+ * @param   s - current ostream variable
+ * @param   p - a Point to print
+ * @overload
+ */
+std::ostream& operator<< (std::ostream &s, Point p)
 {
     s << '(' << p.x << ',' << p.y << ')';
     return s;
 }
 
 /**
- * Operation "==" override for the Point type
- * @param  {Point} p1 - The first Point
- * @param  {Point} p2 - The second Point
- * @return {bool}
- */
-bool operator == (Point p1, Point p2)
-{
-    return (p1.x == p2.x and p1.y == p2.y);
-}
-
-/**
- * Cross-platform sleep function cover
- * @param {int} time - time the game will 'freeze' for in milliseconds
+ * @brief   Cross-platform sleep function cover
+ * @param   time - time the game will 'freeze' for in milliseconds
  */
 void mSleep(int time)
 {
@@ -43,11 +52,10 @@ void mSleep(int time)
 }
 
 /**
- * Check if Points is in the addition queue
- * @param  {Point}     p          - point to check
- * @param  {Point*[2]} change     - array of changed Points
- * @param  {int}       changeSize - size of the change array
- * @return {bool}
+ * @brief   Check if Points is in the addition queue
+ * @param   p          - point to check
+ * @param   change     - array of changed Points
+ * @param   changeSize - size of the change array
  */
 bool inAddChange(Point p, Point* change[2], int changeSize)
 {
@@ -62,11 +70,10 @@ bool inAddChange(Point p, Point* change[2], int changeSize)
 }
 
 /**
- * Check if the Point is in the remove queue
- * @param  {Point}     p          - point to check
- * @param  {Point*[2]} change     - array of changed Points
- * @param  {int}       changeSize - size of the change array
- * @return {bool}
+ * @brief   Check if the Point is in the remove queue
+ * @param   p          - point to check
+ * @param   change     - array of changed Points
+ * @param   changeSize - size of the change array
  */
 bool inRemChange(Point p, Point* change[2], int changeSize)
 {
@@ -81,8 +88,7 @@ bool inRemChange(Point p, Point* change[2], int changeSize)
 }
 
 /**
- * Gets size of current console screen in symdols
- * @return {Point} size
+ * @brief   Gets size of current console screen in symdols
  */
 Point getConsoleSize()
 {

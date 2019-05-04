@@ -1,8 +1,19 @@
+/**
+ * @file ball.cpp
+ * @author Yegor Ignatov
+ * @brief realisation of Ball class
+ * @version 0.1
+ * @date 2019-05-03
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
 #include "ball.h"
 
 /**
- * Initialization
- * @param {Point} fieldSize - the size of the game field(x, y)
+ * @brief   Initialization
+ * @param   fieldSize - the size of the game field(x, y)
+ * @return            - mark of successful initialization
  */
 bool Ball::init(Point fieldSize)
 {
@@ -10,40 +21,41 @@ bool Ball::init(Point fieldSize)
     rng.seed(seed_val);
     distributionX = *(new std::uniform_int_distribution<int>(0, fieldSize.x - 1));
     distributionY = *(new std::uniform_int_distribution<int>(0, fieldSize.y - 1));
+    position.style.letter = '0';
     return true;
 }
 
 /**
- * Generate the Ball
- * @param  {bool**} labyrinth - 2-dimensional array defying current state of every point of the game field (blocked or not)
- * @return {bool}             - mark of whether the ball was successfully generated
+ * @brief   Generate the Ball
+ * @param   labyrinth  - the current state of the labyrinth object for intersection checking
+ * @param   change     - 2-dimensional array of changes needed to be applied to the labyrinth
+ * @param   changeSize - max(len(change[0]), len(change[1])))
+ * @return             - mark of whether the ball was successfully generated
  */
-bool Ball::generateBall(bool** labyrinth, Point* change[2], int changeSize)
+bool Ball::generateBall(Labyrinth* labyrinth, Point* change[2], int changeSize)
 {
-    Point p;
-    /**
+    Point chance;
+    /*
      * Generate numbers until u get a free spot
      */
     while (1)
     {
-        p.x = distributionX(rng);
-        p.y = distributionY(rng);
-        if ((labyrinth[p.x][p.y] == false or inRemChange(p, change, changeSize)) and !inAddChange(p, change, changeSize))
+        chance.x = distributionX(rng);
+        chance.y = distributionY(rng);
+        if ((labyrinth->isFree(chance) || inRemChange(chance, change, changeSize)) && !inAddChange(chance, change, changeSize))
         {
             break;
         }
     }
-    position.x = p.x;
-    position.y = p.y;
-    return true; 
+    position.x = chance.x;
+    position.y = chance.y;
+    return true;
 }
 
 /**
- * Get the ball coords without giving the direct access
- * @return {Point} 
+ * @brief   Get the ball coords without giving the direct access
  */
 Point Ball::getCoords()
 {
     return position;
 }
-
