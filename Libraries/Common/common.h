@@ -25,7 +25,7 @@
 #include <unistd.h>
 #endif
 
-#define MAXLINE 256
+const int MAXLINE = 256;
 
 /**
  * @class PointStyle common.h

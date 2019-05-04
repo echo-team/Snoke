@@ -19,48 +19,48 @@
 /**
  * @brief   the tested segment is intersecting with the upper boundary of the game field
  */
-#define WALLUP -3
+const int WALLUP = -3;
 /**
  * @brief   the tested segment is intersecting with the bottom boundary of the game field
  */
-#define WALLBOT +3
+const int WALLBOT = +3;
 /**
  * @brief   the tested segment is intersecting with the left boundary of the game field
  */
-#define WALLLEFT -4
+const int WALLLEFT = -4;
 /**
  * @brief   the tested segment is intersecting with the right boundary of the game field
  */
-#define WALLRIGHT +4
+const int WALLRIGHT = +4;
 /**
  * @brief   the tested segment is intersecting with a non-boundary Point of the game field
  */
-#define COLL 5
+const int COLL = 5;
 /**
  * @brief   the tested segment is NOT intersecting with any Point of the game labyrinth
  */
-#define NOCOLL 6
+const int NOCOLL = 6;
 /**
  * @brief   the tested segment is intersecting with the Ball
  */
-#define BALL 7
+const int BALL = 7;
 
 /**
  * @brief   snake's head is moving right
  */
-#define MVRIGHT +1
+const int MVRIGHT = +1;
 /**
  * @brief   snake's head is moving down
  */
-#define MVDOWN +2
+const int MVDOWN = +2;
 /**
  * @brief   snake's head is moving left
  */
-#define MVLEFT -1
+const int MVLEFT = -1;
 /**
  * @brief   snake's head is moving up
  */
-#define MVUP -2
+const int MVUP = -2;
 
 /**
  * @var Point gameFieldSize

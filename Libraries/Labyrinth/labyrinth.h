@@ -22,15 +22,15 @@
 /**
  * @brief    the whole labyrinth can fit and was redrawed
  */
-#define DISPFULL 0
+const int DISPFULL = 0;
 /**
  * @brief    the whole labyrinth doesn't fit, so we are displaying it partialy
  */
-#define DISPPART 1
+const int DISPPART = 1;
 /**
  * @brief    the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
  */
-#define DISPUPD 2
+const int DISPUPD = 2;
 
 /**
 * @var Point gameFieldSize
