@@ -13,38 +13,39 @@
  * @brief   Sets the default values fro the variables as well as generating the labyritnh array with borders
  * @param   gameFieldSize - a size of the labyrinth
  */
-void Labyrinth::setLabyrinth(Point gameFieldSize)
+void Labyrinth::setLabyrinth(Point fieldSize)
 {
     /*
      * Creating the labyrinth and setting up the borders
      */
-    labyrinth = new char* [gameFieldSize.y];
-    for(int i = 0; i < gameFieldSize.y; i++)
+    labyrinth = new char* [fieldSize.y];
+    for(int i = 0; i < fieldSize.y; i++)
     {
-        labyrinth[i] = new char [gameFieldSize.x];
-        for(int j = 0; j < gameFieldSize.x; j++)
+        labyrinth[i] = new char [fieldSize.x];
+        for(int j = 0; j < fieldSize.x; j++)
         {
             labyrinth[i][j] = ' ';
         }
     }
-    for(int i = 0; i < gameFieldSize.x; i++)
+    for(int i = 0; i < fieldSize.x; i++)
     {
         labyrinth[0][i] = '-';
-        labyrinth[gameFieldSize.y - 1][i] = '-';
+        labyrinth[fieldSize.y - 1][i] = '-';
     }
-    for(int i = 0; i < gameFieldSize.y; i++)
+    for(int i = 0; i < fieldSize.y; i++)
     {
         labyrinth[i][0] = '|';
-        labyrinth[i][gameFieldSize.x - 1] = '|';
+        labyrinth[i][fieldSize.x - 1] = '|';
     }
 
     /*
      * Setting the default values for the Labyrinth properties
      */
-    Point leftTop, rightBot;
+    Point leftTop;
+    Point rightBot;
     leftTop.x = 0;
     leftTop.y = 0;
-    rightBot = gameFieldSize;
+    rightBot = fieldSize;
     this->start = leftTop;
     this->end = rightBot;
     this->prevStart = leftTop;
@@ -57,16 +58,16 @@ void Labyrinth::setLabyrinth(Point gameFieldSize)
  * @brief   Adding snake to the laburinth and getting the host snake(firest added snake)
  * @param   snake - a snake to add
  */
-void Labyrinth::addSnake(Snake* snake)
+void Labyrinth::addSnake(Snake* aSnake)
 {
     std::list<Point> currBody;
-    snake->getCoords(&currBody);
+    aSnake->getCoords(&currBody);
     for(auto it = currBody.begin(); it != currBody.end(); ++it)
     {
         addPoint(*it);
     }
     if(this->snake == NULL){
-        this->snake = snake;
+        this->snake = aSnake;
     }
 }
 
@@ -109,7 +110,8 @@ void Labyrinth::displayHandler(Point* change[2], int size, int displayMethod)
  */
 void Labyrinth::sizeHandler()
 {
-    Point head = this->snake->getHeadCoords(), currentSize = getConsoleSize();
+    Point head = this->snake->getHeadCoords();
+    Point currentSize = getConsoleSize();
 
     /*
      * Deciding how many columns can we display and where should we start
@@ -206,6 +208,10 @@ void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
             this->displayPartialy();
             break;
         }
+        default:
+        {
+            this->displayPartialy();
+        }
     }
 }
 
@@ -255,6 +261,10 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
             {
                 this->displayPartialy();
             }
+        }
+        default:
+        {
+            this->displayPartialy();
         }
     }
 }

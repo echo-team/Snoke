@@ -81,7 +81,7 @@ class Snake
         short direction;
         std::list<PointStyle> style;
         std::deque<Point> snakeBody;
-        short checkIntersection(Point check, Labyrinth laryrinth, Ball* ball);
+        short checkIntersection(Point check, Labyrinth* laryrinth, Ball* ball);
         short checkWisely(Point coords, Point bcoords);
         void moveHead(Point p, Point* change[2]);
         void moveBack(Point p, Point* cahnge[2]);
@@ -92,6 +92,6 @@ class Snake
         Point getHeadCoords();
         void setDirection(int dir = 0);
         short getDirection();
-        bool move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSize);
+        bool move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize);
 };
 #endif //SNAKE_H

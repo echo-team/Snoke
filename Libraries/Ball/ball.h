@@ -36,7 +36,7 @@ class Ball
 
     public:
         bool init(Point dim);
-        bool generateBall(Labyrinth labyrinth, Point* change[2], int changeSize);
+        bool generateBall(Labyrinth* labyrinth, Point* change[2], int changeSize);
         Point getCoords();
 };
 #endif

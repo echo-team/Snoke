@@ -32,7 +32,7 @@ bool Ball::init(Point fieldSize)
  * @param   changeSize - max(len(change[0]), len(change[1])))
  * @return             - mark of whether the ball was successfully generated
  */
-bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
+bool Ball::generateBall(Labyrinth* labyrinth, Point* change[2], int changeSize)
 {
     Point chance;
     /*
@@ -42,7 +42,7 @@ bool Ball::generateBall(Labyrinth labyrinth, Point* change[2], int changeSize)
     {
         chance.x = distributionX(rng);
         chance.y = distributionY(rng);
-        if ((labyrinth.isFree(chance) || inRemChange(chance, change, changeSize)) && !inAddChange(chance, change, changeSize))
+        if ((labyrinth->isFree(chance) || inRemChange(chance, change, changeSize)) && !inAddChange(chance, change, changeSize))
         {
             break;
         }

@@ -69,7 +69,7 @@ bool Snake::init(Point begin, short dir, int length)
  * @param   changeSize - max(len(change[0]), len(change[1])))
  * @return             - mark of whether there was a non-boundary non-ball collision
  */
-bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSize)
+bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize)
 {
     Point frCoords = snakeBody.front();
     Point bCoords = snakeBody.back();
@@ -132,6 +132,8 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
             ball->generateBall(labyrinth, change, changeSize);
             change[0][0] = ball->getCoords();
             break;
+        default:
+            break;
     }
 
     /*
@@ -153,6 +155,8 @@ bool Snake::move(Labyrinth labyrinth, Ball* ball, Point* change[2], int changeSi
                 change[1][0] = ball->getCoords();
                 ball->generateBall(labyrinth, change, changeSize);
                 change[0][0] = ball->getCoords();
+                break;
+            default:
                 break;
         }
     }
@@ -199,9 +203,9 @@ void Snake::moveBack(Point p, Point* change[2])
  * @param   ball      - a pointer to a Ball object(to check intersection with)
  * @return            - type of collision
  */
-short Snake::checkIntersection(Point check, Labyrinth labyrinth, Ball* ball)
+short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
 {
-    if (!labyrinth.isFree(check))
+    if (!labyrinth->isFree(check))
     {
         return checkWisely(check, ball->getCoords());
     }

@@ -119,7 +119,7 @@ int Game::run()
          * Moving the snake and getting the Points of a
          * labyrinth which are to be changed in change array
          */
-        flag = snake.move(labyrinth, &ball, change, changeSize) == 1;
+        flag = snake.move(&labyrinth, &ball, change, changeSize) == 1;
 
         /*
          * Updating labyrinth with change array Points
@@ -156,7 +156,7 @@ bool Game::initSnake(Point begin, int dir, int length)
 bool Game::initBall(Ball* ball)
 {
     ball->init(gameFieldSize);
-    bool flag = ball->generateBall(labyrinth, change, changeSize);
+    bool flag = ball->generateBall(&labyrinth, change, changeSize);
     labyrinth.addPoint(ball->getCoords());
     return flag;
 }
