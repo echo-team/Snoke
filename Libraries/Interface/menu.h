@@ -12,12 +12,12 @@
 class MenuItem : public Widget
 {
     private:
-        int x, y;
+        int x, y, width, height;
         const char* name;
 
     public:
         void draw();
-        MenuItem(const char* name, int x, int y);
+        MenuItem(const char* name, int x, int y, int width, int height);
 };
 
 /**

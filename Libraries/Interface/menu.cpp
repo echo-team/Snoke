@@ -12,7 +12,7 @@ void MenuItem::draw()
 /**
  * @constructor
  */
-MenuItem::MenuItem(const char* name, int x, int y) : x(x), y(y), name(name)
+MenuItem::MenuItem(const char* name, int x, int y, int width, int height) : x(x), y(y), width(width), height(height), name(name)
 {}
 
 /**
@@ -21,7 +21,7 @@ MenuItem::MenuItem(const char* name, int x, int y) : x(x), y(y), name(name)
  */
 void Menu::add(const char* name)
 {
-    this->add(new MenuItem(name, x + 2, y + this->childLength() * 2));
+    this->add(new MenuItem(name, x + (width - strlen(name)) / 2, y + this->childLength() * 2, strlen(name), 1));
 }
 
 /**
