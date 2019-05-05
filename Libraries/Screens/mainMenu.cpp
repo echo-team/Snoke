@@ -7,7 +7,7 @@ void MainMenu::draw()
 {
     Logo snoke(0, 0, {' ', COLOR_WHITE, COLOR_WHITE}, {' ', COLOR_BLACK, COLOR_RED}, 0);
     int menuHeight        = 12,
-        snokeBottomBorder = 2;
+        snokeBottomBorder = 3;
     Point consoleSize = getConsoleSize(),
           snokeSize   = snoke.getSize(),
           menuStartPoint, snokeStartPoint;
