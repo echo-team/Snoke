@@ -29,6 +29,7 @@ typedef std::function<void()> Listener;
  * @prop {Widget*}                                      ending         - pointer to the last child of current widget
  * @prop {Widget*}                                      nextWidget     - pointer to the previous sibling
  * @prop {Widget*}                                      previousWidget - pointer to the previous sibling
+ * @prop {unsigned short}                               length         - amount of children
  * @prop {unsigned char}                                events         - binary store for events could be dispatched at current widget
  * @prop {std::map<unsigned char, std::list<Listener>>} listeners      - store for event listeners
  */
@@ -40,6 +41,7 @@ class Widget
         Widget* ending;
         Widget* nextWidget;
         Widget* previousWidget;
+        unsigned short length;
         unsigned char events;
         std::map<unsigned char, std::list<Listener>> listeners;
 
@@ -54,10 +56,12 @@ class Widget
         void _previous(Widget* previousWidget);
         Widget* previous();
         void add(Widget* child);
+        unsigned short childLength();
         std::vector<Widget*> children();
         bool event(unsigned char name);
         void listener(unsigned char name, Listener function);
         void dispatch(unsigned char name);
+        Widget();
 };
 
 #endif

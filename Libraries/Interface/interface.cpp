@@ -97,9 +97,19 @@ void Widget::add(Widget* child)
         previousChild = previousChild->next();
     }
 
+    length++;
     previousChild->_next(child);
     this->_previous(previousChild);
     this->ending = child;
+}
+
+/**
+ * Returns amount of children
+ * @return {unsigned short}
+ */
+unsigned short Widget::childLength()
+{
+    return length;
 }
 
 /**
@@ -152,3 +162,9 @@ void Widget::dispatch(unsigned char name)
         (*function)();
     }
 }
+
+/**
+ * @constructor
+ */
+Widget::Widget() : parentWidget(NULL), start(NULL), ending(NULL), nextWidget(NULL), previousWidget(NULL), length(0)
+{}
