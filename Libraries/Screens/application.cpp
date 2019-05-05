@@ -30,7 +30,7 @@ void Application::execute()
                     currentWidget->dispatch(EVENT_FOCUS);
                     break;
 
-                case (13):
+                case (27):
 
                     esc = true;
                     break;
