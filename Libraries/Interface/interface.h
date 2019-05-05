@@ -25,7 +25,8 @@ typedef std::function<void()> Listener;
  * Basic class of the console widget (to store different widgets in one list)
  * Contains widgets tree for parsing events by Console class
  * @prop {Widget*}                                      parentWidget   - parent widget
- * @prop {Widget*}                                      firstChild     - pointer to the first child of current widget
+ * @prop {Widget*}                                      start          - pointer to the first child of current widget
+ * @prop {Widget*}                                      ending         - pointer to the last child of current widget
  * @prop {Widget*}                                      nextWidget     - pointer to the previous sibling
  * @prop {Widget*}                                      previousWidget - pointer to the previous sibling
  * @prop {unsigned char}                                events         - binary store for events could be dispatched at current widget
@@ -35,7 +36,8 @@ class Widget
 {
     public:
         Widget* parentWidget;
-        Widget* firstChild;
+        Widget* start;
+        Widget* ending;
         Widget* nextWidget;
         Widget* previousWidget;
         unsigned char events;
@@ -44,7 +46,8 @@ class Widget
     public:
         virtual void draw();
         void _parent(Widget* parentWidget);
-        Widget* child();
+        Widget* firstChild();
+        Widget* lastChild();
         Widget* parent();
         void _next(Widget* nextWidget);
         Widget* next();

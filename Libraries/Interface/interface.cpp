@@ -29,9 +29,18 @@ Widget* Widget::parent()
  * Returns first child of widget
  * @return {Widget*}
  */
-Widget* Widget::child()
+Widget* Widget::firstChild()
 {
-    return firstChild;
+    return start;
+}
+
+/**
+ * Returns last child of widget
+ * @return {Widget*}
+ */
+Widget* Widget::lastChild()
+{
+    return ending;
 }
 
 /**
@@ -76,13 +85,13 @@ Widget* Widget::previous()
  */
 void Widget::add(Widget* child)
 {
-    if (firstChild == NULL)
+    if (start == NULL)
     {
-        firstChild = child;
+        start = child;
         return;
     }
 
-    Widget* previousChild = firstChild;
+    Widget* previousChild = start;
     while (previousChild->next() != NULL)
     {
         previousChild = previousChild->next();
@@ -90,6 +99,7 @@ void Widget::add(Widget* child)
 
     previousChild->_next(child);
     this->_previous(previousChild);
+    this->ending = child;
 }
 
 /**
@@ -99,7 +109,7 @@ void Widget::add(Widget* child)
 std::vector<Widget*> Widget::children()
 {
     std::vector<Widget*> childWidgets;
-    Widget* child = firstChild;
+    Widget* child = start;
 
     while (child != NULL)
     {
