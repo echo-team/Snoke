@@ -4,20 +4,17 @@
 #include "../Interface/interface.h"
 
 /**
- * Manages the object model and
- * @prop {std::list<Widget*>} model - object model of the screen
+ * Manages the widget tree
+ * @prop {Widget*} root - pointer to the first vertex of screen widget tree
  */
 class Screen
 {
     private:
-        std::list<Widget*> model;
+        Widget* root;
 
     public:
-        void add(Widget* widget);
-        std::list<Widget*>::iterator first();
-        std::list<Widget*>::iterator previous(std::list<Widget*>::iterator current);
-        std::list<Widget*>::iterator next(std::list<Widget*>::iterator current);
         virtual void draw();
+        Screen();
 };
 
 #endif
