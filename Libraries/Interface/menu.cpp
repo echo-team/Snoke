@@ -1,12 +1,27 @@
 #include "menu.h"
 
 /**
+ * Draws menu item
+ */
+void MenuItem::draw()
+{
+    move(y, x);
+    printw(name);
+}
+
+/**
+ * @constructor
+ */
+MenuItem::MenuItem(const char* name, int x, int y) : x(x), y(y), name(name)
+{}
+
+/**
  * Adds button to the menu
  * @param {const char*} name - text drawn at the button
  */
-void Menu::addButton(const char* name)
+void Menu::add(const char* name)
 {
-    buttons.push_back({name});
+    this->add(new MenuItem(name, x + 2, y + this->childLength() * 2));
 }
 
 /**
@@ -38,13 +53,11 @@ void Menu::unfocus(int index)
  */
 void Menu::draw()
 {
-    int yCounter = y + 1;
-
-    for (std::list<MenuButton>::iterator currentButton = buttons.begin(); currentButton != buttons.end(); currentButton++)
+    Widget* current = firstChild();
+    while (current)
     {
-        move(yCounter, x + (2 + width - strlen(currentButton->name)) / 2);
-        printw(currentButton->name);
-        yCounter += 2;
+        current->draw();
+        current = current->next();
     }
 }
 
