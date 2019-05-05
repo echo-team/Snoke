@@ -10,7 +10,7 @@ void Application::execute()
     while (!esc)
     {
         int command = getch();
-        std::list<Widget*>::iterator tmp = currentWidget;
+        Widget* previous = currentWidget;
 
         if (command != ERR)
         {
@@ -19,25 +19,15 @@ void Application::execute()
                 case (KEY_UP):
 
                     currentWidget = currentScreen->previous(currentWidget);
-                    while (currentWidget != tmp && !(*currentWidget)->event(EVENT_FOCUS))
-                    {
-                        currentWidget = currentScreen->previous(currentWidget);
-                    }
-
-                    (*tmp)->dispatch(EVENT_UNFOCUS);
-                    (*currentWidget)->dispatch(EVENT_FOCUS);
+                    previous->dispatch(EVENT_UNFOCUS);
+                    currentWidget->dispatch(EVENT_FOCUS);
                     break;
 
                 case (KEY_DOWN):
 
                     currentWidget = currentScreen->next(currentWidget);
-                    while (currentWidget != tmp && !(*currentWidget)->event(EVENT_FOCUS))
-                    {
-                        currentWidget = currentScreen->next(currentWidget);
-                    }
-
-                    (*tmp)->dispatch(EVENT_UNFOCUS);
-                    (*currentWidget)->dispatch(EVENT_FOCUS);
+                    previous->dispatch(EVENT_UNFOCUS);
+                    currentWidget->dispatch(EVENT_FOCUS);
                     break;
 
                 case (13):

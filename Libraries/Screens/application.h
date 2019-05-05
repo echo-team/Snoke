@@ -22,7 +22,7 @@ class Application
         std::map<char*, Screen*> screens;
         std::list<Screen*> history;
         Screen* currentScreen;
-        std::list<Widget*>::iterator currentWidget;
+        Widget* currentWidget;
 
     public:
         static Application& instance();
