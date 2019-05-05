@@ -13,6 +13,7 @@ var searchData=
   ['sidemenu_2ecpp',['SideMenu.cpp',['../_side_menu_8cpp.html',1,'']]],
   ['sidemenu_2eh',['SideMenu.h',['../_side_menu_8h.html',1,'']]],
   ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]],
+  ['sleephandler',['sleepHandler',['../common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp'],['../common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp']]],
   ['snake',['Snake',['../class_snake.html',1,'Snake'],['../class_game.html#ab77bfcc312425811000819791ea7668e',1,'Game::snake()'],['../class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f',1,'Labyrinth::snake()']]],
   ['snake_2ecpp',['snake.cpp',['../snake_8cpp.html',1,'']]],
   ['snake_2eh',['snake.h',['../snake_8h.html',1,'']]],
