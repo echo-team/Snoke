@@ -3,6 +3,7 @@
 #include <functional>
 #include <map>
 #include <list>
+#include <vector>
 
 /**
  * Arguments for events methods
@@ -22,18 +23,34 @@ typedef std::function<void()> Listener;
 
 /**
  * Basic class of the console widget (to store different widgets in one list)
- * @prop {short}                                        _units    - amount of non-widget children
- * @prop {unsigned char}                                events    - binary store for events could be dispatched at current widget
- * @prop {std::map<unsigned char, std::list<Listener>>} listeners - store for event listeners
+ * Contains widgets tree for parsing events by Console class
+ * @prop {Widget*}                                      parentWidget   - parent widget
+ * @prop {Widget*}                                      firstChild     - pointer to the first child of current widget
+ * @prop {Widget*}                                      nextWidget     - pointer to the previous sibling
+ * @prop {Widget*}                                      previousWidget - pointer to the previous sibling
+ * @prop {unsigned char}                                events         - binary store for events could be dispatched at current widget
+ * @prop {std::map<unsigned char, std::list<Listener>>} listeners      - store for event listeners
  */
 class Widget
 {
     public:
+        Widget* parentWidget;
+        Widget* firstChild;
+        Widget* nextWidget;
+        Widget* previousWidget;
         unsigned char events;
         std::map<unsigned char, std::list<Listener>> listeners;
 
     public:
         virtual void draw();
+        void _parent(Widget* parentWidget);
+        Widget* parent();
+        void _next(Widget* nextWidget);
+        Widget* next();
+        void _previous(Widget* previousWidget);
+        Widget* previous();
+        void add(Widget* child);
+        std::vector<Widget*> children();
         bool event(unsigned char name);
         void listener(unsigned char name, Listener function);
         void dispatch(unsigned char name);
