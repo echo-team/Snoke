@@ -119,89 +119,60 @@ $(document).ready(function(){initNavTree('common_8cpp_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> s;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span>timespec req;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma pack(push,1)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span>timespec rem;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="common_8h.html#acfe1c587c2a13d4b833eb11bd3157771">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a>(<span class="keywordtype">int</span> time)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>    Sleep(time);</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="common_8h.html#acfe1c587c2a13d4b833eb11bd3157771">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a>(<span class="keywordtype">int</span> time)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span>    Sleep(time);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#elif defined(_WIN64)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>    Sleep(time);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>    usleep(time*1000);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#elif defined(_WIN64)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>    Sleep(time);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span>    req.tv_sec = time / 1000;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    req.tv_nsec = (time % 1000) * 1000000;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    nanosleep(&amp;req, &amp;rem);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a>()</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>    req = rem;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    rem.tv_sec = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    rem.tv_nsec = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="common_8h.html#a8cc817c98b389a060e7061a138efe10c">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>    nanosleep(&amp;req, &amp;rem);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="common_8h.html#a8afa890f53aecd84c750b7b568629e25">   93</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a>(<a class="code" href="class_point.html">Point</a> p, <a class="code" href="class_point.html">Point</a>* change[2], <span class="keywordtype">int</span> changeSize)</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="common_8h.html#a8afa890f53aecd84c750b7b568629e25">   60</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a>(<a class="code" href="class_point.html">Point</a> p, <a class="code" href="class_point.html">Point</a>* change[2], <span class="keywordtype">int</span> changeSize)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; changeSize; i++)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span>(change[0][i] == p)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="common_8h.html#aed7e2ccc7264c951f8b3802757992941">   78</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="common_8cpp.html#aed7e2ccc7264c951f8b3802757992941">inRemChange</a>(<a class="code" href="class_point.html">Point</a> p, <a class="code" href="class_point.html">Point</a>* change[2], <span class="keywordtype">int</span> changeSize)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; changeSize; i++)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span>(change[1][i] == p)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a">   93</a></span>&#160;<a class="code" href="class_point.html">Point</a> <a class="code" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a>()</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; changeSize; i++)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span>(change[0][i] == p)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="common_8h.html#aed7e2ccc7264c951f8b3802757992941">  111</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="common_8cpp.html#aed7e2ccc7264c951f8b3802757992941">inRemChange</a>(<a class="code" href="class_point.html">Point</a> p, <a class="code" href="class_point.html">Point</a>* change[2], <span class="keywordtype">int</span> changeSize)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; changeSize; i++)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span>(change[1][i] == p)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a">  126</a></span>&#160;<a class="code" href="class_point.html">Point</a> <a class="code" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a>()</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="class_point.html">Point</a> size;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    getmaxyx(stdscr, size.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, size.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> size;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="ttc" id="common_8cpp_html_acfe1c587c2a13d4b833eb11bd3157771"><div class="ttname"><a href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a></div><div class="ttdeci">void mSleep(int time)</div><div class="ttdoc">Cross-platform sleep function cover. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00049">common.cpp:49</a></div></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_point.html">Point</a> size;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    getmaxyx(stdscr, size.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, size.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> size;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="ttc" id="common_8cpp_html_acfe1c587c2a13d4b833eb11bd3157771"><div class="ttname"><a href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a></div><div class="ttdeci">void mSleep(int time)</div><div class="ttdoc">Cross-platform sleep function cover. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00040">common.cpp:40</a></div></div>
 <div class="ttc" id="class_point_html_a5309894db6c0ddb1637e9bf06fdc83df"><div class="ttname"><a href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point::x</a></div><div class="ttdeci">short x</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
-<div class="ttc" id="common_8cpp_html_aed7e2ccc7264c951f8b3802757992941"><div class="ttname"><a href="common_8cpp.html#aed7e2ccc7264c951f8b3802757992941">inRemChange</a></div><div class="ttdeci">bool inRemChange(Point p, Point *change[2], int changeSize)</div><div class="ttdoc">Check if the Point is in the remove queue. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00111">common.cpp:111</a></div></div>
+<div class="ttc" id="common_8cpp_html_aed7e2ccc7264c951f8b3802757992941"><div class="ttname"><a href="common_8cpp.html#aed7e2ccc7264c951f8b3802757992941">inRemChange</a></div><div class="ttdeci">bool inRemChange(Point p, Point *change[2], int changeSize)</div><div class="ttdoc">Check if the Point is in the remove queue. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00078">common.cpp:78</a></div></div>
 <div class="ttc" id="common_8cpp_html_a74c857df0e2025afce6053ae585b84c5"><div class="ttname"><a href="common_8cpp.html#a74c857df0e2025afce6053ae585b84c5">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;s, Point p)</div><div class="ttdoc">Operation &#39;&lt;&lt;&#39; override for the Point class. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00030">common.cpp:30</a></div></div>
-<div class="ttc" id="common_8cpp_html_a8afa890f53aecd84c750b7b568629e25"><div class="ttname"><a href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a></div><div class="ttdeci">bool inAddChange(Point p, Point *change[2], int changeSize)</div><div class="ttdoc">Check if Points is in the addition queue. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00093">common.cpp:93</a></div></div>
+<div class="ttc" id="common_8cpp_html_a8afa890f53aecd84c750b7b568629e25"><div class="ttname"><a href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a></div><div class="ttdeci">bool inAddChange(Point p, Point *change[2], int changeSize)</div><div class="ttdoc">Check if Points is in the addition queue. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00060">common.cpp:60</a></div></div>
 <div class="ttc" id="class_point_html_ab3990459d2a699f26b177d60b15333cd"><div class="ttname"><a href="class_point.html#ab3990459d2a699f26b177d60b15333cd">Point::operator==</a></div><div class="ttdeci">bool operator==(Point p)</div><div class="ttdoc">Operation &quot;==&quot; override for the Point class. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00019">common.cpp:19</a></div></div>
-<div class="ttc" id="common_8cpp_html_a54e5255040d967ad5e858ae4a1e7ae6a"><div class="ttname"><a href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a></div><div class="ttdeci">void sleepHandler()</div><div class="ttdoc">setting new values for sleep function on signal interrupt </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00068">common.cpp:68</a></div></div>
-<div class="ttc" id="common_8cpp_html_ada3ae1ea3b3825462dccd1eb18df401a"><div class="ttname"><a href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a></div><div class="ttdeci">Point getConsoleSize()</div><div class="ttdoc">Gets size of current console screen in symdols. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00126">common.cpp:126</a></div></div>
+<div class="ttc" id="common_8cpp_html_ada3ae1ea3b3825462dccd1eb18df401a"><div class="ttname"><a href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a></div><div class="ttdeci">Point getConsoleSize()</div><div class="ttdoc">Gets size of current console screen in symdols. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00093">common.cpp:93</a></div></div>
 <div class="ttc" id="class_point_html_abdf73422d00c5cc4c18a06aa4f1edc53"><div class="ttname"><a href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">Point::y</a></div><div class="ttdeci">short y</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00056">common.h:56</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">shared functions prototypes, structures, main classes declarations </div></div>
-<div class="ttc" id="common_8cpp_html_a8cc817c98b389a060e7061a138efe10c"><div class="ttname"><a href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a></div><div class="ttdeci">void addSleep()</div><div class="ttdoc">For unix-based systems interrupted sleep must be continued. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00080">common.cpp:80</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Coordinates and style of the cell in console window. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00052">common.h:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

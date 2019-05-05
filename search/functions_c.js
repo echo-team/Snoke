@@ -6,6 +6,5 @@ var searchData=
   ['setposition',['setPosition',['../class_logo.html#a048b9474c23e659c94f590509376f198',1,'Logo']]],
   ['setscheme',['setScheme',['../class_snake.html#a0c305e807c15736f809eb035d947c988',1,'Snake']]],
   ['setspeed',['setSpeed',['../class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46',1,'Game']]],
-  ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]],
-  ['sleephandler',['sleepHandler',['../common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp'],['../common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp']]]
+  ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]]
 ];
