@@ -85,6 +85,7 @@ Widget* Widget::previous()
  */
 void Widget::add(Widget* child)
 {
+    length++;
     if (start == NULL)
     {
         start = child;
@@ -97,7 +98,6 @@ void Widget::add(Widget* child)
         previousChild = previousChild->next();
     }
 
-    length++;
     previousChild->_next(child);
     this->_previous(previousChild);
     this->ending = child;
