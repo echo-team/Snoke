@@ -20,14 +20,14 @@ void MainMenu::draw()
     menuStartPoint.x  = snokeStartPoint.x;
     menuStartPoint.y  = snokeStartPoint.y + snokeSize.y + snokeBottomBorder;
 
-    Menu menu(menuStartPoint.x, menuStartPoint.y, snokeSize.x, menuHeight);
-    menu.add("Profile");
-    menu.add("Play");
-    menu.add("Search");
-    menu.add("Settings");
-    menu.add("About game");
-    menu.add("DONATE");
+    Menu* menu = new Menu(menuStartPoint.x, menuStartPoint.y, snokeSize.x, menuHeight);
+    menu->add("Profile");
+    menu->add("Play");
+    menu->add("Search");
+    menu->add("Settings");
+    menu->add("About game");
+    menu->add("DONATE");
 
-    this->root->add(&menu);
-    menu.draw();
+    this->root->add(menu);
+    menu->draw();
 }
