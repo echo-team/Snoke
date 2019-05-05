@@ -261,6 +261,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
             {
                 this->displayPartialy();
             }
+            break;
         }
         default:
         {
