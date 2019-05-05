@@ -26,6 +26,15 @@ Widget* Widget::parent()
 }
 
 /**
+ * Returns first child of widget
+ * @return {Widget*}
+ */
+Widget* Widget::child()
+{
+    return firstChild;
+}
+
+/**
  * Setts next widget
  * @param {Widget*} nextWidget - new next widget
  */

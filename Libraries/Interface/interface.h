@@ -44,6 +44,7 @@ class Widget
     public:
         virtual void draw();
         void _parent(Widget* parentWidget);
+        Widget* child();
         Widget* parent();
         void _next(Widget* nextWidget);
         Widget* next();
