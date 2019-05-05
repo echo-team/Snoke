@@ -24,7 +24,7 @@ Widget* Screen::first()
 Widget* Screen::next(Widget* start)
 {
     Widget* current = start;
-    char diving = 0;
+    char diving = true;
 
     do
     {
@@ -69,14 +69,14 @@ Widget* Screen::previous(Widget* start)
 
     do
     {
-        if (bubbling && current->parent())
-        {
-            current = current->parent();
-        }
-        else if (bubbling && current->previous())
+        if (bubbling && current->previous())
         {
             current = current->previous();
             bubbling = false;
+        }
+        else if (bubbling && current->parent())
+        {
+            current = current->parent();
         }
         else
         {
