@@ -21,7 +21,10 @@ MenuItem::MenuItem(const char* name, int x, int y, int width, int height) : x(x)
  */
 void Menu::add(const char* name)
 {
-    this->add(new MenuItem(name, x + (width - strlen(name)) / 2, y + this->childLength() * 2, strlen(name), 1));
+    MenuItem* item = new MenuItem(name, x + (width - strlen(name)) / 2, y + this->childLength() * 2, strlen(name), 1);
+    item->listener(EVENT_FOCUS, std::bind(&Menu::focus, this, this->childLength()));
+    item->listener(EVENT_UNFOCUS, std::bind(&Menu::unfocus, this, this->childLength()));
+    this->add(item);
 }
 
 /**
@@ -34,6 +37,7 @@ void Menu::focus(int index)
 {
     move(y + index * 2 + 1, x);
     printw(">");
+    refresh();
 }
 
 /**
@@ -46,6 +50,7 @@ void Menu::unfocus(int index)
 {
     move(y + index * 2 + 1, x);
     printw(" ");
+    refresh();
 }
 
 /**
