@@ -9,7 +9,7 @@
  */
 class Screen
 {
-    private:
+    protected:
         Widget* root;
 
     public:
