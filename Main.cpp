@@ -1,4 +1,5 @@
 #include <ncurses.h>
+#include "Libraries/Screens/application.h"
 #include "Libraries/Screens/mainMenu.h"
 
 int main()
@@ -6,8 +7,9 @@ int main()
     initscr();
     start_color();
 
-    MainMenu main;
-    main.draw();
+    app.add("MainMenu", new MainMenu());
+    app.load("MainMenu");
+    app.execute();
 
     refresh();
     endwin();
