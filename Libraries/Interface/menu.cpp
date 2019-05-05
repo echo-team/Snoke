@@ -12,7 +12,7 @@ void MenuItem::draw()
 /**
  * @constructor
  */
-MenuItem::MenuItem(const char* name, int x, int y, int width, int height) : x(x), y(y), width(width), height(height), name(name)
+MenuItem::MenuItem(const char* name, int x, int y, int width, int height) : Widget(), x(x), y(y), width(width), height(height), name(name)
 {}
 
 /**
@@ -35,7 +35,7 @@ void Menu::add(const char* name)
  */
 void Menu::focus(int index)
 {
-    move(y + index * 2 + 1, x);
+    move(y + index * 2, x);
     printw(">");
     refresh();
 }
@@ -48,7 +48,7 @@ void Menu::focus(int index)
  */
 void Menu::unfocus(int index)
 {
-    move(y + index * 2 + 1, x);
+    move(y + index * 2, x);
     printw(" ");
     refresh();
 }
@@ -73,5 +73,5 @@ void Menu::draw()
  * @param {int} width  - menu width
  * @param {int} height - menu height
  */
-Menu::Menu(int x, int y, int width, int height) : x(x), y(y), width(width), height(height)
+Menu::Menu(int x, int y, int width, int height) : Widget(), x(x), y(y), width(width), height(height)
 {}
