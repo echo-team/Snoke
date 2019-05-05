@@ -8,11 +8,20 @@ void Screen::draw()
 {}
 
 /**
+ * Returns first widget of the screen
+ * @return {Widget*}
+ */
+Widget* Screen::first()
+{
+    return root;
+}
+
+/**
  * Finds next focusable widget in tree
  * @param  {Widget*} start - start point for searching
  * @return {Widget*}
  */
-Widget* next(Widget* start)
+Widget* Screen::next(Widget* start)
 {
     Widget* current = start;
     char diving = 0;
@@ -43,7 +52,7 @@ Widget* next(Widget* start)
             diving = true;
         }
     }
-    while (current != start)
+    while (current != start);
 
     return current;
 }
@@ -53,7 +62,7 @@ Widget* next(Widget* start)
  * @param  {Widget*} start - start point for searching
  * @return {Widget*}
  */
-Widget* previous(Widget* start)
+Widget* Screen::previous(Widget* start)
 {
     Widget* current = start;
     char bubbling = true;
@@ -90,7 +99,7 @@ Widget* previous(Widget* start)
             bubbling = false;
         }
     }
-    while (current != start)
+    while (current != start);
 
     return current;
 }

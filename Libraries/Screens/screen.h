@@ -14,6 +14,7 @@ class Screen
 
     public:
         virtual void draw();
+        Widget* first();
         Widget* next(Widget* current);
         Widget* previous(Widget* current);
         Screen();
