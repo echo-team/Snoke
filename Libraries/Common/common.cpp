@@ -33,6 +33,15 @@ std::ostream& operator<< (std::ostream &s, Point p)
     return s;
 }
 
+#ifdef __unix__
+#pragma pack(push,1)
+struct timespec req;
+#pragma pack(pop)
+#pragma pack(push,1)
+struct timespec rem;
+#pragma pack(pop)
+#endif
+
 /**
  * @brief   Cross-platform sleep function cover
  * @param   time - time the game will 'freeze' for in milliseconds
@@ -47,7 +56,31 @@ void mSleep(int time)
 #endif
 
 #ifdef __unix__
-    usleep(time*1000);
+    req.tv_sec = time / 1000;
+    req.tv_nsec = (time % 1000) * 1000000;
+    nanosleep(&req, &rem);
+#endif
+}
+
+/**
+ * @brief   setting new values for sleep function on signal interrupt
+ */
+void sleepHandler()
+{
+#ifdef __unix__
+    req = rem;
+    rem.tv_sec = 0;
+    rem.tv_nsec = 0;
+#endif
+}
+
+/**
+ * @brief   For unix-based systems interrupted sleep must be continued
+ */
+void addSleep()
+{
+#ifdef __unix__
+    nanosleep(&req, &rem);
 #endif
 }
 

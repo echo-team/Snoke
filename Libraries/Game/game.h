@@ -15,6 +15,7 @@
 #include <ncurses.h>
 #include <iostream>
 #include <string>
+#include <time.h>
 #include <signal.h>
 
 /**

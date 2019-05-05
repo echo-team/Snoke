@@ -69,8 +69,10 @@ class Ball;
 
 std::ostream& operator<< (std::ostream &s, Point p);
 void mSleep(int time);
+void addSleep();
 bool inAddChange(Point p, Point* change[2], int changeSize);
 bool inRemChange(Point p, Point* change[2], int changeSize);
 Point getConsoleSize();
+void sleepHandler();
 
 #endif
