@@ -2,8 +2,8 @@
 #define MAIN_H
 #include <ncurses.h>
 #include "../Common/common.h"
-#include "../Interface/logo.h"
-#include "../Interface/menu.h"
+#include "../Widgets/logo.h"
+#include "../Widgets/menu.h"
 #include "screen.h"
 
 /**
