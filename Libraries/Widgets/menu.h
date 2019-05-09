@@ -3,16 +3,22 @@
 #include <ncurses.h>
 #include <cstring>
 #include <list>
-#include "interface.h"
+#include "widget.h"
 
 /**
  * Describes menu button
  * @prop {const char*} name - text drawn at the button
  */
-typedef struct
+class MenuItem : public Widget
 {
-    const char* name;
-} MenuButton;
+    private:
+        int x, y, width, height;
+        const char* name;
+
+    public:
+        void draw();
+        MenuItem(const char* name, int x, int y, int width, int height);
+};
 
 /**
  * Menu (list of selestable items) widget class
@@ -25,11 +31,11 @@ typedef struct
 class Menu : public Widget
 {
     private:
-        std::list<MenuButton> buttons;
         int x, y, width, height;
 
     public:
-        void addButton(const char* name);
+        using Widget::add;
+        void add(const char* name);
         void focus(int index);
         void unfocus(int index);
         void draw();
