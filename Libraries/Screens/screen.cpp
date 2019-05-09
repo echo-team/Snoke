@@ -83,7 +83,7 @@ Widget* Screen::previous(Widget* start)
      * @var {bool}    bubling - flag for bubbling to the parent of widget (false if previous siblings of widget exist)
      */
     Widget* current = start;
-    char bubbling = true;
+    bool bubbling = true;
 
     do
     {
