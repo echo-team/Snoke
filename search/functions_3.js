@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['focus',['focus',['../class_widget.html#ac395fbcfd90f5a33a4bb2ca1d83631ca',1,'Widget::focus()'],['../class_menu.html#ac5ec365a1916cc9cbd233063544588d7',1,'Menu::focus()']]],
-  ['forceddisplay',['forcedDisplay',['../class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf',1,'Labyrinth']]],
-  ['freedisplay',['freeDisplay',['../class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e',1,'Labyrinth']]]
+  ['checkintersection',['checkIntersection',['../class_snake.html#a3b4362db19dfcb62218a004cb58d4d9c',1,'Snake']]],
+  ['checkwisely',['checkWisely',['../class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb',1,'Snake']]],
+  ['childlength',['childLength',['../class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4',1,'Widget']]],
+  ['children',['children',['../class_widget.html#afc7d109a1b67161e4d6a010ea3bf886f',1,'Widget']]]
 ];

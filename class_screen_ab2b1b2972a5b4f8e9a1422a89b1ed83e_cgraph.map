@@ -1,0 +1,6 @@
+<map id="Screen::previous" name="Screen::previous">
+<area shape="rect" id="node2" href="$class_widget.html#a4451247ef765bccbfa460211ce91d07e" title="Widget::previous" alt="" coords="175,5,295,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a3dac0069a2933ad4a2e6d1b2cfd16236" title="Widget::parent" alt="" coords="181,56,288,83"/>
+<area shape="rect" id="node4" href="$class_widget.html#ac377c134451d68d5915ca6ddfe7fd507" title="Widget::lastChild" alt="" coords="173,107,296,133"/>
+<area shape="rect" id="node5" href="$class_widget.html#a495d82da7793c5b07f3ff103fb2fd533" title="Widget::event" alt="" coords="183,157,286,184"/>
+</map>

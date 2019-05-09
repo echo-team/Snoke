@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['direction',['direction',['../class_snake.html#aee6d8cb1404c33a9b7e132a99e055590',1,'Snake']]],
-  ['dispfull',['DISPFULL',['../labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717',1,'labyrinth.h']]],
-  ['disppart',['DISPPART',['../labyrinth_8h.html#a54605b7004ca75a5a728263d85740db3',1,'labyrinth.h']]],
-  ['dispupd',['DISPUPD',['../labyrinth_8h.html#aed107038ab6f622e95f97faf37031246',1,'labyrinth.h']]],
-  ['distributionx',['distributionX',['../class_ball.html#a558a48196bdb4ea389519ab7c0138216',1,'Ball']]],
-  ['distributiony',['distributionY',['../class_ball.html#a9a8e67dcc49382448848c497ff7ede25',1,'Ball']]]
+  ['change',['change',['../class_game.html#a87f9c54e60a724de2644769cd917dbce',1,'Game']]],
+  ['changesize',['changeSize',['../class_game.html#ae959d08e508fcef98dd07a2b9cd82e65',1,'Game']]],
+  ['coll',['COLL',['../snake_8h.html#a1a149ac26a0e57c1aa7e262b5a58a854',1,'snake.h']]],
+  ['currentscreen',['currentScreen',['../class_application.html#a7b13dc5cc93dac3c92903ba210c2e07e',1,'Application']]],
+  ['currentwidget',['currentWidget',['../class_application.html#ae7b304688330944ec4625ff4ce052351',1,'Application']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['generateball',['generateBall',['../class_ball.html#a72c944149264221e2857c8b4ca72c502',1,'Ball']]],
-  ['getconsolesize',['getConsoleSize',['../common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp'],['../common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp']]],
-  ['getcoords',['getCoords',['../class_ball.html#a14b9a607402be58e7a0a0ab053df5f82',1,'Ball::getCoords()'],['../class_snake.html#a62fa59de03f60c23f6d1100c53594d71',1,'Snake::getCoords()']]],
-  ['getdirection',['getDirection',['../class_snake.html#a2656a9a4490cbb70d305c323269cc5bd',1,'Snake']]],
-  ['getheadcoords',['getHeadCoords',['../class_snake.html#a0235581bc3d6399f4fd2287669f93cee',1,'Snake']]],
-  ['getsize',['getSize',['../class_logo.html#aeeefce0ee601c896c38b929b7a355616',1,'Logo']]]
+  ['dispatch',['dispatch',['../class_widget.html#a76ead71881834c227471d223af092c3f',1,'Widget']]],
+  ['displayfull',['displayFull',['../class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd',1,'Labyrinth']]],
+  ['displayhandler',['displayHandler',['../class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f',1,'Labyrinth']]],
+  ['displaypartialy',['displayPartialy',['../class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d',1,'Labyrinth']]],
+  ['displayupdated',['displayUpdated',['../class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124',1,'Labyrinth']]],
+  ['draw',['draw',['../class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa',1,'MainMenu::draw()'],['../class_screen.html#a4e822bf10f57a15d43cffbf6a7cebb02',1,'Screen::draw()'],['../class_logo.html#aced3f5817a709bcc0fd7cf8a360a2523',1,'Logo::draw()'],['../class_menu_item.html#af1e7bf9b4451876735cf2baea06cee3d',1,'MenuItem::draw()'],['../class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6',1,'Menu::draw()'],['../class_widget.html#a6ea4feac4bdee76a57d666d7241f7422',1,'Widget::draw()']]]
 ];

@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('labyrinth_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -330,208 +330,207 @@ $(document).ready(function(){initNavTree('labyrinth_8cpp_source.html','');});
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                this-&gt;<a class="code" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">displayPartialy</a>();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            this-&gt;<a class="code" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">displayPartialy</a>();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">  276</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">Labyrinth::displayFull</a>()</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;{</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        mvaddstr(j, 0, <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j]);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">  288</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">Labyrinth::displayPartialy</a>()</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    clear();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j &lt; <a class="code" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">end</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        move(j - <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, 0);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i &lt; <a class="code" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">end</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            addch(<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j][i]);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#a54605b7004ca75a5a728263d85740db3">DISPPART</a>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">  305</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">Labyrinth::displayUpdated</a>(<a class="code" href="class_point.html">Point</a>* update[2], <span class="keywordtype">int</span> size)</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="class_point.html">Point</a> abc;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        abc = update[1][i];</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        mvaddch(abc.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, abc.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        abc = update[0][i];</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        mvaddch(abc.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, abc.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, abc.<a class="code" href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">style</a>.<a class="code" href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">letter</a>);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#aed107038ab6f622e95f97faf37031246">DISPUPD</a>;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">  323</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">Labyrinth::updateLabyrinth</a>(<a class="code" href="class_point.html">Point</a>* update[2], <span class="keywordtype">int</span> size)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="class_point.html">Point</a> p;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        p = update[0][i];</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span>(p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a> &gt;= 0 &amp;&amp; p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> &gt;= 0)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <a class="code" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">addPoint</a>(p);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        p = update[1][i];</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span>(p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a> &gt;= 0 &amp;&amp; p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> &gt;= 0)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <a class="code" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">remPoint</a>(p);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">  346</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">Labyrinth::isFree</a>(<a class="code" href="class_point.html">Point</a> p)</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;{</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> (this-&gt;<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] == <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">  356</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">Labyrinth::addPoint</a>(<a class="code" href="class_point.html">Point</a> p)</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;{</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">isFree</a>(p))</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] = p.<a class="code" href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">style</a>.<a class="code" href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">letter</a>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">  371</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">Labyrinth::remPoint</a>(<a class="code" href="class_point.html">Point</a> p)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] = <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">  382</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth::save</a>(<span class="keywordtype">char</span> name[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>])</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;{</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    FILE* file;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">char</span> strout[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>];</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    file = fopen(name, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span>(file)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">         * Printing the dimensions of the gamefield</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        fprintf(file, <span class="stringliteral">&quot;%d %d\n&quot;</span>, <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">         * Printing the lines of labyrinth to the file one by one</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            fputs(<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j], file);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            fputc(<span class="charliteral">&#39;\n&#39;</span>, file);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        }</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        fclose(file);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">         * Putting a message of successful writing</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Succesfully saved to %s&quot;</span>, name);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">     * Putting a message of an occured error</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Couldn&#39;t save to %s&quot;</span>, name);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">  424</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth::load</a>(<span class="keywordtype">char</span> name[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>])</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    FILE* file;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="class_point.html">Point</a> scannedSize;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">char</span> strout[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>];</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    file = fopen(name, <span class="stringliteral">&quot;r&quot;</span>);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">if</span>(file)</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    {</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">         * Getting the dimensions of the labyrinth and creating a temporary labyrinth</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        fscanf(file, <span class="stringliteral">&quot;%hd %hd&quot;</span>, &amp;scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, &amp;scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordtype">char</span> tmpLab[scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>];</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        {</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            {</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                tmpLab[j][i] = <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            }</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        }</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">         * Getting lines of the labyrinth</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        {</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            fgets(tmpLab[j], scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, file);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        }</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        fclose(file);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">         * Setting the new gameFieldSize and copying the borders and obstacles from the temporary labyrinth</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a> = scannedSize;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            {</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39">reserved</a>.find(tmpLab[j][i]) != std::string::npos)</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                    <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j][i] = tmpLab[j][i];</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                }</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            }</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        }</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment">         * Putting a message of successful loading</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Succesfully loaded from %s&quot;</span>, name);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    }</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">     * Putting message of occured error</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Couldn&#39;t load from %s&quot;</span>, name);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            this-&gt;<a class="code" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">displayPartialy</a>();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">  275</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">Labyrinth::displayFull</a>()</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        mvaddstr(j, 0, <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j]);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">  287</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">Labyrinth::displayPartialy</a>()</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    clear();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j &lt; <a class="code" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">end</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        move(j - <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, 0);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = <a class="code" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">start</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i &lt; <a class="code" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">end</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            addch(<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j][i]);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#a54605b7004ca75a5a728263d85740db3">DISPPART</a>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">  304</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">Labyrinth::displayUpdated</a>(<a class="code" href="class_point.html">Point</a>* update[2], <span class="keywordtype">int</span> size)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="class_point.html">Point</a> abc;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        abc = update[1][i];</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        mvaddch(abc.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, abc.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        abc = update[0][i];</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        mvaddch(abc.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, abc.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, abc.<a class="code" href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">style</a>.<a class="code" href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">letter</a>);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    this-&gt;<a class="code" href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">prevDisplayMethod</a> = <a class="code" href="labyrinth_8h.html#aed107038ab6f622e95f97faf37031246">DISPUPD</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">  322</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">Labyrinth::updateLabyrinth</a>(<a class="code" href="class_point.html">Point</a>* update[2], <span class="keywordtype">int</span> size)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="class_point.html">Point</a> p;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        p = update[0][i];</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span>(p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a> &gt;= 0 &amp;&amp; p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> &gt;= 0)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <a class="code" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">addPoint</a>(p);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        p = update[1][i];</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span>(p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a> &gt;= 0 &amp;&amp; p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> &gt;= 0)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <a class="code" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">remPoint</a>(p);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">  345</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">Labyrinth::isFree</a>(<a class="code" href="class_point.html">Point</a> p)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> (this-&gt;<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] == <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">  355</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">Labyrinth::addPoint</a>(<a class="code" href="class_point.html">Point</a> p)</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">if</span>(this-&gt;<a class="code" href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">isFree</a>(p))</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] = p.<a class="code" href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">style</a>.<a class="code" href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">letter</a>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">  370</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">Labyrinth::remPoint</a>(<a class="code" href="class_point.html">Point</a> p)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;{</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[p.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][p.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>] = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;}</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">  381</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth::save</a>(<span class="keywordtype">char</span> name[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>])</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    FILE* file;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordtype">char</span> strout[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>];</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    file = fopen(name, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span>(file)</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">         * Printing the dimensions of the gamefield</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        fprintf(file, <span class="stringliteral">&quot;%d %d\n&quot;</span>, <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">         * Printing the lines of labyrinth to the file one by one</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            fputs(<a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j], file);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            fputc(<span class="charliteral">&#39;\n&#39;</span>, file);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        fclose(file);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">         * Putting a message of successful writing</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Succesfully saved to %s&quot;</span>, name);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">     * Putting a message of an occured error</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Couldn&#39;t save to %s&quot;</span>, name);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">  423</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth::load</a>(<span class="keywordtype">char</span> name[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>])</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;{</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    FILE* file;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <a class="code" href="class_point.html">Point</a> scannedSize;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">char</span> strout[<a class="code" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a>];</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    file = fopen(name, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">if</span>(file)</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">         * Getting the dimensions of the labyrinth and creating a temporary labyrinth</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        fscanf(file, <span class="stringliteral">&quot;%hd %hd&quot;</span>, &amp;scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, &amp;scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordtype">char</span> tmpLab[scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>][scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>];</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                tmpLab[j][i] = <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            }</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">         * Getting lines of the labyrinth</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; scannedSize.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        {</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            fgets(tmpLab[j], scannedSize.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>, file);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        }</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        fclose(file);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">         * Setting the new gameFieldSize and copying the borders and obstacles from the temporary labyrinth</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a> = scannedSize;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>; i++)</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        {</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>; j++)</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39">reserved</a>.find(tmpLab[j][i]) != std::string::npos)</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                    <a class="code" href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">labyrinth</a>[j][i] = tmpLab[j][i];</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                }</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            }</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        }</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment">         * Putting a message of successful loading</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Succesfully loaded from %s&quot;</span>, name);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    }</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">     * Putting message of occured error</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    snprintf(strout, <span class="keyword">sizeof</span>(strout), <span class="stringliteral">&quot;Couldn&#39;t load from %s&quot;</span>, name);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    mvaddstr(<a class="code" href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a>.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a> / 2, 5, strout);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;}</div>
 <div class="ttc" id="class_labyrinth_html_aafa921122b2ea77268cbe479949d7d39"><div class="ttname"><a href="class_labyrinth.html#aafa921122b2ea77268cbe479949d7d39">Labyrinth::reserved</a></div><div class="ttdeci">std::string reserved</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00057">labyrinth.h:57</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a98447444cafe6d19e0e5c0181f3c1ddd"><div class="ttname"><a href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">Labyrinth::displayFull</a></div><div class="ttdeci">void displayFull()</div><div class="ttdoc">redraw every Point of the labyrinth </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00276">labyrinth.cpp:276</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a98447444cafe6d19e0e5c0181f3c1ddd"><div class="ttname"><a href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">Labyrinth::displayFull</a></div><div class="ttdeci">void displayFull()</div><div class="ttdoc">redraw every Point of the labyrinth </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00275">labyrinth.cpp:275</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a9e67ccfbe72771cf3832ebda2855babf"><div class="ttname"><a href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf">Labyrinth::forcedDisplay</a></div><div class="ttdeci">void forcedDisplay(Point *change[2], int size, int displayMethod)</div><div class="ttdoc">got an extra stimulus for displaying in a certain method </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00175">labyrinth.cpp:175</a></div></div>
 <div class="ttc" id="class_point_html_a5309894db6c0ddb1637e9bf06fdc83df"><div class="ttname"><a href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point::x</a></div><div class="ttdeci">short x</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a5536b8752cb3c2ef273360e14224bc6f"><div class="ttname"><a href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">Labyrinth::end</a></div><div class="ttdeci">Point end</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00061">labyrinth.h:61</a></div></div>
 <div class="ttc" id="labyrinth_8h_html"><div class="ttname"><a href="labyrinth_8h.html">labyrinth.h</a></div><div class="ttdoc">Definitions and prototypes for Labyrinth class. </div></div>
 <div class="ttc" id="class_labyrinth_html_a31ccd7c544323dfd23fa66d06705c11f"><div class="ttname"><a href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f">Labyrinth::displayHandler</a></div><div class="ttdeci">void displayHandler(Point *change[2]=NULL, int size=-1, int displayMethod=-1)</div><div class="ttdoc">A method which decides what dispaly method will be used in each situation. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00080">labyrinth.cpp:80</a></div></div>
-<div class="ttc" id="class_labyrinth_html_ad533aaa69e845e368a7a08097f7e4ac8"><div class="ttname"><a href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">Labyrinth::updateLabyrinth</a></div><div class="ttdeci">void updateLabyrinth(Point *update[2], int size)</div><div class="ttdoc">Updating the labyrinth(changing the values of some Points) </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00323">labyrinth.cpp:323</a></div></div>
+<div class="ttc" id="class_labyrinth_html_ad533aaa69e845e368a7a08097f7e4ac8"><div class="ttname"><a href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">Labyrinth::updateLabyrinth</a></div><div class="ttdeci">void updateLabyrinth(Point *update[2], int size)</div><div class="ttdoc">Updating the labyrinth(changing the values of some Points) </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00322">labyrinth.cpp:322</a></div></div>
 <div class="ttc" id="common_8h_html_a4af19d530fc1e1df96478f0d3e2e64d5"><div class="ttname"><a href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">MAXLINE</a></div><div class="ttdeci">const int MAXLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00028">common.h:28</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a7ddef18e25e03408485e4959bcb5aebc"><div class="ttname"><a href="class_labyrinth.html#a7ddef18e25e03408485e4959bcb5aebc">Labyrinth::prevDisplayMethod</a></div><div class="ttdeci">int prevDisplayMethod</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00058">labyrinth.h:58</a></div></div>
 <div class="ttc" id="class_labyrinth_html_ad2819aba76d079c7fda751e7388b7182"><div class="ttname"><a href="class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182">Labyrinth::addSnake</a></div><div class="ttdeci">void addSnake(Snake *snake)</div><div class="ttdoc">Adding snake to the laburinth and getting the host snake(firest added snake) </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00061">labyrinth.cpp:61</a></div></div>
-<div class="ttc" id="class_labyrinth_html_acd7311e3222304bae2208fbc293bcc4d"><div class="ttname"><a href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">Labyrinth::isFree</a></div><div class="ttdeci">bool isFree(Point p)</div><div class="ttdoc">Mark of if the asked Point is free. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00346">labyrinth.cpp:346</a></div></div>
+<div class="ttc" id="class_labyrinth_html_acd7311e3222304bae2208fbc293bcc4d"><div class="ttname"><a href="class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d">Labyrinth::isFree</a></div><div class="ttdeci">bool isFree(Point p)</div><div class="ttdoc">Mark of if the asked Point is free. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00345">labyrinth.cpp:345</a></div></div>
 <div class="ttc" id="class_snake_html_a62fa59de03f60c23f6d1100c53594d71"><div class="ttname"><a href="class_snake.html#a62fa59de03f60c23f6d1100c53594d71">Snake::getCoords</a></div><div class="ttdeci">void getCoords(std::list&lt; Point &gt; *currBody)</div><div class="ttdoc">The method to get the snake whole body coordinates(x ,y) without giving the direct access...</div><div class="ttdef"><b>Definition:</b> <a href="snake_8cpp_source.html#l00289">snake.cpp:289</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a92649fa3b24fcc869418b54e7362e24f"><div class="ttname"><a href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">Labyrinth::start</a></div><div class="ttdeci">Point start</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00060">labyrinth.h:60</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a43994d3b84ed457b1c04595466a61fc6"><div class="ttname"><a href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6">Labyrinth::sizeHandler</a></div><div class="ttdeci">void sizeHandler()</div><div class="ttdoc">A method, which sets start and end values depending on the position of local_player&#39;s snake head and ...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00111">labyrinth.cpp:111</a></div></div>
 <div class="ttc" id="labyrinth_8h_html_a54605b7004ca75a5a728263d85740db3"><div class="ttname"><a href="labyrinth_8h.html#a54605b7004ca75a5a728263d85740db3">DISPPART</a></div><div class="ttdeci">const int DISPPART</div><div class="ttdoc">the whole labyrinth doesn&#39;t fit, so we are displaying it partialy </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00029">labyrinth.h:29</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a99e6b33f94d6d64f9c5a4fa78f08c007"><div class="ttname"><a href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth::save</a></div><div class="ttdeci">bool save(char name[MAXLINE])</div><div class="ttdoc">Method to save labyritnh(borders and obstacles, defined in reserved string) to the file...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00382">labyrinth.cpp:382</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a36cd7033292515cba0ce3d74f03720b6"><div class="ttname"><a href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth::load</a></div><div class="ttdeci">bool load(char name[MAXLINE])</div><div class="ttdoc">Mehod to load labyrinth from the file. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00424">labyrinth.cpp:424</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a86210707e3b4be4faaa9bd1f86429124"><div class="ttname"><a href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">Labyrinth::displayUpdated</a></div><div class="ttdeci">void displayUpdated(Point *update[2], int size)</div><div class="ttdoc">draw only the changed Points when the labyrinth is being fully displayed </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00305">labyrinth.cpp:305</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a99e6b33f94d6d64f9c5a4fa78f08c007"><div class="ttname"><a href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth::save</a></div><div class="ttdeci">bool save(char name[MAXLINE])</div><div class="ttdoc">Method to save labyritnh(borders and obstacles, defined in reserved string) to the file...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00381">labyrinth.cpp:381</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a36cd7033292515cba0ce3d74f03720b6"><div class="ttname"><a href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth::load</a></div><div class="ttdeci">bool load(char name[MAXLINE])</div><div class="ttdoc">Mehod to load labyrinth from the file. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00423">labyrinth.cpp:423</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a86210707e3b4be4faaa9bd1f86429124"><div class="ttname"><a href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">Labyrinth::displayUpdated</a></div><div class="ttdeci">void displayUpdated(Point *update[2], int size)</div><div class="ttdoc">draw only the changed Points when the labyrinth is being fully displayed </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00304">labyrinth.cpp:304</a></div></div>
 <div class="ttc" id="labyrinth_8h_html_a7bc6aacba4f5847ff05723bf3a048717"><div class="ttname"><a href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a></div><div class="ttdeci">const int DISPFULL</div><div class="ttdoc">the whole labyrinth can fit and was redrawed </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00025">labyrinth.h:25</a></div></div>
 <div class="ttc" id="class_labyrinth_html_ac95a1b4246b9351e8cea8c1618bcb58d"><div class="ttname"><a href="class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d">Labyrinth::labyrinth</a></div><div class="ttdeci">char ** labyrinth</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00056">labyrinth.h:56</a></div></div>
-<div class="ttc" id="class_labyrinth_html_ab120d60db9780f137d3c9584c75c2f9d"><div class="ttname"><a href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">Labyrinth::displayPartialy</a></div><div class="ttdeci">void displayPartialy()</div><div class="ttdoc">display labyrinth partialy, using the start and end Points </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00288">labyrinth.cpp:288</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a24d98083c011da23695425ec69d583a5"><div class="ttname"><a href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">Labyrinth::remPoint</a></div><div class="ttdeci">bool remPoint(Point p)</div><div class="ttdoc">Remove Point from the labyrinth. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00371">labyrinth.cpp:371</a></div></div>
+<div class="ttc" id="class_labyrinth_html_ab120d60db9780f137d3c9584c75c2f9d"><div class="ttname"><a href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">Labyrinth::displayPartialy</a></div><div class="ttdeci">void displayPartialy()</div><div class="ttdoc">display labyrinth partialy, using the start and end Points </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00287">labyrinth.cpp:287</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a24d98083c011da23695425ec69d583a5"><div class="ttname"><a href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">Labyrinth::remPoint</a></div><div class="ttdeci">bool remPoint(Point p)</div><div class="ttdoc">Remove Point from the labyrinth. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00370">labyrinth.cpp:370</a></div></div>
 <div class="ttc" id="common_8cpp_html_ada3ae1ea3b3825462dccd1eb18df401a"><div class="ttname"><a href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a></div><div class="ttdeci">Point getConsoleSize()</div><div class="ttdoc">Gets size of current console screen in symdols. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00093">common.cpp:93</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a9041d96d4328dea374deb81ff08bd35c"><div class="ttname"><a href="class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c">Labyrinth::prevEnd</a></div><div class="ttdeci">Point prevEnd</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00063">labyrinth.h:63</a></div></div>
 <div class="ttc" id="class_point_html_a4bcb4c7daa219001646a555fdc1a08f7"><div class="ttname"><a href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">Point::style</a></div><div class="ttdeci">PointStyle style</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00057">common.h:57</a></div></div>
@@ -540,7 +539,7 @@ $(document).ready(function(){initNavTree('labyrinth_8cpp_source.html','');});
 <div class="ttc" id="class_point_html_abdf73422d00c5cc4c18a06aa4f1edc53"><div class="ttname"><a href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">Point::y</a></div><div class="ttdeci">short y</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00056">common.h:56</a></div></div>
 <div class="ttc" id="class_point_style_html_a9366ea71a7c02a842f2af9fc884408cd"><div class="ttname"><a href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">PointStyle::letter</a></div><div class="ttdeci">char letter</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00040">common.h:40</a></div></div>
 <div class="ttc" id="class_snake_html"><div class="ttname"><a href="class_snake.html">Snake</a></div><div class="ttdoc">Describes the Snake entity of the game. </div><div class="ttdef"><b>Definition:</b> <a href="snake_8h_source.html#l00078">snake.h:78</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a710cf4ff7789d527e6081d1eb2d696a6"><div class="ttname"><a href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">Labyrinth::addPoint</a></div><div class="ttdeci">bool addPoint(Point p)</div><div class="ttdoc">Adding Point to the labyrinth with the check of correction. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00356">labyrinth.cpp:356</a></div></div>
+<div class="ttc" id="class_labyrinth_html_a710cf4ff7789d527e6081d1eb2d696a6"><div class="ttname"><a href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6">Labyrinth::addPoint</a></div><div class="ttdeci">bool addPoint(Point p)</div><div class="ttdoc">Adding Point to the labyrinth with the check of correction. </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00355">labyrinth.cpp:355</a></div></div>
 <div class="ttc" id="game_8cpp_html_a6fbfea9c219063c65d29c55f3f4d7673"><div class="ttname"><a href="game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673">gameFieldSize</a></div><div class="ttdeci">Point gameFieldSize</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00017">game.cpp:17</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a09a46368bfd83ccb75580687cb17b92f"><div class="ttname"><a href="class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f">Labyrinth::snake</a></div><div class="ttdeci">Snake * snake</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00059">labyrinth.h:59</a></div></div>
 <div class="ttc" id="class_labyrinth_html_a39e1b11a06d126328131d387fbf51d73"><div class="ttname"><a href="class_labyrinth.html#a39e1b11a06d126328131d387fbf51d73">Labyrinth::setLabyrinth</a></div><div class="ttdeci">void setLabyrinth(Point dimensions)</div><div class="ttdoc">Sets the default values fro the variables as well as generating the labyritnh array with borders...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00016">labyrinth.cpp:16</a></div></div>

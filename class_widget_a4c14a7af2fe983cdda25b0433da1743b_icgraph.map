@@ -1,0 +1,9 @@
+<map id="Widget::next" name="Widget::next">
+<area shape="rect" id="node2" href="$class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node5" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="163,56,253,83"/>
+<area shape="rect" id="node7" href="$class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="162,107,254,133"/>
+<area shape="rect" id="node8" href="$class_widget.html#afc7d109a1b67161e4d6a010ea3bf886f" title="Widget::children" alt="" coords="150,157,266,184"/>
+<area shape="rect" id="node3" href="$class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="315,5,455,32"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="504,5,555,32"/>
+<area shape="rect" id="node6" href="$class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="326,81,445,108"/>
+</map>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../common_8cpp.html#a74c857df0e2025afce6053ae585b84c5',1,'operator&lt;&lt;(std::ostream &amp;s, Point p):&#160;common.cpp'],['../common_8h.html#a74c857df0e2025afce6053ae585b84c5',1,'operator&lt;&lt;(std::ostream &amp;s, Point p):&#160;common.cpp']]],
-  ['operator_3d_3d',['operator==',['../class_point.html#ab3990459d2a699f26b177d60b15333cd',1,'Point']]]
+  ['name',['name',['../struct_side_button.html#a2533e6acfd5ba40cb7717412c25e6a0c',1,'SideButton::name()'],['../class_menu_item.html#a946950c19be26f9081aff8b1f360438e',1,'MenuItem::name()']]],
+  ['next',['next',['../class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6',1,'Screen::next()'],['../class_widget.html#a4c14a7af2fe983cdda25b0433da1743b',1,'Widget::next()']]],
+  ['nextwidget',['nextWidget',['../class_widget.html#a53921b01776aa0b0b4bfe11a738940e8',1,'Widget']]],
+  ['nocoll',['NOCOLL',['../snake_8h.html#a322c7b98f8a9954421a0ae07dd4c636d',1,'snake.h']]]
 ];

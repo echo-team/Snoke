@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['main',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Main.cpp']]],
-  ['menu',['Menu',['../class_menu.html#ab6e38ad7f84b7741846cf5a57040276a',1,'Menu']]],
-  ['move',['move',['../class_snake.html#aab5a702610c61d502d36c5673a3a8410',1,'Snake']]],
-  ['moveback',['moveBack',['../class_snake.html#a577892c68b457316f7a9f3944c464569',1,'Snake']]],
-  ['movehead',['moveHead',['../class_snake.html#a59b2f5b18ab563d1583dfb15064784a0',1,'Snake']]],
-  ['msleep',['mSleep',['../common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771',1,'mSleep(int time):&#160;common.cpp'],['../common_8h.html#acfe1c587c2a13d4b833eb11bd3157771',1,'mSleep(int time):&#160;common.cpp']]]
+  ['generateball',['generateBall',['../class_ball.html#a72c944149264221e2857c8b4ca72c502',1,'Ball']]],
+  ['getconsolesize',['getConsoleSize',['../common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp'],['../common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a',1,'getConsoleSize():&#160;common.cpp']]],
+  ['getcoords',['getCoords',['../class_ball.html#a14b9a607402be58e7a0a0ab053df5f82',1,'Ball::getCoords()'],['../class_snake.html#a62fa59de03f60c23f6d1100c53594d71',1,'Snake::getCoords()']]],
+  ['getdirection',['getDirection',['../class_snake.html#a2656a9a4490cbb70d305c323269cc5bd',1,'Snake']]],
+  ['getheadcoords',['getHeadCoords',['../class_snake.html#a0235581bc3d6399f4fd2287669f93cee',1,'Snake']]],
+  ['getsize',['getSize',['../class_logo.html#aeeefce0ee601c896c38b929b7a355616',1,'Logo']]]
 ];

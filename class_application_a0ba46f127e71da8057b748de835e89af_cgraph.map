@@ -1,0 +1,4 @@
+<map id="Application::load" name="Application::load">
+<area shape="rect" id="node2" href="$class_screen.html#abcd6462530408562e11cdfa1f6011dc7" title="Screen::first" alt="" coords="176,5,269,32"/>
+<area shape="rect" id="node3" href="$class_screen.html#a4e822bf10f57a15d43cffbf6a7cebb02" title="Screen::draw" alt="" coords="173,56,272,83"/>
+</map>

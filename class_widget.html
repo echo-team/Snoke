@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_widget.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,34 +105,356 @@ $(document).ready(function(){initNavTree('class_widget.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Widget Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="interface_8h_source.html">interface.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="widget_8h_source.html">widget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Widget:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_widget__inherit__graph.png" border="0" usemap="#_widget_inherit__map" alt="Inheritance graph"/></div>
 <map name="_widget_inherit__map" id="_widget_inherit__map">
-<area shape="rect" id="node2" href="class_menu.html" title="Menu" alt="" coords="9,80,63,107"/></map>
+<area shape="rect" id="node2" href="class_menu.html" title="Menu" alt="" coords="5,80,59,107"/><area shape="rect" id="node3" href="class_menu_item.html" title="MenuItem" alt="" coords="84,80,163,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Widget:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget__coll__graph.png" border="0" usemap="#_widget_coll__map" alt="Collaboration graph"/></div>
+<map name="_widget_coll__map" id="_widget_coll__map">
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac395fbcfd90f5a33a4bb2ca1d83631ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ac395fbcfd90f5a33a4bb2ca1d83631ca">focus</a> (int index)</td></tr>
-<tr class="separator:ac395fbcfd90f5a33a4bb2ca1d83631ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f349812facca8302957a83b161a840"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a65f349812facca8302957a83b161a840">unfocus</a> (int index)</td></tr>
-<tr class="separator:a65f349812facca8302957a83b161a840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea4feac4bdee76a57d666d7241f7422"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a6ea4feac4bdee76a57d666d7241f7422">draw</a> ()</td></tr>
+<tr class="separator:a6ea4feac4bdee76a57d666d7241f7422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1923a81b244677ab48494238a345825f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a1923a81b244677ab48494238a345825f">_parent</a> (<a class="el" href="class_widget.html">Widget</a> *<a class="el" href="class_widget.html#a405f4f97fe759063c21be52a64a0b5dc">parentWidget</a>)</td></tr>
+<tr class="separator:a1923a81b244677ab48494238a345825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294b80d01330825d3172c8749ed2934a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a294b80d01330825d3172c8749ed2934a">firstChild</a> ()</td></tr>
+<tr class="separator:a294b80d01330825d3172c8749ed2934a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac377c134451d68d5915ca6ddfe7fd507"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ac377c134451d68d5915ca6ddfe7fd507">lastChild</a> ()</td></tr>
+<tr class="separator:ac377c134451d68d5915ca6ddfe7fd507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dac0069a2933ad4a2e6d1b2cfd16236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a3dac0069a2933ad4a2e6d1b2cfd16236">parent</a> ()</td></tr>
+<tr class="separator:a3dac0069a2933ad4a2e6d1b2cfd16236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cac87879e452153eda3c055e74bbeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ae8cac87879e452153eda3c055e74bbeb">_next</a> (<a class="el" href="class_widget.html">Widget</a> *<a class="el" href="class_widget.html#a53921b01776aa0b0b4bfe11a738940e8">nextWidget</a>)</td></tr>
+<tr class="separator:ae8cac87879e452153eda3c055e74bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c14a7af2fe983cdda25b0433da1743b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a4c14a7af2fe983cdda25b0433da1743b">next</a> ()</td></tr>
+<tr class="separator:a4c14a7af2fe983cdda25b0433da1743b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baf18d54ce42fae5cd7ad0b26fa138f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f">_previous</a> (<a class="el" href="class_widget.html">Widget</a> *<a class="el" href="class_widget.html#ad33c03b1b4e597e6da7b337b2b55e7c9">previousWidget</a>)</td></tr>
+<tr class="separator:a0baf18d54ce42fae5cd7ad0b26fa138f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4451247ef765bccbfa460211ce91d07e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a4451247ef765bccbfa460211ce91d07e">previous</a> ()</td></tr>
+<tr class="separator:a4451247ef765bccbfa460211ce91d07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8e7c0010594410e6e5b6d5e93966a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2">add</a> (<a class="el" href="class_widget.html">Widget</a> *child)</td></tr>
+<tr class="separator:add8e7c0010594410e6e5b6d5e93966a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb6a505192d7d557cd1d040bd6290a4"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4">childLength</a> ()</td></tr>
+<tr class="separator:a0bb6a505192d7d557cd1d040bd6290a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7d109a1b67161e4d6a010ea3bf886f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_widget.html">Widget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#afc7d109a1b67161e4d6a010ea3bf886f">children</a> ()</td></tr>
+<tr class="separator:afc7d109a1b67161e4d6a010ea3bf886f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495d82da7793c5b07f3ff103fb2fd533"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a495d82da7793c5b07f3ff103fb2fd533">event</a> (unsigned char name)</td></tr>
+<tr class="separator:a495d82da7793c5b07f3ff103fb2fd533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49569aaaf70b0d283ba7165a68e56efb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a49569aaaf70b0d283ba7165a68e56efb">listener</a> (unsigned char name, <a class="el" href="widget_8h.html#aff3c53fc23dc4fb8cab0d6ed46d867a3">Listener</a> function)</td></tr>
+<tr class="separator:a49569aaaf70b0d283ba7165a68e56efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ead71881834c227471d223af092c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a76ead71881834c227471d223af092c3f">dispatch</a> (unsigned char name)</td></tr>
+<tr class="separator:a76ead71881834c227471d223af092c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f05949f1fa8ca233137fc4119c7401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ab0f05949f1fa8ca233137fc4119c7401">Widget</a> ()</td></tr>
+<tr class="separator:ab0f05949f1fa8ca233137fc4119c7401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a405f4f97fe759063c21be52a64a0b5dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a405f4f97fe759063c21be52a64a0b5dc">parentWidget</a></td></tr>
+<tr class="separator:a405f4f97fe759063c21be52a64a0b5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d07135801c2a670e718197fb628b58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ac5d07135801c2a670e718197fb628b58">start</a></td></tr>
+<tr class="separator:ac5d07135801c2a670e718197fb628b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0775b9e3b428e821f2e80fa9ba8b8ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ae0775b9e3b428e821f2e80fa9ba8b8ba">ending</a></td></tr>
+<tr class="separator:ae0775b9e3b428e821f2e80fa9ba8b8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53921b01776aa0b0b4bfe11a738940e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a53921b01776aa0b0b4bfe11a738940e8">nextWidget</a></td></tr>
+<tr class="separator:a53921b01776aa0b0b4bfe11a738940e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33c03b1b4e597e6da7b337b2b55e7c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#ad33c03b1b4e597e6da7b337b2b55e7c9">previousWidget</a></td></tr>
+<tr class="separator:ad33c03b1b4e597e6da7b337b2b55e7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4841a91171e63471be9b3eec5e517fa8"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a4841a91171e63471be9b3eec5e517fa8">length</a></td></tr>
+<tr class="separator:a4841a91171e63471be9b3eec5e517fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdd9abe893b486d25f209abc6cc6149"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#adbdd9abe893b486d25f209abc6cc6149">events</a></td></tr>
+<tr class="separator:adbdd9abe893b486d25f209abc6cc6149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a62b6c5669ff7597219816b1f03831"><td class="memItemLeft" align="right" valign="top">std::map&lt; unsigned char, <br class="typebreak"/>
+std::list&lt; <a class="el" href="widget_8h.html#aff3c53fc23dc4fb8cab0d6ed46d867a3">Listener</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a37a62b6c5669ff7597219816b1f03831">listeners</a></td></tr>
+<tr class="separator:a37a62b6c5669ff7597219816b1f03831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Basic class of the console widget (to store different widgets in one list) </p>
+<div class="textblock"><p>Basic class of the console widget (to store different widgets in one list) Contains widgets tree for parsing events by Console class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{Widget*}</td><td>parentWidget - parent widget </td></tr>
+    <tr><td class="paramname">{Widget*}</td><td>start - pointer to the first child of current widget </td></tr>
+    <tr><td class="paramname">{Widget*}</td><td>ending - pointer to the last child of current widget </td></tr>
+    <tr><td class="paramname">{Widget*}</td><td>nextWidget - pointer to the next sibling </td></tr>
+    <tr><td class="paramname">{Widget*}</td><td>previousWidget - pointer to the previous sibling </td></tr>
+    <tr><td class="paramname">{unsigned</td><td>short} length - amount of children </td></tr>
+    <tr><td class="paramname">{unsigned</td><td>char} events - binary store for events could be dispatched at current widget </td></tr>
+    <tr><td class="paramname">{std::map&lt;unsigned</td><td>char, std::list&lt;Listener&gt;&gt;} listeners - store for event listeners </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="interface_8h_source.html#l00007">7</a> of file <a class="el" href="interface_8h_source.html">interface.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac395fbcfd90f5a33a4bb2ca1d83631ca"></a>
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00036">36</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab0f05949f1fa8ca233137fc4119c7401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Widget::Widget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00172">172</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae8cac87879e452153eda3c055e74bbeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::_next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_widget.html">Widget</a> *&#160;</td>
+          <td class="paramname"><em>nextWidget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets next widget </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{Widget*}</td><td>nextWidget - new next widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00050">50</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_ae8cac87879e452153eda3c055e74bbeb_icgraph.png" border="0" usemap="#class_widget_ae8cac87879e452153eda3c055e74bbeb_icgraph" alt=""/></div>
+<map name="class_widget_ae8cac87879e452153eda3c055e74bbeb_icgraph" id="class_widget_ae8cac87879e452153eda3c055e74bbeb_icgraph">
+<area shape="rect" id="node2" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="158,5,250,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="299,5,418,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1923a81b244677ab48494238a345825f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::_parent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_widget.html">Widget</a> *&#160;</td>
+          <td class="paramname"><em>parentWidget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setter for parent property </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{Widget*}</td><td>parentWidget - new parent widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00014">14</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a1923a81b244677ab48494238a345825f_icgraph.png" border="0" usemap="#class_widget_a1923a81b244677ab48494238a345825f_icgraph" alt=""/></div>
+<map name="class_widget_a1923a81b244677ab48494238a345825f_icgraph" id="class_widget_a1923a81b244677ab48494238a345825f_icgraph">
+<area shape="rect" id="node2" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="169,5,261,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="310,5,429,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0baf18d54ce42fae5cd7ad0b26fa138f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::_previous </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_widget.html">Widget</a> *&#160;</td>
+          <td class="paramname"><em>previousWidget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets previous widget </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{Widget*}</td><td>previousWidget - new previous widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00068">68</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a0baf18d54ce42fae5cd7ad0b26fa138f_icgraph.png" border="0" usemap="#class_widget_a0baf18d54ce42fae5cd7ad0b26fa138f_icgraph" alt=""/></div>
+<map name="class_widget_a0baf18d54ce42fae5cd7ad0b26fa138f_icgraph" id="class_widget_a0baf18d54ce42fae5cd7ad0b26fa138f_icgraph">
+<area shape="rect" id="node2" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="182,5,274,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="323,5,442,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="add8e7c0010594410e6e5b6d5e93966a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_widget.html">Widget</a> *&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a new child to the current widget </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{Widget*}</td><td>child - new child widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00086">86</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_add8e7c0010594410e6e5b6d5e93966a2_cgraph.png" border="0" usemap="#class_widget_add8e7c0010594410e6e5b6d5e93966a2_cgraph" alt=""/></div>
+<map name="class_widget_add8e7c0010594410e6e5b6d5e93966a2_cgraph" id="class_widget_add8e7c0010594410e6e5b6d5e93966a2_cgraph">
+<area shape="rect" id="node2" href="class_widget.html#a1923a81b244677ab48494238a345825f" title="Widget::_parent" alt="" coords="153,5,268,32"/><area shape="rect" id="node3" href="class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="163,56,259,83"/><area shape="rect" id="node4" href="class_widget.html#ae8cac87879e452153eda3c055e74bbeb" title="Widget::_next" alt="" coords="159,107,262,133"/><area shape="rect" id="node5" href="class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f" title="Widget::_previous" alt="" coords="147,157,274,184"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_add8e7c0010594410e6e5b6d5e93966a2_icgraph.png" border="0" usemap="#class_widget_add8e7c0010594410e6e5b6d5e93966a2_icgraph" alt=""/></div>
+<map name="class_widget_add8e7c0010594410e6e5b6d5e93966a2_icgraph" id="class_widget_add8e7c0010594410e6e5b6d5e93966a2_icgraph">
+<area shape="rect" id="node2" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="147,5,266,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bb6a505192d7d557cd1d040bd6290a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short Widget::childLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns amount of children </p>
+<dl class="section return"><dt>Returns</dt><dd>{unsigned short} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00112">112</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a0bb6a505192d7d557cd1d040bd6290a4_icgraph.png" border="0" usemap="#class_widget_a0bb6a505192d7d557cd1d040bd6290a4_icgraph" alt=""/></div>
+<map name="class_widget_a0bb6a505192d7d557cd1d040bd6290a4_icgraph" id="class_widget_a0bb6a505192d7d557cd1d040bd6290a4_icgraph">
+<area shape="rect" id="node2" href="class_menu.html#a2fbf061e8bb58f54459ecd39229d75f1" title="Menu::add" alt="" coords="192,5,275,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="323,5,442,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afc7d109a1b67161e4d6a010ea3bf886f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_widget.html">Widget</a> * &gt; Widget::children </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns array of child widgets </p>
+<dl class="section return"><dt>Returns</dt><dd>{std::vector&lt;Widget*&gt;} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00121">121</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_afc7d109a1b67161e4d6a010ea3bf886f_cgraph.png" border="0" usemap="#class_widget_afc7d109a1b67161e4d6a010ea3bf886f_cgraph" alt=""/></div>
+<map name="class_widget_afc7d109a1b67161e4d6a010ea3bf886f_cgraph" id="class_widget_afc7d109a1b67161e4d6a010ea3bf886f_cgraph">
+<area shape="rect" id="node2" href="class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="171,5,267,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a76ead71881834c227471d223af092c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::dispatch </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dispatches event on widget Calls all event listeners binded on given event to the widget </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{unsigned</td><td>char} name - name of the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00161">161</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a76ead71881834c227471d223af092c3f_icgraph.png" border="0" usemap="#class_widget_a76ead71881834c227471d223af092c3f_icgraph" alt=""/></div>
+<map name="class_widget_a76ead71881834c227471d223af092c3f_icgraph" id="class_widget_a76ead71881834c227471d223af092c3f_icgraph">
+<area shape="rect" id="node2" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="174,5,314,32"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="363,5,413,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ea4feac4bdee76a57d666d7241f7422"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,10 +462,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Widget::focus </td>
+          <td class="memname">void Widget::draw </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -153,58 +474,359 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event listener activated by <a class="el" href="class_navigator.html">Navigator</a> module when user selects widget   Navigator::listener </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{int}</td><td>index - index of subunit of the widget </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Drawing widget method  </p>
 
-<p>Reimplemented in <a class="el" href="class_menu.html#ac5ec365a1916cc9cbd233063544588d7">Menu</a>.</p>
+<p>Reimplemented in <a class="el" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">Menu</a>, and <a class="el" href="class_menu_item.html#af1e7bf9b4451876735cf2baea06cee3d">MenuItem</a>.</p>
 
-<p>Definition at line <a class="el" href="interface_8cpp_source.html#l00009">9</a> of file <a class="el" href="interface_8cpp_source.html">interface.cpp</a>.</p>
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00007">7</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a6ea4feac4bdee76a57d666d7241f7422_icgraph.png" border="0" usemap="#class_widget_a6ea4feac4bdee76a57d666d7241f7422_icgraph" alt=""/></div>
+<map name="class_widget_a6ea4feac4bdee76a57d666d7241f7422_icgraph" id="class_widget_a6ea4feac4bdee76a57d666d7241f7422_icgraph">
+<area shape="rect" id="node2" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="152,5,243,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="291,5,410,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a65f349812facca8302957a83b161a840"></a>
+<a class="anchor" id="a495d82da7793c5b07f3ff103fb2fd533"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Widget::unfocus </td>
+          <td class="memname">bool Widget::event </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Event listener activated by <a class="el" href="class_navigator.html">Navigator</a> module when user clicks on widget   Navigator::listener </p>
+<p>Checks if event is dispatchable </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">{int}</td><td>index - index of subunit of the widget </td></tr>
+    <tr><td class="paramname">{unsigned</td><td>char} name - name of the event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{bool} - true if event listeners are existing and active </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00140">140</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a495d82da7793c5b07f3ff103fb2fd533_icgraph.png" border="0" usemap="#class_widget_a495d82da7793c5b07f3ff103fb2fd533_icgraph" alt=""/></div>
+<map name="class_widget_a495d82da7793c5b07f3ff103fb2fd533_icgraph" id="class_widget_a495d82da7793c5b07f3ff103fb2fd533_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="169,5,265,32"/><area shape="rect" id="node5" href="class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="157,56,277,83"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="326,31,466,57"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="515,31,565,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a294b80d01330825d3172c8749ed2934a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a> * Widget::firstChild </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns first child of widget </p>
+<dl class="section return"><dt>Returns</dt><dd>{Widget*} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00032">32</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a294b80d01330825d3172c8749ed2934a_icgraph.png" border="0" usemap="#class_widget_a294b80d01330825d3172c8749ed2934a_icgraph" alt=""/></div>
+<map name="class_widget_a294b80d01330825d3172c8749ed2934a_icgraph" id="class_widget_a294b80d01330825d3172c8749ed2934a_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="176,5,272,32"/><area shape="rect" id="node5" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="179,56,269,83"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="321,5,461,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="509,5,560,32"/><area shape="rect" id="node6" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="331,56,450,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac377c134451d68d5915ca6ddfe7fd507"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a> * Widget::lastChild </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns last child of widget </p>
+<dl class="section return"><dt>Returns</dt><dd>{Widget*} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00041">41</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_ac377c134451d68d5915ca6ddfe7fd507_icgraph.png" border="0" usemap="#class_widget_ac377c134451d68d5915ca6ddfe7fd507_icgraph" alt=""/></div>
+<map name="class_widget_ac377c134451d68d5915ca6ddfe7fd507_icgraph" id="class_widget_ac377c134451d68d5915ca6ddfe7fd507_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="176,5,296,32"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="345,5,485,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="533,5,584,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a49569aaaf70b0d283ba7165a68e56efb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Widget::listener </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="widget_8h.html#aff3c53fc23dc4fb8cab0d6ed46d867a3">Listener</a>&#160;</td>
+          <td class="paramname"><em>function</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets listener to the event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{unsigned</td><td>char} name - name of the event </td></tr>
+    <tr><td class="paramname">{Listener}</td><td>function - event listener function </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c">Menu</a>.</p>
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00150">150</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
 
-<p>Definition at line <a class="el" href="interface_8cpp_source.html#l00018">18</a> of file <a class="el" href="interface_8cpp_source.html">interface.cpp</a>.</p>
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a49569aaaf70b0d283ba7165a68e56efb_icgraph.png" border="0" usemap="#class_widget_a49569aaaf70b0d283ba7165a68e56efb_icgraph" alt=""/></div>
+<map name="class_widget_a49569aaaf70b0d283ba7165a68e56efb_icgraph" id="class_widget_a49569aaaf70b0d283ba7165a68e56efb_icgraph">
+<area shape="rect" id="node2" href="class_menu.html#a2fbf061e8bb58f54459ecd39229d75f1" title="Menu::add" alt="" coords="168,5,251,32"/><area shape="rect" id="node3" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="299,5,418,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c14a7af2fe983cdda25b0433da1743b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a> * Widget::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter for next widget </p>
+<dl class="section return"><dt>Returns</dt><dd>{Widget*} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00059">59</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a4c14a7af2fe983cdda25b0433da1743b_icgraph.png" border="0" usemap="#class_widget_a4c14a7af2fe983cdda25b0433da1743b_icgraph" alt=""/></div>
+<map name="class_widget_a4c14a7af2fe983cdda25b0433da1743b_icgraph" id="class_widget_a4c14a7af2fe983cdda25b0433da1743b_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="160,5,256,32"/><area shape="rect" id="node5" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="163,56,253,83"/><area shape="rect" id="node7" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="162,107,254,133"/><area shape="rect" id="node8" href="class_widget.html#afc7d109a1b67161e4d6a010ea3bf886f" title="Widget::children" alt="" coords="150,157,266,184"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="315,5,455,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="504,5,555,32"/><area shape="rect" id="node6" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="326,81,445,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3dac0069a2933ad4a2e6d1b2cfd16236"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a> * Widget::parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter for parent property </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00023">23</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a3dac0069a2933ad4a2e6d1b2cfd16236_icgraph.png" border="0" usemap="#class_widget_a3dac0069a2933ad4a2e6d1b2cfd16236_icgraph" alt=""/></div>
+<map name="class_widget_a3dac0069a2933ad4a2e6d1b2cfd16236_icgraph" id="class_widget_a3dac0069a2933ad4a2e6d1b2cfd16236_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="172,5,268,32"/><area shape="rect" id="node5" href="class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="160,56,280,83"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="329,31,469,57"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="517,31,568,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4451247ef765bccbfa460211ce91d07e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a> * Widget::previous </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter for previous widget </p>
+<dl class="section return"><dt>Returns</dt><dd>{Widget*} </dd></dl>
+
+<p>Definition at line <a class="el" href="widget_8cpp_source.html#l00077">77</a> of file <a class="el" href="widget_8cpp_source.html">widget.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_widget_a4451247ef765bccbfa460211ce91d07e_icgraph.png" border="0" usemap="#class_widget_a4451247ef765bccbfa460211ce91d07e_icgraph" alt=""/></div>
+<map name="class_widget_a4451247ef765bccbfa460211ce91d07e_icgraph" id="class_widget_a4451247ef765bccbfa460211ce91d07e_icgraph">
+<area shape="rect" id="node2" href="class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="173,5,293,32"/><area shape="rect" id="node3" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="342,5,482,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="531,5,581,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae0775b9e3b428e821f2e80fa9ba8b8ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a>* Widget::ending</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00041">41</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbdd9abe893b486d25f209abc6cc6149"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Widget::events</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00045">45</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4841a91171e63471be9b3eec5e517fa8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short Widget::length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00044">44</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37a62b6c5669ff7597219816b1f03831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;unsigned char, std::list&lt;<a class="el" href="widget_8h.html#aff3c53fc23dc4fb8cab0d6ed46d867a3">Listener</a>&gt; &gt; Widget::listeners</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00046">46</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53921b01776aa0b0b4bfe11a738940e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a>* Widget::nextWidget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00042">42</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a405f4f97fe759063c21be52a64a0b5dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a>* Widget::parentWidget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00039">39</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad33c03b1b4e597e6da7b337b2b55e7c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a>* Widget::previousWidget</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00043">43</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5d07135801c2a670e718197fb628b58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_widget.html">Widget</a>* Widget::start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="widget_8h_source.html#l00040">40</a> of file <a class="el" href="widget_8h_source.html">widget.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/travis/build/echo-team/Snoke/Libraries/Interface/<a class="el" href="interface_8h_source.html">interface.h</a></li>
-<li>/home/travis/build/echo-team/Snoke/Libraries/Interface/<a class="el" href="interface_8cpp_source.html">interface.cpp</a></li>
+<li>/home/travis/build/echo-team/Snoke/Libraries/Widgets/<a class="el" href="widget_8h_source.html">widget.h</a></li>
+<li>/home/travis/build/echo-team/Snoke/Libraries/Widgets/<a class="el" href="widget_8cpp_source.html">widget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
