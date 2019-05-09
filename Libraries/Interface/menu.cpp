@@ -5,8 +5,7 @@
  */
 void MenuItem::draw()
 {
-    move(y, x);
-    printw(name);
+    mvaddstr(y, x, name);
 }
 
 /**
@@ -35,8 +34,7 @@ void Menu::add(const char* name)
  */
 void Menu::focus(int index)
 {
-    move(y + index * 2, x);
-    printw(">");
+    mvaddch(y + index * 2, x, '>');
     refresh();
 }
 
@@ -48,8 +46,7 @@ void Menu::focus(int index)
  */
 void Menu::unfocus(int index)
 {
-    move(y + index * 2, x);
-    printw(" ");
+    mvaddch(y + index * 2, x, ' ');
     refresh();
 }
 
