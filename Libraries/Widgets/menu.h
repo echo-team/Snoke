@@ -3,7 +3,7 @@
 #include <ncurses.h>
 #include <cstring>
 #include <list>
-#include "interface.h"
+#include "widget.h"
 
 /**
  * Describes menu button

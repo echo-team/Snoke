@@ -1,4 +1,4 @@
-#include "interface.h"
+#include "widget.h"
 
 /**
  * Drawing widget method

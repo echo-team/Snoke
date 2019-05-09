@@ -1,7 +1,7 @@
 #ifndef SCREEN_H
 #define SCREEN_H
 #include <list>
-#include "../Interface/interface.h"
+#include "../Widgets/widget.h"
 
 /**
  * Manages the widget tree

@@ -4,7 +4,7 @@
 #include <map>
 #include <ncurses.h>
 #include "screen.h"
-#include "../Interface/interface.h"
+#include "../Widgets/widget.h"
 
 /**
  * Singleton class manages stack of screens and navigation
