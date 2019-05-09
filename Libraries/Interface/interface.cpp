@@ -44,7 +44,7 @@ Widget* Widget::lastChild()
 }
 
 /**
- * Setts next widget
+ * Sets next widget
  * @param {Widget*} nextWidget - new next widget
  */
 void Widget::_next(Widget* nextWidget)
@@ -62,7 +62,7 @@ Widget* Widget::next()
 }
 
 /**
- * Setts previous widget
+ * Sets previous widget
  * @param {Widget*} previousWidget - new previous widget
  */
 void Widget::_previous(Widget* previousWidget)
@@ -143,7 +143,7 @@ bool Widget::event(unsigned char name)
 }
 
 /**
- * Setts listener to the event
+ * Sets listener to the event
  * @param {unsigned char} name     - name of the event
  * @param {Listener}      function - event listener function
  */
@@ -155,11 +155,12 @@ void Widget::listener(unsigned char name, Listener function)
 
 /**
  * Dispatches event on widget
- * @param {unsigned char} name        - name of the event
+ * Calls all event listeners binded on given event to the widget
+ * @param {unsigned char} name - name of the event
  */
 void Widget::dispatch(unsigned char name)
 {
-    for (std::list<Listener>::iterator function = listeners[name].begin(); function != listeners[name].end(); function++)
+    for (auto function = listeners[name].begin(); function != listeners[name].end(); function++)
     {
         (*function)();
     }

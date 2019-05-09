@@ -27,7 +27,7 @@ typedef std::function<void()> Listener;
  * @prop {Widget*}                                      parentWidget   - parent widget
  * @prop {Widget*}                                      start          - pointer to the first child of current widget
  * @prop {Widget*}                                      ending         - pointer to the last child of current widget
- * @prop {Widget*}                                      nextWidget     - pointer to the previous sibling
+ * @prop {Widget*}                                      nextWidget     - pointer to the next sibling
  * @prop {Widget*}                                      previousWidget - pointer to the previous sibling
  * @prop {unsigned short}                               length         - amount of children
  * @prop {unsigned char}                                events         - binary store for events could be dispatched at current widget
