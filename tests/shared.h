@@ -1,13 +1,21 @@
+/**
+ * @file shared.h
+ * @author Yegor Ignatov
+ * @brief shared functions for testing
+ * @version 0.1
+ * @date 2019-05-10
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
 #ifndef SHARED_H
 #define SHARED_H
 
 #include <gtest/gtest.h>
+#include "Common/common.h"
 
 constexpr bool TRAVIS = 0;
 
-extern "C" {
-#include "Common/common.h"
-}
 
 /**
  * @brief redirects stdout to a file
