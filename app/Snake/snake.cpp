@@ -213,7 +213,7 @@ void Snake::moveBack(Point p, Point* change[2])
  */
 short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
 {
-    if (!labyrinth->isFree(check))
+    if ((!labyrinth->isFree(check)) == 1)
     {
         return checkWisely(check, ball->getCoords());
     }

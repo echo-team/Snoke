@@ -350,9 +350,16 @@ void Labyrinth::updateLabyrinth(Point* update[2], int size)
  * @param   p - Point to check in the labyrinth
  * @return    - mark of whether the Point is free
  */
-bool Labyrinth::isFree(Point p)
+short Labyrinth::isFree(Point p)
 {
-    return (this->labyrinth[p.y][p.x] == ' ');
+    if(p.x < gameFieldSize.x && p.y < gameFieldSize.y && p.x > -1 && p.y > -1)
+    {
+        return (this->labyrinth[p.y][p.x] == ' ');
+    }
+    else
+    {
+        return -1;
+    }
 }
 
 /**
@@ -362,7 +369,7 @@ bool Labyrinth::isFree(Point p)
  */
 bool Labyrinth::addPoint(Point p)
 {
-	if(this->isFree(p))
+	if(this->isFree(p) == 1)
 	{
         labyrinth[p.y][p.x] = p.style.letter;
 		return true;

@@ -74,7 +74,7 @@ class Labyrinth
         bool addPoint(Point p);
         bool remPoint(Point p);
         void displayHandler(Point* change[2] = NULL, int size = -1, int displayMethod = -1);
-        bool isFree(Point p);
+        short isFree(Point p);
         bool save(char name[MAXLINE]);
         bool load(char name[MAXLINE]);
 };
