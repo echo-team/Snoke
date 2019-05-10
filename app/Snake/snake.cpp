@@ -223,29 +223,29 @@ short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
 
 /**
  * @brief   If the Point of the labyrinth we are checking is not free then decide the type of collision
- * @param   coords  - Point we are checking for type of a collision
- * @param   bcoords - Point, containing the coordinates of the Ball
+ * @param   check  - Point we are checking for type of a collision
+ * @param   bCoords - Point, containing the coordinates of the Ball
  * @return          - type of the collision
  */
-short Snake::checkWisely(Point coords, Point bcoords)
+short Snake::checkWisely(Point check, Point bCoords)
 {
-    if(coords.x == bcoords.x && coords.y == bcoords.y)
+    if(check.x == bCoords.x && check.y == bCoords.y)
     {
         return BALL;
     }
-    else if (coords.x == gameFieldSize.x - 1)
+    else if (check.x == gameFieldSize.x - 1)
     {
         return WALLRIGHT;
     }
-    else if (coords.x == 0)
+    else if (check.x == 0)
     {
         return WALLLEFT;
     }
-    else if (coords.y == gameFieldSize.y - 1)
+    else if (check.y == gameFieldSize.y - 1)
     {
         return WALLBOT;
     }
-    else if (coords.y == 0)
+    else if (check.y == 0)
     {
         return WALLUP;
     }
