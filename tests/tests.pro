@@ -17,9 +17,23 @@ QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
+# ncurses
+LIBS += -lncurses
 
-HEADERS +=
+
+HEADERS += snake_init_test.h \
+    shared.h \
+    ../app/Common/common.h \
+    ../app/Ball/ball.h \
+    ../app/Game/game.h \
+    ../app/Labyrinth/labyrinth.h \
+    ../app/Snake/snake.h \
 
 SOURCES += main.cpp \
+    ../app/Common/common.cpp \
+    ../app/Ball/ball.cpp \
+    ../app/Game/game.cpp \
+    ../app/Labyrinth/labyrinth.cpp \
+    ../app/Snake/snake.cpp \
 
 INCLUDEPATH += ../app

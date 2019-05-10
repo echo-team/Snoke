@@ -3,7 +3,7 @@
 
 #TARGET = Snoke
 
-LIBS = -lncurses
+LIBS += -lncurses
 
 HEADERS = \
    Ball/ball.h \
