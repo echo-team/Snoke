@@ -24,7 +24,7 @@ Point gameFieldSize;
  */
 bool Game::init(int size, int speed)
 {
-    if(size > 10 && speed > 50)
+    if(size > 10)
     {
         gameFieldSize.x = size;
         gameFieldSize.y = size/2;
