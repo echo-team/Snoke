@@ -1,6 +1,15 @@
 #include "application.h"
 
 /**
+ * Sets the start position of currentWidget and focuses it
+ */
+void Application::focusFirst()
+{
+    currentWidget = currentScreen->next(currentScreen->first());
+    currentWidget->dispatch(EVENT_FOCUS);
+}
+
+/**
  * Runs the main event loop
  */
 void Application::execute()
@@ -47,8 +56,8 @@ void Application::load(char* name)
 {
     history.push_back(currentScreen);
     currentScreen = screens[name];
-    currentWidget = currentScreen->first();
     currentScreen->draw();
+    focusFirst();
 }
 
 /**
@@ -59,8 +68,8 @@ void Application::back()
 {
     history.pop_back();
     currentScreen = *(std::prev(history.end(), 1));
-    currentWidget = currentScreen->first();
     currentScreen->draw();
+    focusFirst();
 }
 
 /**

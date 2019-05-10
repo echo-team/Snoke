@@ -16,6 +16,7 @@
 class Application
 {
     private:
+        void focusFirst();
         Application();
         Application(const Application&);
         Application& operator=(Application&);
