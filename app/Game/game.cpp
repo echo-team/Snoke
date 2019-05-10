@@ -142,7 +142,7 @@ int Game::run()
 bool Game::initSnake(Point begin, int dir, int length)
 {
     bool flag = snake.init(begin, dir, length);
-    if (!flag){
+    if (flag){
         labyrinth.addSnake(&snake);
     }
     return flag;
