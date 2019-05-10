@@ -3,7 +3,7 @@
 
 /**
  * Prerequisites:
- *     tested snake.init
+ *     tested Snake.init
  */
 
 #include "shared.h"

@@ -1,10 +1,16 @@
 #ifndef SNAKE_INIT_TEST_H
 #define SNAKE_INIT_TEST_H
 
-
 #include "shared.h"
 #include "Snake/snake.h"
 
+/**
+ * @brief Snake class object can be created
+ */
+TEST(snake_init_test, test0){
+    Snake snake;
+    SUCCEED();
+}
 /**
  * @brief method runs with normal parameters
  */
