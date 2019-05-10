@@ -51,7 +51,7 @@ bool Snake::init(Point begin, short dir, int length)
         }
 
         /*
-         * Snake can not exist in non-positive coords 
+         * Snake can not exist in non-positive coords
          */
         if (*changable + value * length < 1)
         {
@@ -255,8 +255,9 @@ short Snake::checkWisely(Point coords, Point bcoords)
 /**
  * @brief   The method to set the direction where the snake is heading
  * @param   direction - direction of the snake we are trying to set
+ * @return            - mark of successful set
  */
-void Snake::setDirection(int direction)
+bool Snake::setDirection(int direction)
 {
     if (direction == MVRIGHT || direction == MVLEFT || direction == MVUP || direction == MVDOWN){
         /*
@@ -264,11 +265,12 @@ void Snake::setDirection(int direction)
          */
         if (this->direction + direction == 0)
         {
-            return;
+            return false;
         }
 
         this->direction = direction;
     }
+    return true;
 }
 
 /**

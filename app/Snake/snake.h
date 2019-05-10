@@ -90,7 +90,7 @@ class Snake
         void setScheme();
         void getCoords(std::list<Point>* currBody);
         Point getHeadCoords();
-        void setDirection(int dir = 0);
+        bool setDirection(int dir);
         short getDirection();
         bool move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize);
 };
