@@ -2,6 +2,7 @@
   * Include test headers here
   */
 #include "snake_init_test.h"
+#include "snake_setdirection_test.h"
 
 #include <gtest/gtest.h>
 

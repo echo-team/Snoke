@@ -44,7 +44,7 @@ void returnStream(FILE* file, int oldstdOut) {
 /**
  * @brief compare files of expected and actual output and decide if test passes
  * @param expectedData - file with expected output for the test case
- * @param outputData   - file with actual programm output
+ * @param outputData   - file with actual program output
  * @return             - mark of whether the files are identical
  */
 bool executeTest(FILE* expectedData, FILE* outputData) {
