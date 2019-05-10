@@ -3,7 +3,7 @@
   */
 #include "snake_init_test.h"
 #include "snake_setdirection_test.h"
-//insert test for Labyrinth.setLabyrinth here
+#include "labyrinth_setlabyrinth_test.h"
 #include "game_init_test.h"
 
 #include <gtest/gtest.h>
