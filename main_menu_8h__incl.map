@@ -1,7 +1,7 @@
-<map id="/home/travis/build/echo&#45;team/Snoke/Libraries/Screens/mainMenu.h" name="/home/travis/build/echo&#45;team/Snoke/Libraries/Screens/mainMenu.h">
-<area shape="rect" id="node3" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="5,184,157,211"/>
-<area shape="rect" id="node5" href="$logo_8h.html" title="../Widgets/logo.h" alt="" coords="233,109,353,136"/>
-<area shape="rect" id="node8" href="$menu_8h.html" title="../Widgets/menu.h" alt="" coords="378,109,507,136"/>
-<area shape="rect" id="node13" href="$screen_8h.html" title="screen.h" alt="" coords="532,109,604,136"/>
-<area shape="rect" id="node10" href="$widget_8h.html" title="widget.h" alt="" coords="470,184,540,211"/>
+<map id="/home/travis/build/echo&#45;team/Snoke/app/Screens/mainMenu.h" name="/home/travis/build/echo&#45;team/Snoke/app/Screens/mainMenu.h">
+<area shape="rect" id="node3" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="20,184,172,211"/>
+<area shape="rect" id="node5" href="$logo_8h.html" title="../Interface/logo.h" alt="" coords="163,109,287,136"/>
+<area shape="rect" id="node8" href="$menu_8h.html" title="../Interface/menu.h" alt="" coords="401,109,532,136"/>
+<area shape="rect" id="node10" href="$interface_8h.html" title="interface.h" alt="" coords="465,184,547,211"/>
+<area shape="rect" id="node11" href="$navigator_8h.html" title="navigator.h" alt="" coords="463,259,549,285"/>
 </map>

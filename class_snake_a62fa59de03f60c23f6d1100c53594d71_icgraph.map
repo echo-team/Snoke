@@ -1,5 +1,6 @@
 <map id="Snake::getCoords" name="Snake::getCoords">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ad2819aba76d079c7fda751e7388b7182" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="181,5,323,32"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="181,5,323,32"/>
 <area shape="rect" id="node3" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="371,5,490,32"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="539,5,621,32"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="669,5,720,32"/>
 </map>

@@ -1,6 +1,0 @@
-<map id="Screen::first" name="Screen::first">
-<area shape="rect" id="node2" href="$class_application.html#a80614dd1a6a37626a880a7ef83156764" title="Application::focusFirst" alt="" coords="147,31,299,57"/>
-<area shape="rect" id="node3" href="$class_application.html#a0ba46f127e71da8057b748de835e89af" title="Application::load" alt="" coords="349,5,467,32"/>
-<area shape="rect" id="node5" href="$class_application.html#a7efbd7aad2bb4539e23d11b1f9dea252" title="Application::back" alt="" coords="347,56,469,83"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="517,5,568,32"/>
-</map>

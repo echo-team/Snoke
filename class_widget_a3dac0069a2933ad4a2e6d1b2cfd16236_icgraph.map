@@ -1,9 +1,0 @@
-<map id="Widget::parent" name="Widget::parent">
-<area shape="rect" id="node2" href="$class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="172,56,268,83"/>
-<area shape="rect" id="node8" href="$class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="160,107,280,133"/>
-<area shape="rect" id="node3" href="$class_application.html#a80614dd1a6a37626a880a7ef83156764" title="Application::focusFirst" alt="" coords="328,56,480,83"/>
-<area shape="rect" id="node7" href="$class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="334,107,474,133"/>
-<area shape="rect" id="node4" href="$class_application.html#a0ba46f127e71da8057b748de835e89af" title="Application::load" alt="" coords="530,5,649,32"/>
-<area shape="rect" id="node6" href="$class_application.html#a7efbd7aad2bb4539e23d11b1f9dea252" title="Application::back" alt="" coords="528,56,651,83"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="699,56,749,83"/>
-</map>

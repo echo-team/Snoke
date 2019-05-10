@@ -76,24 +76,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
-      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
-      <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
-      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
       <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
@@ -117,7 +114,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,14 +126,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <div class="contents">
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
-<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
-<li>app
-: <a class="el" href="application_8cpp.html#a2e618917c2c253ff21bcdb796c5696a3">application.cpp</a>
-, <a class="el" href="application_8h.html#a2e618917c2c253ff21bcdb796c5696a3">application.h</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>BALL
 : <a class="el" href="snake_8h.html#a43d0bede78018beb3759ccd861a20d8f">snake.h</a>
@@ -145,6 +134,9 @@ $(document).ready(function(){initNavTree('globals.html','');});
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>changeStream()
+: <a class="el" href="shared_8h.html#af79398b6a371ad4a755652934beb8536">shared.h</a>
+</li>
 <li>COLL
 : <a class="el" href="snake_8h.html#a1a149ac26a0e57c1aa7e262b5a58a854">snake.h</a>
 </li>
@@ -165,14 +157,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
-<li>EVENT_ACTIVE
-: <a class="el" href="widget_8h.html#a87b1f5bb7afc0bd67a56748a37ee780d">widget.h</a>
-</li>
-<li>EVENT_FOCUS
-: <a class="el" href="widget_8h.html#a960f19525de75124799c91e5c303b153">widget.h</a>
-</li>
-<li>EVENT_UNFOCUS
-: <a class="el" href="widget_8h.html#a65513a16243d75373534471ef135240c">widget.h</a>
+<li>executeTest()
+: <a class="el" href="shared_8h.html#ae47f19a12311b39c32a3753205151c5f">shared.h</a>
 </li>
 </ul>
 
@@ -202,23 +188,17 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>Listener
-: <a class="el" href="widget_8h.html#aff3c53fc23dc4fb8cab0d6ed46d867a3">widget.h</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>main()
 : <a class="el" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Main.cpp</a>
+, <a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
 </li>
 <li>MAXLINE
 : <a class="el" href="common_8h.html#a4af19d530fc1e1df96478f0d3e2e64d5">common.h</a>
 </li>
 <li>mSleep()
-: <a class="el" href="common_8h.html#acfe1c587c2a13d4b833eb11bd3157771">common.h</a>
-, <a class="el" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">common.cpp</a>
+: <a class="el" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">common.cpp</a>
+, <a class="el" href="common_8h.html#acfe1c587c2a13d4b833eb11bd3157771">common.h</a>
 </li>
 <li>MVDOWN
 : <a class="el" href="snake_8h.html#a85abdf3a22dabb48802f10d0a411eeac">snake.h</a>
@@ -250,10 +230,22 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>set_escdelay()
-: <a class="el" href="common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c">common.cpp</a>
-, <a class="el" href="common_8h.html#ae8211888b97841c7339ec4673cdd76e4">common.h</a>
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>returnStream()
+: <a class="el" href="shared_8h.html#a93aaf31564d3b02ce0823e9fb58ecc8b">shared.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TEST()
+: <a class="el" href="game__init__test_8h.html#a95022f1946c5420b1570853330d1b0b9">game_init_test.h</a>
+, <a class="el" href="labyrinth__setlabyrinth__test_8h.html#ad1e443fae962741ad90d84b5758bc7b3">labyrinth_setlabyrinth_test.h</a>
+, <a class="el" href="snake__init__test_8h.html#a418371721156d8ceb1abfcc2244dce81">snake_init_test.h</a>
+, <a class="el" href="snake__setdirection__test_8h.html#ac1c9438bf55925f09b85cdd271f106d1">snake_setdirection_test.h</a>
+</li>
+<li>TRAVIS
+: <a class="el" href="shared_8h.html#a35922bc1ee8b1170900c49c316d08cb2">shared.h</a>
 </li>
 </ul>
 

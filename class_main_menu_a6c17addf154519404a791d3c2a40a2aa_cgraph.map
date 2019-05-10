@@ -1,16 +1,7 @@
 <map id="MainMenu::draw" name="MainMenu::draw">
-<area shape="rect" id="node2" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="173,81,288,108"/>
-<area shape="rect" id="node3" href="$class_menu.html#a2fbf061e8bb58f54459ecd39229d75f1" title="Menu::add" alt="" coords="189,132,272,159"/>
-<area shape="rect" id="node8" href="$class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="185,259,277,285"/>
-<area shape="rect" id="node13" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="185,385,276,412"/>
-<area shape="rect" id="node4" href="$class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4" title="Widget::childLength" alt="" coords="337,5,474,32"/>
-<area shape="rect" id="node5" href="$class_widget.html#a49569aaaf70b0d283ba7165a68e56efb" title="Widget::listener" alt="" coords="349,56,462,83"/>
-<area shape="rect" id="node6" href="$class_menu.html#ac5ec365a1916cc9cbd233063544588d7" title="Menu::focus" alt="" coords="358,107,453,133"/>
-<area shape="rect" id="node7" href="$class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c" title="Menu::unfocus" alt="" coords="351,157,459,184"/>
-<area shape="rect" id="node9" href="$class_widget.html#a1923a81b244677ab48494238a345825f" title="Widget::_parent" alt="" coords="348,208,463,235"/>
-<area shape="rect" id="node10" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="357,360,453,387"/>
-<area shape="rect" id="node11" href="$class_widget.html#ae8cac87879e452153eda3c055e74bbeb" title="Widget::_next" alt="" coords="354,259,457,285"/>
-<area shape="rect" id="node12" href="$class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f" title="Widget::_previous" alt="" coords="342,309,469,336"/>
-<area shape="rect" id="node14" href="$class_widget.html#a294b80d01330825d3172c8749ed2934a" title="Widget::firstChild" alt="" coords="344,411,467,437"/>
-<area shape="rect" id="node15" href="$class_widget.html#a6ea4feac4bdee76a57d666d7241f7422" title="Widget::draw" alt="" coords="356,461,455,488"/>
+<area shape="rect" id="node2" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="185,5,300,32"/>
+<area shape="rect" id="node3" href="$class_menu.html#a1a1982871bb5f8b1557d26b0d9ccfe0f" title="Menu::addButton" alt="" coords="182,56,303,83"/>
+<area shape="rect" id="node4" href="$class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6" title="Menu::draw" alt="" coords="197,107,288,133"/>
+<area shape="rect" id="node5" href="$class_navigator.html#a47967fc9bdfd276c98f8ed1c44d5dc46" title="Navigator::pushUnit" alt="" coords="173,157,312,184"/>
+<area shape="rect" id="node6" href="$class_navigator.html#ab9b30029b9ef06cca27ebc5b2549121c" title="Navigator::listen" alt="" coords="184,208,301,235"/>
 </map>

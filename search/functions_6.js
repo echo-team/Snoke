@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['first',['first',['../class_screen.html#abcd6462530408562e11cdfa1f6011dc7',1,'Screen']]],
-  ['firstchild',['firstChild',['../class_widget.html#a294b80d01330825d3172c8749ed2934a',1,'Widget']]],
-  ['focus',['focus',['../class_menu.html#ac5ec365a1916cc9cbd233063544588d7',1,'Menu']]],
-  ['focusfirst',['focusFirst',['../class_application.html#a80614dd1a6a37626a880a7ef83156764',1,'Application']]],
-  ['forceddisplay',['forcedDisplay',['../class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf',1,'Labyrinth']]],
-  ['freedisplay',['freeDisplay',['../class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e',1,'Labyrinth']]]
+  ['inaddchange',['inAddChange',['../common_8cpp.html#a8afa890f53aecd84c750b7b568629e25',1,'inAddChange(Point p, Point *change[2], int changeSize):&#160;common.cpp'],['../common_8h.html#a8afa890f53aecd84c750b7b568629e25',1,'inAddChange(Point p, Point *change[2], int changeSize):&#160;common.cpp']]],
+  ['init',['init',['../class_ball.html#a1907f13fdfb320a19180efec2a56e39c',1,'Ball::init()'],['../class_game.html#a66e1800ff072c0b4e737ac51430630db',1,'Game::init()'],['../class_snake.html#a953fb7b8be521f651989bb53323e89ec',1,'Snake::init()']]],
+  ['initball',['initBall',['../class_game.html#a3702238c3fef205d19d1cb4bbc471c5c',1,'Game']]],
+  ['initchange',['initChange',['../class_game.html#a7756510a62b464799b94ae9f5a78b902',1,'Game']]],
+  ['initsnake',['initSnake',['../class_game.html#a0e8435182e77e921b5ba0471a8bfb20d',1,'Game']]],
+  ['inremchange',['inRemChange',['../common_8cpp.html#aed7e2ccc7264c951f8b3802757992941',1,'inRemChange(Point p, Point *change[2], int changeSize):&#160;common.cpp'],['../common_8h.html#aed7e2ccc7264c951f8b3802757992941',1,'inRemChange(Point p, Point *change[2], int changeSize):&#160;common.cpp']]],
+  ['isfree',['isFree',['../class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277',1,'Labyrinth']]]
 ];

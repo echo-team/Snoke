@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$class_ball.html#a72c944149264221e2857c8b4ca72c502" title="Generate the Ball. " alt="" coords="163,107,287,133"/>
 <area shape="rect" id="node7" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="158,56,293,83"/>
 <area shape="rect" id="node8" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="169,157,281,184"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="342,56,461,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="342,56,461,83"/>
 <area shape="rect" id="node5" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="Check if the Point is in the remove queue. " alt="" coords="349,107,454,133"/>
 <area shape="rect" id="node6" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="Check if Points is in the addition queue. " alt="" coords="351,157,451,184"/>
 </map>

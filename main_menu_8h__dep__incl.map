@@ -1,4 +1,4 @@
-<map id="/home/travis/build/echo&#45;team/Snoke/Libraries/Screens/mainMenu.h" name="/home/travis/build/echo&#45;team/Snoke/Libraries/Screens/mainMenu.h">
-<area shape="rect" id="node2" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/Libraries\l/Screens/mainMenu.cpp" alt="" coords="5,109,187,165"/>
-<area shape="rect" id="node3" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/Main.cpp" alt="" coords="211,117,396,158"/>
+<map id="/home/travis/build/echo&#45;team/Snoke/app/Screens/mainMenu.h" name="/home/travis/build/echo&#45;team/Snoke/app/Screens/mainMenu.h">
+<area shape="rect" id="node2" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Main.cpp" alt="" coords="5,109,157,165"/>
+<area shape="rect" id="node3" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.cpp" alt="" coords="183,109,345,165"/>
 </map>

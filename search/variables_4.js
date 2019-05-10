@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['end',['end',['../class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f',1,'Labyrinth']]],
-  ['ending',['ending',['../class_widget.html#ae0775b9e3b428e821f2e80fa9ba8b8ba',1,'Widget']]],
-  ['events',['events',['../class_widget.html#adbdd9abe893b486d25f209abc6cc6149',1,'Widget']]]
+  ['fg',['fg',['../class_point_style.html#a1fbffd6500e3600823d865e402187e79',1,'PointStyle']]],
+  ['field',['field',['../struct_side_button.html#afd703657d0b75b20a7ca1d2c3147ec34',1,'SideButton']]]
 ];

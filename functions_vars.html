@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
       <li><a href="#index_w"><span>w</span></a></li>
       <li><a href="#index_x"><span>x</span></a></li>
       <li class="current"><a href="#index_y"><span>y</span></a></li>
@@ -119,7 +120,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,7 +137,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_point_style.html#aacc97d67bd02949ddc02af1f1d33bceb">PointStyle</a>
 </li>
 <li>buttons
-: <a class="el" href="class_side_menu.html#af6b73f113ae5b74a238f5b167c8902cb">SideMenu</a>
+: <a class="el" href="class_menu.html#a631c3c73e1f05159ddc2e967b7b4bca7">Menu</a>
+, <a class="el" href="class_side_menu.html#af6b73f113ae5b74a238f5b167c8902cb">SideMenu</a>
 </li>
 </ul>
 
@@ -148,11 +150,11 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>changeSize
 : <a class="el" href="class_game.html#ae959d08e508fcef98dd07a2b9cd82e65">Game</a>
 </li>
-<li>currentScreen
-: <a class="el" href="class_application.html#a7b13dc5cc93dac3c92903ba210c2e07e">Application</a>
+<li>currentSubunit
+: <a class="el" href="class_navigator.html#a616e5c7457f641e3027f68103e0da245">Navigator</a>
 </li>
-<li>currentWidget
-: <a class="el" href="class_application.html#ae7b304688330944ec4625ff4ce052351">Application</a>
+<li>currentUnit
+: <a class="el" href="class_navigator.html#a64d901b59121319cb87ca450dcc25912">Navigator</a>
 </li>
 </ul>
 
@@ -174,12 +176,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>end
 : <a class="el" href="class_labyrinth.html#a5536b8752cb3c2ef273360e14224bc6f">Labyrinth</a>
 </li>
-<li>ending
-: <a class="el" href="class_widget.html#ae0775b9e3b428e821f2e80fa9ba8b8ba">Widget</a>
-</li>
-<li>events
-: <a class="el" href="class_widget.html#adbdd9abe893b486d25f209abc6cc6149">Widget</a>
-</li>
 </ul>
 
 
@@ -196,10 +192,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>height
 : <a class="el" href="class_menu.html#abfd154ce7b19dca62d1ce8483c6f7bba">Menu</a>
-, <a class="el" href="class_menu_item.html#a9920243a4b39444e3b0c8fc69b2de213">MenuItem</a>
-</li>
-<li>history
-: <a class="el" href="class_application.html#aeb1b80bfb2e42cbf71bb7b196b6d4751">Application</a>
 </li>
 </ul>
 
@@ -219,33 +211,21 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>language
 : <a class="el" href="class_logo.html#ac3f13aa3fd16b904a71157e6ff47e48e">Logo</a>
 </li>
-<li>length
-: <a class="el" href="class_widget.html#a4841a91171e63471be9b3eec5e517fa8">Widget</a>
-</li>
 <li>letter
 : <a class="el" href="class_point_style.html#a9366ea71a7c02a842f2af9fc884408cd">PointStyle</a>
-</li>
-<li>listeners
-: <a class="el" href="class_widget.html#a37a62b6c5669ff7597219816b1f03831">Widget</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>name
-: <a class="el" href="class_menu_item.html#a946950c19be26f9081aff8b1f360438e">MenuItem</a>
+: <a class="el" href="struct_menu_button.html#ab20cd84f0366cbb5475c5b1e8de9d72c">MenuButton</a>
 , <a class="el" href="struct_side_button.html#a2533e6acfd5ba40cb7717412c25e6a0c">SideButton</a>
-</li>
-<li>nextWidget
-: <a class="el" href="class_widget.html#a53921b01776aa0b0b4bfe11a738940e8">Widget</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
-<li>parentWidget
-: <a class="el" href="class_widget.html#a405f4f97fe759063c21be52a64a0b5dc">Widget</a>
-</li>
 <li>position
 : <a class="el" href="class_ball.html#abd10a53eda37a2c541ad5dfbbea27f81">Ball</a>
 </li>
@@ -254,9 +234,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>prevEnd
 : <a class="el" href="class_labyrinth.html#a9041d96d4328dea374deb81ff08bd35c">Labyrinth</a>
-</li>
-<li>previousWidget
-: <a class="el" href="class_widget.html#ad33c03b1b4e597e6da7b337b2b55e7c9">Widget</a>
 </li>
 <li>prevStart
 : <a class="el" href="class_labyrinth.html#a23e08d55e3a627e8a0d828d05be03253">Labyrinth</a>
@@ -271,16 +248,10 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>rng
 : <a class="el" href="class_ball.html#ae3c68e21e0801b657b980380ab6a4bb2">Ball</a>
 </li>
-<li>root
-: <a class="el" href="class_screen.html#a9add14174ad6891f352d235d12ebe520">Screen</a>
-</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>screens
-: <a class="el" href="class_application.html#acbe68690fcb03a417fc0e5dce2e1164e">Application</a>
-</li>
 <li>seed_val
 : <a class="el" href="class_ball.html#ad6e67b032167a7d9db9630bc5ab2e613">Ball</a>
 </li>
@@ -302,20 +273,31 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>start
 : <a class="el" href="class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f">Labyrinth</a>
-, <a class="el" href="class_widget.html#ac5d07135801c2a670e718197fb628b58">Widget</a>
 </li>
 <li>style
 : <a class="el" href="class_logo.html#a2a0115dd4566f475c108eb3728265b62">Logo</a>
 , <a class="el" href="class_point.html#a4bcb4c7daa219001646a555fdc1a08f7">Point</a>
 , <a class="el" href="class_snake.html#a7db439ed2dd1cfea4c061e6ffd6ec54c">Snake</a>
 </li>
+<li>subunitsAmount
+: <a class="el" href="struct_navigate_unit.html#a59e42d03540ccad6017bc708cab71893">NavigateUnit</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>units
+: <a class="el" href="class_navigator.html#ad830f88cb2d1b38f7ff49797e244892d">Navigator</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>widget
+: <a class="el" href="struct_navigate_unit.html#a04a97a78df45d0f2268b8352f64d43f5">NavigateUnit</a>
+</li>
 <li>width
 : <a class="el" href="class_menu.html#a30ec519ffccb75388150c64175c4959b">Menu</a>
-, <a class="el" href="class_menu_item.html#adc1f1fc194eebbb469c6d2499f05a55b">MenuItem</a>
 </li>
 </ul>
 
@@ -324,7 +306,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>x
 : <a class="el" href="class_logo.html#ab25a813d9b3635c4b524dab9bc2ee86e">Logo</a>
 , <a class="el" href="class_menu.html#a26c11055ab1fe19a4862689d4ff85dc7">Menu</a>
-, <a class="el" href="class_menu_item.html#af14713800ebbb751d9a088efac5f8627">MenuItem</a>
 , <a class="el" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point</a>
 </li>
 </ul>
@@ -334,7 +315,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>y
 : <a class="el" href="class_logo.html#a33846b1b3ac0da8180c888fb9a1680f6">Logo</a>
 , <a class="el" href="class_menu.html#a658438f1d47ccb1cfb78b14fe3e09b52">Menu</a>
-, <a class="el" href="class_menu_item.html#a9a062b0c4889a2c1d70588c660b5ec54">MenuItem</a>
 , <a class="el" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">Point</a>
 </li>
 </ul>
