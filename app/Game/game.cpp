@@ -24,18 +24,27 @@ Point gameFieldSize;
  */
 bool Game::init(int size, int speed)
 {
-    gameFieldSize.x = size;
-    gameFieldSize.y = size/2;
-    this->labyrinth.setLabyrinth(gameFieldSize);
-    this->setSpeed(speed);
+    if(size > 10 && speed > 50)
+    {
+        gameFieldSize.x = size;
+        gameFieldSize.y = size/2;
+        this->labyrinth.setLabyrinth(gameFieldSize);
+        this->setSpeed(speed);
 
-    /*
-     * Initializing the change array, containing Points to be changed in the labyrinth
-     */
+        initChange();
+        return true;
+    }
+    return false;
+}
+
+/**
+ * @brief Initializes change array, containing Points to be changed in the labyrinth
+ */
+void Game::initChange()
+{
     this->changeSize = 2;
     this->change[0] = new Point [changeSize];
     this->change[1] = new Point [changeSize];
-    return true;
 }
 
 /**

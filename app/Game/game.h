@@ -39,6 +39,7 @@ class Game
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);
         bool initBall(Ball* ball);
+        void initChange();
         bool wipeChange(Point** lChange, int size);
     public:
         bool init(int size = 20, int sp = 100);
