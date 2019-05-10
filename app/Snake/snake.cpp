@@ -50,6 +50,14 @@ bool Snake::init(Point begin, short dir, int length)
             value = -1;
         }
 
+        /*
+         * Snake can not exist in non-positive coords 
+         */
+        if (*changable + value * length < 1)
+        {
+            return false;
+        }
+
         for (int i = 0; i < length; i++)
         {
             snakeBody.push_front(begin);

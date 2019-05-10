@@ -1,6 +1,7 @@
-#include "mwbb_test.h"
-#include "rc_test.h"
-#include "shownonempty_test.h"
+/**
+  * Include test headers here
+  */
+#include "snake_init_test.h"
 
 #include <gtest/gtest.h>
 
