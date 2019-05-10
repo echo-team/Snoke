@@ -11,7 +11,7 @@
 #include "snake.h"
 
 /**
- * @brief   Initializes snake
+ * @brief   Initializes snake as an entity without ancoring it anywhere
  * @param   begin  - starting Point of a snake(where the tail segment will be situated)
  * @param   dir    - direction of snake's 'growth' as well as it's starting direction
  * @param   length - the length of a 'new born' snake
