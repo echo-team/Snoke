@@ -73,4 +73,8 @@ bool inAddChange(Point p, Point* change[2], int changeSize);
 bool inRemChange(Point p, Point* change[2], int changeSize);
 Point getConsoleSize();
 
+#ifndef __unix__
+void set_escdelay(short mode);
+#endif
+
 #endif
