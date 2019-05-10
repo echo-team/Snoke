@@ -33,13 +33,13 @@ SOURCES = \
    Main.cpp
 
 INCLUDEPATH = \
-    $$PWD/Libraries/Ball \
-    $$PWD/Libraries/Common \
-    $$PWD/Libraries/Game \
-    $$PWD/Libraries/Interface \
-    $$PWD/Libraries/Labyrinth \
-    $$PWD/Libraries/Screens \
-    $$PWD/Libraries/SideMenu \
-    $$PWD/Libraries/Snake
+    Ball \
+    Common \
+    Game \
+    Interface \
+    Labyrinth \
+    Screens \
+    SideMenu \
+    Snake
 
 #DEFINES =
