@@ -82,9 +82,9 @@ int Game::run()
     initBall(&ball);
 
     /*
-     * displaying the starting state of labyrinth
+     * displaying the starting state of labyrinth(forcing to display it Full if possible)
      */
-    labyrinth.displayHandler();
+    labyrinth.displayHandler(NULL, -1, DISPFULL);
 
     bool flag = false;
     while (!flag)

@@ -12,31 +12,38 @@
 /**
  * @brief   Sets the default values fro the variables as well as generating the labyritnh array with borders
  * @param   gameFieldSize - a size of the labyrinth
+ * @return                - mark of succesful initialization
  */
-void Labyrinth::setLabyrinth(Point fieldSize)
+bool Labyrinth::setLabyrinth(Point fieldSize)
 {
-    /*
-     * Creating the labyrinth and setting up the borders
-     */
-    labyrinth = new char* [fieldSize.y];
-    for(int i = 0; i < fieldSize.y; i++)
+    if(fieldSize.x > 4 && fieldSize.y > 4)
     {
-        labyrinth[i] = new char [fieldSize.x];
-        for(int j = 0; j < fieldSize.x; j++)
+        /*
+         * Creating the labyrinth and setting up the borders
+         */
+        labyrinth = new char* [fieldSize.y];
+        for(int i = 0; i < fieldSize.y; i++)
         {
-            labyrinth[i][j] = ' ';
+            labyrinth[i] = new char [fieldSize.x];
+            for(int j = 0; j < fieldSize.x; j++)
+            {
+                labyrinth[i][j] = ' ';
+            }
         }
+        for(int i = 0; i < fieldSize.x; i++)
+        {
+            labyrinth[0][i] = '-';
+            labyrinth[fieldSize.y - 1][i] = '-';
+        }
+        for(int i = 0; i < fieldSize.y; i++)
+        {
+            labyrinth[i][0] = '|';
+            labyrinth[i][fieldSize.x - 1] = '|';
+        }
+        return true;
     }
-    for(int i = 0; i < fieldSize.x; i++)
-    {
-        labyrinth[0][i] = '-';
-        labyrinth[fieldSize.y - 1][i] = '-';
-    }
-    for(int i = 0; i < fieldSize.y; i++)
-    {
-        labyrinth[i][0] = '|';
-        labyrinth[i][fieldSize.x - 1] = '|';
-    }
+    return false;
+
 
     /*
      * Setting the default values for the Labyrinth properties

@@ -69,7 +69,7 @@ class Labyrinth
         void forcedDisplay(Point* change[2], int size, int displayMethod);
         void sizeHandler();
     public:
-        void setLabyrinth(Point dimensions);
+        bool setLabyrinth(Point dimensions);
         void addSnake(Snake* snake);
         bool addPoint(Point p);
         bool remPoint(Point p);
