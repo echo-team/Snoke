@@ -6,9 +6,14 @@
 constexpr bool TRAVIS = 0;
 
 extern "C" {
-#include "common.h"
+#include "Common/common.h"
 }
 
+/**
+ * @brief redirects stdout to a file
+ * @param file - desired file to output to
+ * @return     - value of the old File descriptor
+ */
 int changeStream(FILE* file) {
     int oldstdOut = dup(1);
     close(1);
@@ -17,13 +22,24 @@ int changeStream(FILE* file) {
     return oldstdOut;
 }
 
+/**
+ * @brief returns stdout back
+ * @param file      - file, where stdout is redirected
+ * @param oldstdOut - the fd of old stdout
+ */
 void returnStream(FILE* file, int oldstdOut) {
     fflush(stdout);
     fclose(file);
     dup2(oldstdOut, 1);
 }
 
-int executeTest(FILE* expectedData, FILE* outputData) {
+/**
+ * @brief compare files of expected and actual output and decide if test passes
+ * @param expectedData - file with expected output for the test case
+ * @param outputData   - file with actual programm output
+ * @return             - mark of whether the files are identical
+ */
+bool executeTest(FILE* expectedData, FILE* outputData) {
     if (expectedData == NULL) {
         printf("Cannot open expected file \n");
         return 0;
@@ -40,10 +56,10 @@ int executeTest(FILE* expectedData, FILE* outputData) {
         expectedLine[strlen(expectedLine) - 1] = '\0';
         outputLine[strlen(outputLine) - 1] = '\0';
         printf("Expected line: \"%s\", output line: \"%s\" \n", expectedLine, outputLine);
-        if (strcmp(expectedLine, outputLine) != 0) return 0;
+        if (strcmp(expectedLine, outputLine) != 0) return false;
     }
 
-    return 1;
+    return true;
 }
 
 #endif // SHARED_H
