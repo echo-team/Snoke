@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"snake_8h.html#abdd4d8521ed002253bd2a3a332e6fea1":[2,0,0,6,1,7],
+"snake_8h_source.html":[2,0,0,6,1],
 "struct_side_button.html":[1,0,11],
 "struct_side_button.html#a2533e6acfd5ba40cb7717412c25e6a0c":[1,0,11,1],
 "struct_side_button.html#afd703657d0b75b20a7ca1d2c3147ec34":[1,0,11,0],

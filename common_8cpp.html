@@ -129,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="memitem:acfe1c587c2a13d4b833eb11bd3157771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a> (int time)</td></tr>
 <tr class="memdesc:acfe1c587c2a13d4b833eb11bd3157771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-platform sleep function cover.  <a href="#acfe1c587c2a13d4b833eb11bd3157771">More...</a><br/></td></tr>
 <tr class="separator:acfe1c587c2a13d4b833eb11bd3157771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90bb9a31cd7f5d895f59504441f2e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c">set_escdelay</a> (short delay)</td></tr>
+<tr class="separator:ad90bb9a31cd7f5d895f59504441f2e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afa890f53aecd84c750b7b568629e25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a> (<a class="el" href="class_point.html">Point</a> p, <a class="el" href="class_point.html">Point</a> *change[2], int changeSize)</td></tr>
 <tr class="memdesc:a8afa890f53aecd84c750b7b568629e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if Points is in the addition queue.  <a href="#a8afa890f53aecd84c750b7b568629e25">More...</a><br/></td></tr>
 <tr class="separator:a8afa890f53aecd84c750b7b568629e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +165,7 @@ Functions</h2></td></tr>
 
 <p>Gets size of current console screen in symdols. </p>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00093">93</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00103">103</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -216,7 +218,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00060">60</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00070">70</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -269,7 +271,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00078">78</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00088">88</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -351,6 +353,40 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p>Definition at line <a class="el" href="common_8cpp_source.html#l00030">30</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad90bb9a31cd7f5d895f59504441f2e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_escdelay </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Plug for ncurses unix set_escdelay function In Windows does nothing, needs for supporting crossplatform code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{short}</td><td>delay - time to wait before process ESC key press </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00060">60</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="common_8cpp_ad90bb9a31cd7f5d895f59504441f2e4c_icgraph.png" border="0" usemap="#common_8cpp_ad90bb9a31cd7f5d895f59504441f2e4c_icgraph" alt=""/></div>
+<map name="common_8cpp_ad90bb9a31cd7f5d895f59504441f2e4c_icgraph" id="common_8cpp_ad90bb9a31cd7f5d895f59504441f2e4c_icgraph">
+<area shape="rect" id="node2" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="152,5,235,32"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="168,56,219,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
