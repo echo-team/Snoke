@@ -56,9 +56,9 @@ bool Snake::init(Point begin, short dir, int length)
             *changable += value;
         }
         direction = dir;
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 
 /**
