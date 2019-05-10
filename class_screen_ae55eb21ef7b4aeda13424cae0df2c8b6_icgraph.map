@@ -1,4 +1,7 @@
 <map id="Screen::next" name="Screen::next">
-<area shape="rect" id="node2" href="$class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="150,5,290,32"/>
-<area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="339,5,389,32"/>
+<area shape="rect" id="node2" href="$class_application.html#a80614dd1a6a37626a880a7ef83156764" title="Application::focusFirst" alt="" coords="149,56,301,83"/>
+<area shape="rect" id="node6" href="$class_application.html#a9120abd4246a3378c2a188c06149a8a3" title="Application::execute" alt="" coords="155,107,295,133"/>
+<area shape="rect" id="node3" href="$class_application.html#a0ba46f127e71da8057b748de835e89af" title="Application::load" alt="" coords="351,5,470,32"/>
+<area shape="rect" id="node5" href="$class_application.html#a7efbd7aad2bb4539e23d11b1f9dea252" title="Application::back" alt="" coords="349,56,472,83"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="520,56,571,83"/>
 </map>

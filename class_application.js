@@ -5,6 +5,7 @@ var class_application =
     [ "add", "class_application.html#a4e096aa3266a9331cd542cf6ee42b84d", null ],
     [ "back", "class_application.html#a7efbd7aad2bb4539e23d11b1f9dea252", null ],
     [ "execute", "class_application.html#a9120abd4246a3378c2a188c06149a8a3", null ],
+    [ "focusFirst", "class_application.html#a80614dd1a6a37626a880a7ef83156764", null ],
     [ "instance", "class_application.html#ada3b7951bef34e1e6de30403eee8eada", null ],
     [ "load", "class_application.html#a0ba46f127e71da8057b748de835e89af", null ],
     [ "operator=", "class_application.html#ab9d8faad6fa26b611fc5fdad8c71ad55", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"struct_side_button.html":[1,0,11],
 "struct_side_button.html#a2533e6acfd5ba40cb7717412c25e6a0c":[1,0,11,1],
 "struct_side_button.html#afd703657d0b75b20a7ca1d2c3147ec34":[1,0,11,0],
 "widget_8cpp.html":[2,0,0,7,4],
