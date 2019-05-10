@@ -53,40 +53,5 @@ TEST(game_init_test, test2) {
     }
 }
 
-/**
- * @brief negative test with incorrect speed value
- */
-TEST(game_init_test, test3) {
-    Game game;
-    int size = 100;
-    int speed = -10;
-    bool retVal = game.init(size, speed);
-    if(!retVal)
-    {
-        SUCCEED();
-    }
-    else
-    {
-        FAIL();
-    }
-}
-
-/**
- * @brief negative test with both values being incorrect
- */
-TEST(game_init_test, test4) {
-    Game game;
-    int size = 5;
-    int speed = -5;
-    bool retVal = game.init(size, speed);
-    if(!retVal)
-    {
-        SUCCEED();
-    }
-    else
-    {
-        FAIL();
-    }
-}
 
 #endif // GAME_INIT_TEST_H
