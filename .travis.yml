@@ -25,7 +25,7 @@ addons:
             - graphviz
 
 script:
-    - make -f app/Makefile
+    - make
 
 after_success:
     - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
