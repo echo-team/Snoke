@@ -73,7 +73,10 @@ int Game::run()
     startPos.x = 1;
     startPos.y = 1;
     int dir = 1, len = 5;
-    initSnake(startPos, dir, len);
+    if(!initSnake(startPos, dir, len))
+    {
+        return 1;
+    }
 
     /*
      * Initializing the Ball and generating it on the field
@@ -151,10 +154,11 @@ int Game::run()
 bool Game::initSnake(Point begin, int dir, int length)
 {
     bool flag = snake.init(begin, dir, length);
+    bool retVal = false;
     if (flag){
-        labyrinth.addSnake(&snake);
+        retVal = labyrinth.addSnake(&snake);
     }
-    return flag;
+    return flag && retVal;
 }
 
 /**

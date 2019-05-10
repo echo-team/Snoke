@@ -1,6 +1,7 @@
 #include <ncurses.h>
 #include "Screens/mainMenu.h"
 #include "Game/game.h"
+#include "iostream"
 
 int main()
 {
@@ -13,9 +14,17 @@ int main()
 
     Game g;
     g.init(70, 150);
-    g.run();
-
+    int retVal = g.run();
     refresh();
     endwin();
+    switch(retVal)
+    {
+        case 1:
+        {
+            std::cout << "Incorrect Snake initialization, failed at function Game::initSnake" << std::endl;
+            return 1;
+        }
+    }
+
     return 0;
 }

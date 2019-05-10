@@ -44,7 +44,6 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
     }
     return false;
 
-
     /*
      * Setting the default values for the Labyrinth properties
      */
@@ -63,19 +62,44 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
 
 /**
  * @brief   Adding snake to the laburinth and getting the host snake(firest added snake)
- * @param   snake - a snake to add
+ * @param   aSnake - a snake to add
+ * @return         - mark of succesful addition
  */
-void Labyrinth::addSnake(Snake* aSnake)
+bool Labyrinth::addSnake(Snake* aSnake)
 {
+    bool brFlag = false;
     std::list<Point> currBody;
     aSnake->getCoords(&currBody);
-    for(auto it = currBody.begin(); it != currBody.end(); ++it)
+    auto it = currBody.begin();
+    for(it; it != currBody.end(); ++it)
     {
-        addPoint(*it);
+        if(isFree(*it) == 1)
+        {
+            addPoint(*it);
+        }
+        else
+        {
+            brFlag = true;
+            break;
+        }
     }
+    if(brFlag)
+    {
+        for(it; it != currBody.begin(); --it)
+        {
+            if(isFree(*it) == 0)
+            {
+                remPoint(*it);
+            }
+        }
+        return false;
+    }
+
     if(this->snake == NULL){
         this->snake = aSnake;
     }
+
+    return true;
 }
 
 /**
