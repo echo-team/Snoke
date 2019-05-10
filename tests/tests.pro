@@ -22,6 +22,7 @@ LIBS += -lncurses
 
 
 HEADERS += snake_init_test.h \
+    game_init_test.h \
     shared.h \
     ../app/Common/common.h \
     ../app/Ball/ball.h \
