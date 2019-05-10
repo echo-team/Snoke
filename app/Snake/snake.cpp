@@ -286,9 +286,7 @@ short Snake::getDirection()
  */
 Point Snake::getHeadCoords()
 {
-    Point headCoords;
-    headCoords.x = snakeBody.front().x;
-    headCoords.y = snakeBody.front().y;
+    Point headCoords = snakeBody.front();
     return headCoords;
 }
 
