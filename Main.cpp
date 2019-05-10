@@ -6,6 +6,8 @@ int main()
 {
     initscr();
     start_color();
+    curs_set(0);
+    noecho();
     keypad(stdscr, true);
 
     app.add("MainMenu", new MainMenu());
