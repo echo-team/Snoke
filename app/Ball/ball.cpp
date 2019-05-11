@@ -17,12 +17,16 @@
  */
 bool Ball::init(Point fieldSize)
 {
-    seed_val = time(NULL);
-    rng.seed(seed_val);
-    distributionX = *(new std::uniform_int_distribution<int>(0, fieldSize.x - 1));
-    distributionY = *(new std::uniform_int_distribution<int>(0, fieldSize.y - 1));
-    position.style.letter = '0';
-    return true;
+    if(fieldSize.x > 2 && fieldSize.y > 2)
+    {
+        seed_val = time(NULL);
+        rng.seed(seed_val);
+        distributionX = *(new std::uniform_int_distribution<int>(1, fieldSize.x - 1));
+        distributionY = *(new std::uniform_int_distribution<int>(1, fieldSize.y - 1));
+        position.style.letter = '0';
+        return true;
+    }
+    return false;
 }
 
 /**
