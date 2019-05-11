@@ -8,7 +8,7 @@
 /**
  * @brief Labyrinth class object can be created
  */
-TEST(labyrinth_init_test, test0){
+TEST(labyrinth_setLabyrinth_test, test0){
     Labyrinth labyrinth;
     SUCCEED();
 }
@@ -16,7 +16,7 @@ TEST(labyrinth_init_test, test0){
 /**
  * @brief method runs with normal parameters
  */
-TEST(labyrinth_init_test, test1) {
+TEST(labyrinth_setLabyrinth_test, test1) {
     Labyrinth labyrinth;
     Point size;
     size.x = 5;
@@ -35,7 +35,7 @@ TEST(labyrinth_init_test, test1) {
 /**
  * @brief negative test with incorrect input parameters
  */
-TEST(labyrinth_init_test, test2) {
+TEST(labyrinth_setLabyrinth_test, test2) {
     Labyrinth labyrinth;
     Point size;
     size.x = 3;
