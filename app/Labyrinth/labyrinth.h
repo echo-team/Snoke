@@ -33,12 +33,6 @@ const int DISPPART = 1;
 const int DISPUPD = 2;
 
 /**
-* @var Point gameFieldSize
-* size of a game field(x, y)
- */
-extern Point gameFieldSize;
-
-/**
  * @class Labyrinth labyrinth.h
  * @brief   class for containing and displaying the game field
  * @prop    labyrinth           - game field, consisting of chars
@@ -61,6 +55,7 @@ class Labyrinth
         Point end;
         Point prevStart;
         Point prevEnd;
+        Point gameFieldSize;
         void displayPartialy();
         void displayUpdated(Point* update[2], int size);
         void updateLabyrinth(Point* update[2], int size);

@@ -18,6 +18,7 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
 {
     if(fieldSize.x > 4 && fieldSize.y > 4)
     {
+        gameFieldSize = fieldSize;
         /*
          * Creating the labyrinth and setting up the borders
          */
@@ -40,24 +41,24 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
             labyrinth[i][0] = '|';
             labyrinth[i][fieldSize.x - 1] = '|';
         }
+
+        /*
+         * Setting the default values for the Labyrinth properties
+         */
+        Point leftTop;
+        Point rightBot;
+        leftTop.x = 0;
+        leftTop.y = 0;
+        rightBot = fieldSize;
+        this->start = leftTop;
+        this->end = rightBot;
+        this->prevStart = leftTop;
+        this->prevEnd = rightBot;
+        this->prevDisplayMethod = DISPPART;
+        this->snake = NULL;
         return true;
     }
     return false;
-
-    /*
-     * Setting the default values for the Labyrinth properties
-     */
-    Point leftTop;
-    Point rightBot;
-    leftTop.x = 0;
-    leftTop.y = 0;
-    rightBot = fieldSize;
-    this->start = leftTop;
-    this->end = rightBot;
-    this->prevStart = leftTop;
-    this->prevEnd = rightBot;
-    this->prevDisplayMethod = DISPPART;
-    this->snake = NULL;
 }
 
 /**
@@ -71,7 +72,7 @@ bool Labyrinth::addSnake(Snake* aSnake)
     std::list<Point> currBody;
     aSnake->getCoords(&currBody);
     auto it = currBody.begin();
-    for(it; it != currBody.end(); ++it)
+    for(; it != currBody.end(); ++it)
     {
         if(isFree(*it) == 1)
         {
@@ -83,9 +84,10 @@ bool Labyrinth::addSnake(Snake* aSnake)
             break;
         }
     }
+
     if(brFlag)
     {
-        for(it; it != currBody.begin(); --it)
+        for(; it != currBody.begin(); --it)
         {
             if(isFree(*it) == 0)
             {
