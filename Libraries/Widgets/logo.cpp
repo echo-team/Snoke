@@ -35,7 +35,7 @@ void Logo::draw()
 
     for (int rowCounter = 0; rowCounter < 5; rowCounter++)
     {
-        for (int colCounter = 0; colCounter < strlen(inscription[language][0]); colCounter++)
+        for (int colCounter = 0; colCounter < (int)strlen(inscription[language][0]); colCounter++)
         {
             if (inscription[language][rowCounter][colCounter] != ' ')
             {
