@@ -4,7 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage -O0
-QMAKE_CXXFLAGS = $$CFLAGS_WITHOUT_Werror
 
 SUBDIRS = app tests
 

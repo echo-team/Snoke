@@ -6,8 +6,8 @@ CONFIG -= app_bundle
 CONFIG += thread
 CONFIG -= qt
 
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror
-QMAKE_CFLAGS += -Wall -Wextra -Werror
+QMAKE_CXXFLAGS += -Wall -Wextra
+QMAKE_CFLAGS += -Wall -Wextra
 
 # C++11
 QMAKE_CXXFLAGS += -std=c++11
