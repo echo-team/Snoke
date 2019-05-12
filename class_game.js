@@ -2,7 +2,6 @@ var class_game =
 [
     [ "init", "class_game.html#a66e1800ff072c0b4e737ac51430630db", null ],
     [ "initBall", "class_game.html#a3702238c3fef205d19d1cb4bbc471c5c", null ],
-    [ "initChange", "class_game.html#a7756510a62b464799b94ae9f5a78b902", null ],
     [ "initSnake", "class_game.html#a0e8435182e77e921b5ba0471a8bfb20d", null ],
     [ "run", "class_game.html#a99fb161fbbe87d25a8b73265a0611e58", null ],
     [ "setSpeed", "class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46", null ],

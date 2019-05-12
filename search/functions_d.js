@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['save',['save',['../class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007',1,'Labyrinth']]],
-  ['setdirection',['setDirection',['../class_snake.html#acf38f64a411f6c4583e0df5e5570242b',1,'Snake']]],
-  ['setlabyrinth',['setLabyrinth',['../class_labyrinth.html#ae6ae7b625e1ea3b1ae481bfa86bacd47',1,'Labyrinth']]],
-  ['setposition',['setPosition',['../class_logo.html#a048b9474c23e659c94f590509376f198',1,'Logo']]],
-  ['setscheme',['setScheme',['../class_snake.html#a0c305e807c15736f809eb035d947c988',1,'Snake']]],
-  ['setspeed',['setSpeed',['../class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46',1,'Game']]],
-  ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]]
+  ['parent',['parent',['../class_widget.html#a3dac0069a2933ad4a2e6d1b2cfd16236',1,'Widget']]],
+  ['previous',['previous',['../class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e',1,'Screen::previous()'],['../class_widget.html#a4451247ef765bccbfa460211ce91d07e',1,'Widget::previous()']]]
 ];

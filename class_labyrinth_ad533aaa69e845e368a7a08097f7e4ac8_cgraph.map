@@ -1,5 +1,5 @@
 <map id="Labyrinth::updateLabyrinth" name="Labyrinth::updateLabyrinth">
 <area shape="rect" id="node2" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="230,5,365,32"/>
 <area shape="rect" id="node4" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="230,56,365,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="414,5,533,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="414,5,533,32"/>
 </map>

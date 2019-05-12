@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['test',['TEST',['../game__init__test_8h.html#a95022f1946c5420b1570853330d1b0b9',1,'TEST(game_init_test, test0):&#160;game_init_test.h'],['../game__init__test_8h.html#a1fc0354b53420500c99d7f0230a3f113',1,'TEST(game_init_test, test1):&#160;game_init_test.h'],['../game__init__test_8h.html#a5e891d4eae81f286c1a364df902920bd',1,'TEST(game_init_test, test2):&#160;game_init_test.h'],['../labyrinth__setlabyrinth__test_8h.html#ad1e443fae962741ad90d84b5758bc7b3',1,'TEST(labyrinth_init_test, test0):&#160;labyrinth_setlabyrinth_test.h'],['../labyrinth__setlabyrinth__test_8h.html#aa09b7052ceb9ba34c171a6182ef784c2',1,'TEST(labyrinth_init_test, test1):&#160;labyrinth_setlabyrinth_test.h'],['../labyrinth__setlabyrinth__test_8h.html#a8459160783f5e2de9cdb3edef1c4d991',1,'TEST(labyrinth_init_test, test2):&#160;labyrinth_setlabyrinth_test.h'],['../snake__init__test_8h.html#a418371721156d8ceb1abfcc2244dce81',1,'TEST(snake_init_test, test0):&#160;snake_init_test.h'],['../snake__init__test_8h.html#a459c42d72f196c6a15203fcf91a7710e',1,'TEST(snake_init_test, test1):&#160;snake_init_test.h'],['../snake__init__test_8h.html#a32b9479badb702b7a7f935ed90ec8fa4',1,'TEST(snake_init_test, test2):&#160;snake_init_test.h'],['../snake__init__test_8h.html#ab59db95f5b7cf72c626111e0e91871d8',1,'TEST(snake_init_test, test3):&#160;snake_init_test.h'],['../snake__init__test_8h.html#a86a3308b8709bc30e8f192e4a654b552',1,'TEST(snake_init_test, test4):&#160;snake_init_test.h'],['../snake__init__test_8h.html#ad1a7b898cf5dcc5bc4f52cdd91cd7418',1,'TEST(snake_init_test, test5):&#160;snake_init_test.h'],['../snake__init__test_8h.html#a9e57d851437041b29c566faac13aa68b',1,'TEST(snake_init_test, test6):&#160;snake_init_test.h'],['../snake__setdirection__test_8h.html#ac1c9438bf55925f09b85cdd271f106d1',1,'TEST(snake_setDirection_test, test1):&#160;snake_setdirection_test.h'],['../snake__setdirection__test_8h.html#a6e8c98900ee9f439f7dc86b0fb95bd31',1,'TEST(snake_setDirection_test, test2):&#160;snake_setdirection_test.h']]],
-  ['travis',['TRAVIS',['../shared_8h.html#a35922bc1ee8b1170900c49c316d08cb2',1,'shared.h']]]
+  ['save',['save',['../class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007',1,'Labyrinth']]],
+  ['screen',['Screen',['../class_screen.html',1,'Screen'],['../class_screen.html#ae7576476fc6e6a6eaa66389fdc41fe72',1,'Screen::Screen()']]],
+  ['screen_2ecpp',['screen.cpp',['../screen_8cpp.html',1,'']]],
+  ['screen_2eh',['screen.h',['../screen_8h.html',1,'']]],
+  ['screens',['screens',['../class_application.html#acbe68690fcb03a417fc0e5dce2e1164e',1,'Application']]],
+  ['seed_5fval',['seed_val',['../class_ball.html#ad6e67b032167a7d9db9630bc5ab2e613',1,'Ball']]],
+  ['set_5fescdelay',['set_escdelay',['../common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c',1,'set_escdelay(short delay):&#160;common.cpp'],['../common_8h.html#ae8211888b97841c7339ec4673cdd76e4',1,'set_escdelay(short mode):&#160;common.cpp']]],
+  ['setdirection',['setDirection',['../class_snake.html#a151d9cab8233d38524c09642d079356a',1,'Snake']]],
+  ['setlabyrinth',['setLabyrinth',['../class_labyrinth.html#a39e1b11a06d126328131d387fbf51d73',1,'Labyrinth']]],
+  ['setposition',['setPosition',['../class_logo.html#a048b9474c23e659c94f590509376f198',1,'Logo']]],
+  ['setscheme',['setScheme',['../class_snake.html#a0c305e807c15736f809eb035d947c988',1,'Snake']]],
+  ['setspeed',['setSpeed',['../class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46',1,'Game']]],
+  ['shadowstyle',['shadowStyle',['../class_logo.html#a73d851ecd0cf3b7513f47df2aa462142',1,'Logo']]],
+  ['sidebutton',['SideButton',['../struct_side_button.html',1,'']]],
+  ['sidemenu',['SideMenu',['../class_side_menu.html',1,'']]],
+  ['sidemenu_2ecpp',['SideMenu.cpp',['../_side_menu_8cpp.html',1,'']]],
+  ['sidemenu_2eh',['SideMenu.h',['../_side_menu_8h.html',1,'']]],
+  ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]],
+  ['snake',['Snake',['../class_snake.html',1,'Snake'],['../class_game.html#ab77bfcc312425811000819791ea7668e',1,'Game::snake()'],['../class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f',1,'Labyrinth::snake()']]],
+  ['snake_2ecpp',['snake.cpp',['../snake_8cpp.html',1,'']]],
+  ['snake_2eh',['snake.h',['../snake_8h.html',1,'']]],
+  ['snakebody',['snakeBody',['../class_snake.html#aaf288745dcc19ef13a1330bb55f1471c',1,'Snake']]],
+  ['snakeenemies',['snakeEnemies',['../class_game.html#ab7d2baa4a2dbcb64fc1611aac709fe40',1,'Game']]],
+  ['speed',['speed',['../class_game.html#a02a58acc040d6d014e02832453695ef5',1,'Game']]],
+  ['start',['start',['../class_labyrinth.html#a92649fa3b24fcc869418b54e7362e24f',1,'Labyrinth::start()'],['../class_widget.html#ac5d07135801c2a670e718197fb628b58',1,'Widget::start()']]],
+  ['style',['style',['../class_point.html#a4bcb4c7daa219001646a555fdc1a08f7',1,'Point::style()'],['../class_snake.html#a7db439ed2dd1cfea4c061e6ffd6ec54c',1,'Snake::style()'],['../class_logo.html#a2a0115dd4566f475c108eb3728265b62',1,'Logo::style()']]]
 ];
