@@ -1,3 +1,13 @@
+/**
+ * @file common.h
+ * @author Yegor Ignatov
+ * @brief shared functions prototypes, structures, main classes declarations
+ * @version 0.1
+ * @date 2019-05-03
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
 #ifndef COMMON_H
 #define COMMON_H
 #include <iostream>
@@ -15,29 +25,49 @@
 #include <unistd.h>
 #endif
 
-/**
- * Coordinates of the cell in console window
- * @prop {short} x - x coordinate in console window
- * @prop {short} y - y coordinate in console window
- */
-typedef struct {
-    short x, y;
-} Point;
+const int MAXLINE = 256;
 
 /**
- * Style of the cell in console window
- * @prop {char}  letter - symbol in the cell
- * @prop {short} fg     - foreground color of the cell
- * @prop {short} bg     - beckground color of the cell
+ * @class PointStyle common.h
+ * @brief   Style of the cell in console window
+ * @prop letter - symbol in the cell
+ * @prop fg - foreground color of the cell
+ * @prop bg - background color of the cell
  */
-typedef struct 
+class PointStyle
 {
-    char letter;
-    int fg, bg;
-} PointStyle;
+    public:
+        char letter;
+        int fg;
+        int bg;
+};
 
-std::ostream& operator << (std::ostream &s, Point p);
-bool operator == (Point p1, Point p2);
+/**
+ * @class Point common.h
+ * @brief   Coordinates and style of the cell in console window
+ * @prop    x       - x coordinate in console window
+ * @prop    y       - y coordinate in console window
+ * @prop    style   - style of the cell
+ */
+class Point
+{
+    public:
+        short x;
+        short y;
+        PointStyle style;
+        bool operator== (Point p);
+};
+
+/*
+ * @brief   Class definitions for the individual files to know that they exist
+ *          while being separetly compiled
+ */
+class Snake;
+class Labyrinth;
+class Game;
+class Ball;
+
+std::ostream& operator<< (std::ostream &s, Point p);
 void mSleep(int time);
 bool inAddChange(Point p, Point* change[2], int changeSize);
 bool inRemChange(Point p, Point* change[2], int changeSize);

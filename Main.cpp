@@ -1,6 +1,7 @@
 #include <ncurses.h>
 #include "Libraries/Screens/application.h"
 #include "Libraries/Screens/mainMenu.h"
+#include "Libraries/Game/game.h"
 
 int main()
 {
