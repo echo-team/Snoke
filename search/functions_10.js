@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unfocus',['unfocus',['../class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c',1,'Menu']]],
-  ['updatelabyrinth',['updateLabyrinth',['../class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8',1,'Labyrinth']]]
+  ['wipechange',['wipeChange',['../class_game.html#ae3805ee11cb9b97af617eadfbe70d395',1,'Game']]]
 ];

@@ -1,0 +1,9 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_snake.html#a953fb7b8be521f651989bb53323e89ec" title="Initializes snake as an entity without ancoring it anywhere. " alt="" coords="145,5,229,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#ae6ae7b625e1ea3b1ae481bfa86bacd47" title="Sets the default values fro the variables as well as generating the labyritnh array with borders..." alt="" coords="109,56,264,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="116,107,257,133"/>
+<area shape="rect" id="node5" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title="The method to get the snake whole body coordinates(x ,y) without giving the direct access..." alt="" coords="317,31,443,57"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="497,107,615,133"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="313,132,447,159"/>
+<area shape="rect" id="node8" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="313,183,447,209"/>
+</map>

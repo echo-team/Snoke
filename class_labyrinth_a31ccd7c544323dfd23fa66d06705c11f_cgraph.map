@@ -5,7 +5,7 @@
 <area shape="rect" id="node13" href="$class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="237,259,387,285"/>
 <area shape="rect" id="node3" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="467,56,602,83"/>
 <area shape="rect" id="node5" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="467,5,602,32"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#acd7311e3222304bae2208fbc293bcc4d" title="Mark of if the asked Point is free. " alt="" coords="670,56,789,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="670,56,789,83"/>
 <area shape="rect" id="node7" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="455,157,614,184"/>
 <area shape="rect" id="node8" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="477,107,592,133"/>
 <area shape="rect" id="node10" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="462,208,607,235"/>
