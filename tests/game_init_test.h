@@ -53,5 +53,41 @@ TEST(game_init_test, test2) {
     }
 }
 
+/**
+ * @brief negative test with speed below the limit
+ */
+TEST(game_init_test, test3) {
+    Game game;
+    int size = 20;
+    int speed = 80;
+    bool retVal = game.init(size, speed);
+    if(retVal)
+    {
+        SUCCEED();
+    }
+    else
+    {
+        FAIL();
+    }
+}
+
+/**
+ * @brief negative test with speed above the limit
+ */
+TEST(game_init_test, test4) {
+    Game game;
+    int size = 20;
+    int speed = 11500;
+    bool retVal = game.init(size, speed);
+    if(retVal)
+    {
+        SUCCEED();
+    }
+    else
+    {
+        FAIL();
+    }
+}
+
 
 #endif // GAME_INIT_TEST_H
