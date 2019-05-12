@@ -31,21 +31,13 @@ bool Game::init(int size, int speed)
         this->labyrinth.setLabyrinth(gameFieldSize);
         this->setSpeed(speed);
 
-        initChange();
+        this->change.initChange();
         return true;
     }
     return false;
 }
 
-/**
- * @brief Initializes change array, containing Points to be changed in the labyrinth
- */
-void Game::initChange()
-{
-    this->changeSize = 2;
-    this->change[0] = new Point [changeSize];
-    this->change[1] = new Point [changeSize];
-}
+
 
 /**
  * @brief   Main game loop
@@ -124,14 +116,14 @@ int Game::run()
         {
             break;
         }
-        wipeChange(change, changeSize);
+        change.wipeChange();
 
         /*
          * Setting the flag for the next iteration check
          * Moving the snake and getting the Points of a
          * labyrinth which are to be changed in change array
          */
-        flag = snake.move(&labyrinth, &ball, change, changeSize) == 1;
+        flag = snake.move(&labyrinth, &ball, change, change.getSize) == 1;
 
         /*
          * Updating labyrinth with change array Points
@@ -174,26 +166,7 @@ bool Game::initBall(Ball* ball)
     return flag;
 }
 
-/**
- * @brief   Initialization of the change array
- * @param   lChange - The pointer to an array
- * @param   size   - The size of array(number of elements it can contain)
- */
-bool Game::wipeChange(Point** lChange, int size)
-{
-    Point emptyPoint;
-    emptyPoint.x = -1;
-    emptyPoint.y = -1;
-    emptyPoint.style.bg = 0;
-    emptyPoint.style.fg = 0;
-    emptyPoint.style.letter = 0;
-    for(int i = 0; i < size; i++)
-    {
-        lChange[0][i] = emptyPoint;
-        lChange[1][i] = emptyPoint;
-    }
-    return true;
-}
+
 
 
 
