@@ -166,7 +166,9 @@ var NAVTREEINDEX0 =
 "game__init__test_8h.html":[2,0,1,2],
 "game__init__test_8h.html#a1fc0354b53420500c99d7f0230a3f113":[2,0,1,2,1],
 "game__init__test_8h.html#a5e891d4eae81f286c1a364df902920bd":[2,0,1,2,2],
+"game__init__test_8h.html#a6d875250d451849b8483272a47f3764c":[2,0,1,2,4],
 "game__init__test_8h.html#a95022f1946c5420b1570853330d1b0b9":[2,0,1,2,0],
+"game__init__test_8h.html#aab530053fd48f9fabcd64f425787aa46":[2,0,1,2,3],
 "game__init__test_8h_source.html":[2,0,1,2],
 "globals.html":[2,1,0],
 "globals_func.html":[2,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "snake__init__test_8h.html#ad1a7b898cf5dcc5bc4f52cdd91cd7418":[2,0,1,7,5],
 "snake__init__test_8h_source.html":[2,0,1,7],
 "snake__setdirection__test_8h.html":[2,0,1,8],
-"snake__setdirection__test_8h.html#a6e8c98900ee9f439f7dc86b0fb95bd31":[2,0,1,8,1],
-"snake__setdirection__test_8h.html#ac1c9438bf55925f09b85cdd271f106d1":[2,0,1,8,0],
-"snake__setdirection__test_8h_source.html":[2,0,1,8]
+"snake__setdirection__test_8h.html#a6e8c98900ee9f439f7dc86b0fb95bd31":[2,0,1,8,1]
 };
