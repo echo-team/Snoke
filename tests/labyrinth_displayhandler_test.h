@@ -81,4 +81,52 @@ TEST(labyrinth_displayHandler_test, test2)
     SUCCEED();
 }
 
+/**
+ * @brief multiple executions with snkae moving
+ */
+TEST(labyrinth_displayHandler_test, test3)
+{
+    initscr();
+    gameFieldSize.x = 40;
+    gameFieldSize.y = 20;
+    Labyrinth labyrinth;
+
+    bool retVal = labyrinth.setLabyrinth(gameFieldSize);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    Snake snake;
+    Point begin;
+    begin.x = 1;
+    begin.y = 1;
+    short direction = MVRIGHT;
+    int length = 5;
+
+    retVal = snake.init(begin, direction, length);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    retVal = labyrinth.addSnake(&snake);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    labyrinth.displayHandler();
+
+    retVal = snake.move(&labyrinth);
+    if(retVal)
+    {
+        FAIL();
+    }
+
+    labyrinth.displayHandler();
+    endwin();
+    SUCCEED();
+}
+
 #endif // LABYRINTH_DISPLAYHANDLER_TEST_H
