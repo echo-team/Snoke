@@ -11,9 +11,14 @@
 #ifndef BALL_H
 #define BALL_H
 #include "../Common/common.h"
-#include "../Labyrinth/labyrinth.h"
 #include <random>
 #include <ctime>
+
+/**
+ * @var Point gameFieldSize
+ * size of a game field(x, y)
+ */
+extern Point gameFieldSize;
 
 
 /**
@@ -31,12 +36,12 @@ class Ball
         Point position;
         std::mt19937 rng;
         uint32_t seed_val;
+    public:
         std::uniform_int_distribution<int> distributionX;
         std::uniform_int_distribution<int> distributionY;
-
-    public:
         bool init(Point dim);
-        bool generateBall(Labyrinth* labyrinth, Point* change[2], int changeSize);
         Point getCoords();
+        bool setCoords(Point p);
+        std::mt19937* getRng();
 };
 #endif

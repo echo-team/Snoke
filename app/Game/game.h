@@ -12,6 +12,7 @@
 #define GAME_H
 #include "../Snake/snake.h"
 #include "../Labyrinth/labyrinth.h"
+#include "../Change/change.h"
 #include <ncurses.h>
 #include <iostream>
 #include <string>
@@ -21,26 +22,19 @@
  * @class Game game.h
  * @brief   Main game class
  * @prop    speed           - game refresh rate(in milliseconds)
- * @prop    changeSize      - the size of the change sub-arrays
  * @prop    snake           - the local_player controlled snake
  * @prop    snakeEnemies    - the remotely controlled snake entities
  * @prop    labyrinth       - object containing labyrinth, displaying it, etc
- * @prop    change          - 2-dim array containing changes for the labyrinth
  */
 class Game
 {
     private:
         int speed;
-        int changeSize;
         Snake snake;
         Snake* snakeEnemies;
         Labyrinth labyrinth;
-        Point* change[2];
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);
-        bool initBall(Ball* ball);
-        void initChange();
-        bool wipeChange(Point** lChange, int size);
     public:
         bool init(int size = 20, int sp = 100);
         int run();

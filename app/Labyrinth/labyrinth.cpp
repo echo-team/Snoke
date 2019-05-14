@@ -56,9 +56,23 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
         this->prevEnd = rightBot;
         this->prevDisplayMethod = DISPPART;
         this->snake = NULL;
+
+        change.initChange();
         return true;
     }
     return false;
+}
+
+/**
+ * @brief   Ball initialization with labyrinth updating
+ * @return       - mark of succesful initialization
+ */
+bool Labyrinth::initBall()
+{
+    this->ball.init(gameFieldSize);
+    bool flag = this->generateBall();
+    this->addPoint(this->ball.getCoords());
+    return flag;
 }
 
 /**
@@ -106,16 +120,14 @@ bool Labyrinth::addSnake(Snake* aSnake)
 
 /**
  * @brief   A method which decides what dispaly method will be used in each situation
- * @param   change          - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   size            - the size of the change array
  * @param   displayMethod   - force it to use a certain display method
  */
-void Labyrinth::displayHandler(Point* change[2], int size, int displayMethod)
+void Labyrinth::displayHandler(int displayMethod)
 {
     /*
      * Writing changes to labyrinth
      */
-    this->updateLabyrinth(change, size);
+    this->updateLabyrinth();
 
     /*
      * Getting start and end values for the displaying of the labyrinth
@@ -127,11 +139,11 @@ void Labyrinth::displayHandler(Point* change[2], int size, int displayMethod)
      */
     if(displayMethod >= 0)
     {
-        forcedDisplay(change, size, displayMethod);
+        forcedDisplay(displayMethod);
     }
     else
     {
-        freeDisplay(change, size);
+        freeDisplay();
     }
     refresh();
     flushinp();
@@ -201,11 +213,9 @@ void Labyrinth::sizeHandler()
 
 /**
  * @brief   got an extra stimulus for displaying in a certain method
- * @param   change          - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   size            - the size of the change array
  * @param   displayMethod   - a method that is beeing force-called
  */
-void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
+void Labyrinth::forcedDisplay(int displayMethod)
 {
     /*
      * Deciding what disply method to use
@@ -228,7 +238,7 @@ void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
         {
             if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
-                this->displayUpdated(change, size);
+                this->displayUpdated();
             }
             else
             {
@@ -250,10 +260,8 @@ void Labyrinth::forcedDisplay(Point* change[2], int size, int displayMethod)
 
 /**
  * @brief   No extra stimulus, displaying the default way
- * @param   change  - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   size    - the size of the change array
  */
-void Labyrinth::freeDisplay(Point* change[2], int size)
+void Labyrinth::freeDisplay()
 {
     /*
      * Deciding what disply method to use
@@ -264,7 +272,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
         {
             if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
-                this->displayUpdated(change, size);
+                this->displayUpdated();
             }
             else
             {
@@ -276,7 +284,7 @@ void Labyrinth::freeDisplay(Point* change[2], int size)
         {
             if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
             {
-                this->displayUpdated(change, size);
+                this->displayUpdated();
             }
             else
             {
@@ -335,39 +343,44 @@ void Labyrinth::displayPartialy()
 /**
  * @brief   draw only the changed Points when the labyrinth is being fully displayed
  */
-void Labyrinth::displayUpdated(Point* update[2], int size)
+void Labyrinth::displayUpdated()
 {
-	Point abc;
-    for(int i = 0; i < size; i++)
+    std::deque<Point> cpChange;
+
+    Point tmp;
+    change.getRemChange(&cpChange);
+    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
-    	abc = update[1][i];
-        mvaddch(abc.y, abc.x, ' ');
-        abc = update[0][i];
-        mvaddch(abc.y, abc.x, abc.style.letter);
+        tmp = *it;
+        mvaddch(tmp.y, tmp.x, ' ');
     }
+    change.getAddChange(&cpChange);
+    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
+    {
+        tmp = *it;
+        mvaddch(tmp.y, tmp.x, tmp.style.letter);
+    }
+
     this->prevDisplayMethod = DISPUPD;
 }
 
 /**
  * @brief   Updating the labyrinth(changing the values of some Points)
- * @param   update - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   size   - the longest sequence for updating [max(len(update[0], update[1]))]
  */
-void Labyrinth::updateLabyrinth(Point* update[2], int size)
+void Labyrinth::updateLabyrinth()
 {
-    Point p;
-    for(int i = 0; i < size; i++)
+    std::deque<Point> cpChange;
+    change.getRemChange(&cpChange);
+
+    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
-        p = update[0][i];
-        if(p.x >= 0 && p.y >= 0)
-        {
-            addPoint(p);
-        }
-        p = update[1][i];
-        if(p.x >= 0 && p.y >= 0)
-        {
-            remPoint(p);
-        }
+        remPoint(*it);
+        mvaddch((*it).y, (*it).x, 'F');
+    }
+    change.getAddChange(&cpChange);
+    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
+    {
+        addPoint(*it);
     }
 }
 
@@ -518,4 +531,29 @@ bool Labyrinth::load(char name[MAXLINE])
     snprintf(strout, sizeof(strout), "Couldn't load from %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
     return 0;
+}
+
+/**
+ * @brief   Generate the Ball
+ * @param   labyrinth  - the current state of the labyrinth object for intersection checking
+ * @return             - mark of whether the ball was successfully generated
+ */
+bool Labyrinth::generateBall()
+{
+    Point chance;
+    /*
+     * Generate numbers until u get a free spot
+     */
+    while (1)
+    {
+        chance.x = ball.distributionX(*ball.getRng());
+        chance.y = ball.distributionY(*ball.getRng());
+        if ( (this->isFree(chance) == 1 || this->change.inRemChange(chance))
+         && !this->change.inAddChange(chance))
+        {
+            break;
+        }
+    }
+    ball.setCoords(chance);
+    return true;
 }

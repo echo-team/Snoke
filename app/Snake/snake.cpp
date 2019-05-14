@@ -9,6 +9,7 @@
  *
  */
 #include "snake.h"
+#include "../Common/common.h"
 
 /**
  * @brief   Initializes snake as an entity without ancoring it anywhere
@@ -77,7 +78,7 @@ bool Snake::init(Point begin, short dir, int length)
  * @param   changeSize - max(len(change[0]), len(change[1])))
  * @return             - mark of whether there was a non-boundary non-ball collision
  */
-bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize)
+bool Snake::move(Labyrinth* labyrinth)
 {
     Point frCoords = snakeBody.front();
     Point bCoords = snakeBody.back();
@@ -110,7 +111,7 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
     /*
      * Checking intersections with borders, obstacles and Ball and deciding where to put the head of the snake
      */
-    switch (checkIntersection(frCoords, labyrinth, ball))
+    switch (checkIntersection(frCoords, labyrinth))
     {
         case WALLUP:
             frCoords.y = gameFieldSize.y - 2;
@@ -129,16 +130,16 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
             wallFlag = 1;
             break;
         case COLL:
-            moveBack(bCoords, change);
+            moveBack(bCoords, &labyrinth->change);
             return true;
         case NOCOLL:
             break;
         case BALL:
             bCoords.x = -1;
             bCoords.y = -1;
-            change[1][0] = ball->getCoords();
-            ball->generateBall(labyrinth, change, changeSize);
-            change[0][0] = ball->getCoords();
+            labyrinth->change.remPoint(labyrinth->ball.getCoords());
+            labyrinth->generateBall();
+            labyrinth->change.addPoint(labyrinth->ball.getCoords());
             break;
         default:
             break;
@@ -150,19 +151,19 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
      */
     if(wallFlag)
     {
-        switch (checkIntersection(frCoords, labyrinth, ball))
+        switch (checkIntersection(frCoords, labyrinth))
         {
             case COLL:
-                moveBack(bCoords, change);
+                moveBack(bCoords, &labyrinth->change);
                 return true;
             case NOCOLL:
                 break;
             case BALL:
                 bCoords.x = -1;
                 bCoords.y = -1;
-                change[1][0] = ball->getCoords();
-                ball->generateBall(labyrinth, change, changeSize);
-                change[0][0] = ball->getCoords();
+                labyrinth->change.remPoint(labyrinth->ball.getCoords());
+                labyrinth->generateBall();
+                labyrinth->change.addPoint(labyrinth->ball.getCoords());
                 break;
             default:
                 break;
@@ -173,8 +174,8 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
      * If there was no obstacle collision then proceed and add Points to the
      * change array, staging them for addition/removal to/from labyrinth
      */
-    moveHead(frCoords, change);
-    moveBack(bCoords, change);
+    moveHead(frCoords, &labyrinth->change);
+    moveBack(bCoords, &labyrinth->change);
     return false;
 
 }
@@ -184,9 +185,9 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
  * @param   p      - the new head position
  * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
  */
-void Snake::moveHead(Point p, Point* change[2])
+void Snake::moveHead(Point p, Change* change)
 {
-    change[0][1] = p;
+    change->addPoint(p);
     snakeBody.push_front(p);
 }
 
@@ -195,10 +196,9 @@ void Snake::moveHead(Point p, Point* change[2])
  * @param   p      - the desired position of movement
  * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
  */
-void Snake::moveBack(Point p, Point* change[2])
+void Snake::moveBack(Point p, Change* change)
 {
-    change[1][1] = p;
-    if(p.x != -1 && p.y != -1)
+    if(change->remPoint(p))
     {
         snakeBody.pop_back();
     }
@@ -211,11 +211,11 @@ void Snake::moveBack(Point p, Point* change[2])
  * @param   ball      - a pointer to a Ball object(to check intersection with)
  * @return            - type of collision
  */
-short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
+short Snake::checkIntersection(Point check, Labyrinth* labyrinth)
 {
     if ((!labyrinth->isFree(check)) == 1)
     {
-        return checkWisely(check, ball->getCoords());
+        return checkWisely(check, labyrinth->ball.getCoords());
     }
     return NOCOLL;
 

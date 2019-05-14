@@ -31,21 +31,12 @@ bool Game::init(int size, int speed)
         this->labyrinth.setLabyrinth(gameFieldSize);
         this->setSpeed(speed);
 
-        initChange();
         return true;
     }
     return false;
 }
 
-/**
- * @brief Initializes change array, containing Points to be changed in the labyrinth
- */
-void Game::initChange()
-{
-    this->changeSize = 2;
-    this->change[0] = new Point [changeSize];
-    this->change[1] = new Point [changeSize];
-}
+
 
 /**
  * @brief   Main game loop
@@ -81,13 +72,12 @@ int Game::run()
     /*
      * Initializing the Ball and generating it on the field
      */
-    Ball ball;
-    initBall(&ball);
+    labyrinth.initBall();
 
     /*
      * displaying the starting state of labyrinth(forcing to display it Full if possible)
      */
-    labyrinth.displayHandler(NULL, -1, DISPFULL);
+    labyrinth.displayHandler(DISPFULL);
 
     bool flag = false;
     while (!flag)
@@ -117,27 +107,27 @@ int Game::run()
                 labyrinth.save(fName);
                 labyrinth.displayHandler();
                 mSleep(speed * 2);
-                labyrinth.displayHandler(NULL, -1, DISPFULL);
+                labyrinth.displayHandler(DISPFULL);
                 continue;
         }
         if (flag)
         {
             break;
         }
-        wipeChange(change, changeSize);
+        labyrinth.change.initChange();
 
         /*
          * Setting the flag for the next iteration check
          * Moving the snake and getting the Points of a
          * labyrinth which are to be changed in change array
          */
-        flag = snake.move(&labyrinth, &ball, change, changeSize) == 1;
+        flag = snake.move(&labyrinth) == 1;
 
         /*
          * Updating labyrinth with change array Points
          * and displaying/deleting added/removed Points
          */
-        labyrinth.displayHandler(change, changeSize);
+        labyrinth.displayHandler();
 
         mSleep(speed);
     }
@@ -160,42 +150,6 @@ bool Game::initSnake(Point begin, int dir, int length)
     }
     return flag && retVal;
 }
-
-/**
- * @brief   Ball initialization with labyrinth updating
- * @param   ball - a pointer to a Ball, which is being initialized
- * @return       - mark of succesful initialization
- */
-bool Game::initBall(Ball* ball)
-{
-    ball->init(gameFieldSize);
-    bool flag = ball->generateBall(&labyrinth, change, changeSize);
-    labyrinth.addPoint(ball->getCoords());
-    return flag;
-}
-
-/**
- * @brief   Initialization of the change array
- * @param   lChange - The pointer to an array
- * @param   size   - The size of array(number of elements it can contain)
- */
-bool Game::wipeChange(Point** lChange, int size)
-{
-    Point emptyPoint;
-    emptyPoint.x = -1;
-    emptyPoint.y = -1;
-    emptyPoint.style.bg = 0;
-    emptyPoint.style.fg = 0;
-    emptyPoint.style.letter = 0;
-    for(int i = 0; i < size; i++)
-    {
-        lChange[0][i] = emptyPoint;
-        lChange[1][i] = emptyPoint;
-    }
-    return true;
-}
-
-
 
 /**
  * @brief   The method to change the game speed without giving the direct access

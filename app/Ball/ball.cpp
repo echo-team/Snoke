@@ -30,36 +30,30 @@ bool Ball::init(Point fieldSize)
 }
 
 /**
- * @brief   Generate the Ball
- * @param   labyrinth  - the current state of the labyrinth object for intersection checking
- * @param   change     - 2-dimensional array of changes needed to be applied to the labyrinth
- * @param   changeSize - max(len(change[0]), len(change[1])))
- * @return             - mark of whether the ball was successfully generated
- */
-bool Ball::generateBall(Labyrinth* labyrinth, Point* change[2], int changeSize)
-{
-    Point chance;
-    /*
-     * Generate numbers until u get a free spot
-     */
-    while (1)
-    {
-        chance.x = distributionX(rng);
-        chance.y = distributionY(rng);
-        if ((labyrinth->isFree(chance) == 1 || inRemChange(chance, change, changeSize)) && !inAddChange(chance, change, changeSize))
-        {
-            break;
-        }
-    }
-    position.x = chance.x;
-    position.y = chance.y;
-    return true;
-}
-
-/**
  * @brief   Get the ball coords without giving the direct access
  */
 Point Ball::getCoords()
 {
     return position;
+}
+
+/**
+ * @brief   Sets coordinates of the ball to given if they are correct
+ * @param   p - point to copy coords from
+ * @return    - mark os succesful copy
+ */
+bool Ball::setCoords(Point p)
+{
+    if(p.x >= 1 && p.x <= gameFieldSize.x && p.y >= 1 && p.y <= gameFieldSize.y)
+    {
+        this->position.x = p.x;
+        this->position.y = p.y;
+        return true;
+    }
+    return false;
+}
+
+std::mt19937* Ball::getRng()
+{
+    return &this->rng;
 }
