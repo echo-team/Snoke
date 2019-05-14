@@ -12,6 +12,8 @@
 #define LABYRINTH_H
 #include "../Common/common.h"
 #include "../Snake/snake.h"
+#include "../Change/change.h"
+#include "../Ball/ball.h"
 #include <ncurses.h>
 #include <string>
 #include <cstring>
@@ -56,19 +58,24 @@ class Labyrinth
         Point prevStart;
         Point prevEnd;
         Point gameFieldSize;
+
         void displayPartialy();
-        void displayUpdated(Point* update[2], int size);
-        void updateLabyrinth(Point* update[2], int size);
+        void displayUpdated();
+        void updateLabyrinth();
         void displayFull();
-        void freeDisplay(Point* change[2], int size);
-        void forcedDisplay(Point* change[2], int size, int displayMethod);
+        void freeDisplay();
+        void forcedDisplay(int displayMethod);
         void sizeHandler();
     public:
+        Change change;
+        Ball ball;
         bool setLabyrinth(Point dimensions);
         bool addSnake(Snake* snake);
         bool addPoint(Point p);
         bool remPoint(Point p);
-        void displayHandler(Point* change[2] = NULL, int size = -1, int displayMethod = -1);
+        void displayHandler(int displayMethod = -1);
+        bool initBall();
+        bool generateBall();
         short isFree(Point p);
         bool save(char name[MAXLINE]);
         bool load(char name[MAXLINE]);

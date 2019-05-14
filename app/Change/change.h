@@ -11,23 +11,27 @@
 #ifndef CHANGE_H
 #define CHANGE_H
 #include "../Common/common.h"
+#include <deque>
 
 /**
- * @class Game game.h
+ * @class Change change.h
  * @brief   A Support Change class
- * @prop    changeSize      - the size of the change sub-arrays
- * @prop    change          - 2-dim array containing changes for the labyrinth
+ * @prop    change  - 2-dim array containing additions and removals for the labyrinth
  */
-class Game
+class Change
 {
     private:
-        int changeSize;
-        Point* change[2];
+        std::deque<Point> change[2];
 
     public:
         void initChange();
-        bool wipeChange(Point** lChange, int size);
-        int getSize();
+        bool addPoint(Point p);
+        bool remPoint(Point p);
+        void wipeChange();
+        bool inAddChange(Point p);
+        bool inRemChange(Point p);
+        void getAddChange(std::deque<Point>* cpChange);
+        void getRemChange(std::deque<Point>* cpChange);
 };
 
 #endif

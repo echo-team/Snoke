@@ -52,42 +52,6 @@ void mSleep(int time)
 }
 
 /**
- * @brief   Check if Points is in the addition queue
- * @param   p          - point to check
- * @param   change     - array of changed Points
- * @param   changeSize - size of the change array
- */
-bool inAddChange(Point p, Point* change[2], int changeSize)
-{
-    for (int i = 0; i < changeSize; i++)
-    {
-        if(change[0][i] == p)
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-/**
- * @brief   Check if the Point is in the remove queue
- * @param   p          - point to check
- * @param   change     - array of changed Points
- * @param   changeSize - size of the change array
- */
-bool inRemChange(Point p, Point* change[2], int changeSize)
-{
-    for (int i = 0; i < changeSize; i++)
-    {
-        if(change[1][i] == p)
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-/**
  * @brief   Gets size of current console screen in symdols
  */
 Point getConsoleSize()

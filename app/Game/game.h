@@ -33,10 +33,8 @@ class Game
         Snake snake;
         Snake* snakeEnemies;
         Labyrinth labyrinth;
-        Change change;
         void setSpeed(int sp);
         bool initSnake(Point begin, int dir, int length);
-        bool initBall(Ball* ball);
     public:
         bool init(int size = 20, int sp = 100);
         int run();
