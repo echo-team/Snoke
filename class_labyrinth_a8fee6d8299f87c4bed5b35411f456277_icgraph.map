@@ -14,5 +14,5 @@
 <area shape="rect" id="node11" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="617,5,786,32"/>
 <area shape="rect" id="node12" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="848,5,904,32"/>
 <area shape="rect" id="node15" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="431,252,529,279"/>
-<area shape="rect" id="node16" href="$snake__move__test_8h.html#a537ec304fc709746617993eb9750045e" title="method runs with normal parameters and no collisions " alt="" coords="673,309,729,336"/>
+<area shape="rect" id="node16" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="673,309,729,336"/>
 </map>
