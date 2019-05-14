@@ -30,11 +30,12 @@ void resizeHandler(int sig)
 
 /**
  * @brief   Initializes game
- * @param   size  - size of the game field(size - 2 columns, size/2 - 2 rows)
- * @param   speed - speed of the game(1 / refresh rate) in milliseconds
+ * @param   size   - size of the game field(size - 2 columns, size/2 - 2 rows)
+ * @param   speed  - speed of the game(1 / refresh rate) in milliseconds
+ * @param   cycles - for how many cycles the game  should run
  * @return        - mark of successful initialization
  */
-bool Game::init(int size, int speed)
+bool Game::init(int size, int speed, int cycles)
 {
     if(size > 10)
     {
@@ -42,10 +43,23 @@ bool Game::init(int size, int speed)
         gameFieldSize.y = size/2;
         this->labyrinth.setLabyrinth(gameFieldSize);
         this->setSpeed(speed);
+        this->setCycles(cycles);
 
         return true;
     }
     return false;
+}
+
+void Game::setCycles(int cycles)
+{
+    if(cycles > 0)
+    {
+        this->cycles = cycles;
+    }
+    else
+    {
+        this->cycles = -1;
+    }
 }
 
 
@@ -86,14 +100,13 @@ int Game::run()
      * Initializing the Ball and generating it on the field
      */
     labyrinth.initBall();
-
     /*
      * displaying the starting state of labyrinth(forcing to display it Full if possible)
      */
     labyrinth.displayHandler(DISPFULL);
 
     bool flag = false;
-    while (!flag)
+    while (!flag && cycles != 0)
     {
         int command = getch();
         switch (command)
@@ -143,6 +156,10 @@ int Game::run()
         labyrinth.displayHandler();
 
         mSleep(speed);
+        if(cycles > 0)
+        {
+            cycles--;
+        }
     }
     return 0;
 }

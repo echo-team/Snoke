@@ -13,7 +13,7 @@ int main()
     */
 
     Game g;
-    g.init(70, 150);
+    g.init(70, 150, -1);
     int retVal = g.run();
 
     refresh();

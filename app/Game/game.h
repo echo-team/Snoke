@@ -31,13 +31,15 @@ class Game
 {
     private:
         int speed;
+        int cycles;
         Snake snake;
         Snake* snakeEnemies;
         Labyrinth labyrinth;
         void setSpeed(int sp);
+        void setCycles(int cycles);
         bool initSnake(Point begin, int dir, int length);
     public:
-        bool init(int size = 20, int sp = 100);
+        bool init(int size = 20, int sp = 100, int cycles = -1);
         int run();
 };
 
