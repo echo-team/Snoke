@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="352,31,475,57"/>
 <area shape="rect" id="node7" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="364,81,463,108"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="523,56,605,83"/>
-<area shape="rect" id="node6" href="$snake__move__test_8h.html#a27e7cf60e2571d8d945d500feb704644" title="snake eats the ball " alt="" coords="536,5,592,32"/>
+<area shape="rect" id="node6" href="$labyrinth__generateball__test_8h.html#aff913e7a2aa1448b141530530d9aa7a4" title="method runs with normal parameters " alt="" coords="536,5,592,32"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="653,56,704,83"/>
 <area shape="rect" id="node8" href="$snake__move__test_8h.html#a537ec304fc709746617993eb9750045e" title="method runs with normal parameters and no collisions " alt="" coords="536,107,592,133"/>
 </map>
