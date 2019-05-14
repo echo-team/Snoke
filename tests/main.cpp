@@ -1,6 +1,7 @@
 /**
   * Include test headers here
   */
+#include "common_test.h"
 #include "snake_init_test.h"
 #include "snake_setdirection_test.h"
 #include "labyrinth_setlabyrinth_test.h"
