@@ -5,8 +5,9 @@
 #include "snake_setdirection_test.h"
 #include "labyrinth_setlabyrinth_test.h"
 #include "labyrinth_addsnake_test.h"
-#include "snake_move_test.h"
 #include "ball_init_test.h"
+#include "labyrinth_generateball_test.h"
+#include "snake_move_test.h"
 #include "game_init_test.h"
 
 #include <gtest/gtest.h>
