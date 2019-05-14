@@ -13,6 +13,7 @@
 #include "labyrinth_displayhandler_test.h"
 #include "labyrinth_save_test.h"
 #include "labyrinth_load_test.h"
+#include "game_run_test.h"
 
 #include <gtest/gtest.h>
 
