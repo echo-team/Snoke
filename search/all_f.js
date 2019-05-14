@@ -2,6 +2,7 @@ var searchData=
 [
   ['save',['save',['../class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007',1,'Labyrinth']]],
   ['seed_5fval',['seed_val',['../class_ball.html#ad6e67b032167a7d9db9630bc5ab2e613',1,'Ball']]],
+  ['setcoords',['setCoords',['../class_ball.html#af42e561b11017035fc8a68ce35c99087',1,'Ball']]],
   ['setdirection',['setDirection',['../class_snake.html#acf38f64a411f6c4583e0df5e5570242b',1,'Snake']]],
   ['setlabyrinth',['setLabyrinth',['../class_labyrinth.html#ae6ae7b625e1ea3b1ae481bfa86bacd47',1,'Labyrinth']]],
   ['setposition',['setPosition',['../class_logo.html#a048b9474c23e659c94f590509376f198',1,'Logo']]],
@@ -14,6 +15,7 @@ var searchData=
   ['sidemenu_2ecpp',['SideMenu.cpp',['../_side_menu_8cpp.html',1,'']]],
   ['sidemenu_2eh',['SideMenu.h',['../_side_menu_8h.html',1,'']]],
   ['sizehandler',['sizeHandler',['../class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6',1,'Labyrinth']]],
+  ['sleephandler',['sleepHandler',['../common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp'],['../common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a',1,'sleepHandler():&#160;common.cpp']]],
   ['snake',['Snake',['../class_snake.html',1,'Snake'],['../class_game.html#ab77bfcc312425811000819791ea7668e',1,'Game::snake()'],['../class_labyrinth.html#a09a46368bfd83ccb75580687cb17b92f',1,'Labyrinth::snake()']]],
   ['snake_2ecpp',['snake.cpp',['../snake_8cpp.html',1,'']]],
   ['snake_2eh',['snake.h',['../snake_8h.html',1,'']]],

@@ -1,6 +1,7 @@
 var annotated =
 [
     [ "Ball", "class_ball.html", "class_ball" ],
+    [ "Change", "class_change.html", "class_change" ],
     [ "Game", "class_game.html", "class_game" ],
     [ "Labyrinth", "class_labyrinth.html", "class_labyrinth" ],
     [ "Logo", "class_logo.html", "class_logo" ],

@@ -1,7 +1,7 @@
 <map id="getConsoleSize" name="getConsoleSize">
 <area shape="rect" id="node2" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="168,5,320,32"/>
 <area shape="rect" id="node6" href="$class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="185,56,303,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="369,5,538,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="369,5,538,32"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="587,5,669,32"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="717,5,768,32"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="Labyrinth::updateLabyrinth" name="Labyrinth::updateLabyrinth">
+<area shape="rect" id="node2" href="$class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="230,5,397,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="246,56,381,83"/>
+<area shape="rect" id="node4" href="$class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="233,107,394,133"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="246,157,381,184"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="446,157,565,184"/>
+</map>

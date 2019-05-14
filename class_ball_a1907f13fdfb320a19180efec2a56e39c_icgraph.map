@@ -1,6 +1,6 @@
 <map id="Ball::init" name="Ball::init">
-<area shape="rect" id="node2" href="$class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="123,5,227,32"/>
-<area shape="rect" id="node5" href="$ball__generateball__test_8h.html#a1c004c4317cfe640b4689101ddef3f50" title="method runs with normal parameters " alt="" coords="147,56,203,83"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="275,5,357,32"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="405,5,456,32"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="123,5,245,32"/>
+<area shape="rect" id="node5" href="$ball__init__test_8h.html#a1c004c4317cfe640b4689101ddef3f50" title="method runs with normal parameters " alt="" coords="156,56,212,83"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="293,5,376,32"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="424,5,475,32"/>
 </map>

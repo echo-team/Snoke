@@ -129,12 +129,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acfe1c587c2a13d4b833eb11bd3157771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a> (int time)</td></tr>
 <tr class="memdesc:acfe1c587c2a13d4b833eb11bd3157771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-platform sleep function cover.  <a href="#acfe1c587c2a13d4b833eb11bd3157771">More...</a><br/></td></tr>
 <tr class="separator:acfe1c587c2a13d4b833eb11bd3157771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8afa890f53aecd84c750b7b568629e25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#a8afa890f53aecd84c750b7b568629e25">inAddChange</a> (<a class="el" href="class_point.html">Point</a> p, <a class="el" href="class_point.html">Point</a> *change[2], int changeSize)</td></tr>
-<tr class="memdesc:a8afa890f53aecd84c750b7b568629e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if Points is in the addition queue.  <a href="#a8afa890f53aecd84c750b7b568629e25">More...</a><br/></td></tr>
-<tr class="separator:a8afa890f53aecd84c750b7b568629e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7e2ccc7264c951f8b3802757992941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#aed7e2ccc7264c951f8b3802757992941">inRemChange</a> (<a class="el" href="class_point.html">Point</a> p, <a class="el" href="class_point.html">Point</a> *change[2], int changeSize)</td></tr>
-<tr class="memdesc:aed7e2ccc7264c951f8b3802757992941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> is in the remove queue.  <a href="#aed7e2ccc7264c951f8b3802757992941">More...</a><br/></td></tr>
-<tr class="separator:aed7e2ccc7264c951f8b3802757992941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a> ()</td></tr>
+<tr class="memdesc:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting new values for sleep function on signal interrupt  <a href="#a54e5255040d967ad5e858ae4a1e7ae6a">More...</a><br/></td></tr>
+<tr class="separator:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc817c98b389a060e7061a138efe10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a> ()</td></tr>
+<tr class="memdesc:a8cc817c98b389a060e7061a138efe10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For unix-based systems interrupted sleep must be continued.  <a href="#a8cc817c98b389a060e7061a138efe10c">More...</a><br/></td></tr>
+<tr class="separator:a8cc817c98b389a060e7061a138efe10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3ae1ea3b3825462dccd1eb18df401a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a> ()</td></tr>
 <tr class="memdesc:ada3ae1ea3b3825462dccd1eb18df401a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets size of current console screen in symdols.  <a href="#ada3ae1ea3b3825462dccd1eb18df401a">More...</a><br/></td></tr>
 <tr class="separator:ada3ae1ea3b3825462dccd1eb18df401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +148,34 @@ Functions</h2></td></tr>
 
 <p>Definition in file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8cc817c98b389a060e7061a138efe10c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addSleep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For unix-based systems interrupted sleep must be continued. </p>
+
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00080">80</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="common_8cpp_a8cc817c98b389a060e7061a138efe10c_icgraph.png" border="0" usemap="#common_8cpp_a8cc817c98b389a060e7061a138efe10c_icgraph" alt=""/></div>
+<map name="common_8cpp_a8cc817c98b389a060e7061a138efe10c_icgraph" id="common_8cpp_a8cc817c98b389a060e7061a138efe10c_icgraph">
+<area shape="rect" id="node2" href="game_8cpp.html#acde88fa8db9a7808948c1f7c7226b899" title="resizeHandler" alt="" coords="131,5,234,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="283,5,365,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="413,5,464,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ada3ae1ea3b3825462dccd1eb18df401a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,120 +191,14 @@ Functions</h2></td></tr>
 
 <p>Gets size of current console screen in symdols. </p>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00093">93</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00090">90</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a_icgraph.png" border="0" usemap="#common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a_icgraph" alt=""/></div>
 <map name="common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a_icgraph" id="common_8cpp_ada3ae1ea3b3825462dccd1eb18df401a_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="168,5,320,32"/><area shape="rect" id="node6" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="185,56,303,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="369,5,538,32"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="587,5,669,32"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="717,5,768,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8afa890f53aecd84c750b7b568629e25"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool inAddChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>change</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>changeSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if Points is in the addition queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>- point to check </td></tr>
-    <tr><td class="paramname">change</td><td>- array of changed Points </td></tr>
-    <tr><td class="paramname">changeSize</td><td>- size of the change array </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00060">60</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="common_8cpp_a8afa890f53aecd84c750b7b568629e25_icgraph.png" border="0" usemap="#common_8cpp_a8afa890f53aecd84c750b7b568629e25_icgraph" alt=""/></div>
-<map name="common_8cpp_a8afa890f53aecd84c750b7b568629e25_icgraph" id="common_8cpp_a8afa890f53aecd84c750b7b568629e25_icgraph">
-<area shape="rect" id="node2" href="class_ball.html#a72c944149264221e2857c8b4ca72c502" title="Generate the Ball. " alt="" coords="155,31,279,57"/><area shape="rect" id="node3" href="class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="328,5,432,32"/><area shape="rect" id="node6" href="class_snake.html#aab5a702610c61d502d36c5673a3a8410" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="331,56,429,83"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="480,31,563,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="611,31,661,57"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aed7e2ccc7264c951f8b3802757992941"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool inRemChange </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>change</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>changeSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if the <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> is in the remove queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>- point to check </td></tr>
-    <tr><td class="paramname">change</td><td>- array of changed Points </td></tr>
-    <tr><td class="paramname">changeSize</td><td>- size of the change array </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00078">78</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="common_8cpp_aed7e2ccc7264c951f8b3802757992941_icgraph.png" border="0" usemap="#common_8cpp_aed7e2ccc7264c951f8b3802757992941_icgraph" alt=""/></div>
-<map name="common_8cpp_aed7e2ccc7264c951f8b3802757992941_icgraph" id="common_8cpp_aed7e2ccc7264c951f8b3802757992941_icgraph">
-<area shape="rect" id="node2" href="class_ball.html#a72c944149264221e2857c8b4ca72c502" title="Generate the Ball. " alt="" coords="161,31,285,57"/><area shape="rect" id="node3" href="class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="333,5,437,32"/><area shape="rect" id="node6" href="class_snake.html#aab5a702610c61d502d36c5673a3a8410" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="336,56,435,83"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="485,31,568,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="616,31,667,57"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="168,5,320,32"/><area shape="rect" id="node6" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa" title="MainMenu::draw" alt="" coords="185,56,303,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="369,5,538,32"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="587,5,669,32"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="717,5,768,32"/></map>
 </div>
 </p>
 
@@ -304,7 +226,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00040">40</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00049">49</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -351,6 +273,34 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p>Definition at line <a class="el" href="common_8cpp_source.html#l00030">30</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54e5255040d967ad5e858ae4a1e7ae6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sleepHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setting new values for sleep function on signal interrupt </p>
+
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00068">68</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="common_8cpp_a54e5255040d967ad5e858ae4a1e7ae6a_icgraph.png" border="0" usemap="#common_8cpp_a54e5255040d967ad5e858ae4a1e7ae6a_icgraph" alt=""/></div>
+<map name="common_8cpp_a54e5255040d967ad5e858ae4a1e7ae6a_icgraph" id="common_8cpp_a54e5255040d967ad5e858ae4a1e7ae6a_icgraph">
+<area shape="rect" id="node2" href="game_8cpp.html#acde88fa8db9a7808948c1f7c7226b899" title="resizeHandler" alt="" coords="153,5,255,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="304,5,387,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="435,5,485,32"/></map>
+</div>
+</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wipechange',['wipeChange',['../class_game.html#ae3805ee11cb9b97af617eadfbe70d395',1,'Game']]]
+  ['wipechange',['wipeChange',['../class_change.html#a173ca9db2d21990210bad772f3ac7e55',1,'Change']]]
 ];

@@ -1,0 +1,7 @@
+<map id="Labyrinth::generateBall" name="Labyrinth::generateBall">
+<area shape="rect" id="node2" href="$class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3" title="Ball::getRng" alt="" coords="241,5,335,32"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="229,56,347,83"/>
+<area shape="rect" id="node4" href="$class_change.html#aa6fd51b009e7da8a9a4ddcc92353a2da" title="Check if the Point is in the remove queue. " alt="" coords="209,107,367,133"/>
+<area shape="rect" id="node5" href="$class_change.html#a01d3e66186965be3a3b97c5bb6738b7d" title="Check if Points is in the addition queue. " alt="" coords="211,157,365,184"/>
+<area shape="rect" id="node6" href="$class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="232,208,344,235"/>
+</map>

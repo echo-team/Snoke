@@ -1,5 +1,0 @@
-<map id="Labyrinth::updateLabyrinth" name="Labyrinth::updateLabyrinth">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="230,5,399,32"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="448,5,531,32"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="579,5,629,32"/>
-</map>

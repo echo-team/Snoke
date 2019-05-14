@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_labyrinth.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_labyrinth-members.html">List of all members</a>  </div>
@@ -122,7 +123,7 @@ Collaboration diagram for Labyrinth:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth__coll__graph.png" border="0" usemap="#_labyrinth_coll__map" alt="Collaboration graph"/></div>
 <map name="_labyrinth_coll__map" id="_labyrinth_coll__map">
-<area shape="rect" id="node8" href="class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,129,219,156"/><area shape="rect" id="node4" title="STL class. " alt="" coords="851,87,931,113"/><area shape="rect" id="node5" title="STL class. " alt="" coords="582,58,709,99"/><area shape="rect" id="node6" href="class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="326,237,378,264"/><area shape="rect" id="node9" href="class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="861,172,920,199"/></map>
+<area shape="rect" id="node8" href="class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,159,219,185"/><area shape="rect" id="node4" title="STL class. " alt="" coords="955,559,1035,585"/><area shape="rect" id="node5" title="STL class. " alt="" coords="686,555,813,597"/><area shape="rect" id="node6" href="class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="378,132,430,159"/><area shape="rect" id="node12" href="class_ball.html" title="Describes the Ball entity of the game. " alt="" coords="727,345,771,372"/><area shape="rect" id="node9" href="class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="965,235,1024,261"/><area shape="rect" id="node16" href="class_change.html" title="A Support Change class. " alt="" coords="961,167,1028,193"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -139,9 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24d98083c011da23695425ec69d583a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5">remPoint</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
 <tr class="memdesc:a24d98083c011da23695425ec69d583a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> from the labyrinth.  <a href="#a24d98083c011da23695425ec69d583a5">More...</a><br/></td></tr>
 <tr class="separator:a24d98083c011da23695425ec69d583a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ccd7c544323dfd23fa66d06705c11f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f">displayHandler</a> (<a class="el" href="class_point.html">Point</a> *change[2]=NULL, int size=-1, int displayMethod=-1)</td></tr>
-<tr class="memdesc:a31ccd7c544323dfd23fa66d06705c11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method which decides what dispaly method will be used in each situation.  <a href="#a31ccd7c544323dfd23fa66d06705c11f">More...</a><br/></td></tr>
-<tr class="separator:a31ccd7c544323dfd23fa66d06705c11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28357f900ac4ea8e7624ce6e867a3eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee">displayHandler</a> (int displayMethod=-1)</td></tr>
+<tr class="memdesc:a28357f900ac4ea8e7624ce6e867a3eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method which decides what dispaly method will be used in each situation.  <a href="#a28357f900ac4ea8e7624ce6e867a3eee">More...</a><br/></td></tr>
+<tr class="separator:a28357f900ac4ea8e7624ce6e867a3eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dea25b9ae57083adca650baffe3ef65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65">initBall</a> ()</td></tr>
+<tr class="memdesc:a2dea25b9ae57083adca650baffe3ef65"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> initialization with labyrinth updating.  <a href="#a2dea25b9ae57083adca650baffe3ef65">More...</a><br/></td></tr>
+<tr class="separator:a2dea25b9ae57083adca650baffe3ef65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633dcd9ae15b8c3c6b501b634de2a3fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc">generateBall</a> ()</td></tr>
+<tr class="memdesc:a633dcd9ae15b8c3c6b501b634de2a3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a>.  <a href="#a633dcd9ae15b8c3c6b501b634de2a3fc">More...</a><br/></td></tr>
+<tr class="separator:a633dcd9ae15b8c3c6b501b634de2a3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fee6d8299f87c4bed5b35411f456277"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277">isFree</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
 <tr class="memdesc:a8fee6d8299f87c4bed5b35411f456277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark of if the asked <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> is free.  <a href="#a8fee6d8299f87c4bed5b35411f456277">More...</a><br/></td></tr>
 <tr class="separator:a8fee6d8299f87c4bed5b35411f456277"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,26 +159,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a36cd7033292515cba0ce3d74f03720b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mehod to load labyrinth from the file.  <a href="#a36cd7033292515cba0ce3d74f03720b6">More...</a><br/></td></tr>
 <tr class="separator:a36cd7033292515cba0ce3d74f03720b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad9a3c7ebdd5ee39ccf4e320c2f1acec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_change.html">Change</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad9a3c7ebdd5ee39ccf4e320c2f1acec4">change</a></td></tr>
+<tr class="separator:ad9a3c7ebdd5ee39ccf4e320c2f1acec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8986a479497cd6b77deb62334b862f04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a8986a479497cd6b77deb62334b862f04">ball</a></td></tr>
+<tr class="separator:a8986a479497cd6b77deb62334b862f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab120d60db9780f137d3c9584c75c2f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d">displayPartialy</a> ()</td></tr>
 <tr class="memdesc:ab120d60db9780f137d3c9584c75c2f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">display labyrinth partialy, using the start and end Points  <a href="#ab120d60db9780f137d3c9584c75c2f9d">More...</a><br/></td></tr>
 <tr class="separator:ab120d60db9780f137d3c9584c75c2f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86210707e3b4be4faaa9bd1f86429124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124">displayUpdated</a> (<a class="el" href="class_point.html">Point</a> *update[2], int size)</td></tr>
-<tr class="memdesc:a86210707e3b4be4faaa9bd1f86429124"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw only the changed Points when the labyrinth is being fully displayed  <a href="#a86210707e3b4be4faaa9bd1f86429124">More...</a><br/></td></tr>
-<tr class="separator:a86210707e3b4be4faaa9bd1f86429124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad533aaa69e845e368a7a08097f7e4ac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8">updateLabyrinth</a> (<a class="el" href="class_point.html">Point</a> *update[2], int size)</td></tr>
-<tr class="memdesc:ad533aaa69e845e368a7a08097f7e4ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating the labyrinth(changing the values of some Points)  <a href="#ad533aaa69e845e368a7a08097f7e4ac8">More...</a><br/></td></tr>
-<tr class="separator:ad533aaa69e845e368a7a08097f7e4ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14a9bd2c24250a9f6ea1e8c3721b178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178">displayUpdated</a> ()</td></tr>
+<tr class="memdesc:ac14a9bd2c24250a9f6ea1e8c3721b178"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw only the changed Points when the labyrinth is being fully displayed  <a href="#ac14a9bd2c24250a9f6ea1e8c3721b178">More...</a><br/></td></tr>
+<tr class="separator:ac14a9bd2c24250a9f6ea1e8c3721b178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5adb9213fbd258118e49c85f09c301a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a">updateLabyrinth</a> ()</td></tr>
+<tr class="memdesc:af5adb9213fbd258118e49c85f09c301a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating the labyrinth(changing the values of some Points)  <a href="#af5adb9213fbd258118e49c85f09c301a">More...</a><br/></td></tr>
+<tr class="separator:af5adb9213fbd258118e49c85f09c301a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98447444cafe6d19e0e5c0181f3c1ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd">displayFull</a> ()</td></tr>
 <tr class="memdesc:a98447444cafe6d19e0e5c0181f3c1ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">redraw every <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the labyrinth  <a href="#a98447444cafe6d19e0e5c0181f3c1ddd">More...</a><br/></td></tr>
 <tr class="separator:a98447444cafe6d19e0e5c0181f3c1ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc168147493b0c76c5ed6316c59db2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e">freeDisplay</a> (<a class="el" href="class_point.html">Point</a> *change[2], int size)</td></tr>
-<tr class="memdesc:abdc168147493b0c76c5ed6316c59db2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">No extra stimulus, displaying the default way.  <a href="#abdc168147493b0c76c5ed6316c59db2e">More...</a><br/></td></tr>
-<tr class="separator:abdc168147493b0c76c5ed6316c59db2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e67ccfbe72771cf3832ebda2855babf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf">forcedDisplay</a> (<a class="el" href="class_point.html">Point</a> *change[2], int size, int displayMethod)</td></tr>
-<tr class="memdesc:a9e67ccfbe72771cf3832ebda2855babf"><td class="mdescLeft">&#160;</td><td class="mdescRight">got an extra stimulus for displaying in a certain method  <a href="#a9e67ccfbe72771cf3832ebda2855babf">More...</a><br/></td></tr>
-<tr class="separator:a9e67ccfbe72771cf3832ebda2855babf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4da38c24b2ec9839bc4b67141fb2d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92">freeDisplay</a> ()</td></tr>
+<tr class="memdesc:ae4da38c24b2ec9839bc4b67141fb2d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">No extra stimulus, displaying the default way.  <a href="#ae4da38c24b2ec9839bc4b67141fb2d92">More...</a><br/></td></tr>
+<tr class="separator:ae4da38c24b2ec9839bc4b67141fb2d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661235422415fdf467f0f4d608c0b77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d">forcedDisplay</a> (int displayMethod)</td></tr>
+<tr class="memdesc:a661235422415fdf467f0f4d608c0b77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">got an extra stimulus for displaying in a certain method  <a href="#a661235422415fdf467f0f4d608c0b77d">More...</a><br/></td></tr>
+<tr class="separator:a661235422415fdf467f0f4d608c0b77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43994d3b84ed457b1c04595466a61fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6">sizeHandler</a> ()</td></tr>
 <tr class="memdesc:a43994d3b84ed457b1c04595466a61fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method, which sets start and end values depending on the position of local_player's snake head and current console size.  <a href="#a43994d3b84ed457b1c04595466a61fc6">More...</a><br/></td></tr>
 <tr class="separator:a43994d3b84ed457b1c04595466a61fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +227,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00047">47</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00049">49</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a710cf4ff7789d527e6081d1eb2d696a6"></a>
 <div class="memitem">
@@ -238,7 +252,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> was added </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00396">396</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00409">409</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -254,7 +268,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_icgraph.png" border="0" usemap="#class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_icgraph" alt=""/></div>
 <map name="class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_icgraph" id="class_labyrinth_a710cf4ff7789d527e6081d1eb2d696a6_icgraph">
-<area shape="rect" id="node2" href="class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="225,5,329,32"/><area shape="rect" id="node5" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="207,63,348,89"/><area shape="rect" id="node8" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="190,125,365,152"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,49,715,76"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,49,813,76"/><area shape="rect" id="node6" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="439,49,558,76"/><area shape="rect" id="node7" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="471,100,527,127"/><area shape="rect" id="node9" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,151,583,177"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="216,5,339,32"/><area shape="rect" id="node5" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="207,63,348,89"/><area shape="rect" id="node8" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="190,125,365,152"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,49,715,76"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,49,813,76"/><area shape="rect" id="node6" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="439,49,558,76"/><area shape="rect" id="node7" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="471,100,527,127"/><area shape="rect" id="node9" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,151,583,177"/></map>
 </div>
 </p>
 
@@ -283,7 +297,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of succesful addition </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00069">69</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00083">83</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -328,45 +342,29 @@ Here is the caller graph for this function:</div>
 
 <p>redraw every <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> of the labyrinth </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00309">309</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00317">317</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd_icgraph.png" border="0" usemap="#class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd_icgraph" alt=""/></div>
 <map name="class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd_icgraph" id="class_labyrinth_a98447444cafe6d19e0e5c0181f3c1ddd_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="200,5,363,32"/><area shape="rect" id="node6" href="class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="207,56,356,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="411,31,581,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="629,31,712,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="760,31,811,57"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="200,5,363,32"/><area shape="rect" id="node6" href="class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="207,56,356,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="411,31,581,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="629,31,712,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="760,31,811,57"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a31ccd7c544323dfd23fa66d06705c11f"></a>
+<a class="anchor" id="a28357f900ac4ea8e7624ce6e867a3eee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Labyrinth::displayHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>change</em>[2] = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em> = <code>-1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>displayMethod</em> = <code>-1</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>displayMethod</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -374,29 +372,27 @@ Here is the caller graph for this function:</div>
 <p>A method which decides what dispaly method will be used in each situation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">change</td><td>- 2-dimensional array of changes needed to be applied to the labyrinth </td></tr>
-    <tr><td class="paramname">size</td><td>- the size of the change array </td></tr>
     <tr><td class="paramname">displayMethod</td><td>- force it to use a certain display method </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00113">113</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00125">125</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_cgraph.png" border="0" usemap="#class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_cgraph" alt=""/></div>
-<map name="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_cgraph" id="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_cgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="225,56,399,83"/><area shape="rect" id="node6" href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="236,157,388,184"/><area shape="rect" id="node9" href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="231,208,393,235"/><area shape="rect" id="node13" href="class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="237,259,387,285"/><area shape="rect" id="node3" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="467,56,602,83"/><area shape="rect" id="node5" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="467,5,602,32"/><area shape="rect" id="node4" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="670,56,789,83"/><area shape="rect" id="node7" href="class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="455,157,614,184"/><area shape="rect" id="node8" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="477,107,592,133"/><area shape="rect" id="node10" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="462,208,607,235"/><area shape="rect" id="node11" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="451,259,619,285"/><area shape="rect" id="node12" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="448,309,621,336"/></map>
+<div class="center"><img src="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_cgraph.png" border="0" usemap="#class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_cgraph" alt=""/></div>
+<map name="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_cgraph" id="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_cgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="435,49,610,76"/><area shape="rect" id="node8" href="class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="229,252,381,279"/><area shape="rect" id="node11" href="class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="224,139,387,165"/><area shape="rect" id="node15" href="class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="231,189,380,216"/><area shape="rect" id="node3" href="class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="659,132,826,159"/><area shape="rect" id="node4" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="675,5,810,32"/><area shape="rect" id="node5" href="class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="662,195,823,221"/><area shape="rect" id="node6" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="675,56,810,83"/><area shape="rect" id="node7" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="875,56,994,83"/><area shape="rect" id="node9" href="class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="443,252,602,279"/><area shape="rect" id="node10" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="465,303,580,329"/><area shape="rect" id="node12" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="450,151,595,177"/><area shape="rect" id="node13" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="439,100,607,127"/><area shape="rect" id="node14" href="class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="436,201,609,228"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_icgraph.png" border="0" usemap="#class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_icgraph" alt=""/></div>
-<map name="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_icgraph" id="class_labyrinth_a31ccd7c544323dfd23fa66d06705c11f_icgraph">
+<div class="center"><img src="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_icgraph.png" border="0" usemap="#class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_icgraph" alt=""/></div>
+<map name="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_icgraph" id="class_labyrinth_a28357f900ac4ea8e7624ce6e867a3eee_icgraph">
 <area shape="rect" id="node2" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="224,5,307,32"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="355,5,405,32"/></map>
 </div>
 </p>
@@ -426,20 +422,20 @@ Here is the caller graph for this function:</div>
 
 <p>display labyrinth partialy, using the start and end Points </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00321">321</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00329">329</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_ab120d60db9780f137d3c9584c75c2f9d_icgraph.png" border="0" usemap="#class_labyrinth_ab120d60db9780f137d3c9584c75c2f9d_icgraph" alt=""/></div>
 <map name="class_labyrinth_ab120d60db9780f137d3c9584c75c2f9d_icgraph" id="class_labyrinth_ab120d60db9780f137d3c9584c75c2f9d_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="221,5,384,32"/><area shape="rect" id="node6" href="class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="228,56,377,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="433,31,602,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="651,31,733,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="781,31,832,57"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="221,5,384,32"/><area shape="rect" id="node6" href="class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="228,56,377,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="433,31,602,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="651,31,733,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="781,31,832,57"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a86210707e3b4be4faaa9bd1f86429124"></a>
+<a class="anchor" id="ac14a9bd2c24250a9f6ea1e8c3721b178"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -449,19 +445,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Labyrinth::displayUpdated </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>update</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -473,20 +458,29 @@ Here is the caller graph for this function:</div>
 
 <p>draw only the changed Points when the labyrinth is being fully displayed </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00338">338</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00346">346</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_cgraph.png" border="0" usemap="#class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_cgraph" alt=""/></div>
+<map name="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_cgraph" id="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_cgraph">
+<area shape="rect" id="node2" href="class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="227,5,394,32"/><area shape="rect" id="node3" href="class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="230,56,391,83"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_a86210707e3b4be4faaa9bd1f86429124_icgraph.png" border="0" usemap="#class_labyrinth_a86210707e3b4be4faaa9bd1f86429124_icgraph" alt=""/></div>
-<map name="class_labyrinth_a86210707e3b4be4faaa9bd1f86429124_icgraph" id="class_labyrinth_a86210707e3b4be4faaa9bd1f86429124_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a9e67ccfbe72771cf3832ebda2855babf" title="got an extra stimulus for displaying in a certain method " alt="" coords="227,5,389,32"/><area shape="rect" id="node6" href="class_labyrinth.html#abdc168147493b0c76c5ed6316c59db2e" title="No extra stimulus, displaying the default way. " alt="" coords="233,56,383,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="438,31,607,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="656,31,739,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="787,31,837,57"/></map>
+<div class="center"><img src="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_icgraph.png" border="0" usemap="#class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_icgraph" alt=""/></div>
+<map name="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_icgraph" id="class_labyrinth_ac14a9bd2c24250a9f6ea1e8c3721b178_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="227,5,389,32"/><area shape="rect" id="node6" href="class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="233,56,383,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="438,31,607,57"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="656,31,739,57"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="787,31,837,57"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9e67ccfbe72771cf3832ebda2855babf"></a>
+<a class="anchor" id="a661235422415fdf467f0f4d608c0b77d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -496,25 +490,9 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Labyrinth::forcedDisplay </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>change</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>displayMethod</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>displayMethod</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -527,36 +505,34 @@ Here is the caller graph for this function:</div>
 <p>got an extra stimulus for displaying in a certain method </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">change</td><td>- 2-dimensional array of changes needed to be applied to the labyrinth </td></tr>
-    <tr><td class="paramname">size</td><td>- the size of the change array </td></tr>
     <tr><td class="paramname">displayMethod</td><td>- a method that is beeing force-called </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00208">208</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00218">218</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_cgraph.png" border="0" usemap="#class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_cgraph" alt=""/></div>
-<map name="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_cgraph" id="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_cgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="230,5,375,32"/><area shape="rect" id="node3" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="219,56,387,83"/><area shape="rect" id="node4" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="216,107,389,133"/></map>
+<div class="center"><img src="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_cgraph.png" border="0" usemap="#class_labyrinth_a661235422415fdf467f0f4d608c0b77d_cgraph" alt=""/></div>
+<map name="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_cgraph" id="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_cgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="230,5,375,32"/><area shape="rect" id="node3" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="219,56,387,83"/><area shape="rect" id="node4" href="class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="216,107,389,133"/><area shape="rect" id="node5" href="class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="438,81,605,108"/><area shape="rect" id="node6" href="class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="441,132,602,159"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_icgraph.png" border="0" usemap="#class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_icgraph" alt=""/></div>
-<map name="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_icgraph" id="class_labyrinth_a9e67ccfbe72771cf3832ebda2855babf_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="217,5,386,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="435,5,517,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="565,5,616,32"/></map>
+<div class="center"><img src="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_icgraph.png" border="0" usemap="#class_labyrinth_a661235422415fdf467f0f4d608c0b77d_icgraph" alt=""/></div>
+<map name="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_icgraph" id="class_labyrinth_a661235422415fdf467f0f4d608c0b77d_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="217,5,386,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="435,5,517,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="565,5,616,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abdc168147493b0c76c5ed6316c59db2e"></a>
+<a class="anchor" id="ae4da38c24b2ec9839bc4b67141fb2d92"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -566,19 +542,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Labyrinth::freeDisplay </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>change</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -589,31 +554,106 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>No extra stimulus, displaying the default way. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">change</td><td>- 2-dimensional array of changes needed to be applied to the labyrinth </td></tr>
-    <tr><td class="paramname">size</td><td>- the size of the change array </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00256">256</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00264">264</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_cgraph.png" border="0" usemap="#class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_cgraph" alt=""/></div>
-<map name="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_cgraph" id="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_cgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a86210707e3b4be4faaa9bd1f86429124" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="203,5,376,32"/><area shape="rect" id="node3" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="205,56,373,83"/><area shape="rect" id="node4" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="217,107,362,133"/></map>
+<div class="center"><img src="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_cgraph.png" border="0" usemap="#class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_cgraph" alt=""/></div>
+<map name="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_cgraph" id="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_cgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="203,31,376,57"/><area shape="rect" id="node5" href="class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="205,81,373,108"/><area shape="rect" id="node6" href="class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="217,132,362,159"/><area shape="rect" id="node3" href="class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="425,5,591,32"/><area shape="rect" id="node4" href="class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="427,56,589,83"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_icgraph.png" border="0" usemap="#class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_icgraph" alt=""/></div>
-<map name="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_icgraph" id="class_labyrinth_abdc168147493b0c76c5ed6316c59db2e_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="203,5,373,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="421,5,504,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="552,5,603,32"/></map>
+<div class="center"><img src="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_icgraph.png" border="0" usemap="#class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_icgraph" alt=""/></div>
+<map name="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_icgraph" id="class_labyrinth_ae4da38c24b2ec9839bc4b67141fb2d92_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="203,5,373,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="421,5,504,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="552,5,603,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a633dcd9ae15b8c3c6b501b634de2a3fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::generateBall </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate the <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">labyrinth</td><td>- the current state of the labyrinth object for intersection checking </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>- mark of whether the ball was successfully generated </dd></dl>
+
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00541">541</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_cgraph.png" border="0" usemap="#class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_cgraph" alt=""/></div>
+<map name="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_cgraph" id="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_cgraph">
+<area shape="rect" id="node2" href="class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3" title="Ball::getRng" alt="" coords="241,5,335,32"/><area shape="rect" id="node3" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="229,56,347,83"/><area shape="rect" id="node4" href="class_change.html#aa6fd51b009e7da8a9a4ddcc92353a2da" title="Check if the Point is in the remove queue. " alt="" coords="209,107,367,133"/><area shape="rect" id="node5" href="class_change.html#a01d3e66186965be3a3b97c5bb6738b7d" title="Check if Points is in the addition queue. " alt="" coords="211,157,365,184"/><area shape="rect" id="node6" href="class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="232,208,344,235"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_icgraph.png" border="0" usemap="#class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_icgraph" alt=""/></div>
+<map name="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_icgraph" id="class_labyrinth_a633dcd9ae15b8c3c6b501b634de2a3fc_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="208,5,331,32"/><area shape="rect" id="node5" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="220,56,319,83"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="379,31,461,57"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="509,31,560,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dea25b9ae57083adca650baffe3ef65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Labyrinth::initBall </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> initialization with labyrinth updating. </p>
+<dl class="section return"><dt>Returns</dt><dd>- mark of succesful initialization </dd></dl>
+
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00070">70</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_cgraph.png" border="0" usemap="#class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_cgraph" alt=""/></div>
+<map name="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_cgraph" id="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_cgraph">
+<area shape="rect" id="node2" href="class_ball.html#a1907f13fdfb320a19180efec2a56e39c" title="Initialization. " alt="" coords="219,5,288,32"/><area shape="rect" id="node3" href="class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="176,107,331,133"/><area shape="rect" id="node9" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="186,56,321,83"/><area shape="rect" id="node10" href="class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="197,157,309,184"/><area shape="rect" id="node4" href="class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3" title="Ball::getRng" alt="" coords="411,81,506,108"/><area shape="rect" id="node5" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="399,31,518,57"/><area shape="rect" id="node6" href="class_change.html#aa6fd51b009e7da8a9a4ddcc92353a2da" title="Check if the Point is in the remove queue. " alt="" coords="379,132,538,159"/><area shape="rect" id="node7" href="class_change.html#a01d3e66186965be3a3b97c5bb6738b7d" title="Check if Points is in the addition queue. " alt="" coords="382,183,535,209"/><area shape="rect" id="node8" href="class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="403,233,515,260"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_icgraph.png" border="0" usemap="#class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_icgraph" alt=""/></div>
+<map name="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_icgraph" id="class_labyrinth_a2dea25b9ae57083adca650baffe3ef65_icgraph">
+<area shape="rect" id="node2" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="176,5,259,32"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="307,5,357,32"/></map>
 </div>
 </p>
 
@@ -642,14 +682,14 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> is free </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00379">379</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00392">392</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_a8fee6d8299f87c4bed5b35411f456277_icgraph.png" border="0" usemap="#class_labyrinth_a8fee6d8299f87c4bed5b35411f456277_icgraph" alt=""/></div>
 <map name="class_labyrinth_a8fee6d8299f87c4bed5b35411f456277_icgraph" id="class_labyrinth_a8fee6d8299f87c4bed5b35411f456277_icgraph">
-<area shape="rect" id="node2" href="class_ball.html#a72c944149264221e2857c8b4ca72c502" title="Generate the Ball. " alt="" coords="197,56,321,83"/><area shape="rect" id="node7" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="409,157,551,184"/><area shape="rect" id="node10" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="191,107,326,133"/><area shape="rect" id="node13" href="class_snake.html#a3b4362db19dfcb62218a004cb58d4d9c" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="173,5,344,32"/><area shape="rect" id="node3" href="class_game.html#a3702238c3fef205d19d1cb4bbc471c5c" title="Ball initialization with labyrinth updating. " alt="" coords="428,56,532,83"/><area shape="rect" id="node6" href="class_snake.html#aab5a702610c61d502d36c5673a3a8410" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="431,5,529,32"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="835,81,917,108"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="965,81,1016,108"/><area shape="rect" id="node8" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="642,208,761,235"/><area shape="rect" id="node9" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="673,157,729,184"/><area shape="rect" id="node11" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="393,107,567,133"/><area shape="rect" id="node12" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="617,107,786,133"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="409,56,551,83"/><area shape="rect" id="node7" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="191,107,326,133"/><area shape="rect" id="node11" href="class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="181,157,336,184"/><area shape="rect" id="node13" href="class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="173,208,344,235"/><area shape="rect" id="node3" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="642,56,761,83"/><area shape="rect" id="node6" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="673,5,729,32"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="835,132,917,159"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="965,132,1016,159"/><area shape="rect" id="node8" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="419,157,541,184"/><area shape="rect" id="node9" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="393,107,567,133"/><area shape="rect" id="node10" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="617,107,786,133"/><area shape="rect" id="node12" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="431,208,529,235"/></map>
 </div>
 </p>
 
@@ -678,7 +718,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark os successful loading </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00464">464</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00477">477</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 </div>
 </div>
@@ -705,14 +745,14 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the <a class="el" href="class_point.html" title="Coordinates and style of the cell in console window. ">Point</a> was removed </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00411">411</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00424">424</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_a24d98083c011da23695425ec69d583a5_icgraph.png" border="0" usemap="#class_labyrinth_a24d98083c011da23695425ec69d583a5_icgraph" alt=""/></div>
 <map name="class_labyrinth_a24d98083c011da23695425ec69d583a5_icgraph" id="class_labyrinth_a24d98083c011da23695425ec69d583a5_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="207,56,348,83"/><area shape="rect" id="node7" href="class_labyrinth.html#ad533aaa69e845e368a7a08097f7e4ac8" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="190,107,365,133"/><area shape="rect" id="node3" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="439,5,558,32"/><area shape="rect" id="node6" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="471,56,527,83"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,56,715,83"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,56,813,83"/><area shape="rect" id="node8" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,107,583,133"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="207,56,348,83"/><area shape="rect" id="node7" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="190,107,365,133"/><area shape="rect" id="node3" href="class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="439,5,558,32"/><area shape="rect" id="node6" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="471,56,527,83"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,56,715,83"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,56,813,83"/><area shape="rect" id="node8" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,107,583,133"/></map>
 </div>
 </p>
 
@@ -741,7 +781,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- mark of whether the labyrinth was successfully saved </dd></dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00422">422</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00435">435</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -780,11 +820,20 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00017">17</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_cgraph.png" border="0" usemap="#class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_cgraph" alt=""/></div>
+<map name="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_cgraph" id="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_cgraph">
+<area shape="rect" id="node2" href="class_change.html#a6ddd7bac4e89f1c80b1c08f86bdf7e2e" title="Initializes change array, by resetting it. " alt="" coords="209,5,346,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_icgraph.png" border="0" usemap="#class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_icgraph" alt=""/></div>
 <map name="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_icgraph" id="class_labyrinth_ae6ae7b625e1ea3b1ae481bfa86bacd47_icgraph">
-<area shape="rect" id="node2" href="class_game.html#a66e1800ff072c0b4e737ac51430630db" title="Initializes game. " alt="" coords="208,5,291,32"/><area shape="rect" id="node4" href="ball__generateball__test_8h.html#a1c004c4317cfe640b4689101ddef3f50" title="method runs with normal parameters " alt="" coords="339,56,395,83"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="341,5,392,32"/></map>
+<area shape="rect" id="node2" href="class_game.html#a66e1800ff072c0b4e737ac51430630db" title="Initializes game. " alt="" coords="208,31,291,57"/><area shape="rect" id="node5" href="labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="221,81,277,108"/><area shape="rect" id="node3" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="341,5,392,32"/><area shape="rect" id="node4" href="game__init__test_8h.html#a1fc0354b53420500c99d7f0230a3f113" title="method runs with normal parameters " alt="" coords="339,56,395,83"/></map>
 </div>
 </p>
 
@@ -813,7 +862,7 @@ Here is the caller graph for this function:</div>
 
 <p>A method, which sets start and end values depending on the position of local_player's snake head and current console size. </p>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00144">144</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00156">156</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -829,13 +878,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_icgraph.png" border="0" usemap="#class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_icgraph" alt=""/></div>
 <map name="class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_icgraph" id="class_labyrinth_a43994d3b84ed457b1c04595466a61fc6_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="206,5,375,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="424,5,507,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="555,5,605,32"/></map>
+<area shape="rect" id="node2" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="206,5,375,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="424,5,507,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="555,5,605,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad533aaa69e845e368a7a08097f7e4ac8"></a>
+<a class="anchor" id="af5adb9213fbd258118e49c85f09c301a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -845,19 +894,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Labyrinth::updateLabyrinth </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_point.html">Point</a> *&#160;</td>
-          <td class="paramname"><em>update</em>[2], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -868,37 +906,58 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Updating the labyrinth(changing the values of some Points) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">update</td><td>- 2-dimensional array of changes needed to be applied to the labyrinth </td></tr>
-    <tr><td class="paramname">size</td><td>- the longest sequence for updating [max(len(update[0], update[1]))] </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00356">356</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8cpp_source.html#l00370">370</a> of file <a class="el" href="labyrinth_8cpp_source.html">labyrinth.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_cgraph.png" border="0" usemap="#class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_cgraph" alt=""/></div>
-<map name="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_cgraph" id="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_cgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="230,5,365,32"/><area shape="rect" id="node4" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="230,56,365,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="414,5,533,32"/></map>
+<div class="center"><img src="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_cgraph.png" border="0" usemap="#class_labyrinth_af5adb9213fbd258118e49c85f09c301a_cgraph" alt=""/></div>
+<map name="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_cgraph" id="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_cgraph">
+<area shape="rect" id="node2" href="class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="230,5,397,32"/><area shape="rect" id="node3" href="class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="246,56,381,83"/><area shape="rect" id="node4" href="class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="233,107,394,133"/><area shape="rect" id="node5" href="class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="246,157,381,184"/><area shape="rect" id="node6" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="446,157,565,184"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_icgraph.png" border="0" usemap="#class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_icgraph" alt=""/></div>
-<map name="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_icgraph" id="class_labyrinth_ad533aaa69e845e368a7a08097f7e4ac8_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a31ccd7c544323dfd23fa66d06705c11f" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="230,5,399,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="448,5,531,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="579,5,629,32"/></map>
+<div class="center"><img src="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_icgraph.png" border="0" usemap="#class_labyrinth_af5adb9213fbd258118e49c85f09c301a_icgraph" alt=""/></div>
+<map name="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_icgraph" id="class_labyrinth_af5adb9213fbd258118e49c85f09c301a_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="230,5,399,32"/><area shape="rect" id="node3" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="448,5,531,32"/><area shape="rect" id="node4" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="579,5,629,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8986a479497cd6b77deb62334b862f04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ball.html">Ball</a> Labyrinth::ball</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00071">71</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9a3c7ebdd5ee39ccf4e320c2f1acec4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_change.html">Change</a> Labyrinth::change</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00070">70</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5536b8752cb3c2ef273360e14224bc6f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +976,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00055">55</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00057">57</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +998,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00058">58</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00060">60</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +1020,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00050">50</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00052">52</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1042,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00052">52</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00054">54</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1064,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00057">57</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00059">59</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1086,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00056">56</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00058">58</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1108,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00051">51</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00053">53</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1130,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00053">53</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00055">55</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1152,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00054">54</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
+<p>Definition at line <a class="el" href="labyrinth_8h_source.html#l00056">56</a> of file <a class="el" href="labyrinth_8h_source.html">labyrinth.h</a>.</p>
 
 </div>
 </div>

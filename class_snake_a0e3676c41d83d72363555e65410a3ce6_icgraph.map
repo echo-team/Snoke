@@ -1,0 +1,5 @@
+<map id="Snake::checkIntersection" name="Snake::checkIntersection">
+<area shape="rect" id="node2" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="224,5,323,32"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="371,5,453,32"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="501,5,552,32"/>
+</map>

@@ -1,5 +1,6 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/app/Snake/snake.h" name="/home/travis/build/echo&#45;team/Snoke/app/Snake/snake.h">
-<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="367,259,519,285"/>
-<area shape="rect" id="node7" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="380,109,471,136"/>
-<area shape="rect" id="node8" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="154,184,304,211"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="169,259,321,285"/>
+<area shape="rect" id="node7" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="295,109,445,136"/>
+<area shape="rect" id="node8" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="84,184,219,211"/>
+<area shape="rect" id="node9" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="644,184,735,211"/>
 </map>

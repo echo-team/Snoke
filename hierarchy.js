@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "Ball", "class_ball.html", null ],
+    [ "Change", "class_change.html", null ],
     [ "Game", "class_game.html", null ],
     [ "Labyrinth", "class_labyrinth.html", null ],
     [ "Logo", "class_logo.html", null ],

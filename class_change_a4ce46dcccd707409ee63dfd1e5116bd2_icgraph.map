@@ -1,0 +1,9 @@
+<map id="Change::getRemChange" name="Change::getRemChange">
+<area shape="rect" id="node2" href="$class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="223,56,396,83"/>
+<area shape="rect" id="node8" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="222,107,397,133"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="445,5,608,32"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="452,56,601,83"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="657,56,826,83"/>
+<area shape="rect" id="node5" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="875,56,957,83"/>
+<area shape="rect" id="node6" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1005,56,1056,83"/>
+</map>

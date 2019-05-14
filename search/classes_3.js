@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mainmenu',['MainMenu',['../class_main_menu.html',1,'']]],
-  ['menu',['Menu',['../class_menu.html',1,'']]],
-  ['menubutton',['MenuButton',['../struct_menu_button.html',1,'']]]
+  ['labyrinth',['Labyrinth',['../class_labyrinth.html',1,'']]],
+  ['logo',['Logo',['../class_logo.html',1,'']]]
 ];

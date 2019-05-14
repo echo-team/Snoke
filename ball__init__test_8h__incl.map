@@ -1,7 +1,5 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/tests/ball_init_test.h" name="/home/travis/build/echo&#45;team/Snoke/tests/ball_init_test.h">
-<area shape="rect" id="node2" href="$shared_8h.html" title="shared functions for testing " alt="" coords="666,109,738,136"/>
-<area shape="rect" id="node7" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="473,109,551,136"/>
-<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="429,333,568,360"/>
-<area shape="rect" id="node8" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="197,184,347,211"/>
-<area shape="rect" id="node9" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="328,259,448,285"/>
+<area shape="rect" id="node2" href="$shared_8h.html" title="shared functions for testing " alt="" coords="157,109,229,136"/>
+<area shape="rect" id="node7" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="267,109,345,136"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="123,184,263,211"/>
 </map>

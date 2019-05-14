@@ -1,5 +1,0 @@
-<map id="Ball::generateBall" name="Ball::generateBall">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="179,5,298,32"/>
-<area shape="rect" id="node3" href="$common_8cpp.html#aed7e2ccc7264c951f8b3802757992941" title="Check if the Point is in the remove queue. " alt="" coords="186,56,291,83"/>
-<area shape="rect" id="node4" href="$common_8cpp.html#a8afa890f53aecd84c750b7b568629e25" title="Check if Points is in the addition queue. " alt="" coords="189,107,289,133"/>
-</map>
