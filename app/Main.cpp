@@ -15,6 +15,7 @@ int main()
     Game g;
     g.init(70, 150);
     int retVal = g.run();
+
     refresh();
     endwin();
     switch(retVal)
@@ -25,6 +26,5 @@ int main()
             return 1;
         }
     }
-
     return 0;
 }

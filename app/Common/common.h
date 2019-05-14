@@ -71,6 +71,8 @@ class Ball;
 
 std::ostream& operator<< (std::ostream &s, Point p);
 void mSleep(int time);
+void addSleep();
 Point getConsoleSize();
+void sleepHandler();
 
 #endif

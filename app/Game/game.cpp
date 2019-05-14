@@ -17,6 +17,18 @@
 Point gameFieldSize;
 
 /**
+ * Handler for SIGWINCH signal
+ * @param  sig      SIGWINCH signal code
+ */
+void resizeHandler(int sig)
+{
+    endwin();
+    sleepHandler();
+    refresh();
+    addSleep();
+}
+
+/**
  * @brief   Initializes game
  * @param   size  - size of the game field(size - 2 columns, size/2 - 2 rows)
  * @param   speed - speed of the game(1 / refresh rate) in milliseconds
@@ -55,6 +67,7 @@ int Game::run()
     #endif
     curs_set(0);
     keypad(stdscr, true);
+    signal(SIGWINCH, resizeHandler);
 
     /*
      * Initializing snake by giving it the starting position,
