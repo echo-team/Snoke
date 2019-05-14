@@ -20,6 +20,23 @@
 #include <cstdio>
 #include <list>
 
+/**
+ * @class DisplayHandler displayHandler.h
+ * @method displayFull
+ */
+class DisplayHandler
+{
+    public:
+        Labyrinth* labyrinth;
+        int prevDisplayMethod = 0;
+        void displayHandler(int displayMethod);
+        void displayFull();
+        void freeDisplay();
+        void forcedDisplay(int displayMethod);
+        void displayPartialy();
+        void displayUpdated();
+};
+
 
 /**
  * @brief    the whole labyrinth can fit and was redrawed
@@ -51,20 +68,15 @@ class Labyrinth
     private:
         char** labyrinth;
         std::string reserved = "!";
-        int prevDisplayMethod = 0;
         Snake* snake = NULL;
         Point start;
         Point end;
         Point prevStart;
         Point prevEnd;
         Point gameFieldSize;
-
-        void displayPartialy();
-        void displayUpdated();
+        friend class DisplayHandler;
+        DisplayHandler dispHandler;
         void updateLabyrinth();
-        void displayFull();
-        void freeDisplay();
-        void forcedDisplay(int displayMethod);
         void sizeHandler();
     public:
         Change change;

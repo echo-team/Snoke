@@ -54,7 +54,8 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
         this->end = rightBot;
         this->prevStart = leftTop;
         this->prevEnd = rightBot;
-        this->prevDisplayMethod = DISPPART;
+        this->dispHandler.labyrinth = this;
+        this->dispHandler.prevDisplayMethod = DISPPART;
         this->snake = NULL;
 
         change.initChange();
@@ -134,19 +135,7 @@ void Labyrinth::displayHandler(int displayMethod)
      */
     this->sizeHandler();
 
-    /*
-     * checking if we are beeing asked to use a certain method
-     */
-    if(displayMethod >= 0)
-    {
-        forcedDisplay(displayMethod);
-    }
-    else
-    {
-        freeDisplay();
-    }
-    refresh();
-    flushinp();
+    this->dispHandler.displayHandler(displayMethod);
 }
 
 /**
@@ -209,159 +198,6 @@ void Labyrinth::sizeHandler()
         start.x = 0;
         end.x = gameFieldSize.x;
     }
-}
-
-/**
- * @brief   got an extra stimulus for displaying in a certain method
- * @param   displayMethod   - a method that is beeing force-called
- */
-void Labyrinth::forcedDisplay(int displayMethod)
-{
-    /*
-     * Deciding what disply method to use
-     */
-    switch (displayMethod)
-    {
-        case DISPFULL:
-        {
-            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
-            {
-                this->displayFull();
-            }
-            else
-            {
-                this->displayPartialy();
-            }
-            break;
-        }
-        case DISPUPD:
-        {
-            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
-            {
-                this->displayUpdated();
-            }
-            else
-            {
-                this->displayPartialy();
-            }
-            break;
-        }
-        case DISPPART:
-        {
-            this->displayPartialy();
-            break;
-        }
-        default:
-        {
-            this->displayPartialy();
-        }
-    }
-}
-
-/**
- * @brief   No extra stimulus, displaying the default way
- */
-void Labyrinth::freeDisplay()
-{
-    /*
-     * Deciding what disply method to use
-     */
-    switch (this->prevDisplayMethod)
-    {
-        case DISPFULL:
-        {
-            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
-            {
-                this->displayUpdated();
-            }
-            else
-            {
-                this->displayPartialy();
-            }
-            break;
-        }
-        case DISPUPD:
-        {
-            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
-            {
-                this->displayUpdated();
-            }
-            else
-            {
-                this->displayPartialy();
-            }
-            break;
-        }
-        case DISPPART:
-        {
-            if(start.x == 0 && end.x == gameFieldSize.x && start.y == 0 && end.y == gameFieldSize.y)
-            {
-                this->displayFull();
-            }
-            else
-            {
-                this->displayPartialy();
-            }
-            break;
-        }
-        default:
-        {
-            this->displayPartialy();
-        }
-    }
-}
-
-/**
- * @brief   redraw every Point of the labyrinth
- */
-void Labyrinth::displayFull()
-{
-    for(int j = 0; j < gameFieldSize.y; j++)
-    {
-        mvaddstr(j, 0, labyrinth[j]);
-    }
-    this->prevDisplayMethod = DISPFULL;
-}
-
-/**
- * @brief   display labyrinth partialy, using the start and end Points
- */
-void Labyrinth::displayPartialy()
-{
-    clear();
-    for(int j = start.y; j < end.y; j++)
-    {
-        move(j - start.y, 0);
-        for(int i = start.x; i < end.x; i++)
-        {
-            addch(labyrinth[j][i]);
-        }
-    }
-    this->prevDisplayMethod = DISPPART;
-}
-
-/**
- * @brief   draw only the changed Points when the labyrinth is being fully displayed
- */
-void Labyrinth::displayUpdated()
-{
-    std::deque<Point> cpChange;
-
-    Point tmp;
-    change.getRemChange(&cpChange);
-    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
-    {
-        tmp = *it;
-        mvaddch(tmp.y, tmp.x, ' ');
-    }
-    change.getAddChange(&cpChange);
-    for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
-    {
-        tmp = *it;
-        mvaddch(tmp.y, tmp.x, tmp.style.letter);
-    }
-
-    this->prevDisplayMethod = DISPUPD;
 }
 
 /**
