@@ -369,6 +369,131 @@ TEST(snake_move_test, testIntersection2)
     ASSERT_EQ(bCoords.y, expBCoords.y);
 }
 
+/**
+ * @brief snake goes through the wall and collides with itself
+ */
+TEST(snake_move_test, testIntersection3)
+{
+    gameFieldSize.x = 40;
+    gameFieldSize.y = 5;
+    Labyrinth labyrinth;
+
+    bool retVal = labyrinth.setLabyrinth(gameFieldSize);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    Snake snake;
+    Point begin;
+    begin.x = 1;
+    begin.y = 1;
+    short direction = MVRIGHT;
+    int length = 10;
+
+    retVal = snake.init(begin, direction, length);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    retVal = labyrinth.addSnake(&snake);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    snake.setDirection(MVDOWN);
+    retVal = snake.move(&labyrinth);
+    if(retVal)
+    {
+        FAIL();
+    }
+
+    retVal = snake.move(&labyrinth);
+    if(retVal)
+    {
+        FAIL();
+    }
+
+    retVal = snake.move(&labyrinth);
+    if(retVal)
+    {
+        SUCCEED();
+    }
+    else
+    {
+        FAIL();
+    }
+}
+
+/**
+ * @brief snake goes through the wall and collides with Ball
+ */
+TEST(snake_move_test, testIntersection4)
+{
+    gameFieldSize.x = 40;
+    gameFieldSize.y = 5;
+    Labyrinth labyrinth;
+
+    bool retVal = labyrinth.setLabyrinth(gameFieldSize);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    Snake snake;
+    Point begin;
+    begin.x = 1;
+    begin.y = 3;
+    short direction = MVRIGHT;
+    int length = 10;
+
+    retVal = snake.init(begin, direction, length);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    retVal = labyrinth.addSnake(&snake);
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    labyrinth.initBall();
+    labyrinth.remPoint(labyrinth.ball.getCoords());
+    Point ballCoords;
+    ballCoords.x = 10;
+    ballCoords.y = 1;
+    labyrinth.ball.setCoords(ballCoords);
+    labyrinth.addPoint(labyrinth.ball.getCoords());
+
+    snake.setDirection(MVDOWN);
+    retVal = snake.move(&labyrinth);
+    if(retVal)
+    {
+        FAIL();
+    }
+
+    Point hCoords = snake.getHeadCoords();
+    Point expHCoords;
+    expHCoords.x = 10;
+    expHCoords.y = 1;
+    ASSERT_EQ(hCoords.x, expHCoords.x);
+    ASSERT_EQ(hCoords.y, expHCoords.y);
+
+    std::list<Point> cpBody;
+    snake.getCoords(&cpBody);
+    Point bCoords = cpBody.back();
+    Point expBCoords;
+    expBCoords.x = 1;
+    expBCoords.y = 3;
+    ASSERT_EQ(bCoords.x, expBCoords.x);
+    ASSERT_EQ(bCoords.y, expBCoords.y);
+
+}
+
 
 
 #endif // SNAKE_MOVE_TEST_H
