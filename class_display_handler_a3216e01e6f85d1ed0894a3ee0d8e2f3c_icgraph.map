@@ -1,6 +1,7 @@
 <map id="DisplayHandler::freeDisplay" name="DisplayHandler::freeDisplay">
-<area shape="rect" id="node2" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="240,5,445,32"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="494,5,663,32"/>
+<area shape="rect" id="node2" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="240,31,445,57"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="494,31,663,57"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="712,5,795,32"/>
+<area shape="rect" id="node6" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="725,56,781,83"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="843,5,893,32"/>
 </map>

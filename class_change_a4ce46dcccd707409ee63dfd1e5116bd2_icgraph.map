@@ -1,10 +1,11 @@
 <map id="Change::getRemChange" name="Change::getRemChange">
 <area shape="rect" id="node2" href="$class_display_handler.html#a09f608b0e9924a41a75595b44f17cdc4" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="222,56,431,83"/>
-<area shape="rect" id="node9" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="743,107,918,133"/>
+<area shape="rect" id="node10" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="743,107,918,133"/>
 <area shape="rect" id="node3" href="$class_display_handler.html#a6ee373ad3e3318633461be0851768248" title="got an extra stimulus for displaying in a certain method " alt="" coords="481,5,679,32"/>
-<area shape="rect" id="node8" href="$class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c" title="No extra stimulus, displaying the default way. " alt="" coords="487,56,673,83"/>
+<area shape="rect" id="node9" href="$class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c" title="No extra stimulus, displaying the default way. " alt="" coords="487,56,673,83"/>
 <area shape="rect" id="node4" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="728,56,933,83"/>
 <area shape="rect" id="node5" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="982,81,1151,108"/>
-<area shape="rect" id="node6" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="1200,81,1283,108"/>
-<area shape="rect" id="node7" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1331,81,1381,108"/>
+<area shape="rect" id="node6" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="1200,56,1283,83"/>
+<area shape="rect" id="node8" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="1213,107,1269,133"/>
+<area shape="rect" id="node7" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1331,56,1381,83"/>
 </map>

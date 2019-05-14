@@ -4,6 +4,7 @@ var dir_59425e443f801f1f2fd8bbe4959a3ccf =
     [ "common_test.h", "common__test_8h.html", "common__test_8h" ],
     [ "game_init_test.h", "game__init__test_8h.html", "game__init__test_8h" ],
     [ "labyrinth_addsnake_test.h", "labyrinth__addsnake__test_8h.html", "labyrinth__addsnake__test_8h" ],
+    [ "labyrinth_displayhandler_test.h", "labyrinth__displayhandler__test_8h.html", "labyrinth__displayhandler__test_8h" ],
     [ "labyrinth_generateball_test.h", "labyrinth__generateball__test_8h.html", "labyrinth__generateball__test_8h" ],
     [ "labyrinth_setlabyrinth_test.h", "labyrinth__setlabyrinth__test_8h.html", "labyrinth__setlabyrinth__test_8h" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],

@@ -1,7 +1,8 @@
 <map id="Snake::getHeadCoords" name="Snake::getHeadCoords">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="213,5,365,32"/>
-<area shape="rect" id="node6" href="$snake__move__test_8h.html#a304850a94842ed4f97cd7162eb5d27c6" title="snake moves through the upper wall " alt="" coords="261,56,317,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,5,583,32"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="213,31,365,57"/>
+<area shape="rect" id="node7" href="$snake__move__test_8h.html#a304850a94842ed4f97cd7162eb5d27c6" title="snake moves through the upper wall " alt="" coords="261,81,317,108"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="414,31,583,57"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="632,5,715,32"/>
+<area shape="rect" id="node6" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="645,56,701,83"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="763,5,813,32"/>
 </map>

@@ -1,17 +1,18 @@
 <map id="Labyrinth::isFree" name="Labyrinth::isFree">
-<area shape="rect" id="node2" href="$class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="409,56,551,83"/>
-<area shape="rect" id="node7" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="191,157,326,184"/>
-<area shape="rect" id="node13" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="181,208,336,235"/>
-<area shape="rect" id="node16" href="$class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="173,259,344,285"/>
-<area shape="rect" id="node3" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="642,56,761,83"/>
-<area shape="rect" id="node6" href="$labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="673,5,729,32"/>
-<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="835,132,917,159"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="965,132,1016,159"/>
-<area shape="rect" id="node8" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="419,208,541,235"/>
-<area shape="rect" id="node10" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="393,157,567,184"/>
-<area shape="rect" id="node12" href="$snake__move__test_8h.html#a27e7cf60e2571d8d945d500feb704644" title="snake eats the ball " alt="" coords="452,107,508,133"/>
-<area shape="rect" id="node9" href="$labyrinth__generateball__test_8h.html#aff913e7a2aa1448b141530530d9aa7a4" title="method runs with normal parameters " alt="" coords="673,208,729,235"/>
-<area shape="rect" id="node11" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="617,107,786,133"/>
-<area shape="rect" id="node14" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="431,259,529,285"/>
-<area shape="rect" id="node15" href="$snake__move__test_8h.html#a537ec304fc709746617993eb9750045e" title="method runs with normal parameters and no collisions " alt="" coords="673,259,729,285"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737" title="Adding snake to the laburinth and getting the host snake(firest added snake) " alt="" coords="409,107,551,133"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="191,71,326,97"/>
+<area shape="rect" id="node14" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="181,172,336,199"/>
+<area shape="rect" id="node17" href="$class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="173,248,344,275"/>
+<area shape="rect" id="node3" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="642,107,761,133"/>
+<area shape="rect" id="node6" href="$labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="673,56,729,83"/>
+<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="835,157,917,184"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="965,157,1016,184"/>
+<area shape="rect" id="node8" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="419,160,541,187"/>
+<area shape="rect" id="node10" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="393,5,567,32"/>
+<area shape="rect" id="node13" href="$snake__move__test_8h.html#a27e7cf60e2571d8d945d500feb704644" title="snake eats the ball " alt="" coords="452,56,508,83"/>
+<area shape="rect" id="node9" href="$labyrinth__generateball__test_8h.html#aff913e7a2aa1448b141530530d9aa7a4" title="method runs with normal parameters " alt="" coords="673,157,729,184"/>
+<area shape="rect" id="node11" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="617,5,786,32"/>
+<area shape="rect" id="node12" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="848,5,904,32"/>
+<area shape="rect" id="node15" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="431,252,529,279"/>
+<area shape="rect" id="node16" href="$snake__move__test_8h.html#a537ec304fc709746617993eb9750045e" title="method runs with normal parameters and no collisions " alt="" coords="673,309,729,336"/>
 </map>

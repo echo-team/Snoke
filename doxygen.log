@@ -106,6 +106,8 @@ Preprocessing /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/labyrinth_addsnake_test.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/labyrinth_addsnake_test.h...
+Preprocessing /home/travis/build/echo-team/Snoke/tests/labyrinth_displayhandler_test.h...
+Parsing file /home/travis/build/echo-team/Snoke/tests/labyrinth_displayhandler_test.h...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/labyrinth_generateball_test.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/labyrinth_generateball_test.h...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/labyrinth_setlabyrinth_test.h...
@@ -203,6 +205,7 @@ Generating code for file /home/travis/build/echo-team/Snoke/tests/ball_init_test
 Generating code for file /home/travis/build/echo-team/Snoke/tests/common_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_addsnake_test.h...
+Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_displayhandler_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_generateball_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_setlabyrinth_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/main.cpp...
@@ -262,9 +265,17 @@ Generating docs for file /home/travis/build/echo-team/Snoke/tests/labyrinth_adds
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
+Generating docs for file /home/travis/build/echo-team/Snoke/tests/labyrinth_displayhandler_test.h...
+Generating call graph for function TEST
+Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/labyrinth_generateball_test.h...
 Generating call graph for function TEST
-Generating docs for file /home/travis/build/echo-team/Snoke/tests/labyrinth_setlabyrinth_test.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/tests/lab/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
+  parameter 'fieldSize'
+yrinth_setlabyrinth_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/main.cpp...
@@ -272,39 +283,7 @@ Generating docs for file /home/travis/build/echo-team/Snoke/tests/shared.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/snake_init_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
-Generating call graph for fu/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
-  parameter 'fieldSize'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
-  parameter 'x'
-  parameter 'y'
-  parameter 'style'
-  parameter 'shadowStyle'
-  parameter 'language'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: The following parameters of Logo::setPosition(int left, int top) are not documented:
-  parameter 'left'
-  parameter 'top'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: Found unknown command `\constructor'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: The following parameters of Menu::Menu(int x, int y, int width, int height) are not documented:
-  parameter 'x'
-  parameter 'y'
-  parameter 'width'
-  parameter 'height'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: argument 'const' of command @param is not found in the argument list of Menu::addButton(const char *name)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: The following parameters of Menu::addButton(const char *name) are not documented:
-  parameter 'name'
-nction TEST
+Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
@@ -373,16 +352,34 @@ Generating caller graph for function Labyrinth::remPoint
 Generating caller graph for function Labyrinth::save
 Generating call graph for function Labyrinth::setLabyrinth
 Generating caller graph for function Labyrinth::setLabyrinth
-Generating call graph for function Labyrinth::sizeHandler
-Generating caller graph for function Labyrinth::sizeHandler
-Generating call graph for function Labyrinth::updateLabyrinth
-Generating caller graph for function Labyrinth::updateLabyrinth
-Generating docs for compound Logo...
-Generating docs for compound MainMenu...
-Generating call graph for function MainMenu::draw
-Generating docs for compound Menu...
-Generating caller graph for function Menu::addButton
-Generating caller graph for function /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:14: warning: Found unknown command `\override'
+Generating call graph for function Lab/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
+  parameter 'x'
+  parameter 'y'
+  parameter 'style'
+  parameter 'shadowStyle'
+  parameter 'language'
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
+/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: The following parameters of Logo::setPosition(int left, int top) are not documented:
+  parameter 'left'
+  parameter 'top'
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: The following parameters of Menu::Menu(int x, int y, int width, int height) are not documented:
+  parameter 'x'
+  parameter 'y'
+  parameter 'width'
+  parameter 'height'
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: argument 'const' of command @param is not found in the argument list of Menu::addButton(const char *name)
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: The following parameters of Menu::addButton(const char *name) are not documented:
+  parameter 'name'
+/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:14: warning: Found unknown command `\override'
 /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:15: warning: Found unknown command `\callback'
 /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Menu::focus(int index)
 /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:13: warning: The following parameters of Menu::focus(int index) are not documented:
@@ -412,7 +409,16 @@ Generating caller graph for function /home/travis/build/echo-team/Snoke/app/Inte
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-Menu::draw
+yrinth::sizeHandler
+Generating caller graph for function Labyrinth::sizeHandler
+Generating call graph for function Labyrinth::updateLabyrinth
+Generating caller graph for function Labyrinth::updateLabyrinth
+Generating docs for compound Logo...
+Generating docs for compound MainMenu...
+Generating call graph for function MainMenu::draw
+Generating docs for compound Menu...
+Generating caller graph for function Menu::addButton
+Generating caller graph for function Menu::draw
 Generating docs for compound MenuButton...
 Generating docs for compound NavigateUnit...
 Generating docs for compound Navigator...
@@ -467,277 +473,282 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/207
-Running dot for graph 2/207
-Running dot for graph 3/207
-Running dot for graph 4/207
-Running dot for graph 5/207
-Running dot for graph 6/207
-Running dot for graph 7/207
-Running dot for graph 8/207
-Running dot for graph 9/207
-Running dot for graph 10/207
-Running dot for graph 11/207
-Running dot for graph 12/207
-Running dot for graph 13/207
-Running dot for graph 14/207
-Running dot for graph 15/207
-Running dot for graph 16/207
-Running dot for graph 17/207
-Running dot for graph 18/207
-Running dot for graph 19/207
-Running dot for graph 20/207
-Running dot for graph 21/207
-Running dot for graph 22/207
-Running dot for graph 23/207
-Running dot for graph 24/207
-Running dot for graph 25/207
-Running dot for graph 26/207
-Running dot for graph 27/207
-Running dot for graph 28/207
-Running dot for graph 29/207
-Running dot for graph 30/207
-Running dot for graph 31/207
-Running dot for graph 32/207
-Running dot for graph 33/207
-Running dot for graph 34/207
-Running dot for graph 35/207
-Running dot for graph 36/207
-Running dot for graph 37/207
-Running dot for graph 38/207
-Running dot for graph 39/207
-Running dot for graph 40/207
-Running dot for graph 41/207
-Running dot for graph 42/207
-Running dot for graph 43/207
-Running dot for graph 44/207
-Running dot for graph 45/207
-Running dot for graph 46/207
-Running dot for graph 47/207
-Running dot for graph 48/207
-Running dot for graph 49/207
-Running dot for graph 50/207
-Running dot for graph 51/207
-Running dot for graph 52/207
-Running dot for graph 53/207
-Running dot for graph 54/207
-Running dot for graph 55/207
-Running dot for graph 56/207
-Running dot for graph 57/207
-Running dot for graph 58/207
-Running dot for graph 59/207
-Running dot for graph 60/207
-Running dot for graph 61/207
-Running dot for graph 62/207
-Running dot for graph 63/207
-Running dot for graph 64/207
-Running dot for graph 65/207
-Running dot for graph 66/207
-Running dot for graph 67/207
-Running dot for graph 68/207
-Running dot for graph 69/207
-Running dot for graph 70/207
-Running dot for graph 71/207
-Running dot for graph 72/207
-Running dot for graph 73/207
-Running dot for graph 74/207
-Running dot for graph 75/207
-Running dot for graph 76/207
-Running dot for graph 77/207
-Running dot for graph 78/207
-Running dot for graph 79/207
-Running dot for graph 80/207
-Running dot for graph 81/207
-Running dot for graph 82/207
-Running dot for graph 83/207
-Running dot for graph 84/207
-Running dot for graph 85/207
-Running dot for graph 86/207
-Running dot for graph 87/207
-Running dot for graph 88/207
-Running dot for graph 89/207
-Running dot for graph 90/207
-Running dot for graph 91/207
-Running dot for graph 92/207
-Running dot for graph 93/207
-Running dot for graph 94/207
-Running dot for graph 95/207
-Running dot for graph 96/207
-Running dot for graph 97/207
-Running dot for graph 98/207
-Running dot for graph 99/207
-Running dot for graph 100/207
-Running dot for graph 101/207
-Running dot for graph 102/207
-Running dot for graph 103/207
-Running dot for graph 104/207
-Running dot for graph 105/207
-Running dot for graph 106/207
-Running dot for graph 107/207
-Running dot for graph 108/207
-Running dot for graph 109/207
-Running dot for graph 110/207
-Running dot for graph 111/207
-Running dot for graph 112/207
-Running dot for graph 113/207
-Running dot for graph 114/207
-Running dot for graph 115/207
-Running dot for graph 116/207
-Running dot for graph 117/207
-Running dot for graph 118/207
-Running dot for graph 119/207
-Running dot for graph 120/207
-Running dot for graph 121/207
-Running dot for graph 122/207
-Running dot for graph 123/207
-Running dot for graph 124/207
-Running dot for graph 125/207
-Running dot for graph 126/207
-Running dot for graph 127/207
-Running dot for graph 128/207
-Running dot for graph 129/207
-Running dot for graph 130/207
-Running dot for graph 131/207
-Running dot for graph 132/207
-Running dot for graph 133/207
-Running dot for graph 134/207
-Running dot for graph 135/207
-Running dot for graph 136/207
-Running dot for graph 137/207
-Running dot for graph 138/207
-Running dot for graph 139/207
-Running dot for graph 140/207
-Running dot for graph 141/207
-Running dot for graph 142/207
-Running dot for graph 143/207
-Running dot for graph 144/207
-Running dot for graph 145/207
-Running dot for graph 146/207
-Running dot for graph 147/207
-Running dot for graph 148/207
-Running dot for graph 149/207
-Running dot for graph 150/207
-Running dot for graph 151/207
-Running dot for graph 152/207
-Running dot for graph 153/207
-Running dot for graph 154/207
-Running dot for graph 155/207
-Running dot for graph 156/207
-Running dot for graph 157/207
-Running dot for graph 158/207
-Running dot for graph 159/207
-Running dot for graph 160/207
-Running dot for graph 161/207
-Running dot for graph 162/207
-Running dot for graph 163/207
-Running dot for graph 164/207
-Running dot for graph 165/207
-Running dot for graph 166/207
-Running dot for graph 167/207
-Running dot for graph 168/207
-Running dot for graph 169/207
-Running dot for graph 170/207
-Running dot for graph 171/207
-Running dot for graph 172/207
-Running dot for graph 173/207
-Running dot for graph 174/207
-Running dot for graph 175/207
-Running dot for graph 176/207
-Running dot for graph 177/207
-Running dot for graph 178/207
-Running dot for graph 179/207
-Running dot for graph 180/207
-Running dot for graph 181/207
-Running dot for graph 182/207
-Running dot for graph 183/207
-Running dot for graph 184/207
-Running dot for graph 185/207
-Running dot for graph 186/207
-Running dot for graph 187/207
-Running dot for graph 188/207
-Running dot for graph 189/207
-Running dot for graph 190/207
-Running dot for graph 191/207
-Running dot for graph 192/207
-Running dot for graph 193/207
-Running dot for graph 194/207
-Running dot for graph 195/207
-Running dot for graph 196/207
-Running dot for graph 197/207
-Running dot for graph 198/207
-Running dot for graph 199/207
-Running dot for graph 200/207
-Running dot for graph 201/207
-Running dot for graph 202/207
-Running dot for graph 203/207
-Running dot for graph 204/207
-Running dot for graph 205/207
-Running dot for graph 206/207
-Running dot for graph 207/207
-Patching output file 1/65
-Patching output file 2/65
-Patching output file 3/65
-Patching output file 4/65
-Patching output file 5/65
-Patching output file 6/65
-Patching output file 7/65
-Patching output file 8/65
-Patching output file 9/65
-Patching output file 10/65
-Patching output file 11/65
-Patching output file 12/65
-Patching output file 13/65
-Patching output file 14/65
-Patching output file 15/65
-Patching output file 16/65
-Patching output file 17/65
-Patching output file 18/65
-Patching output file 19/65
-Patching output file 20/65
-Patching output file 21/65
-Patching output file 22/65
-Patching output file 23/65
-Patching output file 24/65
-Patching output file 25/65
-Patching output file 26/65
-Patching output file 27/65
-Patching output file 28/65
-Patching output file 29/65
-Patching output file 30/65
-Patching output file 31/65
-Patching output file 32/65
-Patching output file 33/65
-Patching output file 34/65
-Patching output file 35/65
-Patching output file 36/65
-Patching output file 37/65
-Patching output file 38/65
-Patching output file 39/65
-Patching output file 40/65
-Patching output file 41/65
-Patching output file 42/65
-Patching output file 43/65
-Patching output file 44/65
-Patching output file 45/65
-Patching output file 46/65
-Patching output file 47/65
-Patching output file 48/65
-Patching output file 49/65
-Patching output file 50/65
-Patching output file 51/65
-Patching output file 52/65
-Patching output file 53/65
-Patching output file 54/65
-Patching output file 55/65
-Patching output file 56/65
-Patching output file 57/65
-Patching output file 58/65
-Patching output file 59/65
-Patching output file 60/65
-Patching output file 61/65
-Patching output file 62/65
-Patching output file 63/65
-Patching output file 64/65
-Patching output file 65/65
-lookup cache used 542/65536 hits=4956 misses=649
+Running dot for graph 1/211
+Running dot for graph 2/211
+Running dot for graph 3/211
+Running dot for graph 4/211
+Running dot for graph 5/211
+Running dot for graph 6/211
+Running dot for graph 7/211
+Running dot for graph 8/211
+Running dot for graph 9/211
+Running dot for graph 10/211
+Running dot for graph 11/211
+Running dot for graph 12/211
+Running dot for graph 13/211
+Running dot for graph 14/211
+Running dot for graph 15/211
+Running dot for graph 16/211
+Running dot for graph 17/211
+Running dot for graph 18/211
+Running dot for graph 19/211
+Running dot for graph 20/211
+Running dot for graph 21/211
+Running dot for graph 22/211
+Running dot for graph 23/211
+Running dot for graph 24/211
+Running dot for graph 25/211
+Running dot for graph 26/211
+Running dot for graph 27/211
+Running dot for graph 28/211
+Running dot for graph 29/211
+Running dot for graph 30/211
+Running dot for graph 31/211
+Running dot for graph 32/211
+Running dot for graph 33/211
+Running dot for graph 34/211
+Running dot for graph 35/211
+Running dot for graph 36/211
+Running dot for graph 37/211
+Running dot for graph 38/211
+Running dot for graph 39/211
+Running dot for graph 40/211
+Running dot for graph 41/211
+Running dot for graph 42/211
+Running dot for graph 43/211
+Running dot for graph 44/211
+Running dot for graph 45/211
+Running dot for graph 46/211
+Running dot for graph 47/211
+Running dot for graph 48/211
+Running dot for graph 49/211
+Running dot for graph 50/211
+Running dot for graph 51/211
+Running dot for graph 52/211
+Running dot for graph 53/211
+Running dot for graph 54/211
+Running dot for graph 55/211
+Running dot for graph 56/211
+Running dot for graph 57/211
+Running dot for graph 58/211
+Running dot for graph 59/211
+Running dot for graph 60/211
+Running dot for graph 61/211
+Running dot for graph 62/211
+Running dot for graph 63/211
+Running dot for graph 64/211
+Running dot for graph 65/211
+Running dot for graph 66/211
+Running dot for graph 67/211
+Running dot for graph 68/211
+Running dot for graph 69/211
+Running dot for graph 70/211
+Running dot for graph 71/211
+Running dot for graph 72/211
+Running dot for graph 73/211
+Running dot for graph 74/211
+Running dot for graph 75/211
+Running dot for graph 76/211
+Running dot for graph 77/211
+Running dot for graph 78/211
+Running dot for graph 79/211
+Running dot for graph 80/211
+Running dot for graph 81/211
+Running dot for graph 82/211
+Running dot for graph 83/211
+Running dot for graph 84/211
+Running dot for graph 85/211
+Running dot for graph 86/211
+Running dot for graph 87/211
+Running dot for graph 88/211
+Running dot for graph 89/211
+Running dot for graph 90/211
+Running dot for graph 91/211
+Running dot for graph 92/211
+Running dot for graph 93/211
+Running dot for graph 94/211
+Running dot for graph 95/211
+Running dot for graph 96/211
+Running dot for graph 97/211
+Running dot for graph 98/211
+Running dot for graph 99/211
+Running dot for graph 100/211
+Running dot for graph 101/211
+Running dot for graph 102/211
+Running dot for graph 103/211
+Running dot for graph 104/211
+Running dot for graph 105/211
+Running dot for graph 106/211
+Running dot for graph 107/211
+Running dot for graph 108/211
+Running dot for graph 109/211
+Running dot for graph 110/211
+Running dot for graph 111/211
+Running dot for graph 112/211
+Running dot for graph 113/211
+Running dot for graph 114/211
+Running dot for graph 115/211
+Running dot for graph 116/211
+Running dot for graph 117/211
+Running dot for graph 118/211
+Running dot for graph 119/211
+Running dot for graph 120/211
+Running dot for graph 121/211
+Running dot for graph 122/211
+Running dot for graph 123/211
+Running dot for graph 124/211
+Running dot for graph 125/211
+Running dot for graph 126/211
+Running dot for graph 127/211
+Running dot for graph 128/211
+Running dot for graph 129/211
+Running dot for graph 130/211
+Running dot for graph 131/211
+Running dot for graph 132/211
+Running dot for graph 133/211
+Running dot for graph 134/211
+Running dot for graph 135/211
+Running dot for graph 136/211
+Running dot for graph 137/211
+Running dot for graph 138/211
+Running dot for graph 139/211
+Running dot for graph 140/211
+Running dot for graph 141/211
+Running dot for graph 142/211
+Running dot for graph 143/211
+Running dot for graph 144/211
+Running dot for graph 145/211
+Running dot for graph 146/211
+Running dot for graph 147/211
+Running dot for graph 148/211
+Running dot for graph 149/211
+Running dot for graph 150/211
+Running dot for graph 151/211
+Running dot for graph 152/211
+Running dot for graph 153/211
+Running dot for graph 154/211
+Running dot for graph 155/211
+Running dot for graph 156/211
+Running dot for graph 157/211
+Running dot for graph 158/211
+Running dot for graph 159/211
+Running dot for graph 160/211
+Running dot for graph 161/211
+Running dot for graph 162/211
+Running dot for graph 163/211
+Running dot for graph 164/211
+Running dot for graph 165/211
+Running dot for graph 166/211
+Running dot for graph 167/211
+Running dot for graph 168/211
+Running dot for graph 169/211
+Running dot for graph 170/211
+Running dot for graph 171/211
+Running dot for graph 172/211
+Running dot for graph 173/211
+Running dot for graph 174/211
+Running dot for graph 175/211
+Running dot for graph 176/211
+Running dot for graph 177/211
+Running dot for graph 178/211
+Running dot for graph 179/211
+Running dot for graph 180/211
+Running dot for graph 181/211
+Running dot for graph 182/211
+Running dot for graph 183/211
+Running dot for graph 184/211
+Running dot for graph 185/211
+Running dot for graph 186/211
+Running dot for graph 187/211
+Running dot for graph 188/211
+Running dot for graph 189/211
+Running dot for graph 190/211
+Running dot for graph 191/211
+Running dot for graph 192/211
+Running dot for graph 193/211
+Running dot for graph 194/211
+Running dot for graph 195/211
+Running dot for graph 196/211
+Running dot for graph 197/211
+Running dot for graph 198/211
+Running dot for graph 199/211
+Running dot for graph 200/211
+Running dot for graph 201/211
+Running dot for graph 202/211
+Running dot for graph 203/211
+Running dot for graph 204/211
+Running dot for graph 205/211
+Running dot for graph 206/211
+Running dot for graph 207/211
+Running dot for graph 208/211
+Running dot for graph 209/211
+Running dot for graph 210/211
+Running dot for graph 211/211
+Patching output file 1/66
+Patching output file 2/66
+Patching output file 3/66
+Patching output file 4/66
+Patching output file 5/66
+Patching output file 6/66
+Patching output file 7/66
+Patching output file 8/66
+Patching output file 9/66
+Patching output file 10/66
+Patching output file 11/66
+Patching output file 12/66
+Patching output file 13/66
+Patching output file 14/66
+Patching output file 15/66
+Patching output file 16/66
+Patching output file 17/66
+Patching output file 18/66
+Patching output file 19/66
+Patching output file 20/66
+Patching output file 21/66
+Patching output file 22/66
+Patching output file 23/66
+Patching output file 24/66
+Patching output file 25/66
+Patching output file 26/66
+Patching output file 27/66
+Patching output file 28/66
+Patching output file 29/66
+Patching output file 30/66
+Patching output file 31/66
+Patching output file 32/66
+Patching output file 33/66
+Patching output file 34/66
+Patching output file 35/66
+Patching output file 36/66
+Patching output file 37/66
+Patching output file 38/66
+Patching output file 39/66
+Patching output file 40/66
+Patching output file 41/66
+Patching output file 42/66
+Patching output file 43/66
+Patching output file 44/66
+Patching output file 45/66
+Patching output file 46/66
+Patching output file 47/66
+Patching output file 48/66
+Patching output file 49/66
+Patching output file 50/66
+Patching output file 51/66
+Patching output file 52/66
+Patching output file 53/66
+Patching output file 54/66
+Patching output file 55/66
+Patching output file 56/66
+Patching output file 57/66
+Patching output file 58/66
+Patching output file 59/66
+Patching output file 60/66
+Patching output file 61/66
+Patching output file 62/66
+Patching output file 63/66
+Patching output file 64/66
+Patching output file 65/66
+Patching output file 66/66
+lookup cache used 542/65536 hits=5004 misses=649
 finished...
