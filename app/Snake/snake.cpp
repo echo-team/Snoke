@@ -53,7 +53,7 @@ bool Snake::init(Point begin, short dir, int length)
         /*
          * Snake can not exist in non-positive coords
          */
-        if (*changable + value * length < 1 || begin.x < 1 || begin.y < 1)
+        if (*changable + value * length + 1 < 1 || begin.x < 1 || begin.y < 1)
         {
             return false;
         }

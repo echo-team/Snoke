@@ -31,6 +31,7 @@ HEADERS += snake_init_test.h \
     ../app/Game/game.h \
     ../app/Labyrinth/labyrinth.h \
     ../app/Snake/snake.h \
+    snake_move_test.h \
     snake_setdirection_test.h
 
 SOURCES += main.cpp \

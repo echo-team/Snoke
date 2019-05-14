@@ -11,6 +11,7 @@ TEST(snake_init_test, test0){
     Snake snake;
     SUCCEED();
 }
+
 /**
  * @brief method runs with normal parameters
  */
