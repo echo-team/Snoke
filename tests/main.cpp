@@ -10,6 +10,7 @@
 #include "labyrinth_generateball_test.h"
 #include "snake_move_test.h"
 #include "game_init_test.h"
+#include "labyrinth_displayhandler_test.h"
 
 #include <gtest/gtest.h>
 

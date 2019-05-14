@@ -24,6 +24,7 @@ HEADERS += snake_init_test.h \
     common_test.h \
     game_init_test.h \
     labyrinth_addsnake_test.h \
+    labyrinth_displayhandler_test.h \
     labyrinth_generateball_test.h \
     labyrinth_setlabyrinth_test.h \
     shared.h \
