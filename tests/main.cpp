@@ -11,6 +11,8 @@
 #include "snake_move_test.h"
 #include "game_init_test.h"
 #include "labyrinth_displayhandler_test.h"
+#include "labyrinth_save_test.h"
+#include "labyrinth_load_test.h"
 
 #include <gtest/gtest.h>
 
