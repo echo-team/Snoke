@@ -1,6 +1,7 @@
 <map id="Snake::init" name="Snake::init">
-<area shape="rect" id="node2" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="139,5,258,32"/>
-<area shape="rect" id="node5" href="$labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="171,56,227,83"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="307,5,389,32"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="437,5,488,32"/>
+<area shape="rect" id="node2" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="139,31,258,57"/>
+<area shape="rect" id="node6" href="$labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="171,81,227,108"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="307,31,389,57"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="440,5,491,32"/>
+<area shape="rect" id="node5" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="437,56,493,83"/>
 </map>

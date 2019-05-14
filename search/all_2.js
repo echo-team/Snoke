@@ -11,5 +11,6 @@ var searchData=
   ['common_2eh',['common.h',['../common_8h.html',1,'']]],
   ['common_5ftest_2eh',['common_test.h',['../common__test_8h.html',1,'']]],
   ['currentsubunit',['currentSubunit',['../class_navigator.html#a616e5c7457f641e3027f68103e0da245',1,'Navigator']]],
-  ['currentunit',['currentUnit',['../class_navigator.html#a64d901b59121319cb87ca450dcc25912',1,'Navigator']]]
+  ['currentunit',['currentUnit',['../class_navigator.html#a64d901b59121319cb87ca450dcc25912',1,'Navigator']]],
+  ['cycles',['cycles',['../class_game.html#a9472eac1a455d336c2cd3b2751374542',1,'Game']]]
 ];

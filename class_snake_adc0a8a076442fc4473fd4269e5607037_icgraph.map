@@ -1,5 +1,6 @@
 <map id="Snake::move" name="Snake::move">
-<area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="152,5,235,32"/>
-<area shape="rect" id="node4" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="165,56,221,83"/>
-<area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="283,5,333,32"/>
+<area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="152,31,235,57"/>
+<area shape="rect" id="node5" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="165,81,221,108"/>
+<area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="285,5,336,32"/>
+<area shape="rect" id="node4" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="283,56,339,83"/>
 </map>

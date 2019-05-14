@@ -1,11 +1,11 @@
 <map id="Game" name="Game">
-<area shape="rect" id="node2" href="$class_labyrinth.html" title="class for containing and displaying the game field " alt="" coords="1145,265,1220,292"/>
-<area shape="rect" id="node3" href="$class_display_handler.html" title="DisplayHandler" alt="" coords="1350,311,1461,337"/>
-<area shape="rect" id="node10" href="$class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,133,219,160"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="955,289,1035,316"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="686,285,813,326"/>
-<area shape="rect" id="node8" href="$class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="378,277,430,304"/>
-<area shape="rect" id="node14" href="$class_ball.html" title="Describes the Ball entity of the game. " alt="" coords="727,431,771,457"/>
-<area shape="rect" id="node11" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="965,163,1024,189"/>
-<area shape="rect" id="node18" href="$class_change.html" title="A Support Change class. " alt="" coords="961,239,1028,265"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html" title="class for containing and displaying the game field " alt="" coords="1145,280,1220,307"/>
+<area shape="rect" id="node3" href="$class_display_handler.html" title="DisplayHandler" alt="" coords="1350,325,1461,352"/>
+<area shape="rect" id="node10" href="$class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,136,219,163"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="955,304,1035,331"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="686,299,813,341"/>
+<area shape="rect" id="node8" href="$class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="378,292,430,319"/>
+<area shape="rect" id="node14" href="$class_ball.html" title="Describes the Ball entity of the game. " alt="" coords="727,445,771,472"/>
+<area shape="rect" id="node11" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="965,177,1024,204"/>
+<area shape="rect" id="node18" href="$class_change.html" title="A Support Change class. " alt="" coords="961,253,1028,280"/>
 </map>

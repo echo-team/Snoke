@@ -1,7 +1,8 @@
 <map id="Snake::checkWisely" name="Snake::checkWisely">
-<area shape="rect" id="node2" href="$class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="197,31,368,57"/>
-<area shape="rect" id="node3" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="416,31,515,57"/>
-<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="563,5,645,32"/>
-<area shape="rect" id="node6" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="576,56,632,83"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="693,5,744,32"/>
+<area shape="rect" id="node2" href="$class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="197,56,368,83"/>
+<area shape="rect" id="node3" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="416,56,515,83"/>
+<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="563,31,645,57"/>
+<area shape="rect" id="node7" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="576,81,632,108"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="696,5,747,32"/>
+<area shape="rect" id="node6" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="693,56,749,83"/>
 </map>

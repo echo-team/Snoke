@@ -1,6 +1,7 @@
 <map id="Labyrinth::sizeHandler" name="Labyrinth::sizeHandler">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="206,31,375,57"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="424,5,507,32"/>
-<area shape="rect" id="node5" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="437,56,493,83"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="555,5,605,32"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="206,56,375,83"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="424,31,507,57"/>
+<area shape="rect" id="node6" href="$labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113" title="method runs with noraml parameters " alt="" coords="437,81,493,108"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="557,5,608,32"/>
+<area shape="rect" id="node5" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="555,56,611,83"/>
 </map>
