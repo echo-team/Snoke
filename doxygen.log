@@ -28,13 +28,11 @@ Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/app
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Ball
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/bin
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Change
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Common
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Game
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Interface
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Labyrinth
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/obj
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Screens
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/SideMenu
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Snake
@@ -99,6 +97,8 @@ Parsing file /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
 Reading /home/travis/build/echo-team/Snoke/README.md...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/ball_init_test.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/ball_init_test.h...
+Preprocessing /home/travis/build/echo-team/Snoke/tests/common_test.h...
+Parsing file /home/travis/build/echo-team/Snoke/tests/common_test.h...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/labyrinth_addsnake_test.h...
@@ -196,6 +196,7 @@ Generating code for file /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp.
 Generating code for file /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
 Generating code for file /home/travis/build/echo-team/Snoke/README.md...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/ball_init_test.h...
+Generating code for file /home/travis/build/echo-team/Snoke/tests/common_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_addsnake_test.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/labyrinth_generateball_test.h...
@@ -246,6 +247,7 @@ Generating docs for file /home/travis/build/echo-team/Snoke/README.md...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/ball_init_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
+Generating docs for file /home/travis/build/echo-team/Snoke/tests/common_test.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
@@ -273,11 +275,7 @@ Generating docs for file /home/travis/build/echo-team/Snoke/tests/snake_move_tes
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
-Generating call graph for function TEST
-Generating call graph for function TEST
-Generating call graph for function TEST
-Generating call graph for function TEST
-Generating call gra/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:537: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+Generating call graph /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:537: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
   parameter 'fieldSize'
@@ -325,7 +323,11 @@ Generating call gra/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cp
   parameter 'unit'
   parameter 'subunitsAmount'
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:207: warning: argument 'ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth *labyrinth)
-ph for function TEST
+for function TEST
+Generating call graph for function TEST
+Generating call graph for function TEST
+Generating call graph for function TEST
+Generating call graph for function TEST
 Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/snake_setdirection_test.h...
 Generating call graph for function TEST
@@ -401,9 +403,7 @@ Generating docs for compound SideMenu...
 Generating docs for compound Snake...
 Generating call graph for function Snake::checkIntersection
 Generating caller graph for function Snake::checkIntersection
-Generating caller graph for function Snake::checkWisely
-Generating caller graph for function Snake::getCoords
-Generating caller graph for function Snake::getHead/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
+Gene/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'change' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'changeSize' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
@@ -416,7 +416,9 @@ Generating caller graph for function Snake::getHead/home/travis/build/echo-team/
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-Coords
+rating caller graph for function Snake::checkWisely
+Generating caller graph for function Snake::getCoords
+Generating caller graph for function Snake::getHeadCoords
 Generating caller graph for function Snake::init
 Generating call graph for function Snake::move
 Generating caller graph for function Snake::move
