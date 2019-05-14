@@ -1,6 +1,8 @@
 <map id="Labyrinth::generateBall" name="Labyrinth::generateBall">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="208,5,331,32"/>
-<area shape="rect" id="node5" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="220,56,319,83"/>
-<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="379,31,461,57"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="509,31,560,57"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="208,31,331,57"/>
+<area shape="rect" id="node6" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="220,81,319,108"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="379,56,461,83"/>
+<area shape="rect" id="node5" href="$snake__move__test_8h.html#a27e7cf60e2571d8d945d500feb704644" title="snake eats the ball " alt="" coords="392,5,448,32"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="509,56,560,83"/>
+<area shape="rect" id="node7" href="$snake__move__test_8h.html#a537ec304fc709746617993eb9750045e" title="method runs with normal parameters and no collisions " alt="" coords="392,107,448,133"/>
 </map>
