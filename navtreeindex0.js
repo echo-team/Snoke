@@ -224,6 +224,8 @@ var NAVTREEINDEX0 =
 "labyrinth__addsnake__test_8h_source.html":[2,0,1,4],
 "labyrinth__displayhandler__test_8h.html":[2,0,1,5],
 "labyrinth__displayhandler__test_8h.html#a07b03bac251983e1307a3b5e33eb5929":[2,0,1,5,1],
+"labyrinth__displayhandler__test_8h.html#a186df89e63495f8f465c016415910d79":[2,0,1,5,3],
+"labyrinth__displayhandler__test_8h.html#a79c336dd3277da6c297673056c3ce1a1":[2,0,1,5,4],
 "labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb":[2,0,1,5,2],
 "labyrinth__displayhandler__test_8h.html#abe5223e32659467cf897d67be0866113":[2,0,1,5,0],
 "labyrinth__displayhandler__test_8h_source.html":[2,0,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "logo_8h_source.html":[2,0,0,4,3],
 "main_8cpp.html":[2,0,1,10],
 "main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[2,0,1,10,0],
-"main_8cpp_source.html":[2,0,1,10],
-"main_menu_8cpp.html":[2,0,0,6,0],
-"main_menu_8cpp_source.html":[2,0,0,6,0]
+"main_8cpp_source.html":[2,0,1,10]
 };
