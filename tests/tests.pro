@@ -42,6 +42,7 @@ SOURCES += main.cpp \
     ../app/Ball/ball.cpp \
     ../app/Game/game.cpp \
     ../app/Labyrinth/labyrinth.cpp \
+    ../app/Labyrinth/displayHandler.cpp \
     ../app/Snake/snake.cpp \
 
 INCLUDEPATH += ../app

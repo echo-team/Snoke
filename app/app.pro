@@ -28,6 +28,7 @@ SOURCES = \
    Interface/logo.cpp \
    Interface/menu.cpp \
    Interface/navigator.cpp \
+   Labyrinth/displayHandler.cpp \
    Labyrinth/labyrinth.cpp \
    Screens/mainMenu.cpp \
    SideMenu/SideMenu.cpp \
