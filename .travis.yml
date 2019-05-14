@@ -34,7 +34,7 @@ script:
 
 after_success:
     - coveralls --root . -E ".*external.*" -E ".*tests.*"
-    - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+    - build-wrapper-linux-x86-64 --out-dir bw-output make clean all -j
     - sonar-scanner
     - cd $TRAVIS_BUILD_DIR
     - chmod +x generateDocumentationAndDeploy.sh
