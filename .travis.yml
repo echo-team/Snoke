@@ -1,6 +1,6 @@
 language:
     - cpp
-    
+
 before_install:
     - pip install --user cpp-coveralls
 
@@ -29,7 +29,7 @@ addons:
 
 script:
     - qmake
-    - make
+    - make -j
     - ./tests/tests
 
 after_success:
