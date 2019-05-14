@@ -19,6 +19,8 @@ var NAVTREEINDEX1 =
 "snake__move__test_8h.html#a537ec304fc709746617993eb9750045e":[2,0,1,7,0],
 "snake__move__test_8h.html#a66d9c0d30c2bbacdaa1b06136815e0e6":[2,0,1,7,5],
 "snake__move__test_8h.html#aa47324ecca2478696de4e131c8499d3b":[2,0,1,7,4],
+"snake__move__test_8h.html#ac7f23fbe47926ebf286b4aab8fd1c0a3":[2,0,1,7,7],
+"snake__move__test_8h.html#aca9192857381154ff64b665717e32a0c":[2,0,1,7,8],
 "snake__move__test_8h.html#af74165767f6b4b1e5e0026c83eebe0d7":[2,0,1,7,2],
 "snake__move__test_8h_source.html":[2,0,1,7],
 "snake__setdirection__test_8h.html":[2,0,1,8],

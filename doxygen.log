@@ -272,6 +272,8 @@ Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
+Generating call graph for function TEST
+Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/snake_setdirection_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
@@ -279,8 +281,7 @@ Generating page documentation...
 Generating docs for page md__home_travis_build_echo-team_Snoke_README...
 Generating group documentation...
 Generating class documentation...
-Generating docs for compound Ball...
-Generating caller graph for function Ball::get/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:537: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+Gen/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:537: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
   parameter 'fieldSize'
@@ -331,17 +332,8 @@ Generating caller graph for function Ball::get/home/travis/build/echo-team/Snoke
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'change' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'changeSize' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:6: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: The following parameters of Widget::focus(int index) are not documented:
-  parameter 'index'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:14: warning: Found unknown command `\virtual'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:15: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
-  parameter 'index'
-Coords
+erating docs for compound Ball...
+Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::getRng
 Generating caller graph for function Ball::init
 Generating caller graph for function Ball::setCoords
@@ -417,7 +409,17 @@ Generating call graph for function Snake::moveBack
 Generating caller graph for function Snake::moveBack
 Generating call graph for function Snake::moveHead
 Generating caller graph for function Snake::moveHead
-Generating caller graph for function Snake::setDirection
+Generating caller graph for function Snake::setDirect/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:6: warning: Found unknown command `\callback'
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: The following parameters of Widget::focus(int index) are not documented:
+  parameter 'index'
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:14: warning: Found unknown command `\virtual'
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:15: warning: Found unknown command `\callback'
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
+/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
+  parameter 'index'
+ion
 Generating docs for compound Widget...
 Generating namespace index...
 Generating graph info page...
@@ -449,201 +451,203 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/195
-Running dot for graph 2/195
-Running dot for graph 3/195
-Running dot for graph 4/195
-Running dot for graph 5/195
-Running dot for graph 6/195
-Running dot for graph 7/195
-Running dot for graph 8/195
-Running dot for graph 9/195
-Running dot for graph 10/195
-Running dot for graph 11/195
-Running dot for graph 12/195
-Running dot for graph 13/195
-Running dot for graph 14/195
-Running dot for graph 15/195
-Running dot for graph 16/195
-Running dot for graph 17/195
-Running dot for graph 18/195
-Running dot for graph 19/195
-Running dot for graph 20/195
-Running dot for graph 21/195
-Running dot for graph 22/195
-Running dot for graph 23/195
-Running dot for graph 24/195
-Running dot for graph 25/195
-Running dot for graph 26/195
-Running dot for graph 27/195
-Running dot for graph 28/195
-Running dot for graph 29/195
-Running dot for graph 30/195
-Running dot for graph 31/195
-Running dot for graph 32/195
-Running dot for graph 33/195
-Running dot for graph 34/195
-Running dot for graph 35/195
-Running dot for graph 36/195
-Running dot for graph 37/195
-Running dot for graph 38/195
-Running dot for graph 39/195
-Running dot for graph 40/195
-Running dot for graph 41/195
-Running dot for graph 42/195
-Running dot for graph 43/195
-Running dot for graph 44/195
-Running dot for graph 45/195
-Running dot for graph 46/195
-Running dot for graph 47/195
-Running dot for graph 48/195
-Running dot for graph 49/195
-Running dot for graph 50/195
-Running dot for graph 51/195
-Running dot for graph 52/195
-Running dot for graph 53/195
-Running dot for graph 54/195
-Running dot for graph 55/195
-Running dot for graph 56/195
-Running dot for graph 57/195
-Running dot for graph 58/195
-Running dot for graph 59/195
-Running dot for graph 60/195
-Running dot for graph 61/195
-Running dot for graph 62/195
-Running dot for graph 63/195
-Running dot for graph 64/195
-Running dot for graph 65/195
-Running dot for graph 66/195
-Running dot for graph 67/195
-Running dot for graph 68/195
-Running dot for graph 69/195
-Running dot for graph 70/195
-Running dot for graph 71/195
-Running dot for graph 72/195
-Running dot for graph 73/195
-Running dot for graph 74/195
-Running dot for graph 75/195
-Running dot for graph 76/195
-Running dot for graph 77/195
-Running dot for graph 78/195
-Running dot for graph 79/195
-Running dot for graph 80/195
-Running dot for graph 81/195
-Running dot for graph 82/195
-Running dot for graph 83/195
-Running dot for graph 84/195
-Running dot for graph 85/195
-Running dot for graph 86/195
-Running dot for graph 87/195
-Running dot for graph 88/195
-Running dot for graph 89/195
-Running dot for graph 90/195
-Running dot for graph 91/195
-Running dot for graph 92/195
-Running dot for graph 93/195
-Running dot for graph 94/195
-Running dot for graph 95/195
-Running dot for graph 96/195
-Running dot for graph 97/195
-Running dot for graph 98/195
-Running dot for graph 99/195
-Running dot for graph 100/195
-Running dot for graph 101/195
-Running dot for graph 102/195
-Running dot for graph 103/195
-Running dot for graph 104/195
-Running dot for graph 105/195
-Running dot for graph 106/195
-Running dot for graph 107/195
-Running dot for graph 108/195
-Running dot for graph 109/195
-Running dot for graph 110/195
-Running dot for graph 111/195
-Running dot for graph 112/195
-Running dot for graph 113/195
-Running dot for graph 114/195
-Running dot for graph 115/195
-Running dot for graph 116/195
-Running dot for graph 117/195
-Running dot for graph 118/195
-Running dot for graph 119/195
-Running dot for graph 120/195
-Running dot for graph 121/195
-Running dot for graph 122/195
-Running dot for graph 123/195
-Running dot for graph 124/195
-Running dot for graph 125/195
-Running dot for graph 126/195
-Running dot for graph 127/195
-Running dot for graph 128/195
-Running dot for graph 129/195
-Running dot for graph 130/195
-Running dot for graph 131/195
-Running dot for graph 132/195
-Running dot for graph 133/195
-Running dot for graph 134/195
-Running dot for graph 135/195
-Running dot for graph 136/195
-Running dot for graph 137/195
-Running dot for graph 138/195
-Running dot for graph 139/195
-Running dot for graph 140/195
-Running dot for graph 141/195
-Running dot for graph 142/195
-Running dot for graph 143/195
-Running dot for graph 144/195
-Running dot for graph 145/195
-Running dot for graph 146/195
-Running dot for graph 147/195
-Running dot for graph 148/195
-Running dot for graph 149/195
-Running dot for graph 150/195
-Running dot for graph 151/195
-Running dot for graph 152/195
-Running dot for graph 153/195
-Running dot for graph 154/195
-Running dot for graph 155/195
-Running dot for graph 156/195
-Running dot for graph 157/195
-Running dot for graph 158/195
-Running dot for graph 159/195
-Running dot for graph 160/195
-Running dot for graph 161/195
-Running dot for graph 162/195
-Running dot for graph 163/195
-Running dot for graph 164/195
-Running dot for graph 165/195
-Running dot for graph 166/195
-Running dot for graph 167/195
-Running dot for graph 168/195
-Running dot for graph 169/195
-Running dot for graph 170/195
-Running dot for graph 171/195
-Running dot for graph 172/195
-Running dot for graph 173/195
-Running dot for graph 174/195
-Running dot for graph 175/195
-Running dot for graph 176/195
-Running dot for graph 177/195
-Running dot for graph 178/195
-Running dot for graph 179/195
-Running dot for graph 180/195
-Running dot for graph 181/195
-Running dot for graph 182/195
-Running dot for graph 183/195
-Running dot for graph 184/195
-Running dot for graph 185/195
-Running dot for graph 186/195
-Running dot for graph 187/195
-Running dot for graph 188/195
-Running dot for graph 189/195
-Running dot for graph 190/195
-Running dot for graph 191/195
-Running dot for graph 192/195
-Running dot for graph 193/195
-Running dot for graph 194/195
-Running dot for graph 195/195
+Running dot for graph 1/197
+Running dot for graph 2/197
+Running dot for graph 3/197
+Running dot for graph 4/197
+Running dot for graph 5/197
+Running dot for graph 6/197
+Running dot for graph 7/197
+Running dot for graph 8/197
+Running dot for graph 9/197
+Running dot for graph 10/197
+Running dot for graph 11/197
+Running dot for graph 12/197
+Running dot for graph 13/197
+Running dot for graph 14/197
+Running dot for graph 15/197
+Running dot for graph 16/197
+Running dot for graph 17/197
+Running dot for graph 18/197
+Running dot for graph 19/197
+Running dot for graph 20/197
+Running dot for graph 21/197
+Running dot for graph 22/197
+Running dot for graph 23/197
+Running dot for graph 24/197
+Running dot for graph 25/197
+Running dot for graph 26/197
+Running dot for graph 27/197
+Running dot for graph 28/197
+Running dot for graph 29/197
+Running dot for graph 30/197
+Running dot for graph 31/197
+Running dot for graph 32/197
+Running dot for graph 33/197
+Running dot for graph 34/197
+Running dot for graph 35/197
+Running dot for graph 36/197
+Running dot for graph 37/197
+Running dot for graph 38/197
+Running dot for graph 39/197
+Running dot for graph 40/197
+Running dot for graph 41/197
+Running dot for graph 42/197
+Running dot for graph 43/197
+Running dot for graph 44/197
+Running dot for graph 45/197
+Running dot for graph 46/197
+Running dot for graph 47/197
+Running dot for graph 48/197
+Running dot for graph 49/197
+Running dot for graph 50/197
+Running dot for graph 51/197
+Running dot for graph 52/197
+Running dot for graph 53/197
+Running dot for graph 54/197
+Running dot for graph 55/197
+Running dot for graph 56/197
+Running dot for graph 57/197
+Running dot for graph 58/197
+Running dot for graph 59/197
+Running dot for graph 60/197
+Running dot for graph 61/197
+Running dot for graph 62/197
+Running dot for graph 63/197
+Running dot for graph 64/197
+Running dot for graph 65/197
+Running dot for graph 66/197
+Running dot for graph 67/197
+Running dot for graph 68/197
+Running dot for graph 69/197
+Running dot for graph 70/197
+Running dot for graph 71/197
+Running dot for graph 72/197
+Running dot for graph 73/197
+Running dot for graph 74/197
+Running dot for graph 75/197
+Running dot for graph 76/197
+Running dot for graph 77/197
+Running dot for graph 78/197
+Running dot for graph 79/197
+Running dot for graph 80/197
+Running dot for graph 81/197
+Running dot for graph 82/197
+Running dot for graph 83/197
+Running dot for graph 84/197
+Running dot for graph 85/197
+Running dot for graph 86/197
+Running dot for graph 87/197
+Running dot for graph 88/197
+Running dot for graph 89/197
+Running dot for graph 90/197
+Running dot for graph 91/197
+Running dot for graph 92/197
+Running dot for graph 93/197
+Running dot for graph 94/197
+Running dot for graph 95/197
+Running dot for graph 96/197
+Running dot for graph 97/197
+Running dot for graph 98/197
+Running dot for graph 99/197
+Running dot for graph 100/197
+Running dot for graph 101/197
+Running dot for graph 102/197
+Running dot for graph 103/197
+Running dot for graph 104/197
+Running dot for graph 105/197
+Running dot for graph 106/197
+Running dot for graph 107/197
+Running dot for graph 108/197
+Running dot for graph 109/197
+Running dot for graph 110/197
+Running dot for graph 111/197
+Running dot for graph 112/197
+Running dot for graph 113/197
+Running dot for graph 114/197
+Running dot for graph 115/197
+Running dot for graph 116/197
+Running dot for graph 117/197
+Running dot for graph 118/197
+Running dot for graph 119/197
+Running dot for graph 120/197
+Running dot for graph 121/197
+Running dot for graph 122/197
+Running dot for graph 123/197
+Running dot for graph 124/197
+Running dot for graph 125/197
+Running dot for graph 126/197
+Running dot for graph 127/197
+Running dot for graph 128/197
+Running dot for graph 129/197
+Running dot for graph 130/197
+Running dot for graph 131/197
+Running dot for graph 132/197
+Running dot for graph 133/197
+Running dot for graph 134/197
+Running dot for graph 135/197
+Running dot for graph 136/197
+Running dot for graph 137/197
+Running dot for graph 138/197
+Running dot for graph 139/197
+Running dot for graph 140/197
+Running dot for graph 141/197
+Running dot for graph 142/197
+Running dot for graph 143/197
+Running dot for graph 144/197
+Running dot for graph 145/197
+Running dot for graph 146/197
+Running dot for graph 147/197
+Running dot for graph 148/197
+Running dot for graph 149/197
+Running dot for graph 150/197
+Running dot for graph 151/197
+Running dot for graph 152/197
+Running dot for graph 153/197
+Running dot for graph 154/197
+Running dot for graph 155/197
+Running dot for graph 156/197
+Running dot for graph 157/197
+Running dot for graph 158/197
+Running dot for graph 159/197
+Running dot for graph 160/197
+Running dot for graph 161/197
+Running dot for graph 162/197
+Running dot for graph 163/197
+Running dot for graph 164/197
+Running dot for graph 165/197
+Running dot for graph 166/197
+Running dot for graph 167/197
+Running dot for graph 168/197
+Running dot for graph 169/197
+Running dot for graph 170/197
+Running dot for graph 171/197
+Running dot for graph 172/197
+Running dot for graph 173/197
+Running dot for graph 174/197
+Running dot for graph 175/197
+Running dot for graph 176/197
+Running dot for graph 177/197
+Running dot for graph 178/197
+Running dot for graph 179/197
+Running dot for graph 180/197
+Running dot for graph 181/197
+Running dot for graph 182/197
+Running dot for graph 183/197
+Running dot for graph 184/197
+Running dot for graph 185/197
+Running dot for graph 186/197
+Running dot for graph 187/197
+Running dot for graph 188/197
+Running dot for graph 189/197
+Running dot for graph 190/197
+Running dot for graph 191/197
+Running dot for graph 192/197
+Running dot for graph 193/197
+Running dot for graph 194/197
+Running dot for graph 195/197
+Running dot for graph 196/197
+Running dot for graph 197/197
 Patching output file 1/61
 Patching output file 2/61
 Patching output file 3/61
@@ -705,5 +709,5 @@ Patching output file 58/61
 Patching output file 59/61
 Patching output file 60/61
 Patching output file 61/61
-lookup cache used 514/65536 hits=4745 misses=620
+lookup cache used 514/65536 hits=4827 misses=620
 finished...
