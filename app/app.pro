@@ -7,6 +7,7 @@ LIBS += -lncurses
 
 HEADERS = \
    Ball/ball.h \
+   Change/change.h \
    Common/common.h \
    Game/game.h \
    Interface/interface.h \
@@ -16,10 +17,11 @@ HEADERS = \
    Labyrinth/labyrinth.h \
    Screens/mainMenu.h \
    SideMenu/SideMenu.h \
-   Snake/snake.h
+   Snake/snake.h \
 
 SOURCES = \
    Ball/ball.cpp \
+   Change/change.cpp \
    Common/common.cpp \
    Game/game.cpp \
    Interface/interface.cpp \
@@ -34,6 +36,7 @@ SOURCES = \
 
 INCLUDEPATH = \
     Ball \
+    Change \
     Common \
     Game \
     Interface \

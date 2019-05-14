@@ -9,7 +9,6 @@
  *
  */
 #include "snake.h"
-#include "../Common/common.h"
 
 /**
  * @brief   Initializes snake as an entity without ancoring it anywhere
