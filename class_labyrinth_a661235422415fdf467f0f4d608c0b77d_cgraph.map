@@ -1,7 +1,0 @@
-<map id="Labyrinth::forcedDisplay" name="Labyrinth::forcedDisplay">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a98447444cafe6d19e0e5c0181f3c1ddd" title="redraw every Point of the labyrinth " alt="" coords="230,5,375,32"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#ab120d60db9780f137d3c9584c75c2f9d" title="display labyrinth partialy, using the start and end Points " alt="" coords="219,56,387,83"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#ac14a9bd2c24250a9f6ea1e8c3721b178" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="216,107,389,133"/>
-<area shape="rect" id="node5" href="$class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="438,81,605,108"/>
-<area shape="rect" id="node6" href="$class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="441,132,602,159"/>
-</map>

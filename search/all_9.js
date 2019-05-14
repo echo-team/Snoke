@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['labyrinth',['Labyrinth',['../class_labyrinth.html',1,'Labyrinth'],['../class_game.html#a92148f2659c019b331e9da7deadbd8bc',1,'Game::labyrinth()'],['../class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d',1,'Labyrinth::labyrinth()']]],
+  ['labyrinth',['Labyrinth',['../class_labyrinth.html',1,'Labyrinth'],['../class_game.html#a92148f2659c019b331e9da7deadbd8bc',1,'Game::labyrinth()'],['../class_display_handler.html#a00b451884fe9aeb783fe3192433477cf',1,'DisplayHandler::labyrinth()'],['../class_labyrinth.html#ac95a1b4246b9351e8cea8c1618bcb58d',1,'Labyrinth::labyrinth()']]],
   ['labyrinth_2ecpp',['labyrinth.cpp',['../labyrinth_8cpp.html',1,'']]],
   ['labyrinth_2eh',['labyrinth.h',['../labyrinth_8h.html',1,'']]],
   ['labyrinth_5faddsnake_5ftest_2eh',['labyrinth_addsnake_test.h',['../labyrinth__addsnake__test_8h.html',1,'']]],

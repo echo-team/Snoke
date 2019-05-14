@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['point',['Point',['../class_point.html',1,'']]],
-  ['pointstyle',['PointStyle',['../class_point_style.html',1,'']]]
+  ['navigateunit',['NavigateUnit',['../struct_navigate_unit.html',1,'']]],
+  ['navigator',['Navigator',['../class_navigator.html',1,'']]]
 ];

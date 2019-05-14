@@ -1,7 +1,0 @@
-<map id="Labyrinth::displayUpdated" name="Labyrinth::displayUpdated">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a661235422415fdf467f0f4d608c0b77d" title="got an extra stimulus for displaying in a certain method " alt="" coords="227,5,389,32"/>
-<area shape="rect" id="node6" href="$class_labyrinth.html#ae4da38c24b2ec9839bc4b67141fb2d92" title="No extra stimulus, displaying the default way. " alt="" coords="233,56,383,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="438,31,607,57"/>
-<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="656,31,739,57"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="787,31,837,57"/>
-</map>

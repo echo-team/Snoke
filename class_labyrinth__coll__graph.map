@@ -1,9 +1,10 @@
 <map id="Labyrinth" name="Labyrinth">
-<area shape="rect" id="node8" href="$class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,159,219,185"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="955,559,1035,585"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="686,555,813,597"/>
-<area shape="rect" id="node6" href="$class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="378,132,430,159"/>
-<area shape="rect" id="node12" href="$class_ball.html" title="Describes the Ball entity of the game. " alt="" coords="727,345,771,372"/>
-<area shape="rect" id="node9" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="965,235,1024,261"/>
-<area shape="rect" id="node16" href="$class_change.html" title="A Support Change class. " alt="" coords="961,167,1028,193"/>
+<area shape="rect" id="node2" href="$class_display_handler.html" title="DisplayHandler" alt="" coords="1337,352,1447,379"/>
+<area shape="rect" id="node9" href="$class_point_style.html" title="Style of the cell in console window. " alt="" coords="136,87,219,113"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="955,465,1035,492"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="686,462,813,503"/>
+<area shape="rect" id="node7" href="$class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="378,339,430,365"/>
+<area shape="rect" id="node13" href="$class_ball.html" title="Describes the Ball entity of the game. " alt="" coords="727,227,771,253"/>
+<area shape="rect" id="node10" href="$class_snake.html" title="Describes the Snake entity of the game. " alt="" coords="965,148,1024,175"/>
+<area shape="rect" id="node17" href="$class_change.html" title="A Support Change class. " alt="" coords="961,307,1028,333"/>
 </map>
