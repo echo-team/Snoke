@@ -39,4 +39,13 @@ TEST(common_test, PointNotEqual)
     }
 }
 
+TEST(common_test, PointOstream)
+{
+    Point p;
+    p.x = 10;
+    p.y = 150;
+    std::cout << p << std::endl;
+    SUCCEED();
+}
+
 #endif // COMMON_TEST_H
