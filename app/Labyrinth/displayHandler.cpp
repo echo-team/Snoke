@@ -154,13 +154,13 @@ void DisplayHandler::displayUpdated()
     std::deque<Point> cpChange;
 
     Point tmp;
-    labyrinth->change.getRemChange(&cpChange);
+    labyrinth->change.getRmQueue(&cpChange);
     for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
         tmp = *it;
         mvaddch(tmp.y, tmp.x, ' ');
     }
-    labyrinth->change.getAddChange(&cpChange);
+    labyrinth->change.getAddQueue(&cpChange);
     for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
         tmp = *it;

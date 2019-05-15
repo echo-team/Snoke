@@ -26,12 +26,12 @@ class Change
     public:
         void initChange();
         bool addPoint(Point p);
-        bool remPoint(Point p);
+        bool rmPoint(Point p);
         void wipeChange();
-        bool inAddChange(Point p);
-        bool inRemChange(Point p);
-        void getAddChange(std::deque<Point>* cpChange);
-        void getRemChange(std::deque<Point>* cpChange);
+        bool inAddQueue(Point p);
+        bool inRmQueue(Point p);
+        void getAddQueue(std::deque<Point>* cpChange);
+        void getRmQueue(std::deque<Point>* cpChange);
 };
 
 #endif

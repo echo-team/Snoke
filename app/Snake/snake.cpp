@@ -136,7 +136,8 @@ bool Snake::move(Labyrinth* labyrinth)
         case BALL:
             bCoords.x = -1;
             bCoords.y = -1;
-            labyrinth->change.remPoint(labyrinth->ball.getCoords());
+            //Change to a single call to labyrinth(like labyrinth->newBall())
+            labyrinth->change.rmPoint(labyrinth->ball.getCoords());
             labyrinth->generateBall();
             labyrinth->change.addPoint(labyrinth->ball.getCoords());
             break;
@@ -160,7 +161,7 @@ bool Snake::move(Labyrinth* labyrinth)
             case BALL:
                 bCoords.x = -1;
                 bCoords.y = -1;
-                labyrinth->change.remPoint(labyrinth->ball.getCoords());
+                labyrinth->change.rmPoint(labyrinth->ball.getCoords());
                 labyrinth->generateBall();
                 labyrinth->change.addPoint(labyrinth->ball.getCoords());
                 break;
@@ -197,7 +198,7 @@ void Snake::moveHead(Point p, Change* change)
  */
 void Snake::moveBack(Point p, Change* change)
 {
-    if(change->remPoint(p))
+    if(change->rmPoint(p))
     {
         snakeBody.pop_back();
     }

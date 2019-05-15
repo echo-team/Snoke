@@ -40,7 +40,7 @@ bool Change::addPoint(Point p)
  * @param   p - Point to add
  * @return    - mark of succesful addition
  */
-bool Change::remPoint(Point p)
+bool Change::rmPoint(Point p)
 {
     if(p.x >= 0 && p.y >= 0)
     {
@@ -54,7 +54,7 @@ bool Change::remPoint(Point p)
  * @brief   Check if Points is in the addition queue
  * @param   p   - point to check
  */
-bool Change::inAddChange(Point p)
+bool Change::inAddQueue(Point p)
 {
     for(auto it = change[0].begin(); it != change[0].end(); ++it)
     {
@@ -70,7 +70,7 @@ bool Change::inAddChange(Point p)
  * @brief   Check if the Point is in the remove queue
  * @param   p   - point to check
  */
-bool Change::inRemChange(Point p)
+bool Change::inRmQueue(Point p)
 {
     for(auto it = change[1].begin(); it != change[1].end(); ++it)
     {
@@ -86,7 +86,7 @@ bool Change::inRemChange(Point p)
  * @brief method to get a copy of addition array
  * @param   cpChange - array, where we copy
  */
-void Change::getAddChange(std::deque<Point>* cpChange)
+void Change::getAddQueue(std::deque<Point>* cpChange)
 {
     cpChange->assign(this->change[0].begin(), this->change[0].end());
 }
@@ -95,7 +95,7 @@ void Change::getAddChange(std::deque<Point>* cpChange)
  * @brief method to get a copy of removal array
  * @param   cpChange - array, where we copy
  */
-void Change::getRemChange(std::deque<Point>* cpChange)
+void Change::getRmQueue(std::deque<Point>* cpChange)
 {
     cpChange->assign(this->change[1].begin(), this->change[1].end());
 }

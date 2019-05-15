@@ -206,14 +206,14 @@ void Labyrinth::sizeHandler()
 void Labyrinth::updateLabyrinth()
 {
     std::deque<Point> cpChange;
-    change.getRemChange(&cpChange);
+    change.getRmQueue(&cpChange);
 
     for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
         remPoint(*it);
         mvaddch((*it).y, (*it).x, 'F');
     }
-    change.getAddChange(&cpChange);
+    change.getAddQueue(&cpChange);
     for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
         addPoint(*it);
@@ -384,8 +384,8 @@ bool Labyrinth::generateBall()
     {
         chance.x = ball.distributionX(*ball.getRng());
         chance.y = ball.distributionY(*ball.getRng());
-        if ( (this->isFree(chance) == 1 || this->change.inRemChange(chance))
-         && !this->change.inAddChange(chance))
+        if ( (this->isFree(chance) == 1 || this->change.inRmQueue(chance))
+         && !this->change.inAddQueue(chance))
         {
             break;
         }
