@@ -6,6 +6,7 @@
 
 TEST(game_run_test, test1)
 {
+    initscr();
     Game game;
     int size = 100;
     int speed = 150;
@@ -17,6 +18,7 @@ TEST(game_run_test, test1)
     }
 
     retVal = game.run();
+    endwin();
     if(retVal)
     {
         FAIL();

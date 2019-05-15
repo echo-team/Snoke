@@ -1,6 +1,9 @@
 language:
     - cpp
 
+git:
+    depth: false
+
 before_install:
     - pip install --user cpp-coveralls
 
