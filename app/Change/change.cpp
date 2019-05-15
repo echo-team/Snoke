@@ -83,19 +83,19 @@ bool Change::inRmQueue(Point p)
 }
 
 /**
- * @brief method to get a copy of addition array
+ * @brief   method to get a copy of addition array
  * @param   cpChange - array, where we copy
  */
 void Change::getAddQueue(std::deque<Point>* cpChange)
 {
-    cpChange->assign(this->change[0].begin(), this->change[0].end());
+    *cpChange = this->change[0];
 }
 
 /**
- * @brief method to get a copy of removal array
+ * @brief   method to get a copy of removal array
  * @param   cpChange - array, where we copy
  */
 void Change::getRmQueue(std::deque<Point>* cpChange)
 {
-    cpChange->assign(this->change[1].begin(), this->change[1].end());
+    *cpChange = this->change[1];
 }
