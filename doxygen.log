@@ -789,5 +789,5 @@ Patching output file 66/69
 Patching output file 67/69
 Patching output file 68/69
 Patching output file 69/69
-lookup cache used 546/65536 hits=5201 misses=653
+lookup cache used 545/65536 hits=5187 misses=652
 finished...
