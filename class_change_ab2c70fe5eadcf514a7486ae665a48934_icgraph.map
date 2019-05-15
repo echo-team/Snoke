@@ -1,0 +1,8 @@
+<map id="Change::rmPoint" name="Change::rmPoint">
+<area shape="rect" id="node2" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="352,56,451,83"/>
+<area shape="rect" id="node7" href="$class_snake.html#a72c30e32f3773fb28d2da0bcfd2c935c" title="Checking if we need to remove the back of the snake from the labyrinth(we don&#39;t in case it has eaten ..." alt="" coords="174,81,303,108"/>
+<area shape="rect" id="node3" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="499,31,581,57"/>
+<area shape="rect" id="node6" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="512,81,568,108"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="632,5,683,32"/>
+<area shape="rect" id="node5" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="629,56,685,83"/>
+</map>

@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$class_display_handler.html#a59ec2f4626d27172e9a9db6eb9c64ac1" title="redraw every Point of the labyrinth " alt="" coords="268,5,449,32"/>
 <area shape="rect" id="node3" href="$class_display_handler.html#a5aae18de62daf41ba21d30a1e99d0648" title="display labyrinth partialy, using the start and end Points " alt="" coords="257,56,461,83"/>
 <area shape="rect" id="node4" href="$class_display_handler.html#a09f608b0e9924a41a75595b44f17cdc4" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="254,107,463,133"/>
-<area shape="rect" id="node5" href="$class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="513,81,679,108"/>
-<area shape="rect" id="node6" href="$class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="515,132,677,159"/>
+<area shape="rect" id="node5" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="513,81,665,108"/>
+<area shape="rect" id="node6" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="512,132,667,159"/>
 </map>

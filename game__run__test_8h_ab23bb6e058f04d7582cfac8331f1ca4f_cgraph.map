@@ -25,14 +25,14 @@
 <area shape="rect" id="node20" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="735,516,889,542"/>
 <area shape="rect" id="node25" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="1009,313,1121,340"/>
 <area shape="rect" id="node21" href="$class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3" title="Ball::getRng" alt="" coords="1018,516,1113,542"/>
-<area shape="rect" id="node22" href="$class_change.html#aa6fd51b009e7da8a9a4ddcc92353a2da" title="Check if the Point is in the remove queue. " alt="" coords="986,566,1145,593"/>
-<area shape="rect" id="node23" href="$class_change.html#a01d3e66186965be3a3b97c5bb6738b7d" title="Check if Points is in the addition queue. " alt="" coords="989,617,1142,644"/>
+<area shape="rect" id="node22" href="$class_change.html#a7c2513f30bc0e06d3685223c51bbc116" title="Check if the Point is in the remove queue. " alt="" coords="993,566,1137,593"/>
+<area shape="rect" id="node23" href="$class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b" title="Check if Points is in the addition queue. " alt="" coords="992,617,1139,644"/>
 <area shape="rect" id="node24" href="$class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="1009,465,1121,492"/>
 <area shape="rect" id="node27" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="474,668,649,694"/>
 <area shape="rect" id="node30" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="485,921,637,948"/>
 <area shape="rect" id="node33" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="459,718,664,745"/>
-<area shape="rect" id="node28" href="$class_change.html#a4ce46dcccd707409ee63dfd1e5116bd2" title="method to get a copy of removal array " alt="" coords="1219,794,1386,821"/>
-<area shape="rect" id="node29" href="$class_change.html#af416eabe3316c9fed4359487d8773c39" title="method to get a copy of addition array " alt="" coords="1222,693,1383,720"/>
+<area shape="rect" id="node28" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="1220,794,1372,821"/>
+<area shape="rect" id="node29" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="1219,693,1373,720"/>
 <area shape="rect" id="node31" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="733,921,891,948"/>
 <area shape="rect" id="node32" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="755,972,869,998"/>
 <area shape="rect" id="node34" href="$class_display_handler.html#a6ee373ad3e3318633461be0851768248" title="got an extra stimulus for displaying in a certain method " alt="" coords="713,769,911,796"/>
@@ -42,7 +42,7 @@
 <area shape="rect" id="node37" href="$class_display_handler.html#a09f608b0e9924a41a75595b44f17cdc4" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="961,718,1170,745"/>
 <area shape="rect" id="node43" href="$class_snake.html#a0e3676c41d83d72363555e65410a3ce6" title="Checking the given point for intersections with Ball, borders, obstacles. " alt="" coords="727,364,897,390"/>
 <area shape="rect" id="node45" href="$class_snake.html#a72c30e32f3773fb28d2da0bcfd2c935c" title="Checking if we need to remove the back of the snake from the labyrinth(we don&#39;t in case it has eaten ..." alt="" coords="747,60,877,86"/>
-<area shape="rect" id="node46" href="$class_change.html#a1b198ad8cce45c439bd3c39eacf1aca3" title="adds Point to removal array if it fits the criteria " alt="" coords="1002,34,1129,61"/>
+<area shape="rect" id="node46" href="$class_change.html#ab2c70fe5eadcf514a7486ae665a48934" title="adds Point to removal array if it fits the criteria " alt="" coords="1005,34,1125,61"/>
 <area shape="rect" id="node47" href="$class_change.html#abc4f4f804d28d110a9a1990e0ef1ec60" title="adds Point to addition array if it fits the criteria " alt="" coords="1002,136,1129,162"/>
 <area shape="rect" id="node48" href="$class_snake.html#a20194faec6376a701ebf202051a8ab42" title="Moving snake head to a described by parameters position and updating the addition to the labyrinth..." alt="" coords="747,161,877,188"/>
 <area shape="rect" id="node44" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title="If the Point of the labyrinth we are checking is not free then decide the type of collision..." alt="" coords="994,364,1137,390"/>
