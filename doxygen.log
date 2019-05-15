@@ -28,13 +28,11 @@ Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/app
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Ball
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/bin
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Change
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Common
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Game
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Interface
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Labyrinth
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/obj
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Screens
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/SideMenu
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Snake
@@ -78,9 +76,9 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
-Prepro/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
-cessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
-Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHand/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+ler.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h...
@@ -266,10 +264,10 @@ Generating docs for file /home/travis/build/echo-team/Snoke/README.md...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/ball_init_test.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
-Generating docs for file /home/travis/build/echo-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
-team/Snoke/tests/common_test.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/tests/common_test.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/game_init_test.h...
-Generating call graph for function TEST
+Generating call graph for functi/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
+on TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
@@ -343,7 +341,10 @@ Generating caller graph for function DisplayHandler::displayUpdated
 Generating call graph for function DisplayHandler::forcedDisplay
 Generating caller graph for function DisplayHandler::forcedDisplay
 Generating call graph for function DisplayHandler::freeDisplay
-Gener/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+Generating caller graph for function DisplayHandler::freeDisplay
+Generating docs for compound Game...
+Generating call graph for function Game::init
+Generatin/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
   parameter 'fieldSize'
@@ -390,7 +391,7 @@ Gener/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning
 /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp:4: warning: The following parameters of Navigator::pushUnit(Widget *unit, int subunitsAmount) are not documented:
   parameter 'unit'
   parameter 'subunitsAmount'
-/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:208: warning: argument 'ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth *labyrinth)
+/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:244: warning: argument 'ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'change' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
 /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'changeSize' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
@@ -404,10 +405,7 @@ Gener/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:373: warning
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-ating caller graph for function DisplayHandler::freeDisplay
-Generating docs for compound Game...
-Generating call graph for function Game::init
-Generating caller graph for function Game::init
+g caller graph for function Game::init
 Generating call graph for function Game::initSnake
 Generating caller graph for function Game::initSnake
 Generating call graph for function Game::run
@@ -789,5 +787,5 @@ Patching output file 66/69
 Patching output file 67/69
 Patching output file 68/69
 Patching output file 69/69
-lookup cache used 545/65536 hits=5187 misses=652
+lookup cache used 545/65536 hits=5188 misses=652
 finished...
