@@ -1,6 +1,6 @@
 <map id="Labyrinth::setLabyrinth" name="Labyrinth::setLabyrinth">
 <area shape="rect" id="node2" href="$class_game.html#aff91353d82ba134b7cf7b82c43814b8d" title="Initializes game. " alt="" coords="208,31,291,57"/>
-<area shape="rect" id="node5" href="$labyrinth__addsnake__test_8h.html#a80e4f10c7aeb62dc4d86dde5cc0953a0" title="method runs with normal parameters " alt="" coords="221,81,277,108"/>
+<area shape="rect" id="node5" href="$_labyrinth__add_snake_8h.html#ae473ba89b5cd82bde497c336f4dffe9d" title="method runs with normal parameters " alt="" coords="221,81,277,108"/>
 <area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="341,5,392,32"/>
-<area shape="rect" id="node4" href="$game__init__test_8h.html#a1fc0354b53420500c99d7f0230a3f113" title="method runs with normal parameters " alt="" coords="339,56,395,83"/>
+<area shape="rect" id="node4" href="$_game__init_8h.html#a8785fac74788e054a2afaaac71b22e59" title="method runs with normal parameters " alt="" coords="339,56,395,83"/>
 </map>

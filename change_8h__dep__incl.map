@@ -1,23 +1,23 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/app/Change/change.h" name="/home/travis/build/echo&#45;team/Snoke/app/Change/change.h">
-<area shape="rect" id="node2" href="$change_8cpp.html" title="realisation of Change class " alt="" coords="329,109,481,165"/>
-<area shape="rect" id="node3" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="1043,109,1196,165"/>
-<area shape="rect" id="node4" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="609,221,761,277"/>
-<area shape="rect" id="node5" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="181,341,333,397"/>
-<area shape="rect" id="node14" href="$snake__move__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/snake_move_test.h" alt="" coords="786,341,947,397"/>
-<area shape="rect" id="node15" href="$display_handler_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Labyrinth/displayHandler.cpp" alt="" coords="1765,221,1960,277"/>
-<area shape="rect" id="node16" href="$labyrinth_8cpp.html" title="realisation of Labyrinth class " alt="" coords="1984,221,2141,277"/>
-<area shape="rect" id="node17" href="$labyrinth__addsnake__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_addsnake_test.h" alt="" coords="972,341,1151,397"/>
-<area shape="rect" id="node18" href="$labyrinth__displayhandler__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_displayhandler\l_test.h" alt="" coords="1175,334,1339,405"/>
-<area shape="rect" id="node19" href="$labyrinth__generateball__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_generateball\l_test.h" alt="" coords="1190,454,1351,525"/>
-<area shape="rect" id="node20" href="$labyrinth__load__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_load_test.h" alt="" coords="1209,221,1369,277"/>
-<area shape="rect" id="node21" href="$labyrinth__save__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_save_test.h" alt="" coords="1394,221,1555,277"/>
-<area shape="rect" id="node22" href="$labyrinth__setlabyrinth__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/labyrinth_setlabyrinth\l_test.h" alt="" coords="1579,214,1740,285"/>
-<area shape="rect" id="node11" href="$snake_8cpp.html" title="realisation of Snake class " alt="" coords="609,341,761,397"/>
-<area shape="rect" id="node12" href="$snake__init__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/snake_init_test.h" alt="" coords="733,461,893,517"/>
-<area shape="rect" id="node13" href="$snake__setdirection__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/snake_setdirection_test.h" alt="" coords="410,341,584,397"/>
-<area shape="rect" id="node6" href="$game_8cpp.html" title="realisation of Game class " alt="" coords="5,461,157,517"/>
-<area shape="rect" id="node7" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Main.cpp" alt="" coords="182,461,335,517"/>
-<area shape="rect" id="node8" href="$game__init__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/game_init_test.h" alt="" coords="359,461,520,517"/>
-<area shape="rect" id="node10" href="$game__run__test_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/game_run_test.h" alt="" coords="546,461,707,517"/>
-<area shape="rect" id="node9" href="$main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/main.cpp" alt="" coords="981,573,1141,629"/>
+<area shape="rect" id="node2" href="$change_8cpp.html" title="realisation of Change class " alt="" coords="315,109,468,165"/>
+<area shape="rect" id="node3" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="1029,109,1181,165"/>
+<area shape="rect" id="node4" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="595,213,748,269"/>
+<area shape="rect" id="node5" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="181,317,333,373"/>
+<area shape="rect" id="node14" href="$_snake__move_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Snake_move.h" alt="" coords="773,317,933,373"/>
+<area shape="rect" id="node15" href="$display_handler_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Labyrinth/displayHandler.cpp" alt="" coords="1757,213,1952,269"/>
+<area shape="rect" id="node16" href="$labyrinth_8cpp.html" title="realisation of Labyrinth class " alt="" coords="1976,213,2133,269"/>
+<area shape="rect" id="node17" href="$_labyrinth__add_snake_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_addSnake.h" alt="" coords="958,317,1119,373"/>
+<area shape="rect" id="node18" href="$_labyrinth__display_handler_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_displayHandler.h" alt="" coords="1143,317,1325,373"/>
+<area shape="rect" id="node19" href="$_labyrinth__generate_bal_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_generateBal.h" alt="" coords="1190,421,1356,477"/>
+<area shape="rect" id="node20" href="$_labyrinth__load_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_load.h" alt="" coords="1194,213,1355,269"/>
+<area shape="rect" id="node21" href="$_labyrinth__save_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_save.h" alt="" coords="1379,213,1540,269"/>
+<area shape="rect" id="node22" href="$_labyrinth__set_labyrinth_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Labyrinth_setLabyrinth.h" alt="" coords="1565,213,1733,269"/>
+<area shape="rect" id="node11" href="$snake_8cpp.html" title="realisation of Snake class " alt="" coords="595,317,748,373"/>
+<area shape="rect" id="node12" href="$_snake__init_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Snake_init.h" alt="" coords="738,421,899,477"/>
+<area shape="rect" id="node13" href="$_snake__set_direction_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Snake_setDirection.h" alt="" coords="410,317,571,373"/>
+<area shape="rect" id="node6" href="$game_8cpp.html" title="realisation of Game class " alt="" coords="5,421,157,477"/>
+<area shape="rect" id="node7" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Main.cpp" alt="" coords="182,421,335,477"/>
+<area shape="rect" id="node8" href="$_game__init_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Game_init.h" alt="" coords="363,421,524,477"/>
+<area shape="rect" id="node10" href="$_game__run_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Game_run.h" alt="" coords="551,421,712,477"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/main.cpp" alt="" coords="958,525,1119,581"/>
 </map>

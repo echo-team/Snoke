@@ -1,6 +1,6 @@
 <map id="Labyrinth::initBall" name="Labyrinth::initBall">
 <area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="176,31,259,57"/>
-<area shape="rect" id="node5" href="$labyrinth__generateball__test_8h.html#aff913e7a2aa1448b141530530d9aa7a4" title="method runs with normal parameters " alt="" coords="189,81,245,108"/>
+<area shape="rect" id="node5" href="$_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="189,81,245,108"/>
 <area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="309,5,360,32"/>
-<area shape="rect" id="node4" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="307,56,363,83"/>
+<area shape="rect" id="node4" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="307,56,363,83"/>
 </map>

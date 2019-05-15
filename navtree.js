@@ -26,8 +26,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_main_8cpp.html",
-"main_8cpp_source.html"
+"_ball__init_8h.html",
+"game_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

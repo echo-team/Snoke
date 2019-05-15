@@ -1,6 +1,6 @@
 <map id="Snake::setDirection" name="Snake::setDirection">
 <area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="192,31,275,57"/>
-<area shape="rect" id="node5" href="$snake__move__test_8h.html#a66d9c0d30c2bbacdaa1b06136815e0e6" title="snake collides with itself by doing 3 consiquent left turns " alt="" coords="205,81,261,108"/>
+<area shape="rect" id="node5" href="$_snake__move_8h.html#a4b4ea5d2ddb6203a4593d1ded30e74d8" title="snake collides with itself by doing 3 consiquent left turns " alt="" coords="205,81,261,108"/>
 <area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="325,5,376,32"/>
-<area shape="rect" id="node4" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="323,56,379,83"/>
+<area shape="rect" id="node4" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="323,56,379,83"/>
 </map>

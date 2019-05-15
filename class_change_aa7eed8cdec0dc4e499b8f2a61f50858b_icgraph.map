@@ -3,8 +3,8 @@
 <area shape="rect" id="node3" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="403,31,525,57"/>
 <area shape="rect" id="node8" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="415,81,513,108"/>
 <area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="573,56,656,83"/>
-<area shape="rect" id="node7" href="$labyrinth__generateball__test_8h.html#aff913e7a2aa1448b141530530d9aa7a4" title="method runs with normal parameters " alt="" coords="587,5,643,32"/>
+<area shape="rect" id="node7" href="$_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="587,5,643,32"/>
 <area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="707,31,757,57"/>
-<area shape="rect" id="node6" href="$game__run__test_8h.html#ab23bb6e058f04d7582cfac8331f1ca4f" title="TEST" alt="" coords="704,81,760,108"/>
-<area shape="rect" id="node9" href="$labyrinth__displayhandler__test_8h.html#ab24158413ee22337f9e810564868a3fb" title="multiple executions with snkae moving " alt="" coords="587,107,643,133"/>
+<area shape="rect" id="node6" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="704,81,760,108"/>
+<area shape="rect" id="node9" href="$_labyrinth__display_handler_8h.html#a89012c4cfb0e9717bef01ecc9aa02e33" title="multiple executions with snkae moving " alt="" coords="587,107,643,133"/>
 </map>
