@@ -346,7 +346,7 @@ TEST(Snake_move, testIntersection2)
     }
 
     labyrinth.initBall();
-    labyrinth.remPoint(labyrinth.ball.getCoords());
+    labyrinth.rmPoint(labyrinth.ball.getCoords());
     Point ballCoords;
     ballCoords.x = 6;
     ballCoords.y = 1;
@@ -470,7 +470,7 @@ TEST(Snake_move, testIntersection4)
     }
 
     labyrinth.initBall();
-    labyrinth.remPoint(labyrinth.ball.getCoords());
+    labyrinth.rmPoint(labyrinth.ball.getCoords());
     Point ballCoords;
     ballCoords.x = 10;
     ballCoords.y = 1;

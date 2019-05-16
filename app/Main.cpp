@@ -5,20 +5,24 @@
 
 int main()
 {
+    /*
+     * Block initializing ncurses console in the current console window,
+     * and setting some parameters
+     */
     initscr();
     start_color();
-
-    /*MainMenu main;
-    main.draw();
-    */
+    noecho();
+    nodelay(stdscr, true);
+    curs_set(0);
+    keypad(stdscr, true);
 
     Game g;
     g.init(70, 150, -1);
-    int retVal = g.run();
+    int gameReturn = g.run();
 
     refresh();
     endwin();
-    switch(retVal)
+    switch(gameReturn)
     {
         case 1:
         {
