@@ -23,6 +23,8 @@ bool Ball::init(Point fieldSize)
         rng.seed(seed_val);
         distributionX = *(new std::uniform_int_distribution<int>(1, fieldSize.x - 1));
         distributionY = *(new std::uniform_int_distribution<int>(1, fieldSize.y - 1));
+        position.x = -1;
+        position.y = -1;
         position.style.letter = '0';
         return true;
     }

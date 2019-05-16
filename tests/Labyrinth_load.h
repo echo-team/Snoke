@@ -1,6 +1,14 @@
 #ifndef LABYRINTH_LOAD_H
 #define LABYRINTH_LOAD_H
 
+/**
+ * Prerequisites:
+ *     tested Snake.init
+ *     tested Labyrinth.setLabyrinth
+ *     tested Labyrinth.addSnake
+ *     tested Labyrinth.displayHandler
+ */
+
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 

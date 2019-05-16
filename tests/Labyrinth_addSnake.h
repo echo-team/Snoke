@@ -1,15 +1,15 @@
 #ifndef LABYRINTH_ADDSNAKE_H
 #define LABYRINTH_ADDSNAKE_H
 
+/**
+ * Prerequisites:
+ *     tested Snake.init
+ *     tested Labyrinth.setLabyrinth
+ */
+
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 #include <iostream>
-
-/**
- * Prerequisites:
- *     tested Labyrinth.setLabyrinth
- *     tested Snake.init
- */
 
 /**
  * @brief method runs with normal parameters

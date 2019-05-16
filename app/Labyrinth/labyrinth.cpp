@@ -72,7 +72,6 @@ bool Labyrinth::initBall()
 {
     this->ball.init(gameFieldSize);
     bool flag = this->generateBall();
-    this->addPoint(this->ball.getCoords());
     return flag;
 }
 
@@ -376,6 +375,7 @@ bool Labyrinth::load(char name[MAXLINE])
  */
 bool Labyrinth::generateBall()
 {
+    this->change.rmPoint(this->ball.getCoords());
     Point chance;
     /*
      * Generate numbers until u get a free spot
@@ -391,5 +391,6 @@ bool Labyrinth::generateBall()
         }
     }
     ball.setCoords(chance);
+    this->change.addPoint(this->ball.getCoords());
     return true;
 }

@@ -1,6 +1,14 @@
 #ifndef SNAKE_MOVE_H
 #define SNAKE_MOVE_H
 
+/**
+ * Prerequisites:
+ *     tested Snake.init
+ *     tested Snake.setDirection
+ *     tested Labyrinth.setLabyrinth
+ *     tested Labyrinth.addSnake
+ */
+
 #include "shared.h"
 #include "Snake/snake.h"
 #include "Labyrinth/labyrinth.h"

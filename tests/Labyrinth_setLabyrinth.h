@@ -1,7 +1,6 @@
 #ifndef LABYRINTH_SETLABYRINTH_H
 #define LABYRINTH_SETLABYRINTH_H
 
-
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 

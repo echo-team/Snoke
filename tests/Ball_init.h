@@ -5,11 +5,6 @@
 #include "Ball/ball.h"
 
 /**
- * Prerequisites:
- *     tested Labyrinth.setLabyrinth
- */
-
-/**
  * @brief Ball class object can be created
  */
 TEST(Ball_init, test0){

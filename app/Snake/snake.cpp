@@ -194,9 +194,7 @@ bool Snake::move(Labyrinth* labyrinth)
             {
                 bCoords.x = -1;
                 bCoords.y = -1;
-                labyrinth->change.rmPoint(labyrinth->ball.getCoords());
                 labyrinth->generateBall();
-                labyrinth->change.addPoint(labyrinth->ball.getCoords());
                 break;
             }
             default:

@@ -1,6 +1,11 @@
 #ifndef LABYRINTH_GENERATEBALL_H
 #define LABYRINTH_GENERATEBALL_H
 
+/**
+ * Prerequisites:
+ *     tested Labyrinth.setLabyrinth
+ */
+
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 
@@ -18,6 +23,12 @@ TEST(Labyrinth_generateBall, test1) {
     }
 
     retVal = labyrinth.initBall();
+    if(!retVal)
+    {
+        FAIL();
+    }
+
+    retVal = labyrinth.generateBall();
     if(retVal)
     {
         SUCCEED();
