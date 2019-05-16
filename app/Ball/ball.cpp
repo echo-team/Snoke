@@ -19,8 +19,8 @@ bool Ball::init(Point fieldSize)
 {
     if(fieldSize.x > 2 && fieldSize.y > 2)
     {
-        seed_val = time(NULL);
-        randomEngine.seed(seed_val);
+        seed = time(NULL);
+        randomEngine.seed(seed);
         distributionX = *(new std::uniform_int_distribution<int>(1, fieldSize.x - 1));
         distributionY = *(new std::uniform_int_distribution<int>(1, fieldSize.y - 1));
         position.x = -1;

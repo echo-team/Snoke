@@ -35,7 +35,7 @@ class Ball
     private:
         Point position;
         std::mt19937 randomEngine;
-        uint32_t seed_val;
+        uint32_t seed;
     public:
         std::uniform_int_distribution<int> distributionX;
         std::uniform_int_distribution<int> distributionY;
