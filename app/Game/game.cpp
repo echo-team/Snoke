@@ -90,7 +90,8 @@ int Game::run()
     Point startPos;
     startPos.x = 1;
     startPos.y = 1;
-    int dir = 1, len = 5;
+    int dir = 1;
+    int len = 5;
     if(!initSnake(startPos, dir, len))
     {
         return 1;
@@ -112,29 +113,47 @@ int Game::run()
         switch (command)
         {
             case ERR:
+            {
                 break;
+            }
             case KEY_UP:
+            {
                 snake.setDirection(MVUP);
                 break;
+            }
             case KEY_DOWN:
+            {
                 snake.setDirection(MVDOWN);
                 break;
+            }
             case KEY_LEFT:
+            {
                 snake.setDirection(MVLEFT);
                 break;
+            }
             case KEY_RIGHT:
+            {
                 snake.setDirection(MVRIGHT);
                 break;
+            }
             case 'q':
+            {
                 flag = true;
                 break;
+            }
             case 's':
+            {
                 char fName[] = "testsave";
                 labyrinth.save(fName);
                 labyrinth.displayHandler();
                 mSleep(speed * 2);
                 labyrinth.displayHandler(DISPFULL);
                 continue;
+            }
+            default:
+            {
+                break;
+            }
         }
         if (flag)
         {

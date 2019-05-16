@@ -88,17 +88,29 @@ bool Snake::move(Labyrinth* labyrinth)
     switch (direction)
     {
         case MVRIGHT:
+        {
             frCoords.x++;
             break;
+        }
         case MVLEFT:
+        {
             frCoords.x--;
             break;
+        }
         case MVDOWN:
+        {
             frCoords.y++;
             break;
+        }
         case MVUP:
+        {
             frCoords.y--;
             break;
+        }
+        default:
+        {
+            return false;
+        }
     }
 
     /*
@@ -113,27 +125,40 @@ bool Snake::move(Labyrinth* labyrinth)
     switch (checkIntersection(frCoords, labyrinth))
     {
         case WALLUP:
+        {
             frCoords.y = gameFieldSize.y - 2;
             wallFlag = 1;
             break;
+        }
         case WALLBOT:
+        {
             frCoords.y = 1;
             wallFlag = 1;
             break;
+        }
         case WALLLEFT:
+        {
             frCoords.x = gameFieldSize.x - 2;
             wallFlag = 1;
             break;
+        }
         case WALLRIGHT:
+        {
             frCoords.x = 1;
             wallFlag = 1;
             break;
+        }
         case COLL:
+        {
             moveBack(bCoords, &labyrinth->change);
             return true;
+        }
         case NOCOLL:
+        {
             break;
+        }
         case BALL:
+        {
             bCoords.x = -1;
             bCoords.y = -1;
             //Change to a single call to labyrinth(like labyrinth->newBall())
@@ -141,8 +166,11 @@ bool Snake::move(Labyrinth* labyrinth)
             labyrinth->generateBall();
             labyrinth->change.addPoint(labyrinth->ball.getCoords());
             break;
+        }
         default:
+        {
             break;
+        }
     }
 
     /*
@@ -154,19 +182,27 @@ bool Snake::move(Labyrinth* labyrinth)
         switch (checkIntersection(frCoords, labyrinth))
         {
             case COLL:
+            {
                 moveBack(bCoords, &labyrinth->change);
                 return true;
+            }
             case NOCOLL:
+            {
                 break;
+            }
             case BALL:
+            {
                 bCoords.x = -1;
                 bCoords.y = -1;
                 labyrinth->change.rmPoint(labyrinth->ball.getCoords());
                 labyrinth->generateBall();
                 labyrinth->change.addPoint(labyrinth->ball.getCoords());
                 break;
+            }
             default:
+            {
                 break;
+            }
         }
     }
 

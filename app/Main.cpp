@@ -25,6 +25,7 @@ int main()
             std::cout << "Incorrect Snake initialization, failed at function Game::initSnake" << std::endl;
             return 1;
         }
+        default:
+            return 0;
     }
-    return 0;
 }
