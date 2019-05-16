@@ -58,7 +58,7 @@ bool Labyrinth::setLabyrinth(Point fieldSize)
         this->dispHandler.prevDisplayMethod = DISPPART;
         this->snake = NULL;
 
-        change.initChange();
+        change.initQueue();
         return true;
     }
     return false;

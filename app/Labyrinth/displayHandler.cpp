@@ -1,6 +1,9 @@
 #include "labyrinth.h"
 
-
+/**
+ * @brief   handler for choosing the approriate display method in the current environment
+ * @param   displayMethod   - a method that is beeing force-called (<0 if none)
+ */
 void DisplayHandler::displayHandler(int displayMethod)
 {
     /*
