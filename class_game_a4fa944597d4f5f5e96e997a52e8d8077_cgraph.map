@@ -4,5 +4,5 @@
 <area shape="rect" id="node4" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title="The method to get the snake whole body coordinates(x ,y) without giving the direct access..." alt="" coords="367,5,494,32"/>
 <area shape="rect" id="node5" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="547,81,666,108"/>
 <area shape="rect" id="node6" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="363,107,498,133"/>
-<area shape="rect" id="node7" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="363,157,498,184"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb" title="Remove Point from the labyrinth. " alt="" coords="367,157,495,184"/>
 </map>

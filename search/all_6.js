@@ -12,7 +12,7 @@ var searchData=
   ['getcoords',['getCoords',['../class_ball.html#a14b9a607402be58e7a0a0ab053df5f82',1,'Ball::getCoords()'],['../class_snake.html#a62fa59de03f60c23f6d1100c53594d71',1,'Snake::getCoords()']]],
   ['getdirection',['getDirection',['../class_snake.html#a2656a9a4490cbb70d305c323269cc5bd',1,'Snake']]],
   ['getheadcoords',['getHeadCoords',['../class_snake.html#a0235581bc3d6399f4fd2287669f93cee',1,'Snake']]],
+  ['getrandomengine',['getRandomEngine',['../class_ball.html#a3d272e6832cf61715f22c6148b30f125',1,'Ball']]],
   ['getrmqueue',['getRmQueue',['../class_change.html#a3b3942c353553cbc635c6bf7b5150916',1,'Change']]],
-  ['getrng',['getRng',['../class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3',1,'Ball']]],
   ['getsize',['getSize',['../class_logo.html#aeeefce0ee601c896c38b929b7a355616',1,'Logo']]]
 ];

@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['what_20is_20snoke_3f',['What is Snoke?',['../md__home_travis_build_echo-team__snoke__r_e_a_d_m_e.html',1,'']]],
-  ['wallbot',['WALLBOT',['../snake_8h.html#ab87d50d453d70cca9614c43e3430b5a2',1,'snake.h']]],
-  ['wallleft',['WALLLEFT',['../snake_8h.html#a62613e4063ee9c0c88bfef1dd243c105',1,'snake.h']]],
-  ['wallright',['WALLRIGHT',['../snake_8h.html#a4e890b2780a9e5fa8a8782ce3638e08f',1,'snake.h']]],
-  ['wallup',['WALLUP',['../snake_8h.html#a9d012a7892c18d533074726de6b7a90f',1,'snake.h']]],
-  ['widget',['Widget',['../class_widget.html',1,'Widget'],['../struct_navigate_unit.html#a04a97a78df45d0f2268b8352f64d43f5',1,'NavigateUnit::widget()']]],
-  ['width',['width',['../class_menu.html#a30ec519ffccb75388150c64175c4959b',1,'Menu']]],
-  ['wipechange',['wipeChange',['../class_change.html#a173ca9db2d21990210bad772f3ac7e55',1,'Change']]]
+  ['unfocus',['unfocus',['../class_widget.html#a65f349812facca8302957a83b161a840',1,'Widget::unfocus()'],['../class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c',1,'Menu::unfocus()']]],
+  ['units',['units',['../class_navigator.html#ad830f88cb2d1b38f7ff49797e244892d',1,'Navigator']]],
+  ['updatelabyrinth',['updateLabyrinth',['../class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a',1,'Labyrinth']]]
 ];

@@ -15,5 +15,6 @@ var searchData=
   ['load',['load',['../class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6',1,'Labyrinth']]],
   ['logo',['Logo',['../class_logo.html',1,'Logo'],['../class_logo.html#a1cdb59eff67441b73e9d0450e6a88921',1,'Logo::Logo()']]],
   ['logo_2ecpp',['logo.cpp',['../logo_8cpp.html',1,'']]],
-  ['logo_2eh',['logo.h',['../logo_8h.html',1,'']]]
+  ['logo_2eh',['logo.h',['../logo_8h.html',1,'']]],
+  ['loops',['loops',['../class_game.html#a78ac3b2a71213f00e02cca7b9ea47f2a',1,'Game']]]
 ];

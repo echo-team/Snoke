@@ -1,12 +1,12 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$class_game.html#aff91353d82ba134b7cf7b82c43814b8d" title="Initializes game. " alt="" coords="109,81,192,108"/>
+<area shape="rect" id="node2" href="$class_game.html#a808d86ad76b84657f62d3ffc8e9080c7" title="Initializes game. " alt="" coords="109,81,192,108"/>
 <area shape="rect" id="node7" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="109,335,192,361"/>
 <area shape="rect" id="node3" href="$class_labyrinth.html#ae6ae7b625e1ea3b1ae481bfa86bacd47" title="Sets the default values fro the variables as well as generating the labyritnh array with borders..." alt="" coords="248,5,403,32"/>
 <area shape="rect" id="node5" href="$class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46" title="The method to change the game speed without giving the direct access and some error handling..." alt="" coords="265,56,385,83"/>
-<area shape="rect" id="node6" href="$class_game.html#a59eb7ce22130197220c918ea69e92150" title="Game::setCycles" alt="" coords="263,107,387,133"/>
-<area shape="rect" id="node4" href="$class_change.html#a6ddd7bac4e89f1c80b1c08f86bdf7e2e" title="Initializes change array, by resetting it. " alt="" coords="493,5,630,32"/>
+<area shape="rect" id="node6" href="$class_game.html#a692c0698c6f5f42a93f2d1ca25067284" title="sets loops with some error holding " alt="" coords="266,107,385,133"/>
+<area shape="rect" id="node4" href="$class_change.html#a298fdf2c746248234504a01fcf26fce7" title="Initializes change array, by resetting it. " alt="" coords="496,5,627,32"/>
 <area shape="rect" id="node8" href="$game_8cpp.html#acde88fa8db9a7808948c1f7c7226b899" title="resizeHandler" alt="" coords="274,461,377,488"/>
-<area shape="rect" id="node11" href="$class_game.html#a0e8435182e77e921b5ba0471a8bfb20d" title="Snake initialization with labyrinth updating. " alt="" coords="266,613,385,640"/>
+<area shape="rect" id="node11" href="$class_game.html#a4fa944597d4f5f5e96e997a52e8d8077" title="Snake initialization with labyrinth updating. " alt="" coords="266,613,385,640"/>
 <area shape="rect" id="node18" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="264,360,387,387"/>
 <area shape="rect" id="node28" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="241,740,410,767"/>
 <area shape="rect" id="node41" href="$class_snake.html#acf38f64a411f6c4583e0df5e5570242b" title="The method to set the direction where the snake is heading. " alt="" coords="257,791,394,817"/>
@@ -20,19 +20,19 @@
 <area shape="rect" id="node14" href="$class_snake.html#a62fa59de03f60c23f6d1100c53594d71" title="The method to get the snake whole body coordinates(x ,y) without giving the direct access..." alt="" coords="749,563,875,589"/>
 <area shape="rect" id="node15" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="1006,461,1125,488"/>
 <area shape="rect" id="node16" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="745,664,879,691"/>
-<area shape="rect" id="node17" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="745,715,879,741"/>
+<area shape="rect" id="node17" href="$class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb" title="Remove Point from the labyrinth. " alt="" coords="748,715,876,741"/>
 <area shape="rect" id="node19" href="$class_ball.html#a1907f13fdfb320a19180efec2a56e39c" title="Initialization. " alt="" coords="527,411,596,437"/>
 <area shape="rect" id="node20" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="484,360,639,387"/>
 <area shape="rect" id="node21" href="$class_change.html#ab2c70fe5eadcf514a7486ae665a48934" title="adds Point to removal array if it fits the criteria " alt="" coords="752,259,872,285"/>
 <area shape="rect" id="node22" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="756,208,868,235"/>
-<area shape="rect" id="node23" href="$class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3" title="Ball::getRng" alt="" coords="765,411,859,437"/>
+<area shape="rect" id="node23" href="$class_ball.html#a3d272e6832cf61715f22c6148b30f125" title="Ball::getRandomEngine" alt="" coords="733,411,891,437"/>
 <area shape="rect" id="node24" href="$class_change.html#a7c2513f30bc0e06d3685223c51bbc116" title="Check if the Point is in the remove queue. " alt="" coords="740,461,884,488"/>
 <area shape="rect" id="node25" href="$class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b" title="Check if Points is in the addition queue. " alt="" coords="739,512,885,539"/>
 <area shape="rect" id="node26" href="$class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="756,360,868,387"/>
 <area shape="rect" id="node27" href="$class_change.html#abc4f4f804d28d110a9a1990e0ef1ec60" title="adds Point to addition array if it fits the criteria " alt="" coords="749,56,875,83"/>
 <area shape="rect" id="node29" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="474,740,649,767"/>
 <area shape="rect" id="node32" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="485,867,637,893"/>
-<area shape="rect" id="node35" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="459,968,664,995"/>
+<area shape="rect" id="node35" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="459,968,664,995"/>
 <area shape="rect" id="node30" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="1220,917,1372,944"/>
 <area shape="rect" id="node31" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="1219,816,1373,843"/>
 <area shape="rect" id="node33" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="733,917,891,944"/>

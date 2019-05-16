@@ -1,7 +1,7 @@
 <map id="DisplayHandler::displayFull" name="DisplayHandler::displayFull">
 <area shape="rect" id="node2" href="$class_display_handler.html#a6ee373ad3e3318633461be0851768248" title="got an extra stimulus for displaying in a certain method " alt="" coords="235,31,434,57"/>
 <area shape="rect" id="node9" href="$class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c" title="No extra stimulus, displaying the default way. " alt="" coords="242,81,427,108"/>
-<area shape="rect" id="node3" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="483,56,688,83"/>
+<area shape="rect" id="node3" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="483,56,688,83"/>
 <area shape="rect" id="node4" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="737,56,906,83"/>
 <area shape="rect" id="node5" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="955,31,1037,57"/>
 <area shape="rect" id="node8" href="$_labyrinth__display_handler_8h.html#a0ddb043fcfa38053fb421a1067120222" title="method runs with noraml parameters " alt="" coords="968,81,1024,108"/>

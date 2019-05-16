@@ -7,7 +7,7 @@ var class_labyrinth =
     [ "initBall", "class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65", null ],
     [ "isFree", "class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277", null ],
     [ "load", "class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6", null ],
-    [ "remPoint", "class_labyrinth.html#a24d98083c011da23695425ec69d583a5", null ],
+    [ "rmPoint", "class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb", null ],
     [ "save", "class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007", null ],
     [ "setLabyrinth", "class_labyrinth.html#ae6ae7b625e1ea3b1ae481bfa86bacd47", null ],
     [ "sizeHandler", "class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6", null ],

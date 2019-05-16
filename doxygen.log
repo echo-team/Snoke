@@ -28,7 +28,6 @@ Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/app
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Ball
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/bin
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Change
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Common
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Game
@@ -78,8 +77,8 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
-Prepro/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
-cessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp./home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+..
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
@@ -269,10 +268,10 @@ Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Game_init.h...
 Generating call graph for function TEST
-Generating call graph for functio/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
-n TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
+Generating call graph for fun/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
+ction TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Game_run.h...
 Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Labyrinth_addSnake.h...
@@ -322,7 +321,7 @@ Generating group documentation...
 Generating class documentation...
 Generating docs for compound Ball...
 Generating caller graph for function Ball::getCoords
-Generating caller graph for function Ball::getRng
+Generating caller graph for function Ball::getRandomEngine
 Generating caller graph for function Ball::init
 Generating caller graph for function Ball::setCoords
 Generating docs for compound Change...
@@ -330,7 +329,7 @@ Generating caller graph for function Change::addPoint
 Generating caller graph for function Change::getAddQueue
 Generating caller graph for function Change::getRmQueue
 Generating caller graph for function Change::inAddQueue
-Generating caller graph for function Change::initChange
+Generating caller graph for function Change::initQueue
 Generating caller graph for function Change::inRmQueue
 Generating caller graph for function Change::rmPoint
 Generating docs for compound DisplayHandler...
@@ -348,7 +347,8 @@ Generating docs for compound Game...
 Generating call graph for function Game::init
 Generating caller graph for function Game::init
 Generating call graph for function Game::initSnake
-Ge/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:372: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+Generating caller graph for function Game::initSnake
+Generating call g/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:79: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
   parameter 'fieldSize'
@@ -409,10 +409,9 @@ Ge/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:372: warning: a
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
 /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
   parameter 'index'
-nerating caller graph for function Game::initSnake
-Generating call graph for function Game::run
+raph for function Game::run
 Generating caller graph for function Game::run
-Generating caller graph for function Game::setCycles
+Generating caller graph for function Game::setLoops
 Generating caller graph for function Game::setSpeed
 Generating docs for compound Labyrinth...
 Generating call graph for function Labyrinth::addPoint
@@ -427,7 +426,7 @@ Generating call graph for function Labyrinth::initBall
 Generating caller graph for function Labyrinth::initBall
 Generating caller graph for function Labyrinth::isFree
 Generating caller graph for function Labyrinth::load
-Generating caller graph for function Labyrinth::remPoint
+Generating caller graph for function Labyrinth::rmPoint
 Generating caller graph for function Labyrinth::save
 Generating call graph for function Labyrinth::setLabyrinth
 Generating caller graph for function Labyrinth::setLabyrinth
@@ -789,5 +788,5 @@ Patching output file 66/69
 Patching output file 67/69
 Patching output file 68/69
 Patching output file 69/69
-lookup cache used 544/65536 hits=5216 misses=651
+lookup cache used 543/65536 hits=5210 misses=650
 finished...

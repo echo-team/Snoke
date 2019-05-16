@@ -122,7 +122,7 @@ Collaboration diagram for Ball:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_ball__coll__graph.png" border="0" usemap="#_ball_coll__map" alt="Collaboration graph"/></div>
 <map name="_ball_coll__map" id="_ball_coll__map">
-<area shape="rect" id="node5" href="class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="374,221,425,248"/><area shape="rect" id="node7" href="class_point_style.html" title="Style of the cell in console window. " alt="" coords="416,109,497,136"/></map>
+<area shape="rect" id="node5" href="class_point.html" title="Coordinates and style of the cell in console window. " alt="" coords="390,221,441,248"/><area shape="rect" id="node7" href="class_point_style.html" title="Style of the cell in console window. " alt="" coords="432,109,513,136"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af42e561b11017035fc8a68ce35c99087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#af42e561b11017035fc8a68ce35c99087">setCoords</a> (<a class="el" href="class_point.html">Point</a> p)</td></tr>
 <tr class="memdesc:af42e561b11017035fc8a68ce35c99087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets coordinates of the ball to given if they are correct.  <a href="#af42e561b11017035fc8a68ce35c99087">More...</a><br/></td></tr>
 <tr class="separator:af42e561b11017035fc8a68ce35c99087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9f325d88a5f91dffc4572cd6b7d0d3"><td class="memItemLeft" align="right" valign="top">std::mt19937 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a8b9f325d88a5f91dffc4572cd6b7d0d3">getRng</a> ()</td></tr>
-<tr class="separator:a8b9f325d88a5f91dffc4572cd6b7d0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d272e6832cf61715f22c6148b30f125"><td class="memItemLeft" align="right" valign="top">std::mt19937 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a3d272e6832cf61715f22c6148b30f125">getRandomEngine</a> ()</td></tr>
+<tr class="separator:a3d272e6832cf61715f22c6148b30f125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,17 +152,17 @@ Public Attributes</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:abd10a53eda37a2c541ad5dfbbea27f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#abd10a53eda37a2c541ad5dfbbea27f81">position</a></td></tr>
 <tr class="separator:abd10a53eda37a2c541ad5dfbbea27f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c68e21e0801b657b980380ab6a4bb2"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#ae3c68e21e0801b657b980380ab6a4bb2">rng</a></td></tr>
-<tr class="separator:ae3c68e21e0801b657b980380ab6a4bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e67b032167a7d9db9630bc5ab2e613"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#ad6e67b032167a7d9db9630bc5ab2e613">seed_val</a></td></tr>
-<tr class="separator:ad6e67b032167a7d9db9630bc5ab2e613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269ee447b5a07d27e4cfb90a8e49e637"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a269ee447b5a07d27e4cfb90a8e49e637">randomEngine</a></td></tr>
+<tr class="separator:a269ee447b5a07d27e4cfb90a8e49e637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56658597eb728ce1dcaee2bb7e1b5553"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a56658597eb728ce1dcaee2bb7e1b5553">seed</a></td></tr>
+<tr class="separator:a56658597eb728ce1dcaee2bb7e1b5553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> entity of the game. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">position</td><td>- Coordinates(x, y) of a <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> in the Console window </td></tr>
-    <tr><td class="paramname">rng</td><td>- variable, responible for the 'random' during the game </td></tr>
+    <tr><td class="paramname">randomEngine</td><td>- variable, responible for the 'random' during the game </td></tr>
     <tr><td class="paramname">seed_val</td><td>- value 'feeded' to the 'random' generator </td></tr>
     <tr><td class="paramname">distributionX</td><td>- an equally likely int distribution for x coordinate of a <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> </td></tr>
     <tr><td class="paramname">distributionY</td><td>- an equally likely int distribution for y coordinate of a <a class="el" href="class_ball.html" title="Describes the Ball entity of the game. ">Ball</a> </td></tr>
@@ -200,12 +200,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a8b9f325d88a5f91dffc4572cd6b7d0d3"></a>
+<a class="anchor" id="a3d272e6832cf61715f22c6148b30f125"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::mt19937 * Ball::getRng </td>
+          <td class="memname">std::mt19937 * Ball::getRandomEngine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -218,9 +218,9 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_ball_a8b9f325d88a5f91dffc4572cd6b7d0d3_icgraph.png" border="0" usemap="#class_ball_a8b9f325d88a5f91dffc4572cd6b7d0d3_icgraph" alt=""/></div>
-<map name="class_ball_a8b9f325d88a5f91dffc4572cd6b7d0d3_icgraph" id="class_ball_a8b9f325d88a5f91dffc4572cd6b7d0d3_icgraph">
-<area shape="rect" id="node2" href="class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="149,56,304,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="352,56,475,83"/><area shape="rect" id="node7" href="_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="536,5,592,32"/><area shape="rect" id="node8" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="364,107,463,133"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="523,56,605,83"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="656,31,707,57"/><area shape="rect" id="node6" href="_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="653,81,709,108"/><area shape="rect" id="node9" href="_labyrinth__display_handler_8h.html#a89012c4cfb0e9717bef01ecc9aa02e33" title="multiple executions with snake moving " alt="" coords="536,107,592,133"/></map>
+<div class="center"><img src="class_ball_a3d272e6832cf61715f22c6148b30f125_icgraph.png" border="0" usemap="#class_ball_a3d272e6832cf61715f22c6148b30f125_icgraph" alt=""/></div>
+<map name="class_ball_a3d272e6832cf61715f22c6148b30f125_icgraph" id="class_ball_a3d272e6832cf61715f22c6148b30f125_icgraph">
+<area shape="rect" id="node2" href="class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="213,56,368,83"/><area shape="rect" id="node3" href="class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="416,56,539,83"/><area shape="rect" id="node7" href="_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="600,5,656,32"/><area shape="rect" id="node8" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="428,107,527,133"/><area shape="rect" id="node4" href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="587,56,669,83"/><area shape="rect" id="node5" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="720,31,771,57"/><area shape="rect" id="node6" href="_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="717,81,773,108"/><area shape="rect" id="node9" href="_labyrinth__display_handler_8h.html#a89012c4cfb0e9717bef01ecc9aa02e33" title="multiple executions with snake moving " alt="" coords="600,107,656,133"/></map>
 </div>
 </p>
 
@@ -349,7 +349,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae3c68e21e0801b657b980380ab6a4bb2"></a>
+<a class="anchor" id="a269ee447b5a07d27e4cfb90a8e49e637"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -357,7 +357,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::mt19937 Ball::rng</td>
+          <td class="memname">std::mt19937 Ball::randomEngine</td>
         </tr>
       </table>
   </td>
@@ -371,7 +371,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad6e67b032167a7d9db9630bc5ab2e613"></a>
+<a class="anchor" id="a56658597eb728ce1dcaee2bb7e1b5553"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -379,7 +379,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t Ball::seed_val</td>
+          <td class="memname">uint32_t Ball::seed</td>
         </tr>
       </table>
   </td>

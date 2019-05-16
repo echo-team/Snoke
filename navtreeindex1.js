@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"game_8h.html":[2,0,0,3,1],
 "game_8h_source.html":[2,0,0,3,1],
 "globals.html":[2,1,0],
 "globals_func.html":[2,1,1],

@@ -1,9 +1,9 @@
 <map id="Labyrinth::displayHandler" name="Labyrinth::displayHandler">
 <area shape="rect" id="node2" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="743,49,918,76"/>
 <area shape="rect" id="node8" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="251,201,403,228"/>
-<area shape="rect" id="node11" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="DisplayHandler::displayHandler" alt="" coords="224,125,429,152"/>
+<area shape="rect" id="node11" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="224,125,429,152"/>
 <area shape="rect" id="node3" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="985,132,1137,159"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#a24d98083c011da23695425ec69d583a5" title="Remove Point from the labyrinth. " alt="" coords="994,5,1129,32"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb" title="Remove Point from the labyrinth. " alt="" coords="997,5,1125,32"/>
 <area shape="rect" id="node5" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="984,195,1139,221"/>
 <area shape="rect" id="node6" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="994,56,1129,83"/>
 <area shape="rect" id="node7" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="1187,56,1306,83"/>
