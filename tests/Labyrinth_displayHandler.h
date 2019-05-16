@@ -90,7 +90,7 @@ TEST(Labyrinth_displayHandler, test2)
 }
 
 /**
- * @brief multiple executions with snkae moving
+ * @brief multiple executions with snake moving
  */
 TEST(Labyrinth_displayHandler, test3)
 {
