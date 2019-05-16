@@ -25,7 +25,7 @@ extern Point gameFieldSize;
  * @class Ball ball.h
  * @brief   Describes the Ball entity of the game
  * @prop    position           - Coordinates(x, y) of a Ball in the Console window
- * @prop    rng                - variable, responible for the 'random' during the game
+ * @prop    randomEngine       - variable, responible for the 'random' during the game
  * @prop    seed_val           - value 'feeded' to the 'random' generator
  * @prop    distributionX      - an equally likely int distribution for x coordinate of a Ball
  * @prop    distributionY      - an equally likely int distribution for y coordinate of a Ball
@@ -34,7 +34,7 @@ class Ball
 {
     private:
         Point position;
-        std::mt19937 rng;
+        std::mt19937 randomEngine;
         uint32_t seed_val;
     public:
         std::uniform_int_distribution<int> distributionX;
@@ -42,6 +42,6 @@ class Ball
         bool init(Point dim);
         Point getCoords();
         bool setCoords(Point p);
-        std::mt19937* getRng();
+        std::mt19937* getRandomEngine();
 };
 #endif

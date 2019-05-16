@@ -76,6 +76,33 @@ bool Labyrinth::initBall()
 }
 
 /**
+ * @brief   Generate the Ball
+ * @param   labyrinth  - the current state of the labyrinth object for intersection checking
+ * @return             - mark of whether the ball was successfully generated
+ */
+bool Labyrinth::generateBall()
+{
+    this->change.rmPoint(this->ball.getCoords());
+    Point chance;
+    /*
+     * Generate numbers until u get a free spot
+     */
+    while (1)
+    {
+        chance.x = ball.distributionX(*ball.getRandomEngine());
+        chance.y = ball.distributionY(*ball.getRandomEngine());
+        if ( (this->isFree(chance) == 1 || this->change.inRmQueue(chance))
+         && !this->change.inAddQueue(chance))
+        {
+            break;
+        }
+    }
+    ball.setCoords(chance);
+    this->change.addPoint(this->ball.getCoords());
+    return true;
+}
+
+/**
  * @brief   Adding snake to the laburinth and getting the host snake(firest added snake)
  * @param   aSnake - a snake to add
  * @return         - mark of succesful addition
@@ -366,31 +393,4 @@ bool Labyrinth::load(char name[MAXLINE])
     snprintf(strout, sizeof(strout), "Couldn't load from %s", name);
     mvaddstr(gameFieldSize.y / 2, 5, strout);
     return 0;
-}
-
-/**
- * @brief   Generate the Ball
- * @param   labyrinth  - the current state of the labyrinth object for intersection checking
- * @return             - mark of whether the ball was successfully generated
- */
-bool Labyrinth::generateBall()
-{
-    this->change.rmPoint(this->ball.getCoords());
-    Point chance;
-    /*
-     * Generate numbers until u get a free spot
-     */
-    while (1)
-    {
-        chance.x = ball.distributionX(*ball.getRng());
-        chance.y = ball.distributionY(*ball.getRng());
-        if ( (this->isFree(chance) == 1 || this->change.inRmQueue(chance))
-         && !this->change.inAddQueue(chance))
-        {
-            break;
-        }
-    }
-    ball.setCoords(chance);
-    this->change.addPoint(this->ball.getCoords());
-    return true;
 }

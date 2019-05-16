@@ -20,7 +20,7 @@ bool Ball::init(Point fieldSize)
     if(fieldSize.x > 2 && fieldSize.y > 2)
     {
         seed_val = time(NULL);
-        rng.seed(seed_val);
+        randomEngine.seed(seed_val);
         distributionX = *(new std::uniform_int_distribution<int>(1, fieldSize.x - 1));
         distributionY = *(new std::uniform_int_distribution<int>(1, fieldSize.y - 1));
         position.x = -1;
@@ -55,7 +55,7 @@ bool Ball::setCoords(Point p)
     return false;
 }
 
-std::mt19937* Ball::getRng()
+std::mt19937* Ball::getRandomEngine()
 {
-    return &this->rng;
+    return &this->randomEngine;
 }
