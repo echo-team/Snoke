@@ -6,7 +6,17 @@
 
 TEST(Game_run, test1)
 {
+    /*
+     * Block initializing ncurses console in the current console window,
+     * and setting some parameters
+     */
     initscr();
+    start_color();
+    noecho();
+    nodelay(stdscr, true);
+    curs_set(0);
+    keypad(stdscr, true);
+
     Game game;
     int size = 100;
     int speed = 150;
