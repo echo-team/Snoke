@@ -1,19 +1,19 @@
 /**
   * Include test headers here
   */
-#include "common_test.h"
-#include "snake_init_test.h"
-#include "snake_setdirection_test.h"
-#include "labyrinth_setlabyrinth_test.h"
-#include "labyrinth_addsnake_test.h"
-#include "ball_init_test.h"
-#include "labyrinth_generateball_test.h"
-#include "snake_move_test.h"
-#include "game_init_test.h"
-#include "labyrinth_displayhandler_test.h"
-#include "labyrinth_save_test.h"
-#include "labyrinth_load_test.h"
-#include "game_run_test.h"
+#include "Common_misc.h"
+#include "Snake_init.h"
+#include "Snake_setDirection.h"
+#include "Labyrinth_setLabyrinth.h"
+#include "Labyrinth_addSnake.h"
+#include "Ball_init.h"
+#include "Labyrinth_generateBal.h"
+#include "Snake_move.h"
+#include "Game_init.h"
+#include "Labyrinth_displayHandler.h"
+#include "Labyrinth_save.h"
+#include "Labyrinth_load.h"
+#include "Game_run.h"
 
 #include <gtest/gtest.h>
 

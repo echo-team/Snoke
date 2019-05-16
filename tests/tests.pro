@@ -19,26 +19,27 @@ LIBS += -lgcov
 LIBS += -lncurses
 
 
-HEADERS += snake_init_test.h \
-    ball_init_test.h \
-    common_test.h \
-    game_init_test.h \
-    game_run_test.h \
-    labyrinth_addsnake_test.h \
-    labyrinth_displayhandler_test.h \
-    labyrinth_generateball_test.h \
-    labyrinth_load_test.h \
-    labyrinth_save_test.h \
-    labyrinth_setlabyrinth_test.h \
+HEADERS += \
+    Ball_init.h \
+    Common_misc.h \
+    Game_init.h \
+    Game_run.h \
+    Labyrinth_addSnake.h \
+    Labyrinth_displayHandler.h \
+    Labyrinth_generateBal.h \
+    Labyrinth_load.h \
+    Labyrinth_save.h \
+    Labyrinth_setLabyrinth.h \
+    Snake_init.h \
+    Snake_move.h \
+    Snake_setDirection.h \
     shared.h \
     ../app/Change/change.h \
     ../app/Common/common.h \
     ../app/Ball/ball.h \
     ../app/Game/game.h \
     ../app/Labyrinth/labyrinth.h \
-    ../app/Snake/snake.h \
-    snake_move_test.h \
-    snake_setdirection_test.h
+    ../app/Snake/snake.h
 
 SOURCES += main.cpp \
     ../app/Change/change.cpp \
