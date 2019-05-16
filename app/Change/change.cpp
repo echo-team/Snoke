@@ -14,10 +14,10 @@
 /**
  * @brief   Initializes change array, by resetting it
  */
-void Change::initChange()
+void Change::initQueue()
 {
-    this->change[0] = *(new std::deque<Point>);
-    this->change[1] = *(new std::deque<Point>);
+    this->queue[0] = *(new std::deque<Point>);
+    this->queue[1] = *(new std::deque<Point>);
 }
 
 /**
@@ -29,7 +29,7 @@ bool Change::addPoint(Point p)
 {
     if(p.x >= 0 && p.y >= 0)
     {
-        this->change[0].push_back(p);
+        this->queue[0].push_back(p);
         return true;
     }
     return false;
@@ -44,7 +44,7 @@ bool Change::rmPoint(Point p)
 {
     if(p.x >= 0 && p.y >= 0)
     {
-        this->change[1].push_back(p);
+        this->queue[1].push_back(p);
         return true;
     }
     return false;
@@ -56,7 +56,7 @@ bool Change::rmPoint(Point p)
  */
 bool Change::inAddQueue(Point p)
 {
-    for(auto it = change[0].begin(); it != change[0].end(); ++it)
+    for(auto it = queue[0].begin(); it != queue[0].end(); ++it)
     {
         if(*it == p)
         {
@@ -72,7 +72,7 @@ bool Change::inAddQueue(Point p)
  */
 bool Change::inRmQueue(Point p)
 {
-    for(auto it = change[1].begin(); it != change[1].end(); ++it)
+    for(auto it = queue[1].begin(); it != queue[1].end(); ++it)
     {
         if(*it == p)
         {
@@ -88,7 +88,7 @@ bool Change::inRmQueue(Point p)
  */
 void Change::getAddQueue(std::deque<Point>* cpChange)
 {
-    *cpChange = this->change[0];
+    *cpChange = this->queue[0];
 }
 
 /**
@@ -97,5 +97,5 @@ void Change::getAddQueue(std::deque<Point>* cpChange)
  */
 void Change::getRmQueue(std::deque<Point>* cpChange)
 {
-    *cpChange = this->change[1];
+    *cpChange = this->queue[1];
 }

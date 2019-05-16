@@ -21,13 +21,12 @@
 class Change
 {
     private:
-        std::deque<Point> change[2];
+        std::deque<Point> queue[2];
 
     public:
-        void initChange();
+        void initQueue();
         bool addPoint(Point p);
         bool rmPoint(Point p);
-        void wipeChange();
         bool inAddQueue(Point p);
         bool inRmQueue(Point p);
         void getAddQueue(std::deque<Point>* cpChange);
