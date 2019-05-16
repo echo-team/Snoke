@@ -32,10 +32,10 @@ void resizeHandler(int sig)
  * @brief   Initializes game
  * @param   size   - size of the game field(size - 2 columns, size/2 - 2 rows)
  * @param   speed  - speed of the game(1 / refresh rate) in milliseconds
- * @param   cycles - for how many cycles the game  should run
+ * @param   loops - for how many loops the game  should run
  * @return        - mark of successful initialization
  */
-bool Game::init(int size, int speed, int cycles)
+bool Game::init(int size, int speed, int loops)
 {
     if(size > 10)
     {
@@ -43,23 +43,20 @@ bool Game::init(int size, int speed, int cycles)
         gameFieldSize.y = size/2;
         this->labyrinth.setLabyrinth(gameFieldSize);
         this->setSpeed(speed);
-        this->setCycles(cycles);
+        this->setLoops(loops);
 
         return true;
     }
     return false;
 }
 
-void Game::setCycles(int cycles)
+/**
+ * @brief sets loops with some error holding
+ * @param loops - amount of loops game will run (-1 for unlimmited)
+ */
+void Game::setLoops(int loops)
 {
-    if(cycles > 0)
-    {
-        this->cycles = cycles;
-    }
-    else
-    {
-        this->cycles = -1;
-    }
+    this->loops = loops > 0 ? loops : -1;
 }
 
 
@@ -70,17 +67,6 @@ void Game::setCycles(int cycles)
  */
 int Game::run()
 {
-    /*
-     * Block initializing ncurses console in the current console window,
-     * and setting some parameters
-     */
-    noecho();
-    nodelay(stdscr, true);
-#ifdef __unix__
-    set_escdelay(0);
-#endif
-    curs_set(0);
-    keypad(stdscr, true);
     signal(SIGWINCH, resizeHandler);
 
     /*
@@ -101,13 +87,14 @@ int Game::run()
      * Initializing the Ball and generating it on the field
      */
     labyrinth.initBall();
+
     /*
      * displaying the starting state of labyrinth(forcing to display it Full if possible)
      */
     labyrinth.displayHandler(DISPFULL);
 
     bool flag = false;
-    while (!flag && cycles != 0)
+    while (!flag && loops != 0)
     {
         int command = getch();
         switch (command)
@@ -159,7 +146,7 @@ int Game::run()
         {
             break;
         }
-        labyrinth.change.initChange();
+        labyrinth.change.initQueue();
 
         /*
          * Setting the flag for the next iteration check
@@ -175,9 +162,9 @@ int Game::run()
         labyrinth.displayHandler();
 
         mSleep(speed);
-        if(cycles > 0)
+        if(loops > 0)
         {
-            cycles--;
+            loops--;
         }
     }
     return 0;
@@ -190,14 +177,11 @@ int Game::run()
  * @param   length - the length of a 'new born' snake
  * @return         - mark of whether the snake is successfully initialized
  */
-bool Game::initSnake(Point begin, int dir, int length)
+bool Game::initSnake(Point begin, short dir, int length)
 {
-    bool flag = snake.init(begin, dir, length);
-    bool retVal = false;
-    if (flag){
-        retVal = labyrinth.addSnake(&snake);
-    }
-    return flag && retVal;
+    bool initFlag = snake.init(begin, dir, length);
+    bool addFlag = initFlag ? labyrinth.addSnake(&snake) : false;
+    return initFlag && addFlag;
 }
 
 /**

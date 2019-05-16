@@ -23,7 +23,7 @@
  * @class Game game.h
  * @brief   Main game class
  * @prop    speed           - game refresh rate(in milliseconds)
- * @prop    snake           - the local_player controlled snake
+ * @prop    snake           - the local player controlled snake
  * @prop    snakeEnemies    - the remotely controlled snake entities
  * @prop    labyrinth       - object containing labyrinth, displaying it, etc
  */
@@ -31,15 +31,15 @@ class Game
 {
     private:
         int speed;
-        int cycles;
+        int loops;
         Snake snake;
         Snake* snakeEnemies;
         Labyrinth labyrinth;
         void setSpeed(int sp);
-        void setCycles(int cycles);
-        bool initSnake(Point begin, int dir, int length);
+        void setLoops(int loops);
+        bool initSnake(Point begin, short dir, int length);
     public:
-        bool init(int size = 20, int sp = 100, int cycles = -1);
+        bool init(int size = 20, int sp = 100, int loops = -1);
         int run();
 };
 
