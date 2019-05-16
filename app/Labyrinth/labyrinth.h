@@ -84,7 +84,7 @@ class Labyrinth
         bool setLabyrinth(Point dimensions);
         bool addSnake(Snake* snake);
         bool addPoint(Point p);
-        bool remPoint(Point p);
+        bool rmPoint(Point p);
         void displayHandler(int displayMethod = -1);
         bool initBall();
         bool generateBall();

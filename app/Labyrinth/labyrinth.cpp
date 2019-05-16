@@ -132,7 +132,7 @@ bool Labyrinth::addSnake(Snake* aSnake)
         {
             if(isFree(*it) == 0)
             {
-                remPoint(*it);
+                rmPoint(*it);
             }
         }
         return false;
@@ -236,7 +236,7 @@ void Labyrinth::updateLabyrinth()
 
     for(auto it = cpChange.begin(); it != cpChange.end(); ++it)
     {
-        remPoint(*it);
+        rmPoint(*it);
         mvaddch((*it).y, (*it).x, 'F');
     }
     change.getAddQueue(&cpChange);
@@ -283,7 +283,7 @@ bool Labyrinth::addPoint(Point p)
  * @param   p - point to remove from the labyrinth
  * @return    - mark of whether the Point was removed
  */
-bool Labyrinth::remPoint(Point p)
+bool Labyrinth::rmPoint(Point p)
 {
     labyrinth[p.y][p.x] = ' ';
 	return true;
