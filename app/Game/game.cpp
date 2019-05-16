@@ -76,9 +76,9 @@ int Game::run()
      */
     noecho();
     nodelay(stdscr, true);
-    #ifdef __unix__
+#ifdef __unix__
     set_escdelay(0);
-    #endif
+#endif
     curs_set(0);
     keypad(stdscr, true);
     signal(SIGWINCH, resizeHandler);
