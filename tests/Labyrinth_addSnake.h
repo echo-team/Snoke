@@ -1,5 +1,5 @@
-#ifndef LABYRINTH_ADDSNAKE_TEST_H
-#define LABYRINTH_ADDSNAKE_TEST_H
+#ifndef LABYRINTH_ADDSNAKE_H
+#define LABYRINTH_ADDSNAKE_H
 
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
@@ -14,7 +14,7 @@
 /**
  * @brief method runs with normal parameters
  */
-TEST(labyrinth_addSnake_test, test1) {
+TEST(Labyrinth_addSnake, test1) {
     gameFieldSize.x = 70;
     gameFieldSize.y = 35;
 
@@ -54,7 +54,7 @@ TEST(labyrinth_addSnake_test, test1) {
 /**
  * @brief negative test with incorrect input snake(doesn't fit)
  */
-TEST(labyrinth_addSnake_test, test2) {
+TEST(Labyrinth_addSnake, test2) {
 
     Snake snake;
     Point begin;
@@ -93,7 +93,7 @@ TEST(labyrinth_addSnake_test, test2) {
 /**
  * @brief negative test with incorrect input snake(doesn't fit)
  */
-TEST(labyrinth_addSnake_test, test3) {
+TEST(Labyrinth_addSnake, test3) {
 
     Snake snake;
     Point begin;
@@ -128,4 +128,4 @@ TEST(labyrinth_addSnake_test, test3) {
     }
 }
 
-#endif // LABYRINTH_ADDSNAKE_TEST_H
+#endif // LABYRINTH_ADDSNAKE_H

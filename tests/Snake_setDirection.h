@@ -1,5 +1,5 @@
-#ifndef SNAKE_SETDIRECTION_TEST_H
-#define SNAKE_SETDIRECTION_TEST_H
+#ifndef SNAKE_SETDIRECTION_H
+#define SNAKE_SETDIRECTION_H
 
 /**
  * Prerequisites:
@@ -12,7 +12,7 @@
 /**
  * @brief method runs with normal parameters
  */
-TEST(snake_setDirection_test, test1) {
+TEST(Snake_setDirection, test1) {
 
     /*
      * Minimal environment block for the snake_init_test
@@ -50,7 +50,7 @@ TEST(snake_setDirection_test, test1) {
 /**
  * @brief negative test of switching direction to the opposite of prior
  */
-TEST(snake_setDirection_test, test2) {
+TEST(Snake_setDirection, test2) {
 
     /*
      * Minimal environment block for the snake_init_test
@@ -85,4 +85,4 @@ TEST(snake_setDirection_test, test2) {
 
 }
 
-#endif // SNAKE_SETDIRECTION_TEST_H
+#endif // SNAKE_SETDIRECTION_H

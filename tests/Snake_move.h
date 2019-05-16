@@ -1,5 +1,5 @@
-#ifndef SNAKE_MOVE_TEST_H
-#define SNAKE_MOVE_TEST_H
+#ifndef SNAKE_MOVE_H
+#define SNAKE_MOVE_H
 
 #include "shared.h"
 #include "Snake/snake.h"
@@ -9,7 +9,7 @@
 /**
  * @brief method runs with normal parameters and no collisions
  */
-TEST(snake_move_test, test1)
+TEST(Snake_move, test1)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -54,7 +54,7 @@ TEST(snake_move_test, test1)
 /**
  * @brief snake moves through the upper wall
  */
-TEST(snake_move_test, testwall1)
+TEST(Snake_move, testwall1)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -102,7 +102,7 @@ TEST(snake_move_test, testwall1)
 /**
  * @brief snake moves through the right wall
  */
-TEST(snake_move_test, testwall2)
+TEST(Snake_move, testwall2)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -150,7 +150,7 @@ TEST(snake_move_test, testwall2)
 /**
  * @brief snake moves through the left wall
  */
-TEST(snake_move_test, testwall3)
+TEST(Snake_move, testwall3)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -198,7 +198,7 @@ TEST(snake_move_test, testwall3)
 /**
  * @brief snake moves through the lower wall
  */
-TEST(snake_move_test, testwall4)
+TEST(Snake_move, testwall4)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -246,7 +246,7 @@ TEST(snake_move_test, testwall4)
 /**
  * @brief snake collides with itself by doing 3 consiquent left turns
  */
-TEST(snake_move_test, testIntersection1)
+TEST(Snake_move, testIntersection1)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -306,7 +306,7 @@ TEST(snake_move_test, testIntersection1)
 /**
  * @brief snake eats the ball
  */
-TEST(snake_move_test, testIntersection2)
+TEST(Snake_move, testIntersection2)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 20;
@@ -372,7 +372,7 @@ TEST(snake_move_test, testIntersection2)
 /**
  * @brief snake goes through the wall and collides with itself
  */
-TEST(snake_move_test, testIntersection3)
+TEST(Snake_move, testIntersection3)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 5;
@@ -430,7 +430,7 @@ TEST(snake_move_test, testIntersection3)
 /**
  * @brief snake goes through the wall and collides with Ball
  */
-TEST(snake_move_test, testIntersection4)
+TEST(Snake_move, testIntersection4)
 {
     gameFieldSize.x = 40;
     gameFieldSize.y = 5;
@@ -496,4 +496,4 @@ TEST(snake_move_test, testIntersection4)
 
 
 
-#endif // SNAKE_MOVE_TEST_H
+#endif // SNAKE_MOVE_H

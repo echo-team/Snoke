@@ -1,10 +1,10 @@
-#ifndef LABYRINTH_SAVE_TEST_H
-#define LABYRINTH_SAVE_TEST_H
+#ifndef LABYRINTH_SAVE_H
+#define LABYRINTH_SAVE_H
 
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 
-TEST(labyrinth_save_test, test1)
+TEST(Labyrinth_save, test1)
 {
     initscr();
     gameFieldSize.x = 70;
@@ -50,4 +50,4 @@ TEST(labyrinth_save_test, test1)
     endwin();
 }
 
-#endif // LABYRINTH_SAVE_TEST_H
+#endif // LABYRINTH_SAVE_H

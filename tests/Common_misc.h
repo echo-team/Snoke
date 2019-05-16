@@ -1,9 +1,9 @@
-#ifndef COMMON_TEST_H
-#define COMMON_TEST_H
+#ifndef COMMON_MISC_H
+#define COMMON_MISC_H
 
 #include "shared.h"
 
-TEST(common_test, PointEqual)
+TEST(Common_misc, PointEqual)
 {
     Point p;
     Point q;
@@ -21,7 +21,7 @@ TEST(common_test, PointEqual)
     }
 }
 
-TEST(common_test, PointNotEqual)
+TEST(Common_misc, PointNotEqual)
 {
     Point p;
     Point q;
@@ -39,7 +39,7 @@ TEST(common_test, PointNotEqual)
     }
 }
 
-TEST(common_test, PointOstream)
+TEST(Common_misc, PointOstream)
 {
     Point p;
     p.x = 10;
@@ -48,4 +48,4 @@ TEST(common_test, PointOstream)
     SUCCEED();
 }
 
-#endif // COMMON_TEST_H
+#endif // COMMON_MISC_H

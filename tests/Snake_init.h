@@ -1,5 +1,5 @@
-#ifndef SNAKE_INIT_TEST_H
-#define SNAKE_INIT_TEST_H
+#ifndef SNAKE_INIT_H
+#define SNAKE_INIT_H
 
 #include "shared.h"
 #include "Snake/snake.h"
@@ -7,7 +7,7 @@
 /**
  * @brief Snake class object can be created
  */
-TEST(snake_init_test, test0){
+TEST(Snake_init, test0){
     Snake snake;
     SUCCEED();
 }
@@ -15,10 +15,10 @@ TEST(snake_init_test, test0){
 /**
  * @brief method runs with normal parameters
  */
-TEST(snake_init_test, test1) {
+TEST(Snake_init, test1) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -42,10 +42,10 @@ TEST(snake_init_test, test1) {
 /**
  * @brief negative test for crossing the upper border of valid region
  */
-TEST(snake_init_test, test2) {
+TEST(Snake_init, test2) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -69,10 +69,10 @@ TEST(snake_init_test, test2) {
 /**
  * @brief negative test for crossing the left border of valid region
  */
-TEST(snake_init_test, test3) {
+TEST(Snake_init, test3) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -96,10 +96,10 @@ TEST(snake_init_test, test3) {
 /**
  * @brief negative test for 1-st of the staring Point being outside the valid area
  */
-TEST(snake_init_test, test4) {
+TEST(Snake_init, test4) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -123,10 +123,10 @@ TEST(snake_init_test, test4) {
 /**
  * @brief negative test for the 2-nd coordinate of the staring Point being outside the valid area
  */
-TEST(snake_init_test, test5) {
+TEST(Snake_init, test5) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -150,10 +150,10 @@ TEST(snake_init_test, test5) {
 /**
  * @brief negative test for both coordinates of the staring Point being outside the valid area
  */
-TEST(snake_init_test, test6) {
+TEST(Snake_init, test6) {
 
     /*
-     * Minimal environment block for the snake_init_test
+     * Minimal environment block for the Snake_init
      */
     Snake snake;
     Point begin;
@@ -175,4 +175,4 @@ TEST(snake_init_test, test6) {
 }
 
 
-#endif // SNAKE_INIT_TEST_H
+#endif // SNAKE_INIT_H

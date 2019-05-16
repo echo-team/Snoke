@@ -1,10 +1,10 @@
-#ifndef LABYRINTH_LAOD_TEST_H
-#define LABYRINTH_LAOD_TEST_H
+#ifndef LABYRINTH_LOAD_H
+#define LABYRINTH_LOAD_H
 
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
 
-TEST(labyrinth_load_test, test1)
+TEST(Labyrinth_load, test1)
 {
     initscr();
     gameFieldSize.x = 70;
@@ -50,4 +50,4 @@ TEST(labyrinth_load_test, test1)
     endwin();
 }
 
-#endif // LABYRINTH_LAOD_TEST_H
+#endif // LABYRINTH_LOAD_H

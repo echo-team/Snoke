@@ -1,5 +1,5 @@
-#ifndef LABYRINTH_SETLABYRINTH_TEST_H
-#define LABYRINTH_SETLABYRINTH_TEST_H
+#ifndef LABYRINTH_SETLABYRINTH_H
+#define LABYRINTH_SETLABYRINTH_H
 
 
 #include "shared.h"
@@ -8,7 +8,7 @@
 /**
  * @brief Labyrinth class object can be created
  */
-TEST(labyrinth_setLabyrinth_test, test0){
+TEST(Labyrinth_setLabyrinth, test0){
     Labyrinth labyrinth;
     SUCCEED();
 }
@@ -16,7 +16,7 @@ TEST(labyrinth_setLabyrinth_test, test0){
 /**
  * @brief method runs with normal parameters
  */
-TEST(labyrinth_setLabyrinth_test, test1) {
+TEST(Labyrinth_setLabyrinth, test1) {
     Labyrinth labyrinth;
     Point size;
     size.x = 5;
@@ -35,7 +35,7 @@ TEST(labyrinth_setLabyrinth_test, test1) {
 /**
  * @brief negative test with incorrect input parameters
  */
-TEST(labyrinth_setLabyrinth_test, test2) {
+TEST(Labyrinth_setLabyrinth, test2) {
     Labyrinth labyrinth;
     Point size;
     size.x = 3;
@@ -51,4 +51,4 @@ TEST(labyrinth_setLabyrinth_test, test2) {
     }
 }
 
-#endif // LABYRINTH_SETLABYRINTH_TEST_H
+#endif // LABYRINTH_SETLABYRINTH_H

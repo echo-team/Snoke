@@ -1,5 +1,5 @@
-#ifndef BALL_INIT_TEST_H
-#define BALL_INIT_TEST_H
+#ifndef BALL_INIT_H
+#define BALL_INIT_H
 
 #include "shared.h"
 #include "Ball/ball.h"
@@ -12,7 +12,7 @@
 /**
  * @brief Ball class object can be created
  */
-TEST(ball_init_test, test0){
+TEST(Ball_init, test0){
     Ball ball;
     SUCCEED();
 }
@@ -20,7 +20,7 @@ TEST(ball_init_test, test0){
 /**
  * @brief method runs with normal parameters
  */
-TEST(ball_init_test, test1) {
+TEST(Ball_init, test1) {
     Ball ball;
     Point dim;
     dim.x = 20;
@@ -39,7 +39,7 @@ TEST(ball_init_test, test1) {
 /**
  * @brief negative test with incorrect parameters
  */
-TEST(ball_init_test, test2) {
+TEST(Ball_init, test2) {
     Ball ball;
     Point dim;
     dim.x = 2;
@@ -55,4 +55,4 @@ TEST(ball_init_test, test2) {
     }
 }
 
-#endif // BALL_INIT_TEST_H
+#endif // BALL_INIT_H

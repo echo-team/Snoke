@@ -1,5 +1,5 @@
-#ifndef LABYRINTH_DISPLAYHANDLER_TEST_H
-#define LABYRINTH_DISPLAYHANDLER_TEST_H
+#ifndef LABYRINTH_DISPLAYHANDLER_H
+#define LABYRINTH_DISPLAYHANDLER_H
 
 #include "shared.h"
 #include "Labyrinth/labyrinth.h"
@@ -7,7 +7,7 @@
 /**
  * @brief method runs with noraml parameters
  */
-TEST(labyrinth_displayHandler_test, test1)
+TEST(Labyrinth_displayHandler, test1)
 {
     initscr();
     gameFieldSize.x = 40;
@@ -44,7 +44,7 @@ TEST(labyrinth_displayHandler_test, test1)
     SUCCEED();
 }
 
-TEST(labyrinth_displayHandler_test, test2)
+TEST(Labyrinth_displayHandler, test2)
 {
     initscr();
     gameFieldSize.x = 40;
@@ -84,7 +84,7 @@ TEST(labyrinth_displayHandler_test, test2)
 /**
  * @brief multiple executions with snkae moving
  */
-TEST(labyrinth_displayHandler_test, test3)
+TEST(Labyrinth_displayHandler, test3)
 {
     initscr();
     gameFieldSize.x = 40;
@@ -129,7 +129,7 @@ TEST(labyrinth_displayHandler_test, test3)
     SUCCEED();
 }
 
-TEST(labyrinth_displayHandler_test, test4)
+TEST(Labyrinth_displayHandler, test4)
 {
     initscr();
     gameFieldSize.x = 40;
@@ -166,7 +166,7 @@ TEST(labyrinth_displayHandler_test, test4)
     SUCCEED();
 }
 
-TEST(labyrinth_displayHandler_test, test5)
+TEST(Labyrinth_displayHandler, test5)
 {
     initscr();
     gameFieldSize.x = 40;
@@ -203,4 +203,4 @@ TEST(labyrinth_displayHandler_test, test5)
     SUCCEED();
 }
 
-#endif // LABYRINTH_DISPLAYHANDLER_TEST_H
+#endif // LABYRINTH_DISPLAYHANDLER_H

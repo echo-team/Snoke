@@ -1,10 +1,10 @@
-#ifndef GAME_RUN_TEST_H
-#define GAME_RUN_TEST_H
+#ifndef GAME_RUN_H
+#define GAME_RUN_H
 
 #include "shared.h"
 #include "Game/game.h"
 
-TEST(game_run_test, test1)
+TEST(Game_run, test1)
 {
     initscr();
     Game game;
@@ -29,4 +29,4 @@ TEST(game_run_test, test1)
     }
 }
 
-#endif // GAME_RUN_TEST_H
+#endif // GAME_RUN_H
