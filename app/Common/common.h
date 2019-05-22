@@ -75,4 +75,8 @@ void addSleep();
 Point getConsoleSize();
 void sleepHandler();
 
+#ifndef __unix__
+void set_escdelay(short mode);
+#endif
+
 #endif

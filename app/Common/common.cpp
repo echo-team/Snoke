@@ -62,6 +62,16 @@ void mSleep(int time)
 #endif
 }
 
+#ifndef __unix__
+/**
+ * Plug for ncurses unix set_escdelay function
+ * In Windows does nothing, needs for supporting crossplatform code
+ * @param {short} delay - time to wait before process ESC key press
+ */
+void set_escdelay(short delay)
+{}
+#endif
+
 /**
  * @brief   setting new values for sleep function on signal interrupt
  */

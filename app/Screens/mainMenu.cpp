@@ -7,7 +7,7 @@ void MainMenu::draw()
 {
     Logo snoke(0, 0, {' ', COLOR_WHITE, COLOR_WHITE}, {' ', COLOR_BLACK, COLOR_RED}, 0);
     int menuHeight        = 12,
-        snokeBottomBorder = 2;
+        snokeBottomBorder = 3;
     Point consoleSize = getConsoleSize(),
           snokeSize   = snoke.getSize(),
           menuStartPoint, snokeStartPoint;
@@ -20,16 +20,14 @@ void MainMenu::draw()
     menuStartPoint.x  = snokeStartPoint.x;
     menuStartPoint.y  = snokeStartPoint.y + snokeSize.y + snokeBottomBorder;
 
-    Menu menu(menuStartPoint.x, menuStartPoint.y, snokeSize.x, menuHeight);
-    menu.addButton("Profile");
-    menu.addButton("Play");
-    menu.addButton("Search");
-    menu.addButton("Settings");
-    menu.addButton("About game");
-    menu.addButton("DONATE");
-    menu.draw();
+    Menu* menu = new Menu(menuStartPoint.x, menuStartPoint.y, snokeSize.x, menuHeight);
+    menu->add("Profile");
+    menu->add("Play");
+    menu->add("Search");
+    menu->add("Settings");
+    menu->add("About game");
+    menu->add("DONATE");
 
-    Navigator navigator;
-    navigator.pushUnit(&menu, 6);
-    navigator.listen();
+    this->root->add(menu);
+    menu->draw();
 }
