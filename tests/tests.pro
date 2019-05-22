@@ -34,7 +34,7 @@ HEADERS += \
     Snake_move.h \
     Snake_setDirection.h \
     shared.h \
-    ../app/Change/change.h \
+    ../app/Labyrinth/change.h \
     ../app/Common/common.h \
     ../app/Ball/ball.h \
     ../app/Game/game.h \
@@ -42,7 +42,7 @@ HEADERS += \
     ../app/Snake/snake.h
 
 SOURCES += main.cpp \
-    ../app/Change/change.cpp \
+    ../app/Labyrinth/change.cpp \
     ../app/Common/common.cpp \
     ../app/Ball/ball.cpp \
     ../app/Game/game.cpp \
