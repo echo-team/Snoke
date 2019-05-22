@@ -10,37 +10,34 @@ HEADERS = \
    Change/change.h \
    Common/common.h \
    Game/game.h \
-   Interface/interface.h \
-   Interface/logo.h \
-   Interface/menu.h \
-   Interface/navigator.h \
    Labyrinth/labyrinth.h \
    Screens/mainMenu.h \
    SideMenu/SideMenu.h \
-   Snake/snake.h \
+   Snake/snake.h \ \
+    Widgets/logo.h \
+    Widgets/menu.h \
+    Widgets/widget.h
 
 SOURCES = \
    Ball/ball.cpp \
    Change/change.cpp \
    Common/common.cpp \
    Game/game.cpp \
-   Interface/interface.cpp \
-   Interface/logo.cpp \
-   Interface/menu.cpp \
-   Interface/navigator.cpp \
    Labyrinth/displayHandler.cpp \
    Labyrinth/labyrinth.cpp \
    Screens/mainMenu.cpp \
    SideMenu/SideMenu.cpp \
    Snake/snake.cpp \
-   Main.cpp
+   Main.cpp \
+   Widgets/logo.cpp \
+   Widgets/menu.cpp \
+   Widgets/widget.cpp
 
 INCLUDEPATH = \
     Ball \
     Change \
     Common \
     Game \
-    Interface \
     Labyrinth \
     Screens \
     SideMenu \
