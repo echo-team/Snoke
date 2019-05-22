@@ -12,7 +12,7 @@
 #define LABYRINTH_H
 #include "../Common/common.h"
 #include "../Snake/snake.h"
-#include "../Change/change.h"
+#include "change.h"
 #include "../Ball/ball.h"
 #include <ncurses.h>
 #include <string>

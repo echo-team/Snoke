@@ -14,7 +14,7 @@
 #include <deque>
 #include "../Common/common.h"
 #include "../Labyrinth/labyrinth.h"
-#include "../Change/change.h"
+#include "../Labyrinth/change.h"
 #include "../Ball/ball.h"
 
 /**

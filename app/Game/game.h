@@ -12,7 +12,7 @@
 #define GAME_H
 #include "../Snake/snake.h"
 #include "../Labyrinth/labyrinth.h"
-#include "../Change/change.h"
+#include "../Labyrinth/change.h"
 #include <ncurses.h>
 #include <iostream>
 #include <string>

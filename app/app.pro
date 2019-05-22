@@ -7,9 +7,9 @@ LIBS += -lncurses
 
 HEADERS = \
    Ball/ball.h \
-   Change/change.h \
    Common/common.h \
    Game/game.h \
+    Labyrinth/change.h \
    Labyrinth/labyrinth.h \
     Screens/application.h \
    Screens/mainMenu.h \
@@ -22,9 +22,9 @@ HEADERS = \
 
 SOURCES = \
    Ball/ball.cpp \
-   Change/change.cpp \
    Common/common.cpp \
    Game/game.cpp \
+   Labyrinth/change.cpp \
    Labyrinth/displayHandler.cpp \
    Labyrinth/labyrinth.cpp \
    Screens/application.cpp \
