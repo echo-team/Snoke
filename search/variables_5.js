@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gamefieldsize',['gameFieldSize',['../class_labyrinth.html#a8b89f43edae6e7795e817fd71ad1b511',1,'Labyrinth::gameFieldSize()'],['../ball_8h.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp'],['../game_8cpp.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp'],['../snake_8h.html#a6fbfea9c219063c65d29c55f3f4d7673',1,'gameFieldSize():&#160;game.cpp']]]
+  ['fg',['fg',['../class_point_style.html#a1fbffd6500e3600823d865e402187e79',1,'PointStyle']]],
+  ['field',['field',['../struct_side_button.html#afd703657d0b75b20a7ca1d2c3147ec34',1,'SideButton']]]
 ];

@@ -4,8 +4,8 @@
 <area shape="rect" id="node5" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="1551,317,1704,373"/>
 <area shape="rect" id="node25" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="1785,109,1937,165"/>
 <area shape="rect" id="node27" href="$common_8cpp.html" title="shared functions realisation " alt="" coords="1602,109,1760,165"/>
-<area shape="rect" id="node28" href="$logo_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Interface/logo.h" alt="" coords="1987,109,2140,165"/>
-<area shape="rect" id="node30" href="$main_menu_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.h" alt="" coords="2165,213,2317,269"/>
+<area shape="rect" id="node28" href="$main_menu_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.h" alt="" coords="2165,213,2317,269"/>
+<area shape="rect" id="node30" href="$logo_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Widgets/logo.h" alt="" coords="1987,109,2140,165"/>
 <area shape="rect" id="node32" href="$shared_8h.html" title="shared functions for testing " alt="" coords="1149,421,1309,477"/>
 <area shape="rect" id="node3" href="$ball_8cpp.html" title="realisation of Ball class " alt="" coords="1081,213,1233,269"/>
 <area shape="rect" id="node24" href="$_ball__init_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Ball_init.h" alt="" coords="1337,525,1497,581"/>
@@ -28,7 +28,7 @@
 <area shape="rect" id="node11" href="$_game__run_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Game_run.h" alt="" coords="2263,525,2424,581"/>
 <area shape="rect" id="node10" href="$main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/main.cpp" alt="" coords="1149,629,1309,685"/>
 <area shape="rect" id="node26" href="$change_8cpp.html" title="realisation of Change class " alt="" coords="1758,213,1911,269"/>
-<area shape="rect" id="node29" href="$logo_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Interface/logo.cpp" alt="" coords="1987,213,2140,269"/>
-<area shape="rect" id="node31" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.cpp" alt="" coords="2160,317,2323,373"/>
+<area shape="rect" id="node29" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.cpp" alt="" coords="2160,317,2323,373"/>
+<area shape="rect" id="node31" href="$logo_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Widgets/logo.cpp" alt="" coords="1987,213,2140,269"/>
 <area shape="rect" id="node33" href="$_common__misc_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/tests\l/Common_misc.h" alt="" coords="961,525,1121,581"/>
 </map>

@@ -1,0 +1,11 @@
+<map id="Application::execute" name="Application::execute">
+<area shape="rect" id="node2" href="$class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e" title="Screen::previous" alt="" coords="195,107,315,133"/>
+<area shape="rect" id="node7" href="$class_widget.html#a76ead71881834c227471d223af092c3f" title="Widget::dispatch" alt="" coords="195,208,315,235"/>
+<area shape="rect" id="node8" href="$class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6" title="Screen::next" alt="" coords="207,157,303,184"/>
+<area shape="rect" id="node3" href="$class_widget.html#a4451247ef765bccbfa460211ce91d07e" title="Widget::previous" alt="" coords="364,5,484,32"/>
+<area shape="rect" id="node4" href="$class_widget.html#a3dac0069a2933ad4a2e6d1b2cfd16236" title="Widget::parent" alt="" coords="371,107,477,133"/>
+<area shape="rect" id="node5" href="$class_widget.html#ac377c134451d68d5915ca6ddfe7fd507" title="Widget::lastChild" alt="" coords="363,56,485,83"/>
+<area shape="rect" id="node6" href="$class_widget.html#a495d82da7793c5b07f3ff103fb2fd533" title="Widget::event" alt="" coords="373,157,475,184"/>
+<area shape="rect" id="node9" href="$class_widget.html#a294b80d01330825d3172c8749ed2934a" title="Widget::firstChild" alt="" coords="363,208,485,235"/>
+<area shape="rect" id="node10" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="376,259,472,285"/>
+</map>

@@ -31,12 +31,12 @@ Searching for files in directory /home/travis/build/echo-team/Snoke/app/Ball
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Change
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Common
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Game
-Searching for files in directory /home/travis/build/echo-team/Snoke/app/Interface
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Labyrinth
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/obj
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Screens
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/SideMenu
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Snake
+Searching for files in directory /home/travis/build/echo-team/Snoke/app/Widgets
 Searching for files in directory /home/travis/build/echo-team/Snoke/bin
 Searching for files in directory /home/travis/build/echo-team/Snoke/bw-output
 Searching for files in directory /home/travis/build/echo-team/Snoke/code_docs
@@ -61,24 +61,7 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Game/game.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Game/game.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Game/game.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Game/game.h...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/interface.h...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/interface.h...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/logo.cpp...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/logo.cpp...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/logo.h...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/logo.h...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/menu.h...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/menu.h...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
-Parsing file /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp./home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
-..
+Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
@@ -86,10 +69,18 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Main.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Main.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/application.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Screens/application.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/application.h...
+Parsing file /home/travis/build/echo-team/Snoke/app/Screens/application.h...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
+Parsing file /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
 Preprocessing /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.h...
@@ -98,6 +89,18 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/logo.h...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/logo.h...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/menu.h...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/menu.h...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Widgets/widget.h...
+Parsing file /home/travis/build/echo-team/Snoke/app/Widgets/widget.h...
 Reading /home/travis/build/echo-team/Snoke/README.md...
 Preprocessing /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
 Parsing file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
@@ -134,7 +137,11 @@ Building directory list...
 Building namespace list...
 Building file list...
 Building class list...
-Associating documentation with classes...
+Associating documentation w/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:28: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:83: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:20: warning: documented symbol `std::function< void()> listener' was not declared or defined.
+ith classes...
 Computing nesting relations for classes...
 Building example list...
 Searching for enumerations...
@@ -189,27 +196,37 @@ Generating code for file /home/travis/build/echo-team/Snoke/app/Common/common.cp
 Generating code for file /home/travis/build/echo-team/Snoke/app/Common/common.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Game/game.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Game/game.h...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/interface.h...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/logo.cpp...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/logo.h...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/menu.h...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
-Generating code for file /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Main.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/application.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/application.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.h...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp...
 Generating code for file /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/logo.h...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.h...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp...
+Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.h...
 Generating code for file /home/travis/build/echo-team/Snoke/README.md...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
-Generating code for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
+Generating code for f/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
+/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short delay) are not documented:
+  parameter 'delay'
+/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
+/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short delay) are not documented:
+  parameter 'delay'
+/home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
+/home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
+ile /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_init.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_run.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Labyrinth_addSnake.h...
@@ -242,25 +259,42 @@ Generating docs for file /home/travis/build/echo-team/Snoke/app/Game/game.cpp...
 Generating call graph for function resizeHandler
 Generating caller graph for function resizeHandler
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Game/game.h...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/interface.cpp...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/interface.h...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/logo.cpp...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/logo.h...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/menu.cpp...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/menu.h...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Interface/navigator.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Labyrinth/displayHandler.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Main.cpp...
 Generating call graph for function main
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/application.cpp...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/application.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Snake/snake.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Snake/snake.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/logo.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp...
+Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:10: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:11: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:12: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:98: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: argument 'char' of command @param is not found in the argument list of Application::add(char *name, Screen *screen)
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: argument 'Screen' of command @param is not found in the argument list of Application::add(char *name, Screen *screen)
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: The following parameters of Application::add(char *name, Screen *screen) are not documented:
+  parameter 'name'
+  parameter 'screen'
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:64: warning: argument 'char' of command @param is not found in the argument list of Application::back()
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:87: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:52: warning: argument 'char' of command @param is not found in the argument list of Application::load(char *name)
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:52: warning: The following parameters of Application::load(char *name) are not documented:
+  parameter 'name'
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
+/widget.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/README.md...
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
 Generating call graph for function TEST
@@ -270,8 +304,7 @@ Generating docs for file /home/travis/build/echo-team/Snoke/tests/Game_init.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating call graph for function TEST
-Generating call graph for fun/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
-ction TEST
+Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Game_run.h...
 Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Labyrinth_addSnake.h...
@@ -319,6 +352,12 @@ Generating page documentation...
 Generating docs for page md__home_travis_build_echo-team_Snoke_README...
 Generating group documentation...
 Generating class documentation...
+Generating docs for compound Application...
+Generating call graph for function Application::back
+Generating call graph for function Application::execute
+Generating call graph for function Application::focusFirst
+Generating caller graph for function Application::focusFirst
+Generating call graph for function Application::load
 Generating docs for compound Ball...
 Generating caller graph for function Ball::getCoords
 Generating caller graph for function Ball::getRandomEngine
@@ -333,7 +372,65 @@ Generating caller graph for function Change::initQueue
 Generating caller graph for function Change::inRmQueue
 Generating caller graph for function Change::rmPoint
 Generating docs for compound DisplayHandler...
-Generating caller graph for function DisplayHandler::displayFull
+Generating caller graph for /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:79: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
+/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
+  parameter 'fieldSize'
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:57: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
+  parameter 'x'
+  parameter 'y'
+  parameter 'style'
+  parameter 'shadowStyle'
+  parameter 'language'
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
+/home/travis/build/echo-team/Snoke/app/Widgets/logo.cpp:4: warning: The following parameters of Logo::setPosition(int left, int top) are not documented:
+  parameter 'left'
+  parameter 'top'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:67: warning: The following parameters of Menu::Menu(int x, int y, int width, int height) are not documented:
+  parameter 'x'
+  parameter 'y'
+  parameter 'width'
+  parameter 'height'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:18: warning: argument 'const' of command @param is not found in the argument list of Menu::add(const char *name)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:18: warning: The following parameters of Menu::add(const char *name) are not documented:
+  parameter 'name'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:31: warning: Found unknown command `\override'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:32: warning: Found unknown command `\callback'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:30: warning: argument 'int' of command @param is not found in the argument list of Menu::focus(int index)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:30: warning: The following parameters of Menu::focus(int index) are not documented:
+  parameter 'index'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:43: warning: Found unknown command `\override'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:44: warning: Found unknown command `\callback'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:42: warning: argument 'int' of command @param is not found in the argument list of Menu::unfocus(int index)
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:42: warning: The following parameters of Menu::unfocus(int index) are not documented:
+  parameter 'index'
+/home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp:12: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:135: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:5: warning: Found unknown command `\virtual'
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:20: warning: argument 'Widget' of command @param is not found in the argument list of Screen::next(Widget *start)
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:20: warning: The following parameters of Screen::next(Widget *start) are not documented:
+  parameter 'start'
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:75: warning: argument 'Widget' of command @param is not found in the argument list of Screen::previous(Widget *start)
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:75: warning: The following parameters of Screen::previous(Widget *start) are not documented:
+  parameter 'start'
+/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:242: warning: argument 'ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth *labyrinth)
+/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
+/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'change' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
+/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'changeSize' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:170: warning: Found unknown command `\constructor'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:47: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_next(Widget *nextWidget)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:47: warning: The following parameters of Widget::_next(Widget *nextWidget) are not documented:
+  parameter 'nextWidget'
+function DisplayHandler::displayFull
 Generating call graph for function DisplayHandler::displayHandler
 Generating caller graph for function DisplayHandler::displayHandler
 Generating caller graph for function DisplayHandler::displayPartialy
@@ -348,68 +445,7 @@ Generating call graph for function Game::init
 Generating caller graph for function Game::init
 Generating call graph for function Game::initSnake
 Generating caller graph for function Game::initSnake
-Generating call g/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:79: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
-/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
-  parameter 'fieldSize'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: Found unknown command `\constructor'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: argument 'PointStyle' of command @param is not found in the argument list of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:57: warning: The following parameters of Logo::Logo(int x, int y, PointStyle style, PointStyle shadowStyle, int language) are not documented:
-  parameter 'x'
-  parameter 'y'
-  parameter 'style'
-  parameter 'shadowStyle'
-  parameter 'language'
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Logo::setPosition(int left, int top)
-/home/travis/build/echo-team/Snoke/app/Interface/logo.cpp:4: warning: The following parameters of Logo::setPosition(int left, int top) are not documented:
-  parameter 'left'
-  parameter 'top'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: Found unknown command `\constructor'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: argument 'int' of command @param is not found in the argument list of Menu::Menu(int x, int y, int width, int height)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:52: warning: The following parameters of Menu::Menu(int x, int y, int width, int height) are not documented:
-  parameter 'x'
-  parameter 'y'
-  parameter 'width'
-  parameter 'height'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: argument 'const' of command @param is not found in the argument list of Menu::addButton(const char *name)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:4: warning: The following parameters of Menu::addButton(const char *name) are not documented:
-  parameter 'name'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:14: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:15: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Menu::focus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:13: warning: The following parameters of Menu::focus(int index) are not documented:
-  parameter 'index'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:26: warning: Found unknown command `\override'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:27: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:25: warning: argument 'int' of command @param is not found in the argument list of Menu::unfocus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/menu.cpp:25: warning: The following parameters of Menu::unfocus(int index) are not documented:
-  parameter 'index'
-/home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp:70: warning: Found unknown command `\constructor'
-/home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp:4: warning: argument 'Widget' of command @param is not found in the argument list of Navigator::pushUnit(Widget *unit, int subunitsAmount)
-/home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Navigator::pushUnit(Widget *unit, int subunitsAmount)
-/home/travis/build/echo-team/Snoke/app/Interface/navigator.cpp:4: warning: The following parameters of Navigator::pushUnit(Widget *unit, int subunitsAmount) are not documented:
-  parameter 'unit'
-  parameter 'subunitsAmount'
-/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:242: warning: argument 'ball' of command @param is not found in the argument list of Snake::checkIntersection(Point check, Labyrinth *labyrinth)
-/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'ball' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
-/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'change' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
-/home/travis/build/echo-team/Snoke/app/Snake/snake.cpp:73: warning: argument 'changeSize' of command @param is not found in the argument list of Snake::move(Labyrinth *labyrinth)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:5: warning: Found unknown command `\virtual'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:6: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: argument 'int' of command @param is not found in the argument list of Widget::focus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:4: warning: The following parameters of Widget::focus(int index) are not documented:
-  parameter 'index'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:14: warning: Found unknown command `\virtual'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:15: warning: Found unknown command `\callback'
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: argument 'int' of command @param is not found in the argument list of Widget::unfocus(int index)
-/home/travis/build/echo-team/Snoke/app/Interface/interface.cpp:13: warning: The following parameters of Widget::unfocus(int index) are not documented:
-  parameter 'index'
-raph for function Game::run
+Generating call graph for function Game::run
 Generating caller graph for function Game::run
 Generating caller graph for function Game::setLoops
 Generating caller graph for function Game::setSpeed
@@ -438,15 +474,22 @@ Generating docs for compound Logo...
 Generating docs for compound MainMenu...
 Generating call graph for function MainMenu::draw
 Generating docs for compound Menu...
-Generating caller graph for function Menu::addButton
+Generating call graph for function Menu::add
+Generating caller graph for function Menu::add
+Generating call graph for function Menu::draw
 Generating caller graph for function Menu::draw
-Generating docs for compound MenuButton...
-Generating docs for compound NavigateUnit...
-Generating docs for compound Navigator...
-Generating caller graph for function Navigator::listen
-Generating caller graph for function Navigator::pushUnit
+Generating caller graph for function Menu::focus
+Generating caller graph for function Menu::unfocus
+Generating docs for compound MenuItem...
 Generating docs for compound Point...
 Generating docs for compound PointStyle...
+Generating docs for compound Screen...
+Generating caller graph for function Screen::draw
+Generating caller graph for function Screen::first
+Generating call graph for function Screen::next
+Generating caller graph for function Screen::next
+Generating call graph for function Screen::previous
+Generating caller graph for function Screen::previous
 Generating docs for compound SideButton...
 Generating docs for compound SideMenu...
 Generating docs for compound Snake...
@@ -464,6 +507,43 @@ Generating call graph for function Snake::moveHead
 Generating caller graph for function Snake::moveHead
 Generating caller graph for function Snake::setDirection
 Generating docs for compound Widget...
+Generating caller graph for function Widget::_next/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_parent(Widget *parentWidget)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: The following parameters of Widget::_parent(Widget *parentWidget) are not documented:
+  parameter 'parentWidget'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_previous(Widget *previousWidget)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: The following parameters of Widget::_previous(Widget *previousWidget) are not documented:
+  parameter 'previousWidget'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: argument 'Widget' of command @param is not found in the argument list of Widget::add(Widget *child)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: The following parameters of Widget::add(Widget *child) are not documented:
+  parameter 'child'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:157: warning: argument 'unsigned' of command @param is not found in the argument list of Widget::dispatch(unsigned char name)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:157: warning: The following parameters of Widget::dispatch(unsigned char name) are not documented:
+  parameter 'name'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:5: warning: Found unknown command `\virtual'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:136: warning: argument 'unsigned' of command @param is not found in the argument list of Widget::event(unsigned char name)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:136: warning: The following parameters of Widget::event(unsigned char name) are not documented:
+  parameter 'name'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:146: warning: argument 'unsigned' of command @param is not found in the argument list of Widget::listener(unsigned char name, Listener function)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:146: warning: argument 'Listener' of command @param is not found in the argument list of Widget::listener(unsigned char name, Listener function)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:146: warning: The following parameters of Widget::listener(unsigned char name, Listener function) are not documented:
+  parameter 'name'
+  parameter 'function'
+
+Generating caller graph for function Widget::_parent
+Generating caller graph for function Widget::_previous
+Generating call graph for function Widget::add
+Generating caller graph for function Widget::add
+Generating caller graph for function Widget::childLength
+Generating call graph for function Widget::children
+Generating caller graph for function Widget::dispatch
+Generating caller graph for function Widget::draw
+Generating caller graph for function Widget::event
+Generating caller graph for function Widget::firstChild
+Generating caller graph for function Widget::lastChild
+Generating caller graph for function Widget::listener
+Generating caller graph for function Widget::next
+Generating caller graph for function Widget::parent
+Generating caller graph for function Widget::previous
 Generating namespace index...
 Generating graph info page...
 Generating directory documentation...
@@ -472,12 +552,12 @@ Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Change
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Common
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Game
-Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Interface
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Labyrinth
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Screens
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/SideMenu
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Snake
 Generating dependency graph for directory /home/travis/build/echo-team/Snoke/tests
+Generating dependency graph for directory /home/travis/build/echo-team/Snoke/app/Widgets
 Generating index page...
 Generating page index...
 Generating module index...
@@ -494,299 +574,336 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/225
-Running dot for graph 2/225
-Running dot for graph 3/225
-Running dot for graph 4/225
-Running dot for graph 5/225
-Running dot for graph 6/225
-Running dot for graph 7/225
-Running dot for graph 8/225
-Running dot for graph 9/225
-Running dot for graph 10/225
-Running dot for graph 11/225
-Running dot for graph 12/225
-Running dot for graph 13/225
-Running dot for graph 14/225
-Running dot for graph 15/225
-Running dot for graph 16/225
-Running dot for graph 17/225
-Running dot for graph 18/225
-Running dot for graph 19/225
-Running dot for graph 20/225
-Running dot for graph 21/225
-Running dot for graph 22/225
-Running dot for graph 23/225
-Running dot for graph 24/225
-Running dot for graph 25/225
-Running dot for graph 26/225
-Running dot for graph 27/225
-Running dot for graph 28/225
-Running dot for graph 29/225
-Running dot for graph 30/225
-Running dot for graph 31/225
-Running dot for graph 32/225
-Running dot for graph 33/225
-Running dot for graph 34/225
-Running dot for graph 35/225
-Running dot for graph 36/225
-Running dot for graph 37/225
-Running dot for graph 38/225
-Running dot for graph 39/225
-Running dot for graph 40/225
-Running dot for graph 41/225
-Running dot for graph 42/225
-Running dot for graph 43/225
-Running dot for graph 44/225
-Running dot for graph 45/225
-Running dot for graph 46/225
-Running dot for graph 47/225
-Running dot for graph 48/225
-Running dot for graph 49/225
-Running dot for graph 50/225
-Running dot for graph 51/225
-Running dot for graph 52/225
-Running dot for graph 53/225
-Running dot for graph 54/225
-Running dot for graph 55/225
-Running dot for graph 56/225
-Running dot for graph 57/225
-Running dot for graph 58/225
-Running dot for graph 59/225
-Running dot for graph 60/225
-Running dot for graph 61/225
-Running dot for graph 62/225
-Running dot for graph 63/225
-Running dot for graph 64/225
-Running dot for graph 65/225
-Running dot for graph 66/225
-Running dot for graph 67/225
-Running dot for graph 68/225
-Running dot for graph 69/225
-Running dot for graph 70/225
-Running dot for graph 71/225
-Running dot for graph 72/225
-Running dot for graph 73/225
-Running dot for graph 74/225
-Running dot for graph 75/225
-Running dot for graph 76/225
-Running dot for graph 77/225
-Running dot for graph 78/225
-Running dot for graph 79/225
-Running dot for graph 80/225
-Running dot for graph 81/225
-Running dot for graph 82/225
-Running dot for graph 83/225
-Running dot for graph 84/225
-Running dot for graph 85/225
-Running dot for graph 86/225
-Running dot for graph 87/225
-Running dot for graph 88/225
-Running dot for graph 89/225
-Running dot for graph 90/225
-Running dot for graph 91/225
-Running dot for graph 92/225
-Running dot for graph 93/225
-Running dot for graph 94/225
-Running dot for graph 95/225
-Running dot for graph 96/225
-Running dot for graph 97/225
-Running dot for graph 98/225
-Running dot for graph 99/225
-Running dot for graph 100/225
-Running dot for graph 101/225
-Running dot for graph 102/225
-Running dot for graph 103/225
-Running dot for graph 104/225
-Running dot for graph 105/225
-Running dot for graph 106/225
-Running dot for graph 107/225
-Running dot for graph 108/225
-Running dot for graph 109/225
-Running dot for graph 110/225
-Running dot for graph 111/225
-Running dot for graph 112/225
-Running dot for graph 113/225
-Running dot for graph 114/225
-Running dot for graph 115/225
-Running dot for graph 116/225
-Running dot for graph 117/225
-Running dot for graph 118/225
-Running dot for graph 119/225
-Running dot for graph 120/225
-Running dot for graph 121/225
-Running dot for graph 122/225
-Running dot for graph 123/225
-Running dot for graph 124/225
-Running dot for graph 125/225
-Running dot for graph 126/225
-Running dot for graph 127/225
-Running dot for graph 128/225
-Running dot for graph 129/225
-Running dot for graph 130/225
-Running dot for graph 131/225
-Running dot for graph 132/225
-Running dot for graph 133/225
-Running dot for graph 134/225
-Running dot for graph 135/225
-Running dot for graph 136/225
-Running dot for graph 137/225
-Running dot for graph 138/225
-Running dot for graph 139/225
-Running dot for graph 140/225
-Running dot for graph 141/225
-Running dot for graph 142/225
-Running dot for graph 143/225
-Running dot for graph 144/225
-Running dot for graph 145/225
-Running dot for graph 146/225
-Running dot for graph 147/225
-Running dot for graph 148/225
-Running dot for graph 149/225
-Running dot for graph 150/225
-Running dot for graph 151/225
-Running dot for graph 152/225
-Running dot for graph 153/225
-Running dot for graph 154/225
-Running dot for graph 155/225
-Running dot for graph 156/225
-Running dot for graph 157/225
-Running dot for graph 158/225
-Running dot for graph 159/225
-Running dot for graph 160/225
-Running dot for graph 161/225
-Running dot for graph 162/225
-Running dot for graph 163/225
-Running dot for graph 164/225
-Running dot for graph 165/225
-Running dot for graph 166/225
-Running dot for graph 167/225
-Running dot for graph 168/225
-Running dot for graph 169/225
-Running dot for graph 170/225
-Running dot for graph 171/225
-Running dot for graph 172/225
-Running dot for graph 173/225
-Running dot for graph 174/225
-Running dot for graph 175/225
-Running dot for graph 176/225
-Running dot for graph 177/225
-Running dot for graph 178/225
-Running dot for graph 179/225
-Running dot for graph 180/225
-Running dot for graph 181/225
-Running dot for graph 182/225
-Running dot for graph 183/225
-Running dot for graph 184/225
-Running dot for graph 185/225
-Running dot for graph 186/225
-Running dot for graph 187/225
-Running dot for graph 188/225
-Running dot for graph 189/225
-Running dot for graph 190/225
-Running dot for graph 191/225
-Running dot for graph 192/225
-Running dot for graph 193/225
-Running dot for graph 194/225
-Running dot for graph 195/225
-Running dot for graph 196/225
-Running dot for graph 197/225
-Running dot for graph 198/225
-Running dot for graph 199/225
-Running dot for graph 200/225
-Running dot for graph 201/225
-Running dot for graph 202/225
-Running dot for graph 203/225
-Running dot for graph 204/225
-Running dot for graph 205/225
-Running dot for graph 206/225
-Running dot for graph 207/225
-Running dot for graph 208/225
-Running dot for graph 209/225
-Running dot for graph 210/225
-Running dot for graph 211/225
-Running dot for graph 212/225
-Running dot for graph 213/225
-Running dot for graph 214/225
-Running dot for graph 215/225
-Running dot for graph 216/225
-Running dot for graph 217/225
-Running dot for graph 218/225
-Running dot for graph 219/225
-Running dot for graph 220/225
-Running dot for graph 221/225
-Running dot for graph 222/225
-Running dot for graph 223/225
-Running dot for graph 224/225
-Running dot for graph 225/225
-Patching output file 1/69
-Patching output file 2/69
-Patching output file 3/69
-Patching output file 4/69
-Patching output file 5/69
-Patching output file 6/69
-Patching output file 7/69
-Patching output file 8/69
-Patching output file 9/69
-Patching output file 10/69
-Patching output file 11/69
-Patching output file 12/69
-Patching output file 13/69
-Patching output file 14/69
-Patching output file 15/69
-Patching output file 16/69
-Patching output file 17/69
-Patching output file 18/69
-Patching output file 19/69
-Patching output file 20/69
-Patching output file 21/69
-Patching output file 22/69
-Patching output file 23/69
-Patching output file 24/69
-Patching output file 25/69
-Patching output file 26/69
-Patching output file 27/69
-Patching output file 28/69
-Patching output file 29/69
-Patching output file 30/69
-Patching output file 31/69
-Patching output file 32/69
-Patching output file 33/69
-Patching output file 34/69
-Patching output file 35/69
-Patching output file 36/69
-Patching output file 37/69
-Patching output file 38/69
-Patching output file 39/69
-Patching output file 40/69
-Patching output file 41/69
-Patching output file 42/69
-Patching output file 43/69
-Patching output file 44/69
-Patching output file 45/69
-Patching output file 46/69
-Patching output file 47/69
-Patching output file 48/69
-Patching output file 49/69
-Patching output file 50/69
-Patching output file 51/69
-Patching output file 52/69
-Patching output file 53/69
-Patching output file 54/69
-Patching output file 55/69
-Patching output file 56/69
-Patching output file 57/69
-Patching output file 58/69
-Patching output file 59/69
-Patching output file 60/69
-Patching output file 61/69
-Patching output file 62/69
-Patching output file 63/69
-Patching output file 64/69
-Patching output file 65/69
-Patching output file 66/69
-Patching output file 67/69
-Patching output file 68/69
-Patching output file 69/69
-lookup cache used 543/65536 hits=5210 misses=650
+Running dot for graph 1/260
+Running dot for graph 2/260
+Running dot for graph 3/260
+Running dot for graph 4/260
+Running dot for graph 5/260
+Running dot for graph 6/260
+Running dot for graph 7/260
+Running dot for graph 8/260
+Running dot for graph 9/260
+Running dot for graph 10/260
+Running dot for graph 11/260
+Running dot for graph 12/260
+Running dot for graph 13/260
+Running dot for graph 14/260
+Running dot for graph 15/260
+Running dot for graph 16/260
+Running dot for graph 17/260
+Running dot for graph 18/260
+Running dot for graph 19/260
+Running dot for graph 20/260
+Running dot for graph 21/260
+Running dot for graph 22/260
+Running dot for graph 23/260
+Running dot for graph 24/260
+Running dot for graph 25/260
+Running dot for graph 26/260
+Running dot for graph 27/260
+Running dot for graph 28/260
+Running dot for graph 29/260
+Running dot for graph 30/260
+Running dot for graph 31/260
+Running dot for graph 32/260
+Running dot for graph 33/260
+Running dot for graph 34/260
+Running dot for graph 35/260
+Running dot for graph 36/260
+Running dot for graph 37/260
+Running dot for graph 38/260
+Running dot for graph 39/260
+Running dot for graph 40/260
+Running dot for graph 41/260
+Running dot for graph 42/260
+Running dot for graph 43/260
+Running dot for graph 44/260
+Running dot for graph 45/260
+Running dot for graph 46/260
+Running dot for graph 47/260
+Running dot for graph 48/260
+Running dot for graph 49/260
+Running dot for graph 50/260
+Running dot for graph 51/260
+Running dot for graph 52/260
+Running dot for graph 53/260
+Running dot for graph 54/260
+Running dot for graph 55/260
+Running dot for graph 56/260
+Running dot for graph 57/260
+Running dot for graph 58/260
+Running dot for graph 59/260
+Running dot for graph 60/260
+Running dot for graph 61/260
+Running dot for graph 62/260
+Running dot for graph 63/260
+Running dot for graph 64/260
+Running dot for graph 65/260
+Running dot for graph 66/260
+Running dot for graph 67/260
+Running dot for graph 68/260
+Running dot for graph 69/260
+Running dot for graph 70/260
+Running dot for graph 71/260
+Running dot for graph 72/260
+Running dot for graph 73/260
+Running dot for graph 74/260
+Running dot for graph 75/260
+Running dot for graph 76/260
+Running dot for graph 77/260
+Running dot for graph 78/260
+Running dot for graph 79/260
+Running dot for graph 80/260
+Running dot for graph 81/260
+Running dot for graph 82/260
+Running dot for graph 83/260
+Running dot for graph 84/260
+Running dot for graph 85/260
+Running dot for graph 86/260
+Running dot for graph 87/260
+Running dot for graph 88/260
+Running dot for graph 89/260
+Running dot for graph 90/260
+Running dot for graph 91/260
+Running dot for graph 92/260
+Running dot for graph 93/260
+Running dot for graph 94/260
+Running dot for graph 95/260
+Running dot for graph 96/260
+Running dot for graph 97/260
+Running dot for graph 98/260
+Running dot for graph 99/260
+Running dot for graph 100/260
+Running dot for graph 101/260
+Running dot for graph 102/260
+Running dot for graph 103/260
+Running dot for graph 104/260
+Running dot for graph 105/260
+Running dot for graph 106/260
+Running dot for graph 107/260
+Running dot for graph 108/260
+Running dot for graph 109/260
+Running dot for graph 110/260
+Running dot for graph 111/260
+Running dot for graph 112/260
+Running dot for graph 113/260
+Running dot for graph 114/260
+Running dot for graph 115/260
+Running dot for graph 116/260
+Running dot for graph 117/260
+Running dot for graph 118/260
+Running dot for graph 119/260
+Running dot for graph 120/260
+Running dot for graph 121/260
+Running dot for graph 122/260
+Running dot for graph 123/260
+Running dot for graph 124/260
+Running dot for graph 125/260
+Running dot for graph 126/260
+Running dot for graph 127/260
+Running dot for graph 128/260
+Running dot for graph 129/260
+Running dot for graph 130/260
+Running dot for graph 131/260
+Running dot for graph 132/260
+Running dot for graph 133/260
+Running dot for graph 134/260
+Running dot for graph 135/260
+Running dot for graph 136/260
+Running dot for graph 137/260
+Running dot for graph 138/260
+Running dot for graph 139/260
+Running dot for graph 140/260
+Running dot for graph 141/260
+Running dot for graph 142/260
+Running dot for graph 143/260
+Running dot for graph 144/260
+Running dot for graph 145/260
+Running dot for graph 146/260
+Running dot for graph 147/260
+Running dot for graph 148/260
+Running dot for graph 149/260
+Running dot for graph 150/260
+Running dot for graph 151/260
+Running dot for graph 152/260
+Running dot for graph 153/260
+Running dot for graph 154/260
+Running dot for graph 155/260
+Running dot for graph 156/260
+Running dot for graph 157/260
+Running dot for graph 158/260
+Running dot for graph 159/260
+Running dot for graph 160/260
+Running dot for graph 161/260
+Running dot for graph 162/260
+Running dot for graph 163/260
+Running dot for graph 164/260
+Running dot for graph 165/260
+Running dot for graph 166/260
+Running dot for graph 167/260
+Running dot for graph 168/260
+Running dot for graph 169/260
+Running dot for graph 170/260
+Running dot for graph 171/260
+Running dot for graph 172/260
+Running dot for graph 173/260
+Running dot for graph 174/260
+Running dot for graph 175/260
+Running dot for graph 176/260
+Running dot for graph 177/260
+Running dot for graph 178/260
+Running dot for graph 179/260
+Running dot for graph 180/260
+Running dot for graph 181/260
+Running dot for graph 182/260
+Running dot for graph 183/260
+Running dot for graph 184/260
+Running dot for graph 185/260
+Running dot for graph 186/260
+Running dot for graph 187/260
+Running dot for graph 188/260
+Running dot for graph 189/260
+Running dot for graph 190/260
+Running dot for graph 191/260
+Running dot for graph 192/260
+Running dot for graph 193/260
+Running dot for graph 194/260
+Running dot for graph 195/260
+Running dot for graph 196/260
+Running dot for graph 197/260
+Running dot for graph 198/260
+Running dot for graph 199/260
+Running dot for graph 200/260
+Running dot for graph 201/260
+Running dot for graph 202/260
+Running dot for graph 203/260
+Running dot for graph 204/260
+Running dot for graph 205/260
+Running dot for graph 206/260
+Running dot for graph 207/260
+Running dot for graph 208/260
+Running dot for graph 209/260
+Running dot for graph 210/260
+Running dot for graph 211/260
+Running dot for graph 212/260
+Running dot for graph 213/260
+Running dot for graph 214/260
+Running dot for graph 215/260
+Running dot for graph 216/260
+Running dot for graph 217/260
+Running dot for graph 218/260
+Running dot for graph 219/260
+Running dot for graph 220/260
+Running dot for graph 221/260
+Running dot for graph 222/260
+Running dot for graph 223/260
+Running dot for graph 224/260
+Running dot for graph 225/260
+Running dot for graph 226/260
+Running dot for graph 227/260
+Running dot for graph 228/260
+Running dot for graph 229/260
+Running dot for graph 230/260
+Running dot for graph 231/260
+Running dot for graph 232/260
+Running dot for graph 233/260
+Running dot for graph 234/260
+Running dot for graph 235/260
+Running dot for graph 236/260
+Running dot for graph 237/260
+Running dot for graph 238/260
+Running dot for graph 239/260
+Running dot for graph 240/260
+Running dot for graph 241/260
+Running dot for graph 242/260
+Running dot for graph 243/260
+Running dot for graph 244/260
+Running dot for graph 245/260
+Running dot for graph 246/260
+Running dot for graph 247/260
+Running dot for graph 248/260
+Running dot for graph 249/260
+Running dot for graph 250/260
+Running dot for graph 251/260
+Running dot for graph 252/260
+Running dot for graph 253/260
+Running dot for graph 254/260
+Running dot for graph 255/260
+Running dot for graph 256/260
+Running dot for graph 257/260
+Running dot for graph 258/260
+Running dot for graph 259/260
+Running dot for graph 260/260
+Patching output file 1/71
+Patching output file 2/71
+Patching output file 3/71
+Patching output file 4/71
+Patching output file 5/71
+Patching output file 6/71
+Patching output file 7/71
+Patching output file 8/71
+Patching output file 9/71
+Patching output file 10/71
+Patching output file 11/71
+Patching output file 12/71
+Patching output file 13/71
+Patching output file 14/71
+Patching output file 15/71
+Patching output file 16/71
+Patching output file 17/71
+Patching output file 18/71
+Patching output file 19/71
+Patching output file 20/71
+Patching output file 21/71
+Patching output file 22/71
+Patching output file 23/71
+Patching output file 24/71
+Patching output file 25/71
+Patching output file 26/71
+Patching output file 27/71
+Patching output file 28/71
+Patching output file 29/71
+Patching output file 30/71
+Patching output file 31/71
+Patching output file 32/71
+Patching output file 33/71
+Patching output file 34/71
+Patching output file 35/71
+Patching output file 36/71
+Patching output file 37/71
+Patching output file 38/71
+Patching output file 39/71
+Patching output file 40/71
+Patching output file 41/71
+Patching output file 42/71
+Patching output file 43/71
+Patching output file 44/71
+Patching output file 45/71
+Patching output file 46/71
+Patching output file 47/71
+Patching output file 48/71
+Patching output file 49/71
+Patching output file 50/71
+Patching output file 51/71
+Patching output file 52/71
+Patching output file 53/71
+Patching output file 54/71
+Patching output file 55/71
+Patching output file 56/71
+Patching output file 57/71
+Patching output file 58/71
+Patching output file 59/71
+Patching output file 60/71
+Patching output file 61/71
+Patching output file 62/71
+Patching output file 63/71
+Patching output file 64/71
+Patching output file 65/71
+Patching output file 66/71
+Patching output file 67/71
+Patching output file 68/71
+Patching output file 69/71
+Patching output file 70/71
+Patching output file 71/71
+lookup cache used 640/65536 hits=6085 misses=754
 finished...

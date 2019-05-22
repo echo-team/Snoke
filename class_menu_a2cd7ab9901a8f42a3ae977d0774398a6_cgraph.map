@@ -1,0 +1,5 @@
+<map id="Menu::draw" name="Menu::draw">
+<area shape="rect" id="node2" href="$class_widget.html#a294b80d01330825d3172c8749ed2934a" title="Widget::firstChild" alt="" coords="144,5,267,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a6ea4feac4bdee76a57d666d7241f7422" title="Widget::draw" alt="" coords="156,56,255,83"/>
+<area shape="rect" id="node4" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="157,107,253,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Menu::add" name="Menu::add">
+<area shape="rect" id="node2" href="$class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4" title="Widget::childLength" alt="" coords="137,5,274,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a49569aaaf70b0d283ba7165a68e56efb" title="Widget::listener" alt="" coords="149,56,262,83"/>
+<area shape="rect" id="node4" href="$class_menu.html#ac5ec365a1916cc9cbd233063544588d7" title="Menu::focus" alt="" coords="158,107,253,133"/>
+<area shape="rect" id="node5" href="$class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c" title="Menu::unfocus" alt="" coords="151,157,259,184"/>
+</map>

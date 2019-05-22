@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('common_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -144,38 +144,45 @@ $(document).ready(function(){initNavTree('common_8cpp_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a>()</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>    req = rem;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    rem.tv_sec = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    rem.tv_nsec = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="common_8h.html#a8cc817c98b389a060e7061a138efe10c">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>    nanosleep(&amp;req, &amp;rem);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef __unix__</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="common_8h.html#ae8211888b97841c7339ec4673cdd76e4">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c">set_escdelay</a>(<span class="keywordtype">short</span> delay)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="common_8h.html#a54e5255040d967ad5e858ae4a1e7ae6a">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>    req = rem;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    rem.tv_sec = 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    rem.tv_nsec = 0;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a">   90</a></span>&#160;<a class="code" href="class_point.html">Point</a> <a class="code" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="common_8h.html#a8cc817c98b389a060e7061a138efe10c">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a>()</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_point.html">Point</a> size;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    getmaxyx(stdscr, size.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, size.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> size;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef __unix__</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span>    nanosleep(&amp;req, &amp;rem);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="common_8h.html#ada3ae1ea3b3825462dccd1eb18df401a">  100</a></span>&#160;<a class="code" href="class_point.html">Point</a> <a class="code" href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a>()</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_point.html">Point</a> size;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    getmaxyx(stdscr, size.<a class="code" href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">y</a>, size.<a class="code" href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">x</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> size;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="ttc" id="common_8cpp_html_acfe1c587c2a13d4b833eb11bd3157771"><div class="ttname"><a href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a></div><div class="ttdeci">void mSleep(int time)</div><div class="ttdoc">Cross-platform sleep function cover. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00049">common.cpp:49</a></div></div>
 <div class="ttc" id="class_point_html_a5309894db6c0ddb1637e9bf06fdc83df"><div class="ttname"><a href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point::x</a></div><div class="ttdeci">short x</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
 <div class="ttc" id="common_8cpp_html_a74c857df0e2025afce6053ae585b84c5"><div class="ttname"><a href="common_8cpp.html#a74c857df0e2025afce6053ae585b84c5">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;s, Point p)</div><div class="ttdoc">Operation &#39;&lt;&lt;&#39; override for the Point class. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00030">common.cpp:30</a></div></div>
 <div class="ttc" id="class_point_html_ab3990459d2a699f26b177d60b15333cd"><div class="ttname"><a href="class_point.html#ab3990459d2a699f26b177d60b15333cd">Point::operator==</a></div><div class="ttdeci">bool operator==(Point p)</div><div class="ttdoc">Operation &quot;==&quot; override for the Point class. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00019">common.cpp:19</a></div></div>
-<div class="ttc" id="common_8cpp_html_a54e5255040d967ad5e858ae4a1e7ae6a"><div class="ttname"><a href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a></div><div class="ttdeci">void sleepHandler()</div><div class="ttdoc">setting new values for sleep function on signal interrupt </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00068">common.cpp:68</a></div></div>
-<div class="ttc" id="common_8cpp_html_ada3ae1ea3b3825462dccd1eb18df401a"><div class="ttname"><a href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a></div><div class="ttdeci">Point getConsoleSize()</div><div class="ttdoc">Gets size of current console screen in symdols. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00090">common.cpp:90</a></div></div>
+<div class="ttc" id="common_8cpp_html_a54e5255040d967ad5e858ae4a1e7ae6a"><div class="ttname"><a href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a></div><div class="ttdeci">void sleepHandler()</div><div class="ttdoc">setting new values for sleep function on signal interrupt </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00078">common.cpp:78</a></div></div>
+<div class="ttc" id="common_8cpp_html_ad90bb9a31cd7f5d895f59504441f2e4c"><div class="ttname"><a href="common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c">set_escdelay</a></div><div class="ttdeci">void set_escdelay(short delay)</div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00071">common.cpp:71</a></div></div>
+<div class="ttc" id="common_8cpp_html_ada3ae1ea3b3825462dccd1eb18df401a"><div class="ttname"><a href="common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a">getConsoleSize</a></div><div class="ttdeci">Point getConsoleSize()</div><div class="ttdoc">Gets size of current console screen in symdols. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00100">common.cpp:100</a></div></div>
 <div class="ttc" id="class_point_html_abdf73422d00c5cc4c18a06aa4f1edc53"><div class="ttname"><a href="class_point.html#abdf73422d00c5cc4c18a06aa4f1edc53">Point::y</a></div><div class="ttdeci">short y</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00056">common.h:56</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div><div class="ttdoc">shared functions prototypes, structures, main classes declarations </div></div>
-<div class="ttc" id="common_8cpp_html_a8cc817c98b389a060e7061a138efe10c"><div class="ttname"><a href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a></div><div class="ttdeci">void addSleep()</div><div class="ttdoc">For unix-based systems interrupted sleep must be continued. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00080">common.cpp:80</a></div></div>
+<div class="ttc" id="common_8cpp_html_a8cc817c98b389a060e7061a138efe10c"><div class="ttname"><a href="common_8cpp.html#a8cc817c98b389a060e7061a138efe10c">addSleep</a></div><div class="ttdeci">void addSleep()</div><div class="ttdoc">For unix-based systems interrupted sleep must be continued. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00090">common.cpp:90</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Coordinates and style of the cell in console window. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00052">common.h:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

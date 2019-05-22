@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('common_8cpp.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="memitem:acfe1c587c2a13d4b833eb11bd3157771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a> (int time)</td></tr>
 <tr class="memdesc:acfe1c587c2a13d4b833eb11bd3157771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-platform sleep function cover.  <a href="#acfe1c587c2a13d4b833eb11bd3157771">More...</a><br/></td></tr>
 <tr class="separator:acfe1c587c2a13d4b833eb11bd3157771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90bb9a31cd7f5d895f59504441f2e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#ad90bb9a31cd7f5d895f59504441f2e4c">set_escdelay</a> (short delay)</td></tr>
+<tr class="separator:ad90bb9a31cd7f5d895f59504441f2e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a> ()</td></tr>
 <tr class="memdesc:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting new values for sleep function on signal interrupt  <a href="#a54e5255040d967ad5e858ae4a1e7ae6a">More...</a><br/></td></tr>
 <tr class="separator:a54e5255040d967ad5e858ae4a1e7ae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +165,7 @@ Functions</h2></td></tr>
 
 <p>For unix-based systems interrupted sleep must be continued. </p>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00080">80</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00090">90</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -191,7 +193,7 @@ Here is the caller graph for this function:</div>
 
 <p>Gets size of current console screen in symdols. </p>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00090">90</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00100">100</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -276,6 +278,31 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ad90bb9a31cd7f5d895f59504441f2e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_escdelay </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Plug for ncurses unix set_escdelay function In Windows does nothing, needs for supporting crossplatform code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{short}</td><td>delay - time to wait before process ESC key press </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00071">71</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a54e5255040d967ad5e858ae4a1e7ae6a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +318,7 @@ Here is the caller graph for this function:</div>
 
 <p>setting new values for sleep function on signal interrupt </p>
 
-<p>Definition at line <a class="el" href="common_8cpp_source.html#l00068">68</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
+<p>Definition at line <a class="el" href="common_8cpp_source.html#l00078">78</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>

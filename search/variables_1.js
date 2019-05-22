@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['change',['change',['../class_labyrinth.html#ad9a3c7ebdd5ee39ccf4e320c2f1acec4',1,'Labyrinth']]],
-  ['coll',['COLL',['../snake_8h.html#a1a149ac26a0e57c1aa7e262b5a58a854',1,'snake.h']]],
-  ['currentsubunit',['currentSubunit',['../class_navigator.html#a616e5c7457f641e3027f68103e0da245',1,'Navigator']]],
-  ['currentunit',['currentUnit',['../class_navigator.html#a64d901b59121319cb87ca450dcc25912',1,'Navigator']]]
+  ['ball',['ball',['../class_labyrinth.html#a8986a479497cd6b77deb62334b862f04',1,'Labyrinth::ball()'],['../snake_8h.html#a43d0bede78018beb3759ccd861a20d8f',1,'BALL():&#160;snake.h']]],
+  ['bg',['bg',['../class_point_style.html#aacc97d67bd02949ddc02af1f1d33bceb',1,'PointStyle']]],
+  ['buttons',['buttons',['../class_side_menu.html#af6b73f113ae5b74a238f5b167c8902cb',1,'SideMenu']]]
 ];

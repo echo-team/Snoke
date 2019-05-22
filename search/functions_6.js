@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['inaddqueue',['inAddQueue',['../class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b',1,'Change']]],
-  ['init',['init',['../class_ball.html#a1907f13fdfb320a19180efec2a56e39c',1,'Ball::init()'],['../class_game.html#a808d86ad76b84657f62d3ffc8e9080c7',1,'Game::init()'],['../class_snake.html#a953fb7b8be521f651989bb53323e89ec',1,'Snake::init()']]],
-  ['initball',['initBall',['../class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65',1,'Labyrinth']]],
-  ['initqueue',['initQueue',['../class_change.html#a298fdf2c746248234504a01fcf26fce7',1,'Change']]],
-  ['initsnake',['initSnake',['../class_game.html#a4fa944597d4f5f5e96e997a52e8d8077',1,'Game']]],
-  ['inrmqueue',['inRmQueue',['../class_change.html#a7c2513f30bc0e06d3685223c51bbc116',1,'Change']]],
-  ['isfree',['isFree',['../class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277',1,'Labyrinth']]]
+  ['first',['first',['../class_screen.html#abcd6462530408562e11cdfa1f6011dc7',1,'Screen']]],
+  ['firstchild',['firstChild',['../class_widget.html#a294b80d01330825d3172c8749ed2934a',1,'Widget']]],
+  ['focus',['focus',['../class_menu.html#ac5ec365a1916cc9cbd233063544588d7',1,'Menu']]],
+  ['focusfirst',['focusFirst',['../class_application.html#a80614dd1a6a37626a880a7ef83156764',1,'Application']]],
+  ['forceddisplay',['forcedDisplay',['../class_display_handler.html#a6ee373ad3e3318633461be0851768248',1,'DisplayHandler']]],
+  ['freedisplay',['freeDisplay',['../class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c',1,'DisplayHandler']]]
 ];

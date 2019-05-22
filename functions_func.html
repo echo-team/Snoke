@@ -83,9 +83,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
       <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
@@ -96,7 +99,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
-      <li class="current"><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -119,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -131,9 +135,24 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <div class="contents">
 &#160;
 
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_next()
+: <a class="el" href="class_widget.html#ae8cac87879e452153eda3c055e74bbeb">Widget</a>
+</li>
+<li>_parent()
+: <a class="el" href="class_widget.html#a1923a81b244677ab48494238a345825f">Widget</a>
+</li>
+<li>_previous()
+: <a class="el" href="class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f">Widget</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
-<li>addButton()
-: <a class="el" href="class_menu.html#a1a1982871bb5f8b1557d26b0d9ccfe0f">Menu</a>
+<li>add()
+: <a class="el" href="class_application.html#a4e096aa3266a9331cd542cf6ee42b84d">Application</a>
+, <a class="el" href="class_menu.html#a2fbf061e8bb58f54459ecd39229d75f1">Menu</a>
+, <a class="el" href="class_widget.html#add8e7c0010594410e6e5b6d5e93966a2">Widget</a>
 </li>
 <li>addPoint()
 : <a class="el" href="class_change.html#abc4f4f804d28d110a9a1990e0ef1ec60">Change</a>
@@ -141,6 +160,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>addSnake()
 : <a class="el" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737">Labyrinth</a>
+</li>
+<li>Application()
+: <a class="el" href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>back()
+: <a class="el" href="class_application.html#a7efbd7aad2bb4539e23d11b1f9dea252">Application</a>
 </li>
 </ul>
 
@@ -152,10 +181,19 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>checkWisely()
 : <a class="el" href="class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb">Snake</a>
 </li>
+<li>childLength()
+: <a class="el" href="class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4">Widget</a>
+</li>
+<li>children()
+: <a class="el" href="class_widget.html#afc7d109a1b67161e4d6a010ea3bf886f">Widget</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>dispatch()
+: <a class="el" href="class_widget.html#a76ead71881834c227471d223af092c3f">Widget</a>
+</li>
 <li>displayFull()
 : <a class="el" href="class_display_handler.html#a59ec2f4626d27172e9a9db6eb9c64ac1">DisplayHandler</a>
 </li>
@@ -173,14 +211,35 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_logo.html#aced3f5817a709bcc0fd7cf8a360a2523">Logo</a>
 , <a class="el" href="class_main_menu.html#a6c17addf154519404a791d3c2a40a2aa">MainMenu</a>
 , <a class="el" href="class_menu.html#a2cd7ab9901a8f42a3ae977d0774398a6">Menu</a>
+, <a class="el" href="class_menu_item.html#af1e7bf9b4451876735cf2baea06cee3d">MenuItem</a>
+, <a class="el" href="class_screen.html#a4e822bf10f57a15d43cffbf6a7cebb02">Screen</a>
+, <a class="el" href="class_widget.html#a6ea4feac4bdee76a57d666d7241f7422">Widget</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>event()
+: <a class="el" href="class_widget.html#a495d82da7793c5b07f3ff103fb2fd533">Widget</a>
+</li>
+<li>execute()
+: <a class="el" href="class_application.html#a9120abd4246a3378c2a188c06149a8a3">Application</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>first()
+: <a class="el" href="class_screen.html#abcd6462530408562e11cdfa1f6011dc7">Screen</a>
+</li>
+<li>firstChild()
+: <a class="el" href="class_widget.html#a294b80d01330825d3172c8749ed2934a">Widget</a>
+</li>
 <li>focus()
 : <a class="el" href="class_menu.html#ac5ec365a1916cc9cbd233063544588d7">Menu</a>
-, <a class="el" href="class_widget.html#ac395fbcfd90f5a33a4bb2ca1d83631ca">Widget</a>
+</li>
+<li>focusFirst()
+: <a class="el" href="class_application.html#a80614dd1a6a37626a880a7ef83156764">Application</a>
 </li>
 <li>forcedDisplay()
 : <a class="el" href="class_display_handler.html#a6ee373ad3e3318633461be0851768248">DisplayHandler</a>
@@ -241,6 +300,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>inRmQueue()
 : <a class="el" href="class_change.html#a7c2513f30bc0e06d3685223c51bbc116">Change</a>
 </li>
+<li>instance()
+: <a class="el" href="class_application.html#ada3b7951bef34e1e6de30403eee8eada">Application</a>
+</li>
 <li>isFree()
 : <a class="el" href="class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277">Labyrinth</a>
 </li>
@@ -248,11 +310,15 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>listen()
-: <a class="el" href="class_navigator.html#ab9b30029b9ef06cca27ebc5b2549121c">Navigator</a>
+<li>lastChild()
+: <a class="el" href="class_widget.html#ac377c134451d68d5915ca6ddfe7fd507">Widget</a>
+</li>
+<li>listener()
+: <a class="el" href="class_widget.html#a49569aaaf70b0d283ba7165a68e56efb">Widget</a>
 </li>
 <li>load()
-: <a class="el" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth</a>
+: <a class="el" href="class_application.html#a0ba46f127e71da8057b748de835e89af">Application</a>
+, <a class="el" href="class_labyrinth.html#a36cd7033292515cba0ce3d74f03720b6">Labyrinth</a>
 </li>
 <li>Logo()
 : <a class="el" href="class_logo.html#a1cdb59eff67441b73e9d0450e6a88921">Logo</a>
@@ -263,6 +329,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>Menu()
 : <a class="el" href="class_menu.html#ab6e38ad7f84b7741846cf5a57040276a">Menu</a>
+</li>
+<li>MenuItem()
+: <a class="el" href="class_menu_item.html#a5b6a02b11810120bed744e05c5bedcb1">MenuItem</a>
 </li>
 <li>move()
 : <a class="el" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037">Snake</a>
@@ -277,13 +346,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
-<li>Navigator()
-: <a class="el" href="class_navigator.html#a59230ab4698882f754d5ce275a1a4030">Navigator</a>
+<li>next()
+: <a class="el" href="class_screen.html#ae55eb21ef7b4aeda13424cae0df2c8b6">Screen</a>
+, <a class="el" href="class_widget.html#a4c14a7af2fe983cdda25b0433da1743b">Widget</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator=()
+: <a class="el" href="class_application.html#ab9d8faad6fa26b611fc5fdad8c71ad55">Application</a>
+</li>
 <li>operator==()
 : <a class="el" href="class_point.html#ab3990459d2a699f26b177d60b15333cd">Point</a>
 </li>
@@ -291,8 +364,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
-<li>pushUnit()
-: <a class="el" href="class_navigator.html#a47967fc9bdfd276c98f8ed1c44d5dc46">Navigator</a>
+<li>parent()
+: <a class="el" href="class_widget.html#a3dac0069a2933ad4a2e6d1b2cfd16236">Widget</a>
+</li>
+<li>previous()
+: <a class="el" href="class_screen.html#ab2b1b2972a5b4f8e9a1422a89b1ed83e">Screen</a>
+, <a class="el" href="class_widget.html#a4451247ef765bccbfa460211ce91d07e">Widget</a>
 </li>
 </ul>
 
@@ -311,6 +388,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>save()
 : <a class="el" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth</a>
+</li>
+<li>Screen()
+: <a class="el" href="class_screen.html#ae7576476fc6e6a6eaa66389fdc41fe72">Screen</a>
 </li>
 <li>setCoords()
 : <a class="el" href="class_ball.html#af42e561b11017035fc8a68ce35c99087">Ball</a>
@@ -342,10 +422,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>unfocus()
 : <a class="el" href="class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c">Menu</a>
-, <a class="el" href="class_widget.html#a65f349812facca8302957a83b161a840">Widget</a>
 </li>
 <li>updateLabyrinth()
 : <a class="el" href="class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a">Labyrinth</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>Widget()
+: <a class="el" href="class_widget.html#ab0f05949f1fa8ca233137fc4119c7401">Widget</a>
 </li>
 </ul>
 </div><!-- contents -->

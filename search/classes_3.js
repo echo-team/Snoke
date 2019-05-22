@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game',['Game',['../class_game.html',1,'']]]
+  ['displayhandler',['DisplayHandler',['../class_display_handler.html',1,'']]]
 ];

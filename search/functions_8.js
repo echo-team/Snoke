@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['main',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;main.cpp']]],
-  ['menu',['Menu',['../class_menu.html#ab6e38ad7f84b7741846cf5a57040276a',1,'Menu']]],
-  ['move',['move',['../class_snake.html#adc0a8a076442fc4473fd4269e5607037',1,'Snake']]],
-  ['moveback',['moveBack',['../class_snake.html#a72c30e32f3773fb28d2da0bcfd2c935c',1,'Snake']]],
-  ['movehead',['moveHead',['../class_snake.html#a20194faec6376a701ebf202051a8ab42',1,'Snake']]],
-  ['msleep',['mSleep',['../common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771',1,'mSleep(int time):&#160;common.cpp'],['../common_8h.html#acfe1c587c2a13d4b833eb11bd3157771',1,'mSleep(int time):&#160;common.cpp']]]
+  ['inaddqueue',['inAddQueue',['../class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b',1,'Change']]],
+  ['init',['init',['../class_ball.html#a1907f13fdfb320a19180efec2a56e39c',1,'Ball::init()'],['../class_game.html#a808d86ad76b84657f62d3ffc8e9080c7',1,'Game::init()'],['../class_snake.html#a953fb7b8be521f651989bb53323e89ec',1,'Snake::init()']]],
+  ['initball',['initBall',['../class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65',1,'Labyrinth']]],
+  ['initqueue',['initQueue',['../class_change.html#a298fdf2c746248234504a01fcf26fce7',1,'Change']]],
+  ['initsnake',['initSnake',['../class_game.html#a4fa944597d4f5f5e96e997a52e8d8077',1,'Game']]],
+  ['inrmqueue',['inRmQueue',['../class_change.html#a7c2513f30bc0e06d3685223c51bbc116',1,'Change']]],
+  ['instance',['instance',['../class_application.html#ada3b7951bef34e1e6de30403eee8eada',1,'Application']]],
+  ['isfree',['isFree',['../class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277',1,'Labyrinth']]]
 ];

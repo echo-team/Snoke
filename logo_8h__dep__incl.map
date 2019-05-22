@@ -1,6 +1,6 @@
-<map id="/home/travis/build/echo&#45;team/Snoke/app/Interface/logo.h" name="/home/travis/build/echo&#45;team/Snoke/app/Interface/logo.h">
-<area shape="rect" id="node2" href="$logo_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Interface/logo.cpp" alt="" coords="5,109,157,165"/>
-<area shape="rect" id="node3" href="$main_menu_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.h" alt="" coords="182,109,335,165"/>
-<area shape="rect" id="node4" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Main.cpp" alt="" coords="91,213,244,269"/>
-<area shape="rect" id="node5" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.cpp" alt="" coords="269,213,432,269"/>
+<map id="/home/travis/build/echo&#45;team/Snoke/app/Widgets/logo.h" name="/home/travis/build/echo&#45;team/Snoke/app/Widgets/logo.h">
+<area shape="rect" id="node2" href="$main_menu_8h.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.h" alt="" coords="95,109,248,165"/>
+<area shape="rect" id="node5" href="$logo_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Widgets/logo.cpp" alt="" coords="273,109,425,165"/>
+<area shape="rect" id="node3" href="$_main_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Main.cpp" alt="" coords="5,213,157,269"/>
+<area shape="rect" id="node4" href="$main_menu_8cpp.html" title="/home/travis/build\l/echo&#45;team/Snoke/app\l/Screens/mainMenu.cpp" alt="" coords="183,213,345,269"/>
 </map>
