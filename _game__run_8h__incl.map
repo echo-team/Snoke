@@ -1,9 +1,9 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/tests/Game_run.h" name="/home/travis/build/echo&#45;team/Snoke/tests/Game_run.h">
 <area shape="rect" id="node2" href="$shared_8h.html" title="shared functions for testing " alt="" coords="152,109,224,136"/>
 <area shape="rect" id="node7" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="340,109,444,136"/>
-<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="379,408,519,435"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="345,408,484,435"/>
 <area shape="rect" id="node8" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="450,184,571,211"/>
-<area shape="rect" id="node11" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="545,259,695,285"/>
-<area shape="rect" id="node12" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="276,333,411,360"/>
-<area shape="rect" id="node13" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="769,333,860,360"/>
+<area shape="rect" id="node11" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="522,259,672,285"/>
+<area shape="rect" id="node12" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="303,333,376,360"/>
+<area shape="rect" id="node13" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="735,333,825,360"/>
 </map>

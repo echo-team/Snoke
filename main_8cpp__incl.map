@@ -12,11 +12,11 @@
 <area shape="rect" id="node31" href="$_labyrinth__save_8h.html" title="Labyrinth_save.h" alt="" coords="1530,109,1651,136"/>
 <area shape="rect" id="node32" href="$_labyrinth__load_8h.html" title="Labyrinth_load.h" alt="" coords="1676,109,1792,136"/>
 <area shape="rect" id="node33" href="$_game__run_8h.html" title="Game_run.h" alt="" coords="875,109,968,136"/>
-<area shape="rect" id="node3" href="$shared_8h.html" title="shared functions for testing " alt="" coords="999,184,1071,211"/>
-<area shape="rect" id="node5" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="525,483,664,509"/>
-<area shape="rect" id="node9" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="376,259,485,285"/>
-<area shape="rect" id="node12" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="698,333,848,360"/>
-<area shape="rect" id="node13" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="491,408,625,435"/>
-<area shape="rect" id="node14" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="275,408,365,435"/>
-<area shape="rect" id="node27" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="693,184,797,211"/>
+<area shape="rect" id="node3" href="$shared_8h.html" title="shared functions for testing " alt="" coords="995,184,1067,211"/>
+<area shape="rect" id="node5" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="537,483,676,509"/>
+<area shape="rect" id="node9" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="372,259,481,285"/>
+<area shape="rect" id="node12" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="665,333,815,360"/>
+<area shape="rect" id="node13" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="503,408,576,435"/>
+<area shape="rect" id="node14" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="287,408,377,435"/>
+<area shape="rect" id="node27" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="689,184,793,211"/>
 </map>
