@@ -11,7 +11,9 @@ HEADERS = \
    Common/common.h \
    Game/game.h \
    Labyrinth/labyrinth.h \
+    Screens/application.h \
    Screens/mainMenu.h \
+    Screens/screen.h \
    SideMenu/SideMenu.h \
    Snake/snake.h \ \
     Widgets/logo.h \
@@ -25,7 +27,9 @@ SOURCES = \
    Game/game.cpp \
    Labyrinth/displayHandler.cpp \
    Labyrinth/labyrinth.cpp \
+   Screens/application.cpp \
    Screens/mainMenu.cpp \
+   Screens/screen.cpp \
    SideMenu/SideMenu.cpp \
    Snake/snake.cpp \
    Main.cpp \
