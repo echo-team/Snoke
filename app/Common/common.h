@@ -79,4 +79,8 @@ void sleepHandler();
 void set_escdelay(short mode);
 #endif
 
+#ifndef __unix__
+void set_escdelay(short mode);
+#endif
+
 #endif
