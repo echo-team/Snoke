@@ -12,11 +12,30 @@
 #define LABYRINTH_H
 #include "../Common/common.h"
 #include "../Snake/snake.h"
+#include "change.h"
+#include "../Ball/ball.h"
 #include <ncurses.h>
 #include <string>
 #include <cstring>
 #include <cstdio>
 #include <list>
+
+/**
+ * @class DisplayHandler displayHandler.h
+ * @method displayFull
+ */
+class DisplayHandler
+{
+    public:
+        Labyrinth* labyrinth;
+        int prevDisplayMethod = 0;
+        void displayHandler(int displayMethod);
+        void displayFull();
+        void freeDisplay();
+        void forcedDisplay(int displayMethod);
+        void displayPartialy();
+        void displayUpdated();
+};
 
 
 /**
@@ -31,12 +50,6 @@ const int DISPPART = 1;
  * @brief    the whole labyrinth can fit and was already fully redrawn so we just need to redraw the changed Points
  */
 const int DISPUPD = 2;
-
-/**
-* @var Point gameFieldSize
-* size of a game field(x, y)
- */
-extern Point gameFieldSize;
 
 /**
  * @class Labyrinth labyrinth.h
@@ -55,26 +68,27 @@ class Labyrinth
     private:
         char** labyrinth;
         std::string reserved = "!";
-        int prevDisplayMethod = 0;
         Snake* snake = NULL;
         Point start;
         Point end;
         Point prevStart;
         Point prevEnd;
-        void displayPartialy();
-        void displayUpdated(Point* update[2], int size);
-        void updateLabyrinth(Point* update[2], int size);
-        void displayFull();
-        void freeDisplay(Point* change[2], int size);
-        void forcedDisplay(Point* change[2], int size, int displayMethod);
+        Point gameFieldSize;
+        friend class DisplayHandler;
+        DisplayHandler dispHandler;
+        void updateLabyrinth();
         void sizeHandler();
     public:
-        void setLabyrinth(Point dimensions);
-        void addSnake(Snake* snake);
+        Change change;
+        Ball ball;
+        bool setLabyrinth(Point dimensions);
+        bool addSnake(Snake* snake);
         bool addPoint(Point p);
-        bool remPoint(Point p);
-        void displayHandler(Point* change[2] = NULL, int size = -1, int displayMethod = -1);
-        bool isFree(Point p);
+        bool rmPoint(Point p);
+        void displayHandler(int displayMethod = -1);
+        bool initBall();
+        bool generateBall();
+        short isFree(Point p);
         bool save(char name[MAXLINE]);
         bool load(char name[MAXLINE]);
 };

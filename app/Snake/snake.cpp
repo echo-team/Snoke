@@ -11,7 +11,7 @@
 #include "snake.h"
 
 /**
- * @brief   Initializes snake
+ * @brief   Initializes snake as an entity without ancoring it anywhere
  * @param   begin  - starting Point of a snake(where the tail segment will be situated)
  * @param   dir    - direction of snake's 'growth' as well as it's starting direction
  * @param   length - the length of a 'new born' snake
@@ -50,15 +50,23 @@ bool Snake::init(Point begin, short dir, int length)
             value = -1;
         }
 
+        /*
+         * Snake can not exist in non-positive coords
+         */
+        if (*changable + value * length + 1 < 1 || begin.x < 1 || begin.y < 1)
+        {
+            return false;
+        }
+
         for (int i = 0; i < length; i++)
         {
             snakeBody.push_front(begin);
             *changable += value;
         }
         direction = dir;
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 
 /**
@@ -69,7 +77,7 @@ bool Snake::init(Point begin, short dir, int length)
  * @param   changeSize - max(len(change[0]), len(change[1])))
  * @return             - mark of whether there was a non-boundary non-ball collision
  */
-bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize)
+bool Snake::move(Labyrinth* labyrinth)
 {
     Point frCoords = snakeBody.front();
     Point bCoords = snakeBody.back();
@@ -80,17 +88,29 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
     switch (direction)
     {
         case MVRIGHT:
+        {
             frCoords.x++;
             break;
+        }
         case MVLEFT:
+        {
             frCoords.x--;
             break;
+        }
         case MVDOWN:
+        {
             frCoords.y++;
             break;
+        }
         case MVUP:
+        {
             frCoords.y--;
             break;
+        }
+        default:
+        {
+            return false;
+        }
     }
 
     /*
@@ -102,38 +122,55 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
     /*
      * Checking intersections with borders, obstacles and Ball and deciding where to put the head of the snake
      */
-    switch (checkIntersection(frCoords, labyrinth, ball))
+    switch (checkIntersection(frCoords, labyrinth))
     {
         case WALLUP:
+        {
             frCoords.y = gameFieldSize.y - 2;
             wallFlag = 1;
             break;
+        }
         case WALLBOT:
+        {
             frCoords.y = 1;
             wallFlag = 1;
             break;
+        }
         case WALLLEFT:
+        {
             frCoords.x = gameFieldSize.x - 2;
             wallFlag = 1;
             break;
+        }
         case WALLRIGHT:
+        {
             frCoords.x = 1;
             wallFlag = 1;
             break;
+        }
         case COLL:
-            moveBack(bCoords, change);
+        {
+            moveBack(bCoords, &labyrinth->change);
             return true;
+        }
         case NOCOLL:
+        {
             break;
+        }
         case BALL:
+        {
             bCoords.x = -1;
             bCoords.y = -1;
-            change[1][0] = ball->getCoords();
-            ball->generateBall(labyrinth, change, changeSize);
-            change[0][0] = ball->getCoords();
+            //Change to a single call to labyrinth(like labyrinth->newBall())
+            labyrinth->change.rmPoint(labyrinth->ball.getCoords());
+            labyrinth->generateBall();
+            labyrinth->change.addPoint(labyrinth->ball.getCoords());
             break;
+        }
         default:
+        {
             break;
+        }
     }
 
     /*
@@ -142,22 +179,28 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
      */
     if(wallFlag)
     {
-        switch (checkIntersection(frCoords, labyrinth, ball))
+        switch (checkIntersection(frCoords, labyrinth))
         {
             case COLL:
-                moveBack(bCoords, change);
+            {
+                moveBack(bCoords, &labyrinth->change);
                 return true;
+            }
             case NOCOLL:
+            {
                 break;
+            }
             case BALL:
+            {
                 bCoords.x = -1;
                 bCoords.y = -1;
-                change[1][0] = ball->getCoords();
-                ball->generateBall(labyrinth, change, changeSize);
-                change[0][0] = ball->getCoords();
+                labyrinth->generateBall();
                 break;
+            }
             default:
+            {
                 break;
+            }
         }
     }
 
@@ -165,8 +208,8 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
      * If there was no obstacle collision then proceed and add Points to the
      * change array, staging them for addition/removal to/from labyrinth
      */
-    moveHead(frCoords, change);
-    moveBack(bCoords, change);
+    moveHead(frCoords, &labyrinth->change);
+    moveBack(bCoords, &labyrinth->change);
     return false;
 
 }
@@ -176,9 +219,9 @@ bool Snake::move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeS
  * @param   p      - the new head position
  * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
  */
-void Snake::moveHead(Point p, Point* change[2])
+void Snake::moveHead(Point p, Change* change)
 {
-    change[0][1] = p;
+    change->addPoint(p);
     snakeBody.push_front(p);
 }
 
@@ -187,10 +230,9 @@ void Snake::moveHead(Point p, Point* change[2])
  * @param   p      - the desired position of movement
  * @param   change - 2-dimensional array of changes needed to be applied to the labyrinth
  */
-void Snake::moveBack(Point p, Point* change[2])
+void Snake::moveBack(Point p, Change* change)
 {
-    change[1][1] = p;
-    if(p.x != -1 && p.y != -1)
+    if(change->rmPoint(p))
     {
         snakeBody.pop_back();
     }
@@ -203,11 +245,11 @@ void Snake::moveBack(Point p, Point* change[2])
  * @param   ball      - a pointer to a Ball object(to check intersection with)
  * @return            - type of collision
  */
-short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
+short Snake::checkIntersection(Point check, Labyrinth* labyrinth)
 {
-    if (!labyrinth->isFree(check))
+    if ((!labyrinth->isFree(check)) == 1)
     {
-        return checkWisely(check, ball->getCoords());
+        return checkWisely(check, labyrinth->ball.getCoords());
     }
     return NOCOLL;
 
@@ -215,29 +257,29 @@ short Snake::checkIntersection(Point check, Labyrinth* labyrinth, Ball* ball)
 
 /**
  * @brief   If the Point of the labyrinth we are checking is not free then decide the type of collision
- * @param   coords  - Point we are checking for type of a collision
- * @param   bcoords - Point, containing the coordinates of the Ball
+ * @param   check  - Point we are checking for type of a collision
+ * @param   bCoords - Point, containing the coordinates of the Ball
  * @return          - type of the collision
  */
-short Snake::checkWisely(Point coords, Point bcoords)
+short Snake::checkWisely(Point check, Point bCoords)
 {
-    if(coords.x == bcoords.x && coords.y == bcoords.y)
+    if(check.x == bCoords.x && check.y == bCoords.y)
     {
         return BALL;
     }
-    else if (coords.x == gameFieldSize.x - 1)
+    else if (check.x == gameFieldSize.x - 1)
     {
         return WALLRIGHT;
     }
-    else if (coords.x == 0)
+    else if (check.x == 0)
     {
         return WALLLEFT;
     }
-    else if (coords.y == gameFieldSize.y - 1)
+    else if (check.y == gameFieldSize.y - 1)
     {
         return WALLBOT;
     }
-    else if (coords.y == 0)
+    else if (check.y == 0)
     {
         return WALLUP;
     }
@@ -247,8 +289,9 @@ short Snake::checkWisely(Point coords, Point bcoords)
 /**
  * @brief   The method to set the direction where the snake is heading
  * @param   direction - direction of the snake we are trying to set
+ * @return            - mark of successful set
  */
-void Snake::setDirection(int direction)
+bool Snake::setDirection(int direction)
 {
     if (direction == MVRIGHT || direction == MVLEFT || direction == MVUP || direction == MVDOWN){
         /*
@@ -256,11 +299,12 @@ void Snake::setDirection(int direction)
          */
         if (this->direction + direction == 0)
         {
-            return;
+            return false;
         }
 
         this->direction = direction;
     }
+    return true;
 }
 
 /**
@@ -276,9 +320,7 @@ short Snake::getDirection()
  */
 Point Snake::getHeadCoords()
 {
-    Point headCoords;
-    headCoords.x = snakeBody.front().x;
-    headCoords.y = snakeBody.front().y;
+    Point headCoords = snakeBody.front();
     return headCoords;
 }
 

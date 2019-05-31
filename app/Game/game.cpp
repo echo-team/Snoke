@@ -17,26 +17,49 @@
 Point gameFieldSize;
 
 /**
+ * Handler for SIGWINCH signal
+ * @param  sig      SIGWINCH signal code
+ */
+void resizeHandler(int sig)
+{
+    endwin();
+    sleepHandler();
+    refresh();
+    addSleep();
+}
+
+/**
  * @brief   Initializes game
- * @param   size  - size of the game field(size - 2 columns, size/2 - 2 rows)
- * @param   speed - speed of the game(1 / refresh rate) in milliseconds
+ * @param   size   - size of the game field(size - 2 columns, size/2 - 2 rows)
+ * @param   speed  - speed of the game(1 / refresh rate) in milliseconds
+ * @param   loops - for how many loops the game  should run
  * @return        - mark of successful initialization
  */
-bool Game::init(int size, int speed)
+bool Game::init(int size, int speed, int loops)
 {
-    gameFieldSize.x = size;
-    gameFieldSize.y = size/2;
-    this->labyrinth.setLabyrinth(gameFieldSize);
-    this->setSpeed(speed);
+    if(size > 10)
+    {
+        gameFieldSize.x = size;
+        gameFieldSize.y = size/2;
+        this->labyrinth.setLabyrinth(gameFieldSize);
+        this->setSpeed(speed);
+        this->setLoops(loops);
 
-    /*
-     * Initializing the change array, containing Points to be changed in the labyrinth
-     */
-    this->changeSize = 2;
-    this->change[0] = new Point [changeSize];
-    this->change[1] = new Point [changeSize];
-    return true;
+        return true;
+    }
+    return false;
 }
+
+/**
+ * @brief sets loops with some error holding
+ * @param loops - amount of loops game will run (-1 for unlimmited)
+ */
+void Game::setLoops(int loops)
+{
+    this->loops = loops > 0 ? loops : -1;
+}
+
+
 
 /**
  * @brief   Main game loop
@@ -44,17 +67,7 @@ bool Game::init(int size, int speed)
  */
 int Game::run()
 {
-    /*
-     * Block initializing ncurses console in the current console window,
-     * and setting some parameters
-     */
-    noecho();
-    nodelay(stdscr, true);
-    #ifdef __unix__
-    set_escdelay(0);
-    #endif
-    curs_set(0);
-    keypad(stdscr, true);
+    signal(SIGWINCH, resizeHandler);
 
     /*
      * Initializing snake by giving it the starting position,
@@ -63,71 +76,87 @@ int Game::run()
     Point startPos;
     startPos.x = 1;
     startPos.y = 1;
-    int dir = 1, len = 5;
-    initSnake(startPos, dir, len);
+    int dir = 1;
+    int len = 5;
+    if(!initSnake(startPos, dir, len))
+    {
+        return 1;
+    }
 
     /*
      * Initializing the Ball and generating it on the field
      */
-    Ball ball;
-    initBall(&ball);
+    labyrinth.initBall();
 
     /*
-     * displaying the starting state of labyrinth
+     * displaying the starting state of labyrinth(forcing to display it Full if possible)
      */
-    labyrinth.displayHandler();
+    labyrinth.displayHandler(DISPFULL);
 
     bool flag = false;
-    while (!flag)
+    while (!flag && loops != 0)
     {
         int command = getch();
         switch (command)
         {
             case ERR:
+            {
                 break;
+            }
             case KEY_UP:
+            {
                 snake.setDirection(MVUP);
                 break;
+            }
             case KEY_DOWN:
+            {
                 snake.setDirection(MVDOWN);
                 break;
+            }
             case KEY_LEFT:
+            {
                 snake.setDirection(MVLEFT);
                 break;
+            }
             case KEY_RIGHT:
+            {
                 snake.setDirection(MVRIGHT);
                 break;
+            }
             case 'q':
+            {
                 flag = true;
                 break;
-            case 's':
-                char fName[] = "testsave";
-                labyrinth.save(fName);
-                labyrinth.displayHandler();
-                mSleep(speed * 2);
-                labyrinth.displayHandler(NULL, -1, DISPFULL);
-                continue;
+            }
+            default:
+            {
+                break;
+            }
         }
         if (flag)
         {
             break;
         }
-        wipeChange(change, changeSize);
+        labyrinth.change.initQueue();
 
         /*
          * Setting the flag for the next iteration check
          * Moving the snake and getting the Points of a
          * labyrinth which are to be changed in change array
          */
-        flag = snake.move(&labyrinth, &ball, change, changeSize) == 1;
+        flag = snake.move(&labyrinth) == 1;
 
         /*
          * Updating labyrinth with change array Points
          * and displaying/deleting added/removed Points
          */
-        labyrinth.displayHandler(change, changeSize);
+        labyrinth.displayHandler();
 
         mSleep(speed);
+        if(loops > 0)
+        {
+            loops--;
+        }
     }
     return 0;
 }
@@ -139,50 +168,12 @@ int Game::run()
  * @param   length - the length of a 'new born' snake
  * @return         - mark of whether the snake is successfully initialized
  */
-bool Game::initSnake(Point begin, int dir, int length)
+bool Game::initSnake(Point begin, short dir, int length)
 {
-    bool flag = snake.init(begin, dir, length);
-    if (!flag){
-        labyrinth.addSnake(&snake);
-    }
-    return flag;
+    bool initFlag = snake.init(begin, dir, length);
+    bool addFlag = initFlag ? labyrinth.addSnake(&snake) : false;
+    return initFlag && addFlag;
 }
-
-/**
- * @brief   Ball initialization with labyrinth updating
- * @param   ball - a pointer to a Ball, which is being initialized
- * @return       - mark of succesful initialization
- */
-bool Game::initBall(Ball* ball)
-{
-    ball->init(gameFieldSize);
-    bool flag = ball->generateBall(&labyrinth, change, changeSize);
-    labyrinth.addPoint(ball->getCoords());
-    return flag;
-}
-
-/**
- * @brief   Initialization of the change array
- * @param   lChange - The pointer to an array
- * @param   size   - The size of array(number of elements it can contain)
- */
-bool Game::wipeChange(Point** lChange, int size)
-{
-    Point emptyPoint;
-    emptyPoint.x = -1;
-    emptyPoint.y = -1;
-    emptyPoint.style.bg = 0;
-    emptyPoint.style.fg = 0;
-    emptyPoint.style.letter = 0;
-    for(int i = 0; i < size; i++)
-    {
-        lChange[0][i] = emptyPoint;
-        lChange[1][i] = emptyPoint;
-    }
-    return true;
-}
-
-
 
 /**
  * @brief   The method to change the game speed without giving the direct access

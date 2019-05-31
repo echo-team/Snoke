@@ -1,43 +1,52 @@
-language: cpp
+language:
+    - cpp
 
-# This will run on Travis' 'new' container-based infrastructure
-sudo: false
+git:
+    depth: false
 
+before_install:
+    - pip install --user cpp-coveralls
 
-# Blacklist
 branches:
-  except:
-    - gh-pages
+    except:
+        - gh-pages
 
-# Environment variables
 env:
-  global:
-    - GH_REPO_NAME: Snoke
-    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
-    - GH_REPO_REF: github.com/echo-team/Snoke.git
+    global:
+        - GH_REPO_NAME: Snoke
+        - DOXYFILE: "$TRAVIS_BUILD_DIR/Doxyfile"
+        - GH_REPO_REF: github.com/echo-team/Snoke.git
 
-# Install dependencies
 addons:
-  sonarcloud:
-    organization: "echo-team"
-    token:
-      secure: $SONAR_TOKEN
-  apt:
-    packages:
-      - doxygen
-      - doxygen-doc
-      - doxygen-latex
-      - doxygen-gui
-      - graphviz
+    sonarcloud:
+        organization: "echo-team"
+        token:
+            secure: $SONAR_TOKEN
+    apt:
+        packages:
+            - doxygen
+            - doxygen-doc
+            - doxygen-latex
+            - doxygen-gui
+            - graphviz
 
-# Build your code e.g. by calling make
 script:
-  - make
+    - qmake
+    - make -j
+    - ./tests/tests
 
-# Generate and deploy documentation
 after_success:
-  - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
-  - sonar-scanner
-  - cd $TRAVIS_BUILD_DIR
-  - chmod +x generateDocumentationAndDeploy.sh
-  - ./generateDocumentationAndDeploy.sh
+    - coveralls --root . -E ".*external.*" -E ".*tests.*"
+    - build-wrapper-linux-x86-64 --out-dir bw-output make clean all -j
+    - sonar-scanner
+    - cd $TRAVIS_BUILD_DIR
+    - chmod +x generateDocumentationAndDeploy.sh
+    - "./generateDocumentationAndDeploy.sh"
+
+
+cache:
+    directories:
+        - '$HOME/.sonar/cache'
+
+notifications:
+    email: true

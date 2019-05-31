@@ -13,8 +13,9 @@
 #include <list>
 #include <deque>
 #include "../Common/common.h"
-#include "../Ball/ball.h"
 #include "../Labyrinth/labyrinth.h"
+#include "../Labyrinth/change.h"
+#include "../Ball/ball.h"
 
 /**
  * @brief   the tested segment is intersecting with the upper boundary of the game field
@@ -81,17 +82,17 @@ class Snake
         short direction;
         std::list<PointStyle> style;
         std::deque<Point> snakeBody;
-        short checkIntersection(Point check, Labyrinth* laryrinth, Ball* ball);
+        short checkIntersection(Point check, Labyrinth* laryrinth);
         short checkWisely(Point coords, Point bcoords);
-        void moveHead(Point p, Point* change[2]);
-        void moveBack(Point p, Point* cahnge[2]);
+        void moveHead(Point p, Change* change);
+        void moveBack(Point p, Change* change);
     public:
         bool init(Point begin, short direction, int length);
         void setScheme();
         void getCoords(std::list<Point>* currBody);
         Point getHeadCoords();
-        void setDirection(int dir = 0);
+        bool setDirection(int dir);
         short getDirection();
-        bool move(Labyrinth* labyrinth, Ball* ball, Point* change[2], int changeSize);
+        bool move(Labyrinth* labyrinth);
 };
 #endif //SNAKE_H
