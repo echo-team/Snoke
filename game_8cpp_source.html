@@ -203,74 +203,65 @@ $(document).ready(function(){initNavTree('game_8cpp_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                flag = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordtype">char</span> fName[] = <span class="stringliteral">&quot;testsave&quot;</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">save</a>(fName);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee">displayHandler</a>();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <a class="code" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a>(<a class="code" href="class_game.html#a02a58acc040d6d014e02832453695ef5">speed</a> * 2);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee">displayHandler</a>(<a class="code" href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (flag)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#ad9a3c7ebdd5ee39ccf4e320c2f1acec4">change</a>.<a class="code" href="class_change.html#a298fdf2c746248234504a01fcf26fce7">initQueue</a>();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">         * Setting the flag for the next iteration check</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">         * Moving the snake and getting the Points of a</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">         * labyrinth which are to be changed in change array</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        flag = <a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>.<a class="code" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037">move</a>(&amp;<a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>) == 1;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">         * Updating labyrinth with change array Points</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">         * and displaying/deleting added/removed Points</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee">displayHandler</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (flag)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#ad9a3c7ebdd5ee39ccf4e320c2f1acec4">change</a>.<a class="code" href="class_change.html#a298fdf2c746248234504a01fcf26fce7">initQueue</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">         * Setting the flag for the next iteration check</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">         * Moving the snake and getting the Points of a</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">         * labyrinth which are to be changed in change array</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        flag = <a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>.<a class="code" href="class_snake.html#adc0a8a076442fc4473fd4269e5607037">move</a>(&amp;<a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>) == 1;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">         * Updating labyrinth with change array Points</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">         * and displaying/deleting added/removed Points</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee">displayHandler</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a>(<a class="code" href="class_game.html#a02a58acc040d6d014e02832453695ef5">speed</a>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_game.html#a78ac3b2a71213f00e02cca7b9ea47f2a">loops</a> &gt; 0)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="class_game.html#a78ac3b2a71213f00e02cca7b9ea47f2a">loops</a>--;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a>(<a class="code" href="class_game.html#a02a58acc040d6d014e02832453695ef5">speed</a>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_game.html#a78ac3b2a71213f00e02cca7b9ea47f2a">loops</a> &gt; 0)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="class_game.html#a78ac3b2a71213f00e02cca7b9ea47f2a">loops</a>--;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">  180</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">Game::initSnake</a>(<a class="code" href="class_point.html">Point</a> begin, <span class="keywordtype">short</span> dir, <span class="keywordtype">int</span> length)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> initFlag = <a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>.<a class="code" href="class_snake.html#a953fb7b8be521f651989bb53323e89ec">init</a>(begin, dir, length);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">bool</span> addFlag = initFlag ? <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737">addSnake</a>(&amp;<a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>) : <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> initFlag &amp;&amp; addFlag;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">  192</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">Game::setSpeed</a>(<span class="keywordtype">int</span> speed)</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span>(speed &gt; 100)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span>(speed &lt; 1000)</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            this-&gt;speed = <a class="code" href="class_game.html#a02a58acc040d6d014e02832453695ef5">speed</a>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            this-&gt;speed = 1000;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        this-&gt;speed = 100;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="ttc" id="class_game_html_a5f3fdd22fa8ae39d6912ee3ff029ea46"><div class="ttname"><a href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">Game::setSpeed</a></div><div class="ttdeci">void setSpeed(int sp)</div><div class="ttdoc">The method to change the game speed without giving the direct access and some error handling...</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00192">game.cpp:192</a></div></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">  171</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">Game::initSnake</a>(<a class="code" href="class_point.html">Point</a> begin, <span class="keywordtype">short</span> dir, <span class="keywordtype">int</span> length)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">bool</span> initFlag = <a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>.<a class="code" href="class_snake.html#a953fb7b8be521f651989bb53323e89ec">init</a>(begin, dir, length);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> addFlag = initFlag ? <a class="code" href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">labyrinth</a>.<a class="code" href="class_labyrinth.html#ab4608b2c7a4c20252a44a0c2ab07f737">addSnake</a>(&amp;<a class="code" href="class_game.html#ab77bfcc312425811000819791ea7668e">snake</a>) : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> initFlag &amp;&amp; addFlag;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">  183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">Game::setSpeed</a>(<span class="keywordtype">int</span> speed)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span>(speed &gt; 100)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">if</span>(speed &lt; 1000)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            this-&gt;speed = <a class="code" href="class_game.html#a02a58acc040d6d014e02832453695ef5">speed</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            this-&gt;speed = 1000;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        this-&gt;speed = 100;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="ttc" id="class_game_html_a5f3fdd22fa8ae39d6912ee3ff029ea46"><div class="ttname"><a href="class_game.html#a5f3fdd22fa8ae39d6912ee3ff029ea46">Game::setSpeed</a></div><div class="ttdeci">void setSpeed(int sp)</div><div class="ttdoc">The method to change the game speed without giving the direct access and some error handling...</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00183">game.cpp:183</a></div></div>
 <div class="ttc" id="common_8cpp_html_acfe1c587c2a13d4b833eb11bd3157771"><div class="ttname"><a href="common_8cpp.html#acfe1c587c2a13d4b833eb11bd3157771">mSleep</a></div><div class="ttdeci">void mSleep(int time)</div><div class="ttdoc">Cross-platform sleep function cover. </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00049">common.cpp:49</a></div></div>
 <div class="ttc" id="class_point_html_a5309894db6c0ddb1637e9bf06fdc83df"><div class="ttname"><a href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point::x</a></div><div class="ttdeci">short x</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
 <div class="ttc" id="class_change_html_a298fdf2c746248234504a01fcf26fce7"><div class="ttname"><a href="class_change.html#a298fdf2c746248234504a01fcf26fce7">Change::initQueue</a></div><div class="ttdeci">void initQueue()</div><div class="ttdoc">Initializes change array, by resetting it. </div><div class="ttdef"><b>Definition:</b> <a href="change_8cpp_source.html#l00017">change.cpp:17</a></div></div>
@@ -284,11 +275,10 @@ $(document).ready(function(){initNavTree('game_8cpp_source.html','');});
 <div class="ttc" id="class_snake_html_acf38f64a411f6c4583e0df5e5570242b"><div class="ttname"><a href="class_snake.html#acf38f64a411f6c4583e0df5e5570242b">Snake::setDirection</a></div><div class="ttdeci">bool setDirection(int dir)</div><div class="ttdoc">The method to set the direction where the snake is heading. </div><div class="ttdef"><b>Definition:</b> <a href="snake_8cpp_source.html#l00294">snake.cpp:294</a></div></div>
 <div class="ttc" id="class_game_html_a92148f2659c019b331e9da7deadbd8bc"><div class="ttname"><a href="class_game.html#a92148f2659c019b331e9da7deadbd8bc">Game::labyrinth</a></div><div class="ttdeci">Labyrinth labyrinth</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00037">game.h:37</a></div></div>
 <div class="ttc" id="common_8cpp_html_a54e5255040d967ad5e858ae4a1e7ae6a"><div class="ttname"><a href="common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a">sleepHandler</a></div><div class="ttdeci">void sleepHandler()</div><div class="ttdoc">setting new values for sleep function on signal interrupt </div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00078">common.cpp:78</a></div></div>
-<div class="ttc" id="class_labyrinth_html_a99e6b33f94d6d64f9c5a4fa78f08c007"><div class="ttname"><a href="class_labyrinth.html#a99e6b33f94d6d64f9c5a4fa78f08c007">Labyrinth::save</a></div><div class="ttdeci">bool save(char name[MAXLINE])</div><div class="ttdoc">Method to save labyritnh(borders and obstacles, defined in reserved string) to the file...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8cpp_source.html#l00297">labyrinth.cpp:297</a></div></div>
 <div class="ttc" id="class_game_html_a99fb161fbbe87d25a8b73265a0611e58"><div class="ttname"><a href="class_game.html#a99fb161fbbe87d25a8b73265a0611e58">Game::run</a></div><div class="ttdeci">int run()</div><div class="ttdoc">Main game loop. </div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00068">game.cpp:68</a></div></div>
 <div class="ttc" id="class_snake_html_a953fb7b8be521f651989bb53323e89ec"><div class="ttname"><a href="class_snake.html#a953fb7b8be521f651989bb53323e89ec">Snake::init</a></div><div class="ttdeci">bool init(Point begin, short direction, int length)</div><div class="ttdoc">Initializes snake as an entity without ancoring it anywhere. </div><div class="ttdef"><b>Definition:</b> <a href="snake_8cpp_source.html#l00020">snake.cpp:20</a></div></div>
 <div class="ttc" id="labyrinth_8h_html_a7bc6aacba4f5847ff05723bf3a048717"><div class="ttname"><a href="labyrinth_8h.html#a7bc6aacba4f5847ff05723bf3a048717">DISPFULL</a></div><div class="ttdeci">const int DISPFULL</div><div class="ttdoc">the whole labyrinth can fit and was redrawed </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00044">labyrinth.h:44</a></div></div>
-<div class="ttc" id="class_game_html_a4fa944597d4f5f5e96e997a52e8d8077"><div class="ttname"><a href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">Game::initSnake</a></div><div class="ttdeci">bool initSnake(Point begin, short dir, int length)</div><div class="ttdoc">Snake initialization with labyrinth updating. </div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00180">game.cpp:180</a></div></div>
+<div class="ttc" id="class_game_html_a4fa944597d4f5f5e96e997a52e8d8077"><div class="ttname"><a href="class_game.html#a4fa944597d4f5f5e96e997a52e8d8077">Game::initSnake</a></div><div class="ttdeci">bool initSnake(Point begin, short dir, int length)</div><div class="ttdoc">Snake initialization with labyrinth updating. </div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00171">game.cpp:171</a></div></div>
 <div class="ttc" id="snake_8h_html_a55b47deddb3a3c2a3219f96ce5b79754"><div class="ttname"><a href="snake_8h.html#a55b47deddb3a3c2a3219f96ce5b79754">MVLEFT</a></div><div class="ttdeci">const int MVLEFT</div><div class="ttdoc">snake&#39;s head is moving left </div><div class="ttdef"><b>Definition:</b> <a href="snake_8h_source.html#l00060">snake.h:60</a></div></div>
 <div class="ttc" id="class_labyrinth_html_ad9a3c7ebdd5ee39ccf4e320c2f1acec4"><div class="ttname"><a href="class_labyrinth.html#ad9a3c7ebdd5ee39ccf4e320c2f1acec4">Labyrinth::change</a></div><div class="ttdeci">Change change</div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00082">labyrinth.h:82</a></div></div>
 <div class="ttc" id="class_game_html_a692c0698c6f5f42a93f2d1ca25067284"><div class="ttname"><a href="class_game.html#a692c0698c6f5f42a93f2d1ca25067284">Game::setLoops</a></div><div class="ttdeci">void setLoops(int loops)</div><div class="ttdoc">sets loops with some error holding </div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00057">game.cpp:57</a></div></div>
