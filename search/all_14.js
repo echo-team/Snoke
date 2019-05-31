@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['what_20is_20snoke_3f',['What is Snoke?',['../md__home_travis_build_echo-team__snoke__r_e_a_d_m_e.html',1,'']]],
   ['wallbot',['WALLBOT',['../snake_8h.html#ab87d50d453d70cca9614c43e3430b5a2',1,'snake.h']]],
   ['wallleft',['WALLLEFT',['../snake_8h.html#a62613e4063ee9c0c88bfef1dd243c105',1,'snake.h']]],
   ['wallright',['WALLRIGHT',['../snake_8h.html#a4e890b2780a9e5fa8a8782ce3638e08f',1,'snake.h']]],

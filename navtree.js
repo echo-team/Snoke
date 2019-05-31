@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "Snoke", "index.html", [
-    [ "What is Snoke?", "md__home_travis_build_echo-team__snoke__r_e_a_d_m_e.html", null ],
+    [ "README", "md__home_travis_build_echo-team__snoke__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
