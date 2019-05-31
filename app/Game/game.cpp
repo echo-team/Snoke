@@ -128,15 +128,6 @@ int Game::run()
                 flag = true;
                 break;
             }
-            case 's':
-            {
-                char fName[] = "testsave";
-                labyrinth.save(fName);
-                labyrinth.displayHandler();
-                mSleep(speed * 2);
-                labyrinth.displayHandler(DISPFULL);
-                continue;
-            }
             default:
             {
                 break;
