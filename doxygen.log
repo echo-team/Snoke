@@ -28,9 +28,11 @@ Searching for files to process...
 Searching for files in directory /home/travis/build/echo-team/Snoke
 Searching for files in directory /home/travis/build/echo-team/Snoke/app
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Ball
+Searching for files in directory /home/travis/build/echo-team/Snoke/app/bin
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Common
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Game
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Labyrinth
+Searching for files in directory /home/travis/build/echo-team/Snoke/app/obj
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Screens
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/SideMenu
 Searching for files in directory /home/travis/build/echo-team/Snoke/app/Snake
@@ -77,8 +79,7 @@ Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Screens/mainMenu.h...
 Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/Screens/screen.cpp...
-Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/scree/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
-n.h...
+Preprocessing /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
 Parsing file /home/travis/build/echo-team/Snoke/app/Screens/screen.h...
 Preprocessing /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
 Parsing file /home/travis/build/echo-team/Snoke/app/SideMenu/SideMenu.cpp...
@@ -136,14 +137,15 @@ Building directory list...
 Building namespace list...
 Building file list...
 Building class list...
-Associating documentation with classes...
+Associating docume/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: the name `displayHandler.h' supplied as the argument of the \class, \struct, \union, or \include command is not an input file
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:28: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:83: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:20: warning: documented symbol `std::function< void()> listener' was not declared or defined.
+ntation with classes...
 Computing nesting relations for classes...
 Building example list...
 Searching for enumerations...
-Searching for documented typed/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:28: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
-/home/travis/build/echo-team/Snoke/app/Screens/screen.cpp:83: warning: documented symbol `Widget *current start point for searching focusable widget' was not declared or defined.
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:20: warning: documented symbol `std::function< void()> listener' was not declared or defined.
-efs...
+Searching for documented typedefs...
 Searching for members imported via using declarations...
 Searching for included using directives...
 Searching for documented variables...
@@ -216,8 +218,7 @@ Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.c
 Generating code for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.h...
 Generating code for file /home/travis/build/echo-team/Snoke/README.md...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
-Generating code for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
-Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_init/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
+Genera/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
 /home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short delay) are not documented:
   parameter 'delay'
 /home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short mode)
@@ -225,10 +226,8 @@ Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_init/home
   parameter 'mode'
 /home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:10: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:11: warning: Found unknown command `\const'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:12: warning: Found unknown command `\const'
-.h...
+ting code for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
+Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_init.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Game_run.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Labyrinth_addSnake.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Labyrinth_displayHandler.h...
@@ -280,9 +279,10 @@ Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/logo.h..
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.cpp...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/menu.h...
 Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp...
-Generating docs for file /home/travis/build/echo-team/Snoke/app/Widgets/widget.h...
-Generating docs for file /home/travis/build/echo-team/Snoke/README.md...
-Generating docs for file /home/travis/build/e/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:98: warning: Found unknown command `\constructor'
+Generating docs for file /home/travis/build/echo-t/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:10: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:11: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.h:12: warning: Found unknown command `\const'
+/home/travis/build/echo-team/Snoke/app/Screens/application.cpp:98: warning: Found unknown command `\constructor'
 /home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: argument 'char' of command @param is not found in the argument list of Application::add(char *name, Screen *screen)
 /home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: argument 'Screen' of command @param is not found in the argument list of Application::add(char *name, Screen *screen)
 /home/travis/build/echo-team/Snoke/app/Screens/application.cpp:76: warning: The following parameters of Application::add(char *name, Screen *screen) are not documented:
@@ -294,7 +294,9 @@ Generating docs for file /home/travis/build/e/home/travis/build/echo-team/Snoke/
 /home/travis/build/echo-team/Snoke/app/Screens/application.cpp:52: warning: The following parameters of Application::load(char *name) are not documented:
   parameter 'name'
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.h:24: warning: Found unknown command `\method'
-cho-team/Snoke/tests/Ball_init.h...
+eam/Snoke/app/Widgets/widget.h...
+Generating docs for file /home/travis/build/echo-team/Snoke/README.md...
+Generating docs for file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
 Generating call graph for function TEST
 Generating call graph for function TEST
 Generating docs for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h...
@@ -370,9 +372,7 @@ Generating caller graph for function Change::initQueue
 Generating caller graph for function Change::inRmQueue
 Generating caller graph for function Change::rmPoint
 Generating docs for compound DisplayHandler...
-Generating caller graph for function DisplayHandler::displayFull
-Generating call graph for function DisplayHandler::displayHandler
-Generating caller graph for /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:79: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
+Generat/home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:79: warning: argument 'labyrinth' of command @param is not found in the argument list of Labyrinth::generateBall()
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: argument 'gameFieldSize' of command @param is not found in the argument list of Labyrinth::setLabyrinth(Point fieldSize)
 /home/travis/build/echo-team/Snoke/app/Labyrinth/labyrinth.cpp:13: warning: The following parameters of Labyrinth::setLabyrinth(Point fieldSize) are not documented:
   parameter 'fieldSize'
@@ -430,16 +430,9 @@ Generating caller graph for /home/travis/build/echo-team/Snoke/app/Labyrinth/lab
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:47: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_next(Widget *nextWidget)
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:47: warning: The following parameters of Widget::_next(Widget *nextWidget) are not documented:
   parameter 'nextWidget'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_parent(Widget *parentWidget)
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: The following parameters of Widget::_parent(Widget *parentWidget) are not documented:
-  parameter 'parentWidget'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_previous(Widget *previousWidget)
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: The following parameters of Widget::_previous(Widget *previousWidget) are not documented:
-  parameter 'previousWidget'
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: argument 'Widget' of command @param is not found in the argument list of Widget::add(Widget *child)
-/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: The following parameters of Widget::add(Widget *child) are not documented:
-  parameter 'child'
-function DisplayHandler::displayHandler
+ing caller graph for function DisplayHandler::displayFull
+Generating call graph for function DisplayHandler::displayHandler
+Generating caller graph for function DisplayHandler::displayHandler
 Generating caller graph for function DisplayHandler::displayPartialy
 Generating call graph for function DisplayHandler::displayUpdated
 Generating caller graph for function DisplayHandler::displayUpdated
@@ -514,10 +507,16 @@ Generating call graph for function Snake::moveHead
 Generating caller graph for function Snake::moveHead
 Generating caller graph for function Snake::setDirection
 Generating docs for compound Widget...
-Generating caller graph for function Widget::_next
-Generating caller graph for function Widget::_parent
-Generating caller graph for function Widget::_previous
-Generating call graph /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:157: warning: argument 'unsigned' of command @param is not found in the argument list of Widget::dispatch(unsigned char name)
+Generating caller graph for f/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_parent(Widget *parentWidget)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:11: warning: The following parameters of Widget::_parent(Widget *parentWidget) are not documented:
+  parameter 'parentWidget'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: argument 'Widget' of command @param is not found in the argument list of Widget::_previous(Widget *previousWidget)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:65: warning: The following parameters of Widget::_previous(Widget *previousWidget) are not documented:
+  parameter 'previousWidget'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: argument 'Widget' of command @param is not found in the argument list of Widget::add(Widget *child)
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:83: warning: The following parameters of Widget::add(Widget *child) are not documented:
+  parameter 'child'
+/home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:157: warning: argument 'unsigned' of command @param is not found in the argument list of Widget::dispatch(unsigned char name)
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:157: warning: The following parameters of Widget::dispatch(unsigned char name) are not documented:
   parameter 'name'
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:5: warning: Found unknown command `\virtual'
@@ -529,7 +528,10 @@ Generating call graph /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.cpp:146: warning: The following parameters of Widget::listener(unsigned char name, Listener function) are not documented:
   parameter 'name'
   parameter 'function'
-for function Widget::add
+unction Widget::_next
+Generating caller graph for function Widget::_parent
+Generating caller graph for function Widget::_previous
+Generating call graph for function Widget::add
 Generating caller graph for function Widget::add
 Generating caller graph for function Widget::childLength
 Generating call graph for function Widget::children
