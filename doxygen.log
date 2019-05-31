@@ -220,9 +220,9 @@ Generating code for file /home/travis/build/echo-team/Snoke/tests/Ball_init.h...
 Generating code for file /home/travis/build/echo-team/Snoke/tests/Common_misc.h.../home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
 /home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short delay) are not documented:
   parameter 'delay'
-/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short delay)
-/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short delay) are not documented:
-  parameter 'delay'
+/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: argument 'short' of command @param is not found in the argument list of set_escdelay(short mode)
+/home/travis/build/echo-team/Snoke/app/Common/common.cpp:67: warning: The following parameters of set_escdelay(short mode) are not documented:
+  parameter 'mode'
 /home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/app/Screens/application.h:38: warning: Found unknown command `\type'
 /home/travis/build/echo-team/Snoke/app/Widgets/widget.h:10: warning: Found unknown command `\const'
@@ -901,5 +901,5 @@ Patching output file 67/70
 Patching output file 68/70
 Patching output file 69/70
 Patching output file 70/70
-lookup cache used 639/65536 hits=6065 misses=753
+lookup cache used 639/65536 hits=6067 misses=753
 finished...

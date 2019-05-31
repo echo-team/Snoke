@@ -163,7 +163,11 @@ $(document).ready(function(){initNavTree('common_8h_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="common_8h.html#ae8211888b97841c7339ec4673cdd76e4">set_escdelay</a>(<span class="keywordtype">short</span> mode);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifndef __unix__</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="common_8h.html#ae8211888b97841c7339ec4673cdd76e4">set_escdelay</a>(<span class="keywordtype">short</span> mode);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="common_8h_html_ae8211888b97841c7339ec4673cdd76e4"><div class="ttname"><a href="common_8h.html#ae8211888b97841c7339ec4673cdd76e4">set_escdelay</a></div><div class="ttdeci">void set_escdelay(short mode)</div><div class="ttdef"><b>Definition:</b> <a href="common_8cpp_source.html#l00071">common.cpp:71</a></div></div>
 <div class="ttc" id="class_point_html_a5309894db6c0ddb1637e9bf06fdc83df"><div class="ttname"><a href="class_point.html#a5309894db6c0ddb1637e9bf06fdc83df">Point::x</a></div><div class="ttdeci">short x</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
 <div class="ttc" id="class_labyrinth_html"><div class="ttname"><a href="class_labyrinth.html">Labyrinth</a></div><div class="ttdoc">class for containing and displaying the game field </div><div class="ttdef"><b>Definition:</b> <a href="labyrinth_8h_source.html#l00066">labyrinth.h:66</a></div></div>
