@@ -64,15 +64,6 @@ directories:
 	$(shell mkdir -p $(TARGETDIR))
 	$(shell mkdir -p $(BUILDDIR))
 
-#Full Clean, Objects and Binaries
-clean: cleanup
-	$(shell rm -rf $(TARGETDIR))
-	$(shell rm -rf $(EXTRADIRS))
-
-#Clean only Objecst
-cleanup:
-	$(shell rm -rf $(BUILDDIR))
-
 #Pull in dependency info for *existing* .o files
 -include $(OBJECTS:.$(OBJEXT)=.$(DEPEXT))
 -include $(subst .cpp,.d,$(SOURCES))
@@ -83,3 +74,15 @@ $(TARGET): $(OBJECTS)
 
 $(BUILDDIR)/%.$(OBJEXT): %.$(SRCEXT)
 	$(CC) -c $(CFLAGS) -o $@ $<
+
+#Full Clean, Objects and Binaries
+clean: cleanup
+	@rm -rf $(TARGETDIR)
+	@rm -rf $(EXTRADIRS)
+
+#Clean only Objecst
+cleanup:
+	@rm -rf $(BUILDDIR)
+
+.PHONY: clean
+.PHONY: cleanup
