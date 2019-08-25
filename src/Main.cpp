@@ -17,7 +17,7 @@ int main()
     keypad(stdscr, true);
 
     Game g;
-    g.init(70, 150, -1);
+    g.init(140, 75, -1);
     int gameReturn = g.run();
 
     refresh();

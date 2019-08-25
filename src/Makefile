@@ -4,6 +4,7 @@ CC = g++ -std=c++11
 TARGET      := Snoke
 
 #The Directories, Source, Includes, Objects, Binary and Resources
+SRCDIR      := src
 BUILDDIR    := obj
 TARGETDIR   := bin
 RESDIR      := res
@@ -25,8 +26,8 @@ LIB         := -lncurses
 #Do not touch anything below this line
 #------------------------------------------------------------
 
-SOURCES     := $(shell find . -type f -name "*.$(SRCEXT)")
-HEADERS     := $(shell find . -type f -name "*.$(HEADEREXT)")
+SOURCES     := $(shell find $(SRCDIR) -type f -name "*.$(SRCEXT)")
+HEADERS     := $(shell find $(SRCDIR) -type f -name "*.$(HEADEREXT)")
 vpath %$(SRCEXT) = $(dir $(SOURCES))
 OBJECTS     := $(addprefix $(BUILDDIR)/, $(notdir $(SOURCES:.$(SRCEXT)=.$(OBJEXT))))
 
@@ -63,14 +64,14 @@ directories:
 	$(shell mkdir -p $(TARGETDIR))
 	$(shell mkdir -p $(BUILDDIR))
 
-#Clean only Objecst
-cleanup:
-	$(shell rm -rf $(BUILDDIR))
-
 #Full Clean, Objects and Binaries
 clean: cleanup
 	$(shell rm -rf $(TARGETDIR))
 	$(shell rm -rf $(EXTRADIRS))
+
+#Clean only Objecst
+cleanup:
+	$(shell rm -rf $(BUILDDIR))
 
 #Pull in dependency info for *existing* .o files
 -include $(OBJECTS:.$(OBJEXT)=.$(DEPEXT))

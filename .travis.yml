@@ -41,7 +41,7 @@ after_success:
     - sonar-scanner
     - cd $TRAVIS_BUILD_DIR
     - chmod +x generateDocumentationAndDeploy.sh
-    - "./generateDocumentationAndDeploy.sh"
+    - "docGen.sh"
 
 
 cache:
