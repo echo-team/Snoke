@@ -1,5 +1,5 @@
 <map id="resizeHandler" name="resizeHandler">
-<area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="157,31,240,57"/>
-<area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="291,5,341,32"/>
-<area shape="rect" id="node4" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="288,56,344,83"/>
+<area shape="rect" id="node2" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="156,31,239,57"/>
+<area shape="rect" id="node3" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="289,5,340,32"/>
+<area shape="rect" id="node4" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="287,56,343,83"/>
 </map>

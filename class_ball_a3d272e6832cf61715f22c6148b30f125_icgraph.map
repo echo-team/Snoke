@@ -1,10 +1,10 @@
 <map id="Ball::getRandomEngine" name="Ball::getRandomEngine">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="213,56,368,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="416,56,539,83"/>
-<area shape="rect" id="node7" href="$_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="600,5,656,32"/>
-<area shape="rect" id="node8" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="428,107,527,133"/>
-<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="587,56,669,83"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="720,31,771,57"/>
-<area shape="rect" id="node6" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="717,81,773,108"/>
-<area shape="rect" id="node9" href="$_labyrinth__display_handler_8h.html#a89012c4cfb0e9717bef01ecc9aa02e33" title="multiple executions with snake moving " alt="" coords="600,107,656,133"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a633dcd9ae15b8c3c6b501b634de2a3fc" title="Generate the Ball. " alt="" coords="212,56,367,83"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a2dea25b9ae57083adca650baffe3ef65" title="Ball initialization with labyrinth updating. " alt="" coords="415,56,537,83"/>
+<area shape="rect" id="node7" href="$_labyrinth__generate_bal_8h.html#a6b7f582caea511ffa31443a7677f2177" title="method runs with normal parameters " alt="" coords="599,5,655,32"/>
+<area shape="rect" id="node8" href="$class_snake.html#adc0a8a076442fc4473fd4269e5607037" title="The snake movement on the game field(should be called in each iteration of the game cycle..." alt="" coords="427,107,525,133"/>
+<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="585,56,668,83"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="719,31,769,57"/>
+<area shape="rect" id="node6" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="716,81,772,108"/>
+<area shape="rect" id="node9" href="$_labyrinth__display_handler_8h.html#a89012c4cfb0e9717bef01ecc9aa02e33" title="multiple executions with snake moving " alt="" coords="599,107,655,133"/>
 </map>

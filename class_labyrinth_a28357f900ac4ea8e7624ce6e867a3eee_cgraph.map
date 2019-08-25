@@ -1,17 +1,17 @@
 <map id="Labyrinth::displayHandler" name="Labyrinth::displayHandler">
-<area shape="rect" id="node2" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="743,49,918,76"/>
-<area shape="rect" id="node8" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="251,201,403,228"/>
-<area shape="rect" id="node11" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="224,125,429,152"/>
-<area shape="rect" id="node3" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="985,132,1137,159"/>
-<area shape="rect" id="node4" href="$class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb" title="Remove Point from the labyrinth. " alt="" coords="997,5,1125,32"/>
-<area shape="rect" id="node5" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="984,195,1139,221"/>
-<area shape="rect" id="node6" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="994,56,1129,83"/>
-<area shape="rect" id="node7" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="1187,56,1306,83"/>
-<area shape="rect" id="node9" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="498,252,657,279"/>
-<area shape="rect" id="node10" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="520,201,635,228"/>
-<area shape="rect" id="node12" href="$class_display_handler.html#a6ee373ad3e3318633461be0851768248" title="got an extra stimulus for displaying in a certain method " alt="" coords="478,100,677,127"/>
-<area shape="rect" id="node16" href="$class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c" title="No extra stimulus, displaying the default way. " alt="" coords="485,151,670,177"/>
-<area shape="rect" id="node13" href="$class_display_handler.html#a59ec2f4626d27172e9a9db6eb9c64ac1" title="redraw every Point of the labyrinth " alt="" coords="740,151,921,177"/>
-<area shape="rect" id="node14" href="$class_display_handler.html#a5aae18de62daf41ba21d30a1e99d0648" title="display labyrinth partialy, using the start and end Points " alt="" coords="729,100,933,127"/>
-<area shape="rect" id="node15" href="$class_display_handler.html#a09f608b0e9924a41a75595b44f17cdc4" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="726,201,935,228"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#af5adb9213fbd258118e49c85f09c301a" title="Updating the labyrinth(changing the values of some Points) " alt="" coords="740,49,915,76"/>
+<area shape="rect" id="node8" href="$class_labyrinth.html#a43994d3b84ed457b1c04595466a61fc6" title="A method, which sets start and end values depending on the position of local_player&#39;s snake head and ..." alt="" coords="249,201,401,228"/>
+<area shape="rect" id="node11" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="223,125,428,152"/>
+<area shape="rect" id="node3" href="$class_change.html#a3b3942c353553cbc635c6bf7b5150916" title="method to get a copy of removal array " alt="" coords="981,132,1133,159"/>
+<area shape="rect" id="node4" href="$class_labyrinth.html#a325ab8452eced20cec2b2768a89352cb" title="Remove Point from the labyrinth. " alt="" coords="993,5,1121,32"/>
+<area shape="rect" id="node5" href="$class_change.html#a7d2ad837cea5132b177bbc02a576cc10" title="method to get a copy of addition array " alt="" coords="980,195,1135,221"/>
+<area shape="rect" id="node6" href="$class_labyrinth.html#a710cf4ff7789d527e6081d1eb2d696a6" title="Adding Point to the labyrinth with the check of correction. " alt="" coords="990,56,1125,83"/>
+<area shape="rect" id="node7" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="1183,56,1301,83"/>
+<area shape="rect" id="node9" href="$class_snake.html#a0235581bc3d6399f4fd2287669f93cee" title="The method to get the coordinates(x, y) of the snake&#39;s head without giving the direct access..." alt="" coords="496,252,655,279"/>
+<area shape="rect" id="node10" href="$common_8cpp.html#ada3ae1ea3b3825462dccd1eb18df401a" title="Gets size of current console screen in symdols. " alt="" coords="518,201,633,228"/>
+<area shape="rect" id="node12" href="$class_display_handler.html#a6ee373ad3e3318633461be0851768248" title="got an extra stimulus for displaying in a certain method " alt="" coords="476,100,675,127"/>
+<area shape="rect" id="node16" href="$class_display_handler.html#a3216e01e6f85d1ed0894a3ee0d8e2f3c" title="No extra stimulus, displaying the default way. " alt="" coords="483,151,668,177"/>
+<area shape="rect" id="node13" href="$class_display_handler.html#a59ec2f4626d27172e9a9db6eb9c64ac1" title="redraw every Point of the labyrinth " alt="" coords="737,151,918,177"/>
+<area shape="rect" id="node14" href="$class_display_handler.html#a5aae18de62daf41ba21d30a1e99d0648" title="display labyrinth partialy, using the start and end Points " alt="" coords="725,100,929,127"/>
+<area shape="rect" id="node15" href="$class_display_handler.html#a09f608b0e9924a41a75595b44f17cdc4" title="draw only the changed Points when the labyrinth is being fully displayed " alt="" coords="723,201,932,228"/>
 </map>

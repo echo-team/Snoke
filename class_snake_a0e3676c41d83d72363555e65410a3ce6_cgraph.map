@@ -1,5 +1,5 @@
 <map id="Snake::checkIntersection" name="Snake::checkIntersection">
-<area shape="rect" id="node2" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="237,5,355,32"/>
-<area shape="rect" id="node3" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title="If the Point of the labyrinth we are checking is not free then decide the type of collision..." alt="" coords="225,56,367,83"/>
-<area shape="rect" id="node4" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="240,107,352,133"/>
+<area shape="rect" id="node2" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="236,5,355,32"/>
+<area shape="rect" id="node3" href="$class_snake.html#a2f8cc670284cdebf4c9bbe60a7296deb" title="If the Point of the labyrinth we are checking is not free then decide the type of collision..." alt="" coords="224,56,367,83"/>
+<area shape="rect" id="node4" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="239,107,351,133"/>
 </map>

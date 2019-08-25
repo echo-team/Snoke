@@ -1,8 +1,8 @@
 <map id="/home/travis/build/echo&#45;team/Snoke/app/Game/game.cpp" name="/home/travis/build/echo&#45;team/Snoke/app/Game/game.cpp">
-<area shape="rect" id="node2" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="469,109,533,136"/>
+<area shape="rect" id="node2" href="$game_8h.html" title="Definitions and prototypes for Game class. " alt="" coords="469,109,534,136"/>
 <area shape="rect" id="node3" href="$snake_8h.html" title="Definitions and prototypes for Snake class. " alt="" coords="230,184,351,211"/>
-<area shape="rect" id="node9" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="354,259,504,285"/>
-<area shape="rect" id="node10" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="96,333,169,360"/>
+<area shape="rect" id="node9" href="$labyrinth_8h.html" title="Definitions and prototypes for Labyrinth class. " alt="" coords="354,259,505,285"/>
+<area shape="rect" id="node10" href="$change_8h.html" title="Definitions and prototypes for Change class. " alt="" coords="96,333,171,360"/>
 <area shape="rect" id="node6" href="$common_8h.html" title="shared functions prototypes, structures, main classes declarations " alt="" coords="191,408,343,435"/>
 <area shape="rect" id="node11" href="$ball_8h.html" title="definitions and prototypes for Ball class " alt="" coords="360,333,451,360"/>
 </map>

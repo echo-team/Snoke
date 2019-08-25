@@ -1,6 +1,6 @@
 <map id="Widget::add" name="Widget::add">
-<area shape="rect" id="node2" href="$class_widget.html#a1923a81b244677ab48494238a345825f" title="Widget::_parent" alt="" coords="153,5,268,32"/>
-<area shape="rect" id="node3" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="163,56,259,83"/>
-<area shape="rect" id="node4" href="$class_widget.html#ae8cac87879e452153eda3c055e74bbeb" title="Widget::_next" alt="" coords="159,107,262,133"/>
-<area shape="rect" id="node5" href="$class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f" title="Widget::_previous" alt="" coords="147,157,274,184"/>
+<area shape="rect" id="node2" href="$class_widget.html#a1923a81b244677ab48494238a345825f" title="Widget::_parent" alt="" coords="151,5,266,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="161,56,257,83"/>
+<area shape="rect" id="node4" href="$class_widget.html#ae8cac87879e452153eda3c055e74bbeb" title="Widget::_next" alt="" coords="157,107,260,133"/>
+<area shape="rect" id="node5" href="$class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f" title="Widget::_previous" alt="" coords="145,157,272,184"/>
 </map>

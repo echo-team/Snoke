@@ -1,6 +1,12 @@
 <map id="Menu::add" name="Menu::add">
-<area shape="rect" id="node2" href="$class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4" title="Widget::childLength" alt="" coords="137,5,274,32"/>
-<area shape="rect" id="node3" href="$class_widget.html#a49569aaaf70b0d283ba7165a68e56efb" title="Widget::listener" alt="" coords="149,56,262,83"/>
-<area shape="rect" id="node4" href="$class_menu.html#ac5ec365a1916cc9cbd233063544588d7" title="Menu::focus" alt="" coords="158,107,253,133"/>
-<area shape="rect" id="node5" href="$class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c" title="Menu::unfocus" alt="" coords="151,157,259,184"/>
+<area shape="rect" id="node2" href="$class_menu_item.html#a5b6a02b11810120bed744e05c5bedcb1" title="MenuItem::MenuItem" alt="" coords="136,5,283,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a0bb6a505192d7d557cd1d040bd6290a4" title="Widget::childLength" alt="" coords="141,56,278,83"/>
+<area shape="rect" id="node4" href="$class_widget.html#a49569aaaf70b0d283ba7165a68e56efb" title="Widget::listener" alt="" coords="153,107,266,133"/>
+<area shape="rect" id="node5" href="$class_menu.html#ac5ec365a1916cc9cbd233063544588d7" title="Menu::focus" alt="" coords="162,157,257,184"/>
+<area shape="rect" id="node6" href="$class_menu.html#acc8b2492f87ebc9219eaad0fe0ecaa5c" title="Menu::unfocus" alt="" coords="155,208,263,235"/>
+<area shape="rect" id="node7" href="$class_widget.html#add8e7c0010594410e6e5b6d5e93966a2" title="Widget::add" alt="" coords="163,259,255,285"/>
+<area shape="rect" id="node8" href="$class_widget.html#a1923a81b244677ab48494238a345825f" title="Widget::_parent" alt="" coords="337,183,451,209"/>
+<area shape="rect" id="node9" href="$class_widget.html#a4c14a7af2fe983cdda25b0433da1743b" title="Widget::next" alt="" coords="346,233,442,260"/>
+<area shape="rect" id="node10" href="$class_widget.html#ae8cac87879e452153eda3c055e74bbeb" title="Widget::_next" alt="" coords="343,284,445,311"/>
+<area shape="rect" id="node11" href="$class_widget.html#a0baf18d54ce42fae5cd7ad0b26fa138f" title="Widget::_previous" alt="" coords="331,335,457,361"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="resizeHandler" name="resizeHandler">
-<area shape="rect" id="node2" href="$common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a" title="setting new values for sleep function on signal interrupt " alt="" coords="157,5,256,32"/>
-<area shape="rect" id="node3" href="$common_8cpp.html#a8cc817c98b389a060e7061a138efe10c" title="For unix&#45;based systems interrupted sleep must be continued. " alt="" coords="169,56,245,83"/>
+<area shape="rect" id="node2" href="$common_8cpp.html#a54e5255040d967ad5e858ae4a1e7ae6a" title="setting new values for sleep function on signal interrupt " alt="" coords="156,5,255,32"/>
+<area shape="rect" id="node3" href="$common_8cpp.html#a8cc817c98b389a060e7061a138efe10c" title="For unix&#45;based systems interrupted sleep must be continued. " alt="" coords="167,56,243,83"/>
 </map>

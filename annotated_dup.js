@@ -1,4 +1,4 @@
-var annotated =
+var annotated_dup =
 [
     [ "Application", "class_application.html", "class_application" ],
     [ "Ball", "class_ball.html", "class_ball" ],

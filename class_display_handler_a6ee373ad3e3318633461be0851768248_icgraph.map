@@ -1,8 +1,8 @@
 <map id="DisplayHandler::forcedDisplay" name="DisplayHandler::forcedDisplay">
-<area shape="rect" id="node2" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="253,56,459,83"/>
-<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="507,56,677,83"/>
-<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="725,31,808,57"/>
-<area shape="rect" id="node7" href="$_labyrinth__display_handler_8h.html#a0ddb043fcfa38053fb421a1067120222" title="method runs with noraml parameters " alt="" coords="739,81,795,108"/>
-<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="859,5,909,32"/>
-<area shape="rect" id="node6" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="856,56,912,83"/>
+<area shape="rect" id="node2" href="$class_display_handler.html#a6b6613dc33fa65e11043eddff19e7fc0" title="handler for choosing the approriate display method in the current environment " alt="" coords="252,56,457,83"/>
+<area shape="rect" id="node3" href="$class_labyrinth.html#a28357f900ac4ea8e7624ce6e867a3eee" title="A method which decides what dispaly method will be used in each situation. " alt="" coords="505,56,675,83"/>
+<area shape="rect" id="node4" href="$class_game.html#a99fb161fbbe87d25a8b73265a0611e58" title="Main game loop. " alt="" coords="723,31,805,57"/>
+<area shape="rect" id="node7" href="$_labyrinth__display_handler_8h.html#a0ddb043fcfa38053fb421a1067120222" title="method runs with noraml parameters " alt="" coords="736,81,792,108"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="856,5,907,32"/>
+<area shape="rect" id="node6" href="$_game__run_8h.html#a9dd00aad177f5317fa3b706a8e30e64b" title="TEST" alt="" coords="853,56,909,83"/>
 </map>

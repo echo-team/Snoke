@@ -1,10 +1,10 @@
 <map id="Labyrinth::generateBall" name="Labyrinth::generateBall">
-<area shape="rect" id="node2" href="$class_change.html#ab2c70fe5eadcf514a7486ae665a48934" title="adds Point to removal array if it fits the criteria " alt="" coords="228,5,348,32"/>
-<area shape="rect" id="node3" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="232,56,344,83"/>
-<area shape="rect" id="node4" href="$class_ball.html#a3d272e6832cf61715f22c6148b30f125" title="Ball::getRandomEngine" alt="" coords="209,107,367,133"/>
-<area shape="rect" id="node5" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="229,157,347,184"/>
-<area shape="rect" id="node6" href="$class_change.html#a7c2513f30bc0e06d3685223c51bbc116" title="Check if the Point is in the remove queue. " alt="" coords="216,208,360,235"/>
-<area shape="rect" id="node7" href="$class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b" title="Check if Points is in the addition queue. " alt="" coords="215,259,361,285"/>
-<area shape="rect" id="node8" href="$class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="232,309,344,336"/>
-<area shape="rect" id="node9" href="$class_change.html#abc4f4f804d28d110a9a1990e0ef1ec60" title="adds Point to addition array if it fits the criteria " alt="" coords="225,360,351,387"/>
+<area shape="rect" id="node2" href="$class_change.html#ab2c70fe5eadcf514a7486ae665a48934" title="adds Point to removal array if it fits the criteria " alt="" coords="227,5,347,32"/>
+<area shape="rect" id="node3" href="$class_ball.html#a14b9a607402be58e7a0a0ab053df5f82" title="Get the ball coords without giving the direct access. " alt="" coords="231,56,343,83"/>
+<area shape="rect" id="node4" href="$class_ball.html#a3d272e6832cf61715f22c6148b30f125" title="Ball::getRandomEngine" alt="" coords="208,107,367,133"/>
+<area shape="rect" id="node5" href="$class_labyrinth.html#a8fee6d8299f87c4bed5b35411f456277" title="Mark of if the asked Point is free. " alt="" coords="228,157,347,184"/>
+<area shape="rect" id="node6" href="$class_change.html#a7c2513f30bc0e06d3685223c51bbc116" title="Check if the Point is in the remove queue. " alt="" coords="215,208,359,235"/>
+<area shape="rect" id="node7" href="$class_change.html#aa7eed8cdec0dc4e499b8f2a61f50858b" title="Check if Points is in the addition queue. " alt="" coords="214,259,361,285"/>
+<area shape="rect" id="node8" href="$class_ball.html#af42e561b11017035fc8a68ce35c99087" title="Sets coordinates of the ball to given if they are correct. " alt="" coords="231,309,343,336"/>
+<area shape="rect" id="node9" href="$class_change.html#abc4f4f804d28d110a9a1990e0ef1ec60" title="adds Point to addition array if it fits the criteria " alt="" coords="224,360,351,387"/>
 </map>
